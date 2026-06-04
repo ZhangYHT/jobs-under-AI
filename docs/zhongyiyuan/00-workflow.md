@@ -12,28 +12,28 @@
 - 步骤 1 至 3 是**客观事实**:每个模型负责**查证并引用官方来源**,不得凭空编造;Claude 在 `aggregate.py` 中以官方来源为准锚定,模型间分歧用于质检并写入 QA 报告。
 - 步骤 4 是**主观研判**:11 个模型独立盲测打分,聚合为均值/中位数/标准差(分歧度)。
 
-## 模型阵容(11)与文件名
-`claude` · `gemini` · `gpt` · `qwen`(通义千问) · `zhipu`(智谱清言) · `doubao`(豆包) · `deepseek` · `wenxin`(文心一言) · `grok` · `yuanbao`(腾讯元宝) · `kimi`
+## 模型阵容与专属指令
+**主力研究/评分团(11)**,每个模型有**专属指令**(已生成,直接粘贴):见 [`prompts/`](prompts/)。
+由 `gen_prompts.py` 从官方 79 中类生成,改分工后重跑即可刷新。
 
-每个模型每步产出一个 JSON,文件名用上面的英文键,放入对应 `data/collected/step*/` 目录。
+| 文件 | 模型(版本/模式) | 步骤1-3 官方来源专属领域 |
+|---|---|---|
+| `prompts/wenxin.md` | 文心一言(m码牛模式) | 部委与政策原文(人社部/统计局/发改委/工信部/教育部) |
+| `prompts/qwen.md` | 通义千问 Qwen3.7max(任务助理) | 行业与产业(协会/白皮书/年报/招聘平台官方报告) |
+| `prompts/zhipu.md` | 智谱清言 GLM5.1(研究模式) | 学术统计(CNKI/劳动经济与就业研究) |
+| `prompts/yuanbao.md` | 腾讯元宝(Hy3 preview) | 行业协会/地方统计局/专业社群一手数据 |
+| `prompts/gpt.md` | GPT(深度研究) | 国际官方对照(ILO/OECD/世行 + 英文一手) |
+| `prompts/gemini.md` | Gemini 3.1 Pro(深度研究) | 深度综述与查漏、跨来源交叉核对 |
+| `prompts/deepseek.md` | DeepSeek(专家模式) | 口径核对(年份/单位/统计口径对齐) |
+| `prompts/doubao.md` | 豆包(深入研究) | 媒体引用官方数据的回溯核验 |
+| `prompts/grok.md` | Grok 4.3 fast | 数据质疑(可靠性、来源存疑标记) |
+| `prompts/kimi.md` | Kimi 2.6(thinking) | 长文档/年鉴 PDF 精读抽取 |
+| `prompts/claude.md` | Claude(Opus · Extended Thinking) | 结构化汇编与最终交叉核对 |
 
-## 同题异构:步骤 1 至 3 的官方来源分工(扩大官方覆盖面)
-为了不局限于少数几个来源,9 个主力模型各负责一类官方来源领域:
+每个文件含 步骤1-4 四个代码块(步骤4 评分细则全员一致以保证可比,仅附"专属视角"补强)。产出按文件名 `data/collected/step{n}_*/<key>.json` 保存。
 
-| 模型 | 切入角度(官方来源领域) |
-|---|---|
-| wenxin 文心 | 部委与政策:人社部、国家统计局、发改委、工信部、教育部的公报/标准/文件 |
-| qwen 通义 | 行业与产业:行业协会、白皮书、上市公司年报、招聘平台官方报告 |
-| zhipu 智谱 | 学术统计:CNKI、劳动经济与就业研究文献 |
-| yuanbao 元宝 | 行业协会、地方统计局、专业社群中的一手数据 |
-| gpt | 国际官方对照:ILO、OECD、世界银行对华就业/职业统计 |
-| deepseek | 口径核对:不同来源的年份、单位、统计口径差异与对齐 |
-| doubao 豆包 | 媒体/民生报道中引用的官方数据二次核对 |
-| grok | 数据质疑:哪些流传数字不可靠、来源存疑 |
-| claude | 结构化汇编与交叉核对 |
-| gemini / kimi | 补充投票与查漏 |
-
-步骤 4 打分对所有模型用**同一套**评分细则(不分角度),保证可比。
+**评议团(5,免费 API · 事后审查)**:见 [`prompts/review_team.md`](prompts/review_team.md)。在主力跑完并 `python aggregate.py` 后运行,审查数据(盲点/反方/补源/数值核查/一致性)。
+`nemotron-3-super-120b-a12b` · `minimax-m2.7` · `llama-3.2-90b-vision-instruct` · `gpt-oss-120b` · `Mistral Large`
 
 ## 操作流程(手动)
 1. 打开 `data/occupations.cn.json`,这是官方分类骨架(8 大类 / 79 中类 / 细类,带 S 数字职业、L 绿色职业标注)。
