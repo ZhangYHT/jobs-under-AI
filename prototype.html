@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI 时代各岗位冲击图谱 · 中国版(演示原型)</title>
+<style>
+  :root{
+    --bg:#0f1117; --panel:#171a23; --panel2:#1d2230; --line:#2a3040;
+    --text:#e8ebf2; --muted:#9aa3b5; --accent:#5b8cff;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
+    font-family:"PingFang SC","Microsoft YaHei","Hiragino Sans GB",system-ui,-apple-system,Segoe UI,Roboto,sans-serif;}
+  #wrap{max-width:1280px;margin:0 auto;padding:18px 20px 40px;}
+  h1{font-size:21px;margin:0 0 2px;font-weight:700;letter-spacing:.5px;}
+  .sub{color:var(--muted);font-size:13px;margin-bottom:10px;}
+  .banner{background:#3a2a12;border:1px solid #6b4e1f;color:#ffcf8a;
+    font-size:12.5px;padding:7px 12px;border-radius:8px;margin-bottom:14px;display:flex;gap:8px;align-items:center;}
+  .controls{display:flex;flex-wrap:wrap;gap:14px;align-items:center;margin-bottom:12px;}
+  .toggles{display:flex;flex-wrap:wrap;gap:6px;}
+  .toggles button{background:var(--panel2);color:var(--muted);border:1px solid var(--line);
+    padding:6px 11px;border-radius:7px;font-size:12.5px;cursor:pointer;transition:.12s;}
+  .toggles button:hover{border-color:var(--accent);color:var(--text);}
+  .toggles button.active{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:600;}
+  .legend{display:flex;align-items:center;gap:8px;margin-left:auto;font-size:11.5px;color:var(--muted);}
+  .legend .bar{width:160px;height:12px;border-radius:6px;
+    background:linear-gradient(90deg,hsl(130,70%,45%),hsl(60,75%,50%),hsl(0,75%,52%));}
+  .stats{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:12px;}
+  .stat{background:var(--panel);border:1px solid var(--line);border-radius:10px;padding:10px 14px;min-width:150px;}
+  .stat .k{font-size:11.5px;color:var(--muted);}
+  .stat .v{font-size:20px;font-weight:700;margin-top:2px;}
+  .stat.hist{flex:1;min-width:300px;}
+  #histwrap{display:flex;align-items:flex-end;gap:6px;height:46px;margin-top:6px;}
+  .hbar{flex:1;display:flex;flex-direction:column;align-items:center;gap:3px;justify-content:flex-end;height:100%;}
+  .hbar .b{width:100%;border-radius:4px 4px 0 0;min-height:2px;}
+  .hbar .l{font-size:9.5px;color:var(--muted);white-space:nowrap;}
+  #crumb{font-size:13px;margin-bottom:8px;color:var(--muted);height:18px;}
+  #crumb a{color:var(--accent);cursor:pointer;text-decoration:none;}
+  #crumb a:hover{text-decoration:underline;}
+  #canvasBox{position:relative;width:100%;height:600px;background:var(--panel);
+    border:1px solid var(--line);border-radius:12px;overflow:hidden;}
+  canvas{display:block;width:100%;height:100%;}
+  #tip{position:fixed;pointer-events:none;z-index:20;background:#0b0d13ee;border:1px solid #38405a;
+    border-radius:10px;padding:10px 12px;font-size:12.5px;max-width:300px;box-shadow:0 8px 28px #0009;
+    display:none;backdrop-filter:blur(4px);}
+  #tip .t{font-size:14px;font-weight:700;margin-bottom:5px;display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
+  #tip .tag{font-size:10px;background:#1d3a6b;color:#9cc2ff;border:1px solid #2f57a0;padding:1px 6px;border-radius:5px;}
+  #tip .big{font-size:13px;margin:3px 0 7px;}
+  #tip .grid{display:grid;grid-template-columns:auto 1fr;gap:2px 10px;font-size:11.5px;color:var(--muted);}
+  #tip .grid b{color:var(--text);font-weight:600;}
+  #tip .r{margin-top:7px;color:#cdd4e4;font-style:italic;border-top:1px solid #262c3d;padding-top:6px;line-height:1.5;}
+  #tip .hint{margin-top:6px;color:var(--accent);font-size:11px;}
+  .foot{color:var(--muted);font-size:11.5px;margin-top:14px;line-height:1.6;}
+</style>
+</head>
+<body>
+<div id="wrap">
+  <h1>AI 时代各岗位冲击图谱 · 中国版</h1>
+  <div class="sub">面积 = 就业人数 · 颜色 = 选定维度得分(0–100) · 点击方块可钻取到具体职业 · 「AI 众议院」多模型集成打分</div>
+  <div class="banner">⚠ <span>演示原型 · 本页所有数字均为<b>占位样例</b>,非真实统计;最终版将由官方分类(职业分类大典2022/七普)+ AI 众议院 11 模型集成产出。</span></div>
+
+  <div class="controls">
+    <div class="toggles" id="toggles"></div>
+    <div class="legend">
+      <span id="legLo">低</span><div class="bar"></div><span id="legHi">高</span>
+      <span id="legNote" style="margin-left:6px;"></span>
+    </div>
+  </div>
+
+  <div class="stats">
+    <div class="stat"><div class="k">覆盖就业人数(样例)</div><div class="v" id="sJobs">–</div></div>
+    <div class="stat"><div class="k">就业加权 · 综合冲击均值</div><div class="v" id="sAvg">–</div></div>
+    <div class="stat hist"><div class="k">综合冲击分布(按就业人数加权)</div><div id="histwrap"></div></div>
+  </div>
+
+  <div id="crumb"></div>
+  <div id="canvasBox"><canvas id="cv"></canvas></div>
+
+  <div class="foot">
+    交互:鼠标悬停看某职业的 6 维得分 + 模型分歧度;点击概览里的中类方块,钻取到它下面的具体职业(细类);点面包屑返回。<br>
+    技术:单文件纯 HTML + Canvas,零依赖、无构建步骤,与最终站点同栈(可直接挂 GitHub Pages)。
+  </div>
+</div>
+
+<div id="tip"></div>
+
+<script>
+/* ---------- 维度定义 ---------- */
+const DIMS = [
+  {key:'overall',     label:'综合冲击',                main:true},
+  {key:'automation',  label:'任务自动化'},
+  {key:'augmentation',label:'AI增强'},
+  {key:'digital',     label:'数字化程度'},
+  {key:'moat',        label:'人际·物理·监管护城河', note:'红=护城河强(越抗冲击)'},
+  {key:'adoption',    label:'落地速度'},
+];
+const DIMKEYS = DIMS.map(d=>d.key);
+
+/* ---------- 演示数据(占位样例) ----------
+   字段: [名称, 就业人数, overall, automation, augmentation, digital, moat, adoption, 分歧度std, 数字职业S, 简短理由] */
+const RAW = {
+ "专业技术人员":{
+   "信息技术":[
+     ["软件工程师",7000000,86,72,94,97,18,80,6,true,"核心工作在电脑完成,编码与分析被 AI 大幅增强。"],
+     ["数据分析师",3000000,88,78,92,96,16,82,5,true,"从数据清洗到可视化高度可自动化。"],
+     ["算法工程师",1200000,80,60,95,98,28,78,8,true,"AI 增强极强,前沿研发仍需人把关。"],
+     ["网络与运维工程师",2500000,74,70,85,90,30,72,7,true,"自动化运维成熟,部分仍需现场。"],
+   ],
+   "医疗卫生":[
+     ["临床医生",4500000,38,20,70,45,82,40,10,false,"诊断被辅助,但责任与操作不可替代。"],
+     ["护士",5000000,22,12,45,35,90,30,6,false,"强体力与人际照护,冲击低。"],
+     ["医学影像技师",800000,62,65,80,78,50,58,9,true,"医学影像识别 AI 进展快。"],
+     ["药剂师",900000,55,55,68,72,55,50,8,false,"配药审核可自动,仍需人把关。"],
+   ],
+   "教育":[
+     ["中小学教师",10000000,42,25,78,55,75,45,9,false,"备课答疑被增强,课堂与管教难替代。"],
+     ["高校教师/研究员",1800000,50,30,82,65,68,48,8,false,"科研与论文写作被明显增强。"],
+     ["培训讲师",2000000,58,40,80,70,55,55,10,false,"标准化内容生产受冲击。"],
+   ],
+   "法律与财会":[
+     ["会计",4200000,84,80,88,92,35,78,6,true,"记账报税高度自动化。"],
+     ["审计师",1100000,72,65,85,88,45,66,8,false,"底稿与抽样可自动,判断需人。"],
+     ["律师",1300000,66,45,90,85,58,60,11,false,"检索起草被增强,出庭谈判难替代。"],
+     ["法务助理",900000,82,78,86,90,30,74,7,true,"合同审阅与检索高度可自动。"],
+   ],
+ },
+ "办事人员和有关人员":{
+   "行政办公":[
+     ["行政文秘",3500000,90,85,88,95,20,82,5,true,"排程、文档、会议纪要高度自动化。"],
+     ["数据录入员",1200000,96,95,70,98,8,88,3,true,"例行数字处理,AI 今天即可完成大半。"],
+     ["人力资源专员",2000000,78,70,84,88,38,70,7,true,"招聘筛选与流程自动化。"],
+   ],
+   "客户服务":[
+     ["呼叫中心客服",3000000,92,90,80,94,18,85,4,true,"对话式 AI 直接替代大量话务。"],
+     ["在线客服",2500000,90,88,82,95,20,84,4,true,"工单与应答高度自动化。"],
+   ],
+ },
+ "社会生产与生活服务人员":{
+   "餐饮住宿":[
+     ["厨师",6000000,26,18,40,20,85,28,7,false,"现场烹饪强体力,冲击低。"],
+     ["餐厅服务员",7000000,30,25,42,28,80,35,6,false,"点餐结账部分自动,服务仍需人。"],
+     ["酒店前台",1500000,58,55,68,75,50,54,8,false,"入住流程自助化。"],
+   ],
+   "美容与生活服务":[
+     ["美发师",3000000,16,8,35,18,92,22,5,false,"高度手工与人际,冲击极低。"],
+     ["家政服务员",15000000,18,10,32,15,90,24,5,false,"非结构化体力劳动,难以自动化。"],
+     ["保安",4000000,40,42,50,45,70,44,9,false,"监控 AI 辅助,现场处置仍需人。"],
+   ],
+   "批发零售":[
+     ["零售店员",9000000,54,55,60,68,52,56,8,false,"自助收银与电商分流。"],
+     ["收银员",2500000,86,88,62,85,28,80,5,true,"自助结账快速替代。"],
+   ],
+ },
+ "生产制造及有关人员":{
+   "机械加工":[
+     ["数控机床操作工",3500000,48,55,58,62,60,50,9,false,"自动化产线持续渗透。"],
+     ["焊工",2800000,34,38,45,30,78,40,8,false,"焊接机器人替代部分,复杂件需人。"],
+     ["装配工",8000000,52,60,55,50,58,54,7,false,"标准化装配易被自动化。"],
+   ],
+   "质量检验":[
+     ["质检员",3000000,64,68,72,70,48,62,8,false,"机器视觉检测进展快。"],
+   ],
+   "纺织服装":[
+     ["缝纫工",5000000,44,50,48,35,66,46,7,false,"柔性面料自动化仍较难。"],
+   ],
+ },
+ "农林牧渔生产人员":{
+   "种植业":[
+     ["粮食作物种植",20000000,20,22,40,25,85,30,8,false,"户外不可预测,以机械化为主。"],
+     ["果蔬种植",8000000,22,24,42,28,82,32,7,false,"采摘自动化仍难。"],
+   ],
+   "畜牧养殖":[
+     ["畜禽养殖",6000000,28,30,48,38,75,38,8,true,"智慧养殖监测正在兴起。"],
+   ],
+ },
+ "单位负责人":{
+   "企业管理":[
+     ["企业高管",1200000,48,25,85,68,72,50,10,false,"决策被增强,担责与领导难替代。"],
+     ["部门经理",4000000,56,35,82,72,62,56,9,false,"协调与汇报被明显增强。"],
+     ["项目经理",3000000,60,40,84,78,55,58,9,true,"排期与文档自动化。"],
+   ],
+ },
+};
+
+/* ---------- 构建层级树 + 计算聚合 ---------- */
+function leafFrom(arr){
+  const o={name:arr[0],jobs:arr[1],std:arr[8],S:arr[9],rationale:arr[10],dims:{}};
+  DIMKEYS.forEach((k,i)=>o.dims[k]=arr[2+i]);
+  return o;
+}
+function aggregate(children){
+  const tot=children.reduce((s,c)=>s+c.jobs,0)||1;
+  const dims={};
+  DIMKEYS.forEach(k=>{dims[k]=Math.round(children.reduce((s,c)=>s+c.dims[k]*c.jobs,0)/tot);});
+  const std=Math.round(children.reduce((s,c)=>s+(c.std||0)*c.jobs,0)/tot);
+  return {jobs:tot,dims,std};
+}
+const TREE=[];
+for(const da in RAW){
+  const zhongs=[];
+  for(const zh in RAW[da]){
+    const leaves=RAW[da][zh].map(leafFrom);
+    const agg=aggregate(leaves);
+    zhongs.push({name:zh,type:'zhong',children:leaves,jobs:agg.jobs,dims:agg.dims,std:agg.std,da});
+  }
+  const agg=aggregate(zhongs);
+  TREE.push({name:da,type:'da',children:zhongs,jobs:agg.jobs,dims:agg.dims,std:agg.std});
+}
+const ALL_LEAVES=[];
+TREE.forEach(da=>da.children.forEach(zh=>zh.children.forEach(l=>{l.da=da.name;l.zhong=zh.name;ALL_LEAVES.push(l);})));
+
+/* ---------- 状态 ---------- */
+const state={dim:'overall',drill:null}; // drill = {da, zhong} 或 null
+
+/* ---------- 颜色 ---------- */
+function colorFor(v){
+  const t=Math.pow(Math.max(0,Math.min(1,v/100)),0.85);
+  const hue=(1-t)*130; // 130 绿 -> 0 红
+  return `hsl(${hue.toFixed(0)},68%,${(50-t*6).toFixed(0)}%)`;
+}
+
+/* ---------- 方块化(squarified treemap) ---------- */
+function worstRatio(row,side){
+  const sum=row.reduce((s,a)=>s+a,0);
+  const mx=Math.max(...row),mn=Math.min(...row);
+  return Math.max((side*side*mx)/(sum*sum),(sum*sum)/(side*side*mn));
+}
+function squarify(items,x,y,w,h){
+  // items:[{value,ref}] -> [{ref,x,y,w,h}]
+  const out=[];
+  const list=items.filter(i=>i.value>0).sort((a,b)=>b.value-a.value);
+  const total=list.reduce((s,i)=>s+i.value,0);
+  if(total<=0||w<=0||h<=0) return out;
+  const scale=(w*h)/total;
+  const areas=list.map(i=>i.value*scale);
+  let i=0,cx=x,cy=y,cw=w,ch=h;
+  while(i<list.length){
+    const side=Math.min(cw,ch);
+    let row=[areas[i]],refs=[list[i]];i++;
+    while(i<list.length){
+      if(worstRatio(row.concat(areas[i]),side)<=worstRatio(row,side)){row.push(areas[i]);refs.push(list[i]);i++;}
+      else break;
+    }
+    const rowSum=row.reduce((s,a)=>s+a,0);
+    if(cw>=ch){
+      const colW=rowSum/ch; let oy=cy;
+      for(let k=0;k<row.length;k++){const cellH=row[k]/colW;out.push({ref:refs[k].ref,x:cx,y:oy,w:colW,h:cellH});oy+=cellH;}
+      cx+=colW;cw-=colW;
+    }else{
+      const rowH=rowSum/cw; let ox=cx;
+      for(let k=0;k<row.length;k++){const cellW=row[k]/rowH;out.push({ref:refs[k].ref,x:ox,y:cy,w:cellW,h:rowH});ox+=cellW;}
+      cy+=rowH;ch-=rowH;
+    }
+  }
+  return out;
+}
+
+/* ---------- 渲染 ---------- */
+const box=document.getElementById('canvasBox');
+const cv=document.getElementById('cv');
+const ctx=cv.getContext('2d');
+let DPR=Math.max(1,window.devicePixelRatio||1);
+let tiles=[]; // 当前可命中方块
+
+function resize(){
+  const r=box.getBoundingClientRect();
+  cv.width=Math.round(r.width*DPR); cv.height=Math.round(r.height*DPR);
+  ctx.setTransform(DPR,0,0,DPR,0,0);
+  render();
+}
+function curDimVal(node){ return node.dims[state.dim]; }
+
+function roundRect(x,y,w,h,r){ctx.beginPath();r=Math.min(r,w/2,h/2);ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
+
+function drawTile(t,node,label,small){
+  const v=curDimVal(node);
+  ctx.fillStyle=colorFor(v);
+  roundRect(t.x+1,t.y+1,t.w-2,t.h-2,4);ctx.fill();
+  ctx.lineWidth=1;ctx.strokeStyle='#0f111733';ctx.stroke();
+  if(t.w>54&&t.h>26){
+    ctx.fillStyle='#0c0f16';ctx.font=`${small?11:12}px sans-serif`;ctx.textBaseline='top';
+    const name=label;
+    let txt=name; const maxw=t.w-12;
+    while(ctx.measureText(txt).width>maxw&&txt.length>1)txt=txt.slice(0,-1);
+    if(txt!==name&&txt.length>1)txt=txt.slice(0,-1)+'…';
+    ctx.globalAlpha=.92;ctx.fillText(txt,t.x+6,t.y+5);
+    ctx.font='bold 12px sans-serif';ctx.fillText(String(v),t.x+6,t.y+5+(small?14:15));
+    ctx.globalAlpha=1;
+  }
+}
+
+const W=()=>cv.width/DPR, H=()=>cv.height/DPR;
+function render(){
+  ctx.clearRect(0,0,W(),H());
+  tiles=[];
+  const pad=8;
+  if(!state.drill){
+    // 概览:大类 -> 中类 两层
+    const daRects=squarify(TREE.map(d=>({value:d.jobs,ref:d})),pad,pad,W()-2*pad,H()-2*pad);
+    daRects.forEach(dr=>{
+      const da=dr.ref;
+      // 大类区域底色 + 标题
+      ctx.fillStyle='#11141c';roundRect(dr.x+2,dr.y+2,dr.w-4,dr.h-4,6);ctx.fill();
+      const labelH=dr.h>60?18:0;
+      const ir={x:dr.x+5,y:dr.y+4+labelH,w:dr.w-10,h:dr.h-8-labelH};
+      const zr=squarify(da.children.map(z=>({value:z.jobs,ref:z})),ir.x,ir.y,ir.w,ir.h);
+      zr.forEach(t=>{drawTile(t,t.ref,t.ref.name,true);tiles.push({rect:t,node:t.ref,kind:'zhong'});});
+      if(labelH){ctx.fillStyle='#aab2c6';ctx.font='bold 12px sans-serif';ctx.textBaseline='top';
+        ctx.fillText(da.name+'  ·  '+fmtJobs(da.jobs),dr.x+8,dr.y+5);}
+      ctx.lineWidth=2;ctx.strokeStyle='#2a3144';roundRect(dr.x+2,dr.y+2,dr.w-4,dr.h-4,6);ctx.stroke();
+    });
+  }else{
+    const zh=TREE.find(d=>d.name===state.drill.da).children.find(z=>z.name===state.drill.zhong);
+    const r=squarify(zh.children.map(l=>({value:l.jobs,ref:l})),pad,pad,W()-2*pad,H()-2*pad);
+    r.forEach(t=>{drawTile(t,t.ref,t.ref.name,false);tiles.push({rect:t,node:t.ref,kind:'leaf'});});
+  }
+  drawLegend();drawStats();drawCrumb();
+}
+
+/* ---------- 图例 / 统计 / 面包屑 ---------- */
+function curDimDef(){return DIMS.find(d=>d.key===state.dim);}
+function drawLegend(){
+  const d=curDimDef();
+  document.getElementById('legLo').textContent=d.label+' 低';
+  document.getElementById('legHi').textContent='高';
+  document.getElementById('legNote').textContent=d.note?('· '+d.note):'';
+}
+function fmtJobs(n){ return n>=1e8?(n/1e8).toFixed(2)+'亿':(Math.round(n/1e4))+'万'; }
+function curLeaves(){
+  if(!state.drill)return ALL_LEAVES;
+  return TREE.find(d=>d.name===state.drill.da).children.find(z=>z.name===state.drill.zhong).children;
+}
+function drawStats(){
+  const leaves=curLeaves();
+  const tot=leaves.reduce((s,l)=>s+l.jobs,0);
+  const avg=leaves.reduce((s,l)=>s+l.dims.overall*l.jobs,0)/(tot||1);
+  document.getElementById('sJobs').textContent=fmtJobs(tot);
+  document.getElementById('sAvg').textContent=avg.toFixed(1);
+  // 直方图
+  const bins=[0,0,0,0,0],labels=['0-20','20-40','40-60','60-80','80-100'];
+  leaves.forEach(l=>{let b=Math.min(4,Math.floor(l.dims.overall/20));bins[b]+=l.jobs;});
+  const mx=Math.max(...bins)||1;
+  const hw=document.getElementById('histwrap');hw.innerHTML='';
+  bins.forEach((v,i)=>{
+    const cell=document.createElement('div');cell.className='hbar';
+    const bar=document.createElement('div');bar.className='b';
+    bar.style.height=(v/mx*100)+'%';bar.style.background=colorFor(i*20+10);
+    const lab=document.createElement('div');lab.className='l';lab.textContent=labels[i];
+    cell.appendChild(bar);cell.appendChild(lab);hw.appendChild(cell);
+  });
+}
+function drawCrumb(){
+  const c=document.getElementById('crumb');
+  if(!state.drill){c.innerHTML='<b>全部职业(概览:大类 › 中类)</b> &nbsp;—&nbsp; 点击任意方块进入具体职业';}
+  else{c.innerHTML='<a id="root">全部职业</a> › <span>'+state.drill.da+'</span> › <b>'+state.drill.zhong+'</b> &nbsp;(具体职业)';
+    document.getElementById('root').onclick=()=>{state.drill=null;render();};}
+}
+
+/* ---------- 维度按钮 ---------- */
+const tg=document.getElementById('toggles');
+DIMS.forEach(d=>{
+  const b=document.createElement('button');b.textContent=d.label;
+  if(d.main)b.classList.add('active');
+  b.onclick=()=>{state.dim=d.key;[...tg.children].forEach(x=>x.classList.remove('active'));b.classList.add('active');render();};
+  tg.appendChild(b);
+});
+
+/* ---------- 命中 / 悬停 / 点击 ---------- */
+const tip=document.getElementById('tip');
+function hit(px,py){
+  for(const t of tiles){const r=t.rect;if(px>=r.x&&px<=r.x+r.w&&py>=r.y&&py<=r.y+r.h)return t;}
+  return null;
+}
+cv.addEventListener('mousemove',e=>{
+  const rect=cv.getBoundingClientRect();
+  const t=hit(e.clientX-rect.left,e.clientY-rect.top);
+  if(!t){tip.style.display='none';cv.style.cursor='default';return;}
+  const n=t.node,d=n.dims;
+  cv.style.cursor=t.kind==='zhong'?'pointer':'default';
+  let html='<div class="t">'+n.name+(n.S?'<span class="tag">数字职业 S</span>':'')+'</div>';
+  html+='<div class="big" style="color:'+colorFor(d.overall)+'">综合冲击 <b style="font-size:16px">'+d.overall+'</b> / 100</div>';
+  html+='<div class="grid">'+
+    '<span>任务自动化</span><b>'+d.automation+'</b>'+
+    '<span>AI 增强</span><b>'+d.augmentation+'</b>'+
+    '<span>数字化程度</span><b>'+d.digital+'</b>'+
+    '<span>护城河(抗冲击)</span><b>'+d.moat+'</b>'+
+    '<span>落地速度</span><b>'+d.adoption+'</b>'+
+    '<span>就业人数</span><b>'+fmtJobs(n.jobs)+'</b>'+
+    '<span>模型分歧度</span><b>±'+(n.std||0)+'</b>'+
+  '</div>';
+  if(n.rationale)html+='<div class="r">「'+n.rationale+'」</div>';
+  if(t.kind==='zhong')html+='<div class="hint">▸ 点击查看该中类下 '+n.children.length+' 个具体职业</div>';
+  else html+='<div class="hint" style="color:#8a93a8">细类样例 · 多模型集成分</div>';
+  tip.innerHTML=html;tip.style.display='block';
+  let tx=e.clientX+16,ty=e.clientY+16;
+  const tw=tip.offsetWidth,th=tip.offsetHeight;
+  if(tx+tw>window.innerWidth-10)tx=e.clientX-tw-16;
+  if(ty+th>window.innerHeight-10)ty=window.innerHeight-th-10;
+  tip.style.left=tx+'px';tip.style.top=ty+'px';
+});
+cv.addEventListener('mouseleave',()=>{tip.style.display='none';});
+cv.addEventListener('click',e=>{
+  const rect=cv.getBoundingClientRect();
+  const t=hit(e.clientX-rect.left,e.clientY-rect.top);
+  if(t&&t.kind==='zhong'){state.drill={da:t.node.da,zhong:t.node.name};tip.style.display='none';render();}
+});
+
+window.addEventListener('resize',resize);
+resize();
+</script>
+</body>
+</html>
