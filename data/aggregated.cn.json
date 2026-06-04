@@ -66,11 +66,38 @@
    "title": "中国共产党机关和基层组织负责人",
    "parent": "1",
    "da_title": "党的机关、国家机关、群众团体和社会组织、企事业单位负责人",
+   "english": "Leaders of CPC Organs and Grassroots Organizations",
    "digital": false,
    "green": false,
    "n_xi": 2,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "1-01-00-01",
@@ -152,11 +179,38 @@
    "title": "国家机关负责人",
    "parent": "1",
    "da_title": "党的机关、国家机关、群众团体和社会组织、企事业单位负责人",
+   "english": "Leaders of State Organs",
    "digital": false,
    "green": false,
    "n_xi": 6,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "1-02-01-00",
@@ -262,11 +316,38 @@
    "title": "民主党派和工商联负责人",
    "parent": "1",
    "da_title": "党的机关、国家机关、群众团体和社会组织、企事业单位负责人",
+   "english": "Heads of Democratic Parties and Federations of Industry and Commerce",
    "digital": false,
    "green": false,
    "n_xi": 2,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "1-03-00-01",
@@ -348,11 +429,38 @@
    "title": "人民团体和群众团体、社会组织及其他成员组织负责人",
    "parent": "1",
    "da_title": "党的机关、国家机关、群众团体和社会组织、企事业单位负责人",
+   "english": null,
    "digital": false,
    "green": false,
    "n_xi": 9,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "1-04-01-01",
@@ -476,11 +584,38 @@
    "title": "基层群众性自治组织负责人",
    "parent": "1",
    "da_title": "党的机关、国家机关、群众团体和社会组织、企事业单位负责人",
+   "english": "Heads of Community-level Self-governing Organizations",
    "digital": false,
    "green": false,
    "n_xi": 2,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "1-05-00-01",
@@ -562,11 +697,38 @@
    "title": "企事业单位负责人",
    "parent": "1",
    "da_title": "党的机关、国家机关、群众团体和社会组织、企事业单位负责人",
+   "english": "Heads of Enterprises and Public Institutions",
    "digital": false,
    "green": false,
    "n_xi": 4,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "1-06-01-01",
@@ -660,11 +822,38 @@
    "title": "科学研究人员",
    "parent": "2",
    "da_title": "专业技术人员",
+   "english": "Scientific Researchers",
    "digital": false,
    "green": false,
    "n_xi": 18,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "2-01-01-00",
@@ -842,11 +1031,38 @@
    "title": "工程技术人员",
    "parent": "2",
    "da_title": "专业技术人员",
+   "english": "Engineering Technicians",
    "digital": true,
    "green": true,
    "n_xi": 217,
    "n_digital": 49,
    "n_green": 57,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)分类体系表",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "2-02-01-01",
@@ -2218,11 +2434,38 @@
    "title": "农业技术人员",
    "parent": "2",
    "da_title": "专业技术人员",
+   "english": "Agricultural Technicians",
    "digital": false,
    "green": true,
    "n_xi": 13,
    "n_digital": 0,
    "n_green": 3,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "2-03-01-00",
@@ -2370,11 +2613,38 @@
    "title": "飞机和船舶技术人员",
    "parent": "2",
    "da_title": "专业技术人员",
+   "english": "Aircraft and Ship Technical Personnel",
    "digital": false,
    "green": false,
    "n_xi": 7,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "2-04-01-01",
@@ -2486,11 +2756,38 @@
    "title": "卫生专业技术人员",
    "parent": "2",
    "da_title": "专业技术人员",
+   "english": "Health Professionals",
    "digital": false,
    "green": false,
    "n_xi": 82,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "2-05-01-01",
@@ -3052,11 +3349,38 @@
    "title": "经济和金融专业人员",
    "parent": "2",
    "da_title": "专业技术人员",
+   "english": "Economic and Financial Professionals",
    "digital": true,
    "green": true,
    "n_xi": 62,
    "n_digital": 2,
    "n_green": 1,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "2-06-01-01",
@@ -3498,11 +3822,38 @@
    "title": "监察、法律、社会和宗教专业人员",
    "parent": "2",
    "da_title": "专业技术人员",
+   "english": "Supervision, Legal, Social and Religious Professionals",
    "digital": false,
    "green": false,
    "n_xi": 14,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "2-07-01-00",
@@ -3656,11 +4007,38 @@
    "title": "教学人员",
    "parent": "2",
    "da_title": "专业技术人员",
+   "english": "Teaching Professionals",
    "digital": false,
    "green": false,
    "n_xi": 8,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "2-08-01-01",
@@ -3778,11 +4156,38 @@
    "title": "文学艺术、体育专业人员",
    "parent": "2",
    "da_title": "专业技术人员",
+   "english": "Literary, Artistic and Sports Professionals",
    "digital": true,
    "green": false,
    "n_xi": 51,
    "n_digital": 1,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "2-09-01-01",
@@ -4158,11 +4563,38 @@
    "title": "新闻出版、文化专业人员",
    "parent": "2",
    "da_title": "专业技术人员",
+   "english": "News Publishing and Cultural Professionals",
    "digital": true,
    "green": false,
    "n_xi": 20,
    "n_digital": 2,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "2-10-01-01",
@@ -4352,11 +4784,38 @@
    "title": "其他专业技术人员",
    "parent": "2",
    "da_title": "专业技术人员",
+   "english": "Other Professional Technical Personnel",
    "digital": false,
    "green": false,
    "n_xi": 0,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [],
    "employment": 3000000,
    "employment_basis": "provisional",
@@ -4425,11 +4884,38 @@
    "title": "行政办事及辅助人员",
    "parent": "3",
    "da_title": "办事人员和有关人员",
+   "english": "Administrative and Auxiliary Personnel",
    "digital": false,
    "green": false,
    "n_xi": 22,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "3-01-01-01",
@@ -4631,11 +5117,38 @@
    "title": "安全和消防及辅助人员",
    "parent": "3",
    "da_title": "办事人员和有关人员",
+   "english": "Safety, Firefighting and Auxiliary Personnel",
    "digital": false,
    "green": true,
    "n_xi": 11,
    "n_digital": 0,
    "n_green": 2,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "3-02-01-00",
@@ -4771,11 +5284,38 @@
    "title": "仲裁、调解及相关法律事务辅助人员",
    "parent": "3",
    "da_title": "办事人员和有关人员",
+   "english": "Arbitration, Mediation and Related Legal Auxiliary Personnel",
    "digital": false,
    "green": false,
    "n_xi": 3,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "3-03-01-01",
@@ -4863,11 +5403,38 @@
    "title": "其他办事人员和有关人员",
    "parent": "3",
    "da_title": "办事人员和有关人员",
+   "english": "Other Clerical and Related Personnel",
    "digital": false,
    "green": false,
    "n_xi": 0,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [],
    "employment": 3000000,
    "employment_basis": "provisional",
@@ -4936,11 +5503,38 @@
    "title": "批发与零售服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Wholesale and Retail Service Personnel",
    "digital": true,
    "green": true,
    "n_xi": 17,
    "n_digital": 2,
    "n_green": 1,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "4-01-01-00",
@@ -5112,11 +5706,38 @@
    "title": "交通运输、仓储物流和邮政业服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Transportation, Warehousing, Logistics and Postal Service Personnel",
    "digital": true,
    "green": true,
    "n_xi": 47,
    "n_digital": 1,
    "n_green": 4,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "4-02-01-01",
@@ -5468,11 +6089,38 @@
    "title": "住宿和餐饮服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Accommodation and Catering Service Personnel",
    "digital": false,
    "green": false,
    "n_xi": 16,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "4-03-01-01",
@@ -5638,11 +6286,38 @@
    "title": "信息传输、软件和信息技术服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Information Transmission, Software and IT Service Personnel",
    "digital": true,
    "green": false,
    "n_xi": 26,
    "n_digital": 19,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "4-04-01-01",
@@ -5868,11 +6543,38 @@
    "title": "金融服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Financial Service Personnel",
    "digital": false,
    "green": false,
    "n_xi": 13,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "4-05-01-01",
@@ -6020,11 +6722,38 @@
    "title": "房地产服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Real Estate Service Personnel",
    "digital": true,
    "green": false,
    "n_xi": 7,
    "n_digital": 1,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "4-06-01-01",
@@ -6136,11 +6865,38 @@
    "title": "租赁和商务服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Leasing and Business Service Personnel",
    "digital": true,
    "green": false,
    "n_xi": 32,
    "n_digital": 1,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "4-07-01-01",
@@ -6402,11 +7158,38 @@
    "title": "技术辅助服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Technical Auxiliary Service Personnel",
    "digital": true,
    "green": true,
    "n_xi": 64,
    "n_digital": 8,
    "n_green": 15,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "4-08-01-01",
@@ -6860,11 +7643,38 @@
    "title": "水利、环境和公共设施管理服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Water Conservancy, Environment and Public Facility Management Service Personnel",
    "digital": true,
    "green": true,
    "n_xi": 30,
    "n_digital": 1,
    "n_green": 15,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "4-09-01-01",
@@ -7114,11 +7924,38 @@
    "title": "居民服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Resident Service Personnel",
    "digital": false,
    "green": false,
    "n_xi": 30,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "4-10-01-01",
@@ -7368,11 +8205,38 @@
    "title": "电力、燃气及水供应服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Electricity, Gas and Water Supply Service Personnel",
    "digital": false,
    "green": true,
    "n_xi": 6,
    "n_digital": 0,
    "n_green": 1,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "4-11-01-01",
@@ -7478,11 +8342,38 @@
    "title": "修理及制作服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Repair and Production Service Personnel",
    "digital": true,
    "green": true,
    "n_xi": 17,
    "n_digital": 1,
    "n_green": 1,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "4-12-01-01",
@@ -7654,11 +8545,38 @@
    "title": "文化和教育服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Cultural and Educational Service Personnel",
    "digital": true,
    "green": false,
    "n_xi": 23,
    "n_digital": 2,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "4-13-01-01",
@@ -7866,11 +8784,38 @@
    "title": "健康、体育和休闲服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Health, Sports and Leisure Service Personnel",
    "digital": true,
    "green": false,
    "n_xi": 28,
    "n_digital": 1,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://rsj.wuhai.gov.cn/职业分类大典2022"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    }
+   ],
    "细类": [
     {
      "code": "4-14-01-01",
@@ -8108,11 +9053,38 @@
    "title": "其他社会生产服务和生活服务人员",
    "parent": "4",
    "da_title": "社会生产服务和生活服务人员",
+   "english": "Other Social Production and Life Service Personnel",
    "digital": false,
    "green": false,
    "n_xi": 0,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [],
    "employment": 5000000,
    "employment_basis": "provisional",
@@ -8181,11 +9153,38 @@
    "title": "农业生产人员",
    "parent": "5",
    "da_title": "农、林、牧、渔业生产及辅助人员",
+   "english": "Agricultural Production Personnel",
    "digital": false,
    "green": false,
    "n_xi": 7,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "5-01-01-01",
@@ -8297,11 +9296,38 @@
    "title": "林业生产人员",
    "parent": "5",
    "da_title": "农、林、牧、渔业生产及辅助人员",
+   "english": "Forestry Production Personnel",
    "digital": false,
    "green": true,
    "n_xi": 7,
    "n_digital": 0,
    "n_green": 4,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "5-02-01-00",
@@ -8413,11 +9439,38 @@
    "title": "畜牧业生产人员",
    "parent": "5",
    "da_title": "农、林、牧、渔业生产及辅助人员",
+   "english": "Animal Husbandry Production Personnel",
    "digital": false,
    "green": false,
    "n_xi": 7,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "5-03-01-01",
@@ -8529,11 +9582,38 @@
    "title": "渔业生产人员",
    "parent": "5",
    "da_title": "农、林、牧、渔业生产及辅助人员",
+   "english": "Fishery Production Personnel",
    "digital": false,
    "green": false,
    "n_xi": 8,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "5-04-01-01",
@@ -8651,11 +9731,38 @@
    "title": "农、林、牧、渔业生产辅助人员",
    "parent": "5",
    "da_title": "农、林、牧、渔业生产及辅助人员",
+   "english": null,
    "digital": true,
    "green": true,
    "n_xi": 25,
    "n_digital": 1,
    "n_green": 10,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "5-05-01-01",
@@ -8875,11 +9982,38 @@
    "title": "其他农、林、牧、渔业生产及辅助人员",
    "parent": "5",
    "da_title": "农、林、牧、渔业生产及辅助人员",
+   "english": null,
    "digital": false,
    "green": false,
    "n_xi": 0,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [],
    "employment": 3000000,
    "employment_basis": "provisional",
@@ -8948,11 +10082,38 @@
    "title": "农副产品加工人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Agricultural and Sideline Products Processing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 15,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "《中华人民共和国职业分类大典(2022年版)》公示稿",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/zcfg/SYzhengqiuyijian/202207/t20220714_457833.html"
+    },
+    {
+     "name": "人社部2022年版大典正式发布",
+     "url": "https://www.ndrc.gov.cn/fggz/jyysr/jysrsbxf/202210/t20221031_1340470.html"
+    },
+    {
+     "name": "大典体系分类表下载",
+     "url": "https://cccac.org.cn/article?id=42"
+    },
+    {
+     "name": "数字职业97个完整名单",
+     "url": "https://www.gov.cn/zhengce/zhengceku/202210/31/content_5723306.htm"
+    }
+   ],
    "细类": [
     {
      "code": "6-01-01-01",
@@ -9112,11 +10273,26 @@
    "title": "食品、饮料生产加工人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Food and Beverage Production and Processing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 29,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-02-01-01",
@@ -9360,11 +10536,26 @@
    "title": "烟草及其制品加工人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Tobacco and Tobacco Products Processing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 6,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-03-01-01",
@@ -9470,11 +10661,26 @@
    "title": "纺织、针织、印染人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Textile, Knitting and Dyeing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 22,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-04-01-01",
@@ -9676,11 +10882,26 @@
    "title": "纺织品、服装和皮革、毛皮制品加工制作人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": null,
    "digital": false,
    "green": false,
    "n_xi": 11,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-05-01-01",
@@ -9816,11 +11037,26 @@
    "title": "木材加工、家具与木制品制作人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Wood Processing, Furniture and Wooden Products Manufacturing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 11,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-06-01-01",
@@ -9956,11 +11192,26 @@
    "title": "纸及纸制品生产加工人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Paper and Paper Products Production and Processing Personnel",
    "digital": false,
    "green": true,
    "n_xi": 6,
    "n_digital": 0,
    "n_green": 1,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-07-01-01",
@@ -10066,11 +11317,26 @@
    "title": "印刷和记录媒介复制人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Printing and Recorded Media Reproduction Personnel",
    "digital": false,
    "green": false,
    "n_xi": 4,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-08-01-01",
@@ -10164,11 +11430,30 @@
    "title": "文教、工美、体育和娱乐用品制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": null,
    "digital": false,
    "green": false,
    "n_xi": 39,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-09-01-01",
@@ -10472,11 +11757,26 @@
    "title": "石油加工和炼焦、煤化工生产人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Petroleum Processing, Coking and Coal Chemical Production Personnel",
    "digital": false,
    "green": true,
    "n_xi": 19,
    "n_digital": 0,
    "n_green": 2,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-10-01-01",
@@ -10660,11 +11960,26 @@
    "title": "化学原料和化学制品制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Chemical Raw Materials and Chemical Products Manufacturing Personnel",
    "digital": true,
    "green": false,
    "n_xi": 77,
    "n_digital": 1,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-11-01-01",
@@ -11196,11 +12511,26 @@
    "title": "医药制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Pharmaceutical Manufacturing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 9,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-12-01-00",
@@ -11324,11 +12654,26 @@
    "title": "化学纤维制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Chemical Fiber Manufacturing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 4,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-13-01-01",
@@ -11422,11 +12767,26 @@
    "title": "橡胶和塑料制品制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Rubber and Plastic Products Manufacturing Personnel",
    "digital": false,
    "green": true,
    "n_xi": 3,
    "n_digital": 0,
    "n_green": 1,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-14-01-01",
@@ -11514,11 +12874,30 @@
    "title": "非金属矿物制品制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Non-metallic Mineral Products Manufacturing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 43,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-15-01-01",
@@ -11846,11 +13225,30 @@
    "title": "采矿人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Mining Personnel",
    "digital": false,
    "green": false,
    "n_xi": 33,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-16-01-01",
@@ -12118,11 +13516,26 @@
    "title": "金属冶炼和压延加工人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Metal Smelting and Rolling Processing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 53,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-17-01-01",
@@ -12510,11 +13923,26 @@
    "title": "机械制造基础加工人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Basic Mechanical Manufacturing Processing Personnel",
    "digital": true,
    "green": true,
    "n_xi": 29,
    "n_digital": 1,
    "n_green": 1,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-18-01-01",
@@ -12758,11 +14186,30 @@
    "title": "金属制品制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Metal Products Manufacturing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 8,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-19-01-01",
@@ -12880,11 +14327,26 @@
    "title": "通用设备制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "General Equipment Manufacturing Personnel",
    "digital": false,
    "green": true,
    "n_xi": 36,
    "n_digital": 0,
    "n_green": 1,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-20-01-01",
@@ -13170,11 +14632,26 @@
    "title": "专用设备制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Specialized Equipment Manufacturing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 14,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-21-01-01",
@@ -13328,11 +14805,26 @@
    "title": "汽车制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Automobile Manufacturing Personnel",
    "digital": false,
    "green": true,
    "n_xi": 5,
    "n_digital": 0,
    "n_green": 2,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-22-01-01",
@@ -13432,11 +14924,26 @@
    "title": "铁路、船舶、航空设备制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Railway, Ship and Aviation Equipment Manufacturing Personnel",
    "digital": false,
    "green": true,
    "n_xi": 28,
    "n_digital": 0,
    "n_green": 1,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-23-01-01",
@@ -13674,11 +15181,26 @@
    "title": "电气机械和器材制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Electrical Machinery and Equipment Manufacturing Personnel",
    "digital": false,
    "green": true,
    "n_xi": 19,
    "n_digital": 0,
    "n_green": 1,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-24-01-00",
@@ -13862,11 +15384,30 @@
    "title": "计算机、通信和其他电子设备制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Computer, Communication and Other Electronic Equipment Manufacturing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 33,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-25-01-01",
@@ -14134,11 +15675,30 @@
    "title": "仪器仪表制造人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Instrument and Meter Manufacturing Personnel",
    "digital": false,
    "green": false,
    "n_xi": 2,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-26-01-01",
@@ -14220,11 +15780,26 @@
    "title": "再生资源综合利用人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Recycled Resource Comprehensive Utilization Personnel",
    "digital": false,
    "green": true,
    "n_xi": 1,
    "n_digital": 0,
    "n_green": 1,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-27-01-00",
@@ -14300,11 +15875,26 @@
    "title": "电力、热力、气体、水生产和输配人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Electricity, Heat, Gas and Water Production and Distribution Personnel",
    "digital": false,
    "green": true,
    "n_xi": 27,
    "n_digital": 0,
    "n_green": 9,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-28-01-01",
@@ -14536,11 +16126,26 @@
    "title": "建筑施工人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Building Construction Personnel",
    "digital": false,
    "green": false,
    "n_xi": 38,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-29-01-01",
@@ -14838,11 +16443,26 @@
    "title": "运输设备和通用工程机械操作人员及有关人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": null,
    "digital": false,
    "green": false,
    "n_xi": 20,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-30-01-00",
@@ -15032,11 +16652,26 @@
    "title": "生产辅助人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Production Auxiliary Personnel",
    "digital": true,
    "green": false,
    "n_xi": 27,
    "n_digital": 3,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "6-31-01-01",
@@ -15268,11 +16903,26 @@
    "title": "其他生产制造及有关人员",
    "parent": "6",
    "da_title": "生产制造及有关人员",
+   "english": "Other Manufacturing and Related Personnel",
    "digital": false,
    "green": false,
    "n_xi": 0,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [],
    "employment": 3000000,
    "employment_basis": "provisional",
@@ -15341,11 +16991,26 @@
    "title": "军官(警官)",
    "parent": "7",
    "da_title": "军队人员",
+   "english": "Military Officers (Police Officers)",
    "digital": false,
    "green": false,
    "n_xi": 1,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "7-01-00-00",
@@ -15408,11 +17073,26 @@
    "title": "军士(警士)",
    "parent": "7",
    "da_title": "军队人员",
+   "english": "Non-commissioned Officers (Police Sergeants)",
    "digital": false,
    "green": false,
    "n_xi": 1,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "7-02-00-00",
@@ -15475,11 +17155,26 @@
    "title": "义务兵",
    "parent": "7",
    "da_title": "军队人员",
+   "english": "Conscripts",
    "digital": false,
    "green": false,
    "n_xi": 1,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "7-03-00-00",
@@ -15542,11 +17237,26 @@
    "title": "文职人员",
    "parent": "7",
    "da_title": "军队人员",
+   "english": "Civilian Personnel",
    "digital": false,
    "green": false,
    "n_xi": 1,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "7-04-00-00",
@@ -15609,11 +17319,26 @@
    "title": "不便分类的其他从业人员",
    "parent": "8",
    "da_title": "不便分类的其他从业人员",
+   "english": "Other Unclassified Workers",
    "digital": false,
    "green": false,
    "n_xi": 1,
    "n_digital": 0,
    "n_green": 0,
+   "official_sources": [
+    {
+     "name": "《中华人民共和国职业分类大典（2022年版）》",
+     "url": "https://www.mohrss.gov.cn/xxgk2020/fdzdgknr/rcrs/202209/t20220928_491041.html"
+    },
+    {
+     "name": "中华人民共和国职业分类大典(2022年版)",
+     "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf"
+    },
+    {
+     "name": "职业分类大典(2022年版)",
+     "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/rencairenshi/zcwj/RCDWJSzonghe/202211/t20221103_489285.html"
+    }
+   ],
    "细类": [
     {
      "code": "8-00-00-00",

@@ -45,8 +45,8 @@ def main():
 
     out_groups, qa = [], []
     for code, g in groups.items():
-        rec = {k: g.get(k) for k in ('code', 'title', 'parent', 'da_title',
-                                     'digital', 'green', 'n_xi', 'n_digital', 'n_green')}
+        rec = {k: g.get(k) for k in ('code', 'title', 'parent', 'da_title', 'english',
+                                     'digital', 'green', 'n_xi', 'n_digital', 'n_green', 'official_sources')}
         rec['细类'] = g.get('细类', [])
         flags = []
 

@@ -283,7 +283,7 @@ function updateCrumb(){const c=document.getElementById('crumb');
 
 const detail=document.getElementById('detail');
 function openDetail(g){document.getElementById('dName').innerHTML=g.title+(g.digital?' <span class="tag">含数字职业 S</span>':'')+(g.green?' <span class="tag green">含绿色职业 L</span>':'');
-  document.getElementById('dMeta').textContent=g.da+' · 编码 '+g.code+' · '+(g.n_xi||0)+' 个细类';
+  document.getElementById('dMeta').textContent=g.da+' · '+g.code+(g.english?' · '+g.english:'')+' · '+(g.n_xi||0)+' 个细类';
   document.getElementById('dDims').innerHTML=DIMS.map(d=>'<div class="dimrow"><span>'+d.label+'</span><b>'+(g.dims[d.key]!=null?g.dims[d.key]:'—')+(g.dims_std&&g.dims_std[d.key]?' <span style="color:var(--soft)">±'+g.dims_std[d.key]+'</span>':'')+'</b></div>').join('');
   const prov=(g.flags||[]).some(f=>f.indexOf('provisional')>=0||f.indexOf('missing')>=0);
   document.getElementById('dKv').innerHTML='<span>就业人数</span><b>'+(g.employment?fmtJobs(g.employment):'—')+(prov?' <span class="tag warn">provisional</span>':'')+'</b><span>年薪中位</span><b>'+(g.pay?('¥'+g.pay.toLocaleString()):'—')+'</b><span>学历</span><b>'+(g.education||'—')+'</b><span>模型数</span><b>'+(g.n_models||0)+'</b>';
@@ -291,7 +291,8 @@ function openDetail(g){document.getElementById('dName').innerHTML=g.title+(g.dig
   document.getElementById('dModels').innerHTML=MODELS.map(m=>{const v=g.by_model&&g.by_model[m]?g.by_model[m].overall:null;return v==null?'':'<span class="chip" title="'+((g.rationales&&g.rationales[m])||'').replace(/"/g,'')+'"><i style="background:'+rgb(impactRGB(v))+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')||'<span style="color:var(--soft);font-size:12px">暂无打分</span>';
   const rat=g.rationales?Object.values(g.rationales)[0]:'';document.getElementById('dRat').textContent=rat?'「'+rat+'」':'';
   const es=(g.employment_sources||[]).map(s=>s.model+':'+(s.value?fmtJobs(s.value):'—')+(s.source?'('+s.source+')':'')).join(' · ');
-  document.getElementById('dSrc').innerHTML='来源:就业 '+(es||'—')+(g.flags&&g.flags.length?'<br>标记:'+g.flags.join('、'):'');
+  const os=(g.official_sources||[]).slice(0,4).map(s=>s.url?('<a href="'+s.url+'" target="_blank" style="color:var(--accent)">'+(s.name||'来源')+'</a>'):(s.name||'')).filter(Boolean).join(' · ');
+  document.getElementById('dSrc').innerHTML=(os?'官方来源:'+os+'<br>':'')+'就业来源:'+(es||'—')+(g.flags&&g.flags.length?'<br>标记:'+g.flags.join('、'):'');
   detail.classList.add('open');drawRadar(document.getElementById('dradar'),DIMKEYS.map(k=>g.dims[k]||0));}
 function closeDetail(){detail.classList.remove('open');}
 document.getElementById('detailX').onclick=closeDetail;

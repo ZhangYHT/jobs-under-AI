@@ -1,0 +1,670 @@
+[
+ {
+  "code": "1-01",
+  "title_official": "中国共产党机关和基层组织负责人",
+  "title_match": true,
+  "english": "Responsible Person of CPC Organs and Grassroots Party Organizations",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "1-02",
+  "title_official": "国家机关负责人",
+  "title_match": true,
+  "english": "Responsible Person of State Organs",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "1-03",
+  "title_official": "民主党派和工商联负责人",
+  "title_match": true,
+  "english": "Responsible Person of Democratic Parties and All-China Federation of Industry and Commerce",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "1-04",
+  "title_official": "人民团体和群众团体、社会组织及其他成员组织负责人",
+  "title_match": true,
+  "english": "Responsible Person of People's Groups, Mass Organizations, Social Organizations and Other Member Organizations",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "1-05",
+  "title_official": "基层群众性自治组织负责人",
+  "title_match": true,
+  "english": "Responsible Person of Grassroots Self-governing Organizations",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "1-06",
+  "title_official": "企事业单位负责人",
+  "title_match": true,
+  "english": "Responsible Person of Enterprises and Institutions",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "2-01",
+  "title_official": "科学研究人员",
+  "title_match": true,
+  "english": "Scientific Research Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "2-02",
+  "title_official": "工程技术人员",
+  "title_match": true,
+  "english": "Engineering Technicians",
+  "digital_xilei": [
+   "2-02-30-01 人工智能工程技术人员"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含S数字职业"
+ },
+ {
+  "code": "2-03",
+  "title_official": "农业技术人员",
+  "title_match": true,
+  "english": "Agricultural Technicians",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含L绿色职业"
+ },
+ {
+  "code": "2-04",
+  "title_official": "飞机和船舶技术人员",
+  "title_match": true,
+  "english": "Aircraft and Ship Technicians",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "2-05",
+  "title_official": "卫生专业技术人员",
+  "title_match": true,
+  "english": "Health Professionals",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "2-06",
+  "title_official": "经济和金融专业人员",
+  "title_match": true,
+  "english": "Economics and Finance Professionals",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含S数字职业、含L绿色职业"
+ },
+ {
+  "code": "2-07",
+  "title_official": "监察、法律、社会和宗教专业人员",
+  "title_match": true,
+  "english": "Supervision, Legal, Social and Religious Professionals",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "2-08",
+  "title_official": "教学人员",
+  "title_match": true,
+  "english": "Teaching Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "2-09",
+  "title_official": "文学艺术、体育专业人员",
+  "title_match": true,
+  "english": "Literary, Artistic and Sports Professionals",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含S数字职业"
+ },
+ {
+  "code": "2-10",
+  "title_official": "新闻出版、文化专业人员",
+  "title_match": true,
+  "english": "Press, Publishing and Culture Professionals",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含S数字职业"
+ },
+ {
+  "code": "2-99",
+  "title_official": "其他专业技术人员",
+  "title_match": true,
+  "english": "Other Professional and Technical Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "3-01",
+  "title_official": "行政办事及辅助人员",
+  "title_match": true,
+  "english": "Administrative Staff and Assistants",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "3-02",
+  "title_official": "安全和消防及辅助人员",
+  "title_match": true,
+  "english": "Safety, Fire Protection and Assistants",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含L绿色职业"
+ },
+ {
+  "code": "3-03",
+  "title_official": "仲裁、调解及相关法律事务辅助人员",
+  "title_match": true,
+  "english": "Arbitration, Mediation and Legal Affairs Assistants",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "3-99",
+  "title_official": "其他办事人员和有关人员",
+  "title_match": true,
+  "english": "Other Clerical and Related Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "4-01",
+  "title_official": "批发与零售服务人员",
+  "title_match": true,
+  "english": "Wholesale and Retail Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含S数字职业、含L绿色职业"
+ },
+ {
+  "code": "4-02",
+  "title_official": "交通运输、仓储物流和邮政业服务人员",
+  "title_match": true,
+  "english": "Transportation, Warehousing, Logistics and Postal Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含S数字职业、含L绿色职业"
+ },
+ {
+  "code": "4-03",
+  "title_official": "住宿和餐饮服务人员",
+  "title_match": true,
+  "english": "Accommodation and Food Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "4-04",
+  "title_official": "信息传输、软件和信息技术服务人员",
+  "title_match": true,
+  "english": "Information Transmission, Software and IT Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含S数字职业"
+ },
+ {
+  "code": "4-05",
+  "title_official": "金融服务人员",
+  "title_match": true,
+  "english": "Financial Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "4-06",
+  "title_official": "房地产服务人员",
+  "title_match": true,
+  "english": "Real Estate Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含S数字职业"
+ },
+ {
+  "code": "4-07",
+  "title_official": "租赁和商务服务人员",
+  "title_match": true,
+  "english": "Leasing and Business Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含S数字职业"
+ },
+ {
+  "code": "4-08",
+  "title_official": "技术辅助服务人员",
+  "title_match": true,
+  "english": "Technical Support Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含S数字职业、含L绿色职业"
+ },
+ {
+  "code": "4-09",
+  "title_official": "水利、环境和公共设施管理服务人员",
+  "title_match": true,
+  "english": "Water Conservancy, Environment and Public Facility Management Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": "含S数字职业、含L绿色职业"
+ },
+ {
+  "code": "4-99",
+  "title_official": "其他社会生产服务和生活服务人员",
+  "title_match": true,
+  "english": "Other Social Production and Life Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "6-09",
+  "title_official": "文教、工美、体育和娱乐用品制造人员",
+  "title_match": true,
+  "english": "Cultural, Educational, Industrial Artistic, Sports and Entertainment Goods Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "6-15",
+  "title_official": "非金属矿物制品制造人员",
+  "title_match": true,
+  "english": "Non-metallic Mineral Products Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "6-16",
+  "title_official": "采矿人员",
+  "title_match": true,
+  "english": "Mining Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "6-19",
+  "title_official": "金属制品制造人员",
+  "title_match": true,
+  "english": "Metal Products Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "6-25",
+  "title_official": "计算机、通信和其他电子设备制造人员",
+  "title_match": true,
+  "english": "Computer, Communication and Other Electronic Equipment Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ },
+ {
+  "code": "6-26",
+  "title_official": "仪器仪表制造人员",
+  "title_match": true,
+  "english": "Instrument and Meter Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "职业分类大典(2022年版)",
+    "url": "http://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/bua815329.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "事实",
+  "note": null
+ }
+]
