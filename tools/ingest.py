@@ -44,9 +44,8 @@ def decode(b):
     return b.decode('utf-8', errors='replace')
 
 def fix_frag(s):
-    s = re.sub(r',\s*([\]}])', r'\1', s)              # 尾逗号
-    s = re.sub(r'[\x00-\x08\x0b\x0c\x0e-\x1f]', ' ', s)  # 裸控制字符
-    # 字符串内部的裸换行 -> 空格(粗略:对引号外不影响)
+    s = re.sub(r',\s*([\]}])', r'\1', s)        # 尾逗号
+    s = re.sub(r'[\x00-\x1f]', ' ', s)          # 所有控制字符(含字符串内裸换行/制表)-> 空格
     return s
 
 def salvage_objects(s):
