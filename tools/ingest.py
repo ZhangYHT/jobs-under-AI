@@ -85,8 +85,8 @@ def parse(text):
 def norm_obj(o):
     out = {}
     for k, v in o.items():
-        ck = KEY2CANON.get(str(k).strip().lower())
-        if ck: out[ck] = v
+        ck = KEY2CANON.get(str(k).strip().lower(), str(k).strip())  # 命中同义则改名,否则原样保留
+        out[ck] = v
     if 'code' in out:
         out['code'] = str(out['code']).strip()
     return out

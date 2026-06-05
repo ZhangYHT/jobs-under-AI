@@ -12,9 +12,19 @@
    }
   },
   "models": [
-   "claude"
+   "claude",
+   "deepseek",
+   "doubao",
+   "gemini",
+   "gpt",
+   "grok",
+   "kimi",
+   "qwen",
+   "wenxin",
+   "yuanbao",
+   "zhipu"
   ],
-  "n_models": 1,
+  "n_models": 11,
   "unit": "中类(79)",
   "dims": [
    "overall",
@@ -112,14 +122,26 @@
      "green": false
     }
    ],
-   "employment": 1500000,
-   "employment_basis": "provisional",
+   "employment": 735627,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 1500000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 1471110,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 144.8,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 170000,
@@ -171,7 +193,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -249,14 +272,26 @@
      "green": false
     }
    ],
-   "employment": 4000000,
-   "employment_basis": "provisional",
+   "employment": 803548,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 4000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 1607087,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 9.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 180000,
@@ -308,7 +343,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -362,14 +398,20 @@
      "green": false
     }
    ],
-   "employment": 200000,
-   "employment_basis": "provisional",
+   "employment": 56579,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 200000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 56579,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 170000,
@@ -421,7 +463,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -517,14 +560,20 @@
      "green": false
     }
    ],
-   "employment": 1500000,
-   "employment_basis": "provisional",
+   "employment": 2134938,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 1500000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 2134938,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 150000,
@@ -576,7 +625,7 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "pay_provisional"
    ]
   },
   {
@@ -630,14 +679,20 @@
      "green": false
     }
    ],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 1852068,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 1852068,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 90000,
@@ -689,7 +744,7 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "pay_provisional"
    ]
   },
   {
@@ -755,14 +810,26 @@
      "green": false
     }
    ],
-   "employment": 18000000,
-   "employment_basis": "provisional",
+   "employment": 852014,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 18000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 1703934,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 95.6,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 220000,
@@ -814,7 +881,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -964,14 +1032,32 @@
      "green": false
     }
    ],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 1056000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 3202930,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 1056000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 61.9,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 200000,
@@ -1023,7 +1109,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -2367,14 +2454,32 @@
      "green": false
     }
    ],
-   "employment": 18000000,
-   "employment_basis": "provisional",
+   "employment": 7180000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 18000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 16566300,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 7180000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 188.9,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 180000,
@@ -2426,7 +2531,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -2546,14 +2652,32 @@
      "green": false
     }
    ],
-   "employment": 2000000,
-   "employment_basis": "provisional",
+   "employment": 1270000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 2000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 1289065,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 1270000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 14.6,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 110000,
@@ -2605,7 +2729,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -2689,14 +2814,32 @@
      "green": false
     }
    ],
-   "employment": 400000,
-   "employment_basis": "provisional",
+   "employment": 28000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 400000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 257186,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 28000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 8.1,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 200000,
@@ -2748,7 +2891,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -3282,14 +3426,32 @@
      "green": false
     }
    ],
-   "employment": 13000000,
-   "employment_basis": "provisional",
+   "employment": 9120000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 13000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 12892830,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 9120000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 68.7,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 150000,
@@ -3341,7 +3503,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -3755,14 +3918,32 @@
      "green": false
     }
    ],
-   "employment": 12000000,
-   "employment_basis": "provisional",
+   "employment": 2260000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 12000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 5639520,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 2260000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 94.1,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 200000,
@@ -3814,7 +3995,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -3940,14 +4122,32 @@
      "green": false
     }
    ],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 2697420,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 2697420,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 3280000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 28.1,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 170000,
@@ -3999,7 +4199,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -4089,14 +4290,32 @@
      "green": false
     }
    ],
-   "employment": 18000000,
-   "employment_basis": "provisional",
+   "employment": 17950000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 18000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 18814430,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 17950000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 188.0,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 130000,
@@ -4148,7 +4367,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -4496,14 +4716,32 @@
      "green": false
     }
    ],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 1930000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 3164470,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 1930000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 17.3,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 140000,
@@ -4555,7 +4793,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -4717,14 +4956,32 @@
      "green": false
     }
    ],
-   "employment": 2000000,
-   "employment_basis": "provisional",
+   "employment": 980000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 2000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 1473950,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 980000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 14.8,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 150000,
@@ -4776,7 +5033,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -4817,14 +5075,32 @@
     }
    ],
    "细类": [],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 1098890,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 1098890,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 1490000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 4.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 150000,
@@ -4876,7 +5152,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -5050,14 +5327,32 @@
      "green": false
     }
    ],
-   "employment": 22000000,
-   "employment_basis": "provisional",
+   "employment": 6420000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 22000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 11325700,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 6420000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 144.3,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 90000,
@@ -5109,7 +5404,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -5217,14 +5513,32 @@
      "green": false
     }
    ],
-   "employment": 4000000,
-   "employment_basis": "provisional",
+   "employment": 1530000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 4000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 8012140,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 1530000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 8.3,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 90000,
@@ -5276,7 +5590,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -5336,14 +5651,32 @@
      "green": false
     }
    ],
-   "employment": 800000,
-   "employment_basis": "provisional",
+   "employment": 162390,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 800000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 162390,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 310000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 24.3,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 110000,
@@ -5395,7 +5728,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -5436,14 +5770,32 @@
     }
    ],
    "细类": [],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 1457900,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 1457900,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 1980000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 8.9,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 85000,
@@ -5495,7 +5847,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -5639,14 +5992,32 @@
      "green": false
     }
    ],
-   "employment": 60000000,
-   "employment_basis": "provisional",
+   "employment": 58450000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 60000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 119371200,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 58450000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 592.0,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 70000,
@@ -5698,7 +6069,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -6022,14 +6394,32 @@
      "green": false
     }
    ],
-   "employment": 35000000,
-   "employment_basis": "provisional",
+   "employment": 12670000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 35000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 38216800,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 12670000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 185.8,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 80000,
@@ -6081,7 +6471,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -6219,14 +6610,32 @@
      "green": false
     }
    ],
-   "employment": 30000000,
-   "employment_basis": "provisional",
+   "employment": 14130000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 30000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 26401800,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 14130000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 69.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 60000,
@@ -6278,7 +6687,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -6476,14 +6886,32 @@
      "green": false
     }
    ],
-   "employment": 8000000,
-   "employment_basis": "provisional",
+   "employment": 8324039,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 8000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 8324039,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 8980000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 413.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 200000,
@@ -6535,7 +6963,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -6655,14 +7084,32 @@
      "green": false
     }
    ],
-   "employment": 7000000,
-   "employment_basis": "provisional",
+   "employment": 6528010,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 7000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 6528010,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 9600000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 185.8,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 160000,
@@ -6714,7 +7161,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -6798,14 +7246,32 @@
      "green": false
     }
    ],
-   "employment": 6000000,
-   "employment_basis": "provisional",
+   "employment": 780000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 6000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 5020320,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 780000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 83.8,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 90000,
@@ -6857,7 +7323,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -7091,14 +7558,32 @@
      "green": false
     }
    ],
-   "employment": 12000000,
-   "employment_basis": "provisional",
+   "employment": 6804310,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 12000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 6804310,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 11200000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 146.0,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 110000,
@@ -7150,7 +7635,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -7576,14 +8062,32 @@
      "green": false
     }
    ],
-   "employment": 5000000,
-   "employment_basis": "provisional",
+   "employment": 3969820,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 5000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 3969820,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 5630000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 55.3,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 90000,
@@ -7635,7 +8139,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -7857,14 +8362,32 @@
      "green": false
     }
    ],
-   "employment": 4000000,
-   "employment_basis": "provisional",
+   "employment": 2960000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 4000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 4829320,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 2960000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 77.3,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 80000,
@@ -7916,7 +8439,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -8138,14 +8662,32 @@
      "green": false
     }
    ],
-   "employment": 25000000,
-   "employment_basis": "provisional",
+   "employment": 6010000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 25000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 28709400,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 6010000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 185.8,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 60000,
@@ -8197,7 +8739,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -8275,14 +8818,32 @@
      "green": false
     }
    ],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 1680000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 2664520,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 1680000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 52.9,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 110000,
@@ -8334,7 +8895,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -8478,14 +9040,32 @@
      "green": false
     }
    ],
-   "employment": 12000000,
-   "employment_basis": "provisional",
+   "employment": 8370000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 12000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 12656900,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 8370000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 52.9,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 70000,
@@ -8537,7 +9117,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -8717,14 +9298,32 @@
      "green": false
     }
    ],
-   "employment": 8000000,
-   "employment_basis": "provisional",
+   "employment": 4120000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 8000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 5257740,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 4120000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 166.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 90000,
@@ -8776,7 +9375,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -8986,14 +9586,32 @@
      "green": false
     }
    ],
-   "employment": 6000000,
-   "employment_basis": "provisional",
+   "employment": 3050000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 6000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 6836640,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 3050000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 166.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 70000,
@@ -9045,7 +9663,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -9086,14 +9705,32 @@
     }
    ],
    "细类": [],
-   "employment": 5000000,
-   "employment_basis": "provisional",
+   "employment": 3376770,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 5000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 3376770,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 4210000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 166.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 75000,
@@ -9145,7 +9782,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -9229,14 +9867,32 @@
      "green": false
     }
    ],
-   "employment": 120000000,
-   "employment_basis": "provisional",
+   "employment": 169720000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 120000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 263616500,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 169720000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 2677.3,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 40000,
@@ -9288,7 +9944,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -9372,14 +10029,32 @@
      "green": false
     }
    ],
-   "employment": 4000000,
-   "employment_basis": "provisional",
+   "employment": 6235050,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 4000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 6235050,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 6420000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 57.0,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 45000,
@@ -9431,7 +10106,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -9515,14 +10191,32 @@
      "green": false
     }
    ],
-   "employment": 12000000,
-   "employment_basis": "provisional",
+   "employment": 7518920,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 12000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 7518920,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 29430000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 117.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 50000,
@@ -9574,7 +10268,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -9664,14 +10359,32 @@
      "green": false
     }
    ],
-   "employment": 6000000,
-   "employment_basis": "provisional",
+   "employment": 5432100,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 6000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "deepseek",
+     "value": 5432100,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 9800000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 43.5,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 50000,
@@ -9723,7 +10436,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -9915,14 +10629,32 @@
      "green": false
     }
    ],
-   "employment": 8000000,
-   "employment_basis": "provisional",
+   "employment": 1221660,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 8000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 1221660,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 26160000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 59.0,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 40000,
@@ -9974,7 +10706,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -10015,14 +10748,32 @@
     }
    ],
    "细类": [],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 87130,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 87130,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 520000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 117.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 40000,
@@ -10074,7 +10825,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -10206,14 +10958,32 @@
      "green": false
     }
    ],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 2563650,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 2563650,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 14700000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 108.8,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 55000,
@@ -10265,7 +11035,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -10469,14 +11240,32 @@
      "green": false
     }
    ],
-   "employment": 5000000,
-   "employment_basis": "provisional",
+   "employment": 2895440,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 5000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 2895440,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 9860000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 92.5,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 60000,
@@ -10528,7 +11317,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -10594,14 +11384,32 @@
      "green": false
     }
    ],
-   "employment": 400000,
-   "employment_basis": "provisional",
+   "employment": 135960,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 400000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 135960,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 1850000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 10.2,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 90000,
@@ -10653,7 +11461,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -10815,14 +11624,32 @@
      "green": false
     }
    ],
-   "employment": 4000000,
-   "employment_basis": "provisional",
+   "employment": 2973350,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 4000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 2973350,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 4080000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 30.9,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 55000,
@@ -10874,7 +11701,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -10970,14 +11798,32 @@
      "green": false
     }
    ],
-   "employment": 8000000,
-   "employment_basis": "provisional",
+   "employment": 12430000,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 8000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 15973590,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "wenxin",
+     "value": 12430000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 81.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 55000,
@@ -11029,7 +11875,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -11125,14 +11972,26 @@
      "green": false
     }
    ],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 2942845,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 5885650,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 40.9,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 55000,
@@ -11184,7 +12043,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -11250,14 +12110,26 @@
      "green": false
     }
    ],
-   "employment": 1500000,
-   "employment_basis": "provisional",
+   "employment": 520042,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 1500000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 1040060,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 24.9,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 60000,
@@ -11309,7 +12181,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -11363,14 +12236,26 @@
      "green": false
     }
    ],
-   "employment": 1500000,
-   "employment_basis": "provisional",
+   "employment": 478845,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 1500000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 957680,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 10.2,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 60000,
@@ -11422,7 +12307,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -11690,14 +12576,26 @@
      "green": false
     }
    ],
-   "employment": 2000000,
-   "employment_basis": "provisional",
+   "employment": 1343807,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 2000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 2687560,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 55.1,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 50000,
@@ -11749,7 +12647,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -11893,14 +12792,26 @@
      "green": true
     }
    ],
-   "employment": 800000,
-   "employment_basis": "provisional",
+   "employment": 180379,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 800000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 360750,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 8.1,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 110000,
@@ -11952,7 +12863,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -12444,14 +13356,26 @@
      "green": false
     }
    ],
-   "employment": 2500000,
-   "employment_basis": "provisional",
+   "employment": 783343,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 2500000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 1566640,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 47.5,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 90000,
@@ -12503,7 +13427,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -12587,14 +13512,26 @@
      "green": false
     }
    ],
-   "employment": 1500000,
-   "employment_basis": "provisional",
+   "employment": 351798,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 1500000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 703580,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 16.5,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 90000,
@@ -12646,7 +13583,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -12700,14 +13638,26 @@
      "green": false
     }
    ],
-   "employment": 400000,
-   "employment_basis": "provisional",
+   "employment": 82946,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 400000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 165890,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 3.8,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 80000,
@@ -12759,7 +13709,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -12807,14 +13758,26 @@
      "green": false
     }
    ],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 1442902,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 2885780,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 24.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 60000,
@@ -12866,7 +13829,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -13158,14 +14122,26 @@
      "green": false
     }
    ],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 1645917,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 3291790,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 44.9,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 60000,
@@ -13217,7 +14193,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -13449,14 +14426,26 @@
      "green": false
     }
    ],
-   "employment": 4000000,
-   "employment_basis": "provisional",
+   "employment": 1463465,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 4000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 2926900,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 30.1,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 80000,
@@ -13508,7 +14497,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -13856,14 +14846,26 @@
      "green": false
     }
    ],
-   "employment": 4000000,
-   "employment_basis": "provisional",
+   "employment": 983687,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 4000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 1967360,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 15.5,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 75000,
@@ -13915,7 +14917,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -14119,14 +15122,26 @@
      "green": false
     }
    ],
-   "employment": 4000000,
-   "employment_basis": "provisional",
+   "employment": 4032606,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 4000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 8065160,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 52.1,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 65000,
@@ -14178,7 +15193,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -14260,14 +15276,26 @@
      "green": false
     }
    ],
-   "employment": 4000000,
-   "employment_basis": "provisional",
+   "employment": 2357023,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 4000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 4714000,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 47.8,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 60000,
@@ -14319,7 +15347,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -14565,14 +15594,26 @@
      "green": false
     }
    ],
-   "employment": 8000000,
-   "employment_basis": "provisional",
+   "employment": 839175,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 8000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 1678290,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 60.3,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 70000,
@@ -14624,7 +15665,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -14738,14 +15780,26 @@
      "green": false
     }
    ],
-   "employment": 5000000,
-   "employment_basis": "provisional",
+   "employment": 325815,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 5000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 651590,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 41.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 75000,
@@ -14797,7 +15851,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -14857,14 +15912,26 @@
      "green": true
     }
    ],
-   "employment": 5000000,
-   "employment_basis": "provisional",
+   "employment": 1162676,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 5000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 2325330,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 22.9,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 80000,
@@ -14916,7 +15983,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -15114,14 +16182,26 @@
      "green": false
     }
    ],
-   "employment": 2000000,
-   "employment_basis": "provisional",
+   "employment": 275138,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 2000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 550260,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 17.7,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 90000,
@@ -15173,7 +16253,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -15317,14 +16398,26 @@
      "green": false
     }
    ],
-   "employment": 6000000,
-   "employment_basis": "provisional",
+   "employment": 1204521,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 6000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 2409020,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 22.4,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 70000,
@@ -15376,7 +16469,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -15608,14 +16702,26 @@
      "green": false
     }
    ],
-   "employment": 8000000,
-   "employment_basis": "provisional",
+   "employment": 6157125,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 8000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 12314170,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 80.5,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 75000,
@@ -15667,7 +16773,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -15713,14 +16820,26 @@
      "green": false
     }
    ],
-   "employment": 2000000,
-   "employment_basis": "provisional",
+   "employment": 108776,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 2000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 217540,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 13.0,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 75000,
@@ -15772,7 +16891,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -15808,14 +16928,26 @@
      "green": true
     }
    ],
-   "employment": 1500000,
-   "employment_basis": "provisional",
+   "employment": 129725,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 1500000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 259440,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 10.5,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 55000,
@@ -15867,7 +16999,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -16059,14 +17192,26 @@
      "green": true
     }
    ],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 469825,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 939630,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 20.1,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 100000,
@@ -16118,7 +17263,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -16376,14 +17522,26 @@
      "green": false
     }
    ],
-   "employment": 50000000,
-   "employment_basis": "provisional",
+   "employment": 31254729,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 50000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 62509350,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 109.3,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 70000,
@@ -16435,7 +17593,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -16585,14 +17744,26 @@
      "green": false
     }
    ],
-   "employment": 10000000,
-   "employment_basis": "provisional",
+   "employment": 2185811,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 10000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 4371550,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 72.6,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 70000,
@@ -16644,7 +17815,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -16836,14 +18008,26 @@
      "green": false
     }
    ],
-   "employment": 12000000,
-   "employment_basis": "provisional",
+   "employment": 9308602,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 12000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 18617170,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 35.8,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 55000,
@@ -16895,7 +18079,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -16924,14 +18109,26 @@
     }
    ],
    "细类": [],
-   "employment": 3000000,
-   "employment_basis": "provisional",
+   "employment": 330363,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 3000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 660710,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 16.5,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 55000,
@@ -16983,7 +18180,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   },
   {
@@ -17347,14 +18545,26 @@
      "green": false
     }
    ],
-   "employment": 2000000,
-   "employment_basis": "provisional",
+   "employment": 788095,
+   "employment_basis": "official",
    "employment_sources": [
     {
      "model": "claude",
      "value": 2000000,
      "source": "Claude 量级估算(待七普核实)",
      "confidence": "low"
+    },
+    {
+     "model": "kimi",
+     "value": 1576190,
+     "source": "",
+     "confidence": "high"
+    },
+    {
+     "model": "zhipu",
+     "value": 1.6,
+     "source": "",
+     "confidence": "high"
     }
    ],
    "pay": 70000,
@@ -17406,7 +18616,8 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_provisional"
+    "employment_disagreement",
+    "pay_provisional"
    ]
   }
  ]

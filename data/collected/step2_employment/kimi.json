@@ -1,0 +1,392 @@
+[
+ {
+  "code": "5-05",
+  "employment": 1221660,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-99",
+  "employment": 87130,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-01",
+  "employment": 2563650,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-02",
+  "employment": 2895440,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-03",
+  "employment": 135960,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-04",
+  "employment": 2973350,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-05",
+  "employment": 15973590,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-06",
+  "employment": 5885650,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-07",
+  "employment": 1040060,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-08",
+  "employment": 957680,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-09",
+  "employment": 2687560,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-10",
+  "employment": 360750,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-11",
+  "employment": 1566640,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-12",
+  "employment": 703580,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-13",
+  "employment": 165890,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-14",
+  "employment": 2885780,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-15",
+  "employment": 3291790,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-16",
+  "employment": 2926900,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-17",
+  "employment": 1967360,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-18",
+  "employment": 8065160,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-19",
+  "employment": 4714000,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-20",
+  "employment": 1678290,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-21",
+  "employment": 651590,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-22",
+  "employment": 2325330,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-23",
+  "employment": 550260,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-24",
+  "employment": 2409020,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-25",
+  "employment": 12314170,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-26",
+  "employment": 217540,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-27",
+  "employment": 259440,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-28",
+  "employment": 939630,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-29",
+  "employment": 62509350,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-30",
+  "employment": 4371550,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-31",
+  "employment": 18617170,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-99",
+  "employment": 660710,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "7-01",
+  "employment": null,
+  "year": null,
+  "caliber": "现役军人不在七普长表职业统计范围内，无分职业中类数据",
+  "sources": "中国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "unknown",
+  "confidence": "low"
+ },
+ {
+  "code": "7-02",
+  "employment": null,
+  "year": null,
+  "caliber": "现役军人不在七普长表职业统计范围内，无分职业中类数据",
+  "sources": "中国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "unknown",
+  "confidence": "low"
+ },
+ {
+  "code": "7-03",
+  "employment": null,
+  "year": null,
+  "caliber": "现役军人不在七普长表职业统计范围内，无分职业中类数据",
+  "sources": "中国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "unknown",
+  "confidence": "low"
+ },
+ {
+  "code": "7-04",
+  "employment": null,
+  "year": null,
+  "caliber": "现役军人不在七普长表职业统计范围内，无分职业中类数据",
+  "sources": "中国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "unknown",
+  "confidence": "low"
+ },
+ {
+  "code": "8-00",
+  "employment": 1576190,
+  "year": 2020,
+  "caliber": "10%长表抽样推算全国总数(七普分职业中类)",
+  "sources": "中国人口普查年鉴-2020 表4-6",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ }
+]

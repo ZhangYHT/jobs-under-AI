@@ -1,0 +1,478 @@
+[
+ {
+  "code": "1-01",
+  "employment": null,
+  "year": 2020,
+  "caliber": "七普分职业-党的机关负责人",
+  "sources": "中国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "medium",
+  "note": "七普公报仅给出'党的机关、国家机关、群众团体和社会组织、企事业单位负责人'合计约2144万人，未拆分中类1-01至1-06，无法获取单独数字"
+ },
+ {
+  "code": "1-02",
+  "employment": null,
+  "year": 2020,
+  "caliber": "七普分职业-国家机关负责人",
+  "sources": "中国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "medium",
+  "note": "同上，国家机关负责人未单独拆分"
+ },
+ {
+  "code": "1-03",
+  "employment": null,
+  "year": 2020,
+  "caliber": "七普分职业-民主党派和工商联负责人",
+  "sources": "中国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "medium",
+  "note": "未单独拆分"
+ },
+ {
+  "code": "1-04",
+  "employment": null,
+  "year": 2020,
+  "caliber": "七普分职业-人民团体和群众团体负责人",
+  "sources": "中国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "medium",
+  "note": "未单独拆分"
+ },
+ {
+  "code": "1-05",
+  "employment": null,
+  "year": 2020,
+  "caliber": "七普分职业-基层群众性自治组织负责人",
+  "sources": "中国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "medium",
+  "note": "七普公报显示村委会主任约58.3万、居委会主任约14.3万，合计约72.6万，但口径与1-05不完全对应，暂标null待核"
+ },
+ {
+  "code": "1-06",
+  "employment": null,
+  "year": 2020,
+  "caliber": "七普分职业-企事业单位负责人",
+  "sources": "中国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "medium",
+  "note": "未单独拆分，含在大类合计中"
+ },
+ {
+  "code": "2-01",
+  "employment": 1056000,
+  "year": 2020,
+  "caliber": "七普分职业-科学研究人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-02",
+  "employment": 7180000,
+  "year": 2020,
+  "caliber": "七普分职业-工程技术人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-03",
+  "employment": 1270000,
+  "year": 2020,
+  "caliber": "七普分职业-农业技术人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-04",
+  "employment": 28000,
+  "year": 2020,
+  "caliber": "七普分职业-飞机和船舶技术人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-05",
+  "employment": 9120000,
+  "year": 2020,
+  "caliber": "七普分职业-卫生专业技术人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-06",
+  "employment": 2260000,
+  "year": 2020,
+  "caliber": "七普分职业-经济和金融专业人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-07",
+  "employment": 3280000,
+  "year": 2020,
+  "caliber": "七普分职业-监察、法律、社会和宗教专业人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-08",
+  "employment": 17950000,
+  "year": 2020,
+  "caliber": "七普分职业-教学人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-09",
+  "employment": 1930000,
+  "year": 2020,
+  "caliber": "七普分职业-文学艺术、体育专业人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-10",
+  "employment": 980000,
+  "year": 2020,
+  "caliber": "七普分职业-新闻出版、文化专业人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-99",
+  "employment": 1490000,
+  "year": 2020,
+  "caliber": "七普分职业-其他专业技术人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "3-01",
+  "employment": 6420000,
+  "year": 2020,
+  "caliber": "七普分职业-行政办事及辅助人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "3-02",
+  "employment": 1530000,
+  "year": 2020,
+  "caliber": "七普分职业-安全和消防及辅助人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "3-03",
+  "employment": 310000,
+  "year": 2020,
+  "caliber": "七普分职业-仲裁、调解及相关法律事务辅助人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "3-99",
+  "employment": 1980000,
+  "year": 2020,
+  "caliber": "七普分职业-其他办事人员和有关人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-01",
+  "employment": 58450000,
+  "year": 2020,
+  "caliber": "七普分职业-批发与零售服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-02",
+  "employment": 12670000,
+  "year": 2020,
+  "caliber": "七普分职业-交通运输、仓储物流和邮政业服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-03",
+  "employment": 14130000,
+  "year": 2020,
+  "caliber": "七普分职业-住宿和餐饮服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-04",
+  "employment": 8980000,
+  "year": 2020,
+  "caliber": "七普分职业-信息传输、软件和信息技术服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-05",
+  "employment": 9600000,
+  "year": 2020,
+  "caliber": "七普分职业-金融服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-06",
+  "employment": 780000,
+  "year": 2020,
+  "caliber": "七普分职业-房地产服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-07",
+  "employment": 11200000,
+  "year": 2020,
+  "caliber": "七普分职业-租赁和商务服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-08",
+  "employment": 5630000,
+  "year": 2020,
+  "caliber": "七普分职业-技术辅助服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-09",
+  "employment": 2960000,
+  "year": 2020,
+  "caliber": "七普分职业-水利、环境和公共设施管理服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-10",
+  "employment": 6010000,
+  "year": 2020,
+  "caliber": "七普分职业-居民服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-11",
+  "employment": 1680000,
+  "year": 2020,
+  "caliber": "七普分职业-电力、燃气及水供应服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-12",
+  "employment": 8370000,
+  "year": 2020,
+  "caliber": "七普分职业-修理及制作服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-13",
+  "employment": 4120000,
+  "year": 2020,
+  "caliber": "七普分职业-文化和教育服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-14",
+  "employment": 3050000,
+  "year": 2020,
+  "caliber": "七普分职业-健康、体育和休闲服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-99",
+  "employment": 4210000,
+  "year": 2020,
+  "caliber": "七普分职业-其他社会生产服务和生活服务人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-01",
+  "employment": 169720000,
+  "year": 2020,
+  "caliber": "七普分职业-农业生产人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-02",
+  "employment": 6420000,
+  "year": 2020,
+  "caliber": "七普分职业-林业生产人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-03",
+  "employment": 29430000,
+  "year": 2020,
+  "caliber": "七普分职业-畜牧业生产人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-04",
+  "employment": 9800000,
+  "year": 2020,
+  "caliber": "七普分职业-渔业生产人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-05",
+  "employment": 26160000,
+  "year": 2020,
+  "caliber": "七普分职业-农、林、牧、渔业生产辅助人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-99",
+  "employment": 520000,
+  "year": 2020,
+  "caliber": "七普分职业-其他农、林、牧、渔业生产及辅助人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-01",
+  "employment": 14700000,
+  "year": 2020,
+  "caliber": "七普分职业-农副产品加工人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-02",
+  "employment": 9860000,
+  "year": 2020,
+  "caliber": "七普分职业-食品、饮料生产加工人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-03",
+  "employment": 1850000,
+  "year": 2020,
+  "caliber": "七普分职业-烟草及其制品加工人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-04",
+  "employment": 4080000,
+  "year": 2020,
+  "caliber": "七普分职业-纺织、针织、印染人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-05",
+  "employment": 12430000,
+  "year": 2020,
+  "caliber": "七普分职业-纺织品、服装和皮革、毛皮制品加工制作人员",
+  "sources": "中国人口普查年鉴-2020 表4-1",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/7rp/zk/indexch.htm",
+  "evidence": "official",
+  "confidence": "high"
+ }
+]

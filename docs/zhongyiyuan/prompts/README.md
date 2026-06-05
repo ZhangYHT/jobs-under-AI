@@ -1,9 +1,9 @@
 # 众议院提示词(独立可投喂)
 
-每个文件 = 一个**可直接丢给对应网页 AI** 的完整提示词。结构:`prompts/<模型>/step1~4.md` + `prompts/review/<评议员>.md`。
+每个文件 = 一个**可直接丢给对应网页 AI** 的完整提示词。结构**按步骤分**:`prompts/step1/<模型>.md` … `prompts/step4/<模型>.md` + `prompts/review/<评议员>.md`。
 
 ## 用法
-1. 打开某模型目录(如 `wenxin/`),把 `step1.md` 整个内容投喂给该模型;收到回复后,把 **JSON** 存为 `data/collected/step1_taxonomy/<模型键>.json`。依次做 step2/3/4(分别存到 `step2_employment` / `step3_pay_edu` / `step4_scoring`)。
+1. 做某一步时,打开该步目录(如 `step2/`),把里面每个 `<模型>.md` 投喂给对应模型;收到回复后存为 `data/collected/step{n}_*/<模型键>.json`(step1→step1_taxonomy、step2→step2_employment、step3→step3_pay_edu、step4→step4_scoring)。
 2. 全部模型回填后运行:`python tools/ingest.py <step> <你的原始返回目录>`(容错救回 + 校验),再 `python aggregate.py`。
 3. 站点 `site/index.html` 自动更新。
 

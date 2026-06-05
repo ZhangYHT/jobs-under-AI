@@ -71,7 +71,8 @@ def step2(name, angle):
 【锚点主题】{ANCHOR}:就业人数
 【意图】考据/检索(官方锚定);独立盲测。
 【你的专属切入角度】{angle}
-【任务】为每个中类给出全国就业人数(单位:人)。优先官方:第七次全国人口普查 / 中国人口普查年鉴-2020(分职业)、中国统计年鉴、人社部公报、行业统计。注明数据年份与统计口径;证据类型分 official / estimate / unknown;查不到 employment 写 null 并在 note 说明,不要编造精确数字。
+【任务】为每个中类给出全国就业人数(单位:人,整数)。优先官方:第七次全国人口普查 / 中国人口普查年鉴-2020(分职业)、中国统计年鉴、人社部公报、行业统计。注明数据年份与统计口径。
+重要:employment 必须尽量给数值。若能查到精确官方值,evidence 标 official;若取不到精确值,请基于官方口径(如该大类总量、行业就业结构、相近年份数据)给出**合理估计**,evidence 标 estimate,并在 note 写明估计依据;只有完全无任何依据时才写 null。不要为了"严谨"而大面积留空,也不要把估计值谎标为 official。
 
 【中类清单(共{N},全部处理)】
 {LIST}
@@ -88,7 +89,8 @@ def step3(name, angle):
 【锚点主题】{ANCHOR}:薪资与学历
 【意图】考据/检索(官方锚定);独立盲测。
 【你的专属切入角度】{angle}
-【任务】为每个中类给出:1) 年薪中位数(元/年),优先用国家统计局"分行业城镇单位就业人员平均工资"映射(注明对应行业门类与年份)或其他官方薪酬调查;2) 典型入职学历(博士/硕士/本科/大专/高中/初中),优先职业分类大典或国家职业标准。给来源与置信度;查不到写 null。
+【任务】为每个中类给出:1) 年薪中位数(元/年,整数);2) 典型入职学历(博士/硕士/本科/大专/高中/初中)。
+薪资优先用国家统计局"分行业城镇单位就业人员平均工资"映射(注明对应行业门类与年份)或其他官方薪酬调查;若取不到精确值,基于官方口径给**合理估计**并把 confidence 标 low、在来源里写明"估计"。学历优先职业分类大典或国家职业标准。pay_median 尽量给数值,只有完全无依据才 null;不要大面积留空。
 
 【中类清单(共{N},全部处理)】
 {LIST}
@@ -126,14 +128,15 @@ adoption 落地速度:该行业当前实际部署 AI 的速度。
 """
 
 PROMPTS = os.path.join(ROOT, 'docs', 'zhongyiyuan', 'prompts')
-# 清理旧的扁平文件,重建目录结构
+# 重建目录结构(按步骤分)
 if os.path.isdir(PROMPTS): shutil.rmtree(PROMPTS)
+for sub in ('step1', 'step2', 'step3', 'step4', 'review'):
+    os.makedirs(os.path.join(PROMPTS, sub), exist_ok=True)
 for key, name, angle, lens in ROSTER:
-    d = os.path.join(PROMPTS, key); os.makedirs(d, exist_ok=True)
-    open(os.path.join(d, 'step1.md'), 'w', encoding='utf-8').write(step1(name, angle))
-    open(os.path.join(d, 'step2.md'), 'w', encoding='utf-8').write(step2(name, angle))
-    open(os.path.join(d, 'step3.md'), 'w', encoding='utf-8').write(step3(name, angle))
-    open(os.path.join(d, 'step4.md'), 'w', encoding='utf-8').write(step4(name, lens))
+    open(os.path.join(PROMPTS, 'step1', key + '.md'), 'w', encoding='utf-8').write(step1(name, angle))
+    open(os.path.join(PROMPTS, 'step2', key + '.md'), 'w', encoding='utf-8').write(step2(name, angle))
+    open(os.path.join(PROMPTS, 'step3', key + '.md'), 'w', encoding='utf-8').write(step3(name, angle))
+    open(os.path.join(PROMPTS, 'step4', key + '.md'), 'w', encoding='utf-8').write(step4(name, lens))
 
 REVIEW = [
  ("nemotron-3-super-120b-a12b","盲点扫描","11个主力是否集体遗漏了某些重要官方来源或职业?列出被忽略的视角与应补的官方资料。"),
@@ -164,10 +167,10 @@ for key, role, task in REVIEW:
 
 readme = f"""# 众议院提示词(独立可投喂)
 
-每个文件 = 一个**可直接丢给对应网页 AI** 的完整提示词。结构:`prompts/<模型>/step1~4.md` + `prompts/review/<评议员>.md`。
+每个文件 = 一个**可直接丢给对应网页 AI** 的完整提示词。结构**按步骤分**:`prompts/step1/<模型>.md` … `prompts/step4/<模型>.md` + `prompts/review/<评议员>.md`。
 
 ## 用法
-1. 打开某模型目录(如 `wenxin/`),把 `step1.md` 整个内容投喂给该模型;收到回复后,把 **JSON** 存为 `data/collected/step1_taxonomy/<模型键>.json`。依次做 step2/3/4(分别存到 `step2_employment` / `step3_pay_edu` / `step4_scoring`)。
+1. 做某一步时,打开该步目录(如 `step2/`),把里面每个 `<模型>.md` 投喂给对应模型;收到回复后存为 `data/collected/step{{n}}_*/<模型键>.json`(step1→step1_taxonomy、step2→step2_employment、step3→step3_pay_edu、step4→step4_scoring)。
 2. 全部模型回填后运行:`python tools/ingest.py <step> <你的原始返回目录>`(容错救回 + 校验),再 `python aggregate.py`。
 3. 站点 `site/index.html` 自动更新。
 

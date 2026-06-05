@@ -1,0 +1,799 @@
+[
+ {
+  "code": "1-01",
+  "employment": 144.8,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "1-02",
+  "employment": 9.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "1-03",
+  "employment": null,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high",
+  "note": "民主党派和工商联负责人数据未单列，包含在“党群组织、企业、事业单位负责人”大类中，无法精确获取。"
+ },
+ {
+  "code": "1-04",
+  "employment": null,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high",
+  "note": "人民团体和群众团体负责人数据未单列，包含在“党群组织、企业、事业单位负责人”大类中，无法精确获取。"
+ },
+ {
+  "code": "1-05",
+  "employment": null,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high",
+  "note": "基层群众性自治组织负责人数据未单列，包含在“党群组织、企业、事业单位负责人”大类中，无法精确获取。"
+ },
+ {
+  "code": "1-06",
+  "employment": 95.6,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-01",
+  "employment": 61.9,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-02",
+  "employment": 188.9,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-03",
+  "employment": 14.6,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-04",
+  "employment": 8.1,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-05",
+  "employment": 68.7,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-06",
+  "employment": 94.1,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-07",
+  "employment": 28.1,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-08",
+  "employment": 188.0,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-09",
+  "employment": 17.3,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-10",
+  "employment": 14.8,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "2-99",
+  "employment": 4.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "3-01",
+  "employment": 144.3,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "3-02",
+  "employment": 8.3,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "3-03",
+  "employment": 24.3,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "3-99",
+  "employment": 8.9,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-01",
+  "employment": 592.0,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-02",
+  "employment": 185.8,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-03",
+  "employment": 69.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-04",
+  "employment": 413.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-05",
+  "employment": 185.8,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-06",
+  "employment": 83.8,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-07",
+  "employment": 146.0,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-08",
+  "employment": 55.3,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-09",
+  "employment": 77.3,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-10",
+  "employment": 185.8,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-11",
+  "employment": 52.9,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-12",
+  "employment": 52.9,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-13",
+  "employment": 166.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-14",
+  "employment": 166.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "4-99",
+  "employment": 166.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-01",
+  "employment": 2677.3,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-02",
+  "employment": 57.0,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-03",
+  "employment": 117.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-04",
+  "employment": 43.5,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-05",
+  "employment": 59.0,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "5-99",
+  "employment": 117.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-01",
+  "employment": 108.8,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-02",
+  "employment": 92.5,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-03",
+  "employment": 10.2,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-04",
+  "employment": 30.9,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-05",
+  "employment": 81.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-06",
+  "employment": 40.9,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-07",
+  "employment": 24.9,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-08",
+  "employment": 10.2,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-09",
+  "employment": 55.1,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-10",
+  "employment": 8.1,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-11",
+  "employment": 47.5,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-12",
+  "employment": 16.5,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-13",
+  "employment": 3.8,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-14",
+  "employment": 24.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-15",
+  "employment": 44.9,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-16",
+  "employment": 30.1,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-17",
+  "employment": 15.5,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-18",
+  "employment": 52.1,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-19",
+  "employment": 47.8,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-20",
+  "employment": 60.3,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-21",
+  "employment": 41.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-22",
+  "employment": 22.9,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-23",
+  "employment": 17.7,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-24",
+  "employment": 22.4,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-25",
+  "employment": 80.5,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-26",
+  "employment": 13.0,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-27",
+  "employment": 10.5,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-28",
+  "employment": 20.1,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-29",
+  "employment": 109.3,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-30",
+  "employment": 72.6,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-31",
+  "employment": 35.8,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "6-99",
+  "employment": 16.5,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ },
+ {
+  "code": "7-01",
+  "employment": null,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high",
+  "note": "军队人员（军官）数据未在普查年鉴中单独公布，属于特殊就业群体。"
+ },
+ {
+  "code": "7-02",
+  "employment": null,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high",
+  "note": "军队人员（军士）数据未在普查年鉴中单独公布，属于特殊就业群体。"
+ },
+ {
+  "code": "7-03",
+  "employment": null,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high",
+  "note": "军队人员（义务兵）数据未在普查年鉴中单独公布，属于特殊就业群体。"
+ },
+ {
+  "code": "7-04",
+  "employment": null,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high",
+  "note": "军队文职人员数据未在普查年鉴中单独公布，属于特殊就业群体。"
+ },
+ {
+  "code": "8-00",
+  "employment": 1.6,
+  "year": 2020,
+  "caliber": "全国就业人员（普查长表抽样）",
+  "sources": "第七次全国人口普查年鉴-2020",
+  "source_url": "https://www.stats.gov.cn/sj/pcsj/rkpc/6rp/html/B0407a.htm",
+  "evidence": "official",
+  "confidence": "high"
+ }
+]
