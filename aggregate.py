@@ -41,7 +41,15 @@ def main():
     emp = load_models('step2_employment')
     pe  = load_models('step3_pay_edu')
     sc  = load_models('step4_scoring')
-    all_models = sorted(set(emp) | set(pe) | set(sc))
+    scn = load_models('step4_overall')   # 自然语言版综合冲击(更拉开)
+    all_models = sorted((set(emp) | set(pe) | set(sc) | set(scn)) - {'census7', 'official'})
+    # 大类一句话总结(自然语言版)
+    da_sum = {}
+    for f in sorted(glob.glob(p('data', 'collected', 'step4_da', '*.json'))):
+        for r in json.load(open(f, encoding='utf-8')):
+            d = da_sum.setdefault(str(r.get('da')), {'totals': [], 'summary': ''})
+            if isinstance(r.get('total'), (int, float)): d['totals'].append(r['total'])
+            if r.get('summary') and len(r['summary']) > len(d['summary']): d['summary'] = r['summary']
 
     out_groups, qa = [], []
     for code, g in groups.items():
@@ -92,13 +100,17 @@ def main():
         rec['pay_sources'] = [{'model': m, 'value': r.get('pay_median'), 'source': r.get('pay_source', '')}
                               for m, r in pay_rows]
 
-        # ---- 步骤4 打分(集成) ----
+        # ---- 步骤4 打分:综合冲击优先取自然语言版(更拉开),子维取 JSON 版 ----
         by_model, mean, median, std = {}, {}, {}, {}
+        for m in (set(scn) | set(sc)):                       # 综合冲击
+            ov = scn[m][code].get('overall') if code in scn.get(m, {}) else None
+            if ov is None and code in sc.get(m, {}): ov = sc[m][code].get('overall')
+            if ov is not None: by_model.setdefault(m, {})['overall'] = ov
+        for d in DIMS[1:]:                                   # 子维只来自 JSON 版
+            for m in sc:
+                if code in sc[m] and d in sc[m][code]: by_model.setdefault(m, {})[d] = sc[m][code][d]
         for d in DIMS:
-            col = [(m, sc[m][code][d]) for m in sc if code in sc[m] and d in sc[m][code]]
-            for m, v in col:
-                by_model.setdefault(m, {})[d] = v
-            vs = [v for _, v in col]
+            vs = [by_model[m][d] for m in by_model if d in by_model[m]]
             if vs:
                 mean[d] = round(statistics.mean(vs))
                 median[d] = round(statistics.median(vs))
@@ -107,9 +119,10 @@ def main():
         rec['dims_median'] = median
         rec['dims_std'] = std
         rec['by_model'] = by_model
-        rec['rationales'] = {m: sc[m][code].get('rationale', '') for m in sc
-                             if code in sc[m] and sc[m][code].get('rationale')}
-        rec['n_models'] = len(by_model)
+        rec['rationales'] = {m: (scn[m][code]['rationale'] if code in scn.get(m, {}) and scn[m][code].get('rationale')
+                                 else sc.get(m, {}).get(code, {}).get('rationale', '')) for m in by_model}
+        rec['rationales'] = {m: r for m, r in rec['rationales'].items() if r}
+        rec['n_models'] = len([m for m in by_model if 'overall' in by_model[m]])
         rec['std'] = std.get('overall', 0)
         if rec['n_models'] == 0:
             flags.append('score_missing')
@@ -134,6 +147,8 @@ def main():
             'disclaimer': '分类与S/L标注=职业分类大典2022;就业=第七次全国人口普查(年鉴表4-7);薪资=国家统计局2023分岗位+分行业平均工资;学历=AI估计;AI冲击=多模型集成估算。仅供参考,不代表官方结论。',
         },
         'categories': occ['categories'],
+        'da_summary': {k: {'overall': round(statistics.mean(v['totals'])) if v['totals'] else None,
+                           'summary': v['summary']} for k, v in da_sum.items()},
         'groups': out_groups,
     }
     json.dump(agg, open(p('data', 'aggregated.cn.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

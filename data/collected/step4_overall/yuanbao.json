@@ -1,0 +1,397 @@
+[
+ {
+  "code": "1-01",
+  "overall": 10,
+  "rationale": "核心在方向与政治把关，AI 仅辅助材料整理"
+ },
+ {
+  "code": "1-02",
+  "overall": 10,
+  "rationale": "政策与人事决策复杂，问责链条长，AI 难介入实质"
+ },
+ {
+  "code": "1-03",
+  "overall": 10,
+  "rationale": "协商与代表性强，AI 无法替代人际与政治判断"
+ },
+ {
+  "code": "1-04",
+  "overall": 15,
+  "rationale": "动员与信任关系关键，AI 作用有限"
+ },
+ {
+  "code": "1-05",
+  "overall": 20,
+  "rationale": "高度本地化、现场协调，AI 难替代面对面治理"
+ },
+ {
+  "code": "1-06",
+  "overall": 20,
+  "rationale": "战略与人事权集中，AI 可做分析，最终拍板仍靠人"
+ },
+ {
+  "code": "2-01",
+  "overall": 80,
+  "rationale": "文献梳理、数据建模、假设生成加速明显"
+ },
+ {
+  "code": "2-02",
+  "overall": 85,
+  "rationale": "设计仿真、代码编写、参数优化高度自动化"
+ },
+ {
+  "code": "2-03",
+  "overall": 35,
+  "rationale": "田间诊断与本地经验主导，AI 多用于监测建议"
+ },
+ {
+  "code": "2-04",
+  "overall": 30,
+  "rationale": "高安全责任与现场操作，AI 仅辅助诊断"
+ },
+ {
+  "code": "2-05",
+  "overall": 60,
+  "rationale": "影像与辅助诊断进展快，但诊疗决策与操作仍重人"
+ },
+ {
+  "code": "2-06",
+  "overall": 85,
+  "rationale": "量化分析、报告生成、风控建模高度 AI 化"
+ },
+ {
+  "code": "2-07",
+  "overall": 55,
+  "rationale": "文书检索与初稿生成可用，裁决与伦理判断仍靠人"
+ },
+ {
+  "code": "2-08",
+  "overall": 50,
+  "rationale": "知识讲授可被生成，育人、激励与课堂管理难替代"
+ },
+ {
+  "code": "2-09",
+  "overall": 65,
+  "rationale": "创作灵感与表现力核心在人，AI 辅助工具化"
+ },
+ {
+  "code": "2-10",
+  "overall": 80,
+  "rationale": "采编写作、内容生成高度自动化，策划与价值观仍靠人"
+ },
+ {
+  "code": "2-99",
+  "overall": 70,
+  "rationale": "差异大，整体偏向信息处理型，AI 渗透深"
+ },
+ {
+  "code": "3-01",
+  "overall": 60,
+  "rationale": "表单、预约、流转大量系统化，人工转向异常处理"
+ },
+ {
+  "code": "3-02",
+  "overall": 25,
+  "rationale": "现场判断与应急反应关键，AI 仅监控辅助"
+ },
+ {
+  "code": "3-03",
+  "overall": 50,
+  "rationale": "文书与案例检索可自动化，沟通斡旋难替代"
+ },
+ {
+  "code": "3-99",
+  "overall": 55,
+  "rationale": "多为规则执行，AI 替代空间中等"
+ },
+ {
+  "code": "4-01",
+  "overall": 60,
+  "rationale": "电商推荐与库存管理 AI 化，导购体验仍靠人"
+ },
+ {
+  "code": "4-02",
+  "overall": 70,
+  "rationale": "调度与路径优化高度算法化，驾驶操作逐步自动化"
+ },
+ {
+  "code": "4-03",
+  "overall": 30,
+  "rationale": "后厨标准化与前端接待分化，人工服务仍占感观体验"
+ },
+ {
+  "code": "4-04",
+  "overall": 85,
+  "rationale": "开发与运维高度 AI 辅助，需求理解仍关键"
+ },
+ {
+  "code": "4-05",
+  "overall": 75,
+  "rationale": "风控与投顾算法化，客户关系与复杂谈判需人"
+ },
+ {
+  "code": "4-06",
+  "overall": 50,
+  "rationale": "房源匹配与估价自动化，带看与议价仍靠人"
+ },
+ {
+  "code": "4-07",
+  "overall": 45,
+  "rationale": "合同与流程标准化，个性化服务难替代"
+ },
+ {
+  "code": "4-08",
+  "overall": 65,
+  "rationale": "检测、校准等规则性强，AI 替代度高"
+ },
+ {
+  "code": "4-09",
+  "overall": 35,
+  "rationale": "现场巡检与维护为主，AI 用于监测预警"
+ },
+ {
+  "code": "4-10",
+  "overall": 15,
+  "rationale": "家政、理发等强人际与手工，AI 难以介入"
+ },
+ {
+  "code": "4-11",
+  "overall": 40,
+  "rationale": "监控与调度自动化，现场抢修需人"
+ },
+ {
+  "code": "4-12",
+  "overall": 30,
+  "rationale": "故障判断可辅助，动手操作难替代"
+ },
+ {
+  "code": "4-13",
+  "overall": 55,
+  "rationale": "内容生成工具化，互动与引导仍靠人"
+ },
+ {
+  "code": "4-14",
+  "overall": 40,
+  "rationale": "方案可生成，陪伴与激励依赖真人"
+ },
+ {
+  "code": "4-99",
+  "overall": 50,
+  "rationale": "混合特征明显，整体中等"
+ },
+ {
+  "code": "5-01",
+  "overall": 20,
+  "rationale": "耕种收高度依赖环境与体力，机械化优先于智能化"
+ },
+ {
+  "code": "5-02",
+  "overall": 15,
+  "rationale": "野外作业与经验判断为主，AI 应用有限"
+ },
+ {
+  "code": "5-03",
+  "overall": 25,
+  "rationale": "饲养与观察需现场，AI 用于健康监测"
+ },
+ {
+  "code": "5-04",
+  "overall": 15,
+  "rationale": "水上作业环境特殊，自动化难度高"
+ },
+ {
+  "code": "5-05",
+  "overall": 45,
+  "rationale": "无人机植保等新兴环节 AI 渗透较高"
+ },
+ {
+  "code": "5-99",
+  "overall": 20,
+  "rationale": "零星场景智能化，整体低"
+ },
+ {
+  "code": "6-01",
+  "overall": 70,
+  "rationale": "流程相对固定，自动化程度高"
+ },
+ {
+  "code": "6-02",
+  "overall": 65,
+  "rationale": "配方与包装线高度自动化"
+ },
+ {
+  "code": "6-03",
+  "overall": 75,
+  "rationale": "产线封闭且标准化，AI 控制强"
+ },
+ {
+  "code": "6-04",
+  "overall": 60,
+  "rationale": "图案设计与排产可 AI 化，操作仍靠人"
+ },
+ {
+  "code": "6-05",
+  "overall": 55,
+  "rationale": "裁剪与缝制自动化推进中，定制环节仍手工"
+ },
+ {
+  "code": "6-06",
+  "overall": 50,
+  "rationale": "数控设备普及，复杂工艺依赖技工"
+ },
+ {
+  "code": "6-07",
+  "overall": 70,
+  "rationale": "连续生产线自动化程度高"
+ },
+ {
+  "code": "6-08",
+  "overall": 75,
+  "rationale": "数字印刷与色彩管理 AI 介入深"
+ },
+ {
+  "code": "6-09",
+  "overall": 45,
+  "rationale": "创意与手工并重，AI 辅助设计"
+ },
+ {
+  "code": "6-10",
+  "overall": 65,
+  "rationale": "过程控制高度自动化，现场巡检仍需人"
+ },
+ {
+  "code": "6-11",
+  "overall": 70,
+  "rationale": "配方优化与安全监控 AI 化明显"
+ },
+ {
+  "code": "6-12",
+  "overall": 60,
+  "rationale": "合规与精度要求高，AI 用于质控与分析"
+ },
+ {
+  "code": "6-13",
+  "overall": 70,
+  "rationale": "产线连续稳定，自动化程度高"
+ },
+ {
+  "code": "6-14",
+  "overall": 65,
+  "rationale": "模具与成型参数可 AI 优化"
+ },
+ {
+  "code": "6-15",
+  "overall": 55,
+  "rationale": "高温与重型设备为主，AI 多用于监控"
+ },
+ {
+  "code": "6-16",
+  "overall": 40,
+  "rationale": "井下环境危险，无人化推进但进度受限"
+ },
+ {
+  "code": "6-17",
+  "overall": 60,
+  "rationale": "过程控制自动化，现场操作仍关键"
+ },
+ {
+  "code": "6-18",
+  "overall": 80,
+  "rationale": "CNC 与编程高度数字化"
+ },
+ {
+  "code": "6-19",
+  "overall": 55,
+  "rationale": "焊接与组装半自动化，复杂件靠人"
+ },
+ {
+  "code": "6-20",
+  "overall": 50,
+  "rationale": "装配与调试依赖经验"
+ },
+ {
+  "code": "6-21",
+  "overall": 55,
+  "rationale": "定制化强，AI 辅助设计"
+ },
+ {
+  "code": "6-22",
+  "overall": 65,
+  "rationale": "整车装配线机器人密集，质检与总装仍用人"
+ },
+ {
+  "code": "6-23",
+  "overall": 60,
+  "rationale": "高精度与安全性要求，AI 辅助检测"
+ },
+ {
+  "code": "6-24",
+  "overall": 55,
+  "rationale": "绕线、装配等半自动化"
+ },
+ {
+  "code": "6-25",
+  "overall": 85,
+  "rationale": "SMT 与测试高度自动化"
+ },
+ {
+  "code": "6-26",
+  "overall": 50,
+  "rationale": "精密装配与校准依赖技工"
+ },
+ {
+  "code": "6-27",
+  "overall": 60,
+  "rationale": "分拣与识别 AI 化，处理仍靠设备与人"
+ },
+ {
+  "code": "6-28",
+  "overall": 50,
+  "rationale": "调度中心高度自动化，现场维护需人"
+ },
+ {
+  "code": "6-29",
+  "overall": 20,
+  "rationale": "现场环境复杂，机器人替代慢"
+ },
+ {
+  "code": "6-30",
+  "overall": 40,
+  "rationale": "自动驾驶与遥控逐步渗透"
+ },
+ {
+  "code": "6-31",
+  "overall": 70,
+  "rationale": "物料、质检等规则性强，AI 替代度高"
+ },
+ {
+  "code": "6-99",
+  "overall": 55,
+  "rationale": "零散工种，整体中等偏上"
+ },
+ {
+  "code": "7-01",
+  "overall": 10,
+  "rationale": "指挥决策与带兵核心在人"
+ },
+ {
+  "code": "7-02",
+  "overall": 10,
+  "rationale": "技术与操作骨干，AI 难替代表率作用"
+ },
+ {
+  "code": "7-03",
+  "overall": 5,
+  "rationale": "基础执行层，训练与纪律体系非 AI 目标"
+ },
+ {
+  "code": "7-04",
+  "overall": 20,
+  "rationale": "行政与技术岗位，部分文书可被自动化"
+ },
+ {
+  "code": "8-00",
+  "overall": 50,
+  "rationale": "涵盖边缘与新兴混合岗位，AI 冲击不一"
+ }
+]
