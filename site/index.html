@@ -171,7 +171,8 @@ const DIMS=[{key:'overall',label:'综合冲击',short:'综合',main:1},{key:'aut
   {key:'moat',label:'护城河',short:'护城河',note:'红=护城河强(越抗冲击)'},{key:'adoption',label:'落地速度',short:'落地'}];
 const DIMKEYS=DIMS.map(d=>d.key);
 const MODELS=DATA.meta.models||[];
-document.getElementById('banner').innerHTML='⚠ <b>数据来源</b>:职业分类与 S(数字职业)/L(绿色职业)标注直接取自<b>《职业分类大典2022》</b>(官方);就业/薪资经众议院官方锚定(当前含 provisional 估算项,见详情 flag);AI 冲击为众议院 <b>'+MODELS.length+' 个模型</b>集成估算('+(MODELS.join('、')||'—')+'),仅供参考。'+(MODELS.length<=1?' <b>当前为单模型种子,待 11 模型回填。</b>':'');
+const SCOREMODELS=[...new Set(DATA.groups.flatMap(g=>Object.keys(g.by_model||{})))];
+document.getElementById('banner').innerHTML='⚠ <b>数据来源</b>:分类与 S/L 标注=<b>《职业分类大典2022》</b>;就业=<b>第七次全国人口普查</b>(人口普查年鉴-2020 表4-7);薪资=<b>国家统计局2023分岗位+分行业平均工资</b>;学历=AI 估计;AI 冲击=众议院多模型集成。打分模型:<b>'+(SCOREMODELS.join('、')||'—')+'</b>'+(SCOREMODELS.length<=1?'(<b>当前单模型种子,待 step4 多模型回填</b>)':'')+'。均仅供参考,不代表官方结论。';
 
 // 建树:大类 -> 中类(有就业);细类用于钻取
 const byDa={};DATA.groups.forEach(g=>{(byDa[g.parent]=byDa[g.parent]||[]).push(g);});

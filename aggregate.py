@@ -131,7 +131,7 @@ def main():
             'taxonomy': occ['meta'],
             'models': all_models, 'n_models': len(all_models),
             'unit': '中类(79)', 'dims': DIMS,
-            'disclaimer': '分类与S/L标注源自官方大典;就业/薪资经众议院官方锚定(本数据含 provisional 项见 flags);AI 冲击分为多模型集成估算,仅供参考。',
+            'disclaimer': '分类与S/L标注=职业分类大典2022;就业=第七次全国人口普查(年鉴表4-7);薪资=国家统计局2023分岗位+分行业平均工资;学历=AI估计;AI冲击=多模型集成估算。仅供参考,不代表官方结论。',
         },
         'categories': occ['categories'],
         'groups': out_groups,
