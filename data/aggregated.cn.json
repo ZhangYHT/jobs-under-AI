@@ -168,28 +168,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 25,
-    "augmentation": 82,
-    "digital": 60,
-    "moat": 74,
-    "adoption": 46
+    "overall": 33,
+    "automation": 19,
+    "augmentation": 46,
+    "digital": 43,
+    "moat": 81,
+    "adoption": 26
    },
    "dims_median": {
-    "overall": 50,
-    "automation": 25,
-    "augmentation": 82,
-    "digital": 60,
-    "moat": 74,
-    "adoption": 46
+    "overall": 25,
+    "automation": 15,
+    "augmentation": 40,
+    "digital": 40,
+    "moat": 85,
+    "adoption": 20
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 17.4,
+    "automation": 14.2,
+    "augmentation": 18.5,
+    "digital": 14.8,
+    "moat": 11.1,
+    "adoption": 17.4
    },
    "by_model": {
     "claude": {
@@ -199,14 +199,96 @@
      "digital": 60,
      "moat": 74,
      "adoption": 46
+    },
+    "deepseek": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 20,
+     "digital": 30,
+     "moat": 90,
+     "adoption": 10
+    },
+    "doubao": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 90,
+     "adoption": 10
+    },
+    "gpt": {
+     "overall": 74,
+     "automation": 55,
+     "augmentation": 78,
+     "digital": 72,
+     "moat": 58,
+     "adoption": 68
+    },
+    "grok": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 45,
+     "digital": 40,
+     "moat": 85,
+     "adoption": 20
+    },
+    "kimi": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 35,
+     "moat": 90,
+     "adoption": 20
+    },
+    "qwen": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 35
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 50,
+     "moat": 80,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 25,
+     "automation": 10,
+     "augmentation": 40,
+     "digital": 50,
+     "moat": 85,
+     "adoption": 20
+    },
+    "zhipu": {
+     "overall": 25,
+     "automation": 12,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 92,
+     "adoption": 15
     }
    },
    "rationales": {
-    "claude": "党的机关负责人:决策被增强,领导与担责难替代"
+    "claude": "党的机关负责人:决策被增强,领导与担责难替代",
+    "deepseek": "核心为政治决策与人际信任,AI仅辅助文书。",
+    "gpt": "政策协调与材料工作受AI重塑",
+    "grok": "政治决策人际信任强，AI辅助分析有限",
+    "kimi": "政治属性强，AI仅辅助文书，核心决策不可替代。",
+    "qwen": "职责综合性强，涉及政治决策与组织管理。",
+    "wenxin": "政治决策依赖人际信任，AI仅辅助",
+    "yuanbao": "决策与人际依赖高，AI仅辅助信息处理。",
+    "zhipu": "政治权威与人际信任为核心,数字化程度低。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 17.4,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "1-02",
@@ -327,28 +409,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 26,
-    "augmentation": 82,
-    "digital": 62,
-    "moat": 74,
-    "adoption": 46
+    "overall": 35,
+    "automation": 21,
+    "augmentation": 49,
+    "digital": 45,
+    "moat": 80,
+    "adoption": 29
    },
    "dims_median": {
-    "overall": 50,
-    "automation": 26,
-    "augmentation": 82,
-    "digital": 62,
-    "moat": 74,
-    "adoption": 46
+    "overall": 29,
+    "automation": 19,
+    "augmentation": 45,
+    "digital": 42,
+    "moat": 84,
+    "adoption": 24
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 16.8,
+    "automation": 14.2,
+    "augmentation": 17.8,
+    "digital": 13.8,
+    "moat": 11.1,
+    "adoption": 16.9
    },
    "by_model": {
     "claude": {
@@ -358,14 +440,96 @@
      "digital": 62,
      "moat": 74,
      "adoption": 46
+    },
+    "deepseek": {
+     "overall": 20,
+     "automation": 8,
+     "augmentation": 25,
+     "digital": 40,
+     "moat": 85,
+     "adoption": 15
+    },
+    "doubao": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 90,
+     "adoption": 10
+    },
+    "gpt": {
+     "overall": 76,
+     "automation": 58,
+     "augmentation": 80,
+     "digital": 70,
+     "moat": 55,
+     "adoption": 70
+    },
+    "grok": {
+     "overall": 28,
+     "automation": 18,
+     "augmentation": 50,
+     "digital": 45,
+     "moat": 82,
+     "adoption": 25
+    },
+    "kimi": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 40,
+     "moat": 88,
+     "adoption": 25
+    },
+    "qwen": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 35
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 50,
+     "moat": 80,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 28,
+     "automation": 12,
+     "augmentation": 45,
+     "digital": 55,
+     "moat": 88,
+     "adoption": 22
+    },
+    "zhipu": {
+     "overall": 28,
+     "automation": 15,
+     "augmentation": 42,
+     "digital": 32,
+     "moat": 90,
+     "adoption": 18
     }
    },
    "rationales": {
-    "claude": "国家机关负责人:研判被辅助,决策担责仍靠人"
+    "claude": "国家机关负责人:研判被辅助,决策担责仍靠人",
+    "deepseek": "决策依赖法律程序与责任,AI难以替代。",
+    "gpt": "公文分析可自动化，决策仍在场",
+    "grok": "行政决策需人际与责任，AI辅助材料",
+    "kimi": "政务数字化推进中，但决策与治理仍需人。",
+    "qwen": "高层决策依赖经验判断与政治智慧。",
+    "wenxin": "国家治理依赖资质与信任，AI辅助有限",
+    "yuanbao": "公共管理核心为责任与协调，AI难替代。",
+    "zhipu": "行政决策依赖人际博弈,AI仅辅助信息。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 16.8,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "1-03",
@@ -456,28 +620,28 @@
     }
    ],
    "dims": {
-    "overall": 48,
-    "automation": 24,
-    "augmentation": 80,
-    "digital": 58,
-    "moat": 74,
-    "adoption": 44
+    "overall": 30,
+    "automation": 17,
+    "augmentation": 43,
+    "digital": 40,
+    "moat": 82,
+    "adoption": 23
    },
    "dims_median": {
-    "overall": 48,
-    "automation": 24,
-    "augmentation": 80,
-    "digital": 58,
-    "moat": 74,
-    "adoption": 44
+    "overall": 24,
+    "automation": 14,
+    "augmentation": 40,
+    "digital": 39,
+    "moat": 86,
+    "adoption": 19
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 13.0,
+    "automation": 9.8,
+    "augmentation": 16.0,
+    "digital": 12.8,
+    "moat": 9.0,
+    "adoption": 12.3
    },
    "by_model": {
     "claude": {
@@ -487,14 +651,96 @@
      "digital": 58,
      "moat": 74,
      "adoption": 44
+    },
+    "deepseek": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 20,
+     "digital": 30,
+     "moat": 90,
+     "adoption": 10
+    },
+    "doubao": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 90,
+     "adoption": 10
+    },
+    "gpt": {
+     "overall": 52,
+     "automation": 35,
+     "augmentation": 60,
+     "digital": 58,
+     "moat": 68,
+     "adoption": 42
+    },
+    "grok": {
+     "overall": 22,
+     "automation": 12,
+     "augmentation": 40,
+     "digital": 38,
+     "moat": 88,
+     "adoption": 18
+    },
+    "kimi": {
+     "overall": 22,
+     "automation": 15,
+     "augmentation": 35,
+     "digital": 30,
+     "moat": 85,
+     "adoption": 15
+    },
+    "qwen": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 35
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 50,
+     "moat": 80,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 26,
+     "automation": 11,
+     "augmentation": 42,
+     "digital": 52,
+     "moat": 86,
+     "adoption": 21
+    },
+    "zhipu": {
+     "overall": 22,
+     "automation": 10,
+     "augmentation": 35,
+     "digital": 28,
+     "moat": 90,
+     "adoption": 12
     }
    },
    "rationales": {
-    "claude": "民主党派工商联负责人:事务被增强"
+    "claude": "民主党派工商联负责人:事务被增强",
+    "deepseek": "核心为政治协商与人际信任,AI仅辅助。",
+    "gpt": "统战协商偏人际，AI仅辅助",
+    "grok": "统战协调高度依赖信任与线下",
+    "kimi": "统战属性强，人际协调为核心，AI辅助有限。",
+    "qwen": "统战工作强调人际关系与协商艺术。",
+    "wenxin": "政治协商依赖人际，AI仅辅助",
+    "yuanbao": "党派协调需人际信任，AI仅辅助调研。",
+    "zhipu": "政治协商与统战工作,强人际与制度壁垒。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 13.0,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "1-04",
@@ -627,28 +873,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 28,
-    "augmentation": 80,
-    "digital": 62,
-    "moat": 70,
-    "adoption": 46
+    "overall": 31,
+    "automation": 18,
+    "augmentation": 44,
+    "digital": 42,
+    "moat": 80,
+    "adoption": 25
    },
    "dims_median": {
-    "overall": 50,
-    "automation": 28,
-    "augmentation": 80,
-    "digital": 62,
-    "moat": 70,
-    "adoption": 46
+    "overall": 28,
+    "automation": 16,
+    "augmentation": 41,
+    "digital": 41,
+    "moat": 84,
+    "adoption": 21
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 13.4,
+    "automation": 10.4,
+    "augmentation": 15.6,
+    "digital": 13.4,
+    "moat": 9.2,
+    "adoption": 12.6
    },
    "by_model": {
     "claude": {
@@ -658,14 +904,96 @@
      "digital": 62,
      "moat": 70,
      "adoption": 46
+    },
+    "deepseek": {
+     "overall": 18,
+     "automation": 5,
+     "augmentation": 25,
+     "digital": 35,
+     "moat": 85,
+     "adoption": 15
+    },
+    "doubao": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 90,
+     "adoption": 10
+    },
+    "gpt": {
+     "overall": 56,
+     "automation": 38,
+     "augmentation": 62,
+     "digital": 60,
+     "moat": 64,
+     "adoption": 46
+    },
+    "grok": {
+     "overall": 24,
+     "automation": 15,
+     "augmentation": 42,
+     "digital": 42,
+     "moat": 85,
+     "adoption": 20
+    },
+    "kimi": {
+     "overall": 28,
+     "automation": 18,
+     "augmentation": 40,
+     "digital": 35,
+     "moat": 82,
+     "adoption": 22
+    },
+    "qwen": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 35
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 50,
+     "moat": 80,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 27,
+     "automation": 13,
+     "augmentation": 43,
+     "digital": 53,
+     "moat": 87,
+     "adoption": 23
+    },
+    "zhipu": {
+     "overall": 20,
+     "automation": 10,
+     "augmentation": 30,
+     "digital": 25,
+     "moat": 88,
+     "adoption": 10
     }
    },
    "rationales": {
-    "claude": "群团社会组织负责人:行政被增强"
+    "claude": "群团社会组织负责人:行政被增强",
+    "deepseek": "组织协调需人际信任,AI辅助信息处理。",
+    "gpt": "组织联络为主，数字化中等",
+    "grok": "社会组织管理人际为主，AI边角辅助",
+    "kimi": "组织管理AI可辅助，但动员与信任依赖人际。",
+    "qwen": "群众团体运作重在信任建立与情感连接。",
+    "wenxin": "社会组织管理依赖人际，AI辅助有限",
+    "yuanbao": "社会组织运作依赖人际，AI增强有限。",
+    "zhipu": "群众动员与组织协调,线下与人际为主。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 13.4,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "1-05",
@@ -756,28 +1084,28 @@
     }
    ],
    "dims": {
-    "overall": 44,
-    "automation": 26,
-    "augmentation": 72,
-    "digital": 52,
-    "moat": 76,
-    "adoption": 42
+    "overall": 27,
+    "automation": 15,
+    "augmentation": 38,
+    "digital": 36,
+    "moat": 82,
+    "adoption": 21
    },
    "dims_median": {
-    "overall": 44,
-    "automation": 26,
-    "augmentation": 72,
-    "digital": 52,
-    "moat": 76,
-    "adoption": 42
+    "overall": 22,
+    "automation": 10,
+    "augmentation": 36,
+    "digital": 38,
+    "moat": 84,
+    "adoption": 17
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 12.0,
+    "automation": 9.2,
+    "augmentation": 15.1,
+    "digital": 12.1,
+    "moat": 8.8,
+    "adoption": 11.6
    },
    "by_model": {
     "claude": {
@@ -787,14 +1115,96 @@
      "digital": 52,
      "moat": 76,
      "adoption": 42
+    },
+    "deepseek": {
+     "overall": 12,
+     "automation": 3,
+     "augmentation": 15,
+     "digital": 20,
+     "moat": 95,
+     "adoption": 5
+    },
+    "doubao": {
+     "overall": 20,
+     "automation": 10,
+     "augmentation": 30,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 15
+    },
+    "gpt": {
+     "overall": 44,
+     "automation": 28,
+     "augmentation": 50,
+     "digital": 46,
+     "moat": 72,
+     "adoption": 34
+    },
+    "grok": {
+     "overall": 20,
+     "automation": 10,
+     "augmentation": 35,
+     "digital": 35,
+     "moat": 90,
+     "adoption": 15
+    },
+    "kimi": {
+     "overall": 20,
+     "automation": 10,
+     "augmentation": 30,
+     "digital": 25,
+     "moat": 88,
+     "adoption": 15
+    },
+    "qwen": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 35
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 50,
+     "moat": 80,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 24,
+     "automation": 9,
+     "augmentation": 38,
+     "digital": 48,
+     "moat": 84,
+     "adoption": 19
+    },
+    "zhipu": {
+     "overall": 15,
+     "automation": 8,
+     "augmentation": 25,
+     "digital": 20,
+     "moat": 90,
+     "adoption": 8
     }
    },
    "rationales": {
-    "claude": "基层自治组织负责人:线下治理为主"
+    "claude": "基层自治组织负责人:线下治理为主",
+    "deepseek": "面对面群众工作,极强线下依赖,AI边缘。",
+    "gpt": "社区事务依赖现场和关系",
+    "grok": "基层自治强线下人际，AI影响极小",
+    "kimi": "社区治理高度依赖面对面，数字化程度低。",
+    "qwen": "基层自治依赖社区互动与现场协调。",
+    "wenxin": "基层自治依赖人际，AI辅助有限",
+    "yuanbao": "基层治理重实地协调，AI难介入核心。",
+    "zhipu": "社区治理高度依赖面对面沟通与信任。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 12.0,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "1-06",
@@ -903,28 +1313,28 @@
     }
    ],
    "dims": {
-    "overall": 56,
-    "automation": 32,
-    "augmentation": 86,
-    "digital": 70,
-    "moat": 64,
-    "adoption": 54
+    "overall": 45,
+    "automation": 28,
+    "augmentation": 60,
+    "digital": 58,
+    "moat": 68,
+    "adoption": 42
    },
    "dims_median": {
-    "overall": 56,
-    "automation": 32,
-    "augmentation": 86,
-    "digital": 70,
-    "moat": 64,
-    "adoption": 54
+    "overall": 45,
+    "automation": 28,
+    "augmentation": 60,
+    "digital": 55,
+    "moat": 70,
+    "adoption": 40
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 16.3,
+    "automation": 13.9,
+    "augmentation": 16.0,
+    "digital": 12.1,
+    "moat": 9.3,
+    "adoption": 15.5
    },
    "by_model": {
     "claude": {
@@ -934,14 +1344,96 @@
      "digital": 70,
      "moat": 64,
      "adoption": 54
+    },
+    "deepseek": {
+     "overall": 25,
+     "automation": 10,
+     "augmentation": 40,
+     "digital": 55,
+     "moat": 75,
+     "adoption": 30
+    },
+    "doubao": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
+    "gpt": {
+     "overall": 81,
+     "automation": 60,
+     "augmentation": 88,
+     "digital": 80,
+     "moat": 52,
+     "adoption": 76
+    },
+    "grok": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 55,
+     "digital": 55,
+     "moat": 70,
+     "adoption": 35
+    },
+    "kimi": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 70,
+     "adoption": 50
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 40,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 60,
+     "moat": 60,
+     "adoption": 40
+    },
+    "yuanbao": {
+     "overall": 30,
+     "automation": 15,
+     "augmentation": 50,
+     "digital": 60,
+     "moat": 80,
+     "adoption": 25
+    },
+    "zhipu": {
+     "overall": 45,
+     "automation": 20,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 72,
+     "adoption": 40
     }
    },
    "rationales": {
-    "claude": "企事业单位负责人:经营分析被大幅增强"
+    "claude": "企事业单位负责人:经营分析被大幅增强",
+    "deepseek": "战略决策需人类判断,AI可增强信息处理。",
+    "gpt": "经营分析与管理流程高度数字化",
+    "grok": "企业管理AI辅助决策，执行仍需人",
+    "kimi": "管理决策AI增强显著，但战略与担责仍靠人。",
+    "qwen": "企业战略受数据驱动，但担责主体为人。",
+    "wenxin": "管理决策需人际，AI辅助分析",
+    "yuanbao": "企业决策需综合判断，AI辅助数据分析。",
+    "zhipu": "决策可被AI辅助,但战略判断与担责需人。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 16.3,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "2-01",
@@ -1140,28 +1632,28 @@
     }
    ],
    "dims": {
-    "overall": 64,
+    "overall": 67,
     "automation": 50,
-    "augmentation": 90,
-    "digital": 86,
-    "moat": 46,
-    "adoption": 62
+    "augmentation": 86,
+    "digital": 84,
+    "moat": 43,
+    "adoption": 63
    },
    "dims_median": {
-    "overall": 64,
+    "overall": 69,
     "automation": 50,
-    "augmentation": 90,
-    "digital": 86,
-    "moat": 46,
-    "adoption": 62
+    "augmentation": 85,
+    "digital": 88,
+    "moat": 42,
+    "adoption": 65
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 10.9,
+    "automation": 9.6,
+    "augmentation": 6.6,
+    "digital": 9.1,
+    "moat": 9.0,
+    "adoption": 10.8
    },
    "by_model": {
     "claude": {
@@ -1171,13 +1663,93 @@
      "digital": 86,
      "moat": 46,
      "adoption": 62
+    },
+    "deepseek": {
+     "overall": 75,
+     "automation": 50,
+     "augmentation": 95,
+     "digital": 90,
+     "moat": 30,
+     "adoption": 70
+    },
+    "doubao": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 40
+    },
+    "gpt": {
+     "overall": 84,
+     "automation": 66,
+     "augmentation": 92,
+     "digital": 92,
+     "moat": 30,
+     "adoption": 78
+    },
+    "grok": {
+     "overall": 68,
+     "automation": 55,
+     "augmentation": 85,
+     "digital": 90,
+     "moat": 45,
+     "adoption": 75
+    },
+    "kimi": {
+     "overall": 68,
+     "automation": 55,
+     "augmentation": 85,
+     "digital": 80,
+     "moat": 50,
+     "adoption": 65
+    },
+    "qwen": {
+     "overall": 70,
+     "automation": 60,
+     "augmentation": 85,
+     "digital": 80,
+     "moat": 40,
+     "adoption": 65
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 60,
+     "adoption": 50
+    },
+    "yuanbao": {
+     "overall": 70,
+     "automation": 50,
+     "augmentation": 85,
+     "digital": 90,
+     "moat": 40,
+     "adoption": 60
+    },
+    "zhipu": {
+     "overall": 72,
+     "automation": 45,
+     "augmentation": 88,
+     "digital": 85,
+     "moat": 35,
+     "adoption": 68
     }
    },
    "rationales": {
-    "claude": "科研人员:文献综述与数据分析被强力增强"
+    "claude": "科研人员:文献综述与数据分析被强力增强",
+    "deepseek": "假设生成与实验设计AI强,但原创突破仍靠人。",
+    "gpt": "研究检索写作被AI强力增强",
+    "grok": "科研文献分析AI强，实验验证需人",
+    "kimi": "AI加速文献分析与假设生成，实验验证仍需人。",
+    "qwen": "文献综述与数据分析已大量由AI辅助。",
+    "wenxin": "AI辅助研究，但核心发现需人",
+    "yuanbao": "科研创新需人类直觉，AI加速数据处理。",
+    "zhipu": "文献与数据分析高度可自动化,假说生成仍需人。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 10.9,
    "flags": []
   },
   {
@@ -2571,12 +3143,12 @@
     }
    ],
    "dims": {
-    "overall": 72,
-    "automation": 62,
-    "augmentation": 90,
-    "digital": 88,
-    "moat": 36,
-    "adoption": 72
+    "overall": 70,
+    "automation": 57,
+    "augmentation": 88,
+    "digital": 86,
+    "moat": 38,
+    "adoption": 68
    },
    "dims_median": {
     "overall": 72,
@@ -2587,12 +3159,12 @@
     "adoption": 72
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 10.6,
+    "automation": 10.4,
+    "augmentation": 5.6,
+    "digital": 6.2,
+    "moat": 8.1,
+    "adoption": 10.9
    },
    "by_model": {
     "claude": {
@@ -2602,13 +3174,93 @@
      "digital": 88,
      "moat": 36,
      "adoption": 72
+    },
+    "deepseek": {
+     "overall": 72,
+     "automation": 62,
+     "augmentation": 90,
+     "digital": 88,
+     "moat": 36,
+     "adoption": 72
+    },
+    "doubao": {
+     "overall": 50,
+     "automation": 35,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 45
+    },
+    "gpt": {
+     "overall": 86,
+     "automation": 68,
+     "augmentation": 94,
+     "digital": 94,
+     "moat": 32,
+     "adoption": 82
+    },
+    "grok": {
+     "overall": 72,
+     "automation": 62,
+     "augmentation": 90,
+     "digital": 88,
+     "moat": 36,
+     "adoption": 72
+    },
+    "kimi": {
+     "overall": 72,
+     "automation": 62,
+     "augmentation": 90,
+     "digital": 88,
+     "moat": 36,
+     "adoption": 72
+    },
+    "qwen": {
+     "overall": 75,
+     "automation": 65,
+     "augmentation": 90,
+     "digital": 85,
+     "moat": 35,
+     "adoption": 70
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 80,
+     "digital": 80,
+     "moat": 60,
+     "adoption": 50
+    },
+    "yuanbao": {
+     "overall": 72,
+     "automation": 62,
+     "augmentation": 90,
+     "digital": 88,
+     "moat": 36,
+     "adoption": 72
+    },
+    "zhipu": {
+     "overall": 75,
+     "automation": 55,
+     "augmentation": 92,
+     "digital": 88,
+     "moat": 30,
+     "adoption": 75
     }
    },
    "rationales": {
-    "claude": "工程技术人员:设计编码分析被AI显著增强"
+    "claude": "工程技术人员:设计编码分析被AI显著增强",
+    "deepseek": "设计与编码被AI大幅增强,现场调试与担责仍需人。",
+    "gpt": "建模设计编码大量受AI重塑",
+    "grok": "设计编码AI增强，现场调试担责仍需",
+    "kimi": "设计与编码被AI大幅增强，现场调试与担责仍需人。",
+    "qwen": "设计与编码被AI大幅增强,现场调试与担责仍需人。",
+    "wenxin": "AI辅助设计，施工仍需人",
+    "yuanbao": "设计与编码被AI大幅增强，现场调试仍需人。",
+    "zhipu": "设计与编码被AI大幅增强,现场调试与担责仍需人。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 10.6,
    "flags": []
   },
   {
@@ -2778,28 +3430,28 @@
     }
    ],
    "dims": {
-    "overall": 48,
-    "automation": 42,
-    "augmentation": 72,
-    "digital": 58,
-    "moat": 62,
-    "adoption": 48
+    "overall": 47,
+    "automation": 34,
+    "augmentation": 64,
+    "digital": 53,
+    "moat": 63,
+    "adoption": 40
    },
    "dims_median": {
     "overall": 48,
-    "automation": 42,
-    "augmentation": 72,
-    "digital": 58,
-    "moat": 62,
-    "adoption": 48
+    "automation": 38,
+    "augmentation": 60,
+    "digital": 50,
+    "moat": 64,
+    "adoption": 42
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 10.0,
+    "automation": 8.2,
+    "augmentation": 9.0,
+    "digital": 9.9,
+    "moat": 6.3,
+    "adoption": 10.0
    },
    "by_model": {
     "claude": {
@@ -2809,13 +3461,93 @@
      "digital": 58,
      "moat": 62,
      "adoption": 48
+    },
+    "deepseek": {
+     "overall": 45,
+     "automation": 25,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 70,
+     "adoption": 40
+    },
+    "doubao": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 35,
+     "moat": 70,
+     "adoption": 25
+    },
+    "gpt": {
+     "overall": 63,
+     "automation": 45,
+     "augmentation": 72,
+     "digital": 70,
+     "moat": 52,
+     "adoption": 48
+    },
+    "grok": {
+     "overall": 55,
+     "automation": 40,
+     "augmentation": 75,
+     "digital": 65,
+     "moat": 60,
+     "adoption": 50
+    },
+    "kimi": {
+     "overall": 48,
+     "automation": 35,
+     "augmentation": 60,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 40
+    },
+    "qwen": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 45
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 30,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 70,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 55,
+     "automation": 40,
+     "augmentation": 75,
+     "digital": 60,
+     "moat": 70,
+     "adoption": 50
+    },
+    "zhipu": {
+     "overall": 42,
+     "automation": 25,
+     "augmentation": 60,
+     "digital": 45,
+     "moat": 55,
+     "adoption": 35
     }
    },
    "rationales": {
-    "claude": "农业技术人员:田间实操与本地化经验为主"
+    "claude": "农业技术人员:田间实操与本地化经验为主",
+    "deepseek": "实地观察与经验结合AI辅助决策。",
+    "gpt": "农业技术受数据化推动但落地慢",
+    "grok": "农业技术AI数据分析，实地试验依赖",
+    "kimi": "智慧农业推进中，但田间实操不可替代。",
+    "qwen": "农业技术推广结合实地指导与数字工具。",
+    "wenxin": "田间指导依赖经验，AI辅助有限",
+    "yuanbao": "田间实操不可替代，AI优化种植建议。",
+    "zhipu": "精准农业数据可AI化,田间诊断与实操需人。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 10.0,
    "flags": []
   },
   {
@@ -2949,28 +3681,28 @@
     }
    ],
    "dims": {
-    "overall": 46,
-    "automation": 30,
-    "augmentation": 70,
-    "digital": 55,
-    "moat": 72,
-    "adoption": 46
+    "overall": 47,
+    "automation": 36,
+    "augmentation": 64,
+    "digital": 57,
+    "moat": 68,
+    "adoption": 44
    },
    "dims_median": {
-    "overall": 46,
-    "automation": 30,
+    "overall": 44,
+    "automation": 32,
     "augmentation": 70,
-    "digital": 55,
-    "moat": 72,
-    "adoption": 46
+    "digital": 60,
+    "moat": 71,
+    "adoption": 43
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 12.8,
+    "automation": 10.7,
+    "augmentation": 12.1,
+    "digital": 13.5,
+    "moat": 12.4,
+    "adoption": 13.1
    },
    "by_model": {
     "claude": {
@@ -2980,14 +3712,96 @@
      "digital": 55,
      "moat": 72,
      "adoption": 46
+    },
+    "deepseek": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 75,
+     "adoption": 55
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 30
+    },
+    "gpt": {
+     "overall": 68,
+     "automation": 48,
+     "augmentation": 76,
+     "digital": 66,
+     "moat": 62,
+     "adoption": 50
+    },
+    "grok": {
+     "overall": 62,
+     "automation": 48,
+     "augmentation": 80,
+     "digital": 75,
+     "moat": 50,
+     "adoption": 65
+    },
+    "kimi": {
+     "overall": 42,
+     "automation": 30,
+     "augmentation": 55,
+     "digital": 40,
+     "moat": 80,
+     "adoption": 35
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 60
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 70,
+     "moat": 70,
+     "adoption": 40
+    },
+    "yuanbao": {
+     "overall": 35,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 60,
+     "moat": 80,
+     "adoption": 30
+    },
+    "zhipu": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 35,
+     "moat": 85,
+     "adoption": 25
     }
    },
    "rationales": {
-    "claude": "飞机船舶技术人员:安全冗余与实操约束强"
+    "claude": "飞机船舶技术人员:安全冗余与实操约束强",
+    "deepseek": "核心操作可辅助,应急与担责留人。",
+    "gpt": "规范严谨，AI辅助诊断较强",
+    "grok": "飞机船舶设计AI助，安全验证监管强",
+    "kimi": "安全法规严格，实操与认证壁垒高。",
+    "qwen": "飞行船舶系统维护需专业知识与现场判断。",
+    "wenxin": "安全关键需资质，AI辅助维护",
+    "yuanbao": "设备操作需经验，AI辅助故障诊断。",
+    "zhipu": "安全监管极严,自动驾驶辅助但责任不可替代。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 12.8,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "2-05",
@@ -3570,28 +4384,28 @@
     }
    ],
    "dims": {
-    "overall": 44,
-    "automation": 22,
-    "augmentation": 76,
-    "digital": 48,
-    "moat": 80,
-    "adoption": 44
+    "overall": 54,
+    "automation": 36,
+    "augmentation": 73,
+    "digital": 58,
+    "moat": 73,
+    "adoption": 50
    },
    "dims_median": {
-    "overall": 44,
-    "automation": 22,
-    "augmentation": 76,
-    "digital": 48,
-    "moat": 80,
-    "adoption": 44
+    "overall": 55,
+    "automation": 38,
+    "augmentation": 73,
+    "digital": 60,
+    "moat": 75,
+    "adoption": 50
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 7.5,
+    "automation": 10.0,
+    "augmentation": 5.9,
+    "digital": 9.2,
+    "moat": 8.5,
+    "adoption": 8.3
    },
    "by_model": {
     "claude": {
@@ -3601,13 +4415,93 @@
      "digital": 48,
      "moat": 80,
      "adoption": 44
+    },
+    "deepseek": {
+     "overall": 55,
+     "automation": 30,
+     "augmentation": 80,
+     "digital": 60,
+     "moat": 80,
+     "adoption": 50
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 25,
+     "augmentation": 60,
+     "digital": 45,
+     "moat": 70,
+     "adoption": 35
+    },
+    "gpt": {
+     "overall": 66,
+     "automation": 42,
+     "augmentation": 74,
+     "digital": 72,
+     "moat": 70,
+     "adoption": 56
+    },
+    "grok": {
+     "overall": 48,
+     "automation": 35,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 75,
+     "adoption": 55
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 50,
+     "moat": 75,
+     "adoption": 50
+    },
+    "qwen": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 65,
+     "moat": 50,
+     "adoption": 65
+    },
+    "wenxin": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 80,
+     "digital": 70,
+     "moat": 80,
+     "adoption": 40
+    },
+    "yuanbao": {
+     "overall": 58,
+     "automation": 45,
+     "augmentation": 80,
+     "digital": 65,
+     "moat": 75,
+     "adoption": 55
+    },
+    "zhipu": {
+     "overall": 55,
+     "automation": 25,
+     "augmentation": 72,
+     "digital": 50,
+     "moat": 78,
+     "adoption": 45
     }
    },
    "rationales": {
-    "claude": "卫生专业技术人员:诊疗被辅助,操作担责难替代"
+    "claude": "卫生专业技术人员:诊疗被辅助,操作担责难替代",
+    "deepseek": "诊断辅助强,但触诊手术需人,强护城河。",
+    "gpt": "问诊记录可自动化，临床约束高",
+    "grok": "诊疗需人际信任，AI辅助诊断影像",
+    "kimi": "AI辅助诊断影像，但医患信任与手术仍需人。",
+    "qwen": "医疗诊断辅助提升效率，最终决策由医生负责。",
+    "wenxin": "医疗资质严格，AI辅助诊断但诊疗需人",
+    "yuanbao": "临床决策需医患信任，AI辅助影像分析。",
+    "zhipu": "AI辅助诊断显著,但临床决策与医患信任不可替代。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 7.5,
    "flags": []
   },
   {
@@ -4071,28 +4965,28 @@
     }
    ],
    "dims": {
-    "overall": 80,
-    "automation": 72,
-    "augmentation": 90,
-    "digital": 92,
+    "overall": 75,
+    "automation": 65,
+    "augmentation": 87,
+    "digital": 89,
     "moat": 38,
-    "adoption": 76
+    "adoption": 73
    },
    "dims_median": {
-    "overall": 80,
-    "automation": 72,
-    "augmentation": 90,
-    "digital": 92,
-    "moat": 38,
+    "overall": 75,
+    "automation": 65,
+    "augmentation": 88,
+    "digital": 91,
+    "moat": 39,
     "adoption": 76
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 4.4,
+    "automation": 4.2,
+    "augmentation": 3.8,
+    "digital": 4.3,
+    "moat": 11.7,
+    "adoption": 6.6
    },
    "by_model": {
     "claude": {
@@ -4102,13 +4996,93 @@
      "digital": 92,
      "moat": 38,
      "adoption": 76
+    },
+    "deepseek": {
+     "overall": 78,
+     "automation": 70,
+     "augmentation": 90,
+     "digital": 95,
+     "moat": 25,
+     "adoption": 80
+    },
+    "doubao": {
+     "overall": 70,
+     "automation": 65,
+     "augmentation": 80,
+     "digital": 85,
+     "moat": 30,
+     "adoption": 65
+    },
+    "gpt": {
+     "overall": 83,
+     "automation": 67,
+     "augmentation": 90,
+     "digital": 92,
+     "moat": 40,
+     "adoption": 80
+    },
+    "grok": {
+     "overall": 75,
+     "automation": 65,
+     "augmentation": 88,
+     "digital": 92,
+     "moat": 30,
+     "adoption": 80
+    },
+    "kimi": {
+     "overall": 75,
+     "automation": 65,
+     "augmentation": 88,
+     "digital": 85,
+     "moat": 40,
+     "adoption": 78
+    },
+    "qwen": {
+     "overall": 70,
+     "automation": 60,
+     "augmentation": 80,
+     "digital": 80,
+     "moat": 40,
+     "adoption": 70
+    },
+    "wenxin": {
+     "overall": 70,
+     "automation": 60,
+     "augmentation": 90,
+     "digital": 90,
+     "moat": 70,
+     "adoption": 60
+    },
+    "yuanbao": {
+     "overall": 72,
+     "automation": 65,
+     "augmentation": 85,
+     "digital": 90,
+     "moat": 40,
+     "adoption": 70
+    },
+    "zhipu": {
+     "overall": 78,
+     "automation": 58,
+     "augmentation": 88,
+     "digital": 92,
+     "moat": 32,
+     "adoption": 75
     }
    },
    "rationales": {
-    "claude": "经济金融专业:数据建模与报告高度可自动"
+    "claude": "经济金融专业:数据建模与报告高度可自动",
+    "deepseek": "数据驱动决策,AI替代分析,但策略需人。",
+    "gpt": "金融分析与报告生成被快速重塑",
+    "grok": "金融分析建模AI重塑，监管决策仍人",
+    "kimi": "数据分析与交易高度数字化，AI渗透极快。",
+    "qwen": "金融建模与风险评估高度依赖数据系统。",
+    "wenxin": "金融AI应用快，但决策需人",
+    "yuanbao": "金融建模AI主导，合规与风控需人。",
+    "zhipu": "量化分析与报告生成高度可自动化,合规需人把关。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 4.4,
    "flags": []
   },
   {
@@ -4284,28 +5258,28 @@
     }
    ],
    "dims": {
-    "overall": 60,
-    "automation": 42,
-    "augmentation": 86,
-    "digital": 72,
-    "moat": 60,
-    "adoption": 58
+    "overall": 59,
+    "automation": 47,
+    "augmentation": 76,
+    "digital": 70,
+    "moat": 62,
+    "adoption": 54
    },
    "dims_median": {
-    "overall": 60,
-    "automation": 42,
-    "augmentation": 86,
-    "digital": 72,
-    "moat": 60,
-    "adoption": 58
+    "overall": 58,
+    "automation": 48,
+    "augmentation": 76,
+    "digital": 70,
+    "moat": 68,
+    "adoption": 56
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 8.2,
+    "automation": 10.6,
+    "augmentation": 5.8,
+    "digital": 12.1,
+    "moat": 15.5,
+    "adoption": 9.6
    },
    "by_model": {
     "claude": {
@@ -4315,13 +5289,93 @@
      "digital": 72,
      "moat": 60,
      "adoption": 58
+    },
+    "deepseek": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 80,
+     "digital": 70,
+     "moat": 75,
+     "adoption": 50
+    },
+    "doubao": {
+     "overall": 75,
+     "automation": 70,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 25,
+     "adoption": 70
+    },
+    "gpt": {
+     "overall": 69,
+     "automation": 50,
+     "augmentation": 76,
+     "digital": 80,
+     "moat": 58,
+     "adoption": 60
+    },
+    "grok": {
+     "overall": 52,
+     "automation": 40,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 65,
+     "adoption": 60
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 35,
+     "augmentation": 65,
+     "digital": 45,
+     "moat": 78,
+     "adoption": 40
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 60
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 50,
+     "augmentation": 80,
+     "digital": 80,
+     "moat": 70,
+     "adoption": 40
+    },
+    "yuanbao": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 70,
+     "adoption": 55
+    },
+    "zhipu": {
+     "overall": 52,
+     "automation": 30,
+     "augmentation": 68,
+     "digital": 55,
+     "moat": 75,
+     "adoption": 42
     }
    },
    "rationales": {
-    "claude": "监察法律社会宗教:检索起草被增强,裁量靠人"
+    "claude": "监察法律社会宗教:检索起草被增强,裁量靠人",
+    "deepseek": "法条检索与文书增强,法庭辩论与担责需人。",
+    "gpt": "法规检索强，裁量与责任仍重",
+    "grok": "法律监察AI检索，判决人际责任重",
+    "kimi": "法律检索AI增强，但庭审与信任依赖人。",
+    "qwen": "法律研究与文书起草已被AI显著改变。",
+    "wenxin": "法律文书AI辅助，但庭审需人",
+    "yuanbao": "法律检索AI高效，庭审辩护需人际。",
+    "zhipu": "文书审查可AI辅助,裁判权威与伦理判断需人。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 8.2,
    "flags": []
   },
   {
@@ -4461,28 +5515,28 @@
     }
    ],
    "dims": {
-    "overall": 46,
-    "automation": 26,
-    "augmentation": 82,
-    "digital": 56,
-    "moat": 74,
-    "adoption": 46
+    "overall": 57,
+    "automation": 39,
+    "augmentation": 77,
+    "digital": 65,
+    "moat": 62,
+    "adoption": 53
    },
    "dims_median": {
-    "overall": 46,
-    "automation": 26,
-    "augmentation": 82,
-    "digital": 56,
-    "moat": 74,
-    "adoption": 46
+    "overall": 55,
+    "automation": 40,
+    "augmentation": 75,
+    "digital": 60,
+    "moat": 65,
+    "adoption": 50
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 8.5,
+    "automation": 11.4,
+    "augmentation": 6.5,
+    "digital": 10.6,
+    "moat": 12.7,
+    "adoption": 9.8
    },
    "by_model": {
     "claude": {
@@ -4492,13 +5546,93 @@
      "digital": 56,
      "moat": 74,
      "adoption": 46
+    },
+    "deepseek": {
+     "overall": 50,
+     "automation": 25,
+     "augmentation": 75,
+     "digital": 60,
+     "moat": 80,
+     "adoption": 45
+    },
+    "doubao": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 75,
+     "digital": 75,
+     "moat": 40,
+     "adoption": 55
+    },
+    "gpt": {
+     "overall": 79,
+     "automation": 62,
+     "augmentation": 88,
+     "digital": 85,
+     "moat": 46,
+     "adoption": 72
+    },
+    "grok": {
+     "overall": 58,
+     "automation": 45,
+     "augmentation": 85,
+     "digital": 80,
+     "moat": 55,
+     "adoption": 70
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 30,
+     "augmentation": 75,
+     "digital": 50,
+     "moat": 70,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 60,
+     "moat": 55,
+     "adoption": 50
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 70,
+     "adoption": 40
+    },
+    "yuanbao": {
+     "overall": 55,
+     "automation": 40,
+     "augmentation": 80,
+     "digital": 65,
+     "moat": 75,
+     "adoption": 50
+    },
+    "zhipu": {
+     "overall": 58,
+     "automation": 28,
+     "augmentation": 75,
+     "digital": 60,
+     "moat": 60,
+     "adoption": 50
     }
    },
    "rationales": {
-    "claude": "教学人员:备课答疑被增强,育人与管教难替代"
+    "claude": "教学人员:备课答疑被增强,育人与管教难替代",
+    "deepseek": "知识传递可辅助,育人情感连接是关键。",
+    "gpt": "备课批改可增强，课堂互动仍需人",
+    "grok": "教学内容AI生成，互动育人需人",
+    "kimi": "AI个性化教学增强显著，但育人仍需师生互动。",
+    "qwen": "教学设计可借助AI，但师生互动难以替代。",
+    "wenxin": "教学互动需人，AI辅助内容",
+    "yuanbao": "课堂互动不可替代，AI辅助备课批改。",
+    "zhipu": "AI可辅助备课与批改,师生互动与育人不可替代。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 8.5,
    "flags": []
   },
   {
@@ -4896,28 +6030,28 @@
     }
    ],
    "dims": {
-    "overall": 54,
-    "automation": 40,
-    "augmentation": 82,
-    "digital": 62,
-    "moat": 58,
-    "adoption": 54
+    "overall": 55,
+    "automation": 38,
+    "augmentation": 73,
+    "digital": 66,
+    "moat": 57,
+    "adoption": 52
    },
    "dims_median": {
     "overall": 54,
     "automation": 40,
-    "augmentation": 82,
-    "digital": 62,
-    "moat": 58,
-    "adoption": 54
+    "augmentation": 75,
+    "digital": 66,
+    "moat": 56,
+    "adoption": 52
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 10.3,
+    "automation": 11.2,
+    "augmentation": 10.3,
+    "digital": 13.5,
+    "moat": 9.7,
+    "adoption": 11.5
    },
    "by_model": {
     "claude": {
@@ -4927,13 +6061,93 @@
      "digital": 62,
      "moat": 58,
      "adoption": 54
+    },
+    "deepseek": {
+     "overall": 45,
+     "automation": 20,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 70,
+     "adoption": 50
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 20,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 75,
+     "adoption": 30
+    },
+    "gpt": {
+     "overall": 72,
+     "automation": 50,
+     "augmentation": 82,
+     "digital": 76,
+     "moat": 48,
+     "adoption": 66
+    },
+    "grok": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 82,
+     "digital": 85,
+     "moat": 40,
+     "adoption": 65
+    },
+    "kimi": {
+     "overall": 60,
+     "automation": 45,
+     "augmentation": 80,
+     "digital": 70,
+     "moat": 55,
+     "adoption": 65
+    },
+    "qwen": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 55,
+     "moat": 60,
+     "adoption": 45
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 70,
+     "moat": 60,
+     "adoption": 40
+    },
+    "yuanbao": {
+     "overall": 65,
+     "automation": 45,
+     "augmentation": 80,
+     "digital": 85,
+     "moat": 50,
+     "adoption": 60
+    },
+    "zhipu": {
+     "overall": 55,
+     "automation": 30,
+     "augmentation": 70,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 45
     }
    },
    "rationales": {
-    "claude": "文学艺术体育:生成式AI冲击创作,展演靠人"
+    "claude": "文学艺术体育:生成式AI冲击创作,展演靠人",
+    "deepseek": "创意辅助,但独特表达与身体表演难替代。",
+    "gpt": "创作生成强，但风格与审美留人",
+    "grok": "创作表演AI辅助，原创情感依赖",
+    "kimi": "AI生成内容冲击创作，但原创与竞技不可替代。",
+    "qwen": "艺术创作与体育训练强调个性表达与身体能力。",
+    "wenxin": "原创创作需人，AI辅助工具",
+    "yuanbao": "创意核心属人类，AI生成辅助素材。",
+    "zhipu": "创作辅助强但原创性与表演仍需人,体育抗冲击。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 10.3,
    "flags": []
   },
   {
@@ -5145,28 +6359,28 @@
     }
    ],
    "dims": {
-    "overall": 72,
-    "automation": 64,
-    "augmentation": 88,
-    "digital": 88,
-    "moat": 38,
-    "adoption": 70
+    "overall": 68,
+    "automation": 55,
+    "augmentation": 81,
+    "digital": 84,
+    "moat": 42,
+    "adoption": 67
    },
    "dims_median": {
-    "overall": 72,
-    "automation": 64,
-    "augmentation": 88,
-    "digital": 88,
-    "moat": 38,
+    "overall": 70,
+    "automation": 55,
+    "augmentation": 85,
+    "digital": 89,
+    "moat": 44,
     "adoption": 70
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 10.6,
+    "automation": 10.6,
+    "augmentation": 7.3,
+    "digital": 10.3,
+    "moat": 10.8,
+    "adoption": 12.8
    },
    "by_model": {
     "claude": {
@@ -5176,13 +6390,93 @@
      "digital": 88,
      "moat": 38,
      "adoption": 70
+    },
+    "deepseek": {
+     "overall": 70,
+     "automation": 65,
+     "augmentation": 85,
+     "digital": 95,
+     "moat": 30,
+     "adoption": 75
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 65,
+     "digital": 60,
+     "moat": 60,
+     "adoption": 35
+    },
+    "gpt": {
+     "overall": 78,
+     "automation": 60,
+     "augmentation": 86,
+     "digital": 90,
+     "moat": 42,
+     "adoption": 74
+    },
+    "grok": {
+     "overall": 78,
+     "automation": 70,
+     "augmentation": 90,
+     "digital": 95,
+     "moat": 25,
+     "adoption": 85
+    },
+    "kimi": {
+     "overall": 70,
+     "automation": 55,
+     "augmentation": 85,
+     "digital": 80,
+     "moat": 45,
+     "adoption": 75
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 75,
+     "moat": 45,
+     "adoption": 65
+    },
+    "wenxin": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 50,
+     "adoption": 60
+    },
+    "yuanbao": {
+     "overall": 68,
+     "automation": 50,
+     "augmentation": 75,
+     "digital": 80,
+     "moat": 55,
+     "adoption": 60
+    },
+    "zhipu": {
+     "overall": 75,
+     "automation": 50,
+     "augmentation": 85,
+     "digital": 90,
+     "moat": 30,
+     "adoption": 70
     }
    },
    "rationales": {
-    "claude": "新闻出版文化:采写编排与内容生产受冲击大"
+    "claude": "新闻出版文化:采写编排与内容生产受冲击大",
+    "deepseek": "事实报道AI可胜任,深度评论需人。",
+    "gpt": "采编校对与内容生产高度数字化",
+    "grok": "新闻出版内容生成AI快，审核把关需人",
+    "kimi": "内容生产与分发被AI重塑，事实核查仍需人。",
+    "qwen": "内容创作流程中AI参与度持续上升。",
+    "wenxin": "AI辅助写作，编辑需人",
+    "yuanbao": "内容策划需人类审美，AI辅助初稿生成。",
+    "zhipu": "写作编辑高度数字化,AI生成内容已大规模渗透。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 10.6,
    "flags": []
   },
   {
@@ -5273,28 +6567,28 @@
     }
    ],
    "dims": {
-    "overall": 60,
-    "automation": 48,
-    "augmentation": 84,
-    "digital": 76,
-    "moat": 48,
-    "adoption": 58
+    "overall": 59,
+    "automation": 46,
+    "augmentation": 74,
+    "digital": 71,
+    "moat": 52,
+    "adoption": 54
    },
    "dims_median": {
     "overall": 60,
-    "automation": 48,
-    "augmentation": 84,
-    "digital": 76,
-    "moat": 48,
-    "adoption": 58
+    "automation": 50,
+    "augmentation": 70,
+    "digital": 70,
+    "moat": 50,
+    "adoption": 50
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.7,
+    "automation": 7.4,
+    "augmentation": 6.9,
+    "digital": 10.0,
+    "moat": 6.6,
+    "adoption": 8.1
    },
    "by_model": {
     "claude": {
@@ -5304,13 +6598,85 @@
      "digital": 76,
      "moat": 48,
      "adoption": 58
+    },
+    "deepseek": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 70,
+     "moat": 40,
+     "adoption": 50
+    },
+    "gpt": {
+     "overall": 74,
+     "automation": 56,
+     "augmentation": 82,
+     "digital": 82,
+     "moat": 48,
+     "adoption": 68
+    },
+    "grok": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 78,
+     "digital": 82,
+     "moat": 48,
+     "adoption": 65
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 55,
+     "moat": 60,
+     "adoption": 50
+    },
+    "qwen": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 65,
+     "moat": 50,
+     "adoption": 55
+    },
+    "wenxin": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 80,
+     "digital": 80,
+     "moat": 60,
+     "adoption": 50
+    },
+    "yuanbao": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 65,
+     "digital": 70,
+     "moat": 60,
+     "adoption": 50
+    },
+    "zhipu": {
+     "overall": 50,
+     "automation": 30,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 50,
+     "adoption": 40
     }
    },
    "rationales": {
-    "claude": "其他专业技术人员"
+    "claude": "其他专业技术人员",
+    "deepseek": "专业技术涵盖广,AI增强为主。",
+    "gpt": "通用专技任务多为电脑工作",
+    "grok": "其他技术岗位混合，视具体而定",
+    "kimi": "类别杂，视具体领域差异大，取中位数估计。",
+    "qwen": "其他专业技术多涉及复杂问题解决。",
+    "wenxin": "专业服务AI辅助，但资质需人",
+    "yuanbao": "细分领域差异大，AI增强通用任务。",
+    "zhipu": "异质性大,取均值估计,脑力与体力混合。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 9,
+   "std": 6.7,
    "flags": []
   },
   {
@@ -5534,28 +6900,28 @@
     }
    ],
    "dims": {
-    "overall": 88,
-    "automation": 86,
-    "augmentation": 86,
-    "digital": 95,
-    "moat": 22,
-    "adoption": 82
+    "overall": 72,
+    "automation": 67,
+    "augmentation": 79,
+    "digital": 85,
+    "moat": 30,
+    "adoption": 71
    },
    "dims_median": {
-    "overall": 88,
-    "automation": 86,
-    "augmentation": 86,
-    "digital": 95,
-    "moat": 22,
-    "adoption": 82
+    "overall": 72,
+    "automation": 66,
+    "augmentation": 80,
+    "digital": 88,
+    "moat": 30,
+    "adoption": 70
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 10.0,
+    "automation": 8.6,
+    "augmentation": 5.1,
+    "digital": 7.4,
+    "moat": 6.9,
+    "adoption": 7.4
    },
    "by_model": {
     "claude": {
@@ -5565,13 +6931,93 @@
      "digital": 95,
      "moat": 22,
      "adoption": 82
+    },
+    "deepseek": {
+     "overall": 75,
+     "automation": 70,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 25,
+     "adoption": 70
+    },
+    "doubao": {
+     "overall": 80,
+     "automation": 75,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 20,
+     "adoption": 75
+    },
+    "gpt": {
+     "overall": 80,
+     "automation": 66,
+     "augmentation": 88,
+     "digital": 94,
+     "moat": 36,
+     "adoption": 82
+    },
+    "grok": {
+     "overall": 65,
+     "automation": 60,
+     "augmentation": 80,
+     "digital": 85,
+     "moat": 40,
+     "adoption": 70
+    },
+    "kimi": {
+     "overall": 65,
+     "automation": 60,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 40,
+     "adoption": 65
+    },
+    "qwen": {
+     "overall": 70,
+     "automation": 65,
+     "augmentation": 75,
+     "digital": 80,
+     "moat": 35,
+     "adoption": 70
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 60,
+     "augmentation": 70,
+     "digital": 80,
+     "moat": 30,
+     "adoption": 60
+    },
+    "yuanbao": {
+     "overall": 75,
+     "automation": 70,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 30,
+     "adoption": 75
+    },
+    "zhipu": {
+     "overall": 68,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 80,
+     "moat": 25,
+     "adoption": 60
     }
    },
    "rationales": {
-    "claude": "行政办事:排程文档纪要例行处理高度自动化"
+    "claude": "行政办事:排程文档纪要例行处理高度自动化",
+    "deepseek": "例行文书与调度易自动化。",
+    "gpt": "文书流转与信息处理高度可自动化",
+    "grok": "行政办事文件处理AI自动化高",
+    "kimi": "流程化行政事务被RPA与AI大量替代。",
+    "qwen": "行政事务中信息录入与审批流程高度自动化。",
+    "wenxin": "行政事务易自动化，AI提效",
+    "yuanbao": "流程性工作AI可替代，复杂协调需人。",
+    "zhipu": "文书审批与数据录入高度可自动化,流程型工作。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 10.0,
    "flags": []
   },
   {
@@ -5729,28 +7175,28 @@
     }
    ],
    "dims": {
-    "overall": 42,
-    "automation": 40,
-    "augmentation": 52,
-    "digital": 46,
-    "moat": 72,
-    "adoption": 44
+    "overall": 33,
+    "automation": 24,
+    "augmentation": 44,
+    "digital": 37,
+    "moat": 78,
+    "adoption": 28
    },
    "dims_median": {
-    "overall": 42,
-    "automation": 40,
-    "augmentation": 52,
-    "digital": 46,
-    "moat": 72,
-    "adoption": 44
+    "overall": 30,
+    "automation": 20,
+    "augmentation": 45,
+    "digital": 32,
+    "moat": 80,
+    "adoption": 25
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 12.2,
+    "automation": 10.6,
+    "augmentation": 11.5,
+    "digital": 10.4,
+    "moat": 9.2,
+    "adoption": 10.4
    },
    "by_model": {
     "claude": {
@@ -5760,14 +7206,96 @@
      "digital": 46,
      "moat": 72,
      "adoption": 44
+    },
+    "deepseek": {
+     "overall": 15,
+     "automation": 10,
+     "augmentation": 25,
+     "digital": 30,
+     "moat": 95,
+     "adoption": 20
+    },
+    "doubao": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 35,
+     "moat": 75,
+     "adoption": 25
+    },
+    "gpt": {
+     "overall": 57,
+     "automation": 34,
+     "augmentation": 60,
+     "digital": 52,
+     "moat": 70,
+     "adoption": 40
+    },
+    "grok": {
+     "overall": 32,
+     "automation": 20,
+     "augmentation": 50,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 25
+    },
+    "kimi": {
+     "overall": 30,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 20
+    },
+    "qwen": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 45
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 50,
+     "moat": 80,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 25,
+     "automation": 20,
+     "augmentation": 30,
+     "digital": 30,
+     "moat": 85,
+     "adoption": 25
+    },
+    "zhipu": {
+     "overall": 22,
+     "automation": 12,
+     "augmentation": 35,
+     "digital": 25,
+     "moat": 82,
+     "adoption": 15
     }
    },
    "rationales": {
-    "claude": "安全消防:现场处置与应急,体力与责任为主"
+    "claude": "安全消防:现场处置与应急,体力与责任为主",
+    "deepseek": "核心为现场应急与体力,AI仅监控预警。",
+    "gpt": "安防巡检有现场性，AI为辅",
+    "grok": "安全消防线下实操为主，AI监测辅助",
+    "kimi": "应急处置高度依赖体能与现场判断。",
+    "qwen": "安全消防需现场响应与应急处置能力。",
+    "wenxin": "消防现场需人，AI辅助有限",
+    "yuanbao": "安防实操需应变，AI仅辅助监控预警。",
+    "zhipu": "消防与安保以线下实操为主,监控可AI辅助。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 12.2,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "3-03",
@@ -5870,28 +7398,28 @@
     }
    ],
    "dims": {
-    "overall": 74,
-    "automation": 70,
-    "augmentation": 84,
-    "digital": 88,
-    "moat": 40,
-    "adoption": 68
+    "overall": 52,
+    "automation": 43,
+    "augmentation": 66,
+    "digital": 66,
+    "moat": 60,
+    "adoption": 47
    },
    "dims_median": {
-    "overall": 74,
-    "automation": 70,
-    "augmentation": 84,
-    "digital": 88,
-    "moat": 40,
-    "adoption": 68
+    "overall": 50,
+    "automation": 42,
+    "augmentation": 68,
+    "digital": 70,
+    "moat": 62,
+    "adoption": 42
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 14.9,
+    "automation": 15.9,
+    "augmentation": 12.4,
+    "digital": 17.5,
+    "moat": 14.0,
+    "adoption": 14.2
    },
    "by_model": {
     "claude": {
@@ -5901,15 +7429,96 @@
      "digital": 88,
      "moat": 40,
      "adoption": 68
+    },
+    "deepseek": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 75,
+     "digital": 80,
+     "moat": 50,
+     "adoption": 45
+    },
+    "doubao": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
+    "gpt": {
+     "overall": 72,
+     "automation": 56,
+     "augmentation": 78,
+     "digital": 82,
+     "moat": 44,
+     "adoption": 68
+    },
+    "grok": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 65,
+     "digital": 70,
+     "moat": 60,
+     "adoption": 50
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 35,
+     "augmentation": 65,
+     "digital": 45,
+     "moat": 75,
+     "adoption": 40
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 60,
+     "augmentation": 70,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 60
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 80,
+     "moat": 70,
+     "adoption": 40
+    },
+    "yuanbao": {
+     "overall": 35,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 60,
+     "moat": 75,
+     "adoption": 40
+    },
+    "zhipu": {
+     "overall": 48,
+     "automation": 30,
+     "augmentation": 62,
+     "digital": 55,
+     "moat": 65,
+     "adoption": 38
     }
    },
    "rationales": {
-    "claude": "仲裁调解法律辅助:文书检索高度可自动"
+    "claude": "仲裁调解法律辅助:文书检索高度可自动",
+    "deepseek": "事务性工作可AI,调解依赖人。",
+    "gpt": "文书归档与程序辅助空间大",
+    "grok": "调解仲裁AI辅助案卷，人际调解关键",
+    "kimi": "文书辅助AI可行，调解人际信任为核心。",
+    "qwen": "法律辅助事务中文件生成与检索趋于自动。",
+    "wenxin": "调解需人际，AI辅助文书",
+    "yuanbao": "调解依赖人际共情，AI整理材料辅助。",
+    "zhipu": "法律文书可AI辅助,调解需人际信任与权威。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 14.9,
    "flags": [
-    "employment_disagreement"
+    "employment_disagreement",
+    "score_disagreement"
    ]
   },
   {
@@ -6000,28 +7609,28 @@
     }
    ],
    "dims": {
-    "overall": 78,
-    "automation": 74,
-    "augmentation": 82,
-    "digital": 90,
-    "moat": 30,
-    "adoption": 72
+    "overall": 62,
+    "automation": 54,
+    "augmentation": 71,
+    "digital": 74,
+    "moat": 41,
+    "adoption": 58
    },
    "dims_median": {
-    "overall": 78,
-    "automation": 74,
-    "augmentation": 82,
-    "digital": 90,
-    "moat": 30,
-    "adoption": 72
+    "overall": 60,
+    "automation": 60,
+    "augmentation": 70,
+    "digital": 75,
+    "moat": 40,
+    "adoption": 60
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 9.8,
+    "automation": 11.1,
+    "augmentation": 8.1,
+    "digital": 11.9,
+    "moat": 9.9,
+    "adoption": 9.5
    },
    "by_model": {
     "claude": {
@@ -6031,13 +7640,85 @@
      "digital": 90,
      "moat": 30,
      "adoption": 72
+    },
+    "deepseek": {
+     "overall": 65,
+     "automation": 60,
+     "augmentation": 75,
+     "digital": 80,
+     "moat": 30,
+     "adoption": 60
+    },
+    "gpt": {
+     "overall": 76,
+     "automation": 60,
+     "augmentation": 84,
+     "digital": 88,
+     "moat": 40,
+     "adoption": 72
+    },
+    "grok": {
+     "overall": 55,
+     "automation": 48,
+     "augmentation": 72,
+     "digital": 75,
+     "moat": 50,
+     "adoption": 60
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 55,
+     "adoption": 45
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 60,
+     "augmentation": 70,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 60
+    },
+    "wenxin": {
+     "overall": 60,
+     "automation": 60,
+     "augmentation": 70,
+     "digital": 80,
+     "moat": 30,
+     "adoption": 60
+    },
+    "yuanbao": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 60,
+     "digital": 65,
+     "moat": 55,
+     "adoption": 50
+    },
+    "zhipu": {
+     "overall": 55,
+     "automation": 38,
+     "augmentation": 65,
+     "digital": 65,
+     "moat": 35,
+     "adoption": 45
     }
    },
    "rationales": {
-    "claude": "其他办事人员:文案与流程性工作易自动"
+    "claude": "其他办事人员:文案与流程性工作易自动",
+    "deepseek": "办事辅助,AI替代部分文书。",
+    "gpt": "通用办事类高度数字化",
+    "grok": "办事辅助文书AI处理，协调仍需",
+    "kimi": "类别杂，取中位数，部分可被AI替代。",
+    "qwen": "其他办事人员多从事流程性事务处理。",
+    "wenxin": "事务性工作易自动化",
+    "yuanbao": "辅助性工作AI渗透，核心仍需人。",
+    "zhipu": "事务性岗位为主,数字化程度中等偏高。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 9,
+   "std": 9.8,
    "flags": []
   },
   {
@@ -6231,28 +7912,28 @@
     }
    ],
    "dims": {
-    "overall": 60,
-    "automation": 58,
+    "overall": 54,
+    "automation": 47,
     "augmentation": 66,
-    "digital": 72,
-    "moat": 46,
-    "adoption": 58
+    "digital": 63,
+    "moat": 52,
+    "adoption": 55
    },
    "dims_median": {
-    "overall": 60,
-    "automation": 58,
-    "augmentation": 66,
-    "digital": 72,
-    "moat": 46,
-    "adoption": 58
+    "overall": 52,
+    "automation": 50,
+    "augmentation": 68,
+    "digital": 60,
+    "moat": 52,
+    "adoption": 56
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 11.0,
+    "automation": 11.9,
+    "augmentation": 10.6,
+    "digital": 11.5,
+    "moat": 6.3,
+    "adoption": 10.4
    },
    "by_model": {
     "claude": {
@@ -6262,13 +7943,93 @@
      "digital": 72,
      "moat": 46,
      "adoption": 58
+    },
+    "deepseek": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 55,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 45
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 45,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 40
+    },
+    "gpt": {
+     "overall": 73,
+     "automation": 58,
+     "augmentation": 82,
+     "digital": 78,
+     "moat": 54,
+     "adoption": 72
+    },
+    "grok": {
+     "overall": 45,
+     "automation": 55,
+     "augmentation": 70,
+     "digital": 65,
+     "moat": 55,
+     "adoption": 60
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 65,
+     "digital": 60,
+     "moat": 45,
+     "adoption": 60
+    },
+    "qwen": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 60,
+     "adoption": 50
+    },
+    "yuanbao": {
+     "overall": 70,
+     "automation": 65,
+     "augmentation": 80,
+     "digital": 85,
+     "moat": 45,
+     "adoption": 70
+    },
+    "zhipu": {
+     "overall": 48,
+     "automation": 30,
+     "augmentation": 58,
+     "digital": 50,
+     "moat": 45,
+     "adoption": 42
     }
    },
    "rationales": {
-    "claude": "批发零售:自助收银与电商持续分流"
+    "claude": "批发零售:自助收银与电商持续分流",
+    "deepseek": "标准化销售可AI,复杂导购需人。",
+    "gpt": "零售客服和运营极易被AI渗透",
+    "grok": "零售电商AI推荐，实体店人际服务",
+    "kimi": "电商与智能零售重塑行业，线下体验仍存。",
+    "qwen": "零售服务中客户推荐与库存管理逐步智能化。",
+    "wenxin": "现场销售需人，AI辅助分析",
+    "yuanbao": "电商运营AI主导推荐，客户服务需人。",
+    "zhipu": "电商数字化高但线下零售仍占半壁,混合形态。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 11.0,
    "flags": []
   },
   {
@@ -6642,28 +8403,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 52,
-    "augmentation": 60,
-    "digital": 58,
-    "moat": 58,
-    "adoption": 52
+    "overall": 56,
+    "automation": 48,
+    "augmentation": 64,
+    "digital": 61,
+    "moat": 53,
+    "adoption": 55
    },
    "dims_median": {
-    "overall": 50,
-    "automation": 52,
-    "augmentation": 60,
-    "digital": 58,
-    "moat": 58,
-    "adoption": 52
+    "overall": 55,
+    "automation": 50,
+    "augmentation": 65,
+    "digital": 56,
+    "moat": 55,
+    "adoption": 54
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.8,
+    "automation": 7.3,
+    "augmentation": 8.5,
+    "digital": 9.9,
+    "moat": 9.6,
+    "adoption": 6.8
    },
    "by_model": {
     "claude": {
@@ -6673,13 +8434,93 @@
      "digital": 58,
      "moat": 58,
      "adoption": 52
+    },
+    "deepseek": {
+     "overall": 65,
+     "automation": 60,
+     "augmentation": 50,
+     "digital": 45,
+     "moat": 35,
+     "adoption": 60
+    },
+    "doubao": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 50,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 45
+    },
+    "gpt": {
+     "overall": 69,
+     "automation": 52,
+     "augmentation": 76,
+     "digital": 72,
+     "moat": 58,
+     "adoption": 62
+    },
+    "grok": {
+     "overall": 58,
+     "automation": 50,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 65
+    },
+    "kimi": {
+     "overall": 58,
+     "automation": 55,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 50,
+     "adoption": 65
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 80,
+     "moat": 60,
+     "adoption": 50
+    },
+    "yuanbao": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 60,
+     "digital": 65,
+     "moat": 70,
+     "adoption": 55
+    },
+    "zhipu": {
+     "overall": 52,
+     "automation": 35,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 42,
+     "adoption": 50
     }
    },
    "rationales": {
-    "claude": "交通运输仓储邮政:调度自动化,驾驶搬运待突破"
+    "claude": "交通运输仓储邮政:调度自动化,驾驶搬运待突破",
+    "deepseek": "运输工具自动化渐进,末端配送需人。",
+    "gpt": "调度客服可自动化，现场仍多",
+    "grok": "物流调度AI优化，装卸线下实操",
+    "kimi": "自动驾驶与智能仓储推进中，但监管与复杂路况仍限。",
+    "qwen": "物流调度优化借助算法，但驾驶操作仍需人工。",
+    "wenxin": "物流调度AI优化，操作需人",
+    "yuanbao": "物流调度AI优化，末端配送需实操。",
+    "zhipu": "物流调度AI化快,驾驶与末端配送仍需人。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 6.8,
    "flags": []
   },
   {
@@ -6867,28 +8708,28 @@
     }
    ],
    "dims": {
-    "overall": 30,
-    "automation": 24,
-    "augmentation": 44,
-    "digital": 28,
-    "moat": 80,
-    "adoption": 34
+    "overall": 34,
+    "automation": 25,
+    "augmentation": 43,
+    "digital": 34,
+    "moat": 74,
+    "adoption": 29
    },
    "dims_median": {
     "overall": 30,
     "automation": 24,
     "augmentation": 44,
-    "digital": 28,
-    "moat": 80,
-    "adoption": 34
+    "digital": 30,
+    "moat": 74,
+    "adoption": 28
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 9.5,
+    "automation": 7.5,
+    "augmentation": 9.2,
+    "digital": 10.6,
+    "moat": 7.5,
+    "adoption": 8.6
    },
    "by_model": {
     "claude": {
@@ -6898,13 +8739,93 @@
      "digital": 28,
      "moat": 80,
      "adoption": 34
+    },
+    "deepseek": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 35,
+     "digital": 25,
+     "moat": 80,
+     "adoption": 25
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 45,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 40
+    },
+    "gpt": {
+     "overall": 54,
+     "automation": 30,
+     "augmentation": 58,
+     "digital": 46,
+     "moat": 68,
+     "adoption": 38
+    },
+    "grok": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 20
+    },
+    "kimi": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 75,
+     "adoption": 30
+    },
+    "qwen": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 55,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 40
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 50,
+     "moat": 70,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 25,
+     "automation": 20,
+     "augmentation": 30,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 25
+    },
+    "zhipu": {
+     "overall": 22,
+     "automation": 12,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 72,
+     "adoption": 15
     }
    },
    "rationales": {
-    "claude": "住宿餐饮:现场服务与人际,冲击低"
+    "claude": "住宿餐饮:现场服务与人际,冲击低",
+    "deepseek": "核心为人际体验与手工技能。",
+    "gpt": "前台点单可替代，后厨与服务在场",
+    "grok": "餐饮住宿面对面服务，AI预订辅助",
+    "kimi": "服务体验高度依赖人际互动，AI仅辅助预订。",
+    "qwen": "餐饮服务依赖现场制作与顾客体验交互。",
+    "wenxin": "烹饪需人，AI辅助管理",
+    "yuanbao": "餐饮服务重体验，AI仅辅助点单备餐。",
+    "zhipu": "烹饪与客房服务以手工操作为主,难自动化。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 9.5,
    "flags": []
   },
   {
@@ -7152,28 +9073,28 @@
     }
    ],
    "dims": {
-    "overall": 82,
-    "automation": 70,
-    "augmentation": 92,
-    "digital": 96,
-    "moat": 30,
-    "adoption": 78
+    "overall": 79,
+    "automation": 68,
+    "augmentation": 88,
+    "digital": 91,
+    "moat": 29,
+    "adoption": 81
    },
    "dims_median": {
-    "overall": 82,
-    "automation": 70,
+    "overall": 84,
+    "automation": 75,
     "augmentation": 92,
-    "digital": 96,
-    "moat": 30,
-    "adoption": 78
+    "digital": 95,
+    "moat": 22,
+    "adoption": 86
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 15.0,
+    "automation": 14.2,
+    "augmentation": 16.0,
+    "digital": 15.4,
+    "moat": 15.2,
+    "adoption": 15.9
    },
    "by_model": {
     "claude": {
@@ -7183,14 +9104,96 @@
      "digital": 96,
      "moat": 30,
      "adoption": 78
+    },
+    "deepseek": {
+     "overall": 85,
+     "automation": 75,
+     "augmentation": 95,
+     "digital": 98,
+     "moat": 15,
+     "adoption": 90
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 30,
+     "augmentation": 40,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 35
+    },
+    "gpt": {
+     "overall": 91,
+     "automation": 82,
+     "augmentation": 96,
+     "digital": 98,
+     "moat": 26,
+     "adoption": 90
+    },
+    "grok": {
+     "overall": 82,
+     "automation": 75,
+     "augmentation": 92,
+     "digital": 95,
+     "moat": 20,
+     "adoption": 90
+    },
+    "kimi": {
+     "overall": 85,
+     "automation": 75,
+     "augmentation": 95,
+     "digital": 98,
+     "moat": 20,
+     "adoption": 90
+    },
+    "qwen": {
+     "overall": 85,
+     "automation": 75,
+     "augmentation": 95,
+     "digital": 95,
+     "moat": 25,
+     "adoption": 85
+    },
+    "wenxin": {
+     "overall": 80,
+     "automation": 60,
+     "augmentation": 90,
+     "digital": 95,
+     "moat": 50,
+     "adoption": 80
+    },
+    "yuanbao": {
+     "overall": 80,
+     "automation": 75,
+     "augmentation": 90,
+     "digital": 95,
+     "moat": 20,
+     "adoption": 85
+    },
+    "zhipu": {
+     "overall": 85,
+     "automation": 60,
+     "augmentation": 92,
+     "digital": 95,
+     "moat": 18,
+     "adoption": 88
     }
    },
    "rationales": {
-    "claude": "信息传输软件IT服务:核心数字工作,冲击高"
+    "claude": "信息传输软件IT服务:核心数字工作,冲击高",
+    "deepseek": "编码与运维被AI大幅替代增强。",
+    "gpt": "核心工作几乎全在电脑上完成",
+    "grok": "IT软件开发运维AI全面重塑",
+    "kimi": "AI原生行业，代码生成与运维自动化渗透最深。",
+    "qwen": "软件开发与系统运维全面融入AI工具链。",
+    "wenxin": "IT工作高度数字化，AI冲击大",
+    "yuanbao": "代码生成AI突破，核心架构仍需人。",
+    "zhipu": "软件开发与运维是AI核心渗透区,自动化程度最高。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 15.0,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "4-05",
@@ -7359,28 +9362,28 @@
     }
    ],
    "dims": {
-    "overall": 80,
-    "automation": 76,
-    "augmentation": 88,
-    "digital": 92,
-    "moat": 36,
-    "adoption": 76
+    "overall": 68,
+    "automation": 58,
+    "augmentation": 78,
+    "digital": 81,
+    "moat": 46,
+    "adoption": 68
    },
    "dims_median": {
-    "overall": 80,
-    "automation": 76,
-    "augmentation": 88,
-    "digital": 92,
-    "moat": 36,
-    "adoption": 76
+    "overall": 70,
+    "automation": 60,
+    "augmentation": 81,
+    "digital": 86,
+    "moat": 42,
+    "adoption": 74
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 11.2,
+    "automation": 10.7,
+    "augmentation": 12.0,
+    "digital": 12.1,
+    "moat": 11.0,
+    "adoption": 10.7
    },
    "by_model": {
     "claude": {
@@ -7390,13 +9393,93 @@
      "digital": 92,
      "moat": 36,
      "adoption": 76
+    },
+    "deepseek": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 70,
+     "moat": 50,
+     "adoption": 65
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 45,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 40
+    },
+    "gpt": {
+     "overall": 77,
+     "automation": 60,
+     "augmentation": 86,
+     "digital": 84,
+     "moat": 44,
+     "adoption": 72
+    },
+    "grok": {
+     "overall": 68,
+     "automation": 60,
+     "augmentation": 85,
+     "digital": 88,
+     "moat": 35,
+     "adoption": 75
+    },
+    "kimi": {
+     "overall": 70,
+     "automation": 60,
+     "augmentation": 85,
+     "digital": 80,
+     "moat": 45,
+     "adoption": 75
+    },
+    "qwen": {
+     "overall": 70,
+     "automation": 60,
+     "augmentation": 80,
+     "digital": 80,
+     "moat": 40,
+     "adoption": 75
+    },
+    "wenxin": {
+     "overall": 70,
+     "automation": 60,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 70,
+     "adoption": 60
+    },
+    "yuanbao": {
+     "overall": 75,
+     "automation": 70,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 40,
+     "adoption": 75
+    },
+    "zhipu": {
+     "overall": 72,
+     "automation": 50,
+     "augmentation": 82,
+     "digital": 88,
+     "moat": 35,
+     "adoption": 70
     }
    },
    "rationales": {
-    "claude": "金融服务:核保理赔风控等流程高度可自动"
+    "claude": "金融服务:核保理赔风控等流程高度可自动",
+    "deepseek": "标准业务可自动化,顾问需信任。",
+    "gpt": "理财营销被重塑，合规仍重要",
+    "grok": "金融服务柜台AI聊天，复杂咨询需人",
+    "kimi": "智能投顾与风控AI成熟，但高端理财仍需信任。",
+    "qwen": "金融服务中风控与投研广泛采用AI模型。",
+    "wenxin": "金融AI应用快，柜员受冲击",
+    "yuanbao": "智能投顾替代基础服务，高端咨询需人。",
+    "zhipu": "交易与风控高度可AI化,客户关系与合规需人。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 11.2,
    "flags": []
   },
   {
@@ -7530,28 +9613,28 @@
     }
    ],
    "dims": {
-    "overall": 58,
-    "automation": 54,
-    "augmentation": 72,
-    "digital": 74,
-    "moat": 50,
-    "adoption": 56
+    "overall": 54,
+    "automation": 42,
+    "augmentation": 65,
+    "digital": 65,
+    "moat": 56,
+    "adoption": 50
    },
    "dims_median": {
-    "overall": 58,
-    "automation": 54,
-    "augmentation": 72,
-    "digital": 74,
-    "moat": 50,
-    "adoption": 56
+    "overall": 52,
+    "automation": 40,
+    "augmentation": 65,
+    "digital": 68,
+    "moat": 56,
+    "adoption": 48
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 10.0,
+    "automation": 12.6,
+    "augmentation": 10.7,
+    "digital": 14.9,
+    "moat": 11.5,
+    "adoption": 14.4
    },
    "by_model": {
     "claude": {
@@ -7561,13 +9644,93 @@
      "digital": 74,
      "moat": 50,
      "adoption": 56
+    },
+    "deepseek": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 60,
+     "digital": 55,
+     "moat": 65,
+     "adoption": 40
+    },
+    "doubao": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 50,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 45
+    },
+    "gpt": {
+     "overall": 66,
+     "automation": 48,
+     "augmentation": 74,
+     "digital": 72,
+     "moat": 56,
+     "adoption": 54
+    },
+    "grok": {
+     "overall": 70,
+     "automation": 65,
+     "augmentation": 82,
+     "digital": 90,
+     "moat": 30,
+     "adoption": 80
+    },
+    "kimi": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 55,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 40
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 70
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 80,
+     "moat": 60,
+     "adoption": 40
+    },
+    "yuanbao": {
+     "overall": 55,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 65,
+     "moat": 70,
+     "adoption": 50
+    },
+    "zhipu": {
+     "overall": 40,
+     "automation": 22,
+     "augmentation": 50,
+     "digital": 45,
+     "moat": 55,
+     "adoption": 30
     }
    },
    "rationales": {
-    "claude": "房地产服务:获客与文书被增强,带看靠人"
+    "claude": "房地产服务:获客与文书被增强,带看靠人",
+    "deepseek": "房源匹配辅助,成交依赖人际。",
+    "gpt": "信息查询与撮合可自动化",
+    "grok": "房地产线上展示AI，实地带看监管",
+    "kimi": "VR看房AI辅助，但交易信任依赖线下。",
+    "qwen": "房产交易流程中AI用于客户匹配与内容生成。",
+    "wenxin": "交易需人际信任，AI辅助信息",
+    "yuanbao": "房产交易重人际信任，AI辅助房源匹配。",
+    "zhipu": "线上房源信息可AI化,带看与谈判需线下人际。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 10.0,
    "flags": []
   },
   {
@@ -7851,28 +10014,28 @@
     }
    ],
    "dims": {
-    "overall": 66,
-    "automation": 60,
-    "augmentation": 80,
-    "digital": 80,
-    "moat": 46,
-    "adoption": 62
+    "overall": 59,
+    "automation": 49,
+    "augmentation": 71,
+    "digital": 71,
+    "moat": 49,
+    "adoption": 56
    },
    "dims_median": {
-    "overall": 66,
-    "automation": 60,
-    "augmentation": 80,
-    "digital": 80,
-    "moat": 46,
-    "adoption": 62
+    "overall": 58,
+    "automation": 50,
+    "augmentation": 72,
+    "digital": 75,
+    "moat": 49,
+    "adoption": 58
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 9.3,
+    "automation": 9.4,
+    "augmentation": 9.7,
+    "digital": 11.5,
+    "moat": 4.3,
+    "adoption": 11.7
    },
    "by_model": {
     "claude": {
@@ -7882,13 +10045,93 @@
      "digital": 80,
      "moat": 46,
      "adoption": 62
+    },
+    "deepseek": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 65,
+     "moat": 50,
+     "adoption": 50
+    },
+    "doubao": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 50
+    },
+    "gpt": {
+     "overall": 75,
+     "automation": 58,
+     "augmentation": 84,
+     "digital": 84,
+     "moat": 48,
+     "adoption": 70
+    },
+    "grok": {
+     "overall": 62,
+     "automation": 55,
+     "augmentation": 78,
+     "digital": 80,
+     "moat": 45,
+     "adoption": 70
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 65
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 80,
+     "moat": 60,
+     "adoption": 40
+    },
+    "yuanbao": {
+     "overall": 70,
+     "automation": 55,
+     "augmentation": 80,
+     "digital": 85,
+     "moat": 50,
+     "adoption": 65
+    },
+    "zhipu": {
+     "overall": 45,
+     "automation": 28,
+     "augmentation": 55,
+     "digital": 50,
+     "moat": 45,
+     "adoption": 35
     }
    },
    "rationales": {
-    "claude": "租赁商务服务:咨询外包文书类受冲击"
+    "claude": "租赁商务服务:咨询外包文书类受冲击",
+    "deepseek": "信息处理可AI,复杂谈判需人。",
+    "gpt": "商务文案与投标材料高度数字化",
+    "grok": "商务租赁咨询AI数据，合同谈判人",
+    "kimi": "客服与匹配AI增强，但商务谈判仍需人。",
+    "qwen": "商务服务趋向平台化与智能调度模式。",
+    "wenxin": "商务服务需人际，AI辅助信息",
+    "yuanbao": "商务方案AI生成，客户关系维护需人。",
+    "zhipu": "商务流程部分数字化,合同与谈判仍需人际。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 9.3,
    "flags": []
   },
   {
@@ -8364,28 +10607,28 @@
     }
    ],
    "dims": {
-    "overall": 64,
-    "automation": 62,
-    "augmentation": 76,
-    "digital": 78,
-    "moat": 48,
-    "adoption": 60
+    "overall": 58,
+    "automation": 48,
+    "augmentation": 71,
+    "digital": 69,
+    "moat": 50,
+    "adoption": 56
    },
    "dims_median": {
-    "overall": 64,
-    "automation": 62,
-    "augmentation": 76,
-    "digital": 78,
-    "moat": 48,
+    "overall": 60,
+    "automation": 50,
+    "augmentation": 74,
+    "digital": 70,
+    "moat": 50,
     "adoption": 60
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 8.3,
+    "automation": 7.4,
+    "augmentation": 7.7,
+    "digital": 8.3,
+    "moat": 7.8,
+    "adoption": 7.7
    },
    "by_model": {
     "claude": {
@@ -8395,13 +10638,93 @@
      "digital": 78,
      "moat": 48,
      "adoption": 60
+    },
+    "deepseek": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 70,
+     "digital": 55,
+     "moat": 60,
+     "adoption": 40
+    },
+    "doubao": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 50,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 45
+    },
+    "gpt": {
+     "overall": 71,
+     "automation": 54,
+     "augmentation": 80,
+     "digital": 76,
+     "moat": 50,
+     "adoption": 66
+    },
+    "grok": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 55,
+     "adoption": 60
+    },
+    "kimi": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 75,
+     "digital": 65,
+     "moat": 45,
+     "adoption": 60
+    },
+    "qwen": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 65,
+     "moat": 50,
+     "adoption": 60
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 80,
+     "moat": 50,
+     "adoption": 50
+    },
+    "yuanbao": {
+     "overall": 65,
+     "automation": 50,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 55,
+     "adoption": 60
+    },
+    "zhipu": {
+     "overall": 62,
+     "automation": 40,
+     "augmentation": 72,
+     "digital": 72,
+     "moat": 30,
+     "adoption": 55
     }
    },
    "rationales": {
-    "claude": "技术辅助服务:检测记录类逐步自动"
+    "claude": "技术辅助服务:检测记录类逐步自动",
+    "deepseek": "数据分析辅助,实地测量仍需人。",
+    "gpt": "技术支持和测试被AI明显增强",
+    "grok": "技术辅助现场支持，远程AI诊断",
+    "kimi": "检测与绘图AI增强明显，现场操作仍存。",
+    "qwen": "技术辅助服务结合远程诊断与现场实施。",
+    "wenxin": "技术支持AI辅助，复杂问题需人",
+    "yuanbao": "技术辅助AI提效，专业判断仍需人。",
+    "zhipu": "技术支持与测试可部分AI化,复杂排障需人。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 8.3,
    "flags": []
   },
   {
@@ -8673,28 +10996,28 @@
     }
    ],
    "dims": {
-    "overall": 46,
-    "automation": 46,
-    "augmentation": 60,
-    "digital": 54,
-    "moat": 62,
-    "adoption": 48
+    "overall": 42,
+    "automation": 33,
+    "augmentation": 54,
+    "digital": 48,
+    "moat": 66,
+    "adoption": 39
    },
    "dims_median": {
-    "overall": 46,
-    "automation": 46,
-    "augmentation": 60,
-    "digital": 54,
-    "moat": 62,
-    "adoption": 48
+    "overall": 40,
+    "automation": 30,
+    "augmentation": 52,
+    "digital": 50,
+    "moat": 69,
+    "adoption": 40
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 12.8,
+    "automation": 12.2,
+    "augmentation": 12.0,
+    "digital": 13.6,
+    "moat": 10.7,
+    "adoption": 14.7
    },
    "by_model": {
     "claude": {
@@ -8704,14 +11027,96 @@
      "digital": 54,
      "moat": 62,
      "adoption": 48
+    },
+    "deepseek": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 75,
+     "adoption": 25
+    },
+    "doubao": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 50
+    },
+    "gpt": {
+     "overall": 62,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 62,
+     "moat": 60,
+     "adoption": 54
+    },
+    "grok": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 70,
+     "adoption": 45
+    },
+    "kimi": {
+     "overall": 40,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 35,
+     "moat": 75,
+     "adoption": 35
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 65
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 50,
+     "moat": 70,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 30,
+     "automation": 25,
+     "augmentation": 35,
+     "digital": 35,
+     "moat": 80,
+     "adoption": 30
+    },
+    "zhipu": {
+     "overall": 28,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 68,
+     "adoption": 20
     }
    },
    "rationales": {
-    "claude": "水利环境公共设施管理:户外作业为主"
+    "claude": "水利环境公共设施管理:户外作业为主",
+    "deepseek": "监测可自动化,养护管理需实地。",
+    "gpt": "设施管理有数据化，现场约束多",
+    "grok": "环境设施管理线下巡检，AI监测助",
+    "kimi": "环境监测AI辅助，但设施维护需实地。",
+    "qwen": "公共设施管理涉及巡查与线下维护作业。",
+    "wenxin": "现场管理需人，AI辅助监测",
+    "yuanbao": "设施运维需实地操作，AI辅助监测。",
+    "zhipu": "基础设施巡检可AI辅助,维护实操需人。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 12.8,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "4-10",
@@ -8982,28 +11387,28 @@
     }
    ],
    "dims": {
-    "overall": 24,
-    "automation": 14,
-    "augmentation": 40,
-    "digital": 26,
-    "moat": 86,
-    "adoption": 30
+    "overall": 29,
+    "automation": 20,
+    "augmentation": 38,
+    "digital": 29,
+    "moat": 78,
+    "adoption": 24
    },
    "dims_median": {
     "overall": 24,
-    "automation": 14,
-    "augmentation": 40,
-    "digital": 26,
-    "moat": 86,
-    "adoption": 30
+    "automation": 18,
+    "augmentation": 38,
+    "digital": 28,
+    "moat": 82,
+    "adoption": 22
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 11.9,
+    "automation": 10.6,
+    "augmentation": 12.0,
+    "digital": 12.8,
+    "moat": 11.5,
+    "adoption": 12.1
    },
    "by_model": {
     "claude": {
@@ -9013,13 +11418,93 @@
      "digital": 26,
      "moat": 86,
      "adoption": 30
+    },
+    "deepseek": {
+     "overall": 15,
+     "automation": 10,
+     "augmentation": 20,
+     "digital": 15,
+     "moat": 90,
+     "adoption": 10
+    },
+    "doubao": {
+     "overall": 48,
+     "automation": 42,
+     "augmentation": 53,
+     "digital": 58,
+     "moat": 52,
+     "adoption": 48
+    },
+    "gpt": {
+     "overall": 46,
+     "automation": 26,
+     "augmentation": 52,
+     "digital": 40,
+     "moat": 74,
+     "adoption": 30
+    },
+    "grok": {
+     "overall": 22,
+     "automation": 12,
+     "augmentation": 35,
+     "digital": 20,
+     "moat": 88,
+     "adoption": 15
+    },
+    "kimi": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 85,
+     "adoption": 15
+    },
+    "qwen": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 55,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 40
+    },
+    "wenxin": {
+     "overall": 20,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 70,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 25,
+     "automation": 20,
+     "augmentation": 30,
+     "digital": 30,
+     "moat": 85,
+     "adoption": 25
+    },
+    "zhipu": {
+     "overall": 18,
+     "automation": 8,
+     "augmentation": 22,
+     "digital": 15,
+     "moat": 80,
+     "adoption": 10
     }
    },
    "rationales": {
-    "claude": "居民服务:家政美容等手工与人际,冲击极低"
+    "claude": "居民服务:家政美容等手工与人际,冲击极低",
+    "deepseek": "强线下人际服务,AI难以触及。",
+    "gpt": "家政照护依赖现场与信任",
+    "grok": "居民服务高度人际线下",
+    "kimi": "家政服务高度依赖人际与线下，AI难替代。",
+    "qwen": "居民服务注重个性化需求与面对面沟通。",
+    "wenxin": "家政服务需人，AI辅助调度",
+    "yuanbao": "家政服务重个性化，AI仅辅助调度。",
+    "zhipu": "家政理发等高度依赖手工与人际,极难自动化。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 11.9,
    "flags": []
   },
   {
@@ -9147,28 +11632,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 50,
-    "augmentation": 62,
-    "digital": 60,
-    "moat": 58,
-    "adoption": 52
+    "overall": 43,
+    "automation": 34,
+    "augmentation": 53,
+    "digital": 50,
+    "moat": 67,
+    "adoption": 39
    },
    "dims_median": {
-    "overall": 50,
-    "automation": 50,
-    "augmentation": 62,
-    "digital": 60,
-    "moat": 58,
-    "adoption": 52
+    "overall": 45,
+    "automation": 34,
+    "augmentation": 52,
+    "digital": 55,
+    "moat": 70,
+    "adoption": 44
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 10.8,
+    "automation": 9.8,
+    "augmentation": 9.1,
+    "digital": 10.7,
+    "moat": 8.3,
+    "adoption": 10.7
    },
    "by_model": {
     "claude": {
@@ -9178,13 +11663,93 @@
      "digital": 60,
      "moat": 58,
      "adoption": 52
+    },
+    "deepseek": {
+     "overall": 25,
+     "automation": 20,
+     "augmentation": 35,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 30
+    },
+    "doubao": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 50,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 45
+    },
+    "gpt": {
+     "overall": 58,
+     "automation": 34,
+     "augmentation": 64,
+     "digital": 56,
+     "moat": 66,
+     "adoption": 44
+    },
+    "grok": {
+     "overall": 38,
+     "automation": 28,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 75,
+     "adoption": 40
+    },
+    "kimi": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 55,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 45
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 60,
+     "moat": 70,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 50,
+     "digital": 60,
+     "moat": 75,
+     "adoption": 45
+    },
+    "zhipu": {
+     "overall": 30,
+     "automation": 18,
+     "augmentation": 42,
+     "digital": 35,
+     "moat": 70,
+     "adoption": 22
     }
    },
    "rationales": {
-    "claude": "电力燃气水供应服务:巡检被增强,现场为主"
+    "claude": "电力燃气水供应服务:巡检被增强,现场为主",
+    "deepseek": "远程抄表可AI,现场检修不可缺。",
+    "gpt": "运行监控可辅助，现场设备为主",
+    "grok": "水电气供应运维，现场维修需人",
+    "kimi": "智能电网推进中，但抢修与巡检仍需人。",
+    "qwen": "能源供应监控逐步实现自动化预警。",
+    "wenxin": "电力供应需现场操作，AI辅助监控",
+    "yuanbao": "能源供应需安全管控，AI优化调度。",
+    "zhipu": "管网巡检可AI辅助,抢修与操作需现场人员。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 10.8,
    "flags": []
   },
   {
@@ -9378,28 +11943,28 @@
     }
    ],
    "dims": {
-    "overall": 36,
-    "automation": 34,
-    "augmentation": 48,
-    "digital": 38,
-    "moat": 74,
-    "adoption": 40
+    "overall": 38,
+    "automation": 30,
+    "augmentation": 49,
+    "digital": 40,
+    "moat": 71,
+    "adoption": 33
    },
    "dims_median": {
-    "overall": 36,
-    "automation": 34,
-    "augmentation": 48,
-    "digital": 38,
-    "moat": 74,
-    "adoption": 40
+    "overall": 35,
+    "automation": 30,
+    "augmentation": 49,
+    "digital": 40,
+    "moat": 73,
+    "adoption": 32
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 12.7,
+    "automation": 11.3,
+    "augmentation": 10.9,
+    "digital": 13.1,
+    "moat": 10.5,
+    "adoption": 12.6
    },
    "by_model": {
     "claude": {
@@ -9409,14 +11974,96 @@
      "digital": 38,
      "moat": 74,
      "adoption": 40
+    },
+    "deepseek": {
+     "overall": 20,
+     "automation": 15,
+     "augmentation": 35,
+     "digital": 20,
+     "moat": 85,
+     "adoption": 20
+    },
+    "doubao": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 50
+    },
+    "gpt": {
+     "overall": 65,
+     "automation": 46,
+     "augmentation": 72,
+     "digital": 62,
+     "moat": 60,
+     "adoption": 52
+    },
+    "grok": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 78,
+     "adoption": 30
+    },
+    "kimi": {
+     "overall": 35,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 25
+    },
+    "qwen": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 45
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 35,
+     "automation": 30,
+     "augmentation": 40,
+     "digital": 40,
+     "moat": 80,
+     "adoption": 35
+    },
+    "zhipu": {
+     "overall": 25,
+     "automation": 12,
+     "augmentation": 35,
+     "digital": 25,
+     "moat": 72,
+     "adoption": 15
     }
    },
    "rationales": {
-    "claude": "修理及制作服务:手工与现场诊断为主"
+    "claude": "修理及制作服务:手工与现场诊断为主",
+    "deepseek": "故障诊断辅助,手动技能为核心。",
+    "gpt": "维修排障可增强，动手仍关键",
+    "grok": "修理制作手工实操，AI设计辅助",
+    "kimi": "手工技艺与现场诊断难以被AI替代。",
+    "qwen": "设备修理需动手能力和故障情景判断。",
+    "wenxin": "修理需技能，AI辅助诊断",
+    "yuanbao": "维修需手工技能，AI辅助故障诊断。",
+    "zhipu": "维修诊断可AI辅助,拆装实操仍需手工技能。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 12.7,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "4-13",
@@ -9645,28 +12292,28 @@
     }
    ],
    "dims": {
-    "overall": 60,
-    "automation": 50,
-    "augmentation": 80,
-    "digital": 72,
-    "moat": 52,
-    "adoption": 56
+    "overall": 53,
+    "automation": 40,
+    "augmentation": 68,
+    "digital": 60,
+    "moat": 58,
+    "adoption": 49
    },
    "dims_median": {
-    "overall": 60,
-    "automation": 50,
-    "augmentation": 80,
-    "digital": 72,
-    "moat": 52,
-    "adoption": 56
+    "overall": 50,
+    "automation": 40,
+    "augmentation": 70,
+    "digital": 59,
+    "moat": 58,
+    "adoption": 50
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 9.9,
+    "automation": 10.0,
+    "augmentation": 9.9,
+    "digital": 9.5,
+    "moat": 6.8,
+    "adoption": 9.9
    },
    "by_model": {
     "claude": {
@@ -9676,13 +12323,93 @@
      "digital": 72,
      "moat": 52,
      "adoption": 56
+    },
+    "deepseek": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 30
+    },
+    "doubao": {
+     "overall": 48,
+     "automation": 42,
+     "augmentation": 53,
+     "digital": 58,
+     "moat": 52,
+     "adoption": 48
+    },
+    "gpt": {
+     "overall": 76,
+     "automation": 58,
+     "augmentation": 84,
+     "digital": 78,
+     "moat": 50,
+     "adoption": 68
+    },
+    "grok": {
+     "overall": 48,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 65,
+     "moat": 60,
+     "adoption": 55
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 30,
+     "augmentation": 70,
+     "digital": 50,
+     "moat": 65,
+     "adoption": 50
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 60,
+     "adoption": 40
+    },
+    "yuanbao": {
+     "overall": 55,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 65,
+     "moat": 70,
+     "adoption": 50
+    },
+    "zhipu": {
+     "overall": 50,
+     "automation": 25,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 50,
+     "adoption": 40
     }
    },
    "rationales": {
-    "claude": "文化教育服务:内容与辅导类受冲击"
+    "claude": "文化教育服务:内容与辅导类受冲击",
+    "deepseek": "解说可电子化,人际互动不可替。",
+    "gpt": "培训教务与内容生产重塑明显",
+    "grok": "文化教育服务AI内容，互动体验人",
+    "kimi": "AI辅助内容制作，但教育互动仍需人。",
+    "qwen": "文化教育服务融合线上资源与线下引导。",
+    "wenxin": "文化服务需人际，AI辅助内容",
+    "yuanbao": "文化培训重互动，AI辅助内容生成。",
+    "zhipu": "内容创作与在线教育可AI增强,线下活动需人。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 9.9,
    "flags": []
   },
   {
@@ -9942,28 +12669,28 @@
     }
    ],
    "dims": {
-    "overall": 34,
-    "automation": 24,
+    "overall": 40,
+    "automation": 28,
     "augmentation": 52,
-    "digital": 40,
-    "moat": 78,
-    "adoption": 38
+    "digital": 44,
+    "moat": 70,
+    "adoption": 36
    },
    "dims_median": {
-    "overall": 34,
-    "automation": 24,
-    "augmentation": 52,
-    "digital": 40,
-    "moat": 78,
-    "adoption": 38
+    "overall": 37,
+    "automation": 30,
+    "augmentation": 51,
+    "digital": 45,
+    "moat": 69,
+    "adoption": 39
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 12.6,
+    "automation": 11.6,
+    "augmentation": 11.6,
+    "digital": 13.7,
+    "moat": 9.5,
+    "adoption": 13.6
    },
    "by_model": {
     "claude": {
@@ -9973,14 +12700,96 @@
      "digital": 40,
      "moat": 78,
      "adoption": 38
+    },
+    "deepseek": {
+     "overall": 25,
+     "automation": 10,
+     "augmentation": 40,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 25
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 45,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 40
+    },
+    "gpt": {
+     "overall": 68,
+     "automation": 46,
+     "augmentation": 76,
+     "digital": 66,
+     "moat": 58,
+     "adoption": 60
+    },
+    "grok": {
+     "overall": 42,
+     "automation": 30,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 68,
+     "adoption": 50
+    },
+    "kimi": {
+     "overall": 30,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 20
+    },
+    "qwen": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 45
+    },
+    "wenxin": {
+     "overall": 30,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 50,
+     "automation": 35,
+     "augmentation": 55,
+     "digital": 60,
+     "moat": 75,
+     "adoption": 45
+    },
+    "zhipu": {
+     "overall": 28,
+     "automation": 12,
+     "augmentation": 38,
+     "digital": 30,
+     "moat": 65,
+     "adoption": 20
     }
    },
    "rationales": {
-    "claude": "健康体育休闲服务:身体接触与陪伴为主"
+    "claude": "健康体育休闲服务:身体接触与陪伴为主",
+    "deepseek": "动作指导需身体示范,AI辅助有限。",
+    "gpt": "康体指导可数字化，服务仍需人",
+    "grok": "健康休闲服务人际，AI预约健身",
+    "kimi": "健身指导与康复训练高度依赖人际与体能。",
+    "qwen": "休闲体育服务侧重身体活动与人际互动。",
+    "wenxin": "健身指导需人，AI辅助计划",
+    "yuanbao": "健康服务重体验，AI辅助计划制定。",
+    "zhipu": "健身指导与理疗以身体互动为主,难自动化。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 10,
+   "std": 12.6,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "4-99",
@@ -10070,28 +12879,28 @@
     }
    ],
    "dims": {
-    "overall": 48,
-    "automation": 44,
-    "augmentation": 64,
-    "digital": 58,
-    "moat": 58,
-    "adoption": 50
+    "overall": 46,
+    "automation": 37,
+    "augmentation": 58,
+    "digital": 51,
+    "moat": 56,
+    "adoption": 42
    },
    "dims_median": {
     "overall": 48,
-    "automation": 44,
-    "augmentation": 64,
-    "digital": 58,
+    "automation": 38,
+    "augmentation": 60,
+    "digital": 55,
     "moat": 58,
-    "adoption": 50
+    "adoption": 46
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 8.6,
+    "automation": 9.9,
+    "augmentation": 10.4,
+    "digital": 10.5,
+    "moat": 10.7,
+    "adoption": 9.2
    },
    "by_model": {
     "claude": {
@@ -10101,13 +12910,85 @@
      "digital": 58,
      "moat": 58,
      "adoption": 50
+    },
+    "deepseek": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 35,
+     "digital": 30,
+     "moat": 70,
+     "adoption": 25
+    },
+    "gpt": {
+     "overall": 60,
+     "automation": 38,
+     "augmentation": 68,
+     "digital": 58,
+     "moat": 62,
+     "adoption": 46
+    },
+    "grok": {
+     "overall": 40,
+     "automation": 32,
+     "augmentation": 58,
+     "digital": 50,
+     "moat": 65,
+     "adoption": 40
+    },
+    "kimi": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 60,
+     "adoption": 40
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
+    },
+    "wenxin": {
+     "overall": 50,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 30,
+     "adoption": 50
+    },
+    "yuanbao": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 60,
+     "digital": 65,
+     "moat": 55,
+     "adoption": 50
+    },
+    "zhipu": {
+     "overall": 38,
+     "automation": 22,
+     "augmentation": 48,
+     "digital": 40,
+     "moat": 52,
+     "adoption": 28
     }
    },
    "rationales": {
-    "claude": "其他社会生产生活服务人员"
+    "claude": "其他社会生产生活服务人员",
+    "deepseek": "杂项服务,普遍线下为主。",
+    "gpt": "杂项服务混合度高，分化明显",
+    "grok": "其他服务混合，视类型而定",
+    "kimi": "类别杂，取中位数，部分可被AI增强。",
+    "qwen": "其他服务多为非标场景下的综合支持角色。",
+    "wenxin": "事务性服务易自动化",
+    "yuanbao": "细分服务差异大，AI增强通用环节。",
+    "zhipu": "异质性强,取均值,体力与脑力混合。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 9,
+   "std": 8.6,
    "flags": []
   },
   {
@@ -10241,28 +13122,28 @@
     }
    ],
    "dims": {
-    "overall": 20,
+    "overall": 31,
     "automation": 22,
-    "augmentation": 40,
-    "digital": 24,
-    "moat": 86,
-    "adoption": 30
+    "augmentation": 44,
+    "digital": 30,
+    "moat": 76,
+    "adoption": 27
    },
    "dims_median": {
-    "overall": 20,
-    "automation": 22,
-    "augmentation": 40,
-    "digital": 24,
-    "moat": 86,
-    "adoption": 30
+    "overall": 32,
+    "automation": 21,
+    "augmentation": 45,
+    "digital": 30,
+    "moat": 79,
+    "adoption": 28
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.8,
+    "automation": 3.8,
+    "augmentation": 5.9,
+    "digital": 4.8,
+    "moat": 7.5,
+    "adoption": 4.5
    },
    "by_model": {
     "claude": {
@@ -10272,13 +13153,93 @@
      "digital": 24,
      "moat": 86,
      "adoption": 30
+    },
+    "deepseek": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 25,
+     "moat": 70,
+     "adoption": 30
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 30
+    },
+    "gpt": {
+     "overall": 38,
+     "automation": 18,
+     "augmentation": 40,
+     "digital": 34,
+     "moat": 78,
+     "adoption": 22
+    },
+    "grok": {
+     "overall": 28,
+     "automation": 18,
+     "augmentation": 45,
+     "digital": 25,
+     "moat": 82,
+     "adoption": 25
+    },
+    "kimi": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 30
+    },
+    "qwen": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 35,
+     "moat": 70,
+     "adoption": 35
+    },
+    "wenxin": {
+     "overall": 20,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 25,
+     "automation": 20,
+     "augmentation": 30,
+     "digital": 30,
+     "moat": 85,
+     "adoption": 25
+    },
+    "zhipu": {
+     "overall": 30,
+     "automation": 18,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 62,
+     "adoption": 22
     }
    },
    "rationales": {
-    "claude": "农业生产:户外不可预测,以机械化为主"
+    "claude": "农业生产:户外不可预测,以机械化为主",
+    "deepseek": "自动化农机增强,但田间管理需人。",
+    "gpt": "农作现场性强，AI多在辅助",
+    "grok": "农业种植收获实操，AI精准农业助",
+    "kimi": "智慧农业推进，但种植养殖仍需大量人工。",
+    "qwen": "农业生产受自然条件制约，机械化辅助为主。",
+    "wenxin": "农业生产需人，AI辅助有限",
+    "yuanbao": "农业生产需实地劳作，AI辅助种植建议。",
+    "zhipu": "精准农业可AI辅助,种植收割仍需田间实操。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 6.8,
    "flags": []
   },
   {
@@ -10412,28 +13373,28 @@
     }
    ],
    "dims": {
-    "overall": 24,
-    "automation": 24,
-    "augmentation": 42,
-    "digital": 28,
-    "moat": 82,
-    "adoption": 32
+    "overall": 29,
+    "automation": 21,
+    "augmentation": 41,
+    "digital": 29,
+    "moat": 78,
+    "adoption": 25
    },
    "dims_median": {
-    "overall": 24,
-    "automation": 24,
-    "augmentation": 42,
-    "digital": 28,
-    "moat": 82,
-    "adoption": 32
+    "overall": 28,
+    "automation": 20,
+    "augmentation": 40,
+    "digital": 29,
+    "moat": 80,
+    "adoption": 22
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.4,
+    "automation": 4.9,
+    "augmentation": 7.5,
+    "digital": 6.7,
+    "moat": 7.7,
+    "adoption": 6.8
    },
    "by_model": {
     "claude": {
@@ -10443,13 +13404,93 @@
      "digital": 28,
      "moat": 82,
      "adoption": 32
+    },
+    "deepseek": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 20,
+     "moat": 80,
+     "adoption": 20
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 35
+    },
+    "gpt": {
+     "overall": 36,
+     "automation": 16,
+     "augmentation": 38,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
+    "grok": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 48,
+     "digital": 28,
+     "moat": 80,
+     "adoption": 30
+    },
+    "kimi": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 90,
+     "adoption": 15
+    },
+    "qwen": {
+     "overall": 38,
+     "automation": 28,
+     "augmentation": 48,
+     "digital": 33,
+     "moat": 72,
+     "adoption": 33
+    },
+    "wenxin": {
+     "overall": 20,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 25,
+     "automation": 20,
+     "augmentation": 30,
+     "digital": 30,
+     "moat": 85,
+     "adoption": 25
+    },
+    "zhipu": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 38,
+     "digital": 25,
+     "moat": 65,
+     "adoption": 18
     }
    },
    "rationales": {
-    "claude": "林业生产:野外作业,自动化难"
+    "claude": "林业生产:野外作业,自动化难",
+    "deepseek": "户外体力为主,AI监测辅助。",
+    "gpt": "林业巡护为主，自动化有限",
+    "grok": "林业巡护种植，AI监测规划",
+    "kimi": "林业作业环境复杂，机械化程度高但AI渗透低。",
+    "qwen": "林业生产依赖自然环境，机械化程度有限。",
+    "wenxin": "林业需人，AI辅助监测",
+    "yuanbao": "林业作业依赖经验，AI监测生长情况。",
+    "zhipu": "林业巡护可无人机辅助,采伐与养护需现场。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 6.4,
    "flags": []
   },
   {
@@ -10583,28 +13624,28 @@
     }
    ],
    "dims": {
-    "overall": 30,
-    "automation": 32,
-    "augmentation": 50,
-    "digital": 40,
-    "moat": 76,
-    "adoption": 40
+    "overall": 29,
+    "automation": 21,
+    "augmentation": 42,
+    "digital": 30,
+    "moat": 78,
+    "adoption": 26
    },
    "dims_median": {
     "overall": 30,
-    "automation": 32,
-    "augmentation": 50,
-    "digital": 40,
-    "moat": 76,
-    "adoption": 40
+    "automation": 20,
+    "augmentation": 40,
+    "digital": 29,
+    "moat": 78,
+    "adoption": 25
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 5.1,
+    "automation": 5.6,
+    "augmentation": 5.8,
+    "digital": 5.2,
+    "moat": 7.1,
+    "adoption": 6.8
    },
    "by_model": {
     "claude": {
@@ -10614,13 +13655,93 @@
      "digital": 40,
      "moat": 76,
      "adoption": 40
+    },
+    "deepseek": {
+     "overall": 30,
+     "automation": 25,
+     "augmentation": 45,
+     "digital": 25,
+     "moat": 75,
+     "adoption": 30
+    },
+    "doubao": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 35,
+     "moat": 75,
+     "adoption": 25
+    },
+    "gpt": {
+     "overall": 34,
+     "automation": 16,
+     "augmentation": 36,
+     "digital": 28,
+     "moat": 82,
+     "adoption": 18
+    },
+    "grok": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 22,
+     "moat": 85,
+     "adoption": 20
+    },
+    "kimi": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 25
+    },
+    "qwen": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 35,
+     "moat": 70,
+     "adoption": 35
+    },
+    "wenxin": {
+     "overall": 20,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 25,
+     "automation": 20,
+     "augmentation": 30,
+     "digital": 30,
+     "moat": 85,
+     "adoption": 25
+    },
+    "zhipu": {
+     "overall": 28,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 28,
+     "moat": 62,
+     "adoption": 20
     }
    },
    "rationales": {
-    "claude": "畜牧业生产:智慧养殖监测兴起"
+    "claude": "畜牧业生产:智慧养殖监测兴起",
+    "deepseek": "喂料清粪可自动化,健康管理需人。",
+    "gpt": "畜牧看护依赖现场经验",
+    "grok": "畜牧饲养屠宰实操为主",
+    "kimi": "养殖监测AI辅助，但饲养管理仍需人。",
+    "qwen": "畜牧养殖逐步智能化，但现场管理仍需人工。",
+    "wenxin": "畜牧业需人，AI辅助管理",
+    "yuanbao": "畜牧养殖需日常照料，AI辅助疫病预警。",
+    "zhipu": "智能养殖可AI辅助,疫病处理与饲养需人。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 5.1,
    "flags": []
   },
   {
@@ -10760,28 +13881,28 @@
     }
    ],
    "dims": {
-    "overall": 24,
-    "automation": 26,
-    "augmentation": 42,
-    "digital": 30,
-    "moat": 82,
-    "adoption": 34
+    "overall": 28,
+    "automation": 20,
+    "augmentation": 39,
+    "digital": 28,
+    "moat": 79,
+    "adoption": 23
    },
    "dims_median": {
-    "overall": 24,
-    "automation": 26,
-    "augmentation": 42,
+    "overall": 28,
+    "automation": 20,
+    "augmentation": 40,
     "digital": 30,
-    "moat": 82,
-    "adoption": 34
+    "moat": 80,
+    "adoption": 22
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.2,
+    "automation": 5.7,
+    "augmentation": 8.5,
+    "digital": 7.2,
+    "moat": 6.7,
+    "adoption": 7.7
    },
    "by_model": {
     "claude": {
@@ -10791,13 +13912,93 @@
      "digital": 30,
      "moat": 82,
      "adoption": 34
+    },
+    "deepseek": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 20,
+     "moat": 80,
+     "adoption": 20
+    },
+    "doubao": {
+     "overall": 38,
+     "automation": 28,
+     "augmentation": 53,
+     "digital": 43,
+     "moat": 68,
+     "adoption": 33
+    },
+    "gpt": {
+     "overall": 33,
+     "automation": 14,
+     "augmentation": 34,
+     "digital": 26,
+     "moat": 84,
+     "adoption": 16
+    },
+    "grok": {
+     "overall": 32,
+     "automation": 22,
+     "augmentation": 50,
+     "digital": 30,
+     "moat": 78,
+     "adoption": 28
+    },
+    "kimi": {
+     "overall": 20,
+     "automation": 10,
+     "augmentation": 25,
+     "digital": 15,
+     "moat": 90,
+     "adoption": 10
+    },
+    "qwen": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 75,
+     "adoption": 30
+    },
+    "wenxin": {
+     "overall": 20,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
+    "yuanbao": {
+     "overall": 25,
+     "automation": 20,
+     "augmentation": 30,
+     "digital": 30,
+     "moat": 85,
+     "adoption": 25
+    },
+    "zhipu": {
+     "overall": 22,
+     "automation": 12,
+     "augmentation": 32,
+     "digital": 22,
+     "moat": 68,
+     "adoption": 15
     }
    },
    "rationales": {
-    "claude": "渔业生产:作业环境复杂,冲击低"
+    "claude": "渔业生产:作业环境复杂,冲击低",
+    "deepseek": "养殖捕捞重实操,AI仅水质监测。",
+    "gpt": "渔业环境复杂，智能化慢",
+    "grok": "渔业捕捞养殖，AI水质监控",
+    "kimi": "海洋捕捞高度依赖经验与体能，AI极难替代。",
+    "qwen": "渔业生产受水域环境限制，自动化难度大。",
+    "wenxin": "渔业需人，AI辅助导航",
+    "yuanbao": "渔业作业需实操技能，AI辅助渔情预测。",
+    "zhipu": "远洋捕捞以海上实操为主,极难数字化。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 10,
+   "std": 6.2,
    "flags": []
   },
   {
@@ -11039,28 +14240,28 @@
     }
    ],
    "dims": {
-    "overall": 26,
-    "automation": 28,
-    "augmentation": 44,
-    "digital": 32,
-    "moat": 78,
+    "overall": 38,
+    "automation": 29,
+    "augmentation": 51,
+    "digital": 41,
+    "moat": 71,
     "adoption": 36
    },
    "dims_median": {
-    "overall": 26,
+    "overall": 35,
     "automation": 28,
-    "augmentation": 44,
-    "digital": 32,
-    "moat": 78,
+    "augmentation": 55,
+    "digital": 40,
+    "moat": 70,
     "adoption": 36
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 8.1,
+    "automation": 3.7,
+    "augmentation": 5.3,
+    "digital": 10.8,
+    "moat": 5.0,
+    "adoption": 3.7
    },
    "by_model": {
     "claude": {
@@ -11070,13 +14271,49 @@
      "digital": 32,
      "moat": 78,
      "adoption": 36
+    },
+    "gpt": {
+     "overall": 49,
+     "automation": 30,
+     "augmentation": 56,
+     "digital": 60,
+     "moat": 66,
+     "adoption": 40
+    },
+    "grok": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 55,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 35
+    },
+    "kimi": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 75,
+     "adoption": 30
+    },
+    "qwen": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 40
     }
    },
    "rationales": {
-    "claude": "农林牧渔辅助人员"
+    "claude": "农林牧渔辅助人员",
+    "gpt": "农事记录与设备管理可数字化",
+    "grok": "辅助人员AI设备操作，体力仍重",
+    "kimi": "农机操作与监测AI增强，但田间辅助仍需人。",
+    "qwen": "农业辅助工作结合机械操作与数字监测。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 8.1,
    "flags": []
   },
   {
@@ -11167,28 +14404,28 @@
     }
    ],
    "dims": {
-    "overall": 24,
-    "automation": 26,
-    "augmentation": 42,
+    "overall": 32,
+    "automation": 22,
+    "augmentation": 43,
     "digital": 30,
-    "moat": 80,
-    "adoption": 34
+    "moat": 78,
+    "adoption": 27
    },
    "dims_median": {
-    "overall": 24,
-    "automation": 26,
-    "augmentation": 42,
+    "overall": 30,
+    "automation": 20,
+    "augmentation": 44,
     "digital": 30,
     "moat": 80,
-    "adoption": 34
+    "adoption": 22
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.5,
+    "automation": 4.8,
+    "augmentation": 4.9,
+    "digital": 4.3,
+    "moat": 4.3,
+    "adoption": 6.5
    },
    "by_model": {
     "claude": {
@@ -11198,13 +14435,49 @@
      "digital": 30,
      "moat": 80,
      "adoption": 34
+    },
+    "gpt": {
+     "overall": 40,
+     "automation": 18,
+     "augmentation": 44,
+     "digital": 34,
+     "moat": 80,
+     "adoption": 22
+    },
+    "grok": {
+     "overall": 28,
+     "automation": 18,
+     "augmentation": 45,
+     "digital": 25,
+     "moat": 82,
+     "adoption": 22
+    },
+    "kimi": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 35,
+     "digital": 25,
+     "moat": 80,
+     "adoption": 20
+    },
+    "qwen": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 35,
+     "moat": 70,
+     "adoption": 35
     }
    },
    "rationales": {
-    "claude": "其他农林牧渔人员"
+    "claude": "其他农林牧渔人员",
+    "gpt": "大多依赖现场劳动和季节性",
+    "grok": "其他农林牧渔实操主导",
+    "kimi": "类别杂，取中位数，农业整体AI渗透慢。",
+    "qwen": "其他农林牧渔工作多为非标现场作业。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 6.5,
    "flags": []
   },
   {
@@ -11386,28 +14659,28 @@
     }
    ],
    "dims": {
-    "overall": 46,
-    "automation": 52,
-    "augmentation": 52,
+    "overall": 44,
+    "automation": 39,
+    "augmentation": 56,
     "digital": 42,
-    "moat": 62,
-    "adoption": 48
+    "moat": 65,
+    "adoption": 41
    },
    "dims_median": {
-    "overall": 46,
-    "automation": 52,
-    "augmentation": 52,
-    "digital": 42,
-    "moat": 62,
-    "adoption": 48
+    "overall": 43,
+    "automation": 44,
+    "augmentation": 56,
+    "digital": 38,
+    "moat": 64,
+    "adoption": 44
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 11.7,
+    "automation": 12.0,
+    "augmentation": 9.2,
+    "digital": 10.5,
+    "moat": 8.2,
+    "adoption": 10.2
    },
    "by_model": {
     "claude": {
@@ -11417,13 +14690,57 @@
      "digital": 42,
      "moat": 62,
      "adoption": 48
+    },
+    "doubao": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
+    "gpt": {
+     "overall": 61,
+     "automation": 44,
+     "augmentation": 66,
+     "digital": 58,
+     "moat": 58,
+     "adoption": 48
+    },
+    "grok": {
+     "overall": 38,
+     "automation": 45,
+     "augmentation": 60,
+     "digital": 35,
+     "moat": 65,
+     "adoption": 40
+    },
+    "kimi": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 50,
+     "digital": 35,
+     "moat": 70,
+     "adoption": 40
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
     }
    },
    "rationales": {
-    "claude": "农副产品加工:产线自动化推进"
+    "claude": "农副产品加工:产线自动化推进",
+    "gpt": "分拣质检可自动化，操作仍多",
+    "grok": "农副加工流水线AI，质检调整需人",
+    "kimi": "加工流程部分自动化，品质把控仍需人。",
+    "qwen": "农副产品加工逐步引入自动化分拣系统。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 6,
+   "std": 11.7,
    "flags": []
   },
   {
@@ -11677,28 +14994,28 @@
     }
    ],
    "dims": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 54,
-    "digital": 46,
-    "moat": 60,
-    "adoption": 50
+    "overall": 45,
+    "automation": 41,
+    "augmentation": 57,
+    "digital": 44,
+    "moat": 64,
+    "adoption": 43
    },
    "dims_median": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 54,
-    "digital": 46,
-    "moat": 60,
-    "adoption": 50
+    "overall": 46,
+    "automation": 45,
+    "augmentation": 58,
+    "digital": 43,
+    "moat": 61,
+    "adoption": 46
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 13.2,
+    "automation": 14.8,
+    "augmentation": 11.1,
+    "digital": 11.7,
+    "moat": 10.6,
+    "adoption": 12.9
    },
    "by_model": {
     "claude": {
@@ -11708,14 +15025,60 @@
      "digital": 46,
      "moat": 60,
      "adoption": 50
+    },
+    "doubao": {
+     "overall": 20,
+     "automation": 10,
+     "augmentation": 35,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 15
+    },
+    "gpt": {
+     "overall": 58,
+     "automation": 42,
+     "augmentation": 64,
+     "digital": 56,
+     "moat": 60,
+     "adoption": 46
+    },
+    "grok": {
+     "overall": 40,
+     "automation": 48,
+     "augmentation": 62,
+     "digital": 38,
+     "moat": 62,
+     "adoption": 45
+    },
+    "kimi": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 55,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 45
+    },
+    "qwen": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
     }
    },
    "rationales": {
-    "claude": "食品饮料生产加工:标准化产线易自动"
+    "claude": "食品饮料生产加工:标准化产线易自动",
+    "gpt": "流程标准化高，但车间为主",
+    "grok": "食品加工自动化提升，配方监管",
+    "kimi": "生产线自动化高，AI质检逐步渗透。",
+    "qwen": "食品饮料生产质量控制已广泛采用AI检测。"
    },
-   "n_models": 1,
-   "std": 0.0,
-   "flags": []
+   "n_models": 6,
+   "std": 13.2,
+   "flags": [
+    "score_disagreement"
+   ]
   },
   {
    "code": "6-03",
@@ -11830,28 +15193,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 58,
-    "augmentation": 54,
-    "digital": 48,
-    "moat": 58,
-    "adoption": 50
+    "overall": 43,
+    "automation": 38,
+    "augmentation": 53,
+    "digital": 41,
+    "moat": 66,
+    "adoption": 38
    },
    "dims_median": {
-    "overall": 50,
-    "automation": 58,
+    "overall": 47,
+    "automation": 42,
     "augmentation": 54,
-    "digital": 48,
-    "moat": 58,
-    "adoption": 50
+    "digital": 40,
+    "moat": 65,
+    "adoption": 42
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 10.3,
+    "automation": 14.3,
+    "augmentation": 7.6,
+    "digital": 9.2,
+    "moat": 8.6,
+    "adoption": 13.5
    },
    "by_model": {
     "claude": {
@@ -11861,13 +15224,57 @@
      "digital": 48,
      "moat": 58,
      "adoption": 50
+    },
+    "doubao": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
+    "gpt": {
+     "overall": 44,
+     "automation": 24,
+     "augmentation": 48,
+     "digital": 34,
+     "moat": 70,
+     "adoption": 20
+    },
+    "grok": {
+     "overall": 35,
+     "automation": 40,
+     "augmentation": 55,
+     "digital": 32,
+     "moat": 70,
+     "adoption": 35
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 60,
+     "adoption": 50
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
     }
    },
    "rationales": {
-    "claude": "烟草制品加工:高度自动化产线"
+    "claude": "烟草制品加工:高度自动化产线",
+    "gpt": "受监管和专门设备约束较强",
+    "grok": "烟草加工专控，AI辅助有限",
+    "kimi": "传统制造业，自动化程度高，AI增强有限。",
+    "qwen": "烟草加工传统工艺与自动化设备并存。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 6,
+   "std": 10.3,
    "flags": []
   },
   {
@@ -12079,28 +15486,28 @@
     }
    ],
    "dims": {
-    "overall": 46,
-    "automation": 56,
-    "augmentation": 50,
-    "digital": 40,
-    "moat": 62,
-    "adoption": 48
+    "overall": 48,
+    "automation": 43,
+    "augmentation": 58,
+    "digital": 45,
+    "moat": 60,
+    "adoption": 44
    },
    "dims_median": {
-    "overall": 46,
-    "automation": 56,
-    "augmentation": 50,
-    "digital": 40,
-    "moat": 62,
+    "overall": 50,
+    "automation": 49,
+    "augmentation": 61,
+    "digital": 44,
+    "moat": 61,
     "adoption": 48
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 9.8,
+    "automation": 12.0,
+    "augmentation": 8.2,
+    "digital": 7.7,
+    "moat": 8.2,
+    "adoption": 10.2
    },
    "by_model": {
     "claude": {
@@ -12110,13 +15517,57 @@
      "digital": 40,
      "moat": 62,
      "adoption": 48
+    },
+    "doubao": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 35,
+     "moat": 75,
+     "adoption": 25
+    },
+    "gpt": {
+     "overall": 56,
+     "automation": 36,
+     "augmentation": 62,
+     "digital": 48,
+     "moat": 64,
+     "adoption": 38
+    },
+    "grok": {
+     "overall": 42,
+     "automation": 50,
+     "augmentation": 65,
+     "digital": 40,
+     "moat": 60,
+     "adoption": 48
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 50,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 58,
+     "automation": 48,
+     "augmentation": 68,
+     "digital": 58,
+     "moat": 52,
+     "adoption": 53
     }
    },
    "rationales": {
-    "claude": "纺织针织印染:产线自动化,部分工序仍需人"
+    "claude": "纺织针织印染:产线自动化,部分工序仍需人",
+    "gpt": "纺织工序可自动化，调机仍需人",
+    "grok": "纺织印染设备AI控，操作维护人",
+    "kimi": "智能制造推进，但工艺调整仍需经验。",
+    "qwen": "纺织印染行业正推进智能化生产线改造。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 6,
+   "std": 9.8,
    "flags": []
   },
   {
@@ -12262,28 +15713,28 @@
     }
    ],
    "dims": {
-    "overall": 44,
-    "automation": 52,
-    "augmentation": 50,
-    "digital": 38,
-    "moat": 66,
-    "adoption": 46
+    "overall": 47,
+    "automation": 42,
+    "augmentation": 58,
+    "digital": 44,
+    "moat": 62,
+    "adoption": 44
    },
    "dims_median": {
-    "overall": 44,
-    "automation": 52,
-    "augmentation": 50,
-    "digital": 38,
-    "moat": 66,
+    "overall": 45,
+    "automation": 42,
+    "augmentation": 58,
+    "digital": 42,
+    "moat": 62,
     "adoption": 46
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 8.1,
+    "automation": 9.6,
+    "augmentation": 8.2,
+    "digital": 7.7,
+    "moat": 5.1,
+    "adoption": 7.0
    },
    "by_model": {
     "claude": {
@@ -12293,13 +15744,57 @@
      "digital": 38,
      "moat": 66,
      "adoption": 46
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 30
+    },
+    "gpt": {
+     "overall": 60,
+     "automation": 40,
+     "augmentation": 66,
+     "digital": 54,
+     "moat": 60,
+     "adoption": 46
+    },
+    "grok": {
+     "overall": 45,
+     "automation": 52,
+     "augmentation": 68,
+     "digital": 45,
+     "moat": 58,
+     "adoption": 50
+    },
+    "kimi": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 50,
+     "digital": 35,
+     "moat": 65,
+     "adoption": 40
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
     }
    },
    "rationales": {
-    "claude": "服装皮革毛皮制作:柔性操作自动化较难"
+    "claude": "服装皮革毛皮制作:柔性操作自动化较难",
+    "gpt": "裁剪缝制部分自动化，定制仍强",
+    "grok": "服装制作缝制AI设计，手工仍存",
+    "kimi": "快时尚AI设计辅助，但缝制仍以人工为主。",
+    "qwen": "服装加工依赖人工缝纫，设计环节AI辅助。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 6,
+   "std": 8.1,
    "flags": []
   },
   {
@@ -12439,28 +15934,28 @@
     }
    ],
    "dims": {
-    "overall": 44,
-    "automation": 52,
-    "augmentation": 50,
-    "digital": 40,
-    "moat": 66,
-    "adoption": 46
+    "overall": 47,
+    "automation": 41,
+    "augmentation": 56,
+    "digital": 43,
+    "moat": 65,
+    "adoption": 42
    },
    "dims_median": {
     "overall": 44,
-    "automation": 52,
-    "augmentation": 50,
+    "automation": 42,
+    "augmentation": 60,
     "digital": 40,
-    "moat": 66,
+    "moat": 65,
     "adoption": 46
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 9.8,
+    "automation": 8.9,
+    "augmentation": 9.9,
+    "digital": 11.5,
+    "moat": 8.0,
+    "adoption": 9.0
    },
    "by_model": {
     "claude": {
@@ -12470,13 +15965,49 @@
      "digital": 40,
      "moat": 66,
      "adoption": 46
+    },
+    "gpt": {
+     "overall": 63,
+     "automation": 42,
+     "augmentation": 68,
+     "digital": 58,
+     "moat": 58,
+     "adoption": 50
+    },
+    "grok": {
+     "overall": 40,
+     "automation": 45,
+     "augmentation": 60,
+     "digital": 38,
+     "moat": 65,
+     "adoption": 42
+    },
+    "kimi": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 40,
+     "digital": 25,
+     "moat": 80,
+     "adoption": 25
+    },
+    "qwen": {
+     "overall": 52,
+     "automation": 42,
+     "augmentation": 62,
+     "digital": 52,
+     "moat": 58,
+     "adoption": 48
     }
    },
    "rationales": {
-    "claude": "木材家具木制品制作:部分工序自动"
+    "claude": "木材家具木制品制作:部分工序自动",
+    "gpt": "标准化木作可自动化，手工仍在",
+    "grok": "木材家具实操组装，CNC辅助",
+    "kimi": "定制化木工难以自动化，AI辅助设计有限。",
+    "qwen": "木材家具制作兼顾传统工艺与数控设备。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 9.8,
    "flags": []
   },
   {
@@ -12586,28 +16117,28 @@
     }
    ],
    "dims": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 52,
-    "digital": 46,
-    "moat": 60,
-    "adoption": 48
+    "overall": 53,
+    "automation": 49,
+    "augmentation": 62,
+    "digital": 51,
+    "moat": 56,
+    "adoption": 50
    },
    "dims_median": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 52,
-    "digital": 46,
-    "moat": 60,
-    "adoption": 48
+    "overall": 50,
+    "automation": 50,
+    "augmentation": 64,
+    "digital": 50,
+    "moat": 55,
+    "adoption": 50
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 5.4,
+    "automation": 6.0,
+    "augmentation": 7.5,
+    "digital": 5.4,
+    "moat": 4.2,
+    "adoption": 3.7
    },
    "by_model": {
     "claude": {
@@ -12617,13 +16148,49 @@
      "digital": 46,
      "moat": 60,
      "adoption": 48
+    },
+    "gpt": {
+     "overall": 59,
+     "automation": 40,
+     "augmentation": 64,
+     "digital": 52,
+     "moat": 62,
+     "adoption": 44
+    },
+    "grok": {
+     "overall": 48,
+     "automation": 55,
+     "augmentation": 70,
+     "digital": 50,
+     "moat": 55,
+     "adoption": 52
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 55,
+     "adoption": 50
+    },
+    "qwen": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
     }
    },
    "rationales": {
-    "claude": "纸及纸制品生产加工:连续产线自动化高"
+    "claude": "纸及纸制品生产加工:连续产线自动化高",
+    "gpt": "流程控制和质检更易数字化",
+    "grok": "造纸加工自动化，环保监管",
+    "kimi": "传统流程工业，自动化成熟，AI增量有限。",
+    "qwen": "纸制品生产流程自动化程度持续提升。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 5.4,
    "flags": []
   },
   {
@@ -12721,28 +16288,28 @@
     }
    ],
    "dims": {
-    "overall": 54,
+    "overall": 64,
     "automation": 60,
-    "augmentation": 60,
-    "digital": 58,
-    "moat": 54,
-    "adoption": 54
+    "augmentation": 73,
+    "digital": 70,
+    "moat": 44,
+    "adoption": 63
    },
    "dims_median": {
-    "overall": 54,
+    "overall": 65,
     "automation": 60,
-    "augmentation": 60,
-    "digital": 58,
-    "moat": 54,
-    "adoption": 54
+    "augmentation": 75,
+    "digital": 70,
+    "moat": 45,
+    "adoption": 60
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 7.9,
+    "automation": 5.5,
+    "augmentation": 9.0,
+    "digital": 12.6,
+    "moat": 6.3,
+    "adoption": 8.6
    },
    "by_model": {
     "claude": {
@@ -12752,13 +16319,49 @@
      "digital": 58,
      "moat": 54,
      "adoption": 54
+    },
+    "gpt": {
+     "overall": 78,
+     "automation": 62,
+     "augmentation": 84,
+     "digital": 90,
+     "moat": 40,
+     "adoption": 76
+    },
+    "grok": {
+     "overall": 65,
+     "automation": 70,
+     "augmentation": 80,
+     "digital": 75,
+     "moat": 35,
+     "adoption": 70
+    },
+    "kimi": {
+     "overall": 60,
+     "automation": 55,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 45,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 60
     }
    },
    "rationales": {
-    "claude": "印刷和记录媒介复制:数字化与按需印刷"
+    "claude": "印刷和记录媒介复制:数字化与按需印刷",
+    "gpt": "数字印前与排版被AI快速吞噬",
+    "grok": "印刷媒介数字化AI生成",
+    "kimi": "数字印刷与AI排版普及，传统印刷萎缩。",
+    "qwen": "印刷业数字化工作流程已较为成熟。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 7.9,
    "flags": []
   },
   {
@@ -13070,28 +16673,28 @@
     }
    ],
    "dims": {
-    "overall": 46,
-    "automation": 52,
-    "augmentation": 54,
-    "digital": 44,
-    "moat": 62,
-    "adoption": 48
+    "overall": 47,
+    "automation": 40,
+    "augmentation": 57,
+    "digital": 43,
+    "moat": 65,
+    "adoption": 42
    },
    "dims_median": {
     "overall": 46,
-    "automation": 52,
-    "augmentation": 54,
+    "automation": 36,
+    "augmentation": 58,
     "digital": 44,
-    "moat": 62,
-    "adoption": 48
+    "moat": 64,
+    "adoption": 42
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 7.7,
+    "automation": 7.9,
+    "augmentation": 7.0,
+    "digital": 8.0,
+    "moat": 6.6,
+    "adoption": 7.0
    },
    "by_model": {
     "claude": {
@@ -13101,13 +16704,49 @@
      "digital": 44,
      "moat": 62,
      "adoption": 48
+    },
+    "gpt": {
+     "overall": 57,
+     "automation": 36,
+     "augmentation": 62,
+     "digital": 46,
+     "moat": 64,
+     "adoption": 42
+    },
+    "grok": {
+     "overall": 38,
+     "automation": 35,
+     "augmentation": 58,
+     "digital": 42,
+     "moat": 68,
+     "adoption": 40
+    },
+    "kimi": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 75,
+     "adoption": 30
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
     }
    },
    "rationales": {
-    "claude": "文教工美体育娱乐用品制造"
+    "claude": "文教工美体育娱乐用品制造",
+    "gpt": "创意与手工并存，批量化有限",
+    "grok": "文体用品手工创意，AI设计",
+    "kimi": "工艺品制造依赖手工技艺，AI难以替代。",
+    "qwen": "文体用品制造结合模具设计与手工装配。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 7.7,
    "flags": []
   },
   {
@@ -13296,27 +16935,27 @@
    ],
    "dims": {
     "overall": 50,
-    "automation": 56,
-    "augmentation": 56,
-    "digital": 52,
+    "automation": 45,
+    "augmentation": 59,
+    "digital": 48,
     "moat": 60,
-    "adoption": 52
+    "adoption": 46
    },
    "dims_median": {
     "overall": 50,
-    "automation": 56,
+    "automation": 50,
     "augmentation": 56,
-    "digital": 52,
+    "digital": 45,
     "moat": 60,
-    "adoption": 52
+    "adoption": 50
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.6,
+    "automation": 11.3,
+    "augmentation": 7.4,
+    "digital": 10.2,
+    "moat": 7.6,
+    "adoption": 11.7
    },
    "by_model": {
     "claude": {
@@ -13326,13 +16965,49 @@
      "digital": 52,
      "moat": 60,
      "adoption": 52
+    },
+    "gpt": {
+     "overall": 47,
+     "automation": 24,
+     "augmentation": 50,
+     "digital": 34,
+     "moat": 72,
+     "adoption": 24
+    },
+    "grok": {
+     "overall": 42,
+     "automation": 50,
+     "augmentation": 60,
+     "digital": 45,
+     "moat": 62,
+     "adoption": 45
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 60,
+     "adoption": 50
+    },
+    "qwen": {
+     "overall": 62,
+     "automation": 52,
+     "augmentation": 72,
+     "digital": 65,
+     "moat": 48,
+     "adoption": 58
     }
    },
    "rationales": {
-    "claude": "石油加工炼焦煤化工:流程自动化高"
+    "claude": "石油加工炼焦煤化工:流程自动化高",
+    "gpt": "重化工现场强，AI多做监控",
+    "grok": "石油化工过程控制AI，安全操作",
+    "kimi": "流程工业自动化高，AI优化控制逐步渗透。",
+    "qwen": "石油化工生产监控高度依赖自动化系统。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 6.6,
    "flags": []
   },
   {
@@ -13868,28 +17543,28 @@
     }
    ],
    "dims": {
-    "overall": 52,
-    "automation": 58,
-    "augmentation": 58,
-    "digital": 54,
-    "moat": 58,
-    "adoption": 54
+    "overall": 58,
+    "automation": 53,
+    "augmentation": 68,
+    "digital": 60,
+    "moat": 53,
+    "adoption": 57
    },
    "dims_median": {
-    "overall": 52,
-    "automation": 58,
-    "augmentation": 58,
-    "digital": 54,
-    "moat": 58,
-    "adoption": 54
+    "overall": 55,
+    "automation": 55,
+    "augmentation": 70,
+    "digital": 62,
+    "moat": 55,
+    "adoption": 55
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 5.3,
+    "automation": 5.8,
+    "augmentation": 7.3,
+    "digital": 7.3,
+    "moat": 4.7,
+    "adoption": 3.8
    },
    "by_model": {
     "claude": {
@@ -13899,13 +17574,49 @@
      "digital": 54,
      "moat": 58,
      "adoption": 54
+    },
+    "gpt": {
+     "overall": 64,
+     "automation": 44,
+     "augmentation": 70,
+     "digital": 62,
+     "moat": 56,
+     "adoption": 52
+    },
+    "grok": {
+     "overall": 55,
+     "automation": 60,
+     "augmentation": 75,
+     "digital": 65,
+     "moat": 50,
+     "adoption": 60
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 55,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 62
     }
    },
    "rationales": {
-    "claude": "化学原料和制品制造:连续流程自动化"
+    "claude": "化学原料和制品制造:连续流程自动化",
+    "gpt": "配方优化和质控受AI增强",
+    "grok": "化工制造配方模拟，现场生产",
+    "kimi": "化工过程AI优化，但安全操作仍需人。",
+    "qwen": "化工生产流程优化广泛采用智能算法。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 5.3,
    "flags": []
   },
   {
@@ -14033,28 +17744,28 @@
     }
    ],
    "dims": {
-    "overall": 52,
-    "automation": 56,
-    "augmentation": 60,
-    "digital": 56,
-    "moat": 58,
-    "adoption": 54
+    "overall": 57,
+    "automation": 50,
+    "augmentation": 69,
+    "digital": 61,
+    "moat": 54,
+    "adoption": 56
    },
    "dims_median": {
-    "overall": 52,
-    "automation": 56,
-    "augmentation": 60,
-    "digital": 56,
+    "overall": 55,
+    "automation": 50,
+    "augmentation": 68,
+    "digital": 60,
     "moat": 58,
-    "adoption": 54
+    "adoption": 55
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.7,
+    "automation": 6.7,
+    "augmentation": 6.1,
+    "digital": 7.2,
+    "moat": 6.2,
+    "adoption": 6.5
    },
    "by_model": {
     "claude": {
@@ -14064,13 +17775,49 @@
      "digital": 56,
      "moat": 58,
      "adoption": 54
+    },
+    "gpt": {
+     "overall": 62,
+     "automation": 40,
+     "augmentation": 68,
+     "digital": 60,
+     "moat": 58,
+     "adoption": 48
+    },
+    "grok": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 72,
+     "digital": 60,
+     "moat": 58,
+     "adoption": 55
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 68,
+     "automation": 58,
+     "augmentation": 78,
+     "digital": 75,
+     "moat": 42,
+     "adoption": 68
     }
    },
    "rationales": {
-    "claude": "医药制造:GMP自动化与质控"
+    "claude": "医药制造:GMP自动化与质控",
+    "gpt": "制药流程可数字化，合规很重",
+    "grok": "医药制造GMP严格，AI研发助",
+    "kimi": "制药AI辅助研发与质控，但合规要求严格。",
+    "qwen": "医药制造质量控制与研发大量应用AI。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 6.7,
    "flags": []
   },
   {
@@ -14169,27 +17916,27 @@
    ],
    "dims": {
     "overall": 52,
-    "automation": 60,
-    "augmentation": 56,
-    "digital": 54,
-    "moat": 56,
-    "adoption": 54
+    "automation": 48,
+    "augmentation": 59,
+    "digital": 50,
+    "moat": 57,
+    "adoption": 48
    },
    "dims_median": {
     "overall": 52,
-    "automation": 60,
+    "automation": 52,
     "augmentation": 56,
-    "digital": 54,
+    "digital": 50,
     "moat": 56,
     "adoption": 54
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.4,
+    "automation": 12.3,
+    "augmentation": 8.4,
+    "digital": 10.0,
+    "moat": 8.5,
+    "adoption": 12.3
    },
    "by_model": {
     "claude": {
@@ -14199,13 +17946,49 @@
      "digital": 54,
      "moat": 56,
      "adoption": 54
+    },
+    "gpt": {
+     "overall": 45,
+     "automation": 24,
+     "augmentation": 48,
+     "digital": 34,
+     "moat": 72,
+     "adoption": 24
+    },
+    "grok": {
+     "overall": 45,
+     "automation": 52,
+     "augmentation": 65,
+     "digital": 48,
+     "moat": 60,
+     "adoption": 48
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 55,
+     "digital": 50,
+     "moat": 50,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 62,
+     "automation": 52,
+     "augmentation": 72,
+     "digital": 65,
+     "moat": 48,
+     "adoption": 58
     }
    },
    "rationales": {
-    "claude": "化学纤维制造:高度连续化产线"
+    "claude": "化学纤维制造:高度连续化产线",
+    "gpt": "工艺专用性高，自动化受限",
+    "grok": "化纤生产设备控，质检人",
+    "kimi": "流程工业自动化成熟，AI增量优化有限。",
+    "qwen": "化纤生产自动化程度高，工艺参数智能调控。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 6.4,
    "flags": []
   },
   {
@@ -14297,28 +18080,28 @@
     }
    ],
    "dims": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 54,
-    "digital": 46,
-    "moat": 60,
-    "adoption": 50
+    "overall": 53,
+    "automation": 49,
+    "augmentation": 62,
+    "digital": 50,
+    "moat": 57,
+    "adoption": 49
    },
    "dims_median": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 54,
+    "overall": 50,
+    "automation": 50,
+    "augmentation": 62,
     "digital": 46,
-    "moat": 60,
+    "moat": 55,
     "adoption": 50
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 5.2,
+    "automation": 6.7,
+    "augmentation": 6.5,
+    "digital": 5.7,
+    "moat": 4.8,
+    "adoption": 5.0
    },
    "by_model": {
     "claude": {
@@ -14328,13 +18111,49 @@
      "digital": 46,
      "moat": 60,
      "adoption": 50
+    },
+    "gpt": {
+     "overall": 58,
+     "automation": 38,
+     "augmentation": 62,
+     "digital": 46,
+     "moat": 64,
+     "adoption": 40
+    },
+    "grok": {
+     "overall": 48,
+     "automation": 55,
+     "augmentation": 68,
+     "digital": 52,
+     "moat": 55,
+     "adoption": 52
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 55,
+     "adoption": 50
+    },
+    "qwen": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
     }
    },
    "rationales": {
-    "claude": "橡胶和塑料制品制造"
+    "claude": "橡胶和塑料制品制造",
+    "gpt": "橡塑设备可优化，现场仍多",
+    "grok": "橡胶塑料成型AI，模具调整",
+    "kimi": "注塑自动化高，AI在质检与调参中辅助。",
+    "qwen": "橡塑制品成型加工逐步引入机器人操作。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 5.2,
    "flags": []
   },
   {
@@ -14670,28 +18489,28 @@
     }
    ],
    "dims": {
-    "overall": 46,
-    "automation": 54,
-    "augmentation": 52,
-    "digital": 44,
-    "moat": 62,
-    "adoption": 48
+    "overall": 47,
+    "automation": 42,
+    "augmentation": 56,
+    "digital": 42,
+    "moat": 63,
+    "adoption": 42
    },
    "dims_median": {
     "overall": 46,
-    "automation": 54,
-    "augmentation": 52,
-    "digital": 44,
-    "moat": 62,
-    "adoption": 48
+    "automation": 40,
+    "augmentation": 54,
+    "digital": 38,
+    "moat": 65,
+    "adoption": 40
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 7.5,
+    "automation": 8.1,
+    "augmentation": 6.3,
+    "digital": 8.6,
+    "moat": 6.3,
+    "adoption": 8.0
    },
    "by_model": {
     "claude": {
@@ -14701,13 +18520,49 @@
      "digital": 44,
      "moat": 62,
      "adoption": 48
+    },
+    "gpt": {
+     "overall": 50,
+     "automation": 30,
+     "augmentation": 54,
+     "digital": 38,
+     "moat": 68,
+     "adoption": 30
+    },
+    "grok": {
+     "overall": 35,
+     "automation": 40,
+     "augmentation": 55,
+     "digital": 35,
+     "moat": 70,
+     "adoption": 38
+    },
+    "kimi": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 50,
+     "digital": 35,
+     "moat": 65,
+     "adoption": 40
+    },
+    "qwen": {
+     "overall": 58,
+     "automation": 48,
+     "augmentation": 68,
+     "digital": 58,
+     "moat": 52,
+     "adoption": 53
     }
    },
    "rationales": {
-    "claude": "非金属矿物制品制造"
+    "claude": "非金属矿物制品制造",
+    "gpt": "矿物制品偏生产现场，数字化一般",
+    "grok": "非金属矿物烧制实操重",
+    "kimi": "建材制造自动化推进，但工艺调整需经验。",
+    "qwen": "非金属矿物加工设备自动化持续升级。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 7.5,
    "flags": []
   },
   {
@@ -14983,28 +18838,28 @@
     }
    ],
    "dims": {
-    "overall": 40,
-    "automation": 44,
-    "augmentation": 50,
-    "digital": 40,
-    "moat": 70,
-    "adoption": 46
+    "overall": 39,
+    "automation": 31,
+    "augmentation": 48,
+    "digital": 34,
+    "moat": 74,
+    "adoption": 34
    },
    "dims_median": {
     "overall": 40,
-    "automation": 44,
-    "augmentation": 50,
-    "digital": 40,
-    "moat": 70,
-    "adoption": 46
+    "automation": 30,
+    "augmentation": 45,
+    "digital": 30,
+    "moat": 80,
+    "adoption": 35
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 9.3,
+    "automation": 12.5,
+    "augmentation": 10.1,
+    "digital": 12.4,
+    "moat": 10.7,
+    "adoption": 12.7
    },
    "by_model": {
     "claude": {
@@ -15014,13 +18869,49 @@
      "digital": 40,
      "moat": 70,
      "adoption": 46
+    },
+    "gpt": {
+     "overall": 32,
+     "automation": 14,
+     "augmentation": 34,
+     "digital": 20,
+     "moat": 84,
+     "adoption": 16
+    },
+    "grok": {
+     "overall": 28,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 25,
+     "moat": 82,
+     "adoption": 25
+    },
+    "kimi": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 35
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
     }
    },
    "rationales": {
-    "claude": "采矿人员:井下与现场作业,自动化渐进"
+    "claude": "采矿人员:井下与现场作业,自动化渐进",
+    "gpt": "矿山环境恶劣，AI替代慢",
+    "grok": "采矿危险实操，AI遥控有限",
+    "kimi": "智能矿山推进，但井下作业风险高仍需人。",
+    "qwen": "采矿作业环境复杂，安全监控智能化推进。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 9.3,
    "flags": []
   },
   {
@@ -15412,28 +19303,28 @@
     }
    ],
    "dims": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 56,
-    "digital": 50,
+    "overall": 51,
+    "automation": 46,
+    "augmentation": 61,
+    "digital": 48,
     "moat": 60,
-    "adoption": 52
+    "adoption": 47
    },
    "dims_median": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 56,
-    "digital": 50,
+    "overall": 50,
+    "automation": 45,
+    "augmentation": 60,
+    "digital": 45,
     "moat": 60,
-    "adoption": 52
+    "adoption": 50
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 7.2,
+    "automation": 8.2,
+    "augmentation": 6.1,
+    "digital": 9.0,
+    "moat": 6.4,
+    "adoption": 8.4
    },
    "by_model": {
     "claude": {
@@ -15443,13 +19334,49 @@
      "digital": 50,
      "moat": 60,
      "adoption": 52
+    },
+    "gpt": {
+     "overall": 54,
+     "automation": 32,
+     "augmentation": 60,
+     "digital": 42,
+     "moat": 66,
+     "adoption": 34
+    },
+    "grok": {
+     "overall": 40,
+     "automation": 45,
+     "augmentation": 62,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 42
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 60,
+     "adoption": 50
+    },
+    "qwen": {
+     "overall": 62,
+     "automation": 52,
+     "augmentation": 72,
+     "digital": 65,
+     "moat": 48,
+     "adoption": 58
     }
    },
    "rationales": {
-    "claude": "金属冶炼和压延加工:连续产线自动化"
+    "claude": "金属冶炼和压延加工:连续产线自动化",
+    "gpt": "高温高危现场，自动化推进有限",
+    "grok": "冶炼压延高温操作，控制AI",
+    "kimi": "冶金自动化成熟，AI在能耗优化中辅助。",
+    "qwen": "金属冶炼过程控制高度依赖自动化系统。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 7.2,
    "flags": []
   },
   {
@@ -15697,28 +19624,28 @@
     }
    ],
    "dims": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 54,
-    "digital": 48,
-    "moat": 60,
-    "adoption": 50
+    "overall": 57,
+    "automation": 53,
+    "augmentation": 68,
+    "digital": 57,
+    "moat": 52,
+    "adoption": 57
    },
    "dims_median": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 54,
-    "digital": 48,
-    "moat": 60,
-    "adoption": 50
+    "overall": 55,
+    "automation": 50,
+    "augmentation": 70,
+    "digital": 60,
+    "moat": 50,
+    "adoption": 55
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.6,
+    "automation": 4.1,
+    "augmentation": 8.3,
+    "digital": 7.1,
+    "moat": 5.0,
+    "adoption": 5.1
    },
    "by_model": {
     "claude": {
@@ -15728,13 +19655,49 @@
      "digital": 48,
      "moat": 60,
      "adoption": 50
+    },
+    "gpt": {
+     "overall": 68,
+     "automation": 50,
+     "augmentation": 74,
+     "digital": 64,
+     "moat": 54,
+     "adoption": 60
+    },
+    "grok": {
+     "overall": 55,
+     "automation": 60,
+     "augmentation": 78,
+     "digital": 65,
+     "moat": 45,
+     "adoption": 65
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 65,
+     "digital": 50,
+     "moat": 50,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
     }
    },
    "rationales": {
-    "claude": "机械制造基础加工"
+    "claude": "机械制造基础加工",
+    "gpt": "机加工编程与质检可被重塑",
+    "grok": "机械加工CNC编程AI强",
+    "kimi": "数控与机器人普及，AI编程与质检增强。",
+    "qwen": "机械加工数控化程度高，AI辅助编程。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 6.6,
    "flags": []
   },
   {
@@ -15860,28 +19823,28 @@
     }
    ],
    "dims": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 54,
-    "digital": 46,
-    "moat": 60,
-    "adoption": 50
+    "overall": 51,
+    "automation": 47,
+    "augmentation": 61,
+    "digital": 47,
+    "moat": 59,
+    "adoption": 47
    },
    "dims_median": {
-    "overall": 48,
-    "automation": 56,
-    "augmentation": 54,
+    "overall": 50,
+    "automation": 48,
+    "augmentation": 62,
     "digital": 46,
     "moat": 60,
-    "adoption": 50
+    "adoption": 48
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 5.7,
+    "automation": 6.4,
+    "augmentation": 5.5,
+    "digital": 5.9,
+    "moat": 3.9,
+    "adoption": 5.1
    },
    "by_model": {
     "claude": {
@@ -15891,13 +19854,49 @@
      "digital": 46,
      "moat": 60,
      "adoption": 50
+    },
+    "gpt": {
+     "overall": 56,
+     "automation": 36,
+     "augmentation": 62,
+     "digital": 46,
+     "moat": 64,
+     "adoption": 38
+    },
+    "grok": {
+     "overall": 42,
+     "automation": 48,
+     "augmentation": 65,
+     "digital": 45,
+     "moat": 60,
+     "adoption": 48
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 40,
+     "moat": 60,
+     "adoption": 45
+    },
+    "qwen": {
+     "overall": 58,
+     "automation": 48,
+     "augmentation": 68,
+     "digital": 58,
+     "moat": 52,
+     "adoption": 53
     }
    },
    "rationales": {
-    "claude": "金属制品制造"
+    "claude": "金属制品制造",
+    "gpt": "标准件制造可自动化，定制仍在",
+    "grok": "金属制品焊接切割AI助",
+    "kimi": "焊接与装配自动化高，复杂件仍需人。",
+    "qwen": "金属制品制造结合传统工艺与自动化设备。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 5.7,
    "flags": []
   },
   {
@@ -16187,28 +20186,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 58,
-    "augmentation": 58,
-    "digital": 52,
-    "moat": 58,
-    "adoption": 52
+    "overall": 56,
+    "automation": 52,
+    "augmentation": 67,
+    "digital": 57,
+    "moat": 53,
+    "adoption": 54
    },
    "dims_median": {
-    "overall": 50,
-    "automation": 58,
-    "augmentation": 58,
-    "digital": 52,
-    "moat": 58,
-    "adoption": 52
+    "overall": 55,
+    "automation": 52,
+    "augmentation": 70,
+    "digital": 58,
+    "moat": 52,
+    "adoption": 55
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 5.2,
+    "automation": 4.7,
+    "augmentation": 6.8,
+    "digital": 5.4,
+    "moat": 4.1,
+    "adoption": 3.8
    },
    "by_model": {
     "claude": {
@@ -16218,13 +20217,49 @@
      "digital": 52,
      "moat": 58,
      "adoption": 52
+    },
+    "gpt": {
+     "overall": 63,
+     "automation": 44,
+     "augmentation": 70,
+     "digital": 58,
+     "moat": 58,
+     "adoption": 48
+    },
+    "grok": {
+     "overall": 52,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 60,
+     "moat": 52,
+     "adoption": 58
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 50,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 62,
+     "automation": 52,
+     "augmentation": 72,
+     "digital": 65,
+     "moat": 48,
+     "adoption": 58
     }
    },
    "rationales": {
-    "claude": "通用设备制造"
+    "claude": "通用设备制造",
+    "gpt": "设备装配调试受AI增强明显",
+    "grok": "通用设备装配调试人机",
+    "kimi": "智能制造推进，设备装配逐步自动化。",
+    "qwen": "通用设备制造广泛采用智能制造技术。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 5.2,
    "flags": []
   },
   {
@@ -16382,28 +20417,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 58,
-    "augmentation": 58,
-    "digital": 52,
-    "moat": 58,
-    "adoption": 52
+    "overall": 54,
+    "automation": 48,
+    "augmentation": 64,
+    "digital": 53,
+    "moat": 57,
+    "adoption": 50
    },
    "dims_median": {
     "overall": 50,
-    "automation": 58,
-    "augmentation": 58,
+    "automation": 50,
+    "augmentation": 64,
     "digital": 52,
     "moat": 58,
     "adoption": 52
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 4.5,
+    "automation": 7.5,
+    "augmentation": 6.6,
+    "digital": 5.7,
+    "moat": 4.2,
+    "adoption": 5.3
    },
    "by_model": {
     "claude": {
@@ -16413,13 +20448,49 @@
      "digital": 52,
      "moat": 58,
      "adoption": 52
+    },
+    "gpt": {
+     "overall": 58,
+     "automation": 38,
+     "augmentation": 64,
+     "digital": 48,
+     "moat": 62,
+     "adoption": 42
+    },
+    "grok": {
+     "overall": 50,
+     "automation": 52,
+     "augmentation": 72,
+     "digital": 58,
+     "moat": 55,
+     "adoption": 55
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 60,
+     "adoption": 45
+    },
+    "qwen": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
     }
    },
    "rationales": {
-    "claude": "专用设备制造"
+    "claude": "专用设备制造",
+    "gpt": "专用设备复杂，现场调试多",
+    "grok": "专用设备定制复杂，AI设计",
+    "kimi": "定制化设备制造，自动化程度因产品而异。",
+    "qwen": "专用设备制造需定制化设计与现场调试。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 4.5,
    "flags": []
   },
   {
@@ -16523,28 +20594,28 @@
     }
    ],
    "dims": {
-    "overall": 52,
-    "automation": 62,
-    "augmentation": 58,
-    "digital": 54,
-    "moat": 56,
-    "adoption": 56
+    "overall": 58,
+    "automation": 54,
+    "augmentation": 69,
+    "digital": 59,
+    "moat": 50,
+    "adoption": 58
    },
    "dims_median": {
-    "overall": 52,
-    "automation": 62,
-    "augmentation": 58,
-    "digital": 54,
-    "moat": 56,
-    "adoption": 56
+    "overall": 58,
+    "automation": 55,
+    "augmentation": 70,
+    "digital": 55,
+    "moat": 45,
+    "adoption": 62
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 4.2,
+    "automation": 8.8,
+    "augmentation": 8.1,
+    "digital": 8.0,
+    "moat": 6.5,
+    "adoption": 9.9
    },
    "by_model": {
     "claude": {
@@ -16554,13 +20625,49 @@
      "digital": 54,
      "moat": 56,
      "adoption": 56
+    },
+    "gpt": {
+     "overall": 57,
+     "automation": 38,
+     "augmentation": 62,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 40
+    },
+    "grok": {
+     "overall": 58,
+     "automation": 62,
+     "augmentation": 80,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 68
+    },
+    "kimi": {
+     "overall": 60,
+     "automation": 55,
+     "augmentation": 70,
+     "digital": 55,
+     "moat": 45,
+     "adoption": 65
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 68,
+     "moat": 45,
+     "adoption": 62
     }
    },
    "rationales": {
-    "claude": "汽车制造:产线高度自动化(机器人密集)"
+    "claude": "汽车制造:产线高度自动化(机器人密集)",
+    "gpt": "装配与质检可自动化，现场仍强",
+    "grok": "汽车制造机器人化，质检人",
+    "kimi": "汽车产线自动化极高，AI质检与调度渗透深。",
+    "qwen": "汽车制造自动化程度行业领先，AI质检普及。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 4.2,
    "flags": []
   },
   {
@@ -16802,28 +20909,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 56,
-    "augmentation": 58,
-    "digital": 52,
-    "moat": 60,
-    "adoption": 52
+    "overall": 54,
+    "automation": 48,
+    "augmentation": 64,
+    "digital": 54,
+    "moat": 57,
+    "adoption": 51
    },
    "dims_median": {
-    "overall": 50,
-    "automation": 56,
-    "augmentation": 58,
+    "overall": 55,
+    "automation": 50,
+    "augmentation": 60,
     "digital": 52,
-    "moat": 60,
+    "moat": 58,
     "adoption": 52
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 4.9,
+    "automation": 6.9,
+    "augmentation": 5.8,
+    "digital": 6.0,
+    "moat": 4.9,
+    "adoption": 6.9
    },
    "by_model": {
     "claude": {
@@ -16833,13 +20940,49 @@
      "digital": 52,
      "moat": 60,
      "adoption": 52
+    },
+    "gpt": {
+     "overall": 55,
+     "automation": 36,
+     "augmentation": 60,
+     "digital": 48,
+     "moat": 62,
+     "adoption": 38
+    },
+    "grok": {
+     "overall": 48,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 55,
+     "moat": 58,
+     "adoption": 55
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 55,
+     "adoption": 50
+    },
+    "qwen": {
+     "overall": 62,
+     "automation": 52,
+     "augmentation": 72,
+     "digital": 65,
+     "moat": 48,
+     "adoption": 58
     }
    },
    "rationales": {
-    "claude": "铁路船舶航空设备制造"
+    "claude": "铁路船舶航空设备制造",
+    "gpt": "高可靠制造约束高，AI渐进渗透",
+    "grok": "船舶航空精密装配监管",
+    "kimi": "高端装备制造，自动化与AI逐步渗透。",
+    "qwen": "轨道交通装备制造智能化水平持续提升。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 4.9,
    "flags": []
   },
   {
@@ -17027,28 +21170,28 @@
     }
    ],
    "dims": {
-    "overall": 52,
-    "automation": 60,
-    "augmentation": 58,
-    "digital": 54,
-    "moat": 56,
-    "adoption": 54
+    "overall": 57,
+    "automation": 53,
+    "augmentation": 67,
+    "digital": 58,
+    "moat": 53,
+    "adoption": 56
    },
    "dims_median": {
-    "overall": 52,
-    "automation": 60,
-    "augmentation": 58,
+    "overall": 55,
+    "automation": 55,
+    "augmentation": 66,
     "digital": 54,
-    "moat": 56,
-    "adoption": 54
+    "moat": 50,
+    "adoption": 55
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 4.5,
+    "automation": 7.1,
+    "augmentation": 7.2,
+    "digital": 7.9,
+    "moat": 5.9,
+    "adoption": 7.3
    },
    "by_model": {
     "claude": {
@@ -17058,13 +21201,49 @@
      "digital": 54,
      "moat": 56,
      "adoption": 54
+    },
+    "gpt": {
+     "overall": 59,
+     "automation": 40,
+     "augmentation": 66,
+     "digital": 52,
+     "moat": 62,
+     "adoption": 44
+    },
+    "grok": {
+     "overall": 55,
+     "automation": 58,
+     "augmentation": 75,
+     "digital": 65,
+     "moat": 50,
+     "adoption": 62
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 50,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 65
     }
    },
    "rationales": {
-    "claude": "电气机械和器材制造"
+    "claude": "电气机械和器材制造",
+    "gpt": "电气装配和检测可数字化",
+    "grok": "电气器材生产测试AI",
+    "kimi": "电机与电器制造自动化高，AI辅助检测。",
+    "qwen": "电气机械制造广泛采用自动化生产线。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 4.5,
    "flags": []
   },
   {
@@ -17340,28 +21519,28 @@
     }
    ],
    "dims": {
-    "overall": 56,
+    "overall": 67,
     "automation": 60,
-    "augmentation": 64,
-    "digital": 62,
-    "moat": 52,
-    "adoption": 56
+    "augmentation": 76,
+    "digital": 72,
+    "moat": 41,
+    "adoption": 66
    },
    "dims_median": {
-    "overall": 56,
+    "overall": 65,
     "automation": 60,
-    "augmentation": 64,
-    "digital": 62,
-    "moat": 52,
-    "adoption": 56
+    "augmentation": 75,
+    "digital": 65,
+    "moat": 35,
+    "adoption": 70
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 8.3,
+    "automation": 10.7,
+    "augmentation": 9.9,
+    "digital": 13.5,
+    "moat": 12.1,
+    "adoption": 13.8
    },
    "by_model": {
     "claude": {
@@ -17371,13 +21550,49 @@
      "digital": 62,
      "moat": 52,
      "adoption": 56
+    },
+    "gpt": {
+     "overall": 61,
+     "automation": 42,
+     "augmentation": 68,
+     "digital": 58,
+     "moat": 58,
+     "adoption": 46
+    },
+    "grok": {
+     "overall": 78,
+     "automation": 75,
+     "augmentation": 90,
+     "digital": 92,
+     "moat": 25,
+     "adoption": 85
+    },
+    "kimi": {
+     "overall": 65,
+     "automation": 60,
+     "augmentation": 75,
+     "digital": 65,
+     "moat": 35,
+     "adoption": 70
+    },
+    "qwen": {
+     "overall": 75,
+     "automation": 65,
+     "augmentation": 85,
+     "digital": 85,
+     "moat": 35,
+     "adoption": 75
     }
    },
    "rationales": {
-    "claude": "计算机通信电子设备制造:精密自动化"
+    "claude": "计算机通信电子设备制造:精密自动化",
+    "gpt": "电子制造质检和排产可增强",
+    "grok": "电子设备制造高度数字化AI",
+    "kimi": "电子制造高度自动化，AI视觉检测普及。",
+    "qwen": "电子设备制造高度自动化，AI质检全覆盖。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 8.3,
    "flags": []
   },
   {
@@ -17467,28 +21682,28 @@
     }
    ],
    "dims": {
-    "overall": 56,
-    "automation": 58,
-    "augmentation": 64,
-    "digital": 60,
-    "moat": 54,
-    "adoption": 56
+    "overall": 60,
+    "automation": 52,
+    "augmentation": 69,
+    "digital": 64,
+    "moat": 50,
+    "adoption": 58
    },
    "dims_median": {
-    "overall": 56,
+    "overall": 57,
     "automation": 58,
     "augmentation": 64,
     "digital": 60,
-    "moat": 54,
+    "moat": 50,
     "adoption": 56
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 5.3,
+    "automation": 8.9,
+    "augmentation": 9.0,
+    "digital": 11.6,
+    "moat": 8.0,
+    "adoption": 10.8
    },
    "by_model": {
     "claude": {
@@ -17498,13 +21713,49 @@
      "digital": 60,
      "moat": 54,
      "adoption": 56
+    },
+    "gpt": {
+     "overall": 57,
+     "automation": 36,
+     "augmentation": 62,
+     "digital": 50,
+     "moat": 62,
+     "adoption": 40
+    },
+    "grok": {
+     "overall": 65,
+     "automation": 60,
+     "augmentation": 82,
+     "digital": 80,
+     "moat": 40,
+     "adoption": 70
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 60,
+     "digital": 55,
+     "moat": 50,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 68,
+     "automation": 58,
+     "augmentation": 78,
+     "digital": 75,
+     "moat": 42,
+     "adoption": 68
     }
    },
    "rationales": {
-    "claude": "仪器仪表制造"
+    "claude": "仪器仪表制造",
+    "gpt": "精密制造可数字化，手工仍多",
+    "grok": "仪器仪表精密校准AI设计",
+    "kimi": "精密制造自动化高，校准与调试仍需人。",
+    "qwen": "仪器仪表制造精度要求高，智能检测普及。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 5.3,
    "flags": []
   },
   {
@@ -17584,28 +21835,28 @@
     }
    ],
    "dims": {
-    "overall": 46,
-    "automation": 52,
-    "augmentation": 54,
+    "overall": 47,
+    "automation": 41,
+    "augmentation": 57,
     "digital": 46,
-    "moat": 62,
-    "adoption": 50
+    "moat": 63,
+    "adoption": 42
    },
    "dims_median": {
     "overall": 46,
-    "automation": 52,
-    "augmentation": 54,
+    "automation": 45,
+    "augmentation": 56,
     "digital": 46,
     "moat": 62,
     "adoption": 50
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 5.2,
+    "automation": 9.6,
+    "augmentation": 7.5,
+    "digital": 9.3,
+    "moat": 7.0,
+    "adoption": 9.3
    },
    "by_model": {
     "claude": {
@@ -17615,13 +21866,49 @@
      "digital": 46,
      "moat": 62,
      "adoption": 50
+    },
+    "gpt": {
+     "overall": 51,
+     "automation": 30,
+     "augmentation": 56,
+     "digital": 42,
+     "moat": 66,
+     "adoption": 32
+    },
+    "grok": {
+     "overall": 45,
+     "automation": 50,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 58,
+     "adoption": 50
+    },
+    "kimi": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 75,
+     "adoption": 30
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
     }
    },
    "rationales": {
-    "claude": "再生资源综合利用"
+    "claude": "再生资源综合利用",
+    "gpt": "回收分选可自动化，现场杂",
+    "grok": "再生资源分拣处理AI",
+    "kimi": "分拣与回收部分自动化，但分类复杂度高。",
+    "qwen": "再生资源回收分类逐步引入智能分拣。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 5.2,
    "flags": []
   },
   {
@@ -17857,28 +22144,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 52,
-    "augmentation": 60,
-    "digital": 56,
-    "moat": 60,
-    "adoption": 52
+    "overall": 54,
+    "automation": 48,
+    "augmentation": 64,
+    "digital": 57,
+    "moat": 58,
+    "adoption": 53
    },
    "dims_median": {
     "overall": 50,
-    "automation": 52,
-    "augmentation": 60,
+    "automation": 45,
+    "augmentation": 62,
     "digital": 56,
     "moat": 60,
-    "adoption": 52
+    "adoption": 50
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 9.0,
+    "automation": 6.3,
+    "augmentation": 7.8,
+    "digital": 10.2,
+    "moat": 8.5,
+    "adoption": 7.9
    },
    "by_model": {
     "claude": {
@@ -17888,13 +22175,49 @@
      "digital": 56,
      "moat": 60,
      "adoption": 52
+    },
+    "gpt": {
+     "overall": 60,
+     "automation": 40,
+     "augmentation": 66,
+     "digital": 58,
+     "moat": 60,
+     "adoption": 46
+    },
+    "grok": {
+     "overall": 42,
+     "automation": 45,
+     "augmentation": 62,
+     "digital": 50,
+     "moat": 65,
+     "adoption": 48
+    },
+    "kimi": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 50
+    },
+    "qwen": {
+     "overall": 68,
+     "automation": 58,
+     "augmentation": 78,
+     "digital": 75,
+     "moat": 42,
+     "adoption": 68
     }
    },
    "rationales": {
-    "claude": "电力热力气体水生产输配:巡检自动化"
+    "claude": "电力热力气体水生产输配:巡检自动化",
+    "gpt": "运行监控可智能化，现场值守在",
+    "grok": "电力热力运维监控AI",
+    "kimi": "能源系统自动化高，AI调度优化逐步渗透。",
+    "qwen": "电力能源生产调度高度依赖智能系统。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 9.0,
    "flags": []
   },
   {
@@ -18196,28 +22519,28 @@
     }
    ],
    "dims": {
-    "overall": 34,
-    "automation": 36,
+    "overall": 36,
+    "automation": 25,
     "augmentation": 46,
-    "digital": 32,
-    "moat": 80,
-    "adoption": 40
+    "digital": 30,
+    "moat": 79,
+    "adoption": 30
    },
    "dims_median": {
     "overall": 34,
-    "automation": 36,
+    "automation": 20,
     "augmentation": 46,
-    "digital": 32,
-    "moat": 80,
-    "adoption": 40
+    "digital": 25,
+    "moat": 82,
+    "adoption": 25
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 7.4,
+    "automation": 10.5,
+    "augmentation": 8.9,
+    "digital": 10.6,
+    "moat": 9.9,
+    "adoption": 10.9
    },
    "by_model": {
     "claude": {
@@ -18227,13 +22550,49 @@
      "digital": 32,
      "moat": 80,
      "adoption": 40
+    },
+    "gpt": {
+     "overall": 35,
+     "automation": 16,
+     "augmentation": 38,
+     "digital": 24,
+     "moat": 82,
+     "adoption": 18
+    },
+    "grok": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 50,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 25
+    },
+    "kimi": {
+     "overall": 30,
+     "automation": 15,
+     "augmentation": 35,
+     "digital": 20,
+     "moat": 88,
+     "adoption": 20
+    },
+    "qwen": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 45
     }
    },
    "rationales": {
-    "claude": "建筑施工:现场作业为主,冲击低"
+    "claude": "建筑施工:现场作业为主,冲击低",
+    "gpt": "工地现场强，AI更多在管理",
+    "grok": "建筑施工体力线下为主",
+    "kimi": "建筑施工高度依赖体力与现场，AI仅辅助设计。",
+    "qwen": "建筑施工以现场作业为主，BIM辅助设计。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 7.4,
    "flags": []
   },
   {
@@ -18427,28 +22786,28 @@
     }
    ],
    "dims": {
-    "overall": 46,
-    "automation": 48,
-    "augmentation": 56,
-    "digital": 46,
-    "moat": 64,
-    "adoption": 50
+    "overall": 44,
+    "automation": 35,
+    "augmentation": 54,
+    "digital": 40,
+    "moat": 69,
+    "adoption": 38
    },
    "dims_median": {
-    "overall": 46,
-    "automation": 48,
-    "augmentation": 56,
-    "digital": 46,
-    "moat": 64,
-    "adoption": 50
+    "overall": 44,
+    "automation": 30,
+    "augmentation": 55,
+    "digital": 35,
+    "moat": 72,
+    "adoption": 35
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.7,
+    "automation": 9.4,
+    "augmentation": 7.0,
+    "digital": 9.5,
+    "moat": 8.8,
+    "adoption": 10.6
    },
    "by_model": {
     "claude": {
@@ -18458,13 +22817,49 @@
      "digital": 46,
      "moat": 64,
      "adoption": 50
+    },
+    "gpt": {
+     "overall": 44,
+     "automation": 24,
+     "augmentation": 48,
+     "digital": 32,
+     "moat": 72,
+     "adoption": 22
+    },
+    "grok": {
+     "overall": 35,
+     "automation": 30,
+     "augmentation": 55,
+     "digital": 35,
+     "moat": 75,
+     "adoption": 35
+    },
+    "kimi": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 35
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
     }
    },
    "rationales": {
-    "claude": "运输设备和工程机械操作:辅助驾驶渐进"
+    "claude": "运输设备和工程机械操作:辅助驾驶渐进",
+    "gpt": "重设备操作依赖经验与现场",
+    "grok": "工程机械操作实操，远程助",
+    "kimi": "工程机械自动化推进，但复杂工况仍需人。",
+    "qwen": "工程机械操作逐步向遥控与自动化发展。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 6.7,
    "flags": []
   },
   {
@@ -18700,28 +23095,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 54,
-    "augmentation": 56,
-    "digital": 50,
-    "moat": 60,
-    "adoption": 52
+    "overall": 57,
+    "automation": 52,
+    "augmentation": 67,
+    "digital": 60,
+    "moat": 52,
+    "adoption": 55
    },
    "dims_median": {
-    "overall": 50,
+    "overall": 55,
     "automation": 54,
-    "augmentation": 56,
-    "digital": 50,
-    "moat": 60,
-    "adoption": 52
+    "augmentation": 70,
+    "digital": 60,
+    "moat": 50,
+    "adoption": 55
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 7.2,
+    "automation": 2.9,
+    "augmentation": 7.3,
+    "digital": 8.5,
+    "moat": 5.0,
+    "adoption": 2.6
    },
    "by_model": {
     "claude": {
@@ -18731,13 +23126,49 @@
      "digital": 50,
      "moat": 60,
      "adoption": 52
+    },
+    "gpt": {
+     "overall": 65,
+     "automation": 48,
+     "augmentation": 72,
+     "digital": 68,
+     "moat": 54,
+     "adoption": 54
+    },
+    "grok": {
+     "overall": 48,
+     "automation": 55,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
+    },
+    "kimi": {
+     "overall": 55,
+     "automation": 50,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 50,
+     "adoption": 55
+    },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 60
     }
    },
    "rationales": {
-    "claude": "生产辅助人员"
+    "claude": "生产辅助人员",
+    "gpt": "生产计划和文档处理可增强",
+    "grok": "生产辅助物流质检AI",
+    "kimi": "质检、物流辅助岗位被AI与机器人大量替代。",
+    "qwen": "生产辅助岗位中质检与物流调度AI化明显。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 7.2,
    "flags": []
   },
   {
@@ -18810,28 +23241,28 @@
     }
    ],
    "dims": {
-    "overall": 48,
-    "automation": 54,
-    "augmentation": 54,
+    "overall": 49,
+    "automation": 44,
+    "augmentation": 58,
     "digital": 48,
     "moat": 60,
-    "adoption": 50
+    "adoption": 44
    },
    "dims_median": {
     "overall": 48,
-    "automation": 54,
-    "augmentation": 54,
+    "automation": 45,
+    "augmentation": 58,
     "digital": 48,
     "moat": 60,
-    "adoption": 50
+    "adoption": 45
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 5.9,
+    "automation": 6.8,
+    "augmentation": 6.2,
+    "digital": 6.0,
+    "moat": 4.6,
+    "adoption": 6.8
    },
    "by_model": {
     "claude": {
@@ -18841,13 +23272,49 @@
      "digital": 48,
      "moat": 60,
      "adoption": 50
+    },
+    "gpt": {
+     "overall": 54,
+     "automation": 34,
+     "augmentation": 58,
+     "digital": 44,
+     "moat": 66,
+     "adoption": 34
+    },
+    "grok": {
+     "overall": 42,
+     "automation": 45,
+     "augmentation": 62,
+     "digital": 48,
+     "moat": 62,
+     "adoption": 45
+    },
+    "kimi": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 60,
+     "adoption": 40
+    },
+    "qwen": {
+     "overall": 58,
+     "automation": 48,
+     "augmentation": 68,
+     "digital": 58,
+     "moat": 52,
+     "adoption": 53
     }
    },
    "rationales": {
-    "claude": "其他生产制造人员"
+    "claude": "其他生产制造人员",
+    "gpt": "杂项制造分化大，整体中低",
+    "grok": "其他制造视子类混合",
+    "kimi": "类别杂，取中位数，制造业整体自动化高。",
+    "qwen": "其他生产制造岗位多为综合性现场工作。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 5.9,
    "flags": []
   },
   {
@@ -18891,28 +23358,28 @@
    "education": "本科",
    "pay_sources": [],
    "dims": {
-    "overall": 42,
-    "automation": 28,
-    "augmentation": 70,
-    "digital": 58,
-    "moat": 72,
-    "adoption": 46
+    "overall": 34,
+    "automation": 21,
+    "augmentation": 48,
+    "digital": 39,
+    "moat": 78,
+    "adoption": 28
    },
    "dims_median": {
-    "overall": 42,
-    "automation": 28,
-    "augmentation": 70,
-    "digital": 58,
-    "moat": 72,
-    "adoption": 46
+    "overall": 40,
+    "automation": 24,
+    "augmentation": 48,
+    "digital": 38,
+    "moat": 77,
+    "adoption": 30
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 10.4,
+    "automation": 9.1,
+    "augmentation": 14.6,
+    "digital": 12.1,
+    "moat": 12.4,
+    "adoption": 11.4
    },
    "by_model": {
     "claude": {
@@ -18922,13 +23389,57 @@
      "digital": 58,
      "moat": 72,
      "adoption": 46
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 35
+    },
+    "gpt": {
+     "overall": 42,
+     "automation": 20,
+     "augmentation": 46,
+     "digital": 36,
+     "moat": 82,
+     "adoption": 24
+    },
+    "grok": {
+     "overall": 18,
+     "automation": 8,
+     "augmentation": 30,
+     "digital": 25,
+     "moat": 92,
+     "adoption": 15
+    },
+    "kimi": {
+     "overall": 20,
+     "automation": 10,
+     "augmentation": 30,
+     "digital": 25,
+     "moat": 95,
+     "adoption": 15
+    },
+    "qwen": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 35
     }
    },
    "rationales": {
-    "claude": "军官警官:特殊领域,样例参考"
+    "claude": "军官警官:特殊领域,样例参考",
+    "gpt": "指挥决策可辅助，强依赖组织",
+    "grok": "军官指挥决策高度信任",
+    "kimi": "军事指挥高度保密与复杂，AI仅辅助情报。",
+    "qwen": "军官指挥决策涉及复杂战略判断与担当。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 6,
+   "std": 10.4,
    "flags": [
     "employment_missing"
    ]
@@ -18974,28 +23485,28 @@
    "education": "高中",
    "pay_sources": [],
    "dims": {
-    "overall": 38,
-    "automation": 30,
-    "augmentation": 60,
-    "digital": 50,
-    "moat": 72,
-    "adoption": 44
+    "overall": 31,
+    "automation": 20,
+    "augmentation": 44,
+    "digital": 36,
+    "moat": 79,
+    "adoption": 26
    },
    "dims_median": {
-    "overall": 38,
-    "automation": 30,
-    "augmentation": 60,
-    "digital": 50,
-    "moat": 72,
-    "adoption": 44
+    "overall": 32,
+    "automation": 18,
+    "augmentation": 45,
+    "digital": 38,
+    "moat": 80,
+    "adoption": 24
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 9.2,
+    "automation": 10.2,
+    "augmentation": 13.4,
+    "digital": 11.5,
+    "moat": 12.0,
+    "adoption": 12.5
    },
    "by_model": {
     "claude": {
@@ -19005,13 +23516,57 @@
      "digital": 50,
      "moat": 72,
      "adoption": 44
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 30
+    },
+    "gpt": {
+     "overall": 30,
+     "automation": 12,
+     "augmentation": 32,
+     "digital": 24,
+     "moat": 88,
+     "adoption": 14
+    },
+    "grok": {
+     "overall": 22,
+     "automation": 12,
+     "augmentation": 35,
+     "digital": 30,
+     "moat": 88,
+     "adoption": 18
+    },
+    "kimi": {
+     "overall": 18,
+     "automation": 8,
+     "augmentation": 25,
+     "digital": 20,
+     "moat": 95,
+     "adoption": 12
+    },
+    "qwen": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 40
     }
    },
    "rationales": {
-    "claude": "军士警士:特殊领域,样例参考"
+    "claude": "军士警士:特殊领域,样例参考",
+    "gpt": "执行与纪律性强，自动化有限",
+    "grok": "军士执行训练实操",
+    "kimi": "战术执行依赖体能与训练，AI辅助有限。",
+    "qwen": "军士技术操作与战术执行需现场经验。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 6,
+   "std": 9.2,
    "flags": [
     "employment_missing"
    ]
@@ -19057,28 +23612,28 @@
    "education": "高中",
    "pay_sources": [],
    "dims": {
-    "overall": 34,
-    "automation": 28,
-    "augmentation": 52,
-    "digital": 42,
-    "moat": 74,
-    "adoption": 40
+    "overall": 28,
+    "automation": 18,
+    "augmentation": 39,
+    "digital": 32,
+    "moat": 80,
+    "adoption": 24
    },
    "dims_median": {
-    "overall": 34,
-    "automation": 28,
-    "augmentation": 52,
-    "digital": 42,
-    "moat": 74,
-    "adoption": 40
+    "overall": 28,
+    "automation": 18,
+    "augmentation": 38,
+    "digital": 30,
+    "moat": 83,
+    "adoption": 22
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 11.8,
+    "automation": 12.7,
+    "augmentation": 17.1,
+    "digital": 16.9,
+    "moat": 15.0,
+    "adoption": 14.3
    },
    "by_model": {
     "claude": {
@@ -19088,13 +23643,57 @@
      "digital": 42,
      "moat": 74,
      "adoption": 40
+    },
+    "doubao": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 65,
+     "digital": 60,
+     "moat": 55,
+     "adoption": 40
+    },
+    "gpt": {
+     "overall": 22,
+     "automation": 8,
+     "augmentation": 24,
+     "digital": 14,
+     "moat": 92,
+     "adoption": 10
+    },
+    "grok": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 25,
+     "digital": 20,
+     "moat": 95,
+     "adoption": 10
+    },
+    "kimi": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 20,
+     "digital": 15,
+     "moat": 95,
+     "adoption": 10
+    },
+    "qwen": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 35
     }
    },
    "rationales": {
-    "claude": "义务兵:特殊领域,样例参考"
+    "claude": "义务兵:特殊领域,样例参考",
+    "gpt": "高度线下训练和服从约束",
+    "grok": "义务兵基础训练体力",
+    "kimi": "基础训练与勤务，AI几乎无直接替代。",
+    "qwen": "义务兵基础训练与任务执行以人为主。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 6,
+   "std": 11.8,
    "flags": [
     "employment_missing"
    ]
@@ -19140,28 +23739,28 @@
    "education": "本科",
    "pay_sources": [],
    "dims": {
-    "overall": 56,
-    "automation": 46,
-    "augmentation": 78,
-    "digital": 72,
-    "moat": 52,
-    "adoption": 54
+    "overall": 47,
+    "automation": 36,
+    "augmentation": 63,
+    "digital": 56,
+    "moat": 64,
+    "adoption": 42
    },
    "dims_median": {
-    "overall": 56,
-    "automation": 46,
-    "augmentation": 78,
-    "digital": 72,
-    "moat": 52,
-    "adoption": 54
+    "overall": 46,
+    "automation": 35,
+    "augmentation": 62,
+    "digital": 55,
+    "moat": 65,
+    "adoption": 42
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 7.0,
+    "automation": 7.8,
+    "augmentation": 8.0,
+    "digital": 9.5,
+    "moat": 8.2,
+    "adoption": 9.2
    },
    "by_model": {
     "claude": {
@@ -19171,13 +23770,57 @@
      "digital": 72,
      "moat": 52,
      "adoption": 54
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 30
+    },
+    "gpt": {
+     "overall": 48,
+     "automation": 28,
+     "augmentation": 54,
+     "digital": 46,
+     "moat": 76,
+     "adoption": 30
+    },
+    "grok": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 65,
+     "digital": 60,
+     "moat": 65,
+     "adoption": 40
+    },
+    "kimi": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 70,
+     "adoption": 45
+    },
+    "qwen": {
+     "overall": 55,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 60,
+     "moat": 55,
+     "adoption": 50
     }
    },
    "rationales": {
-    "claude": "文职人员:文书与技术保障类被增强"
+    "claude": "文职人员:文书与技术保障类被增强",
+    "gpt": "文职流程可数字化，安保约束高",
+    "grok": "文职后勤行政AI辅助",
+    "kimi": "军队文职行政工作可被AI部分增强。",
+    "qwen": "军队文职工作行政属性强，AI辅助办公。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 6,
+   "std": 7.0,
    "flags": [
     "employment_missing"
    ]
@@ -19259,28 +23902,28 @@
     }
    ],
    "dims": {
-    "overall": 50,
-    "automation": 46,
-    "augmentation": 62,
-    "digital": 56,
-    "moat": 56,
-    "adoption": 50
+    "overall": 45,
+    "automation": 34,
+    "augmentation": 54,
+    "digital": 45,
+    "moat": 63,
+    "adoption": 37
    },
    "dims_median": {
     "overall": 50,
-    "automation": 46,
-    "augmentation": 62,
-    "digital": 56,
-    "moat": 56,
-    "adoption": 50
+    "automation": 30,
+    "augmentation": 54,
+    "digital": 42,
+    "moat": 65,
+    "adoption": 30
    },
    "dims_std": {
-    "overall": 0.0,
-    "automation": 0.0,
-    "augmentation": 0.0,
-    "digital": 0.0,
-    "moat": 0.0,
-    "adoption": 0.0
+    "overall": 6.3,
+    "automation": 7.7,
+    "augmentation": 6.3,
+    "digital": 7.5,
+    "moat": 4.9,
+    "adoption": 9.1
    },
    "by_model": {
     "claude": {
@@ -19290,13 +23933,49 @@
      "digital": 56,
      "moat": 56,
      "adoption": 50
+    },
+    "gpt": {
+     "overall": 50,
+     "automation": 30,
+     "augmentation": 54,
+     "digital": 42,
+     "moat": 66,
+     "adoption": 28
+    },
+    "grok": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 30
+    },
+    "kimi": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 45,
+     "digital": 35,
+     "moat": 65,
+     "adoption": 30
+    },
+    "qwen": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 45
     }
    },
    "rationales": {
-    "claude": "不便分类的其他从业人员"
+    "claude": "不便分类的其他从业人员",
+    "gpt": "岗位杂糅，按具体任务分化",
+    "grok": "不便分类混合，平均估算",
+    "kimi": "类别不明，取中位数估计。",
+    "qwen": "不便分类岗位特性多样，难以统一评估。"
    },
-   "n_models": 1,
-   "std": 0.0,
+   "n_models": 5,
+   "std": 6.3,
    "flags": []
   }
  ]

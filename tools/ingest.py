@@ -18,7 +18,7 @@ FNAME2KEY = {  # 文件名(小写,去扩展)-> 模型键
  '豆包':'doubao','doubao':'doubao','claude':'claude',
 }
 SYN = {  # 规范键 -> 可能出现的同义键
- 'code':['code','中类编码','编码','中类代码','代码'],
+ 'code':['code','中类编码','编码','中类代码','代码','mc','中类'],
  'title_official':['title_official','中类官方名称','官方名称','名称','title','中类名称'],
  'title_match':['title_match','校验结果','是否一致','match','一致'],
  'english':['english','规范英文译名','英文名','英文名称','english_name','en'],
@@ -89,6 +89,8 @@ def norm_obj(o):
         out[ck] = v
     if 'code' in out:
         out['code'] = str(out['code']).strip()
+        m = re.match(r'\d-\d\d', out['code'])      # 值里带名字时(如"1-01 xxx")只取编码
+        if m: out['code'] = m.group(0)
     return out
 
 def main():
