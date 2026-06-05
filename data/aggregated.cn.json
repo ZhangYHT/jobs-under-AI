@@ -20,12 +20,13 @@
    "gpt",
    "grok",
    "kimi",
+   "official",
    "qwen",
    "wenxin",
    "yuanbao",
    "zhipu"
   ],
-  "n_models": 12,
+  "n_models": 13,
   "unit": "中类(79)",
   "dims": [
    "overall",
@@ -151,13 +152,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 170000,
+   "pay": 198285,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 170000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 198285,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·党的机关、国档(大类1)"
     }
    ],
    "dims": {
@@ -199,9 +206,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "1-02",
@@ -306,13 +311,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 180000,
+   "pay": 198285,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 180000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 198285,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·党的机关、国档(大类1)"
     }
    ],
    "dims": {
@@ -354,9 +365,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "1-03",
@@ -431,13 +440,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 170000,
+   "pay": 198285,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 170000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 198285,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·党的机关、国档(大类1)"
     }
    ],
    "dims": {
@@ -479,9 +494,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "1-04",
@@ -598,13 +611,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 150000,
+   "pay": 198285,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 150000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 198285,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·党的机关、国档(大类1)"
     }
    ],
    "dims": {
@@ -646,9 +665,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "1-05",
@@ -723,13 +740,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 90000,
+   "pay": 198285,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 90000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 198285,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·党的机关、国档(大类1)"
     }
    ],
    "dims": {
@@ -771,9 +794,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "1-06",
@@ -866,13 +887,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 220000,
+   "pay": 198285,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 220000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 198285,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·党的机关、国档(大类1)"
     }
    ],
    "dims": {
@@ -914,9 +941,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "2-01",
@@ -1099,13 +1124,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 200000,
+   "pay": 140935,
+   "pay_basis": "official",
    "education": "硕士",
    "pay_sources": [
     {
      "model": "claude",
      "value": 200000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 140935,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·专业技术人员档(大类2)"
     }
    ],
    "dims": {
@@ -1147,9 +1178,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "2-02",
@@ -2526,13 +2555,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 180000,
+   "pay": 140935,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 180000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 140935,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·专业技术人员档(大类2)"
     }
    ],
    "dims": {
@@ -2574,9 +2609,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "2-03",
@@ -2729,13 +2762,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 110000,
+   "pay": 140935,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 110000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 140935,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·专业技术人员档(大类2)"
     }
    ],
    "dims": {
@@ -2777,9 +2816,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "2-04",
@@ -2896,13 +2933,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 200000,
+   "pay": 140935,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 200000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 140935,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·专业技术人员档(大类2)"
     }
    ],
    "dims": {
@@ -2944,9 +2987,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "2-05",
@@ -3513,13 +3554,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 150000,
+   "pay": 140935,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 150000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 140935,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·专业技术人员档(大类2)"
     }
    ],
    "dims": {
@@ -3561,9 +3608,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "2-06",
@@ -4010,13 +4055,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 200000,
+   "pay": 140935,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 200000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 140935,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·专业技术人员档(大类2)"
     }
    ],
    "dims": {
@@ -4058,9 +4109,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "2-07",
@@ -4219,13 +4268,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 170000,
+   "pay": 140935,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 170000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 140935,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·专业技术人员档(大类2)"
     }
    ],
    "dims": {
@@ -4267,9 +4322,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "2-08",
@@ -4392,13 +4445,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 130000,
+   "pay": 140935,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 130000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 140935,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·专业技术人员档(大类2)"
     }
    ],
    "dims": {
@@ -4440,9 +4499,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "2-09",
@@ -4823,13 +4880,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 140000,
+   "pay": 140935,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 140000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 140935,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·专业技术人员档(大类2)"
     }
    ],
    "dims": {
@@ -4871,9 +4934,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "2-10",
@@ -5068,13 +5129,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 150000,
+   "pay": 140935,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 150000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 140935,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·专业技术人员档(大类2)"
     }
    ],
    "dims": {
@@ -5116,9 +5183,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "2-99",
@@ -5192,13 +5257,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 150000,
+   "pay": 140935,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 150000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 140935,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·专业技术人员档(大类2)"
     }
    ],
    "dims": {
@@ -5240,9 +5311,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "3-01",
@@ -5449,13 +5518,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 90000,
+   "pay": 89502,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 90000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 89502,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·办事人员和有档(大类3)"
     }
    ],
    "dims": {
@@ -5497,9 +5572,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "3-02",
@@ -5640,13 +5713,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 90000,
+   "pay": 89502,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 90000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 89502,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·办事人员和有档(大类3)"
     }
    ],
    "dims": {
@@ -5688,9 +5767,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "3-03",
@@ -5777,13 +5854,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 110000,
+   "pay": 89502,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 110000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 89502,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·办事人员和有档(大类3)"
     }
    ],
    "dims": {
@@ -5826,8 +5909,7 @@
    "n_models": 1,
    "std": 0.0,
    "flags": [
-    "employment_disagreement",
-    "pay_provisional"
+    "employment_disagreement"
    ]
   },
   {
@@ -5902,13 +5984,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 85000,
+   "pay": 89502,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 85000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 89502,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·办事人员和有档(大类3)"
     }
    ],
    "dims": {
@@ -5950,9 +6038,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-01",
@@ -6129,13 +6215,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 70000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 70000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -6177,9 +6269,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-02",
@@ -6536,13 +6626,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 80000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 80000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -6584,9 +6680,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-03",
@@ -6757,13 +6851,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 60000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 60000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -6805,9 +6905,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-04",
@@ -7038,13 +7136,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 200000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 200000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -7086,9 +7190,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-05",
@@ -7241,13 +7343,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 160000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 160000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -7289,9 +7397,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-06",
@@ -7408,13 +7514,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 90000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 90000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -7456,9 +7568,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-07",
@@ -7725,13 +7835,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 110000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "本科",
    "pay_sources": [
     {
      "model": "claude",
      "value": 110000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -7773,9 +7889,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-08",
@@ -8234,13 +8348,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 90000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 90000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -8282,9 +8402,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-09",
@@ -8539,13 +8657,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 80000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 80000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -8587,9 +8711,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-10",
@@ -8844,13 +8966,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 60000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 60000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -8892,9 +9020,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-11",
@@ -9005,13 +9131,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 110000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 110000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -9053,9 +9185,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-12",
@@ -9232,13 +9362,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 70000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 70000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -9280,9 +9416,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-13",
@@ -9495,13 +9629,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 90000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 90000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -9543,9 +9683,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-14",
@@ -9788,13 +9926,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 70000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 70000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -9836,9 +9980,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "4-99",
@@ -9912,13 +10054,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 75000,
+   "pay": 75216,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 75000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75216,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·社会生产服务档(大类4)"
     }
    ],
    "dims": {
@@ -9960,9 +10108,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "5-01",
@@ -10080,12 +10226,18 @@
     }
    ],
    "pay": 40000,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 40000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 40000,
+     "source": "估计(农林牧渔不在城镇单位工资统计;参考乡村就业收入)"
     }
    ],
    "dims": {
@@ -10127,9 +10279,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "5-02",
@@ -10246,13 +10396,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 45000,
+   "pay": 40000,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 45000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 40000,
+     "source": "估计(农林牧渔不在城镇单位工资统计;参考乡村就业收入)"
     }
    ],
    "dims": {
@@ -10294,9 +10450,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "5-03",
@@ -10413,13 +10567,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 50000,
+   "pay": 40000,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 50000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 40000,
+     "source": "估计(农林牧渔不在城镇单位工资统计;参考乡村就业收入)"
     }
    ],
    "dims": {
@@ -10461,9 +10621,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "5-04",
@@ -10586,13 +10744,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 50000,
+   "pay": 40000,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 50000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 40000,
+     "source": "估计(农林牧渔不在城镇单位工资统计;参考乡村就业收入)"
     }
    ],
    "dims": {
@@ -10634,9 +10798,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "5-05",
@@ -10862,12 +11024,18 @@
     }
    ],
    "pay": 40000,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 40000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 40000,
+     "source": "估计(农林牧渔不在城镇单位工资统计;参考乡村就业收入)"
     }
    ],
    "dims": {
@@ -10909,9 +11077,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "5-99",
@@ -10986,12 +11152,18 @@
     }
    ],
    "pay": 40000,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 40000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 40000,
+     "source": "估计(农林牧渔不在城镇单位工资统计;参考乡村就业收入)"
     }
    ],
    "dims": {
@@ -11033,9 +11205,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-01",
@@ -11200,13 +11370,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 55000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 55000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -11248,9 +11424,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-02",
@@ -11487,13 +11661,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 60000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 60000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -11535,9 +11715,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-03",
@@ -11636,13 +11814,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 90000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 90000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -11684,9 +11868,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-04",
@@ -11881,13 +12063,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 55000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 55000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -11929,9 +12117,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-05",
@@ -12060,13 +12246,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 55000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 55000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -12108,9 +12300,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-06",
@@ -12233,13 +12423,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 55000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 55000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -12281,9 +12477,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-07",
@@ -12376,13 +12570,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 60000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 60000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -12424,9 +12624,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-08",
@@ -12507,13 +12705,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 60000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 60000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -12555,9 +12759,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-09",
@@ -12852,13 +13054,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 50000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 50000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -12900,9 +13108,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-10",
@@ -13073,13 +13279,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 110000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 110000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -13121,9 +13333,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-11",
@@ -13642,13 +13852,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 90000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 90000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -13690,9 +13906,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-12",
@@ -13803,13 +14017,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 90000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 90000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -13851,9 +14071,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-13",
@@ -13934,13 +14152,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 80000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 80000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -13982,9 +14206,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-14",
@@ -14059,13 +14281,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 60000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 60000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -14107,9 +14335,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-15",
@@ -14428,13 +14654,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 60000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 60000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -14476,9 +14708,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-16",
@@ -14737,13 +14967,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 80000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 80000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -14785,9 +15021,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-17",
@@ -15162,13 +15396,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 75000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 75000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -15210,9 +15450,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-18",
@@ -15443,13 +15681,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 65000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 65000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -15491,9 +15735,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-19",
@@ -15602,13 +15844,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 60000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 60000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -15650,9 +15898,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-20",
@@ -15925,13 +16171,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 70000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 70000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -15973,9 +16225,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-21",
@@ -16116,13 +16366,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 75000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 75000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -16164,9 +16420,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-22",
@@ -16253,13 +16507,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 80000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 80000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -16301,9 +16561,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-23",
@@ -16528,13 +16786,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 90000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 90000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -16576,9 +16840,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-24",
@@ -16749,13 +17011,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 70000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 70000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -16797,9 +17065,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-25",
@@ -17058,13 +17324,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 75000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 75000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -17106,9 +17378,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-26",
@@ -17181,13 +17451,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 75000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 75000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -17229,9 +17505,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-27",
@@ -17294,13 +17568,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 55000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 55000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -17342,9 +17622,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-28",
@@ -17563,13 +17841,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 100000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "大专",
    "pay_sources": [
     {
      "model": "claude",
      "value": 100000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -17611,9 +17895,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-29",
@@ -17898,13 +18180,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 70000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 70000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -17946,9 +18234,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-30",
@@ -18125,13 +18411,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 70000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 70000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -18173,9 +18465,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-31",
@@ -18394,13 +18684,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 55000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 55000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -18442,9 +18738,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "6-99",
@@ -18500,13 +18794,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 55000,
+   "pay": 75463,
+   "pay_basis": "official",
    "education": "初中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 55000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 75463,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·生产制造及有档(大类6)"
     }
    ],
    "dims": {
@@ -18548,9 +18848,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   },
   {
    "code": "7-01",
@@ -18589,6 +18887,7 @@
    "employment_basis": "missing",
    "employment_sources": [],
    "pay": null,
+   "pay_basis": "missing",
    "education": "本科",
    "pay_sources": [],
    "dims": {
@@ -18671,6 +18970,7 @@
    "employment_basis": "missing",
    "employment_sources": [],
    "pay": null,
+   "pay_basis": "missing",
    "education": "高中",
    "pay_sources": [],
    "dims": {
@@ -18753,6 +19053,7 @@
    "employment_basis": "missing",
    "employment_sources": [],
    "pay": null,
+   "pay_basis": "missing",
    "education": "高中",
    "pay_sources": [],
    "dims": {
@@ -18835,6 +19136,7 @@
    "employment_basis": "missing",
    "employment_sources": [],
    "pay": null,
+   "pay_basis": "missing",
    "education": "本科",
    "pay_sources": [],
    "dims": {
@@ -18941,13 +19243,19 @@
      "confidence": "high"
     }
    ],
-   "pay": 70000,
+   "pay": 98096,
+   "pay_basis": "official",
    "education": "高中",
    "pay_sources": [
     {
      "model": "claude",
      "value": 70000,
      "source": "Claude 量级估算(待分行业工资核实)"
+    },
+    {
+     "model": "official",
+     "value": 98096,
+     "source": "国家统计局 2023年规模以上企业分岗位就业人员年平均工资·不便分类的其档(大类8)"
     }
    ],
    "dims": {
@@ -18989,9 +19297,7 @@
    },
    "n_models": 1,
    "std": 0.0,
-   "flags": [
-    "pay_provisional"
-   ]
+   "flags": []
   }
  ]
 }

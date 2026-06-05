@@ -73,14 +73,21 @@ def main():
                 and statistics.pstdev(vals) / statistics.mean(vals) > 0.5:
             flags.append('employment_disagreement')
 
-        # ---- 步骤3 薪资/学历(官方锚定) ----
+        # ---- 步骤3 薪资(官方分岗位工资优先)/ 学历(模型估计) ----
         pay_rows = [(m, pe[m][code]) for m in pe if code in pe[m] and pe[m][code].get('pay_median') is not None]
-        pays = [r['pay_median'] for _, r in pay_rows]
-        pays_off = [r['pay_median'] for _, r in pay_rows if is_official(r)]
-        rec['pay'] = int(statistics.median(pays_off or pays)) if (pays_off or pays) else None
-        if pays and not pays_off and 'employment_provisional' not in flags:
-            flags.append('pay_provisional')
-        edus = [pe[m][code]['education'] for m in pe if code in pe[m] and pe[m][code].get('education')]
+        pays = [r['pay_median'] for m, r in pay_rows if m != 'official']
+        offpay = pe.get('official', {}).get(code)
+        pays_off = [r['pay_median'] for m, r in pay_rows if m != 'official' and is_official(r)]
+        if offpay and offpay.get('pay_median') is not None:        # 统计局分岗位工资,直接采用
+            rec['pay'] = int(offpay['pay_median']); rec['pay_basis'] = 'official'
+        elif pays_off:
+            rec['pay'] = int(statistics.median(pays_off)); rec['pay_basis'] = 'official'
+        elif pays:
+            rec['pay'] = int(statistics.median(pays)); rec['pay_basis'] = 'provisional'; flags.append('pay_provisional')
+        else:
+            rec['pay'] = None; rec['pay_basis'] = 'missing'
+        edus = [pe[m][code]['education'] for m in pe if m != 'official'
+                and code in pe[m] and pe[m][code].get('education')]
         rec['education'] = collections.Counter(edus).most_common(1)[0][0] if edus else None
         rec['pay_sources'] = [{'model': m, 'value': r.get('pay_median'), 'source': r.get('pay_source', '')}
                               for m, r in pay_rows]
