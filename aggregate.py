@@ -50,14 +50,16 @@ def main():
         rec['细类'] = g.get('细类', [])
         flags = []
 
-        # ---- 步骤2 就业(官方锚定) ----
+        # ---- 步骤2 就业(七普官方优先,其次众议院) ----
         e_rows = [(m, emp[m][code]) for m in emp if code in emp[m]
                   and emp[m][code].get('employment') is not None]
-        vals = [r['employment'] for _, r in e_rows]
-        official = [r for _, r in e_rows if is_official(r)]
-        if official:
-            rec['employment'] = int(statistics.median([r['employment'] for r in official]))
-            rec['employment_basis'] = 'official'
+        vals = [r['employment'] for m, r in e_rows if m != 'census7']
+        cen = emp.get('census7', {}).get(code)
+        official = [r for m, r in e_rows if m != 'census7' and is_official(r)]
+        if cen and cen.get('employment') is not None:          # 七普权威数据,直接采用
+            rec['employment'] = int(cen['employment']); rec['employment_basis'] = 'census7'
+        elif official:
+            rec['employment'] = int(statistics.median([r['employment'] for r in official])); rec['employment_basis'] = 'official'
         elif vals:
             rec['employment'] = int(statistics.median(vals)); rec['employment_basis'] = 'provisional'
             flags.append('employment_provisional')
@@ -66,7 +68,9 @@ def main():
         rec['employment_sources'] = [{'model': m, 'value': r.get('employment'),
                                        'source': r.get('source', ''), 'confidence': r.get('confidence', '')}
                                       for m, r in e_rows]
-        if len(vals) > 1 and statistics.mean(vals) and statistics.pstdev(vals) / statistics.mean(vals) > 0.5:
+        # 非七普锚定时,标记模型间大幅分歧(供人工核)
+        if rec['employment_basis'] != 'census7' and len(vals) > 1 and statistics.mean(vals) \
+                and statistics.pstdev(vals) / statistics.mean(vals) > 0.5:
             flags.append('employment_disagreement')
 
         # ---- 步骤3 薪资/学历(官方锚定) ----
