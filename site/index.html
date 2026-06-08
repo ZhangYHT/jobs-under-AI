@@ -19,7 +19,7 @@
   .pill{background:var(--panel2);border:1px solid var(--line);color:var(--text);border-radius:9px;padding:6px 11px;font-size:12.5px;cursor:pointer;transition:.16s;white-space:nowrap;}
   .pill:hover{border-color:var(--accent);transform:translateY(-1px);}
   /* 顶栏 + 抽屉手柄 */
-  #top{position:fixed;top:30px;left:8px;right:8px;z-index:30;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
+  #top{position:fixed;top:8px;left:8px;right:8px;z-index:30;background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);
     border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:11px 13px;max-height:74vh;overflow:auto;
     transition:transform .42s cubic-bezier(.22,1,.36,1),opacity .32s;}
   #top.collapsed{transform:translateY(calc(-100% - 40px));opacity:0;pointer-events:none;}
@@ -208,11 +208,11 @@ function paintTile(x,y,w,h,c,node,hl,alpha){ctx.globalAlpha=alpha;ctx.save();if(
     ctx.font='bold 13px sans-serif';ctx.fillText(S.disagree?('±'+(node.std||0)):metricV(node).label,x+5,y+4+lines.length*(fs+2)+1);
     if(node.S&&w>72){ctx.font='9px sans-serif';ctx.globalAlpha=alpha*.85;ctx.fillStyle=drk?'rgba(255,255,255,.7)':'rgba(15,20,30,.6)';ctx.fillText('S',x+w-12,y+5);ctx.globalAlpha=alpha;}}}
 function fitRect(t){const nm=t.node.name;ctx.font='11.5px sans-serif';const fw=ctx.measureText(nm).width;
-  let tw=Math.min(W()-12,Math.max(t.cw*1.16,Math.min(200,fw/2+20))),th=Math.max(t.ch*1.16,56);
+  let tw=Math.min(W()-12,Math.max(t.cw*1.08,Math.min(182,fw/2+16))),th=Math.max(t.ch*1.08,50);
   let cx=t.cx+t.cw/2,cy=t.cy+t.ch/2,x=cx-tw/2,y=cy-th/2;x=Math.max(4,Math.min(W()-tw-4,x));y=Math.max(4,Math.min(H()-th-4,y));return{x,y,w:tw,h:th};}
 function frame(){for(const t of tiles){t.cx+=(t.tx-t.cx)*.22;t.cy+=(t.ty-t.cy)*.22;t.cw+=(t.tw-t.cw)*.22;t.ch+=(t.th-t.ch)*.22;
   t.alpha+=((matches(t)?1:.12)-t.alpha)*.18;const c=tileRGB(t);t.cr+=(c[0]-t.cr)*.16;t.cg+=(c[1]-t.cg)*.16;t.cb+=(c[2]-t.cb)*.16;t.hl+=((t.id===hoverId?1:0)-t.hl)*.2;}
-  draw();requestAnimationFrame(frame);}
+  draw();placeHandle();requestAnimationFrame(frame);}
 function draw(){ctx.clearRect(0,0,W(),H());const dk=theme()==='dark';
   if(!S.drill)daLabels.forEach(d=>{ctx.fillStyle=dk?'rgba(255,255,255,.02)':'rgba(20,30,60,.03)';rr(d.x+2,d.y+2,d.w-4,d.h-4,7);ctx.fill();});
   let hov=null;for(const t of tiles){if(t.id===hoverId&&t.hl>.05){hov=t;continue;}if(t.cw<1||t.ch<1)continue;paintTile(t.cx,t.cy,t.cw,t.ch,[t.cr,t.cg,t.cb],t.node,t.hl,t.alpha);}
@@ -300,12 +300,13 @@ tbtn.onclick=()=>{themeMode=themeMode==='auto'?'light':themeMode==='light'?'dark
 mq.addEventListener('change',()=>{if(themeMode==='auto')applyTheme();});
 const handle=document.getElementById('handle');
 function setHandle(){handle.textContent=top.classList.contains('collapsed')?'⌄':'⌃';}
+function placeHandle(){handle.style.top=Math.max(0,top.getBoundingClientRect().bottom-1)+'px';}  /* 手柄贴在顶栏底边,随其上下移动 */
 handle.onclick=()=>{top.classList.toggle('collapsed');setHandle();};
-/* 靠近变大:手柄 + 返回箭头 */
+/* 靠近变大:手柄 + 返回箭头(按各自实际位置算距离)*/
 document.addEventListener('mousemove',e=>{
-  const hs=1+0.55*Math.max(0,1-Math.hypot(e.clientX-innerWidth/2,e.clientY-14)/150);
+  const hr=handle.getBoundingClientRect(),hs=1+0.5*Math.max(0,1-Math.hypot(e.clientX-(hr.left+hr.width/2),e.clientY-(hr.top+hr.height/2))/150);
   handle.style.transform='translateX(-50%) scale('+hs.toFixed(3)+')';
-  if(backTab.style.display!=='none'){const bs=1+0.6*Math.max(0,1-Math.hypot(e.clientX-12,e.clientY-innerHeight/2)/150);backTab.style.transform='translateY(-50%) scale('+bs.toFixed(3)+')';}});
+  if(backTab.style.display!=='none'){const br=backTab.getBoundingClientRect(),bs=1+0.55*Math.max(0,1-Math.hypot(e.clientX-(br.left+br.width/2),e.clientY-(br.top+br.height/2))/150);backTab.style.transform='translateY(-50%) scale('+bs.toFixed(3)+')';}});
 
 window.addEventListener('resize',resize);
 updateRange();resize();updateCrumb();updateLegend();updateSummary();updateDa();setHandle();requestAnimationFrame(frame);requestAnimationFrame(radarFrame);
