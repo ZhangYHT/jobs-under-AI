@@ -207,3 +207,59 @@ open(os.path.join(PROMPTS, 'README.md'), 'w', encoding='utf-8').write(readme)
 
 print(f"已生成 {len(ROSTER)} 模型 × 4 阶段 = {len(ROSTER)*4} 个独立提示词 + {len(REVIEW)} 评议员 + README")
 print("目录:", PROMPTS)
+
+# ============ 细类工程(重点中类,自然语言 + 结构化尾行)============
+PRI = ['4-04', '3-01', '2-06', '2-02', '2-08', '2-07', '4-01', '6-29', '5-01', '4-03']
+GMAP = {g['code']: g for g in G}
+BATCH = 40
+def xilei_prompt(name, lens, zc, zt, xis, bi, bn):
+    head = f"【AI众议院 · {name} · 细类深评打分 · {zc} {zt}" + (f"(第{bi}/{bn}批)" if bn > 1 else "") + "】\n"
+    lst = '\n'.join(f"  {x['code']} {x['title']}" + ('  [数字职业S]' if x['digital'] else '') + ('  [绿色L]' if x['green'] else '') for x in xis)
+    return head + f"""
+【锚点主题】AI 时代各岗位冲击图谱(中国版):中类「{zt}」下细类(具体职业)的深度评估与打分
+【意图】主观研判;独立盲测,你的判断会与其他模型集成。
+【背景】官方数据到中类为止(细类的人数/薪资无官方源),所以细类的人数请你估"在本中类内的占比%",薪资给"相对本中类的高/中/低档";AI 冲击与评价是本轮重点。
+【你的专属视角(只补强判断)】{lens}
+
+【本批细类(共{len(xis)},全部处理)】
+{lst}
+
+【对每个细类,先写 2-3 句自然语言评价,再给一行结构化尾行】
+评价:覆盖①AI 冲击的优势/已落地处 ②风险/被替代点 ③转型趋势与人仍不可替代处。
+尾行(务必照此格式,便于汇总):
+〔编码 名称〕综合NN 自动化NN 增强NN 数字NN 护城河NN 落地NN ┃ 占比N% ┃ 学历X ┃ 薪资X ┃ 等级X
+其中:六维均 0-100 整数;占比=该细类占本中类就业的百分比(本批所有细类占比之和应≈100);学历∈{{博士,硕士,本科,大专,高中,初中}};薪资∈{{高,中,低}}(相对本中类);等级∈{{极高,高,中,低,极低}}(对应综合冲击 81+/61-80/41-60/21-40/0-20)。
+
+【示例】
+人工智能工程技术人员:核心产出就是模型与算法,设计、编码、调参高度可被 AI 接管;但前沿创新、系统集成与担责仍需人,属"强增强而非消失"。
+〔2-02-30-01 人工智能工程技术人员〕综合88 自动化70 增强96 数字98 护城河28 落地85 ┃ 占比6% ┃ 学历硕士 ┃ 薪资高 ┃ 等级极高
+
+【硬要求】覆盖本批全部细类、编码写对、充分拉开分数(敢打极端、别挤中间)、占比之和≈100、不要 JSON、不使用破折号。"""
+
+xd = os.path.join(PROMPTS, 'xilei')
+if os.path.isdir(xd): shutil.rmtree(xd)
+nfiles = 0
+for zc in PRI:
+    g = GMAP[zc]; xis = g['细类']; zt = g['title']
+    batches = [xis[i:i+BATCH] for i in range(0, len(xis), BATCH)] or [[]]
+    d = os.path.join(xd, zc); os.makedirs(d, exist_ok=True)
+    for key, nm, angle, lens in ROSTER:
+        for bi, b in enumerate(batches, 1):
+            suf = f'_b{bi}' if len(batches) > 1 else ''
+            open(os.path.join(d, key + suf + '.md'), 'w', encoding='utf-8').write(xilei_prompt(nm, lens, zc, zt, b, bi, len(batches)))
+            nfiles += 1
+xreadme = f"""# 细类深评打分提示词(重点中类)
+
+每个文件 = 一个**可直接投喂**的提示词,覆盖某中类下的(一批)细类。结构:`xilei/<中类码>/<模型>[_bN].md`。
+细类多的中类(如 2-02)按每批 {BATCH} 个自动分批(_b1/_b2…)。
+
+## 用法
+1. 选一个中类目录(如 `xilei/4-04/`),把每个模型文件投喂给对应模型;回复(自然语言评价 + 尾行)按模型存为 `data/collected/xilei/<模型键>.json` 前的原始文本目录。
+2. `python tools/parse_xilei.py <原始返回目录>` 解析尾行+评价 → `data/collected/xilei/<模型>.json`;再 `python aggregate.py`。
+3. 站点进入该中类后,细类即按各自真实分上色、按估计人数定面积、详情含 分/级/人数/学历/薪资/评价。
+
+## 首批重点中类
+{' · '.join(PRI)}(均衡覆盖高低冲击与高就业;其余中类后续逐步铺开)
+"""
+open(os.path.join(xd, 'README.md'), 'w', encoding='utf-8').write(xreadme)
+print(f"已生成细类提示词 {nfiles} 个(重点中类 {len(PRI)} 个 × {len(ROSTER)} 模型,大中类分批):{xd}")

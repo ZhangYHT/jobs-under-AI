@@ -17,6 +17,8 @@
 import json, glob, os, statistics, collections
 
 DIMS = ['overall', 'automation', 'augmentation', 'digital', 'moat', 'adoption']
+def LEVEL(o): return '极高' if o >= 81 else '高' if o >= 61 else '中' if o >= 41 else '低' if o >= 21 else '极低'
+PAY_TIER = {'高': 1.3, '中': 1.0, '低': 0.75}
 ROOT = os.path.dirname(os.path.abspath(__file__))
 def p(*a): return os.path.join(ROOT, *a)
 
@@ -42,6 +44,7 @@ def main():
     pe  = load_models('step3_pay_edu')
     sc  = load_models('step4_scoring')
     scn = load_models('step4_overall')   # 自然语言版综合冲击(更拉开)
+    xl  = load_models('xilei')            # 细类深评打分
     all_models = sorted((set(emp) | set(pe) | set(sc) | set(scn)) - {'census7', 'official'})
     # 大类一句话总结(自然语言版)
     da_sum = {}
@@ -128,6 +131,39 @@ def main():
             flags.append('score_missing')
         elif std.get('overall', 0) >= 12:
             flags.append('score_disagreement')
+
+        # ---- 细类深评(若已采集):人数=中类官方×归一占比;薪资=中类×档位;等级由分分档 ----
+        scored = []
+        for x in rec['细类']:
+            rows = [xl[m][x['code']] for m in xl if x['code'] in xl[m]]
+            if not rows: continue
+            xd = {}
+            for dd in DIMS:
+                vs = [r[dd] for r in rows if isinstance(r.get(dd), (int, float))]
+                if vs: xd[dd] = round(statistics.mean(vs))
+            ov = xd.get('overall')
+            x['overall'] = ov; x['dims'] = xd
+            ovs = [r['overall'] for r in rows if isinstance(r.get('overall'), (int, float))]
+            x['std'] = round(statistics.pstdev(ovs), 1) if len(ovs) > 1 else 0.0
+            x['by_model'] = {m: xl[m][x['code']]['overall'] for m in xl if x['code'] in xl[m] and isinstance(xl[m][x['code']].get('overall'), (int, float))}
+            x['rationales'] = {m: xl[m][x['code']]['eval'] for m in xl if x['code'] in xl[m] and xl[m][x['code']].get('eval')}
+            shs = [r['share'] for r in rows if isinstance(r.get('share'), (int, float))]
+            x['_share'] = statistics.mean(shs) if shs else 1.0
+            edus = [r['education'] for r in rows if r.get('education')]
+            x['education'] = collections.Counter(edus).most_common(1)[0][0] if edus else None
+            tiers = [r['pay_tier'] for r in rows if r.get('pay_tier')]
+            x['pay_tier'] = collections.Counter(tiers).most_common(1)[0][0] if tiers else None
+            x['eval'] = next((r['eval'] for r in rows if r.get('eval')), '')
+            x['n_models'] = len(x['by_model'])
+            if ov is not None:
+                x['level'] = LEVEL(ov); scored.append(x)
+        if scored:
+            tot = sum(x['_share'] for x in scored) or 1
+            for x in scored:
+                if rec.get('employment'): x['employment'] = int(rec['employment'] * x['_share'] / tot)
+                if rec.get('pay'): x['pay'] = int(rec['pay'] * PAY_TIER.get(x['pay_tier'], 1.0))
+                x.pop('_share', None)
+        rec['xilei_scored'] = len(scored)
 
         rec['flags'] = flags
         out_groups.append(rec)

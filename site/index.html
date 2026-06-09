@@ -190,8 +190,11 @@ function computeTargets(){const T=[],L=[],pad=6;
     const da=dr.ref,lh=dr.h>56?20:0;L.push({name:da.name,jobs:da.children.reduce((s,g)=>s+g.employment,0),x:dr.x,y:dr.y,w:dr.w,h:dr.h,lh});
     const ir={x:dr.x+4,y:dr.y+3+lh,w:dr.w-8,h:dr.h-6-lh};
     squarify(da.children.map(g=>({value:g.employment,ref:g})),ir.x,ir.y,ir.w,ir.h).forEach(t=>T.push({id:'z:'+t.ref.code,node:t.ref,kind:'zhong',tx:t.x,ty:t.y,tw:t.w,th:t.h}));});}
-  else{const g=ALLZ.find(x=>x.code===S.drill);(g['细类']||[]).length&&squarify((g['细类']).map(k=>({value:1,ref:k})),pad,pad,W()-2*pad,H()-2*pad).forEach(t=>
-    T.push({id:'l:'+t.ref.code,node:{name:t.ref.title,S:t.ref.digital,green:t.ref.green,dims:g.dims,std:g.std,inherit:g.title,pay:g.pay,education:g.education},kind:'leaf',tx:t.x,ty:t.y,tw:t.w,th:t.h}));}
+  else{const g=ALLZ.find(x=>x.code===S.drill);const kids=g['细类']||[];const anyS=kids.some(k=>k.overall!=null);
+    kids.length&&squarify(kids.map(k=>({value:anyS?(k.employment||1):1,ref:k})),pad,pad,W()-2*pad,H()-2*pad).forEach(t=>{const k=t.ref,sc=k.overall!=null;
+      const node=sc?{name:k.title,title:k.title,code:k.code,S:k.digital,green:k.green,dims:k.dims,std:k.std,employment:k.employment,pay:k.pay,education:k.education,level:k.level,by_model:k.by_model,rationales:k.rationales,n_models:k.n_models}
+        :{name:k.title,S:k.digital,green:k.green,dims:g.dims,std:g.std,inherit:g.title,pay:g.pay,education:g.education};
+      T.push({id:'l:'+k.code,node:node,kind:'leaf',tx:t.x,ty:t.y,tw:t.w,th:t.h});});}
   return{T,L};}
 function rebuild(o){const{T,L}=computeTargets();daLabels=L;const m=new Map(tiles.map(t=>[t.id,t]));
   T.forEach(t=>{const p=m.get(t.id);if(p){Object.assign(t,{cx:p.cx,cy:p.cy,cw:p.cw,ch:p.ch,alpha:p.alpha,cr:p.cr,cg:p.cg,cb:p.cb,hl:p.hl||0});}
@@ -274,9 +277,9 @@ const nodeOf=id=>{const t=tiles.find(x=>x.id===id);return t?t.node:null;};
 function tipHtml(n,full){const d=n.dims;let h='<div class="t">'+(n.title||n.name)+(n.digital||n.S?'<span class="tag">数字S</span>':'')+(n.green?'<span class="tag green">绿L</span>':'')+'</div>';
   h+='<div class="big" style="color:'+colorAbs(d.overall)+'">综合冲击 '+d.overall+' / 100'+(n.std?'  分歧±'+n.std:'')+'</div>';
   h+='<div class="grid"><span>任务自动化</span><b>'+d.automation+'</b><span>AI增强</span><b>'+d.augmentation+'</b><span>数字化</span><b>'+d.digital+'</b><span>护城河</span><b>'+d.moat+'</b><span>落地速度</span><b>'+d.adoption+'</b>';
-  if(n.pay)h+='<span>年薪</span><b>¥'+n.pay.toLocaleString()+'</b>';if(n.education)h+='<span>学历</span><b>'+n.education+'</b>';h+='</div>';
-  if(full){h+='<canvas id="tipr"></canvas>';const g=n.code?ALLZ.find(z=>z.code===n.code):null;
-    if(g){h+='<div class="mods">'+SCOREM.map(m=>{const v=g.by_model&&g.by_model[m]?g.by_model[m].overall:null;return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')+'</div>';}
+  if(n.pay)h+='<span>年薪</span><b>¥'+n.pay.toLocaleString()+'</b>';if(n.education)h+='<span>学历</span><b>'+n.education+'</b>';if(n.employment)h+='<span>就业</span><b>'+fmtJobs(n.employment)+'</b>';if(n.level)h+='<span>等级</span><b>'+n.level+'</b>';h+='</div>';
+  if(full){h+='<canvas id="tipr"></canvas>';const bm=n.by_model;
+    if(bm){h+='<div class="mods">'+SCOREM.map(m=>{const e=bm[m];const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')+'</div>';}
     const rat=n.rationales?Object.values(n.rationales).filter(Boolean)[0]:(n.inherit?'继承所属中类「'+n.inherit+'」':'');if(rat)h+='<div class="r">「'+rat+'」</div>';}
   else h+='<div class="hint">静止片刻 → 展开各模型分歧与雷达</div>';return h;}
 function showTip(n,full){tip.innerHTML=tipHtml(n,full);tip.classList.add('show');if(full){const c=document.getElementById('tipr');if(c)drawRadar(c,DIMKEYS.map(k=>n.dims[k]||0));}place();}
@@ -312,7 +315,7 @@ window.addEventListener('resize',resize);
 updateRange();resize();updateCrumb();updateLegend();updateSummary();updateDa();setHandle();requestAnimationFrame(frame);requestAnimationFrame(radarFrame);
 window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},back:back,theme:m=>{themeMode=m;applyTheme();},collapse:()=>{top.classList.toggle('collapsed');setHandle();},
   metric:k=>{S.dim=k;S.disagree=false;dis.classList.remove('on');[...tg.children].forEach(x=>x.classList.toggle('active',x.textContent===((METRICS.find(m=>m.key===k)||{}).label)));updateRange();updateLegend();},
-  hover:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t){hoverId=t.id;tipXY=[innerWidth/2,innerHeight/2];showTip(t.node,true);}},
+  hover:c=>{const t=tiles.find(x=>x.id==='z:'+c||x.id==='l:'+c);if(t){hoverId=t.id;tipXY=[innerWidth/2,innerHeight*0.62];showTip(t.node,true);}},
   settle:()=>{updateRange();for(const t of tiles){t.cx=t.tx;t.cy=t.ty;t.cw=t.tw;t.ch=t.th;t.alpha=matches(t)?1:.12;const c=tileRGB(t);t.cr=c[0];t.cg=c[1];t.cb=c[2];t.hl=(t.id===hoverId?1:0);}const r=radarT();for(let i=0;i<6;i++)radarCur[i]=r[i];draw();drawRadar(document.getElementById('radarc'),radarCur);if(S.drill){const g=ALLZ.find(x=>x.code===S.drill);if(g){drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>g.dims[k]||0));drawBars(document.getElementById('dvbars'),g);}}}};
 })();}
 </script>
