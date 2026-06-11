@@ -20,11 +20,16 @@ def decode(b):
             except: pass
     return b.decode('utf-8','replace')
 
+# 各种连字符/减号变体统一成 ASCII '-'(元宝爱用不换行连字符 U+2011,导致编码匹配失败)
+DASHES = '‐‑‒–—―−－﹣'
+DASH_TR = {ord(c): '-' for c in DASHES}
+
 def num(label, s):
     m = re.search(label + r'\D{0,3}(\d{1,3})', s)
     return int(m.group(1)) if m and int(m.group(1)) <= 100 else None
 
 def parse(t):
+    t = t.translate(DASH_TR)
     if re.search(r'<!DOCTYPE|<html|<div', t, re.I):
         t = re.sub(r'<(script|style)[\s\S]*?</\1>', ' ', t, flags=re.I); t = re.sub(r'<[^>]+>', ' ', t)
     marks = [m.start() for m in re.finditer(r'〔', t)]
