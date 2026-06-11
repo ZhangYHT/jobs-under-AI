@@ -159,7 +159,7 @@ for key, name, angle, lens in ROSTER:
 
 REVIEW = [
  ("nemotron-3-super-120b-a12b","盲点扫描","11个主力是否集体遗漏了某些重要官方来源或职业?列出被忽略的视角与应补的官方资料。"),
- ("minimax-m2.7","反方代言","针对多数派的打分,给出尽可能扎实的反面论据;若少数派更有理,为其补强。"),
+ ("qwq-32b","反方代言","针对多数派的打分,给出尽可能扎实的反面论据;若少数派更有理,为其补强。"),
  ("llama-3.2-90b-vision-instruct","信息源补位","补充主流模型未见的非主流/小众官方与准官方资料(地方、行业、英文小语种)。"),
  ("gpt-oss-120b","数值合理性核查","核查就业/薪资/打分中的异常值与口径冲突,标出最可疑的若干项及理由。"),
  ("Mistral-Large","一致性与可比性审查","审查跨中类打分是否自洽(同类内部相对关系、量纲一致性),指出矛盾点。"),
@@ -208,58 +208,143 @@ open(os.path.join(PROMPTS, 'README.md'), 'w', encoding='utf-8').write(readme)
 print(f"已生成 {len(ROSTER)} 模型 × 4 阶段 = {len(ROSTER)*4} 个独立提示词 + {len(REVIEW)} 评议员 + README")
 print("目录:", PROMPTS)
 
-# ============ 细类工程(重点中类,自然语言 + 结构化尾行)============
+# ============ 细类工程(打包 · 分层 · 加长版)============
+# 已采集首批(11模型,旧提示词):原始返回存于 data/collected/xilei_raw/,本轮不再重复生成
 PRI = ['4-04', '3-01', '2-06', '2-02', '2-08', '2-07', '4-01', '6-29', '5-01', '4-03']
+PRI_SET = set(PRI)
 GMAP = {g['code']: g for g in G}
-BATCH = 40
-def xilei_prompt(name, lens, zc, zt, xis, bi, bn):
-    head = f"【AI众议院 · {name} · 细类深评打分 · {zc} {zt}" + (f"(第{bi}/{bn}批)" if bn > 1 else "") + "】\n"
-    lst = '\n'.join(f"  {x['code']} {x['title']}" + ('  [数字职业S]' if x['digital'] else '') + ('  [绿色L]' if x['green'] else '') for x in xis)
+import math as _m
+# 中类级聚合(用于判定重点/长尾:高冲击 dims.overall>=55 或 就业Top15)
+try:
+    AGG = json.load(open(os.path.join(ROOT, 'data', 'aggregated.cn.json'), encoding='utf-8'))
+    AGG_G = {g['code']: g for g in (AGG.get('groups') or AGG)}
+except Exception:
+    AGG_G = {}
+KEY_EMP_THR = 4919730
+def is_key_zl(code):
+    g = AGG_G.get(code)
+    if not g: return False
+    ov = (g.get('dims') or {}).get('overall')
+    emp = g.get('employment') or 0
+    return (ov is not None and ov >= 55) or emp >= KEY_EMP_THR
+
+# 新成员(全新专属领地;先中档试用,出分后再定权重)
+MIMO = ("mimo", "小米MiMo(mimo-v2.5pro)",
+        "移动互联网与智能终端生态。主攻智能手机/IoT/车机/可穿戴等端侧 AI 应用、App 与小程序生态,以及由此催生或改写的新职业样态。",
+        "结合端侧 AI 与消费级智能硬件的真实普及速度,校准落地速度与数字化程度。")
+MINIMAX = ("minimax", "MiniMax-M3(思考)",
+           "多智能体与长流程任务。主攻 Agent/工作流自动化在真实长链条业务(客服、运营、内容生产、流程审批)中的端到端落地证据,评估其接管整段流程而非单点任务的能力。",
+           "以多智能体能否接管完整工作流为尺度,判断任务自动化的真实上限与护城河。")
+ROSTER_XI = ROSTER + [MIMO, MINIMAX]                       # 重点中类:全 13 模型
+_CLEAN = {'gpt', 'deepseek', 'grok', 'kimi', 'wenxin', 'zhipu', 'qwen', 'claude', 'mimo', 'minimax'}
+LEAN_XI = [m for m in ROSTER_XI if m[0] in _CLEAN]         # 长尾中类:精简 10(去 gemini/doubao/yuanbao)
+
+TARGET, CAP = 70, 80    # 每条目标~70细类;合并多个小中类上限~80;单中类>70自动均分分批
+def even_chunks(xs, target):
+    k = max(1, _m.ceil(len(xs) / target)); sz = _m.ceil(len(xs) / k)
+    return [xs[i:i+sz] for i in range(0, len(xs), sz)]
+def pack_da(mids):
+    """把同一(大类,层级)内的中类打包成若干 bundle;bundle=[(g,细类切片,批序,批数),...]"""
+    bundles, cur, tot = [], [], 0
+    for g in mids:
+        xs = g['细类']; n = len(xs)
+        if n > TARGET:
+            if cur: bundles.append(cur); cur, tot = [], 0
+            chs = even_chunks(xs, TARGET)
+            for bi, ch in enumerate(chs, 1): bundles.append([(g, ch, bi, len(chs))])
+            continue
+        if cur and tot + n > CAP: bundles.append(cur); cur, tot = [], 0
+        cur.append((g, xs, 1, 1)); tot += n
+    if cur: bundles.append(cur)
+    return bundles
+
+def xilei_prompt(name, lens, bundle, dac, dat, tag):
+    nxi = sum(len(xs) for _, xs, _, _ in bundle)
+    head = f"【AI众议院 · {name} · 细类深评打分 · 大类{dac} {dat} · {tag}】\n"
+    blocks = []
+    for g, xs, bi, bn in bundle:
+        sub = '\n'.join(f"    {x['code']} {x['title']}" + ('  [数字S]' if x['digital'] else '') + ('  [绿色L]' if x['green'] else '') for x in xs)
+        blocks.append(f"◇ 中类 {g['code']} {g['title']}" + (f"(本中类第{bi}/{bn}批)" if bn > 1 else "") + f",共{len(xs)}个细类:\n{sub}")
+    mm = "\n【你支持团队/多智能体】可选启用 Agent 团队模式分工检索与交叉核对(不强制),但最终仍按统一尾行格式输出。" if name.startswith('MiniMax') else ""
     return head + f"""
-【锚点主题】AI 时代各岗位冲击图谱(中国版):中类「{zt}」下细类(具体职业)的深度评估与打分
-【意图】主观研判;独立盲测,你的判断会与其他模型集成。
-【背景】官方数据到中类为止(细类的人数/薪资无官方源),所以细类的人数请你估"在本中类内的占比%",薪资给"相对本中类的高/中/低档";AI 冲击与评价是本轮重点。
-【你的专属视角(只补强判断)】{lens}
+【锚点主题】AI 时代各岗位冲击图谱(中国版):中类下细类(具体职业)的深度评估与打分
+【意图】主观研判 + 证据检索;独立盲测,你的判断会与其他模型集成(取均值/中位数并展示分歧度)。
+【你的专属视角(只补强判断,不必面面俱到)】{lens}{mm}
+【背景与口径】官方数据只到中类:细类没有官方人数/薪资。所以人数请估"该细类在其所属中类内部的就业占比%"(同一中类的细类占比之和≈100,不同中类各自归一);薪资给"相对本中类的高/中/低档";AI 冲击与文字评价是本轮重点。
+【尽量多查证据】在你的视角范围内结合真实行业落地、招聘需求、技术成熟度等可核查信息判断(可在评价里极简带一句依据),但不要堆砌长篇,把篇幅留给覆盖全部细类。
 
-【本批细类(共{len(xis)},全部处理)】
-{lst}
+【本批覆盖 {len(bundle)} 个中类 / 共 {nxi} 个细类,逐项不漏】
+{chr(10).join(blocks)}
 
-【对每个细类,先写 2-3 句自然语言评价,再给一行结构化尾行】
-评价:覆盖①AI 冲击的优势/已落地处 ②风险/被替代点 ③转型趋势与人仍不可替代处。
-尾行(务必照此格式,便于汇总):
+【对每个细类:先 2-3 句自然语言评价,再给一行结构化尾行】
+评价(务必精炼,2-3 句、约60-120字):①AI 已落地/最受冲击处 ②风险或被替代的具体任务 ③转型趋势与人仍不可替代处。禁止写章节、摘要、总述、表格或长篇报告。
+尾行(务必逐字照此格式,便于自动汇总):
 〔编码 名称〕综合NN 自动化NN 增强NN 数字NN 护城河NN 落地NN ┃ 占比N% ┃ 学历X ┃ 薪资X ┃ 等级X
-其中:六维均 0-100 整数;占比=该细类占本中类就业的百分比(本批所有细类占比之和应≈100);学历∈{{博士,硕士,本科,大专,高中,初中}};薪资∈{{高,中,低}}(相对本中类);等级∈{{极高,高,中,低,极低}}(对应综合冲击 81+/61-80/41-60/21-40/0-20)。
+说明:六维均 0-100 整数,务必拉开差距(敢打极端、别挤中间);占比=该细类在其所属中类内部的就业百分比;学历∈{{博士,硕士,本科,大专,高中,初中}};薪资∈{{高,中,低}}(相对本中类);等级∈{{极高,高,中,低,极低}}(对应综合冲击 81+/61-80/41-60/21-40/0-20)。
 
 【示例】
-人工智能工程技术人员:核心产出就是模型与算法,设计、编码、调参高度可被 AI 接管;但前沿创新、系统集成与担责仍需人,属"强增强而非消失"。
+人工智能工程技术人员:模型与算法本身即产出,设计、编码、调参高度可被 AI 接管;前沿创新、系统集成与工程担责仍需人,属强增强而非消失。
 〔2-02-30-01 人工智能工程技术人员〕综合88 自动化70 增强96 数字98 护城河28 落地85 ┃ 占比6% ┃ 学历硕士 ┃ 薪资高 ┃ 等级极高
 
-【硬要求】覆盖本批全部细类、编码写对、充分拉开分数(敢打极端、别挤中间)、占比之和≈100、不要 JSON、不使用破折号。"""
+【硬要求】① 覆盖本批全部细类、编码逐字写对 ② 充分拉开分数 ③ 每个中类内部占比之和≈100 ④ 评价精炼 2-3 句、不写长报告 ⑤ 不要 JSON、不使用破折号 ⑥ 一条放不下就先写一部分,我回复"继续"再接着写,不得省略或编造。"""
 
 xd = os.path.join(PROMPTS, 'xilei')
 if os.path.isdir(xd): shutil.rmtree(xd)
-nfiles = 0
-for zc in PRI:
-    g = GMAP[zc]; xis = g['细类']; zt = g['title']
-    batches = [xis[i:i+BATCH] for i in range(0, len(xis), BATCH)] or [[]]
-    d = os.path.join(xd, zc); os.makedirs(d, exist_ok=True)
-    for key, nm, angle, lens in ROSTER:
-        for bi, b in enumerate(batches, 1):
-            suf = f'_b{bi}' if len(batches) > 1 else ''
-            open(os.path.join(d, key + suf + '.md'), 'w', encoding='utf-8').write(xilei_prompt(nm, lens, zc, zt, b, bi, len(batches)))
-            nfiles += 1
-xreadme = f"""# 细类深评打分提示词(重点中类)
+rem_by_da = _c.OrderedDict()
+for g in G:
+    if g['code'] in PRI_SET or len(g.get('细类', [])) == 0: continue
+    rem_by_da.setdefault((g['parent'], g['da_title']), []).append(g)
+plan, nfiles, nbundles, npastes = [], 0, 0, 0
+for (dac, dat), gs in rem_by_da.items():
+    key_mids = [g for g in gs if is_key_zl(g['code'])]
+    tail_mids = [g for g in gs if not is_key_zl(g['code'])]
+    for tier, mids, roster in (('重点', key_mids, ROSTER_XI), ('长尾', tail_mids, LEAN_XI)):
+        if not mids: continue
+        for idx, bundle in enumerate(pack_da(mids), 1):
+            nbundles += 1; npastes += len(roster)
+            folder = os.path.join(xd, f"大类{dac}", f"{tier}-{idx:02d}"); os.makedirs(folder, exist_ok=True)
+            tag = f"{tier}批{idx}"
+            for key, nm, angle, lens in roster:
+                open(os.path.join(folder, key + '.md'), 'w', encoding='utf-8').write(xilei_prompt(nm, lens, bundle, dac, dat, tag)); nfiles += 1
+            plan.append((dac, dat, tier, idx, len(roster), [(g['code'], g['title'], len(xs), bi, bn) for g, xs, bi, bn in bundle]))
 
-每个文件 = 一个**可直接投喂**的提示词,覆盖某中类下的(一批)细类。结构:`xilei/<中类码>/<模型>[_bN].md`。
-细类多的中类(如 2-02)按每批 {BATCH} 个自动分批(_b1/_b2…)。
+# 进度追踪表
+prog = ["# 细类采集进度追踪(剩余 69 中类)", "",
+        f"> 重点中类(高冲击或就业Top15)用 **全 13 模型**;长尾中类用 **精简 10 强**(去 gemini深研/豆包/元宝)。",
+        f"> 共 **{nbundles}** 个批次、**{nfiles}** 个提示词文件、约 **{npastes}** 次粘贴。每个批次目录里有几个 `.md` 就投喂几个模型,回复原文按模型存好,跑 `tools/parse_xilei.py` 解析。", "",
+        "## 已采集(首批10重点中类 · 11模型 · 原始存于 data/collected/xilei_raw/)",
+        "`" + "` `".join(PRI) + "`  ←  这10个还缺 mimo/minimax,可在收尾时补;其余无需重采。", "",
+        "## 待采集批次"]
+_cur_da = None
+for dac, dat, tier, idx, nmodel, items in plan:
+    if dac != _cur_da:
+        prog.append(f"\n### 大类{dac} {dat}"); _cur_da = dac
+    cov = '; '.join(f"{c} {t}" + (f"(第{bi}/{bn}批)" if bn > 1 else "") + f"·{n}细类" for c, t, n, bi, bn in items)
+    prog.append(f"- [ ] **{tier}-{idx:02d}**(`大类{dac}/{tier}-{idx:02d}/`,{nmodel}模型):{cov}")
+open(os.path.join(xd, 'PROGRESS.md'), 'w', encoding='utf-8').write('\n'.join(prog) + '\n')
+
+xreadme = f"""# 细类深评打分提示词(剩余 69 中类 · 打包分层版)
+
+每个文件 = 一个**可直接投喂**的提示词,一条覆盖**多个小中类或一个大中类的一批**(约 70 个细类)以减少粘贴次数。
+结构:`xilei/大类<码>/<重点|长尾>-<批号>/<模型>.md`。**目录里有几个模型文件就投喂几个**(重点=13,长尾=10)。
+
+## 分层(决定每批投喂几个模型)
+- **重点中类**(高冲击 dims.overall≥55 或 就业 Top15):全 **13** 模型(含 gemini/豆包/元宝/mimo/minimax)。
+- **长尾中类**:精简 **10** 强({' · '.join(k for k,_,_,_ in LEAN_XI)});去掉爱写长报告/乱编码的 gemini深研、豆包、元宝。
+
+## 新成员
+- `mimo` 小米MiMo(mimo-v2.5pro)·端侧/终端生态视角
+- `minimax` MiniMax-M3(思考)·多智能体长流程视角(可选 Agent 团队模式)
+- 两者先中档试用,出分后再定可信度权重。
 
 ## 用法
-1. 选一个中类目录(如 `xilei/4-04/`),把每个模型文件投喂给对应模型;回复(自然语言评价 + 尾行)按模型存为 `data/collected/xilei/<模型键>.json` 前的原始文本目录。
-2. `python tools/parse_xilei.py <原始返回目录>` 解析尾行+评价 → `data/collected/xilei/<模型>.json`;再 `python aggregate.py`。
-3. 站点进入该中类后,细类即按各自真实分上色、按估计人数定面积、详情含 分/级/人数/学历/薪资/评价。
+1. 看 `PROGRESS.md` 挑一个未完成批次,打开其目录,把每个 `<模型>.md` 投喂给对应模型。
+2. 回复(自然语言评价 + 尾行)按模型存为原始文本,文件名用模型键(如 `gpt.txt`/`minimax.txt`),放进一个目录。
+3. `python tools/parse_xilei.py <该目录>` 解析 → `data/collected/xilei/<模型>.json`(多目录可多次跑,自动按编码合并)。
+4. 全部 1636 细类采完后再统一 `aggregate.py`(温和加权)并上线,本轮不急于聚合。
 
-## 首批重点中类
-{' · '.join(PRI)}(均衡覆盖高低冲击与高就业;其余中类后续逐步铺开)
+共 {nbundles} 批 / {nfiles} 文件 / 约 {npastes} 次粘贴。
 """
 open(os.path.join(xd, 'README.md'), 'w', encoding='utf-8').write(xreadme)
-print(f"已生成细类提示词 {nfiles} 个(重点中类 {len(PRI)} 个 × {len(ROSTER)} 模型,大中类分批):{xd}")
+print(f"已生成细类提示词 {nfiles} 个:{nbundles} 批(重点13模型/长尾10模型),约 {npastes} 次粘贴 -> {xd}")
+print("进度表:", os.path.join(xd, 'PROGRESS.md'))

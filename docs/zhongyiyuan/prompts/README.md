@@ -15,4 +15,4 @@
 
 ## 模型键
 `wenxin` · `qwen` · `zhipu` · `yuanbao` · `gpt` · `gemini` · `deepseek` · `doubao` · `grok` · `kimi` · `claude`
-评议员(免费API):`nemotron-3-super-120b-a12b` · `minimax-m2.7` · `llama-3.2-90b-vision-instruct` · `gpt-oss-120b` · `Mistral-Large`
+评议员(免费API):`nemotron-3-super-120b-a12b` · `qwq-32b` · `llama-3.2-90b-vision-instruct` · `gpt-oss-120b` · `Mistral-Large`
