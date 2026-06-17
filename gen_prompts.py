@@ -276,17 +276,19 @@ def xilei_prompt(name, lens, bundle, dac, dat, tag):
 【本批覆盖 {len(bundle)} 个中类 / 共 {nxi} 个细类,逐项不漏】
 {chr(10).join(blocks)}
 
-【对每个细类:先 2-3 句自然语言评价,再给一行结构化尾行】
-评价(务必精炼,2-3 句、约60-120字):①AI 已落地/最受冲击处 ②风险或被替代的具体任务 ③转型趋势与人仍不可替代处。禁止写章节、摘要、总述、表格或长篇报告。
+【对每个细类:先 1-2 句自然语言评价,再给一行结构化尾行】
+评价(务必精炼,1-2 句、约40-80字):点出 ①AI 最受冲击/已落地处 或 ②人仍不可替代处 即可,不必三点都写满。禁止写章节、摘要、总述、表格或长篇报告。
 尾行(务必逐字照此格式,便于自动汇总):
 〔编码 名称〕综合NN 自动化NN 增强NN 数字NN 护城河NN 落地NN ┃ 占比N% ┃ 学历X ┃ 薪资X ┃ 等级X
 说明:六维均 0-100 整数,务必拉开差距(敢打极端、别挤中间);占比=该细类在其所属中类内部的就业百分比;学历∈{{博士,硕士,本科,大专,高中,初中}};薪资∈{{高,中,低}}(相对本中类);等级∈{{极高,高,中,低,极低}}(对应综合冲击 81+/61-80/41-60/21-40/0-20)。
 
 【示例】
-人工智能工程技术人员:模型与算法本身即产出,设计、编码、调参高度可被 AI 接管;前沿创新、系统集成与工程担责仍需人,属强增强而非消失。
+人工智能工程技术人员:模型与算法本身即产出,设计、编码、调参高度可被 AI 接管;系统集成与工程担责仍需人。
 〔2-02-30-01 人工智能工程技术人员〕综合88 自动化70 增强96 数字98 护城河28 落地85 ┃ 占比6% ┃ 学历硕士 ┃ 薪资高 ┃ 等级极高
 
-【硬要求】① 覆盖本批全部细类、编码逐字写对 ② 充分拉开分数 ③ 每个中类内部占比之和≈100 ④ 评价精炼 2-3 句、不写长报告 ⑤ 不要 JSON、不使用破折号 ⑥ 一条放不下就先写一部分,我回复"继续"再接着写,不得省略或编造。"""
+【一次性完整输出(最重要)】本批共 {nxi} 个细类,请在这一条回复里一次性给全 {nxi} 行尾行,一行都不能少。禁止中途停下等我说"继续";禁止"由于篇幅""接下来我将""其余略""……"等拖延或省略占位;禁止编造。你的单次输出容量足以容纳全部 {nxi} 条,只要把每条评价压到 1-2 句即可一次写完。写完请自查尾行数量是否等于 {nxi},不足就补齐后再发。
+【证据须针对中国大陆】判断与举证一律基于中国大陆的官方/行业资料,或国外机构针对中国大陆的专门分析;不得把对美国、欧洲等地岗位的研究直接套用到中国大陆。
+【硬要求】① 覆盖本批全部 {nxi} 个细类、编码逐字写对 ② 充分拉开分数(敢打极端) ③ 每个中类内部占比之和≈100 ④ 评价精炼 1-2 句 ⑤ 不要 JSON、不使用破折号。"""
 
 xd = os.path.join(PROMPTS, 'xilei')
 if os.path.isdir(xd): shutil.rmtree(xd)
@@ -348,3 +350,116 @@ xreadme = f"""# 细类深评打分提示词(剩余 69 中类 · 打包分层版)
 open(os.path.join(xd, 'README.md'), 'w', encoding='utf-8').write(xreadme)
 print(f"已生成细类提示词 {nfiles} 个:{nbundles} 批(重点13模型/长尾10模型),约 {npastes} 次粘贴 -> {xd}")
 print("进度表:", os.path.join(xd, 'PROGRESS.md'))
+
+# ============ 查漏补缺(gap-fill)+ Arena 双盲补充 ============
+import glob as _glob
+NAME_OF = {k: nm for k, nm, a, l in ROSTER_XI}
+LENS_OF = {k: l for k, nm, a, l in ROSTER_XI}
+TITLE_XI = {x['code']: x for g in G for x in g.get('细类', [])}
+ANTILAZY = ('【一次性完整输出(最重要)】本批共 {n} 个细类,请在这一条回复里一次性给全 {n} 行尾行,一行都不能少。'
+            '禁止中途停下等我说"继续";禁止"由于篇幅""接下来我将""其余略""……"等拖延或省略占位;禁止编造。'
+            '你的单次输出容量足以容纳全部 {n} 条,把每条评价压到 1 句即可一次写完。写完请自查尾行数量是否等于 {n},不足就补齐再发。')
+CHINA = ('【证据须针对中国大陆】判断与举证一律基于中国大陆的官方/行业资料,或国外机构针对中国大陆的专门分析;'
+         '不得把对美国、欧洲等地岗位的研究直接套用到中国大陆。')
+TAILSPEC = ('〔编码 名称〕综合NN 自动化NN 增强NN 数字NN 护城河NN 落地NN ┃ 占比N% ┃ 学历X ┃ 薪资X ┃ 等级X\n'
+            '(六维0-100整数、务必拉开差距;占比=该细类在其所属中类内部的就业百分比;学历∈博士/硕士/本科/大专/高中/初中;'
+            '薪资∈高/中/低;等级∈极高/高/中/低/极低=综合81+/61-80/41-60/21-40/0-20)')
+
+def _blocks(groups):
+    out = []
+    for zl, codes in groups:
+        zt = GMAP[zl]['title']
+        sub = '\n'.join(f"    {c} {TITLE_XI[c]['title']}" + (' [数字S]' if TITLE_XI[c]['digital'] else '') + (' [绿色L]' if TITLE_XI[c]['green'] else '') for c in codes if c in TITLE_XI)
+        out.append(f"◇ 中类 {zl} {zt}({len(codes)}个):\n{sub}")
+    return '\n'.join(out)
+
+def gapfill_prompt(name, lens, groups):
+    n = sum(len(cs) for _, cs in groups)
+    mm = "\n【你支持团队/多智能体】可选启用 Agent 团队模式,但仍按统一尾行一次性输出。" if name.startswith('MiniMax') else ""
+    return f"""【AI众议院 · {name} · 细类深评打分 · 查漏补缺批(共{n}个)】
+
+【为什么再次发给你】上一轮你这部分只给了一部分就停下了。下面是你尚未评分的细类,这一次请一口气全部补齐。
+【你的专属视角(只补强判断,不必面面俱到)】{lens}{mm}
+【口径】人数给"该细类在其所属中类内部的就业占比%"(同一中类内可与你已给的合计≈100);薪资给相对本中类的高/中/低档。
+{CHINA}
+
+【待补细类(共 {n} 个,逐项不漏)】
+{_blocks(groups)}
+
+【对每个细类:1 句评价 + 一行尾行】
+{TAILSPEC}
+
+{ANTILAZY.format(n=n)}
+不要 JSON、不使用破折号。"""
+
+def arena_prompt(groups):
+    n = sum(len(cs) for _, cs in groups)
+    return f"""你是一位研究"AI 对中国大陆各职业冲击"的资深专家。请对下列中国《职业分类大典(2022)》细类职业逐个打分。
+
+【背景】官方数据只到中类,细类的人数/薪资无官方源:人数请估"该细类在其所属中类内部的就业占比%"(同一中类内合计≈100);薪资给相对本中类的高/中/低档。六维含义:综合冲击/任务自动化/AI增强/数字化程度/技能护城河/行业落地速度,均 0-100。
+{CHINA}
+
+【细类清单(共 {n} 个,逐项不漏)】
+{_blocks(groups)}
+
+【对每个细类:1 句评价 + 一行尾行】
+{TAILSPEC}
+
+{ANTILAZY.format(n=n)}
+请自包含作答(不要反问、不要要求更多上下文),不要 JSON、不使用破折号。"""
+
+def _pack_codes(codes, size=70):
+    return [codes[i:i+size] for i in range(0, len(codes), size)]
+
+def _regroup(chunk):
+    bz = _c.OrderedDict()
+    for c in chunk: bz.setdefault('-'.join(c.split('-')[:2]), []).append(c)
+    return list(bz.items())
+
+# --- 查漏补缺:读 data/collected/xilei_gaps/<model>.json ---
+gapdir = os.path.join(ROOT, 'data', 'collected', 'xilei_gaps')
+gxd = os.path.join(PROMPTS, 'xilei_gaps')
+if os.path.isdir(gxd): shutil.rmtree(gxd)
+gap_files, gap_rows = 0, []
+if os.path.isdir(gapdir):
+    for fp in sorted(_glob.glob(os.path.join(gapdir, '*.json'))):
+        key = os.path.splitext(os.path.basename(fp))[0]
+        if key == 'claude' or key not in NAME_OF: continue       # claude 由我自采,不投喂
+        codes = [it['code'] for it in json.load(open(fp, encoding='utf-8')) if it['code'] in TITLE_XI]
+        seen = list(dict.fromkeys(codes))
+        if not seen: continue
+        d = os.path.join(gxd, key); os.makedirs(d, exist_ok=True)
+        chunks = _pack_codes(seen, 70)
+        for bi, ch in enumerate(chunks, 1):
+            open(os.path.join(d, f'g{bi:02d}.md'), 'w', encoding='utf-8').write(gapfill_prompt(NAME_OF[key], LENS_OF[key], _regroup(ch)))
+            gap_files += 1
+        gap_rows.append((key, len(seen), len(chunks)))
+    greadme = ["# 查漏补缺提示词(把各模型上一轮偷懒/截断漏掉的细类补齐)", "",
+               "上一轮许多非深度研究模式的模型只输出一部分就停下等「继续」。这里按模型汇总它们漏掉的细类,",
+               "用强化版「一次性完整输出」提示词重新投喂。强调:禁止「继续」、一口气写全。", "",
+               "结构:`xilei_gaps/<模型>/g01.md ...`。每个模型把自己目录下的每条投喂给它本人,回复存为 `<模型>.txt` 再跑 `tools/parse_xilei.py`(按编码自动并入,不会覆盖已有)。", "",
+               "## 各模型待补量"]
+    for key, n, nb in sorted(gap_rows, key=lambda r: -r[1]):
+        greadme.append(f"- **{key}**:待补 {n} 个,分 {nb} 批")
+    greadme.append("\n> `claude` 的那份(约1200+)由本系统作者模型(我)自行产出,不在此目录。")
+    open(os.path.join(gxd, 'README.md'), 'w', encoding='utf-8').write('\n'.join(greadme) + '\n')
+    print(f"已生成查漏补缺提示词 {gap_files} 个,覆盖 {len(gap_rows)} 个模型 -> {gxd}")
+
+# --- Arena 双盲:对剩余69中类生成中性匿名提示词(一批可投喂 lmarena,收两个匿名模型的票) ---
+axd = os.path.join(PROMPTS, 'xilei_arena')
+if os.path.isdir(axd): shutil.rmtree(axd)
+arena_files = 0
+for (dac, dat), gs in rem_by_da.items():
+    mids = [g for g in gs]
+    for idx, bundle in enumerate(pack_da(mids), 1):
+        groups = [(g['code'], [x['code'] for x in xs]) for g, xs, bi, bn in bundle]
+        d = os.path.join(axd, f"大类{dac}"); os.makedirs(d, exist_ok=True)
+        open(os.path.join(d, f"a{idx:02d}.md"), 'w', encoding='utf-8').write(arena_prompt(groups))
+        arena_files += 1
+areadme = ("# Arena 双盲补充数据(lmarena 随机对战)\n\n"
+           "把 `xilei_arena/大类N/aNN.md` 丢进 lmarena 的匿名对战,一次能收到**两个匿名模型**的打分,作为补充低权重票(每票约0.80)。\n"
+           "提示词已做成自包含中性版(不依赖模型身份),并强化「一次性完整输出」。\n\n"
+           "## 回收\n两个回复分别存为 `arena1.txt`/`arena2.txt`(或 `arena3`...,序号区分不同对战),放进一个目录跑 `tools/parse_xilei.py`;\n"
+           "解析器已把 `arena+数字` 当作独立模型键保留,聚合时按 arena 低权重取平均并入。别忘了十三大主流模型仍是主力。\n")
+open(os.path.join(axd, 'README.md'), 'w', encoding='utf-8').write(areadme)
+print(f"已生成 Arena 匿名提示词 {arena_files} 个 -> {axd}")

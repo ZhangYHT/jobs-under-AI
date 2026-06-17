@@ -8,10 +8,11 @@ import re, json, os, sys, glob
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 OCC = json.load(open(os.path.join(ROOT, 'data', 'occupations.cn.json'), encoding='utf-8'))
 XICODES = {x['code'] for g in OCC['groups'] for x in g.get('细类', [])}
-FN = {'chatgpt':'gpt','gpt':'gpt','deepseek':'deepseek','glm':'zhipu','智谱':'zhipu','智谱清言':'zhipu',
+FN = {'chatgpt':'gpt','gpt':'gpt','deepseek':'deepseek','glm':'zhipu','智谱':'zhipu','智谱清言':'zhipu','zhipu':'zhipu',
  'gemini':'gemini','grok':'grok','kimi':'kimi','千问':'qwen','通义':'qwen','通义千问':'qwen','qwen':'qwen',
  '文心':'wenxin','文心一言':'wenxin','wenxin':'wenxin','腾讯元宝':'yuanbao','元宝':'yuanbao','yuanbao':'yuanbao',
- '豆包':'doubao','doubao':'doubao','claude':'claude'}
+ '豆包':'doubao','doubao':'doubao','claude':'claude','mimo':'mimo','小米':'mimo','xiaomi':'mimo',
+ 'minimax':'minimax','minimax-m3':'minimax'}
 
 def decode(b):
     if b[:2] in (b'\xff\xfe', b'\xfe\xff') or b.count(b'\x00') > len(b)//5:
@@ -72,6 +73,7 @@ def main():
         base = os.path.splitext(os.path.basename(f))[0]
         base = re.sub(r'_b\d+$', '', base)            # 去分批后缀
         key = FN.get(base.lower())
+        if not key and re.match(r'arena\d*$', base.lower()): key = base.lower()  # Arena 匿名样本各自独立
         if not key: continue
         recs = parse(decode(open(f, 'rb').read()))
         agg.setdefault(key, {}).update(recs)          # 同模型多批合并
