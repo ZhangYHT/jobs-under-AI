@@ -98,6 +98,60 @@
   #tip .r{margin-top:6px;font-style:italic;border-top:1px solid var(--line);padding-top:5px;color:var(--text);line-height:1.5;}
   #tip .hint{margin-top:5px;font-size:10.5px;color:var(--soft);}
   #err{position:fixed;inset:0;display:none;align-items:center;justify-content:center;text-align:center;color:var(--muted);padding:40px;}
+  /* 等级色阶图例 */
+  .tier-legend{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);flex-wrap:wrap;margin-left:auto;}
+  .tier-legend .tt{font-weight:600;color:var(--soft);}
+  .tier-legend .ts{display:inline-flex;flex-direction:column;align-items:center;gap:2px;line-height:1;}
+  .tier-legend .tsw{width:30px;height:11px;border-radius:4px;border:1px solid color-mix(in srgb,var(--line) 70%,transparent);}
+  .tier-legend .tl{font-size:9px;color:var(--soft);}
+  .tier-legend .tn{font-size:9px;}
+  /* 支持作者:悬浮按钮 + 抽屉 */
+  #supBtn{position:fixed;right:16px;bottom:14px;z-index:45;display:inline-flex;align-items:center;gap:7px;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border:none;border-radius:22px;
+    padding:10px 16px;font-size:13px;font-weight:700;cursor:pointer;box-shadow:var(--shadow);
+    transition:transform .18s cubic-bezier(.22,1,.36,1),box-shadow .18s,opacity .25s;}
+  #supBtn:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 14px 34px rgba(0,0,0,.4);}
+  #supBtn .hb{font-size:14px;line-height:1;}
+  #supMask{position:fixed;inset:0;z-index:48;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;transition:opacity .3s;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);}
+  #supMask.show{opacity:1;pointer-events:auto;}
+  #supPanel{position:fixed;right:16px;bottom:14px;z-index:50;width:344px;max-width:calc(100vw - 24px);max-height:84vh;overflow:auto;
+    background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);
+    border-radius:16px;box-shadow:var(--shadow);padding:16px 17px 17px;color:var(--text);
+    opacity:0;transform:translateY(16px) scale(.97);pointer-events:none;transform-origin:bottom right;
+    transition:opacity .3s,transform .34s cubic-bezier(.22,1,.36,1);}
+  #supPanel.show{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
+  #supPanel .sp-h{display:flex;align-items:center;gap:8px;margin-bottom:9px;}
+  #supPanel .sp-h h3{margin:0;font-size:15px;font-weight:800;background:linear-gradient(90deg,var(--text),var(--accent));-webkit-background-clip:text;background-clip:text;}
+  #supPanel .sp-x{margin-left:auto;cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--muted);
+    width:26px;height:26px;border-radius:8px;font-size:15px;line-height:1;display:flex;align-items:center;justify-content:center;transition:.15s;}
+  #supPanel .sp-x:hover{color:var(--text);border-color:var(--accent);}
+  #supPanel .sp-body{font-size:12px;line-height:1.65;color:var(--muted);margin-bottom:11px;}
+  #supPanel .sp-body b{color:var(--text);}
+  #supPanel .sp-social{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:13px;}
+  #supPanel .sp-social a{display:inline-flex;align-items:center;min-height:30px;padding:5px 12px;border-radius:8px;
+    background:var(--panel2);border:1px solid var(--line);color:var(--accent);font-size:12px;font-weight:600;text-decoration:none;transition:.15s;}
+  #supPanel .sp-social a:hover{border-color:var(--accent);transform:translateY(-1px);}
+  #supPanel .sp-qr{display:flex;gap:11px;}
+  #supPanel .sp-qr .qb{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;}
+  #supPanel .sp-qr .qb .ql{font-size:11.5px;font-weight:600;color:var(--text);}
+  #supPanel .sp-qr .qb img{width:138px;height:138px;max-width:100%;object-fit:contain;border-radius:10px;border:1px solid var(--line);background:#fff;display:block;}
+  #supPanel .sp-qr .qb .ph{width:138px;height:138px;max-width:100%;border-radius:10px;border:1.5px dashed var(--line);
+    display:flex;align-items:center;justify-content:center;text-align:center;padding:10px;font-size:10px;color:var(--soft);line-height:1.5;background:var(--panel2);}
+  @media(max-width:720px){
+    #supBtn{right:12px;bottom:12px;padding:9px 14px;}
+    #supPanel{left:0;right:0;bottom:0;width:100%;max-width:100%;max-height:86vh;border-radius:18px 18px 0 0;
+      transform:translateY(100%);transform-origin:bottom center;padding-bottom:22px;}
+    #supPanel.show{transform:translateY(0);}
+    #supPanel .sp-qr .qb img,#supPanel .sp-qr .qb .ph{width:130px;height:130px;}
+  }
+  /* 窄屏:详情三栏纵向堆叠 + 图例换行 */
+  @media(max-width:720px){
+    #detailview{flex-direction:column;gap:10px;}
+    .dv-l,.dv-m,.dv-r{width:auto;flex:none;}
+    .dv-m{align-self:center;}
+    .tier-legend{margin-left:0;}
+    .legend{margin-left:0;}
+  }
 </style>
 </head>
 <body>
@@ -113,6 +167,9 @@
     <div class="tg" id="tg"></div>
     <div class="sw" id="disagree"><span class="dot"></span>模型分歧</div>
     <div class="legend"><span id="legLo">低</span><div class="bar" id="legbar"></div><span>高</span><span id="legNote" style="margin-left:3px"></span></div>
+  </div>
+  <div class="row1" style="margin-bottom:9px">
+    <div class="tier-legend" id="tierLegend"><span class="tt">等级色阶</span></div>
   </div>
   <div class="cards">
     <div class="card"><div class="ct">概况(当前视图)</div><div class="grid2">
@@ -136,6 +193,15 @@
 <div id="crumb"></div>
 <div id="tip"></div>
 
+<button id="supBtn" type="button"><span class="hb">&#9829;</span>支持作者</button>
+<div id="supMask"></div>
+<div id="supPanel" role="dialog" aria-label="支持作者">
+  <div class="sp-h"><span class="hb" style="color:var(--accent2)">&#9829;</span><h3>支持作者</h3><div class="sp-x" id="supClose" title="关闭">&times;</div></div>
+  <div class="sp-body" id="supText"></div>
+  <div class="sp-social" id="supSocial"></div>
+  <div class="sp-qr" id="supQr"></div>
+</div>
+
 <script src="data.cn.js"></script>
 <script>
 if(!window.DATA){document.getElementById('err').style.display='flex';}
@@ -148,14 +214,14 @@ const DIMKEYS=DIMS.map(d=>d.key);
 const EDU={'博士':6,'硕士':5,'本科':4,'大专':3,'高中':2,'初中':1};
 const METRICS=[...DIMS,{key:'pay',label:'薪资',extra:1},{key:'education',label:'学历',extra:1}];
 const SCOREM=[...new Set(DATA.groups.flatMap(g=>[...Object.keys(g.by_model||{}),...((g['细类']||[]).flatMap(x=>Object.keys(x.by_model||{})))]))];
-document.getElementById('sub').innerHTML='就业=七普 · 薪资=统计局 · 分类=大典2022 · AI冲击='+SCOREM.length+'模型集成';
+document.getElementById('sub').innerHTML='官方数据打底 · AI 众议院加权集成 &nbsp;|&nbsp; 就业=七普 · 薪资=统计局 · 分类=大典2022 · AI冲击='+SCOREM.length+'模型集成';
 const byDa={};DATA.groups.forEach(g=>{(byDa[g.parent]=byDa[g.parent]||[]).push(g);});
 const TREE=DATA.categories.map(c=>({code:c.code,name:c.title,children:(byDa[c.code]||[]).filter(g=>g.employment)})).filter(d=>d.children.length);
 const ALLZ=[];TREE.forEach(d=>d.children.forEach(g=>{g.da=d.name;g.daCode=d.code;g.name=g.title;ALLZ.push(g);}));
 const DA=TREE.map(d=>{const t=d.children.reduce((s,g)=>s+(g.employment||0),0)||1;
   return {code:d.code,name:d.name,jobs:t,overall:Math.round(d.children.reduce((s,g)=>s+(g.dims.overall||0)*(g.employment||0),0)/t),children:d.children,summary:(DASUM[d.code]||{}).summary||''};}).sort((a,b)=>b.overall-a.overall);
 
-const S={dim:'overall',drill:null,disagree:false,query:''};
+const S={dim:'overall',drill:null,leaf:null,disagree:false,query:''};
 const mq=matchMedia('(prefers-color-scheme: dark)');let themeMode='auto';
 const theme=()=>themeMode==='auto'?(mq.matches?'dark':'light'):themeMode;
 const RAMP={dark:[[45,212,191],[150,222,80],[245,200,70],[247,150,80],[240,75,100]],light:[[20,170,150],[120,185,55],[225,170,40],[230,120,55],[220,55,85]]};
@@ -231,7 +297,7 @@ function drawRadar(canvas,vals){const c=canvas.getContext('2d'),r=canvas.getBoun
   for(let i=0;i<n;i++){const a=-Math.PI/2+i*2*Math.PI/n;c.fillStyle=tx;c.font='9px sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(DIMS[i].short,cx+Math.cos(a)*(R+9),cy+Math.sin(a)*(R+7));}
   const ac=cssv('--accent');c.beginPath();for(let i=0;i<n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*Math.max(0,Math.min(100,vals[i]))/100;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.fillStyle=ac+'44';c.strokeStyle=ac;c.lineWidth=2;c.fill();c.stroke();}
 function drawBars(canvas,g){const c=canvas.getContext('2d'),r=canvas.getBoundingClientRect();if(r.width<2||r.height<2)return;canvas.width=r.width*DPR;canvas.height=r.height*DPR;c.setTransform(DPR,0,0,DPR,0,0);
-  const arr=SCOREM.map(m=>({m,v:g.by_model&&g.by_model[m]?g.by_model[m].overall:null})).filter(x=>x.v!=null).sort((a,b)=>b.v-a.v);
+  const arr=SCOREM.map(m=>{const e=g.by_model?g.by_model[m]:null;const v=e==null?null:(typeof e==='object'?e.overall:e);return{m,v};}).filter(x=>x.v!=null).sort((a,b)=>b.v-a.v);
   const w=r.width,h=r.height,n=arr.length;if(!n)return;const bw=Math.min(26,(w-(n-1)*4)/n),gap=(w-bw*n)/(n-1||1),base=h-13,top=4;
   c.clearRect(0,0,w,h);arr.forEach((x,i)=>{const bx=i*(bw+gap),bh=(x.v/100)*(base-top);c.fillStyle=colorAbs(x.v);
     c.beginPath();c.roundRect?c.roundRect(bx,base-bh,bw,bh,3):c.rect(bx,base-bh,bw,bh);c.fill();
@@ -256,7 +322,11 @@ function updateLegend(){document.getElementById('legbar').style.background=S.dis
 function updateDa(){document.getElementById('daGrid').innerHTML=DA.map(d=>{const nm=d.name.length>13?d.name.slice(0,12)+'…':d.name;return `<div class="dac" data-code="${esc(d.code)}" title="${esc(d.summary||'')}"><div class="t"><span>${esc(nm)}</span><b>${d.overall}</b></div><div class="track"><div class="fill" style="width:${d.overall}%;background:${colorAbs(d.overall)}"></div></div>${d.summary?'<div class="sm">'+esc(d.summary)+'</div>':''}</div>`;}).join('');
   document.querySelectorAll('#daGrid .dac').forEach(x=>x.onclick=()=>{const da=DA.find(z=>z.code===x.dataset.code);if(da){const big=da.children.reduce((p,g)=>g.employment>p.employment?g:p);const t=tiles.find(z=>z.id==='z:'+big.code);if(t)drillInto(t);}});}
 function updateCrumb(){const c=document.getElementById('crumb');if(!S.drill){c.innerHTML='<b>全部职业</b> · 大类 → 中类 · 点方块进入具体职业';return;}
-  const g=ALLZ.find(x=>x.code===S.drill);c.innerHTML='<a data-h>全部</a> › <a data-h>'+g.da+'</a> › <b>'+g.title+'</b>';c.querySelectorAll('a').forEach(a=>a.onclick=back);}
+  const g=ALLZ.find(x=>x.code===S.drill);
+  if(S.leaf){const k=(g['细类']||[]).find(x=>x.code===S.leaf)||{};
+    c.innerHTML='<a data-back>全部</a> › '+esc(g.da)+' › <a data-up>'+esc(g.title)+'</a> › <b>'+esc(k.title||S.leaf)+'</b>';
+    const up=c.querySelector('[data-up]');if(up)up.onclick=back;const bk=c.querySelector('[data-back]');if(bk)bk.onclick=()=>{S.leaf=null;back();};return;}
+  c.innerHTML='<a data-h>全部</a> › <a data-h>'+esc(g.da)+'</a> › <b>'+esc(g.title)+'</b>';c.querySelectorAll('a').forEach(a=>a.onclick=back);}
 
 const top=document.getElementById('top'),backTab=document.getElementById('backTab');
 function fillDetail(g){document.getElementById('dName').innerHTML=g.title+(g.digital?' <span class="tag">数字职业S</span>':'')+(g.green?' <span class="tag green">绿色L</span>':'');
@@ -270,8 +340,20 @@ function fillDetail(g){document.getElementById('dName').innerHTML=g.title+(g.dig
   const os=(g.official_sources||[]).slice(0,3).map(s=>s.url?'<a href="'+s.url+'" target="_blank" style="color:var(--accent)">'+(s.name||'源')+'</a>':(s.name||'')).filter(Boolean).join(' · ');
   document.getElementById('dSrc').innerHTML=(os?'官方来源:'+os:'')+(g.flags&&g.flags.length?'<br>标记:'+g.flags.join('、'):'');
   requestAnimationFrame(()=>{drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>g.dims[k]||0));drawBars(document.getElementById('dvbars'),g);});}
-function drillInto(t){S.drill=t.node.code;rebuild({x:t.cx,y:t.cy,w:t.cw,h:t.ch});top.classList.remove('collapsed');top.classList.add('detail');backTab.style.display='block';fillDetail(t.node);updateCrumb();updateSummary();}
-function back(){S.drill=null;rebuild(full());top.classList.remove('detail');backTab.style.display='none';updateCrumb();updateSummary();}
+function fillLeaf(node){const g=ALLZ.find(x=>x.code===S.drill)||{};const d=node.dims||{};
+  document.getElementById('dName').innerHTML=esc(node.title||node.name)+((node.digital||node.S)?' <span class="tag">数字职业S</span>':'')+(node.green?' <span class="tag green">绿色L</span>':'');
+  document.getElementById('dMeta').textContent=(g.title||'')+' · '+(node.code||'-')+(node.level?' · 等级'+node.level:'');
+  document.getElementById('dDims').innerHTML=DIMS.map(x=>'<div class="dimrow"><span>'+x.label+'</span><b>'+(d[x.key]!=null?d[x.key]:'-')+'</b></div>').join('');
+  const pt=node.pay_tier?'<span class="tag warn">'+esc(node.pay_tier)+'</span>':'';
+  document.getElementById('dKv').innerHTML='<span>就业</span><b>'+(node.employment?fmtJobs(node.employment):'-')+'</b><span>年薪</span><b>'+(node.pay?'¥'+node.pay.toLocaleString():'-')+pt+'</b><span>学历</span><b>'+(node.education||'-')+'</b><span>等级</span><b>'+(node.level||'-')+'</b><span>模型</span><b>'+(node.n_models||0)+'</b>';
+  document.getElementById('dModelsH').textContent='各模型综合冲击('+(node.n_models||0)+') · 条形见分歧';
+  document.getElementById('dModels').innerHTML=SCOREM.map(m=>{const e=node.by_model?node.by_model[m]:null;const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+esc(m)+' <b>'+v+'</b></span>';}).join('')||'-';
+  document.getElementById('dRat').textContent=node.eval?'「'+node.eval+'」':'';
+  document.getElementById('dSrc').innerHTML='细类为多模型集成估算,人数由所属中类官方就业按占比分配。';
+  requestAnimationFrame(()=>{drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>d[k]||0));drawBars(document.getElementById('dvbars'),node);});}
+function openLeaf(node){S.leaf=node.code;top.classList.remove('collapsed');top.classList.add('detail');backTab.style.display='block';fillLeaf(node);updateCrumb();}
+function drillInto(t){S.leaf=null;S.drill=t.node.code;rebuild({x:t.cx,y:t.cy,w:t.cw,h:t.ch});top.classList.remove('collapsed');top.classList.add('detail');backTab.style.display='block';fillDetail(t.node);updateCrumb();updateSummary();}
+function back(){if(S.leaf){S.leaf=null;const g=ALLZ.find(x=>x.code===S.drill);if(g)fillDetail(g);updateCrumb();return;}S.drill=null;rebuild(full());top.classList.remove('detail');backTab.style.display='none';updateCrumb();updateSummary();}
 backTab.onclick=back;
 
 const tip=document.getElementById('tip');let tipFull=false,tipTimer=null,tipXY=[0,0];
@@ -284,17 +366,18 @@ function tipHtml(n,full){const d=n.dims;let h='<div class="t">'+esc(n.title||n.n
   else if(n.pending)h+='<div class="hint">待采集 / 继承所属中类'+(n.inherit?'「'+esc(n.inherit)+'」':'')+',尚未单独打分</div>';
   if(full){h+='<canvas id="tipr"></canvas>';const bm=n.by_model;
     if(bm){h+='<div class="mods">'+SCOREM.map(m=>{const e=bm[m];const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')+'</div>';}
-    const rat=n.rationales?Object.values(n.rationales).filter(Boolean)[0]:'';if(rat)h+='<div class="r">「'+esc(rat)+'」</div>';}
+    const rat=n.rationales?Object.values(n.rationales).filter(Boolean)[0]:'';if(rat)h+='<div class="r">「'+esc(rat)+'」</div>';
+    if(S.drill&&!n.pending)h+='<div class="hint">点击查看该细类完整详情</div>';}
   else h+='<div class="hint">静止片刻 → 展开各模型分歧与雷达</div>';return h;}
 function showTip(n,full){tip.innerHTML=tipHtml(n,full);tip.classList.add('show');if(full){const c=document.getElementById('tipr');if(c)drawRadar(c,DIMKEYS.map(k=>n.dims[k]||0));}place();}
 function place(){const[x,y]=tipXY;let tw=tip.offsetWidth,th=tip.offsetHeight,tx=x+16,ty=y+16;if(tx+tw>innerWidth-8)tx=x-tw-16;if(ty+th>innerHeight-8)ty=innerHeight-th-8;if(ty<8)ty=8;tip.style.left=tx+'px';tip.style.top=ty+'px';}
 function hit(px,py){for(let i=tiles.length-1;i>=0;i--){const t=tiles[i];if(px>=t.cx&&px<=t.cx+t.cw&&py>=t.cy&&py<=t.cy+t.ch&&t.alpha>.3)return t;}return null;}
 cv.addEventListener('mousemove',e=>{const r=cv.getBoundingClientRect();tipXY=[e.clientX,e.clientY];const t=hit(e.clientX-r.left,e.clientY-r.top);
   if(!t){hoverId=null;tip.classList.remove('show');clearTimeout(tipTimer);cv.style.cursor='default';return;}
-  cv.style.cursor=t.kind==='zhong'?'zoom-in':'default';
+  cv.style.cursor=t.kind==='zhong'?'zoom-in':(t.kind==='leaf'&&!t.node.pending?'pointer':'default');
   if(t.id!==hoverId){hoverId=t.id;tipFull=false;showTip(t.node,false);clearTimeout(tipTimer);tipTimer=setTimeout(()=>{tipFull=true;const n=nodeOf(hoverId);if(n)showTip(n,true);},500);}else place();});
 cv.addEventListener('mouseleave',()=>{hoverId=null;tip.classList.remove('show');clearTimeout(tipTimer);});
-cv.addEventListener('click',e=>{const r=cv.getBoundingClientRect();const t=hit(e.clientX-r.left,e.clientY-r.top);if(t&&t.kind==='zhong')drillInto(t);});
+cv.addEventListener('click',e=>{const r=cv.getBoundingClientRect();const t=hit(e.clientX-r.left,e.clientY-r.top);if(!t)return;if(t.kind==='zhong')drillInto(t);else if(t.kind==='leaf'&&!t.node.pending)openLeaf(t.node);});
 
 const tg=document.getElementById('tg');
 METRICS.forEach(d=>{const b=document.createElement('button');b.textContent=d.label;if(d.main)b.classList.add('active');if(d.extra)b.classList.add('extra');
@@ -302,7 +385,7 @@ METRICS.forEach(d=>{const b=document.createElement('button');b.textContent=d.lab
 const dis=document.getElementById('disagree');dis.onclick=()=>{S.disagree=!S.disagree;dis.classList.toggle('on',S.disagree);updateLegend();};
 document.getElementById('search').addEventListener('input',e=>{S.query=e.target.value.trim();});
 const tbtn=document.getElementById('themebtn');
-function applyTheme(){document.documentElement.dataset.theme=theme();tbtn.textContent=(themeMode==='auto'?'🌗 跟随设备':themeMode==='dark'?'🌙 深色':'☀️ 浅色');updateLegend();updateSummary();updateDa();}
+function applyTheme(){document.documentElement.dataset.theme=theme();tbtn.textContent=(themeMode==='auto'?'🌗 跟随设备':themeMode==='dark'?'🌙 深色':'☀️ 浅色');updateLegend();updateSummary();updateDa();renderTierLegend();}
 tbtn.onclick=()=>{themeMode=themeMode==='auto'?'light':themeMode==='light'?'dark':'auto';applyTheme();};
 mq.addEventListener('change',()=>{if(themeMode==='auto')applyTheme();});
 const handle=document.getElementById('handle');
@@ -315,8 +398,28 @@ document.addEventListener('mousemove',e=>{
   handle.style.transform='translateX(-50%) scale('+hs.toFixed(3)+')';
   if(backTab.style.display!=='none'){const br=backTab.getBoundingClientRect(),bs=1+0.55*Math.max(0,1-Math.hypot(e.clientX-(br.left+br.width/2),e.clientY-(br.top+br.height/2))/150);backTab.style.transform='translateY(-50%) scale('+bs.toFixed(3)+')';}});
 
+/* 等级色阶图例:5档色块取各档中点色 */
+const TIERS=[{lab:'极低',rng:'0-20',mid:10},{lab:'低',rng:'21-40',mid:30},{lab:'中',rng:'41-60',mid:50},{lab:'高',rng:'61-80',mid:70},{lab:'极高',rng:'81-100',mid:90}];
+function renderTierLegend(){const el=document.getElementById('tierLegend');if(!el)return;
+  el.innerHTML='<span class="tt">等级色阶</span>'+TIERS.map(t=>'<span class="ts"><span class="tsw" style="background:'+colorAbs(t.mid)+'"></span><span class="tl">'+t.lab+'</span><span class="tn" style="color:'+colorAbs(t.mid)+'">'+t.rng+'</span></span>').join('');}
+
+/* 支持作者抽屉 */
+const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bilibili.com/2145586002'},{label:'小红书',url:'https://xhslink.com/m/9Xe25k6WMAj'},{label:'抖音',url:'https://v.douyin.com/_oLtsOTKdW0'}], wechatQR:'wechat.png', alipayQR:'alipay.png' };
+(function initSupport(){
+  const btn=document.getElementById('supBtn'),panel=document.getElementById('supPanel'),mask=document.getElementById('supMask'),closeX=document.getElementById('supClose');
+  const txt='这张图谱不是随手让 AI 估个分。它把《中华人民共和国职业分类大典(2022)》的 8 大类 79 中类 1639 细类全部铺开:就业锚定第七次全国人口普查、薪资锚定国家统计局,再请 claude、gpt、gemini、qwen、deepseek 等 13 个主流大模型,外加 Arena 匿名双盲对战,对每个细类逐一打分,按可信度温和加权集成,并保留模型间的分歧。光是细类深评这一步,就反复采集、查漏补缺了 {{DAYS}},处理了上万条打分。如果它帮到了你,欢迎关注我、和我聊聊 AI 与职业;要是愿意请我喝杯咖啡,下面是微信 / 支付宝的码。十分感谢。';
+  document.getElementById('supText').innerHTML='「'+esc(txt.replace('{{DAYS}}',SUPPORT.days))+'」';
+  document.getElementById('supSocial').innerHTML=(SUPPORT.socials||[]).map(s=>{const u=s.url&&s.url!=='#';return '<a href="'+esc(s.url||'#')+'"'+(u?' target="_blank" rel="noopener"':' onclick="return false"')+'>'+esc(s.label)+'</a>';}).join('');
+  document.getElementById('supQr').innerHTML=[['微信',SUPPORT.wechatQR,'site/wechat.png'],['支付宝',SUPPORT.alipayQR,'site/alipay.png']].map(([lab,src,hint])=>
+    '<div class="qb"><span class="ql">'+lab+'</span><img src="'+esc(src)+'" alt="'+esc(lab)+'收款码" onerror="this.onerror=null;this.outerHTML=\'<span class=&quot;ph&quot;>把收款码图片放到 '+esc(hint)+'</span>\'"></div>').join('');
+  const open=()=>{panel.classList.add('show');mask.classList.add('show');btn.style.opacity='0';btn.style.pointerEvents='none';};
+  const close=()=>{panel.classList.remove('show');mask.classList.remove('show');btn.style.opacity='';btn.style.pointerEvents='';};
+  btn.onclick=open;closeX.onclick=close;mask.onclick=close;
+  document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('show'))close();});
+})();
+
 window.addEventListener('resize',resize);
-updateRange();resize();updateCrumb();updateLegend();updateSummary();updateDa();setHandle();requestAnimationFrame(frame);requestAnimationFrame(radarFrame);
+updateRange();resize();updateCrumb();updateLegend();updateSummary();updateDa();renderTierLegend();setHandle();requestAnimationFrame(frame);requestAnimationFrame(radarFrame);
 window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},back:back,theme:m=>{themeMode=m;applyTheme();},collapse:()=>{top.classList.toggle('collapsed');setHandle();},
   metric:k=>{S.dim=k;S.disagree=false;dis.classList.remove('on');[...tg.children].forEach(x=>x.classList.toggle('active',x.textContent===((METRICS.find(m=>m.key===k)||{}).label)));updateRange();updateLegend();},
   hover:c=>{const t=tiles.find(x=>x.id==='z:'+c||x.id==='l:'+c);if(t){hoverId=t.id;tipXY=[innerWidth/2,innerHeight*0.62];showTip(t.node,true);}},
