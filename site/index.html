@@ -409,21 +409,13 @@ const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bili
 (function initSupport(){
   const btn=document.getElementById('supBtn'),panel=document.getElementById('supPanel'),mask=document.getElementById('supMask'),closeX=document.getElementById('supClose');
   const txt='这个项目最初的灵感来源,是我一段时间前在B站刷到的一个视频.视频里闪过了一个片段(这里附上超链接:https://madeye.github.io/jobs/).我当时对那一幕很印象深刻,便很快就找到了原出处(这里附上超链接:https://madeye.github.io/jobs/)和最最原始的出处(这里附上超链接:[https://madeye.github.io/jobs/](https://github.com/karpathy/jobs)).但我认为事情不该停止于此.如果我有办法统计人们所知的所有岗位(精度达到国家统计局的1639个细类职业)呢?如果我能给出更多维度的建议呢?如果我还能甚至进一步统计更多国家的数据,用来打破信息差呢?于是,这个项目便应运而生了.
-
 本项目以Claude Code的Opus4.8Max为核心骨架,但数据的搜集除了Opus本身之外,我还通过个人自创的"众议院"多Agent架构(从GLM,DeepSeek,Qwen,再到Gemini,GPT,Grok等共计十余个国内外主流模型)从多个角度设法采集了大量的数据,并进行了加权整合等各种复杂的处理,以此来尽可能减小误差,尽量得到最客观的答案.
-
 整个项目的代码时间倒是没花多少,主要是绝大部分时间都是在搜集数据,即分发提示词到各个AI,然后各个AI经过漫长的深度研究或任务模式后返回结果,然后再一点点整理并整合.
-
 而看着后面有这么多todo要做,我是真的很头大啊.不过我也不奢求什么,我只是希望我的这个东西可以帮助到更多人.
-
 如果你愿意的话,可以自由选择给我一点点打赏.毕竟花费了这么多的精力才勉强做出来这个东西,后面估计还会有良心被狗吃了的东西拿去倒卖...唉;
-
 如果你不想打赏的话也没关系,可以去看看我的各大平台的社交账号.我目前的重心是搬运并翻译油管的各种类型视频,来帮助到更多人.如果你喜欢我的视频的话也可以一点点支持.
-
 如果你也不想看我的那些视频的话也没什么,毕竟人各有所好嘛.只要这个网站多多少少帮助到了你,那么我的目的就已经达到了.
-
 总之,如果你还有任何建议,欢迎通过GitHub,社交账号等各种途径来反馈!我会尽量都看的!
-
 感谢你对巴别塔工程的支持!';
   document.getElementById('supText').innerHTML='「'+esc(txt.replace('{{DAYS}}',SUPPORT.days))+'」';
   document.getElementById('supSocial').innerHTML=(SUPPORT.socials||[]).map(s=>{const u=s.url&&s.url!=='#';return '<a href="'+esc(s.url||'#')+'"'+(u?' target="_blank" rel="noopener"':' onclick="return false"')+'>'+esc(s.label)+'</a>';}).join('');
