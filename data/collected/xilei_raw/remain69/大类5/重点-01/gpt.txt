@@ -1,0 +1,30 @@
+下面是我按“AI 时代冲击”口径做的独立估计，偏向看真实落地，不按概念热度打分。
+
+5-03-01-01 家畜繁殖员：AI 已先吃掉的是发情识别、配种时点判断、谱系与繁育档案整理，FAO 也把发情监测、性控精液、早孕检测列在高投入繁殖技术里。真正还卡在人这边的是现场授配、失败原因排查和个体差异判断，属于明显增强型岗位，不是被一口吞掉的那种。 ([FAOHome][1])
+〔5-03-01-01 家畜繁殖员〕综合72 自动化66 增强84 数字78 护城河44 落地73 ┃ 占比10% ┃ 学历大专 ┃ 薪资中 ┃ 等级高
+
+5-03-01-02 家禽繁殖员：家禽繁殖更像标准化工厂流程，AI 和视觉系统已经在禽群管理、环境控制、孵化监测这些环节持续切入，冲击会明显快于家畜繁殖。被替代得最厉害的是巡检、记录、分群和参数盯控，人的价值更多转到异常处置、批次管理和工艺协调。 ([MDPI][2])
+〔5-03-01-02 家禽繁殖员〕综合76 自动化72 增强82 数字86 护城河34 落地80 ┃ 占比8% ┃ 学历大专 ┃ 薪资中 ┃ 等级高
+
+5-03-02-01 家畜饲养员：传感器、项圈、摄像头和环境控制已经把喂料、通风、体况监测做成了半自动闭环，很多日常巡栏会被系统提醒替代。但真到处理跛行、应激、采食异常、栏舍冲突这些现场问题，仍很吃经验和手感，所以是“减员提效”而不是“消失”。 ([FAOHome][3])
+〔5-03-02-01 家畜饲养员〕综合63 自动化58 增强76 数字71 护城河48 落地72 ┃ 占比25% ┃ 学历高中 ┃ 薪资中 ┃ 等级高
+
+5-03-02-02 家禽饲养员：这一类最像 AI 已经在门口敲门的岗位，鸡舍里的温湿度、氨气、饲喂和灯光控制，本来就特别适合规则化自动运行。最容易被替掉的是日常巡检、抄表、喂料补料和异常提醒，留下来的主要是死淘处置、疾病预警和批次管理。 ([MDPI][4])
+〔5-03-02-02 家禽饲养员〕综合82 自动化85 增强78 数字90 护城河25 落地88 ┃ 占比30% ┃ 学历高中 ┃ 薪资低 ┃ 等级极高
+
+5-03-03-01 经济昆虫养殖员：这个方向的 AI 落地更多在小型化、封闭化系统里，像环境监测、自动投喂、机器人采收和废弃物转化，技术路线已经很清楚。问题是行业本身规模还没那么大，真正卡住的不是“能不能自动”，而是工艺标准化、品种适配和经济性。 ([ResearchGate][5])
+〔5-03-03-01 经济昆虫养殖员〕综合67 自动化70 增强74 数字79 护城河36 落地62 ┃ 占比5% ┃ 学历大专 ┃ 薪资中 ┃ 等级高
+
+5-03-03-02 实验动物养殖员：实验动物这条线的数字化其实很早就开始了，家笼监测、行为识别、LIMS 和 colony 管理都已经能把很多日常操作做成系统化流程。可一旦涉及福利、伦理、污染控制、繁殖纯度和异常个体处置，还是高度依赖人工判断，所以更像“后台被重构”，不是前台完全自动化。 ([PMC][6])
+〔5-03-03-02 实验动物养殖员〕综合74 自动化67 增强86 数字92 护城河40 落地77 ┃ 占比8% ┃ 学历本科 ┃ 薪资中 ┃ 等级高
+
+5-03-03-03 特种动物养殖员：这类岗位的 AI 冲击最不整齐，能做的多是视频巡检、环境预警、行为识别和档案管理，真正的饲养动作还是强依赖物种经验。因为对象太分散、标准化程度低，技术能进场但替代速度慢，护城河更多来自物种知识、应激处理和合规经验。 ([PMC][7])
+〔5-03-03-03 特种动物养殖员〕综合41 自动化30 增强58 数字46 护城河62 落地33 ┃ 占比14% ┃ 学历大专 ┃ 薪资中 ┃ 等级中
+
+[1]: https://www.fao.org/4/i3288e/i3288e.pdf?utm_source=chatgpt.com "Mitigation of greenhouse gas emissions in livestock ..."
+[2]: https://www.mdpi.com/2077-0472/14/12/2187?utm_source=chatgpt.com "AI-Based Monitoring for Enhanced Poultry Flock ..."
+[3]: https://www.fao.org/3/cb9479en/online/sofa-2022/digital-automation-technologies-robotics.html?utm_source=chatgpt.com "The state of digital automation technologies and robotics in ..."
+[4]: https://www.mdpi.com/2077-0472/15/19/2028?utm_source=chatgpt.com "How AI Improves Sustainable Chicken Farming"
+[5]: https://www.researchgate.net/publication/390170061_Advancing_urban_insect_farming_integrating_automation_vertical_farming_and_sustainable_waste_management_systems "(PDF) Advancing urban insect farming: integrating automation, vertical farming, and sustainable waste management systems"
+[6]: https://pmc.ncbi.nlm.nih.gov/articles/PMC8498589/?utm_source=chatgpt.com "Measuring Behavior in the Home Cage: Study Design ... - PMC"
+[7]: https://pmc.ncbi.nlm.nih.gov/articles/PMC8614292/?utm_source=chatgpt.com "A Systematic Review of the Use of Technology to Monitor ..."

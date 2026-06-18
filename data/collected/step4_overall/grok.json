@@ -1,0 +1,397 @@
+[
+ {
+  "code": "1-01",
+  "overall": 22,
+  "rationale": "战略决策、组织动员和政治判断高度依赖人为权威，AI仅用于数据参考"
+ },
+ {
+  "code": "1-02",
+  "overall": 25,
+  "rationale": "行政决策、舆情应对和跨部门协调仍需人际平衡，AI辅助分析但不主导"
+ },
+ {
+  "code": "1-03",
+  "overall": 20,
+  "rationale": "协商、联络和代表性工作以人际信任为核心"
+ },
+ {
+  "code": "1-04",
+  "overall": 18,
+  "rationale": "动员群众、调解矛盾，线下互动主导"
+ },
+ {
+  "code": "1-05",
+  "overall": 30,
+  "rationale": "社区治理、纠纷处理高度本地化和人情化"
+ },
+ {
+  "code": "1-06",
+  "overall": 35,
+  "rationale": "战略制定、团队激励和风险担责，AI提供洞察但最终决策靠人"
+ },
+ {
+  "code": "2-01",
+  "overall": 78,
+  "rationale": "文献综述、数据建模和假设生成被AI大幅加速，原创实验设计仍需人"
+ },
+ {
+  "code": "2-02",
+  "overall": 82,
+  "rationale": "代码生成、仿真优化和方案迭代高度自动化，现场验证与集成仍需人"
+ },
+ {
+  "code": "2-03",
+  "overall": 45,
+  "rationale": "本地土壤、气候和作物实操经验为主，AI辅助遥感决策"
+ },
+ {
+  "code": "2-04",
+  "overall": 38,
+  "rationale": "复杂系统维护和突发故障处理依赖现场判断"
+ },
+ {
+  "code": "2-05",
+  "overall": 55,
+  "rationale": "诊断辅助强大，但手术、护理和患者沟通高度人性化"
+ },
+ {
+  "code": "2-06",
+  "overall": 85,
+  "rationale": "数据分析、报告生成和交易算法被AI重塑，监管决策仍需人"
+ },
+ {
+  "code": "2-07",
+  "overall": 48,
+  "rationale": "案例检索快，但解释、庭审和伦理判断依赖人为权威"
+ },
+ {
+  "code": "2-08",
+  "overall": 62,
+  "rationale": "个性化辅导和课堂互动仍以人为核心，内容生成辅助"
+ },
+ {
+  "code": "2-09",
+  "overall": 68,
+  "rationale": "创意生成工具普及，但情感表达和现场表演难以替代"
+ },
+ {
+  "code": "2-10",
+  "overall": 80,
+  "rationale": "内容撰写、编辑和分发被AI剧变，深度调查和价值观把关仍需人"
+ },
+ {
+  "code": "2-99",
+  "overall": 70,
+  "rationale": "视具体领域，整体偏信息密集"
+ },
+ {
+  "code": "3-01",
+  "overall": 75,
+  "rationale": "文件起草、数据录入和流程审批大量自动化"
+ },
+ {
+  "code": "3-02",
+  "overall": 25,
+  "rationale": "现场巡查、应急处置和物理干预为主"
+ },
+ {
+  "code": "3-03",
+  "overall": 52,
+  "rationale": "材料整理快，但面对面调解和信任建立靠人"
+ },
+ {
+  "code": "3-99",
+  "overall": 65,
+  "rationale": "混合事务，偏行政辅助"
+ },
+ {
+  "code": "4-01",
+  "overall": 68,
+  "rationale": "电商推荐、智能客服和库存管理剧变，线下体验店仍需人"
+ },
+ {
+  "code": "4-02",
+  "overall": 60,
+  "rationale": "路线优化和分拣自动化，驾驶与装卸仍依赖人"
+ },
+ {
+  "code": "4-03",
+  "overall": 28,
+  "rationale": "点单推荐辅助，烹饪、服务和氛围营造高度人工"
+ },
+ {
+  "code": "4-04",
+  "overall": 92,
+  "rationale": "代码、运维和数据服务被AI深度重塑"
+ },
+ {
+  "code": "4-05",
+  "overall": 70,
+  "rationale": "柜台交易和基础咨询自动化，复杂理财和信任服务保留"
+ },
+ {
+  "code": "4-06",
+  "overall": 55,
+  "rationale": "虚拟看房和合同生成快，实地谈判和本地关系仍关键"
+ },
+ {
+  "code": "4-07",
+  "overall": 65,
+  "rationale": "合同处理和匹配算法主导，高端咨询保留"
+ },
+ {
+  "code": "4-08",
+  "overall": 78,
+  "rationale": "远程支持和故障诊断被AI增强"
+ },
+ {
+  "code": "4-09",
+  "overall": 48,
+  "rationale": "监测数据分析自动化，实地维护为主"
+ },
+ {
+  "code": "4-10",
+  "overall": 12,
+  "rationale": "家政、保姆等高度个性化体力服务"
+ },
+ {
+  "code": "4-11",
+  "overall": 42,
+  "rationale": "系统监控自动化，现场抢修依赖人"
+ },
+ {
+  "code": "4-12",
+  "overall": 35,
+  "rationale": "诊断辅助，动手修理仍需熟练工"
+ },
+ {
+  "code": "4-13",
+  "overall": 60,
+  "rationale": "在线内容和辅导工具普及，线下体验保留"
+ },
+ {
+  "code": "4-14",
+  "overall": 40,
+  "rationale": "健身指导APP辅助，陪练和康复需人"
+ },
+ {
+  "code": "4-99",
+  "overall": 45,
+  "rationale": "混合，偏服务端"
+ },
+ {
+  "code": "5-01",
+  "overall": 18,
+  "rationale": "种植、收割等田间作业高度体力，智能农机辅助有限"
+ },
+ {
+  "code": "5-02",
+  "overall": 15,
+  "rationale": "山地作业和生态管护，现场不可替代"
+ },
+ {
+  "code": "5-03",
+  "overall": 25,
+  "rationale": "饲养、防疫和观察动物行为靠经验"
+ },
+ {
+  "code": "5-04",
+  "overall": 20,
+  "rationale": "捕捞和养殖环境复杂多变"
+ },
+ {
+  "code": "5-05",
+  "overall": 35,
+  "rationale": "数据监测和 drone辅助提升，但基础操作仍人为主"
+ },
+ {
+  "code": "5-99",
+  "overall": 20,
+  "rationale": "类似体力导向"
+ },
+ {
+  "code": "6-01",
+  "overall": 55,
+  "rationale": "简单分拣和初加工易自动化"
+ },
+ {
+  "code": "6-02",
+  "overall": 50,
+  "rationale": "配方控制和质检辅助，现场操作保留"
+ },
+ {
+  "code": "6-03",
+  "overall": 45,
+  "rationale": "工艺特定，部分自动化"
+ },
+ {
+  "code": "6-04",
+  "overall": 40,
+  "rationale": "机器操作和质量把控仍需人"
+ },
+ {
+  "code": "6-05",
+  "overall": 38,
+  "rationale": "缝制和手工环节多"
+ },
+ {
+  "code": "6-06",
+  "overall": 35,
+  "rationale": "精细手工和装配"
+ },
+ {
+  "code": "6-07",
+  "overall": 48,
+  "rationale": "流水线为主但调整靠人"
+ },
+ {
+  "code": "6-08",
+  "overall": 65,
+  "rationale": "数字印刷剧变，创意校对保留"
+ },
+ {
+  "code": "6-09",
+  "overall": 30,
+  "rationale": "手工工艺主导"
+ },
+ {
+  "code": "6-10",
+  "overall": 42,
+  "rationale": "危险环境监控自动化，操作谨慎"
+ },
+ {
+  "code": "6-11",
+  "overall": 52,
+  "rationale": "配方模拟加速，现场安全操作关键"
+ },
+ {
+  "code": "6-12",
+  "overall": 58,
+  "rationale": "洁净环境和精密控制，合规验证需人"
+ },
+ {
+  "code": "6-13",
+  "overall": 60,
+  "rationale": "连续生产流程自动化程度较高"
+ },
+ {
+  "code": "6-14",
+  "overall": 45,
+  "rationale": "模具和成型操作"
+ },
+ {
+  "code": "6-15",
+  "overall": 28,
+  "rationale": "高温重体力"
+ },
+ {
+  "code": "6-16",
+  "overall": 15,
+  "rationale": "地下危险作业，远程监控有限"
+ },
+ {
+  "code": "6-17",
+  "overall": 25,
+  "rationale": "高温高危环境"
+ },
+ {
+  "code": "6-18",
+  "overall": 70,
+  "rationale": "CNC和编程被AI优化，装配仍需熟练技工"
+ },
+ {
+  "code": "6-19",
+  "overall": 40,
+  "rationale": "焊接和加工"
+ },
+ {
+  "code": "6-20",
+  "overall": 62,
+  "rationale": "设计与调试结合"
+ },
+ {
+  "code": "6-21",
+  "overall": 55,
+  "rationale": "定制化高，现场集成关键"
+ },
+ {
+  "code": "6-22",
+  "overall": 58,
+  "rationale": "装配线部分自动化，质检复杂"
+ },
+ {
+  "code": "6-23",
+  "overall": 48,
+  "rationale": "大型构件和安全验证"
+ },
+ {
+  "code": "6-24",
+  "overall": 65,
+  "rationale": "精密组装"
+ },
+ {
+  "code": "6-25",
+  "overall": 75,
+  "rationale": "芯片和组装高度技术化但仍需人"
+ },
+ {
+  "code": "6-26",
+  "overall": 68,
+  "rationale": "精密校准"
+ },
+ {
+  "code": "6-27",
+  "overall": 32,
+  "rationale": "分拣和处理体力为主"
+ },
+ {
+  "code": "6-28",
+  "overall": 50,
+  "rationale": "系统调度自动化，维护现场化"
+ },
+ {
+  "code": "6-29",
+  "overall": 22,
+  "rationale": "高空和复杂现场作业"
+ },
+ {
+  "code": "6-30",
+  "overall": 35,
+  "rationale": "驾驶操作仍为主"
+ },
+ {
+  "code": "6-31",
+  "overall": 72,
+  "rationale": "物流和辅助数据高度优化"
+ },
+ {
+  "code": "6-99",
+  "overall": 40,
+  "rationale": "混合体力导向"
+ },
+ {
+  "code": "7-01",
+  "overall": 25,
+  "rationale": "指挥决策和战场判断高度人为"
+ },
+ {
+  "code": "7-02",
+  "overall": 20,
+  "rationale": "一线执行和训练督导"
+ },
+ {
+  "code": "7-03",
+  "overall": 10,
+  "rationale": "基础体能和服从执行"
+ },
+ {
+  "code": "7-04",
+  "overall": 40,
+  "rationale": "后勤和行政支持，部分信息工作受影响"
+ },
+ {
+  "code": "8-00",
+  "overall": 40,
+  "rationale": "包含多种边缘或过渡职业，AI渗透程度差异大"
+ }
+]

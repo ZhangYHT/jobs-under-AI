@@ -1,0 +1,13 @@
+这类岗位本质上是职业编码里的兜底项，官方说明就是“找不到所属职业”时填 8-00-00-00，所以它更像杂项现场/辅助工作的集合。现有 AI 最先切进去的是信息归类、排班派单、表单核对和重复问答这类可编码任务；ILO 也指出 clerical 职业暴露最高，而 OECD 认为 AI 最接近 routine information processing、administrative work 和 codifiable tasks。([srsj.cngy.gov.cn][1])
+但这类工作往往还要临机协调、现场应变和责任兜底，地方劳动力市场也把它单列为有实际需求的职业代码，说明短期更像被重组而不是消失。([Fujian HR & Social Security][2])
+
+〔8-00-00-00 不便分类的其他从业人员〕综合72 自动化80 增强42 数字65 护城河14 落地76 ┃ 占比100% ┃ 学历初中 ┃ 薪资低 ┃ 等级高
+
+[1]: https://srsj.cngy.gov.cn/Files/UploadFile/SiteFile/20160720104022026/2023/03/28/33236d995ac3404a99de2429f1e92f52.pdf?utm_source=chatgpt.com "岗位类别编码表"
+[2]: https://rst.fujian.gov.cn/zw/tjxx/tjfx/202507/t20250716_6967935.htm?utm_source=chatgpt.com "
+        福建省人力资源市场2025年第二季度职业供求状况分析
+        \_
+        统计分析
+        \_
+        省人社厅
+    "

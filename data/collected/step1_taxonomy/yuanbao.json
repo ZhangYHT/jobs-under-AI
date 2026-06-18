@@ -1,0 +1,526 @@
+[
+ {
+  "code": "1-01",
+  "title_official": "中国共产党机关和基层组织负责人",
+  "title_match": true,
+  "english": "Leaders of CPC Organs and Grassroots Organization Heads",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "OSTA职业分类查询 1-01条目",
+    "url": "https://osta.mohrss.gov.cn/career",
+    "type": "official"
+   },
+   {
+    "name": "大典目录(社会公示稿)GBM10100",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "OSTA系统登记名='中国共产党机关和基层组织负责人'(2细类:1-01-00-01中国共产党中央委员会和地方各级党组织负责人、1-01-00-02基层党组织负责人)。公示稿简写为'中国共产党机关负责人'，正式颁布名称扩展包含基层组织维度。编码1-01/GBM10100确认无误。",
+  "note": "细类:1-01-00-01中国共产党中央委员会和地方各级党组织负责人;1-01-00-02基层党组织负责人。无S/L标记。"
+ },
+ {
+  "code": "1-02",
+  "title_official": "国家机关负责人",
+  "title_match": true,
+  "english": "State Organ Leaders",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录(社会公示稿)GBM10200",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   },
+   {
+    "name": "人社局转存PDF正文细类",
+    "url": "https://hrss.sz.gov.cn/attachment/0/731/731778/8340671.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM10200 国家机关负责人；细类含1-02-01-01国家权力机关负责人、1-02-02-01国家行政机关负责人等。编码与名称与官方一致。",
+  "note": "无S/L标记。"
+ },
+ {
+  "code": "1-03",
+  "title_official": "民主党派和工商联负责人",
+  "title_match": true,
+  "english": "Leaders of Democratic Parties, All-China Federation of Industry and Commerce",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM10300",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM10300 民主党派和工商联负责人，编码1-03确认。",
+  "note": "无S/L标记。"
+ },
+ {
+  "code": "1-04",
+  "title_official": "人民团体和群众团体、社会组织及其他成员组织负责人",
+  "title_match": true,
+  "english": "Leaders of People's Organizations, Mass Organizations, Social Organizations and Other Member Organizations",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM10400",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM10400 人民团体和群众团体、社会组织及其他成员组织负责人，细类1-04-01~1-04-06。编码与名称一致。",
+  "note": "细类:1-04-01人民团体和群众团体负责人;1-04-02社会团体负责人;1-04-03社会服务机构负责人;1-04-04社会中介组织负责人;1-04-05基金会负责人;1-04-06宗教组织负责人。无S/L标记。"
+ },
+ {
+  "code": "1-05",
+  "title_official": "基层群众性自治组织负责人",
+  "title_match": true,
+  "english": "Leaders of Grassroots Mass Self-Governing Organizations",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM10500",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   },
+   {
+    "name": "大典正文细类(深圳人社转存PDF)",
+    "url": "https://hrss.sz.gov.cn/attachment/0/731/731778/8340671.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM10500 基层群众性自治组织负责人；细类1-05-00-01居民委员会负责人、1-05-00-02村民委员会负责人。编码与名称一致。",
+  "note": "无S/L标记。"
+ },
+ {
+  "code": "1-06",
+  "title_official": "企事业单位负责人",
+  "title_match": true,
+  "english": "Enterprise and Institutional Leaders",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM10600",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM10600 企事业单位负责人；1-06-01企业负责人(1-06-01-01企业董事/1-06-01-02企业经理/1-06-01-03国有企业中国共产党组织负责人)、1-06-02事业单位负责人。编码与名称一致。",
+  "note": "无S/L标记。"
+ },
+ {
+  "code": "2-01",
+  "title_official": "科学研究人员",
+  "title_match": true,
+  "english": "Science Researchers",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM20100",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM20100 科学研究人员，小类2-01-01哲学至2-01-10文学艺术研究人员。名称与编码一致。部分细类带L(如地球科学研究人员L)，但具体L归属需查正文——S标记无。",
+  "note": "2-01-06-01数学研究人员L、2-01-07-00农业科学研究人员L——L标记见于公示稿旁注，非S。建议查大典正文P.xx确认全部L旁注。"
+ },
+ {
+  "code": "2-02",
+  "title_official": "工程技术人员",
+  "title_match": true,
+  "english": "Engineering Technicians",
+  "digital_xilei": [
+   "2-02-01-02 地球物理地球化学与遥感勘查工程技术人员(S)",
+   "2-02-02-01 大地测量工程技术人员(S)",
+   "2-02-02-02 工程测量工程技术人员(S)",
+   "2-02-02-03 摄影测量与遥感工程技术人员(S)",
+   "2-02-02-04 地图制图工程技术人员(S)",
+   "2-02-02-05 海洋测绘工程技术人员(S)",
+   "2-02-02-06 地理国情监测工程技术人员(S)",
+   "2-02-02-07 地理信息系统工程技术人员(S)",
+   "2-02-02-08 导航与位置服务工程技术人员(S)",
+   "2-02-02-09 地质测绘工程技术人员(S)",
+   "2-02-07-07 自动控制工程技术人员(S)",
+   "2-02-09-03 雷达导航工程技术人员(S)",
+   "2-02-09-05 广播视听设备工程技术人员(S)",
+   "2-02-10-01 通信工程技术人员(S)",
+   "2-02-10-03 计算机软件工程技术人员(S)",
+   "2-02-10-04 计算机网络工程技术人员(S)",
+   "2-02-10-05 信息系统分析工程技术人员(S)",
+   "2-02-10-06 嵌入式系统设计工程技术人员(S)",
+   "2-02-10-07 信息安全工程技术人员(S)",
+   "2-02-10-08 信息系统运行维护工程技术人员(S)",
+   "2-02-14-02 广播电视传输覆盖工程技术人员(S)",
+   "2-02-18-05 工程勘察与岩土工程技术人员(S)",
+   "2-02-22-01 海洋调查与监测工程技术人员(S)",
+   "2-02-22-02 海洋环境预报工程技术人员(S)",
+   "2-02-22-04 海洋工程勘察设计工程技术人员(S)",
+   "2-02-25-01 气象观测工程技术人员(S)",
+   "2-02-25-02 天气预报工程技术人员(S)",
+   "2-02-25-03 气候监测预测工程技术人员(S)",
+   "2-02-25-04 气象服务工程技术人员(S)",
+   "2-02-25-05 人工影响天气工程技术人员(S)",
+   "2-02-26-01 地震监测预测工程技术人员(S)",
+   "2-02-30-02 物流工程技术人员(S)",
+   "2-02-30-08 信息管理工程技术人员(S)",
+   "2-02-30-09 数据分析处理工程技术人员(S)",
+   "2-02-30-11 供应链工程技术人员(S)",
+   "2-02-34-02 工业设计工程技术人员(S)",
+   "2-02-38-01 人工智能工程技术人员(S)",
+   "2-02-38-02 物联网工程技术人员(S)",
+   "2-02-38-03 大数据工程技术人员(S)",
+   "2-02-38-04 云计算工程技术人员(S)",
+   "2-02-38-05 智能制造工程技术人员(S)",
+   "2-02-38-06 工业互联网工程技术人员(S)",
+   "2-02-38-07 虚拟现实工程技术人员(S)",
+   "2-02-38-08 区块链工程技术人员(S)",
+   "2-02-38-09 集成电路工程技术人员(S)",
+   "2-02-38-10 机器人工程技术人员(S)",
+   "2-02-38-11 增材制造工程技术人员(S)",
+   "2-02-38-12 数据安全工程技术人员(S)",
+   "2-02-38-13 密码工程技术人员(S)"
+  ],
+  "green_xilei": [
+   "2-02-01-02 地球物理地球化学与遥感勘查工程技术人员(L/S)",
+   "2-02-01-03 水工环地质工程技术人员(L)",
+   "2-02-02-01 大地测量工程技术人员(L)",
+   "2-02-02-03 摄影测量与遥感工程技术人员(L)",
+   "2-02-02-05 海洋测绘工程技术人员(L)",
+   "2-02-02-06 地理国情监测工程技术人员(L)",
+   "2-02-02-07 地理信息系统工程技术人员(L)",
+   "2-02-02-09 地质测绘工程技术人员(L)",
+   "2-02-03-05 矿山环保复垦工程技术人员(L)",
+   "2-02-05-07 冶金热能工程技术人员(L)",
+   "2-02-07-11 汽车工程技术人员(L)",
+   "2-02-12-01 发电工程技术人员(L)",
+   "2-02-12-02 供用电工程技术人员(L)",
+   "2-02-12-03 变电工程技术人员(L)",
+   "2-02-12-04 输电工程技术人员(L)",
+   "2-02-12-05 电力工程安装工程技术人员(L)",
+   "2-02-17-01 铁道运输工程技术人员(L)",
+   "2-02-18-01 建筑和市政设计工程技术人员(L)",
+   "2-02-18-03 风景园林工程技术人员(L)",
+   "2-02-18-04 供水排水工程技术人员(L)",
+   "2-02-18-06 城镇燃气与供热工程技术人员(L)",
+   "2-02-18-07 环境卫生工程技术人员(L)",
+   "2-02-20-01 防沙治沙工程技术人员(L)",
+   "2-02-20-02 森林培育工程技术人员(L)",
+   "2-02-20-03 园林绿化工程技术人员(L)",
+   "2-02-20-04 野生动植物保护利用工程技术人员(L)",
+   "2-02-20-05 自然保护区工程技术人员(L)",
+   "2-02-20-06 森林保护工程技术人员(L)",
+   "2-02-20-10 林业资源调查与监测工程技术人员(L)",
+   "2-02-20-11 园林植物保护工程技术人员(L)",
+   "2-02-20-12 湿地保护修复工程技术人员(L)",
+   "2-02-21-01 水文水资源工程技术人员(L)",
+   "2-02-21-02 水生态和河湖治理管护工程技术人员(L)",
+   "2-02-21-04 防汛抗旱减灾工程技术人员(L)",
+   "2-02-21-05 节水工程技术人员(L)",
+   "2-02-22-01 海洋调查与监测工程技术人员(L/S)",
+   "2-02-22-02 海洋环境预报工程技术人员(L/S)"
+  ],
+  "sources": [
+   {
+    "name": "人社部 发布会(2022-09-28)",
+    "url": "https://www.mohrss.gov.cn/SYrlzyhshbzb/dongtaixinwen/fbh/202209/t20220928_487878.html",
+    "type": "official"
+   },
+   {
+    "name": "人社部 数字职业标识表",
+    "url": "https://chinajob.mohrss.gov.cn/h5/c/2022-10-28/363399.shtml",
+    "type": "official"
+   },
+   {
+    "name": "安顺市政府转存完整97数字职业表",
+    "url": "https://hgsgwh.anshun.gov.cn/wsfw/bmlqfw/ldjy/202305/t20230523_79856632.html",
+    "type": "official-mirror"
+   },
+   {
+    "name": "人社部 绿色职业标识表(部分)",
+    "url": "https://www.mohrss.gov.cn/wap/xw/rsxw/202210/t20221028_489103.html",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "2-02是S/L标记最密集中类：49个S归属2-02(含数字技术工程技术人员小类2-02-38下的13个新职业)。L标记含地质/测绘/电力/市政/林草/水文/海洋等方向。以上L列表来自人社部公开页可见部分(至2-02-22-x)，更全的L清单需查大典正文P.xx逐条搜集。",
+  "note": "中类2-02(GBM20200)为工程技术最大中类，S/L交叉处(如2-02-22-01/02海洋调查与监测/环境预报=L/S)。green_xilei此处列出人社部官网可见部分；全量L归属请核大典正文。"
+ },
+ {
+  "code": "2-03",
+  "title_official": "农业技术人员",
+  "title_match": true,
+  "english": "Agricultural Technicians",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM20300",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM20300 农业技术人员(土壤肥料/农业技术指导/植物保护/园艺/兽医兽药/畜牧草业/水产等)。无S标记。L标记可能涉及农业环保/有机农业方向但需查正文确认。",
+  "note": "用户原注[含L绿色职业]——农业技术人员大类中确有与环境/生态相关的绿色属性岗位(如农业环保、土壤修复)，但细类级别L标记需核大典正文；未见S标记。"
+ },
+ {
+  "code": "2-04",
+  "title_official": "飞机和船舶技术人员",
+  "title_match": true,
+  "english": "Aircraft and Vessel Technicians",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM20400",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM20400 飞机和船舶技术人员。无S标记。L标记未见关联。",
+  "note": "无S/L标记。小类含飞行驾驶员、领航员、船舶指挥和引航人员等。"
+ },
+ {
+  "code": "2-05",
+  "title_official": "卫生专业技术人员",
+  "title_match": true,
+  "english": "Health Professionals",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM20500",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM20500 卫生专业技术人员(西医/中医/护理/药学/公共卫生/医疗技术等)。无S标记。L标记无。",
+  "note": "无S/L标记。"
+ },
+ {
+  "code": "2-06",
+  "title_official": "经济和金融专业人员",
+  "title_match": true,
+  "english": "Economic and Financial Specialists",
+  "digital_xilei": [
+   "2-06-07-13 数字化管理师(S)",
+   "2-06-14-00 金融科技师(S)"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "人社部 数字职业标识表(含2-06-14-00金融科技师)",
+    "url": "https://hgsgwh.anshun.gov.cn/wsfw/bmlqfw/ldjy/202305/t20230523_79856632.html",
+    "type": "official-mirror"
+   },
+   {
+    "name": "大典目录GBM20600",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "2-06-14-00金融科技师确认为S(序号51/97)；2-06-07-13数字化管理师确认为S(序号50/97)。大典2-06小类含经济和金融分析/审计/统计/会计/证券期货等。L不直接关联。",
+  "note": "2-06-14为新增小类(碳管理工程技术人员/金融科技师等新职业归入2-06-14)。用户原注[含L绿色职业]可能指碳管理工程技术人员(2-06-15-xx碳排放管理员方向)具绿色属性——需核大典正文对碳排放管理员是否标L。"
+ },
+ {
+  "code": "2-07",
+  "title_official": "监察、法律、社会和宗教专业人员",
+  "title_match": true,
+  "english": "Supervision, Legal, Social and Religious Professionals",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM20700",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM20700 监察、法律、社会和宗教专业人员(法官/检察官/律师/公证/司法鉴定/社会工作者/宗教教职人员)。无S标记。",
+  "note": "无S/L标记。3-03为对应的办事辅助层。"
+ },
+ {
+  "code": "2-08",
+  "title_official": "教学人员",
+  "title_match": true,
+  "english": "Teaching Professionals",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM20800",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM20800 教学人员(高等教育/中小学/幼儿/特殊教育/职业教育教师)。无S标记。",
+  "note": "无S/L标记。注：虽教学场景日益数字化，但'教师'本身未划入S细类。"
+ },
+ {
+  "code": "2-09",
+  "title_official": "文学艺术、体育专业人员",
+  "title_match": true,
+  "english": "Literary, Artistic and Sports Professionals",
+  "digital_xilei": [
+   "2-09-06-07 数字媒体艺术专业人员(S)"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "人社部 数字职业标识表",
+    "url": "https://hgsgwh.anshun.gov.cn/wsfw/bmlqfw/ldjy/202305/t20230523_79856632.html",
+    "type": "official-mirror"
+   },
+   {
+    "name": "大典目录GBM20900",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "2-09-06-07 数字媒体艺术专业人员确认为S(序号52/97)。2-09含文学/美术/音乐/舞蹈/戏剧影视/工艺美术/体育等专业人员的细类。",
+  "note": ""
+ },
+ {
+  "code": "2-10",
+  "title_official": "新闻出版、文化专业人员",
+  "title_match": true,
+  "english": "Journalism, Publishing and Cultural Professionals",
+  "digital_xilei": [
+   "2-10-02-04 数字出版编辑(S)",
+   "2-10-02-05 网络编辑(S)"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "人社部 数字职业标识表",
+    "url": "https://hgsgwh.anshun.gov.cn/wsfw/bmlqfw/ldjy/202305/t20230523_79856632.html",
+    "type": "official-mirror"
+   },
+   {
+    "name": "大典目录GBM21000",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "2-10-02-04数字出版编辑(S)序号53、2-10-02-05网络编辑(S)序号54。GBM21000含记者/编辑/翻译/图书档案/考古文物等。",
+  "note": ""
+ },
+ {
+  "code": "2-99",
+  "title_official": "其他专业技术人员",
+  "title_match": true,
+  "english": "Other Professionals",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM29900",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM29900 其他专业技术人员(含2-99-00-00 其他专业技术人员)。兜底中类。",
+  "note": "无S/L标记。兜底类。"
+ },
+ {
+  "code": "3-01",
+  "title_official": "行政办事及辅助人员",
+  "title_match": true,
+  "english": "Administrative and Clerical Support Workers",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM30100",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM30100 行政办事及辅助人员(行政业务/办公/保密/打字/收发等)。无S标记。",
+  "note": "无S/L标记。传统行政岗——AI替代风险高但本身不标S。"
+ },
+ {
+  "code": "3-02",
+  "title_official": "安全和消防及辅助人员",
+  "title_match": true,
+  "english": "Security, Firefighting and Related Auxiliary Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM30200",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM30200 安全和消防及辅助人员(人民警察/治安保卫/消防/安全/防爆等)。用户原注[含L绿色职业]——部分安全生产/环境安全监督岗具绿色关联但细类级L需核正文。",
+  "note": "用户标注[含L]——公共安全与职业健康安全方向，但3-02细类在已知公开L列表中未直接出现典型条目(133个L集中在2-02/4-09/6-xx)。如有L归属需查大典正文P.xx。无S标记。"
+ },
+ {
+  "code": "3-03",
+  "title_official": "仲裁、调解及相关法律事务辅助人员",
+  "title_match": true,
+  "english": "Arbitration, Mediation and Related Legal Affairs Support Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM30300(公示稿作'法律事务及辅助人员')",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   },
+   {
+    "name": "大典正文(深圳人社转存)3-03细类",
+    "url": "https://hrss.sz.gov.cn/attachment/0/731/731778/8340671.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM30300 正式颁布名确认为'仲裁、调解及相关法律事务辅助人员'(公示稿简写'法律事务及辅助人员')——系2022版新增4个中类之一。细类含仲裁员/调解员/书记员等。编码3-03确认。",
+  "note": "2022版新增中类(与法律事务及辅助人员重组相关)。无S/L标记。"
+ },
+ {
+  "code": "3-99",
+  "title_official": "其他办事人员和有关人员",
+  "title_match": true,
+  "english": "Other Clerical and Related Workers",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "大典目录GBM39900",
+    "url": "http://rsj.xam.gov.cn/rsj/fileDir/resource/cms/article/1151486/5904442/2024032009391533279.pdf",
+    "type": "quasi-official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "GBM39900 其他办事人员和有关人员。兜底。",
+  "note": "无S/L标记。"
+ }
+]

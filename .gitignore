@@ -1,0 +1,14 @@
+# Phase 0 screenshot tooling (not part of the project deliverable)
+node_modules/
+package.json
+package-lock.json
+shot.js
+preview/
+
+# Python
+__pycache__/
+*.pyc
+
+# OS / editor
+.DS_Store
+*.log

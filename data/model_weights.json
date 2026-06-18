@@ -1,0 +1,31 @@
+{
+  "_doc": "AI众议院·细类聚合的温和可信度加权(0.85-1.20)。用户2026-06排序;聚合时对每个维度做加权均值/中位数,权重差距刻意压小,避免单一模型主导。Claude(本系统作者模型)自评分仍计入但权重不无限放大。",
+  "scheme": "gentle",
+  "range": [0.85, 1.20],
+  "weights": {
+    "claude": 1.20,
+    "gemini": 1.12,
+    "qwen": 1.12,
+    "zhipu": 1.06,
+    "kimi": 1.00,
+    "minimax": 1.00,
+    "grok": 1.00,
+    "gpt": 1.00,
+    "mimo": 1.00,
+    "deepseek": 1.00,
+    "doubao": 0.92,
+    "wenxin": 0.88,
+    "yuanbao": 0.85
+  },
+  "credibility_tiers_2026_06": [
+    ["S", ["claude"], "ClaudeOpus4.8"],
+    ["A", ["gemini", "qwen"], "Gemini深度研究 ≈ Qwen3.7max任务助理"],
+    ["B", ["zhipu"], "GLM5.1研究模式"],
+    ["C", ["kimi", "minimax", "grok", "gpt", "mimo", "deepseek"], "kimi2.6快速 ≈ minimax3.0思考 ≈ Grok4.3快速 ≈ ChatGPT免费版(思考一下) ≈ 小米mimo2.5pro ≈ DeepSeek专家模式"],
+    ["D", ["doubao"], "豆包(深度研究/任务模式)"],
+    ["E", ["wenxin"], "文心一言5.1码牛模式"],
+    ["F", ["yuanbao"], "腾讯元宝Hy3.1preview"]
+  ],
+  "time_cost_note": "体感耗时(慢→快,用于安排采集节奏,不影响权重):Qwen3.7max ≈ GLM5.1深研 ≈ Gemini深研(千问/智谱不稳定,有时比Gemini更久有时更快) > kimi2.6 ≈ 豆包深研 ≈ minimax ≈ 小米mimo > grok4.3fast ≈ DeepSeek专家 ≈ ChatGPT思考一下 ≈ 文心一言 ≈ 腾讯元宝",
+  "arena_note": "Arena.ai(lmarena)双盲对战产出的匿名模型样本,作为补充低权重票:每个 arena 样本权重 0.80,同一细类多份取平均后并入。"
+}

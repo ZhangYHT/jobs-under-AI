@@ -1,0 +1,397 @@
+[
+ {
+  "code": "1-01",
+  "overall": 12,
+  "rationale": "核心是政治引领与组织动员，AI仅能辅助信息汇总"
+ },
+ {
+  "code": "1-02",
+  "overall": 18,
+  "rationale": "政策制定与执行需担责，AI可辅助调研但决策权在人"
+ },
+ {
+  "code": "1-03",
+  "overall": 15,
+  "rationale": "政治协商与行业协调，人际信任为主"
+ },
+ {
+  "code": "1-04",
+  "overall": 20,
+  "rationale": "组织协调与资源整合，AI辅助有限"
+ },
+ {
+  "code": "1-05",
+  "overall": 25,
+  "rationale": "直接面对群众诉求，现场处理为主"
+ },
+ {
+  "code": "1-06",
+  "overall": 28,
+  "rationale": "战略决策与团队管理，AI可辅助数据分析但责任在领导"
+ },
+ {
+  "code": "2-01",
+  "overall": 78,
+  "rationale": "AI加速文献分析与数据挖掘，但假设提出与实验设计仍需人"
+ },
+ {
+  "code": "2-02",
+  "overall": 75,
+  "rationale": "设计、编码、仿真大量被AI接管，现场调试与担责仍需人"
+ },
+ {
+  "code": "2-03",
+  "overall": 32,
+  "rationale": "田间实操与本地经验为主，AI多在辅助决策"
+ },
+ {
+  "code": "2-04",
+  "overall": 45,
+  "rationale": "安全监管严格，AI辅助维护但现场操作需持证人员"
+ },
+ {
+  "code": "2-05",
+  "overall": 60,
+  "rationale": "诊疗依赖人际信任，AI辅助诊断但责任在医生"
+ },
+ {
+  "code": "2-06",
+  "overall": 82,
+  "rationale": "量化分析被AI接管，但政策制定与风险判断需人"
+ },
+ {
+  "code": "2-07",
+  "overall": 70,
+  "rationale": "法律文书AI可生成，但庭审与调解需人际判断"
+ },
+ {
+  "code": "2-08",
+  "overall": 65,
+  "rationale": "知识传授可被AI替代，但育人引导与情感交互难替代"
+ },
+ {
+  "code": "2-09",
+  "overall": 55,
+  "rationale": "创作灵感与身体表达AI难模仿，但辅助工具会渗透"
+ },
+ {
+  "code": "2-10",
+  "overall": 80,
+  "rationale": "内容生产AI可批量生成，但深度报道与价值判断需人"
+ },
+ {
+  "code": "2-99",
+  "overall": 50,
+  "rationale": "具体岗位差异大，但多数涉及专业判断"
+ },
+ {
+  "code": "3-01",
+  "overall": 88,
+  "rationale": "文件处理、信息录入等重复工作易被AI替代"
+ },
+ {
+  "code": "3-02",
+  "overall": 15,
+  "rationale": "现场应急与体力操作，AI难以替代"
+ },
+ {
+  "code": "3-03",
+  "overall": 68,
+  "rationale": "程序性工作可被AI辅助，但调解需人际"
+ },
+ {
+  "code": "3-99",
+  "overall": 80,
+  "rationale": "如窗口服务、档案管理等，重复性高"
+ },
+ {
+  "code": "4-01",
+  "overall": 72,
+  "rationale": "线上交易AI可处理，但线下体验与服务需人"
+ },
+ {
+  "code": "4-02",
+  "overall": 75,
+  "rationale": "无人驾驶与智能仓储推进，但最后一公里配送需人"
+ },
+ {
+  "code": "4-03",
+  "overall": 22,
+  "rationale": "服务体验与现场管理难被AI替代"
+ },
+ {
+  "code": "4-04",
+  "overall": 95,
+  "rationale": "编码、运维、数据分析高度可被AI接管"
+ },
+ {
+  "code": "4-05",
+  "overall": 85,
+  "rationale": "量化交易与风控AI主导，但客户关系需人"
+ },
+ {
+  "code": "4-06",
+  "overall": 65,
+  "rationale": "信息匹配可AI化，但谈判与现场看房需人"
+ },
+ {
+  "code": "4-07",
+  "overall": 78,
+  "rationale": "合同审查、日程管理等可被AI辅助"
+ },
+ {
+  "code": "4-08",
+  "overall": 40,
+  "rationale": "如维修支持、技术指导，现场操作仍需人"
+ },
+ {
+  "code": "4-09",
+  "overall": 30,
+  "rationale": "现场巡检与应急处置需人"
+ },
+ {
+  "code": "4-10",
+  "overall": 18,
+  "rationale": "家政、维修等高度依赖现场人际"
+ },
+ {
+  "code": "4-11",
+  "overall": 25,
+  "rationale": "管网维护与现场操作，AI难以替代"
+ },
+ {
+  "code": "4-12",
+  "overall": 20,
+  "rationale": "手工维修与定制制作，现场技能不可替代"
+ },
+ {
+  "code": "4-13",
+  "overall": 60,
+  "rationale": "知识传播可AI化，但互动教学需人"
+ },
+ {
+  "code": "4-14",
+  "overall": 28,
+  "rationale": "健身指导、休闲体验需人际互动"
+ },
+ {
+  "code": "4-99",
+  "overall": 22,
+  "rationale": "如洗车、美容等，现场服务为主"
+ },
+ {
+  "code": "5-01",
+  "overall": 12,
+  "rationale": "耕种、收割等体力劳动，AI难以替代"
+ },
+ {
+  "code": "5-02",
+  "overall": 10,
+  "rationale": "伐木、护林等现场作业，AI作用有限"
+ },
+ {
+  "code": "5-03",
+  "overall": 15,
+  "rationale": "养殖管理依赖经验，AI辅助有限"
+ },
+ {
+  "code": "5-04",
+  "overall": 14,
+  "rationale": "捕鱼、养殖需现场操作，AI难以替代"
+ },
+ {
+  "code": "5-05",
+  "overall": 25,
+  "rationale": "如农技推广，AI可辅助信息传播"
+ },
+ {
+  "code": "5-99",
+  "overall": 20,
+  "rationale": "差异大但整体低冲击"
+ },
+ {
+  "code": "6-01",
+  "overall": 70,
+  "rationale": "分拣、包装等重复劳动，AI可替代"
+ },
+ {
+  "code": "6-02",
+  "overall": 55,
+  "rationale": "生产线操作，部分可自动化"
+ },
+ {
+  "code": "6-03",
+  "overall": 60,
+  "rationale": "标准化生产，AI监控提升效率"
+ },
+ {
+  "code": "6-04",
+  "overall": 65,
+  "rationale": "重复性高，AI可辅助设计但操作需人"
+ },
+ {
+  "code": "6-05",
+  "overall": 45,
+  "rationale": "定制化生产，现场技能不可替代"
+ },
+ {
+  "code": "6-06",
+  "overall": 30,
+  "rationale": "手工制作，AI难替代"
+ },
+ {
+  "code": "6-07",
+  "overall": 68,
+  "rationale": "造纸流程可自动化"
+ },
+ {
+  "code": "6-08",
+  "overall": 75,
+  "rationale": "排版AI可替代，但设备操作需人"
+ },
+ {
+  "code": "6-09",
+  "overall": 50,
+  "rationale": "设计AI可辅助，但制作需人"
+ },
+ {
+  "code": "6-10",
+  "overall": 35,
+  "rationale": "高危作业，AI监控但操作需人"
+ },
+ {
+  "code": "6-11",
+  "overall": 40,
+  "rationale": "流程控制AI可辅助，但安全需人"
+ },
+ {
+  "code": "6-12",
+  "overall": 45,
+  "rationale": "GMP要求严格，AI辅助但现场操作需人"
+ },
+ {
+  "code": "6-13",
+  "overall": 60,
+  "rationale": "流程监控AI可替代部分"
+ },
+ {
+  "code": "6-14",
+  "overall": 38,
+  "rationale": "模具操作需技能，AI辅助有限"
+ },
+ {
+  "code": "6-15",
+  "overall": 58,
+  "rationale": "如水泥、玻璃生产，自动化程度高"
+ },
+ {
+  "code": "6-16",
+  "overall": 15,
+  "rationale": "高危体力劳动，AI难以替代"
+ },
+ {
+  "code": "6-17",
+  "overall": 25,
+  "rationale": "高温作业，AI监控但操作需人"
+ },
+ {
+  "code": "6-18",
+  "overall": 48,
+  "rationale": "如车工、铣工，AI可辅助编程但操作需人"
+ },
+ {
+  "code": "6-19",
+  "overall": 32,
+  "rationale": "焊接等技能难替代"
+ },
+ {
+  "code": "6-20",
+  "overall": 42,
+  "rationale": "装配与调试需人"
+ },
+ {
+  "code": "6-21",
+  "overall": 35,
+  "rationale": "定制化生产，现场技能不可替代"
+ },
+ {
+  "code": "6-22",
+  "overall": 55,
+  "rationale": "流水线装配AI可替代部分，但质量检测需人"
+ },
+ {
+  "code": "6-23",
+  "overall": 40,
+  "rationale": "高精度制造，AI辅助但操作需人"
+ },
+ {
+  "code": "6-24",
+  "overall": 38,
+  "rationale": "电气操作需技能，AI辅助有限"
+ },
+ {
+  "code": "6-25",
+  "overall": 65,
+  "rationale": "电子组装AI可替代部分"
+ },
+ {
+  "code": "6-26",
+  "overall": 45,
+  "rationale": "精密制造需人，AI辅助设计"
+ },
+ {
+  "code": "6-27",
+  "overall": 72,
+  "rationale": "分拣、拆解等重复劳动，AI可辅助"
+ },
+ {
+  "code": "6-28",
+  "overall": 30,
+  "rationale": "系统监控AI可替代部分，但现场操作需人"
+ },
+ {
+  "code": "6-29",
+  "overall": 20,
+  "rationale": "现场施工依赖体力与技能，AI难以替代"
+ },
+ {
+  "code": "6-30",
+  "overall": 25,
+  "rationale": "设备操作需人，AI辅助导航"
+ },
+ {
+  "code": "6-31",
+  "overall": 78,
+  "rationale": "如仓库管理、质检，重复性高可被AI替代"
+ },
+ {
+  "code": "6-99",
+  "overall": 35,
+  "rationale": "差异大但整体中等冲击"
+ },
+ {
+  "code": "7-01",
+  "overall": 20,
+  "rationale": "战略决策与指挥，AI辅助情报但责任在军官"
+ },
+ {
+  "code": "7-02",
+  "overall": 15,
+  "rationale": "训练与执行任务，现场操作需人"
+ },
+ {
+  "code": "7-03",
+  "overall": 12,
+  "rationale": "基础军事技能，AI难以替代"
+ },
+ {
+  "code": "7-04",
+  "overall": 25,
+  "rationale": "行政与后勤，部分可被AI替代"
+ },
+ {
+  "code": "8-00",
+  "overall": 40,
+  "rationale": "如灵活就业、临时工等，冲击因岗位而异"
+ }
+]

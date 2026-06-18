@@ -1,0 +1,1517 @@
+[
+ {
+  "code": "1-01",
+  "title_official": "中国共产党机关和基层组织负责人",
+  "title_match": true,
+  "english": "Leaders of CPC Organs and Grassroots Organizations",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L标注"
+ },
+ {
+  "code": "1-02",
+  "title_official": "国家机关负责人",
+  "title_match": true,
+  "english": "Leaders of State Organs",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L标注"
+ },
+ {
+  "code": "1-03",
+  "title_official": "民主党派和工商联负责人",
+  "title_match": true,
+  "english": "Leaders of Democratic Parties and Federation of Industry and Commerce",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L标注"
+ },
+ {
+  "code": "1-04",
+  "title_official": "人民团体和群众团体、社会组织及其他成员组织负责人",
+  "title_match": true,
+  "english": "Leaders of People's Organizations, Mass Organizations, Social Organizations and Other Member Organizations",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L标注"
+ },
+ {
+  "code": "1-05",
+  "title_official": "基层群众性自治组织负责人",
+  "title_match": true,
+  "english": "Leaders of Grassroots Mass Autonomous Organizations",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L标注"
+ },
+ {
+  "code": "1-06",
+  "title_official": "企事业单位负责人",
+  "title_match": true,
+  "english": "Leaders of Enterprises and Institutions",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L标注"
+ },
+ {
+  "code": "2-01",
+  "title_official": "科学研究人员",
+  "title_match": true,
+  "english": "Scientific Research Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "部分细类可能涉及数字/绿色，但官方中类无统一S/L"
+ },
+ {
+  "code": "2-02",
+  "title_official": "工程技术人员",
+  "title_match": true,
+  "english": "Engineering and Technical Personnel",
+  "digital_xilei": [
+   "2-02-38-01 人工智能工程技术人员 S",
+   "2-02-38-02 物联网工程技术人员 S",
+   "2-02-38-03 大数据工程技术人员 S",
+   "2-02-38-04 云计算工程技术人员 S",
+   "2-02-38-05 智能制造工程技术人员 S",
+   "2-02-38-06 工业互联网工程技术人员 S",
+   "2-02-38-07 虚拟现实工程技术人员 S",
+   "2-02-38-08 区块链工程技术人员 S",
+   "2-02-38-09 集成电路工程技术人员 S",
+   "2-02-38-10 机器人工程技术人员 S",
+   "2-02-38-11 增材制造工程技术人员 LS",
+   "2-02-38-12 数据安全工程技术人员 S",
+   "2-02-38-13 密码工程技术人员 S"
+  ],
+  "green_xilei": [
+   "2-02-02-02 工程测量工程技术人员 S/LS",
+   "2-02-21 水利工程技术人员 L",
+   "2-02-20 林草工程技术人员 L",
+   "2-02-27 环境保护工程技术人员 L",
+   "2-02-30-02 物流工程技术人员 LS 等多个L/S"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)分类体系表",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "PDF体系表明确标注S/L",
+  "note": "数字技术小类集中S职业"
+ },
+ {
+  "code": "2-03",
+  "title_official": "农业技术人员",
+  "title_match": true,
+  "english": "Agricultural Technical Personnel",
+  "digital_xilei": [
+   "农业数字化技术相关"
+  ],
+  "green_xilei": [
+   "多个L如植物保护等"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色职业"
+ },
+ {
+  "code": "2-04",
+  "title_official": "飞机和船舶技术人员",
+  "title_match": true,
+  "english": "Aircraft and Ship Technical Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无显著S/L集中"
+ },
+ {
+  "code": "2-05",
+  "title_official": "卫生专业技术人员",
+  "title_match": true,
+  "english": "Health Professional Technical Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "2-06",
+  "title_official": "经济和金融专业人员",
+  "title_match": true,
+  "english": "Economic and Financial Professionals",
+  "digital_xilei": [
+   "金融科技师 S 等"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含数字职业"
+ },
+ {
+  "code": "2-07",
+  "title_official": "监察、法律、社会和宗教专业人员",
+  "title_match": true,
+  "english": "Supervision, Legal, Social and Religious Professionals",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "2-08",
+  "title_official": "教学人员",
+  "title_match": true,
+  "english": "Teaching Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "2-09",
+  "title_official": "文学艺术、体育专业人员",
+  "title_match": true,
+  "english": "Literature, Art and Sports Professionals",
+  "digital_xilei": [
+   "数字出版编辑 S 等"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S"
+ },
+ {
+  "code": "2-10",
+  "title_official": "新闻出版、文化专业人员",
+  "title_match": true,
+  "english": "Journalism, Publishing and Cultural Professionals",
+  "digital_xilei": [
+   "网络编辑 S 等"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S"
+ },
+ {
+  "code": "2-99",
+  "title_official": "其他专业技术人员",
+  "title_match": true,
+  "english": "Other Professional Technical Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无特定S/L"
+ },
+ {
+  "code": "3-01",
+  "title_official": "行政办事及辅助人员",
+  "title_match": true,
+  "english": "Administrative Clerical and Auxiliary Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "3-02",
+  "title_official": "安全和消防及辅助人员",
+  "title_match": true,
+  "english": "Safety, Fire Protection and Auxiliary Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "部分L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "3-03",
+  "title_official": "仲裁、调解及相关法律事务辅助人员",
+  "title_match": true,
+  "english": "Arbitration, Mediation and Related Legal Auxiliary Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "3-99",
+  "title_official": "其他办事人员和有关人员",
+  "title_match": true,
+  "english": "Other Clerical and Related Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "4-01",
+  "title_official": "批发与零售服务人员",
+  "title_match": true,
+  "english": "Wholesale and Retail Service Personnel",
+  "digital_xilei": [
+   "电子商务师 S",
+   "互联网营销师 S"
+  ],
+  "green_xilei": [
+   "再生资源回收 L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S/L"
+ },
+ {
+  "code": "4-02",
+  "title_official": "交通运输、仓储物流和邮政业服务人员",
+  "title_match": true,
+  "english": "Transportation, Storage, Logistics and Postal Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "部分L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "含绿色"
+ },
+ {
+  "code": "4-03",
+  "title_official": "住宿和餐饮服务人员",
+  "title_match": true,
+  "english": "Accommodation and Catering Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "4-04",
+  "title_official": "信息传输、软件和信息技术服务人员",
+  "title_match": true,
+  "english": "Information Transmission, Software and Information Technology Service Personnel",
+  "digital_xilei": [
+   "多个S如计算机程序设计等"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "数字职业集中"
+ },
+ {
+  "code": "4-05",
+  "title_official": "金融服务人员",
+  "title_match": true,
+  "english": "Financial Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无显著S/L"
+ },
+ {
+  "code": "4-06",
+  "title_official": "房地产服务人员",
+  "title_match": true,
+  "english": "Real Estate Service Personnel",
+  "digital_xilei": [
+   "部分S"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S"
+ },
+ {
+  "code": "4-07",
+  "title_official": "租赁和商务服务人员",
+  "title_match": true,
+  "english": "Leasing and Business Service Personnel",
+  "digital_xilei": [
+   "数字化管理师 S 等"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S"
+ },
+ {
+  "code": "4-08",
+  "title_official": "技术辅助服务人员",
+  "title_match": true,
+  "english": "Technical Auxiliary Service Personnel",
+  "digital_xilei": [
+   "多个S"
+  ],
+  "green_xilei": [
+   "多个L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S/L"
+ },
+ {
+  "code": "4-09",
+  "title_official": "水利、环境和公共设施管理服务人员",
+  "title_match": true,
+  "english": "Water Conservancy, Environment and Public Facility Management Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "多个L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "绿色职业集中"
+ },
+ {
+  "code": "4-10",
+  "title_official": "居民服务人员",
+  "title_match": true,
+  "english": "Resident Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "4-11",
+  "title_official": "电力、燃气及水供应服务人员",
+  "title_match": true,
+  "english": "Electric Power, Gas and Water Supply Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "多个L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "4-12",
+  "title_official": "修理及制作服务人员",
+  "title_match": true,
+  "english": "Repair and Manufacturing Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "多个L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "4-13",
+  "title_official": "文化和教育服务人员",
+  "title_match": true,
+  "english": "Cultural and Educational Service Personnel",
+  "digital_xilei": [
+   "S相关"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S"
+ },
+ {
+  "code": "4-14",
+  "title_official": "健康、体育和休闲服务人员",
+  "title_match": true,
+  "english": "Health, Sports and Leisure Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无显著S/L"
+ },
+ {
+  "code": "4-99",
+  "title_official": "其他社会生产服务和生活服务人员",
+  "title_match": true,
+  "english": "Other Social Production and Life Service Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "5-01",
+  "title_official": "农业生产人员",
+  "title_match": true,
+  "english": "Agricultural Production Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "多个L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "5-02",
+  "title_official": "林业生产人员",
+  "title_match": true,
+  "english": "Forestry Production Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "多个L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "5-03",
+  "title_official": "畜牧业生产人员",
+  "title_match": true,
+  "english": "Animal Husbandry Production Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无显著S/L"
+ },
+ {
+  "code": "5-04",
+  "title_official": "渔业生产人员",
+  "title_match": true,
+  "english": "Fishery Production Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "5-05",
+  "title_official": "农、林、牧、渔业生产辅助人员",
+  "title_match": true,
+  "english": "Agricultural, Forestry, Animal Husbandry and Fishery Production Auxiliary Personnel",
+  "digital_xilei": [
+   "农业数字化技术员 S"
+  ],
+  "green_xilei": [
+   "多个L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S/L"
+ },
+ {
+  "code": "5-99",
+  "title_official": "其他农、林、牧、渔业生产及辅助人员",
+  "title_match": true,
+  "english": "Other Agricultural, Forestry, Animal Husbandry and Fishery Production and Auxiliary Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-01",
+  "title_official": "农副产品加工人员",
+  "title_match": true,
+  "english": "Agricultural and Sideline Products Processing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-02",
+  "title_official": "食品、饮料生产加工人员",
+  "title_match": true,
+  "english": "Food and Beverage Production and Processing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-03",
+  "title_official": "烟草及其制品加工人员",
+  "title_match": true,
+  "english": "Tobacco and Tobacco Products Processing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-04",
+  "title_official": "纺织、针织、印染人员",
+  "title_match": true,
+  "english": "Textile, Knitting and Dyeing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-05",
+  "title_official": "纺织品、服装和皮革、毛皮制品加工制作人员",
+  "title_match": true,
+  "english": "Textile, Clothing, Leather and Fur Products Processing and Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-06",
+  "title_official": "木材加工、家具与木制品制作人员",
+  "title_match": true,
+  "english": "Wood Processing, Furniture and Wood Products Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-07",
+  "title_official": "纸及纸制品生产加工人员",
+  "title_match": true,
+  "english": "Paper and Paper Products Production and Processing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "6-08",
+  "title_official": "印刷和记录媒介复制人员",
+  "title_match": true,
+  "english": "Printing and Recording Media Reproduction Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-09",
+  "title_official": "文教、工美、体育和娱乐用品制造人员",
+  "title_match": true,
+  "english": "Cultural, Educational, Industrial Art, Sports and Entertainment Goods Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-10",
+  "title_official": "石油加工和炼焦、煤化工生产人员",
+  "title_match": true,
+  "english": "Petroleum Processing, Coking and Coal Chemical Production Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "6-11",
+  "title_official": "化学原料和化学制品制造人员",
+  "title_match": true,
+  "english": "Chemical Raw Materials and Chemical Products Manufacturing Personnel",
+  "digital_xilei": [
+   "S相关"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S"
+ },
+ {
+  "code": "6-12",
+  "title_official": "医药制造人员",
+  "title_match": true,
+  "english": "Pharmaceutical Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-13",
+  "title_official": "化学纤维制造人员",
+  "title_match": true,
+  "english": "Chemical Fiber Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-14",
+  "title_official": "橡胶和塑料制品制造人员",
+  "title_match": true,
+  "english": "Rubber and Plastic Products Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "6-15",
+  "title_official": "非金属矿物制品制造人员",
+  "title_match": true,
+  "english": "Non-metallic Mineral Products Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-16",
+  "title_official": "采矿人员",
+  "title_match": true,
+  "english": "Mining Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-17",
+  "title_official": "金属冶炼和压延加工人员",
+  "title_match": true,
+  "english": "Metal Smelting and Rolling Processing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-18",
+  "title_official": "机械制造基础加工人员",
+  "title_match": true,
+  "english": "Basic Mechanical Manufacturing Processing Personnel",
+  "digital_xilei": [
+   "S相关"
+  ],
+  "green_xilei": [
+   "多个L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S/L"
+ },
+ {
+  "code": "6-19",
+  "title_official": "金属制品制造人员",
+  "title_match": true,
+  "english": "Metal Products Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-20",
+  "title_official": "通用设备制造人员",
+  "title_match": true,
+  "english": "General Equipment Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "6-21",
+  "title_official": "专用设备制造人员",
+  "title_match": true,
+  "english": "Special Equipment Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-22",
+  "title_official": "汽车制造人员",
+  "title_match": true,
+  "english": "Automobile Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "6-23",
+  "title_official": "铁路、船舶、航空设备制造人员",
+  "title_match": true,
+  "english": "Railway, Ship and Aviation Equipment Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "6-24",
+  "title_official": "电气机械和器材制造人员",
+  "title_match": true,
+  "english": "Electrical Machinery and Equipment Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "多个L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "6-25",
+  "title_official": "计算机、通信和其他电子设备制造人员",
+  "title_match": true,
+  "english": "Computer, Communication and Other Electronic Equipment Manufacturing Personnel",
+  "digital_xilei": [
+   "多个S"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S"
+ },
+ {
+  "code": "6-26",
+  "title_official": "仪器仪表制造人员",
+  "title_match": true,
+  "english": "Instrument and Meter Manufacturing Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-27",
+  "title_official": "再生资源综合利用人员",
+  "title_match": true,
+  "english": "Renewable Resources Comprehensive Utilization Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "6-28",
+  "title_official": "电力、热力、气体、水生产和输配人员",
+  "title_match": true,
+  "english": "Electric Power, Heat, Gas, Water Production and Distribution Personnel",
+  "digital_xilei": [],
+  "green_xilei": [
+   "多个L"
+  ],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含绿色"
+ },
+ {
+  "code": "6-29",
+  "title_official": "建筑施工人员",
+  "title_match": true,
+  "english": "Construction Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-30",
+  "title_official": "运输设备和通用工程机械操作人员及有关人员",
+  "title_match": true,
+  "english": "Transportation Equipment and General Engineering Machinery Operators and Related Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "6-31",
+  "title_official": "生产辅助人员",
+  "title_match": true,
+  "english": "Production Auxiliary Personnel",
+  "digital_xilei": [
+   "S相关"
+  ],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方标注",
+  "note": "含S"
+ },
+ {
+  "code": "6-99",
+  "title_official": "其他生产制造及有关人员",
+  "title_match": true,
+  "english": "Other Production, Manufacturing and Related Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "7-01",
+  "title_official": "军官(警官)",
+  "title_match": true,
+  "english": "Officers (Police Officers)",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "7-02",
+  "title_official": "军士(警士)",
+  "title_match": true,
+  "english": "Non-commissioned Officers (Police Sergeants)",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "7-03",
+  "title_official": "义务兵",
+  "title_match": true,
+  "english": "Conscripts",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "7-04",
+  "title_official": "文职人员",
+  "title_match": true,
+  "english": "Civilian Personnel",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ },
+ {
+  "code": "8-00",
+  "title_official": "不便分类的其他从业人员",
+  "title_match": true,
+  "english": "Other Practitioners Not Elsewhere Classified",
+  "digital_xilei": [],
+  "green_xilei": [],
+  "sources": [
+   {
+    "name": "中华人民共和国职业分类大典(2022年版)",
+    "url": "https://file.m12333.cn/upfile/download/23b1a542-8338-13d3-f826-2719db3f8dcb.pdf",
+    "type": "official"
+   }
+  ],
+  "confidence": "high",
+  "evidence": "官方分类体系表",
+  "note": "无S/L"
+ }
+]
