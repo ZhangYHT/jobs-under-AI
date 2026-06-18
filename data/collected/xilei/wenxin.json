@@ -360,7 +360,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "耐火材料设计可AI辅助，但实验和现场应用需人；护城河在材料专业知识。 尾行:"
+  "eval": "耐火材料设计可AI辅助，但实验和现场应用需人；护城河在材料专业知识。 尾行:",
+  "digital": 50
  },
  {
   "code": "2-02-05-06",
@@ -373,7 +374,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "炭素材料设计可AI辅助，但实验和工艺需人；护城河在炭素材料知识。 尾行:"
+  "eval": "炭素材料设计可AI辅助，但实验和工艺需人；护城河在炭素材料知识。 尾行:",
+  "digital": 50
  },
  {
   "code": "2-02-05-07",
@@ -386,7 +388,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "冶金热能工程技术人员 [绿色L] 评价:热能系统优化可AI辅助，但设备运行和安全管理需人；护城河在热能工程知识。 尾行:"
+  "eval": "冶金热能工程技术人员 [绿色L] 评价:热能系统优化可AI辅助，但设备运行和安全管理需人；护城河在热能工程知识。 尾行:",
+  "digital": 50
  },
  {
   "code": "2-02-05-08",
@@ -399,7 +402,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "铸管工艺优化可AI辅助，但设备操作和质量控制需人；护城河在铸造知识。 尾行:"
+  "eval": "铸管工艺优化可AI辅助，但设备操作和质量控制需人；护城河在铸造知识。 尾行:",
+  "digital": 50
  },
  {
   "code": "2-02-05-09",
@@ -412,7 +416,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "稀土提取工艺优化可AI辅助，但工艺操作和环保需人；护城河在稀土专业知识和环保资质。 尾行:"
+  "eval": "稀土提取工艺优化可AI辅助，但工艺操作和环保需人；护城河在稀土专业知识和环保资质。 尾行:",
+  "digital": 50
  },
  {
   "code": "2-02-06-01",
@@ -425,7 +430,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "实验设计和数据分析可AI辅助，但实验操作和安全需人；护城河在化工知识和实验经验。 尾行:"
+  "eval": "实验设计和数据分析可AI辅助，但实验操作和安全需人；护城河在化工知识和实验经验。 尾行:",
+  "digital": 55
  },
  {
   "code": "2-02-06-02",
@@ -438,7 +444,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "化工工艺设计优化可AI辅助，但安全评估和合规需人；护城河在化工设计和安全知识。 尾行:"
+  "eval": "化工工艺设计优化可AI辅助，但安全评估和合规需人；护城河在化工设计和安全知识。 尾行:",
+  "digital": 60
  },
  {
   "code": "2-02-06-03",
@@ -451,7 +458,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "生产优化可AI辅助，但现场操作和安全需人；护城河在化工生产知识。 尾行:"
+  "eval": "生产优化可AI辅助，但现场操作和安全需人；护城河在化工生产知识。 尾行:",
+  "digital": 55
  },
  {
   "code": "2-02-07-01",
@@ -464,7 +472,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "CAD设计可AI辅助（如生成设计），但工程约束和标准需人；护城河在机械设计经验和标准知识。 尾行:"
+  "eval": "CAD设计可AI辅助（如生成设计），但工程约束和标准需人；护城河在机械设计经验和标准知识。 尾行:",
+  "digital": 70
  },
  {
   "code": "2-02-07-02",
@@ -477,7 +486,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "工艺优化可AI辅助，但设备操作和质量控制需人；护城河在制造经验。 尾行:"
+  "eval": "工艺优化可AI辅助，但设备操作和质量控制需人；护城河在制造经验。 尾行:",
+  "digital": 55
  },
  {
   "code": "2-02-07-03",
@@ -490,7 +500,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "智能仪表和自动化可AI辅助，但现场校准和维护需人；护城河在仪器仪表知识。 尾行:"
+  "eval": "智能仪表和自动化可AI辅助，但现场校准和维护需人；护城河在仪器仪表知识。 尾行:",
+  "digital": 60
  },
  {
   "code": "2-02-07-04",
@@ -503,7 +514,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "预测性维护可AI辅助，但设备决策和采购需人；护城河在设备管理经验。 尾行:"
+  "eval": "预测性维护可AI辅助，但设备决策和采购需人；护城河在设备管理经验。 尾行:",
+  "digital": 55
  },
  {
   "code": "2-02-07-05",
@@ -516,7 +528,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "设备维护可AI辅助，但安全合规和临床支持需人；护城河在医疗设备知识和法规。 尾行:"
+  "eval": "设备维护可AI辅助，但安全合规和临床支持需人；护城河在医疗设备知识和法规。 尾行:",
+  "digital": 55
  },
  {
   "code": "2-02-07-06",
@@ -529,7 +542,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "模具设计可AI辅助，但制造工艺和修改需人；护城河在模具设计和制造经验。 尾行:"
+  "eval": "模具设计可AI辅助，但制造工艺和修改需人；护城河在模具设计和制造经验。 尾行:",
+  "digital": 65
  },
  {
   "code": "2-02-07-07",
@@ -542,7 +556,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "自动控制工程技术人员 [数字职业S] 评价:编程和系统设计可AI辅助，但现场调试和异常处理需人；护城河在控制理论和现场经验。 尾行:"
+  "eval": "自动控制工程技术人员 [数字职业S] 评价:编程和系统设计可AI辅助，但现场调试和异常处理需人；护城河在控制理论和现场经验。 尾行:",
+  "digital": 75
  },
  {
   "code": "2-02-07-08",
@@ -639,7 +654,8 @@
   "education": "硕士",
   "pay_tier": "高",
   "level": "高",
-  "eval": "设计仿真可被AI增强，但安全认证和复杂系统集成需要人；护城河在于航空安全法规"
+  "eval": "设计仿真可被AI增强，但安全认证和复杂系统集成需要人；护城河在于航空安全法规",
+  "digital": 80
  },
  {
   "code": "2-02-08-02",
@@ -652,7 +668,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "制造过程可被自动化，但航空制造标准和高精度要求需要人；护城河在于航空制造标准"
+  "eval": "制造过程可被自动化，但航空制造标准和高精度要求需要人；护城河在于航空制造标准",
+  "digital": 70
  },
  {
   "code": "2-02-08-03",
@@ -663,7 +680,10 @@
   "education": "硕士",
   "pay_tier": "高",
   "level": "高",
-  "eval": "发动机设计可被AI辅助，但可靠性验证和安全认证需要人；护城河在于发动机可靠性"
+  "eval": "发动机设计可被AI辅助，但可靠性验证和安全认证需要人；护城河在于发动机可靠性",
+  "automation": 45,
+  "augmentation": 80,
+  "digital": 75
  },
  {
   "code": "2-02-08-04",
@@ -674,7 +694,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "制造工艺可被AI优化，但高精度制造需要人；护城河在于高精度制造经验"
+  "eval": "制造工艺可被AI优化，但高精度制造需要人；护城河在于高精度制造经验",
+  "automation": 50,
+  "augmentation": 75,
+  "digital": 70
  },
  {
   "code": "2-02-08-05",
@@ -685,7 +708,10 @@
   "education": "硕士",
   "pay_tier": "高",
   "level": "高",
-  "eval": "航空产品试验与飞行试验工程技术人员 评价：数据分析可被AI辅助，但试验安全需要人；护城河在于飞行安全"
+  "eval": "航空产品试验与飞行试验工程技术人员 评价：数据分析可被AI辅助，但试验安全需要人；护城河在于飞行安全",
+  "automation": 40,
+  "augmentation": 80,
+  "digital": 75
  },
  {
   "code": "2-02-08-06",
@@ -696,7 +722,10 @@
   "education": "硕士",
   "pay_tier": "高",
   "level": "高",
-  "eval": "文档审核可被AI辅助，但适航判断需要人；护城河在于适航法规"
+  "eval": "文档审核可被AI辅助，但适航判断需要人；护城河在于适航法规",
+  "automation": 40,
+  "augmentation": 75,
+  "digital": 70
  },
  {
   "code": "2-02-08-07",
@@ -707,7 +736,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "故障诊断可被AI辅助，但现场维修需要人；护城河在于现场维修经验"
+  "eval": "故障诊断可被AI辅助，但现场维修需要人；护城河在于现场维修经验",
+  "automation": 45,
+  "augmentation": 70,
+  "digital": 65
  },
  {
   "code": "2-02-08-08",
@@ -718,7 +750,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "设计可被AI辅助，但航空安全标准需要人；护城河在于航空安全标准"
+  "eval": "设计可被AI辅助，但航空安全标准需要人；护城河在于航空安全标准",
+  "automation": 45,
+  "augmentation": 75,
+  "digital": 70
  },
  {
   "code": "2-02-09-01",
@@ -729,7 +764,10 @@
   "education": "硕士",
   "pay_tier": "中",
   "level": "高",
-  "eval": "材料研发可被AI加速，但实际应用需要人；护城河在于材料科学知识"
+  "eval": "材料研发可被AI加速，但实际应用需要人；护城河在于材料科学知识",
+  "automation": 40,
+  "augmentation": 80,
+  "digital": 65
  },
  {
   "code": "2-02-09-02",
@@ -740,7 +778,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "设计可被AI辅助，但测试和可靠性需要人；护城河在于元器件可靠性"
+  "eval": "设计可被AI辅助，但测试和可靠性需要人；护城河在于元器件可靠性",
+  "automation": 45,
+  "augmentation": 70,
+  "digital": 65
  },
  {
   "code": "2-02-09-03",
@@ -751,7 +792,10 @@
   "education": "硕士",
   "pay_tier": "高",
   "level": "高",
-  "eval": "信号处理可被AI增强，但系统设计和安全需要人；护城河在于国防安全"
+  "eval": "信号处理可被AI增强，但系统设计和安全需要人；护城河在于国防安全",
+  "automation": 50,
+  "augmentation": 85,
+  "digital": 85
  },
  {
   "code": "2-02-09-04",
@@ -762,7 +806,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "电子仪器与电子测量工程技术人员 评价：测量数据分析可被AI辅助，但仪器校准需要人；护城河在于精密测量经验"
+  "eval": "电子仪器与电子测量工程技术人员 评价：测量数据分析可被AI辅助，但仪器校准需要人；护城河在于精密测量经验",
+  "automation": 40,
+  "augmentation": 68,
+  "digital": 55
  },
  {
   "code": "2-02-09-05",
@@ -773,7 +820,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "设备维护可被AI辅助，但内容制作需要人；护城河在于内容制作经验"
+  "eval": "设备维护可被AI辅助，但内容制作需要人；护城河在于内容制作经验",
+  "automation": 50,
+  "augmentation": 75,
+  "digital": 70
  },
  {
   "code": "2-02-10-01",
@@ -784,7 +834,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "网络优化可被AI辅助，但基础设施维护需要人；护城河在于网络基础设施"
+  "eval": "网络优化可被AI辅助，但基础设施维护需要人；护城河在于网络基础设施",
+  "automation": 55,
+  "augmentation": 80,
+  "digital": 85
  },
  {
   "code": "2-02-10-02",
@@ -795,7 +848,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "设计可被AI辅助，但硬件调试需要人；护城河在于硬件调试经验"
+  "eval": "设计可被AI辅助，但硬件调试需要人；护城河在于硬件调试经验",
+  "automation": 50,
+  "augmentation": 70,
+  "digital": 75
  },
  {
   "code": "2-02-10-03",
@@ -806,7 +862,10 @@
   "education": "本科",
   "pay_tier": "高",
   "level": "极高",
-  "eval": "编码可被AI大幅替代，但架构设计和复杂业务逻辑需要人；护城河在于架构设计"
+  "eval": "编码可被AI大幅替代，但架构设计和复杂业务逻辑需要人；护城河在于架构设计",
+  "automation": 80,
+  "augmentation": 85,
+  "digital": 95
  },
  {
   "code": "2-02-10-04",
@@ -817,7 +876,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "网络管理可被AI自动化，但安全需要人；护城河在于网络安全"
+  "eval": "网络管理可被AI自动化，但安全需要人；护城河在于网络安全",
+  "automation": 60,
+  "augmentation": 85,
+  "digital": 85
  },
  {
   "code": "2-02-10-05",
@@ -828,7 +890,10 @@
   "education": "本科",
   "pay_tier": "高",
   "level": "高",
-  "eval": "分析可被AI辅助，但业务理解和决策需要人；护城河在于业务理解"
+  "eval": "分析可被AI辅助，但业务理解和决策需要人；护城河在于业务理解",
+  "automation": 60,
+  "augmentation": 85,
+  "digital": 85
  },
  {
   "code": "2-02-10-06",
@@ -839,7 +904,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "代码生成可被AI辅助，但硬件限制下的优化需要人；护城河在于硬件限制下的优化"
+  "eval": "代码生成可被AI辅助，但硬件限制下的优化需要人；护城河在于硬件限制下的优化",
+  "automation": 55,
+  "augmentation": 80,
+  "digital": 85
  },
  {
   "code": "2-02-10-07",
@@ -850,7 +918,10 @@
   "education": "本科",
   "pay_tier": "高",
   "level": "高",
-  "eval": "安全监控可被AI增强，但安全策略需要人；护城河在于安全策略"
+  "eval": "安全监控可被AI增强，但安全策略需要人；护城河在于安全策略",
+  "automation": 50,
+  "augmentation": 85,
+  "digital": 90
  },
  {
   "code": "2-02-10-08",
@@ -861,7 +932,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "监控和故障处理可被AI自动化，但复杂问题需要人；护城河在于复杂问题处理"
+  "eval": "监控和故障处理可被AI自动化，但复杂问题需要人；护城河在于复杂问题处理",
+  "automation": 55,
+  "augmentation": 80,
+  "digital": 85
  },
  {
   "code": "2-02-11-01",
@@ -872,7 +946,10 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "电气设计可被AI辅助，但现场安装需要人；护城河在于现场安装经验"
+  "eval": "电气设计可被AI辅助，但现场安装需要人；护城河在于现场安装经验",
+  "automation": 35,
+  "augmentation": 65,
+  "digital": 50
  },
  {
   "code": "2-02-11-02",
@@ -883,7 +960,10 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "线路设计可被AI辅助，但铺设需要人；护城河在于现场铺设经验"
+  "eval": "线路设计可被AI辅助，但铺设需要人；护城河在于现场铺设经验",
+  "automation": 35,
+  "augmentation": 65,
+  "digital": 50
  },
  {
   "code": "2-02-11-03",
@@ -894,7 +974,10 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "照明设计可被AI辅助，但现场施工需要人；护城河在于现场施工经验"
+  "eval": "照明设计可被AI辅助，但现场施工需要人；护城河在于现场施工经验",
+  "automation": 30,
+  "augmentation": 60,
+  "digital": 45
  },
  {
   "code": "2-02-12-01",
@@ -905,7 +988,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "发电优化可被AI辅助，但设备维护需要人；护城河在于设备维护经验"
+  "eval": "发电优化可被AI辅助，但设备维护需要人；护城河在于设备维护经验",
+  "automation": 40,
+  "augmentation": 70,
+  "digital": 55
  },
  {
   "code": "2-02-12-02",
@@ -916,7 +1002,10 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "用电管理可被AI优化，但现场操作需要人；护城河在于现场操作经验"
+  "eval": "用电管理可被AI优化，但现场操作需要人；护城河在于现场操作经验",
+  "automation": 38,
+  "augmentation": 68,
+  "digital": 50
  },
  {
   "code": "2-02-12-03",
@@ -927,7 +1016,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "变电监控可被AI辅助，但现场操作需要人；护城河在于现场操作经验"
+  "eval": "变电监控可被AI辅助，但现场操作需要人；护城河在于现场操作经验",
+  "automation": 40,
+  "augmentation": 68,
+  "digital": 52
  },
  {
   "code": "2-02-12-04",
@@ -938,7 +1030,10 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "线路设计可被AI辅助，但现场施工需要人；护城河在于现场施工经验"
+  "eval": "线路设计可被AI辅助，但现场施工需要人；护城河在于现场施工经验",
+  "automation": 35,
+  "augmentation": 65,
+  "digital": 48
  },
  {
   "code": "2-02-12-05",
@@ -949,7 +1044,10 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "安装设计可被AI辅助，但现场安装需要人；护城河在于现场安装经验"
+  "eval": "安装设计可被AI辅助，但现场安装需要人；护城河在于现场安装经验",
+  "automation": 35,
+  "augmentation": 65,
+  "digital": 48
  },
  {
   "code": "2-02-13-01",
@@ -960,7 +1058,10 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "分拣可被AI自动化，但投递和设施维护需要人；护城河在于投递网络"
+  "eval": "分拣可被AI自动化，但投递和设施维护需要人；护城河在于投递网络",
+  "automation": 45,
+  "augmentation": 60,
+  "digital": 50
  },
  {
   "code": "2-02-13-02",
@@ -971,7 +1072,10 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "物流优化可被AI自动化，但末端配送需要人；护城河在于末端配送网络"
+  "eval": "物流优化可被AI自动化，但末端配送需要人；护城河在于末端配送网络",
+  "automation": 50,
+  "augmentation": 60,
+  "digital": 55
  },
  {
   "code": "2-02-14-01",
@@ -982,7 +1086,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "剪辑和制作可被AI辅助，但内容创意需要人；护城河在于内容创意"
+  "eval": "剪辑和制作可被AI辅助，但内容创意需要人；护城河在于内容创意",
+  "automation": 50,
+  "augmentation": 75,
+  "digital": 70
  },
  {
   "code": "2-02-14-02",
@@ -993,7 +1100,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "传输监控可被AI自动化，但设施维护需要人；护城河在于设施维护"
+  "eval": "传输监控可被AI自动化，但设施维护需要人；护城河在于设施维护",
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 70
  },
  {
   "code": "2-02-14-03",
@@ -1004,7 +1114,10 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "后期制作可被AI辅助，但创意和导演需要人；护城河在于创意和艺术判断"
+  "eval": "后期制作可被AI辅助，但创意和导演需要人；护城河在于创意和艺术判断",
+  "automation": 45,
+  "augmentation": 70,
+  "digital": 65
  },
  {
   "code": "2-02-14-04",
@@ -1422,7 +1535,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "港口管理，AI在调度监控增强，护城河中等，落地速度中等"
+  "eval": "港口管理，AI在调度监控增强，护城河中等，落地速度中等",
+  "digital": 65
  },
  {
   "code": "2-02-18-11",
@@ -1435,7 +1549,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "机场设施维护，AI在监控增强，护城河中等，落地速度中等"
+  "eval": "机场设施维护，AI在监控增强，护城河中等，落地速度中等",
+  "digital": 70
  },
  {
   "code": "2-02-18-12",
@@ -1447,7 +1562,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "铁路建设，AI在设计施工管理增强，护城河中等，落地速度中等"
+  "eval": "铁路建设，AI在设计施工管理增强，护城河中等，落地速度中等",
+  "automation": 60,
+  "digital": 70
  },
  {
   "code": "2-02-18-13",
@@ -1460,7 +1577,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "水利工程，AI在设计监控增强，护城河中等，落地速度中等"
+  "eval": "水利工程，AI在设计监控增强，护城河中等，落地速度中等",
+  "digital": 50
  },
  {
   "code": "2-02-19-01",
@@ -1472,7 +1590,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "爆破作业，高风险，AI在设计和安全监测辅助，但现场执行需人，护城河高，落地速度慢"
+  "eval": "爆破作业，高风险，AI在设计和安全监测辅助，但现场执行需人，护城河高，落地速度慢",
+  "automation": 45,
+  "digital": 55
  },
  {
   "code": "2-02-19-02",
@@ -1484,7 +1604,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "水泥陶瓷等，AI在工艺优化增强，护城河中等，落地速度中等"
+  "eval": "水泥陶瓷等，AI在工艺优化增强，护城河中等，落地速度中等",
+  "automation": 45,
+  "digital": 55
  },
  {
   "code": "2-02-19-03",
@@ -1496,7 +1618,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "低",
-  "eval": "采矿加工，AI在开采优化增强，护城河中等，落地速度中等"
+  "eval": "采矿加工，AI在开采优化增强，护城河中等，落地速度中等",
+  "automation": 35,
+  "digital": 40
  },
  {
   "code": "2-02-19-04",
@@ -1508,7 +1632,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "类似硅酸盐，AI增强有限，护城河低，落地速度慢"
+  "eval": "类似硅酸盐，AI增强有限，护城河低，落地速度慢",
+  "automation": 45,
+  "digital": 55
  },
  {
   "code": "2-02-20-01",
@@ -1520,7 +1646,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "低",
-  "eval": "混凝土生产，AI在配比质量监控增强，护城河中等，落地速度中等"
+  "eval": "混凝土生产，AI在配比质量监控增强，护城河中等，落地速度中等",
+  "automation": 30,
+  "digital": 35
  },
  {
   "code": "2-02-20-02",
@@ -1532,7 +1660,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "低",
-  "eval": "生态治理，AI在监测规划辅助，护城河低，落地速度慢"
+  "eval": "生态治理，AI在监测规划辅助，护城河低，落地速度慢",
+  "automation": 30,
+  "digital": 35
  },
  {
   "code": "2-02-20-03",
@@ -1544,7 +1674,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "林业，AI在监测规划辅助，护城河低，落地速度慢"
+  "eval": "林业，AI在监测规划辅助，护城河低，落地速度慢",
+  "automation": 40,
+  "digital": 50
  },
  {
   "code": "2-02-20-04",
@@ -1934,7 +2066,8 @@
   "education": "硕士",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI在数据分析和设备维护上增强，但观测操作需人；护城河中等"
+  "eval": "AI在数据分析和设备维护上增强，但观测操作需人；护城河中等",
+  "digital": 70
  },
  {
   "code": "2-02-25-03",
@@ -2017,7 +2150,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI在数据处理和预测模型上增强，但监测需人；护城河高，专业设备和经验"
+  "eval": "AI在数据处理和预测模型上增强，但监测需人；护城河高，专业设备和经验",
+  "digital": 50
  },
  {
   "code": "2-02-26-03",
@@ -2044,7 +2178,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI在数据分析上增强，但评估和决策需人；护城河高，专业知识和法规"
+  "eval": "AI在数据分析上增强，但评估和决策需人；护城河高，专业知识和法规",
+  "digital": 60
  },
  {
   "code": "2-02-27-02",
@@ -2057,7 +2192,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI在数据分析和设备维护上增强，但现场监测需人；护城河中等，设备操作和法规"
+  "eval": "AI在数据分析和设备维护上增强，但现场监测需人；护城河中等，设备操作和法规",
+  "digital": 55
  },
  {
   "code": "2-02-27-03",
@@ -2350,7 +2486,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "再生资源处理工艺AI辅助优化，但现场操作与品质控制需人；绿色职业政策护城河"
+  "eval": "再生资源处理工艺AI辅助优化，但现场操作与品质控制需人；绿色职业政策护城河",
+  "digital": 40
  },
  {
   "code": "2-02-30-06",
@@ -2363,7 +2500,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "能源监控优化AI辅助数据分析，但策略制定与现场管理需人；绿色职业政策护城河"
+  "eval": "能源监控优化AI辅助数据分析，但策略制定与现场管理需人；绿色职业政策护城河",
+  "digital": 48
  },
  {
   "code": "2-02-30-07",
@@ -2376,7 +2514,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "监理现场监督AI辅助文档审查，但现场质量与安全监控需人；护城河在执业资质"
+  "eval": "监理现场监督AI辅助文档审查，但现场质量与安全监控需人；护城河在执业资质",
+  "digital": 38
  },
  {
   "code": "2-02-30-08",
@@ -2389,7 +2528,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "信息管理高度数字化，AI可替代部分数据整理，但系统架构与战略规划需人；数字职业护城河在数据资源"
+  "eval": "信息管理高度数字化，AI可替代部分数据整理，但系统架构与战略规划需人；数字职业护城河在数据资源",
+  "digital": 85
  },
  {
   "code": "2-02-30-09",
@@ -2402,7 +2542,8 @@
   "education": "本科",
   "pay_tier": "高",
   "level": "极高",
-  "eval": "基础分析AI可自动执行，但高级建模与业务洞察需人；数字职业护城河在业务理解"
+  "eval": "基础分析AI可自动执行，但高级建模与业务洞察需人；数字职业护城河在业务理解",
+  "digital": 90
  },
  {
   "code": "2-02-30-10",
@@ -2415,7 +2556,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "造价计算AI辅助快速估算，但经验判断与策略调整需人；护城河在行业经验"
+  "eval": "造价计算AI辅助快速估算，但经验判断与策略调整需人；护城河在行业经验",
+  "digital": 55
  },
  {
   "code": "2-02-30-11",
@@ -2428,7 +2570,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "供应链优化AI提升可视化与管理效率，但谈判与异常处理需人；数字职业护城河在供应商关系"
+  "eval": "供应链优化AI提升可视化与管理效率，但谈判与异常处理需人；数字职业护城河在供应商关系",
+  "digital": 82
  },
  {
   "code": "2-02-31-01",
@@ -2441,7 +2584,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "质量检验检测AI辅助设备，但样品处理与结果判定需人；护城河在检测经验"
+  "eval": "质量检验检测AI辅助设备，但样品处理与结果判定需人；护城河在检测经验",
+  "digital": 38
  },
  {
   "code": "2-02-31-02",
@@ -2454,7 +2598,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "进出口检验AI辅助文档分析，但现场抽样与鉴定需人；护城河在资质与经验"
+  "eval": "进出口检验AI辅助文档分析，但现场抽样与鉴定需人；护城河在资质与经验",
+  "digital": 40
  },
  {
   "code": "2-02-31-03",
@@ -2467,7 +2612,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "检验检疫现场检查AI辅助快速检测，但采样与检疫决定需人；绿色职业政策护城河"
+  "eval": "检验检疫现场检查AI辅助快速检测，但采样与检疫决定需人；绿色职业政策护城河",
+  "digital": 35
  },
  {
   "code": "2-02-31-04",
@@ -2480,7 +2626,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "特种设备检测AI辅助数据分析，但现场检测与判定需人；护城河在法定资质"
+  "eval": "特种设备检测AI辅助数据分析，但现场检测与判定需人；护城河在法定资质",
+  "digital": 38
  },
  {
   "code": "2-02-31-05",
@@ -2493,7 +2640,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "纤维检验仪器操作AI辅助数据分析，但样品处理与标准掌握需人；护城河在专业知识"
+  "eval": "纤维检验仪器操作AI辅助数据分析，但样品处理与标准掌握需人；护城河在专业知识",
+  "digital": 37
  },
  {
   "code": "2-02-31-06",
@@ -2506,7 +2654,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "卫生检疫现场检查AI辅助快速筛查，但采样与检疫判断需人；护城河在政策执行"
+  "eval": "卫生检疫现场检查AI辅助快速筛查，但采样与检疫判断需人；护城河在政策执行",
+  "digital": 32
  },
  {
   "code": "2-02-32-00",
@@ -2519,7 +2668,8 @@
   "education": "硕士",
   "pay_tier": "高",
   "level": "高",
-  "eval": "制药研发AI辅助药物设计，但生产控制与法规合规需人；护城河在监管要求"
+  "eval": "制药研发AI辅助药物设计，但生产控制与法规合规需人；护城河在监管要求",
+  "digital": 55
  },
  {
   "code": "2-02-33-00",
@@ -2532,7 +2682,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "印刷设计AI辅助，但设备操作与质量控制需人；护城河在设备经验"
+  "eval": "印刷设计AI辅助，但设备操作与质量控制需人；护城河在设备经验",
+  "digital": 30
  },
  {
   "code": "2-02-34-01",
@@ -2545,7 +2696,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "产品设计创意AI辅助工具，但用户需求与约束处理需人；护城河在用户洞察"
+  "eval": "产品设计创意AI辅助工具，但用户需求与约束处理需人；护城河在用户洞察",
+  "digital": 60
  },
  {
   "code": "2-02-34-02",
@@ -2558,7 +2710,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "工业设计造型与功能AI辅助渲染，但用户需求与市场分析需人；数字职业护城河在跨领域整合"
+  "eval": "工业设计造型与功能AI辅助渲染，但用户需求与市场分析需人；数字职业护城河在跨领域整合",
+  "digital": 80
  },
  {
   "code": "2-02-35-01",
@@ -2571,7 +2724,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "矫形器定制制作AI辅助设计，但测量与手工制作需人；护城河在临床经验"
+  "eval": "矫形器定制制作AI辅助设计，但测量与手工制作需人；护城河在临床经验",
+  "digital": 25
  },
  {
   "code": "2-02-35-02",
@@ -2583,7 +2737,9 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "假肢制作类似矫形器，AI辅助设计但制作与适配需人；护城河在临床经验"
+  "eval": "假肢制作类似矫形器，AI辅助设计但制作与适配需人；护城河在临床经验",
+  "automation": 18,
+  "digital": 22
  },
  {
   "code": "2-02-35-03",
@@ -2596,7 +2752,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "听力检测设备操作AI辅助，但助听器调试与患者沟通需人；护城河在临床技能"
+  "eval": "听力检测设备操作AI辅助，但助听器调试与患者沟通需人；护城河在临床技能",
+  "digital": 30
  },
  {
   "code": "2-02-36-01",
@@ -2608,7 +2765,9 @@
   "education": "本科",
   "pay_tier": "低",
   "level": "中",
-  "eval": "制浆造纸工艺控制AI辅助优化，但现场操作与设备维护需人；护城河在行业经验"
+  "eval": "制浆造纸工艺控制AI辅助优化，但现场操作与设备维护需人；护城河在行业经验",
+  "automation": 28,
+  "digital": 32
  },
  {
   "code": "2-02-36-02",
@@ -2620,7 +2779,9 @@
   "education": "本科",
   "pay_tier": "低",
   "level": "中",
-  "eval": "皮革化学工艺环保AI辅助配方优化，但现场操作与品质控制需人；护城河在工艺经验"
+  "eval": "皮革化学工艺环保AI辅助配方优化，但现场操作与品质控制需人；护城河在工艺经验",
+  "automation": 28,
+  "digital": 30
  },
  {
   "code": "2-02-36-03",
@@ -2632,7 +2793,9 @@
   "education": "硕士",
   "pay_tier": "中",
   "level": "中",
-  "eval": "生物发酵菌种优化AI辅助实验设计，但实验操作与过程控制需人；护城河在生物安全要求"
+  "eval": "生物发酵菌种优化AI辅助实验设计，但实验操作与过程控制需人；护城河在生物安全要求",
+  "automation": 40,
+  "digital": 45
  },
  {
   "code": "2-02-36-04",
@@ -5624,7 +5787,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "大型设备安装需要技术判断；部分可被自动化吊装；护城河中等"
+  "eval": "大型设备安装需要技术判断；部分可被自动化吊装；护城河中等",
+  "digital": 45
  },
  {
   "code": "6-29-03-02",
@@ -5637,7 +5801,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "电气安装部分可被自动化；需要经验；护城河中等"
+  "eval": "电气安装部分可被自动化；需要经验；护城河中等",
+  "digital": 45
  },
  {
   "code": "6-29-03-03",
@@ -5650,7 +5815,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "特种设备，持证上岗；智能电梯发展但安装维修仍需人；护城河高"
+  "eval": "特种设备，持证上岗；智能电梯发展但安装维修仍需人；护城河高",
+  "digital": 50
  },
  {
   "code": "6-29-03-04",
@@ -5663,7 +5829,8 @@
   "education": "初中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "管道安装，部分可被自动化；护城河中等"
+  "eval": "管道安装，部分可被自动化；护城河中等",
+  "digital": 35
  },
  {
   "code": "6-29-03-05",
@@ -5675,7 +5842,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "暖通空调安装维修，部分可被自动化；需要经验判断；护城河中等"
+  "eval": "暖通空调安装维修，部分可被自动化；需要经验判断；护城河中等",
+  "automation": 50,
+  "digital": 45
  },
  {
   "code": "6-29-03-06",
@@ -5687,7 +5856,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "低",
-  "eval": "高风险特种设备，安全监管严格；需要持证；护城河高"
+  "eval": "高风险特种设备，安全监管严格；需要持证；护城河高",
+  "automation": 25,
+  "digital": 30
  },
  {
   "code": "6-29-03-07",
@@ -5699,7 +5870,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "发电设备安装，电力行业重要；部分可被自动化；护城河较高"
+  "eval": "发电设备安装，电力行业重要；部分可被自动化；护城河较高",
+  "automation": 48,
+  "digital": 45
  },
  {
   "code": "6-29-03-08",
@@ -5711,7 +5884,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "电力设备安装，安全监管严格；护城河高"
+  "eval": "电力设备安装，安全监管严格；护城河高",
+  "automation": 45,
+  "digital": 50
  },
  {
   "code": "6-29-03-09",
@@ -5723,7 +5898,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "轨道通信设备安装维护，轨道安全重要；智能通信发展；护城河高"
+  "eval": "轨道通信设备安装维护，轨道安全重要；智能通信发展；护城河高",
+  "automation": 42,
+  "digital": 52
  },
  {
   "code": "6-29-03-10",
@@ -5735,7 +5912,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "信号系统已有智能控制；安装维护仍需人；护城河高"
+  "eval": "信号系统已有智能控制；安装维护仍需人；护城河高",
+  "automation": 50,
+  "digital": 58
  },
  {
   "code": "6-29-04-01",
@@ -5747,7 +5926,9 @@
   "education": "初中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "装饰施工手工技艺强，但设计可被AI辅助；AI落地中高；护城河中等"
+  "eval": "装饰施工手工技艺强，但设计可被AI辅助；AI落地中高；护城河中等",
+  "automation": 50,
+  "digital": 50
  },
  {
   "code": "6-29-04-02",
@@ -5759,7 +5940,9 @@
   "education": "初中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "门窗幕墙安装，部分可被自动化；需要精度；护城河中等"
+  "eval": "门窗幕墙安装，部分可被自动化；需要精度；护城河中等",
+  "automation": 48,
+  "digital": 40
  },
  {
   "code": "6-29-04-03",
@@ -5771,7 +5954,9 @@
   "education": "初中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "照明安装，部分可被自动化；护城河较低"
+  "eval": "照明安装，部分可被自动化；护城河较低",
+  "automation": 52,
+  "digital": 40
  },
  {
   "code": "6-29-05-00",
@@ -5783,7 +5968,7109 @@
   "education": "初中",
   "pay_tier": "中",
   "level": "极低",
-  "eval": "古建筑修缮高度依赖手工技艺和经验，非遗传承；AI难以替代；护城河极高；落地极慢"
+  "eval": "古建筑修缮高度依赖手工技艺和经验，非遗传承；AI难以替代；护城河极高；落地极慢",
+  "automation": 10,
+  "digital": 15
+ },
+ {
+  "code": "1-03-00-01",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 40,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 50,
+  "education": "本科",
+  "pay_tier": "高",
+  "level": "低",
+  "eval": "政治决策与组织协调依赖人际信任，AI难替代核心担责角色"
+ },
+ {
+  "code": "1-03-00-02",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 50,
+  "education": "本科",
+  "pay_tier": "高",
+  "level": "低",
+  "eval": "经济协调与政策传达需线下互动，AI辅助有限"
+ },
+ {
+  "code": "1-04-01-01",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 20,
+  "share": 11,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "组织维权与活动策划需人际信任，AI难介入核心决策"
+ },
+ {
+  "code": "1-04-01-02",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 20,
+  "share": 11,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "青年活动组织与思想引领依赖现场互动，AI辅助有限"
+ },
+ {
+  "code": "1-04-01-03",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 20,
+  "share": 11,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "妇女权益维护与社区服务需人际信任，AI难替代"
+ },
+ {
+  "code": "1-04-01-04",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 20,
+  "share": 11,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "群体活动协调需线下担责，AI辅助有限"
+ },
+ {
+  "code": "1-04-02-00",
+  "overall": 35,
+  "automation": 20,
+  "augmentation": 40,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 25,
+  "share": 11,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "公益服务管理需人际信任，AI难介入核心决策"
+ },
+ {
+  "code": "1-04-03-00",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 20,
+  "share": 11,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "服务交付依赖现场互动，AI辅助有限"
+ },
+ {
+  "code": "1-04-04-00",
+  "overall": 40,
+  "automation": 25,
+  "augmentation": 45,
+  "digital": 45,
+  "moat": 65,
+  "adoption": 30,
+  "share": 11,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "中介协调需信任背书，AI难替代担责角色"
+ },
+ {
+  "code": "1-04-05-00",
+  "overall": 35,
+  "automation": 20,
+  "augmentation": 40,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 25,
+  "share": 11,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "公益资源管理需人际信任，AI辅助有限"
+ },
+ {
+  "code": "1-04-06-00",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 25,
+  "moat": 80,
+  "adoption": 15,
+  "share": 11,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "宗教仪式与教义阐释依赖现场互动，AI难介入"
+ },
+ {
+  "code": "1-05-00-01",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 20,
+  "moat": 85,
+  "adoption": 15,
+  "share": 50,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "社区治理需线下担责，AI难替代人际信任"
+ },
+ {
+  "code": "1-05-00-02",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 20,
+  "moat": 85,
+  "adoption": 15,
+  "share": 50,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "农村治理依赖现场决策，AI辅助有限"
+ },
+ {
+  "code": "2-04-01-01",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 70,
+  "moat": 70,
+  "adoption": 50,
+  "share": 14,
+  "education": "本科",
+  "pay_tier": "高",
+  "level": "中",
+  "eval": "自动驾驶辅助但安全担责需人，AI难完全替代"
+ },
+ {
+  "code": "2-04-01-02",
+  "overall": 45,
+  "automation": 35,
+  "augmentation": 55,
+  "digital": 65,
+  "moat": 70,
+  "adoption": 45,
+  "share": 14,
+  "education": "本科",
+  "pay_tier": "高",
+  "level": "中",
+  "eval": "飞机系统维护依赖经验判断，AI辅助有限"
+ },
+ {
+  "code": "2-04-01-03",
+  "overall": 55,
+  "automation": 50,
+  "augmentation": 60,
+  "digital": 75,
+  "moat": 50,
+  "adoption": 55,
+  "share": 14,
+  "education": "本科",
+  "pay_tier": "高",
+  "level": "中",
+  "eval": "导航计算部分可自动化，但实时决策需人"
+ },
+ {
+  "code": "2-04-01-04",
+  "overall": 55,
+  "automation": 50,
+  "augmentation": 60,
+  "digital": 75,
+  "moat": 45,
+  "adoption": 55,
+  "share": 14,
+  "education": "本科",
+  "pay_tier": "高",
+  "level": "中",
+  "eval": "通信保障部分可自动化，但应急通信需人"
+ },
+ {
+  "code": "2-04-02-01",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 14,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "船舶操作依赖现场经验，AI辅助有限"
+ },
+ {
+  "code": "2-04-02-02",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 14,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "轮机管理依赖实操经验，AI难替代"
+ },
+ {
+  "code": "2-04-02-03",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 40,
+  "moat": 80,
+  "adoption": 30,
+  "share": 14,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "引航需现场判断与经验，AI难替代"
+ },
+ {
+  "code": "2-05-02-01",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "望闻问切依赖经验，AI辅助诊断但难替代"
+ },
+ {
+  "code": "2-05-02-02",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 80,
+  "adoption": 30,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "手术操作依赖手法，AI难介入"
+ },
+ {
+  "code": "2-05-02-03",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "妇科诊疗依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-05-02-04",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "儿科望诊依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-05-02-05",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "眼科检查依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-05-02-06",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "皮肤望诊依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-05-02-07",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 25,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "正骨手法依赖经验，AI难替代"
+ },
+ {
+  "code": "2-05-02-08",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "肛肠检查依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-05-02-09",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "耳鼻喉检查依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-05-02-10",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 25,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "针灸操作依赖手法，AI难替代"
+ },
+ {
+  "code": "2-05-02-11",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 25,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "推拿手法依赖经验，AI难替代"
+ },
+ {
+  "code": "2-05-02-12",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 50,
+  "digital": 50,
+  "moat": 60,
+  "adoption": 40,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "营养方案可AI辅助，但执行需人"
+ },
+ {
+  "code": "2-05-02-13",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 25,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "整脊手法依赖经验，AI难替代"
+ },
+ {
+  "code": "2-05-02-14",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 40,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "康复治疗依赖手法，AI辅助有限"
+ },
+ {
+  "code": "2-05-02-15",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "社区诊疗依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-05-02-16",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "亚健康调理依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-05-08-01",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "护理操作依赖经验，AI难替代"
+ },
+ {
+  "code": "2-05-08-02",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "儿科护理依赖经验，AI难替代"
+ },
+ {
+  "code": "2-05-08-03",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "急诊护理依赖快速反应，AI难替代"
+ },
+ {
+  "code": "2-05-08-04",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "外科护理依赖经验，AI难替代"
+ },
+ {
+  "code": "2-05-08-05",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "社区护理依赖经验，AI难替代"
+ },
+ {
+  "code": "2-05-08-06",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "助产操作依赖经验，AI难替代"
+ },
+ {
+  "code": "2-05-08-07",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "口腔护理依赖经验，AI难替代"
+ },
+ {
+  "code": "2-05-08-08",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "妇产科护理依赖经验，AI难替代"
+ },
+ {
+  "code": "2-05-08-09",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "中医护理依赖经验，AI难替代"
+ },
+ {
+  "code": "2-05-09-00",
+  "overall": 15,
+  "automation": 10,
+  "augmentation": 20,
+  "digital": 20,
+  "moat": 85,
+  "adoption": 15,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "低",
+  "level": "低",
+  "eval": "基层诊疗依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-05-10-00",
+  "overall": 15,
+  "automation": 10,
+  "augmentation": 20,
+  "digital": 20,
+  "moat": 85,
+  "adoption": 15,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低",
+  "eval": "按摩手法依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-02-01",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 40,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "现场指挥依赖经验与人际协作，AI难替代"
+ },
+ {
+  "code": "2-09-02-02",
+  "overall": 60,
+  "automation": 50,
+  "augmentation": 70,
+  "digital": 70,
+  "moat": 60,
+  "adoption": 55,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高",
+  "eval": "虚拟演员兴起但真人需求仍存，AI冲击中等"
+ },
+ {
+  "code": "2-09-02-03",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "现场表演依赖互动，AI难替代"
+ },
+ {
+  "code": "2-09-02-04",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "肢体表演依赖技巧，AI难替代"
+ },
+ {
+  "code": "2-09-02-05",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "曲艺表演依赖现场互动，AI难替代"
+ },
+ {
+  "code": "2-09-02-06",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "技巧表演依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-02-07",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "歌唱技巧依赖天赋，AI难替代"
+ },
+ {
+  "code": "2-09-02-08",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 25,
+  "moat": 80,
+  "adoption": 25,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "传统表演依赖技巧，AI难替代"
+ },
+ {
+  "code": "2-09-02-09",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "民族乐器演奏依赖技巧，AI难替代"
+ },
+ {
+  "code": "2-09-02-10",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "乐器演奏依赖技巧，AI难替代"
+ },
+ {
+  "code": "2-09-03-01",
+  "overall": 50,
+  "automation": 30,
+  "augmentation": 55,
+  "digital": 55,
+  "moat": 65,
+  "adoption": 45,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "项目管理依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-09-03-02",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 55,
+  "digital": 65,
+  "moat": 50,
+  "adoption": 50,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "现场记录依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-09-03-03",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 55,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 50,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "摄影技术依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-09-03-04",
+  "overall": 60,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 55,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "发行管理依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-09-03-05",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 50,
+  "digital": 60,
+  "moat": 65,
+  "adoption": 40,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "实时导播依赖判断，AI难替代"
+ },
+ {
+  "code": "2-09-03-06",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 75,
+  "moat": 45,
+  "adoption": 60,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "视频剪辑AI可辅助，但创意决策需人"
+ },
+ {
+  "code": "2-09-04-01",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "灯光设计依赖现场经验，AI辅助有限"
+ },
+ {
+  "code": "2-09-04-02",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "音响技术依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-09-04-03",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 50,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "美术设计依赖创意，AI辅助有限"
+ },
+ {
+  "code": "2-09-04-04",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 2,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "化妆操作依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-04-05",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 2,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "舞台装置依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-04-06",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 2,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "服装制作依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-04-07",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "现场监督依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-04-08",
+  "overall": 50,
+  "automation": 30,
+  "augmentation": 55,
+  "digital": 55,
+  "moat": 65,
+  "adoption": 45,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "演出管理依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-09-05-01",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 50,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 40,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "艺术创作依赖原创性，AI难替代核心创意"
+ },
+ {
+  "code": "2-09-05-02",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 25,
+  "moat": 80,
+  "adoption": 25,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "篆刻工艺依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-05-03",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 25,
+  "moat": 80,
+  "adoption": 25,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "雕塑创作依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-05-04",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 25,
+  "moat": 80,
+  "adoption": 25,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "书法创作依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-05-05",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 50,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "摄影创意依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-09-06-01",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 75,
+  "moat": 50,
+  "adoption": 60,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "设计工作AI可辅助，但创意决策需人"
+ },
+ {
+  "code": "2-09-06-02",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 75,
+  "moat": 50,
+  "adoption": 60,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "服装设计AI可辅助，但工艺决策需人"
+ },
+ {
+  "code": "2-09-06-03",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 75,
+  "moat": 50,
+  "adoption": 60,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "动画制作AI可辅助，但创意需人"
+ },
+ {
+  "code": "2-09-06-04",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 75,
+  "moat": 50,
+  "adoption": 60,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "环境设计AI可辅助，但现场决策需人"
+ },
+ {
+  "code": "2-09-06-05",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "染织工艺依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-06-06",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "工艺美术依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-06-07",
+  "overall": 70,
+  "automation": 65,
+  "augmentation": 80,
+  "digital": 85,
+  "moat": 40,
+  "adoption": 70,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高",
+  "eval": "数字媒体创作AI冲击大，但创意需人"
+ },
+ {
+  "code": "2-09-06-08",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "公共艺术依赖现场互动，AI难替代"
+ },
+ {
+  "code": "2-09-06-09",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 50,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "展览设计AI可辅助，但现场决策需人"
+ },
+ {
+  "code": "2-09-07-01",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 20,
+  "moat": 80,
+  "adoption": 20,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "训练指导依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-07-02",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 20,
+  "moat": 80,
+  "adoption": 20,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "裁判判断依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-07-03",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 20,
+  "moat": 80,
+  "adoption": 20,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "比赛表现依赖天赋，AI难替代"
+ },
+ {
+  "code": "2-09-07-04",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 20,
+  "moat": 80,
+  "adoption": 20,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "运动防护依赖经验，AI难替代"
+ },
+ {
+  "code": "2-09-07-05",
+  "overall": 40,
+  "automation": 25,
+  "augmentation": 45,
+  "digital": 45,
+  "moat": 65,
+  "adoption": 35,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "体育管理依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-10-01-01",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 60,
+  "adoption": 50,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "现场采访依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-10-01-02",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 50,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "摄影技术依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-10-02-01",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 70,
+  "moat": 45,
+  "adoption": 60,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "编辑工作AI可辅助，但创意决策需人"
+ },
+ {
+  "code": "2-10-02-02",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 70,
+  "moat": 45,
+  "adoption": 60,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "美术编辑AI可辅助，但创意需人"
+ },
+ {
+  "code": "2-10-02-03",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 70,
+  "moat": 45,
+  "adoption": 60,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "技术编辑AI可辅助，但专业判断需人"
+ },
+ {
+  "code": "2-10-02-04",
+  "overall": 70,
+  "automation": 65,
+  "augmentation": 80,
+  "digital": 80,
+  "moat": 40,
+  "adoption": 70,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高",
+  "eval": "数字出版AI冲击大，但内容审核需人"
+ },
+ {
+  "code": "2-10-02-05",
+  "overall": 70,
+  "automation": 65,
+  "augmentation": 75,
+  "digital": 80,
+  "moat": 35,
+  "adoption": 70,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高",
+  "eval": "网络内容AI可替代部分，但审核需人"
+ },
+ {
+  "code": "2-10-02-06",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 70,
+  "moat": 45,
+  "adoption": 60,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "音乐编辑AI可辅助，但创意需人"
+ },
+ {
+  "code": "2-10-03-00",
+  "overall": 60,
+  "automation": 60,
+  "augmentation": 65,
+  "digital": 65,
+  "moat": 35,
+  "adoption": 60,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "校对工作AI可替代大部分，但最终审核需人"
+ },
+ {
+  "code": "2-10-04-01",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 65,
+  "digital": 70,
+  "moat": 45,
+  "adoption": 60,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "播音AI可替代部分，但现场感需人"
+ },
+ {
+  "code": "2-10-04-02",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 50,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 40,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "主持互动依赖现场感，AI难替代"
+ },
+ {
+  "code": "2-10-05-00",
+  "overall": 70,
+  "automation": 65,
+  "augmentation": 75,
+  "digital": 80,
+  "moat": 35,
+  "adoption": 70,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高",
+  "eval": "翻译AI冲击大，但专业场景需人"
+ },
+ {
+  "code": "2-10-06-01",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 50,
+  "adoption": 50,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "文献管理AI可辅助，但专业判断需人"
+ },
+ {
+  "code": "2-10-06-02",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 50,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "专业摄影依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-10-07-00",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 50,
+  "adoption": 50,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "档案管理AI可辅助，但审核需人"
+ },
+ {
+  "code": "2-10-08-01",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 25,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "考古发掘依赖现场经验，AI难替代"
+ },
+ {
+  "code": "2-10-08-02",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "文物管理依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-10-08-03",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "文物保护依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-10-08-04",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "文物保护依赖经验，AI辅助有限"
+ },
+ {
+  "code": "2-10-08-05",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 50,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "展陈设计AI可辅助，但现场决策需人"
+ },
+ {
+  "code": "4-02-03-01",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 35,
+  "moat": 80,
+  "adoption": 30,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "船舶驾驶依赖经验，AI辅助有限"
+ },
+ {
+  "code": "4-02-03-02",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 50,
+  "moat": 60,
+  "adoption": 40,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "业务办理依赖经验，AI辅助有限"
+ },
+ {
+  "code": "4-02-03-03",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 25,
+  "moat": 75,
+  "adoption": 20,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "客运服务依赖经验，AI辅助有限"
+ },
+ {
+  "code": "4-02-03-04",
+  "overall": 15,
+  "automation": 10,
+  "augmentation": 20,
+  "digital": 20,
+  "moat": 85,
+  "adoption": 15,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "救生操作依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-03-05",
+  "overall": 15,
+  "automation": 10,
+  "augmentation": 20,
+  "digital": 20,
+  "moat": 85,
+  "adoption": 15,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "航标维护依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-04-01",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "服务依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-04-02",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "地面服务依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-04-03",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 55,
+  "digital": 65,
+  "moat": 60,
+  "adoption": 50,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "运行指挥依赖经验，AI辅助有限"
+ },
+ {
+  "code": "4-02-04-04",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "安全检查依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-04-05",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "场务维护依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-04-06",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 55,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 50,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "无人机操作AI可辅助，但应急需人"
+ },
+ {
+  "code": "4-02-05-01",
+  "overall": 15,
+  "automation": 10,
+  "augmentation": 20,
+  "digital": 15,
+  "moat": 85,
+  "adoption": 15,
+  "share": 3,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "低",
+  "eval": "体力劳动依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-05-02",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 50,
+  "adoption": 40,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "售票可数字化，但现场服务需人"
+ },
+ {
+  "code": "4-02-05-03",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 50,
+  "moat": 60,
+  "adoption": 40,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "代理服务依赖经验，AI辅助有限"
+ },
+ {
+  "code": "4-02-05-04",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 25,
+  "moat": 80,
+  "adoption": 20,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "危险品运输依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-06-01",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 50,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "仓储管理AI可辅助，但现场决策需人"
+ },
+ {
+  "code": "4-02-06-02",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 50,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "理货工作AI可辅助，但现场决策需人"
+ },
+ {
+  "code": "4-02-06-03",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 70,
+  "moat": 50,
+  "adoption": 60,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "物流规划AI冲击大，但执行需人"
+ },
+ {
+  "code": "4-02-06-04",
+  "overall": 15,
+  "automation": 10,
+  "augmentation": 20,
+  "digital": 20,
+  "moat": 85,
+  "adoption": 15,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低",
+  "eval": "冷藏操作依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-06-05",
+  "overall": 70,
+  "automation": 60,
+  "augmentation": 75,
+  "digital": 75,
+  "moat": 50,
+  "adoption": 70,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高",
+  "eval": "供应链管理AI冲击大，但战略决策需人"
+ },
+ {
+  "code": "4-02-07-01",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 50,
+  "adoption": 40,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "营业可数字化，但现场服务需人"
+ },
+ {
+  "code": "4-02-07-02",
+  "overall": 50,
+  "automation": 50,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 45,
+  "adoption": 50,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "分拣可自动化，但复杂情况需人"
+ },
+ {
+  "code": "4-02-07-03",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 25,
+  "digital": 25,
+  "moat": 80,
+  "adoption": 20,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "转运依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-07-04",
+  "overall": 15,
+  "automation": 10,
+  "augmentation": 20,
+  "digital": 20,
+  "moat": 85,
+  "adoption": 15,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "投递依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-07-05",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 50,
+  "adoption": 40,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "报刊销售可数字化，但现场服务需人"
+ },
+ {
+  "code": "4-02-07-06",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 50,
+  "adoption": 40,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "集邮业务可数字化，但现场服务需人"
+ },
+ {
+  "code": "4-02-07-07",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 50,
+  "moat": 60,
+  "adoption": 40,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "市场业务依赖经验，AI辅助有限"
+ },
+ {
+  "code": "4-02-07-08",
+  "overall": 15,
+  "automation": 10,
+  "augmentation": 20,
+  "digital": 20,
+  "moat": 85,
+  "adoption": 15,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低",
+  "eval": "快递配送依赖经验，AI难替代"
+ },
+ {
+  "code": "4-02-07-09",
+  "overall": 50,
+  "automation": 50,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 45,
+  "adoption": 50,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "快件处理可自动化，但复杂情况需人"
+ },
+ {
+  "code": "4-02-07-10",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 50,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "国际业务依赖经验，AI辅助有限"
+ },
+ {
+  "code": "4-02-07-11",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 50,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "站点管理AI可辅助，但现场决策需人"
+ },
+ {
+  "code": "4-05-01-01",
+  "overall": 78,
+  "automation": 80,
+  "augmentation": 70,
+  "moat": 30,
+  "adoption": 80,
+  "share": 35,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-05-01-02",
+  "overall": 72,
+  "automation": 65,
+  "augmentation": 80,
+  "digital": 75,
+  "moat": 55,
+  "adoption": 70,
+  "share": 20,
+  "education": "本科",
+  "pay_tier": "高",
+  "level": "高"
+ },
+ {
+  "code": "4-05-01-03",
+  "overall": 60,
+  "automation": 50,
+  "augmentation": 75,
+  "digital": 70,
+  "moat": 60,
+  "adoption": 65,
+  "share": 20,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-05-01-04",
+  "overall": 68,
+  "automation": 60,
+  "augmentation": 80,
+  "digital": 75,
+  "moat": 50,
+  "adoption": 70,
+  "share": 15,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-05-02-00",
+  "overall": 85,
+  "automation": 80,
+  "augmentation": 90,
+  "digital": 90,
+  "moat": 35,
+  "adoption": 85,
+  "share": 10,
+  "education": "硕士",
+  "pay_tier": "高",
+  "level": "极高"
+ },
+ {
+  "code": "4-05-03-01",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 70,
+  "digital": 60,
+  "moat": 60,
+  "adoption": 55,
+  "share": 25,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-05-03-02",
+  "overall": 65,
+  "automation": 60,
+  "augmentation": 75,
+  "digital": 70,
+  "moat": 50,
+  "adoption": 65,
+  "share": 20,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-05-03-03",
+  "overall": 55,
+  "automation": 45,
+  "augmentation": 70,
+  "digital": 60,
+  "moat": 65,
+  "adoption": 50,
+  "share": 10,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-05-03-04",
+  "overall": 60,
+  "automation": 50,
+  "augmentation": 75,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 55,
+  "share": 15,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-05-04-01",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-05-04-02",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 60,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 45,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-05-05-01",
+  "overall": 60,
+  "automation": 50,
+  "augmentation": 75,
+  "digital": 70,
+  "moat": 55,
+  "adoption": 60,
+  "share": 10,
+  "education": "本科",
+  "pay_tier": "高",
+  "level": "中"
+ },
+ {
+  "code": "4-05-05-02",
+  "overall": 75,
+  "automation": 70,
+  "augmentation": 85,
+  "digital": 85,
+  "moat": 45,
+  "adoption": 80,
+  "share": 5,
+  "education": "硕士",
+  "pay_tier": "高",
+  "level": "高"
+ },
+ {
+  "code": "4-08-08-01",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 25,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-08-08-02",
+  "overall": 55,
+  "automation": 50,
+  "augmentation": 70,
+  "digital": 75,
+  "moat": 50,
+  "adoption": 60,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-03",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 65,
+  "digital": 70,
+  "moat": 50,
+  "adoption": 55,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-04",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 75,
+  "digital": 80,
+  "moat": 45,
+  "adoption": 65,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-08-08-05",
+  "overall": 45,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 50,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-06",
+  "overall": 65,
+  "automation": 60,
+  "augmentation": 80,
+  "digital": 80,
+  "moat": 40,
+  "adoption": 70,
+  "share": 8,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-08-08-07",
+  "overall": 65,
+  "automation": 60,
+  "augmentation": 75,
+  "digital": 70,
+  "moat": 55,
+  "adoption": 65,
+  "share": 8,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-08-08-08",
+  "overall": 80,
+  "automation": 75,
+  "augmentation": 85,
+  "digital": 85,
+  "moat": 40,
+  "adoption": 80,
+  "share": 8,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-08-08-09",
+  "overall": 70,
+  "automation": 65,
+  "augmentation": 80,
+  "digital": 80,
+  "moat": 45,
+  "adoption": 75,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-08-08-10",
+  "overall": 55,
+  "automation": 50,
+  "augmentation": 65,
+  "digital": 70,
+  "moat": 50,
+  "adoption": 55,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-11",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 50,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-12",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 75,
+  "digital": 75,
+  "moat": 50,
+  "adoption": 60,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-08-08-13",
+  "overall": 45,
+  "automation": 40,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 45,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-14",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-08-08-15",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 35,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-08-08-16",
+  "overall": 45,
+  "automation": 40,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 45,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-17",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 50,
+  "adoption": 50,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-18",
+  "overall": 55,
+  "automation": 50,
+  "augmentation": 65,
+  "digital": 70,
+  "moat": 50,
+  "adoption": 55,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-19",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 70,
+  "digital": 75,
+  "moat": 45,
+  "adoption": 60,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-08-08-20",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 65,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 50,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-21",
+  "overall": 55,
+  "automation": 50,
+  "augmentation": 70,
+  "digital": 70,
+  "moat": 50,
+  "adoption": 55,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-22",
+  "overall": 60,
+  "automation": 55,
+  "augmentation": 75,
+  "digital": 80,
+  "moat": 45,
+  "adoption": 65,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-08-08-23",
+  "overall": 70,
+  "automation": 65,
+  "augmentation": 85,
+  "digital": 90,
+  "moat": 40,
+  "adoption": 75,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-08-08-24",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 50,
+  "digital": 55,
+  "moat": 60,
+  "adoption": 40,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "低",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-25",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 35,
+  "moat": 75,
+  "adoption": 25,
+  "share": 1,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-08-08-26",
+  "overall": 55,
+  "automation": 50,
+  "augmentation": 65,
+  "digital": 70,
+  "moat": 50,
+  "adoption": 55,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-27",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 50,
+  "digital": 55,
+  "moat": 60,
+  "adoption": 40,
+  "share": 2,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-08-08-28",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 1,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-08-08-29",
+  "overall": 65,
+  "automation": 60,
+  "augmentation": 80,
+  "digital": 85,
+  "moat": 45,
+  "adoption": 70,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-08-09-01",
+  "overall": 70,
+  "automation": 65,
+  "augmentation": 80,
+  "digital": 80,
+  "moat": 40,
+  "adoption": 75,
+  "share": 8,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "4-08-09-02",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-08-10-01",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 35,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-08-10-02",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 50,
+  "digital": 60,
+  "moat": 60,
+  "adoption": 45,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-10-01-01",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 35,
+  "share": 10,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-10-01-03",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 15,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-10-01-04",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 35,
+  "moat": 80,
+  "adoption": 20,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-10-01-05",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 20,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-10-02-01",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-10-02-02",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 35,
+  "moat": 75,
+  "adoption": 20,
+  "share": 5,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-10-02-03",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-10-02-04",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 35,
+  "moat": 75,
+  "adoption": 25,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-10-02-05",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 2,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-10-03-01",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 65,
+  "adoption": 35,
+  "share": 8,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-10-03-02",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 30,
+  "share": 10,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-10-03-03",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-10-03-04",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 35,
+  "moat": 75,
+  "adoption": 20,
+  "share": 5,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-10-03-05",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 3,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-10-04-01",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-10-04-02",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 8,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-10-04-03",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-10-05-01",
+  "overall": 45,
+  "automation": 35,
+  "augmentation": 60,
+  "digital": 55,
+  "moat": 60,
+  "adoption": 45,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-10-05-02",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 65,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 50,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-10-05-03",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 55,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 40,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-10-06-01",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-10-06-02",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-10-06-03",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 35,
+  "moat": 80,
+  "adoption": 20,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-10-06-04",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-10-07-01",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-10-07-02",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-10-07-03",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-10-08-01",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 60,
+  "adoption": 40,
+  "share": 15,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-10-08-02",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-12-01-01",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 30,
+  "share": 15,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-12-01-02",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-12-01-03",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 65,
+  "adoption": 35,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-12-02-01",
+  "overall": 45,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 60,
+  "adoption": 55,
+  "share": 10,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-12-02-02",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 60,
+  "adoption": 50,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-12-02-03",
+  "overall": 45,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 60,
+  "adoption": 55,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-12-03-01",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 65,
+  "adoption": 35,
+  "share": 8,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-12-03-02",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 50,
+  "digital": 60,
+  "moat": 60,
+  "adoption": 45,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-12-04-01",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-12-04-02",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 3,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-12-04-03",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 35,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-12-04-04",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 2,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-12-04-05",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-12-04-06",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 35,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-12-05-01",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 30,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-12-05-02",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 1,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-12-06-00",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-14-01-01",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 65,
+  "adoption": 45,
+  "share": 10,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-14-01-02",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 15,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-14-01-03",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 15,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-14-01-04",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 65,
+  "adoption": 35,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-14-02-01",
+  "overall": 45,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 50,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-14-02-02",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 65,
+  "digital": 70,
+  "moat": 50,
+  "adoption": 55,
+  "share": 5,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-14-02-03",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 60,
+  "adoption": 45,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-14-02-04",
+  "overall": 45,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 50,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-14-02-05",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 60,
+  "adoption": 45,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-14-03-01",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 65,
+  "adoption": 35,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-14-03-02",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 50,
+  "digital": 60,
+  "moat": 60,
+  "adoption": 45,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-14-03-03",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 65,
+  "adoption": 35,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-14-03-04",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-14-03-05",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 65,
+  "adoption": 35,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-14-03-06",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 60,
+  "adoption": 45,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-14-04-01",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 30,
+  "share": 10,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-14-04-02",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 35,
+  "moat": 80,
+  "adoption": 20,
+  "share": 10,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-14-04-03",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-14-04-04",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 65,
+  "adoption": 35,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-14-05-01",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 30,
+  "share": 10,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低"
+ },
+ {
+  "code": "4-14-05-02",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-14-05-03",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-14-05-04",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 35,
+  "moat": 80,
+  "adoption": 20,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "4-14-05-05",
+  "overall": 45,
+  "automation": 35,
+  "augmentation": 60,
+  "digital": 55,
+  "moat": 60,
+  "adoption": 45,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-14-05-06",
+  "overall": 55,
+  "automation": 50,
+  "augmentation": 70,
+  "digital": 80,
+  "moat": 45,
+  "adoption": 60,
+  "share": 2,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-14-05-07",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 65,
+  "digital": 75,
+  "moat": 50,
+  "adoption": 55,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "4-14-06-01",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "4-14-06-02",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 60,
+  "adoption": 40,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "5-05-03-02",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 35,
+  "moat": 80,
+  "adoption": 20,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "5-05-03-03",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "5-05-04-00",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "5-05-05-01",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 45,
+  "moat": 65,
+  "adoption": 35,
+  "share": 20,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "5-05-05-02",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 30,
+  "share": 10,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "5-05-05-03",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 55,
+  "digital": 55,
+  "moat": 60,
+  "adoption": 40,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中"
+ },
+ {
+  "code": "5-05-06-01",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "5-05-06-02",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "5-05-06-03",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "5-05-06-04",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "5-05-06-05",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 25,
+  "digital": 30,
+  "moat": 80,
+  "adoption": 20,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低"
+ },
+ {
+  "code": "5-05-06-06",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "5-05-06-07",
+  "overall": 25,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "6-08-01-01",
+  "overall": 65,
+  "automation": 60,
+  "augmentation": 70,
+  "digital": 80,
+  "moat": 45,
+  "adoption": 70,
+  "share": 30,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "高"
+ },
+ {
+  "code": "6-08-01-02",
+  "overall": 40,
+  "automation": 35,
+  "augmentation": 50,
+  "digital": 60,
+  "moat": 60,
+  "adoption": 45,
+  "share": 40,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "中"
+ },
+ {
+  "code": "6-08-01-03",
+  "overall": 35,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 65,
+  "adoption": 35,
+  "share": 20,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "6-08-02-00",
+  "overall": 30,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 30,
+  "share": 10,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低"
+ },
+ {
+  "code": "6-10-01-01",
+  "overall": 45,
+  "automation": 50,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 65,
+  "adoption": 50,
+  "share": 6,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "原油蒸馏工 依赖现场控制，AI可辅助监控但无法替代判断"
+ },
+ {
+  "code": "6-10-01-02",
+  "overall": 42,
+  "automation": 48,
+  "augmentation": 52,
+  "digital": 58,
+  "moat": 60,
+  "adoption": 45,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "催化裂化工 催化裂化流程复杂，AI优化参数但现场操作仍需人"
+ },
+ {
+  "code": "6-10-01-03",
+  "overall": 40,
+  "automation": 45,
+  "augmentation": 50,
+  "digital": 55,
+  "moat": 62,
+  "adoption": 40,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "蜡油渣油加氢工 加氢处理需精确控制，AI辅助但现场安全关键"
+ },
+ {
+  "code": "6-10-01-04",
+  "overall": 38,
+  "automation": 42,
+  "augmentation": 48,
+  "digital": 52,
+  "moat": 65,
+  "adoption": 38,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "渣油热加工工 热加工高温高压，AI监控但现场调整不可替代"
+ },
+ {
+  "code": "6-10-01-05",
+  "overall": 43,
+  "automation": 47,
+  "augmentation": 50,
+  "digital": 57,
+  "moat": 58,
+  "adoption": 42,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "石脑油加工工 石脑油处理涉及蒸馏裂化，AI可优化流程"
+ },
+ {
+  "code": "6-10-01-06",
+  "overall": 41,
+  "automation": 44,
+  "augmentation": 49,
+  "digital": 53,
+  "moat": 60,
+  "adoption": 40,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "炼厂气加工工 气体加工需现场操作，AI可辅助控制"
+ },
+ {
+  "code": "6-10-01-07",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 45,
+  "digital": 48,
+  "moat": 55,
+  "adoption": 35,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "润滑油脂生产工 生产流程机械化，AI监控质量但人工调整仍需"
+ },
+ {
+  "code": "6-10-01-08",
+  "overall": 40,
+  "automation": 43,
+  "augmentation": 48,
+  "digital": 50,
+  "moat": 57,
+  "adoption": 38,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "石油产品精制工 精制涉及化学处理，AI可优化参数"
+ },
+ {
+  "code": "6-10-01-09",
+  "overall": 39,
+  "automation": 42,
+  "augmentation": 46,
+  "digital": 49,
+  "moat": 60,
+  "adoption": 37,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "油制气工 油制气需反应控制，AI辅助但现场操作关键"
+ },
+ {
+  "code": "6-10-01-10",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 68,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "油品储运工 储运涉及管道管理，AI监控但现场检查需人"
+ },
+ {
+  "code": "6-10-01-11",
+  "overall": 25,
+  "automation": 28,
+  "augmentation": 30,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 25,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "油母页岩提炼工 页岩油提炼技术新，AI应用有限护城河高"
+ },
+ {
+  "code": "6-10-02-01",
+  "overall": 32,
+  "automation": 38,
+  "augmentation": 40,
+  "digital": 45,
+  "moat": 58,
+  "adoption": 32,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "炼焦煤制备工 煤制备涉及破碎筛分，AI可控制流程"
+ },
+ {
+  "code": "6-10-02-02",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 42,
+  "digital": 48,
+  "moat": 65,
+  "adoption": 35,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "炼焦工 炼焦高温操作，AI监控但现场安全需人"
+ },
+ {
+  "code": "6-10-03-01",
+  "overall": 45,
+  "automation": 50,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 55,
+  "adoption": 45,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "煤制烯烃生产工 煤制烯烃工艺复杂，AI可优化控制"
+ },
+ {
+  "code": "6-10-03-02",
+  "overall": 42,
+  "automation": 47,
+  "augmentation": 50,
+  "digital": 55,
+  "moat": 58,
+  "adoption": 40,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "煤制油生产工 煤制油需反应控制，AI辅助但现场操作关键"
+ },
+ {
+  "code": "6-10-03-03",
+  "overall": 40,
+  "automation": 45,
+  "augmentation": 48,
+  "digital": 52,
+  "moat": 60,
+  "adoption": 38,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "煤制气工 煤制气涉及气化，AI可控制参数"
+ },
+ {
+  "code": "6-10-03-04",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 58,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "水煤浆制备工 水煤浆制备机械化，AI可监控"
+ },
+ {
+  "code": "6-10-03-05",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 55,
+  "adoption": 28,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "工业型煤工 型煤生产机械操作，AI可控制流程"
+ },
+ {
+  "code": "6-10-03-06",
+  "overall": 22,
+  "automation": 25,
+  "augmentation": 28,
+  "digital": 30,
+  "moat": 65,
+  "adoption": 22,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "煤提质工 煤提质涉及化学处理，AI应用有限"
+ },
+ {
+  "code": "6-15-01-01",
+  "overall": 40,
+  "automation": 45,
+  "augmentation": 50,
+  "digital": 55,
+  "moat": 60,
+  "adoption": 40,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "水泥生产工 高温煅烧依赖现场监控，AI可辅助但安全关键"
+ },
+ {
+  "code": "6-15-01-02",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 45,
+  "digital": 48,
+  "moat": 55,
+  "adoption": 35,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "水泥混凝土制品工 制品生产部分自动化，人工调整仍需"
+ },
+ {
+  "code": "6-15-01-03",
+  "overall": 38,
+  "automation": 42,
+  "augmentation": 45,
+  "digital": 50,
+  "moat": 58,
+  "adoption": 38,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "石灰煅烧工 石灰煅烧高温，AI可监控但现场操作关键"
+ },
+ {
+  "code": "6-15-01-04",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "石膏粉生产工 粉生产机械化，AI监控质量"
+ },
+ {
+  "code": "6-15-01-05",
+  "overall": 32,
+  "automation": 37,
+  "augmentation": 40,
+  "digital": 45,
+  "moat": 53,
+  "adoption": 32,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "石膏制品生产工 制品生产部分自动化"
+ },
+ {
+  "code": "6-15-01-06",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 50,
+  "adoption": 28,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "预拌混凝土生产工 预拌搅拌运输，部分自动化"
+ },
+ {
+  "code": "6-15-02-01",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 60,
+  "adoption": 25,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "砖瓦生产工 传统工艺部分自动化，护城河较高"
+ },
+ {
+  "code": "6-15-02-02",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 52,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "加气混凝土制品工 加气混凝土生产可自动化"
+ },
+ {
+  "code": "6-15-02-03",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 58,
+  "adoption": 28,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "石材生产工 石材加工部分自动化，人工操作仍需"
+ },
+ {
+  "code": "6-15-02-04",
+  "overall": 32,
+  "automation": 37,
+  "augmentation": 40,
+  "digital": 45,
+  "moat": 50,
+  "adoption": 32,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "人造石生产加工工 人造石生产可自动化"
+ },
+ {
+  "code": "6-15-02-05",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 52,
+  "adoption": 28,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "防水卷材制造工 卷材生产机械操作"
+ },
+ {
+  "code": "6-15-02-06",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 50,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "保温材料制造工 保温材料生产可自动化"
+ },
+ {
+  "code": "6-15-02-07",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 52,
+  "adoption": 28,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "吸音材料制造工 吸音材料生产可自动化"
+ },
+ {
+  "code": "6-15-02-08",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 58,
+  "adoption": 25,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "砂石骨料生产工 骨料生产破碎筛分，部分自动化"
+ },
+ {
+  "code": "6-15-03-01",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 42,
+  "digital": 48,
+  "moat": 55,
+  "adoption": 35,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "玻璃配料熔化工 玻璃熔化高温，AI可监控"
+ },
+ {
+  "code": "6-15-03-02",
+  "overall": 32,
+  "automation": 37,
+  "augmentation": 40,
+  "digital": 45,
+  "moat": 53,
+  "adoption": 32,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "玻璃及玻璃制品成型工 成型部分自动化"
+ },
+ {
+  "code": "6-15-03-03",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "玻璃加工工 玻璃加工切割抛光，部分自动化"
+ },
+ {
+  "code": "6-15-03-04",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 52,
+  "adoption": 28,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "玻璃制品加工工 制品加工可自动化"
+ },
+ {
+  "code": "6-15-03-05",
+  "overall": 45,
+  "automation": 50,
+  "augmentation": 55,
+  "digital": 60,
+  "moat": 45,
+  "adoption": 45,
+  "share": 2,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "电子玻璃制品加工工 电子玻璃高精度，自动化程度高"
+ },
+ {
+  "code": "6-15-03-06",
+  "overall": 42,
+  "automation": 48,
+  "augmentation": 52,
+  "digital": 58,
+  "moat": 48,
+  "adoption": 42,
+  "share": 2,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "石英玻璃制品加工工 石英玻璃高精度，自动化程度高"
+ },
+ {
+  "code": "6-15-04-01",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 50,
+  "adoption": 30,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "玻璃纤维及制品工 玻璃纤维生产可自动化"
+ },
+ {
+  "code": "6-15-04-02",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 55,
+  "adoption": 28,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "玻璃钢制品工 玻璃钢生产手工或机械操作"
+ },
+ {
+  "code": "6-15-05-01",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 58,
+  "adoption": 25,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "陶瓷原料准备工 原料准备部分自动化"
+ },
+ {
+  "code": "6-15-05-02",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 40,
+  "moat": 60,
+  "adoption": 30,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "陶瓷成型施釉工 成型施釉手工为主，护城河高"
+ },
+ {
+  "code": "6-15-05-03",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 42,
+  "digital": 48,
+  "moat": 55,
+  "adoption": 35,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "陶瓷烧成工 烧成高温，AI可监控"
+ },
+ {
+  "code": "6-15-05-04",
+  "overall": 20,
+  "automation": 25,
+  "augmentation": 28,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 20,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "陶瓷装饰工 装饰手工为主，护城河高"
+ },
+ {
+  "code": "6-15-05-05",
+  "overall": 15,
+  "automation": 20,
+  "augmentation": 22,
+  "digital": 25,
+  "moat": 80,
+  "adoption": 15,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "古建琉璃工 传统工艺护城河高"
+ },
+ {
+  "code": "6-15-06-01",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 55,
+  "adoption": 28,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "耐火原料加工成型工 耐火材料机械操作"
+ },
+ {
+  "code": "6-15-06-02",
+  "overall": 32,
+  "automation": 37,
+  "augmentation": 40,
+  "digital": 45,
+  "moat": 53,
+  "adoption": 32,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "耐火材料烧成工 烧成高温，AI可监控"
+ },
+ {
+  "code": "6-15-06-03",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 52,
+  "adoption": 30,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "耐火制品加工工 加工部分自动化"
+ },
+ {
+  "code": "6-15-06-04",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 50,
+  "adoption": 28,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "耐火纤维制品工 纤维制品可自动化"
+ },
+ {
+  "code": "6-15-07-01",
+  "overall": 32,
+  "automation": 37,
+  "augmentation": 40,
+  "digital": 45,
+  "moat": 53,
+  "adoption": 32,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "炭素煅烧工 炭素煅烧高温，AI可监控"
+ },
+ {
+  "code": "6-15-07-02",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 55,
+  "adoption": 28,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "炭素成型工 成型机械操作"
+ },
+ {
+  "code": "6-15-07-03",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 53,
+  "adoption": 30,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "炭素焙烧工 焙烧高温，AI可监控"
+ },
+ {
+  "code": "6-15-07-04",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 58,
+  "adoption": 25,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "炭素浸渍工 浸渍手工或机械操作"
+ },
+ {
+  "code": "6-15-07-05",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 50,
+  "adoption": 30,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "石墨化工 石墨化工可自动化"
+ },
+ {
+  "code": "6-15-07-06",
+  "overall": 22,
+  "automation": 27,
+  "augmentation": 30,
+  "digital": 32,
+  "moat": 60,
+  "adoption": 22,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "炭素制品工 制品工手工为主"
+ },
+ {
+  "code": "6-15-07-07",
+  "overall": 20,
+  "automation": 25,
+  "augmentation": 28,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 20,
+  "share": 2,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "炭素特种材料工 特种材料护城河高"
+ },
+ {
+  "code": "6-15-08-01",
+  "overall": 40,
+  "automation": 45,
+  "augmentation": 50,
+  "digital": 55,
+  "moat": 45,
+  "adoption": 40,
+  "share": 2,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "人工合成晶体工 合成晶体高精度，自动化程度高"
+ },
+ {
+  "code": "6-15-08-02",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 55,
+  "adoption": 25,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "高岭土加工工 高岭土加工机械操作"
+ },
+ {
+  "code": "6-15-08-03",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 52,
+  "adoption": 28,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "珍珠岩加工工 珍珠岩加工可自动化"
+ },
+ {
+  "code": "6-15-08-04",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 55,
+  "adoption": 25,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "石棉制品工 石棉制品机械操作，健康风险"
+ },
+ {
+  "code": "6-15-08-05",
+  "overall": 22,
+  "automation": 27,
+  "augmentation": 30,
+  "digital": 32,
+  "moat": 60,
+  "adoption": 22,
+  "share": 2,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "云母制品工 云母制品手工为主"
+ },
+ {
+  "code": "6-16-02-01",
+  "overall": 50,
+  "automation": 45,
+  "augmentation": 55,
+  "digital": 65,
+  "moat": 55,
+  "adoption": 50,
+  "share": 7,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "石油勘探工 勘探涉及地质分析，数字化程度高"
+ },
+ {
+  "code": "6-16-02-02",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 25,
+  "share": 7,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "钻井工 钻井现场操作护城河高"
+ },
+ {
+  "code": "6-16-02-03",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 40,
+  "moat": 60,
+  "adoption": 30,
+  "share": 7,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "钻井协作工 协助钻井部分自动化"
+ },
+ {
+  "code": "6-16-02-04",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 38,
+  "moat": 68,
+  "adoption": 28,
+  "share": 7,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "井下作业设备操作维修工 井下作业护城河高"
+ },
+ {
+  "code": "6-16-02-05",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 72,
+  "adoption": 25,
+  "share": 6,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "水下钻井设备操作工 水下操作护城河高"
+ },
+ {
+  "code": "6-16-02-06",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 45,
+  "digital": 50,
+  "moat": 55,
+  "adoption": 35,
+  "share": 6,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "油气水井测试工 测试涉及仪器操作部分自动化"
+ },
+ {
+  "code": "6-16-02-07",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 25,
+  "share": 6,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "石油开采工 开采现场操作护城河高"
+ },
+ {
+  "code": "6-16-02-08",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 25,
+  "share": 6,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "天然气开采工 类似石油开采护城河高"
+ },
+ {
+  "code": "6-16-02-09",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 40,
+  "moat": 58,
+  "adoption": 30,
+  "share": 6,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "煤层气排采集输工 煤层气可部分自动化"
+ },
+ {
+  "code": "6-16-02-10",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 42,
+  "digital": 48,
+  "moat": 55,
+  "adoption": 35,
+  "share": 6,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "天然气处理工 处理可自动化"
+ },
+ {
+  "code": "6-16-02-11",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 58,
+  "adoption": 30,
+  "share": 6,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "油气输送工 输送管道操作部分自动化"
+ },
+ {
+  "code": "6-16-02-12",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 38,
+  "moat": 65,
+  "adoption": 28,
+  "share": 6,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "油气管道维护工 维护现场检查护城河高"
+ },
+ {
+  "code": "6-16-02-13",
+  "overall": 20,
+  "automation": 25,
+  "augmentation": 28,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 20,
+  "share": 6,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "海上平台水手 海上工作护城河高"
+ },
+ {
+  "code": "6-16-03-01",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 60,
+  "adoption": 25,
+  "share": 6,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "海盐制盐工 制盐传统工艺部分自动化"
+ },
+ {
+  "code": "6-16-03-02",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 60,
+  "adoption": 25,
+  "share": 6,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "湖盐制盐工 类似海盐制盐"
+ },
+ {
+  "code": "6-16-03-03",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 60,
+  "adoption": 25,
+  "share": 6,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "井矿盐制盐工 类似湖盐制盐"
+ },
+ {
+  "code": "6-18-01-01",
+  "overall": 40,
+  "automation": 45,
+  "augmentation": 50,
+  "digital": 55,
+  "moat": 55,
+  "adoption": 40,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "车工 车床操作数控可部分自动化"
+ },
+ {
+  "code": "6-18-01-02",
+  "overall": 40,
+  "automation": 45,
+  "augmentation": 50,
+  "digital": 55,
+  "moat": 55,
+  "adoption": 40,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "铣工 铣床操作类似车工"
+ },
+ {
+  "code": "6-18-01-03",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 45,
+  "digital": 50,
+  "moat": 55,
+  "adoption": 35,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "刨插工 刨床操作部分自动化"
+ },
+ {
+  "code": "6-18-01-04",
+  "overall": 38,
+  "automation": 43,
+  "augmentation": 48,
+  "digital": 52,
+  "moat": 53,
+  "adoption": 38,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "磨工 磨床操作可自动化"
+ },
+ {
+  "code": "6-18-01-05",
+  "overall": 38,
+  "automation": 43,
+  "augmentation": 48,
+  "digital": 52,
+  "moat": 53,
+  "adoption": 38,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "镗工 镗床操作可自动化"
+ },
+ {
+  "code": "6-18-01-06",
+  "overall": 38,
+  "automation": 43,
+  "augmentation": 48,
+  "digital": 52,
+  "moat": 53,
+  "adoption": 38,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "钻床工 钻床操作可自动化"
+ },
+ {
+  "code": "6-18-01-07",
+  "overall": 50,
+  "automation": 55,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 45,
+  "adoption": 50,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "多工序数控机床操作调整工 数控机床自动化程度高"
+ },
+ {
+  "code": "6-18-01-08",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 45,
+  "digital": 50,
+  "moat": 53,
+  "adoption": 35,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "电切削工 电火花切割可自动化"
+ },
+ {
+  "code": "6-18-01-09",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 45,
+  "digital": 50,
+  "moat": 53,
+  "adoption": 35,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "拉床工 拉床操作可自动化"
+ },
+ {
+  "code": "6-18-01-10",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "下料工 下料机械操作部分自动化"
+ },
+ {
+  "code": "6-18-01-11",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 40,
+  "moat": 58,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "铆工 铆接手工或机械操作"
+ },
+ {
+  "code": "6-18-01-12",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 45,
+  "digital": 48,
+  "moat": 53,
+  "adoption": 35,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "冲压工 冲压机械操作可自动化"
+ },
+ {
+  "code": "6-18-01-13",
+  "overall": 55,
+  "automation": 60,
+  "augmentation": 65,
+  "digital": 70,
+  "moat": 40,
+  "adoption": 55,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "增材制造设备操作员 3D打印数字职业自动化高"
+ },
+ {
+  "code": "6-18-02-01",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 58,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "铸造工 铸造现场监控部分自动化"
+ },
+ {
+  "code": "6-18-02-02",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 58,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "锻造工 锻造手工或机械操作"
+ },
+ {
+  "code": "6-18-02-03",
+  "overall": 32,
+  "automation": 37,
+  "augmentation": 40,
+  "digital": 45,
+  "moat": 55,
+  "adoption": 32,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "金属热处理工 热处理可自动化"
+ },
+ {
+  "code": "6-18-02-04",
+  "overall": 20,
+  "automation": 25,
+  "augmentation": 28,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 20,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "焊工 焊接护城河高"
+ },
+ {
+  "code": "6-18-02-05",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 45,
+  "digital": 48,
+  "moat": 50,
+  "adoption": 35,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "机械加工材料切割工 切割可自动化"
+ },
+ {
+  "code": "6-18-02-06",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "粉末冶金制品制造工 粉末冶金可自动化"
+ },
+ {
+  "code": "6-18-03-01",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "镀层工 电镀可自动化"
+ },
+ {
+  "code": "6-18-03-02",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "镀膜工 类似电镀可自动化"
+ },
+ {
+  "code": "6-18-03-03",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "涂装工 涂装可自动化但需质量控制"
+ },
+ {
+  "code": "6-18-03-04",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 53,
+  "adoption": 28,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "喷涂喷焊工 喷涂喷焊可自动化"
+ },
+ {
+  "code": "6-18-04-01",
+  "overall": 20,
+  "automation": 25,
+  "augmentation": 28,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 20,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "模具工 模具制造技能护城河高"
+ },
+ {
+  "code": "6-18-04-02",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 60,
+  "adoption": 25,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "模型制作工 模型制作部分自动化"
+ },
+ {
+  "code": "6-18-04-03",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "磨料制造工 磨料生产可自动化"
+ },
+ {
+  "code": "6-18-04-04",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "磨具制造工 磨具制造可自动化"
+ },
+ {
+  "code": "6-18-04-05",
+  "overall": 18,
+  "automation": 23,
+  "augmentation": 26,
+  "digital": 28,
+  "moat": 72,
+  "adoption": 18,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "量具和刃具制造工 量具刃具手工护城河高"
+ },
+ {
+  "code": "6-18-04-06",
+  "overall": 18,
+  "automation": 23,
+  "augmentation": 26,
+  "digital": 28,
+  "moat": 72,
+  "adoption": 18,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "工具钳工 钳工手工护城河高"
+ },
+ {
+  "code": "6-19-01-01",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 60,
+  "adoption": 25,
+  "share": 12,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "工具五金制作工 手工或机械护城河中等"
+ },
+ {
+  "code": "6-19-01-02",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 60,
+  "adoption": 25,
+  "share": 12,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "建筑五金制品制作工 类似工具五金"
+ },
+ {
+  "code": "6-19-01-03",
+  "overall": 20,
+  "automation": 25,
+  "augmentation": 28,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 20,
+  "share": 12,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "锁具制作工 锁具手工护城河高"
+ },
+ {
+  "code": "6-19-01-04",
+  "overall": 20,
+  "automation": 25,
+  "augmentation": 28,
+  "digital": 30,
+  "moat": 65,
+  "adoption": 20,
+  "share": 12,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "金属炊具及器皿制作工 炊具手工为主"
+ },
+ {
+  "code": "6-19-01-05",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 40,
+  "moat": 55,
+  "adoption": 30,
+  "share": 13,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "日用五金制品制作工 日用五金可自动化"
+ },
+ {
+  "code": "6-19-01-06",
+  "overall": 22,
+  "automation": 27,
+  "augmentation": 30,
+  "digital": 32,
+  "moat": 60,
+  "adoption": 22,
+  "share": 13,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "搪瓷制品制造工 搪瓷手工或机械操作"
+ },
+ {
+  "code": "6-19-01-07",
+  "overall": 18,
+  "automation": 23,
+  "augmentation": 26,
+  "digital": 28,
+  "moat": 72,
+  "adoption": 18,
+  "share": 13,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "眼镜架制作工 眼镜架手工护城河高"
+ },
+ {
+  "code": "6-19-01-08",
+  "overall": 15,
+  "automation": 20,
+  "augmentation": 22,
+  "digital": 25,
+  "moat": 80,
+  "adoption": 15,
+  "share": 13,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "金箔制作工 金箔传统工艺护城河高"
+ },
+ {
+  "code": "6-21-01-01",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 8,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "矿用电机车装配工 装配部分自动化"
+ },
+ {
+  "code": "6-21-01-02",
+  "overall": 32,
+  "automation": 37,
+  "augmentation": 40,
+  "digital": 45,
+  "moat": 53,
+  "adoption": 32,
+  "share": 8,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "工程机械装配调试工 装配调试技能护城河中等"
+ },
+ {
+  "code": "6-21-02-00",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 7,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "印刷设备装配调试工 印刷设备可自动化"
+ },
+ {
+  "code": "6-21-03-00",
+  "overall": 28,
+  "automation": 33,
+  "augmentation": 36,
+  "digital": 40,
+  "moat": 53,
+  "adoption": 28,
+  "share": 7,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "缝制机械装配调试工 缝纫机装配可自动化"
+ },
+ {
+  "code": "6-21-04-01",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 45,
+  "digital": 50,
+  "moat": 48,
+  "adoption": 35,
+  "share": 7,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "电子专用设备装调工 电子设备高精度护城河中等"
+ },
+ {
+  "code": "6-21-04-02",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 7,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "真空测试工 测试可自动化"
+ },
+ {
+  "code": "6-21-05-01",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 7,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "拖拉机制造工 拖拉机制造部分自动化"
+ },
+ {
+  "code": "6-21-05-02",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 7,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "耕种机械制造工 耕种机械可自动化"
+ },
+ {
+  "code": "6-21-05-03",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 7,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "灌溉机械制造工 灌溉机械可自动化"
+ },
+ {
+  "code": "6-21-05-04",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 7,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "收获机械制造工 收获机械可自动化"
+ },
+ {
+  "code": "6-21-06-01",
+  "overall": 20,
+  "automation": 25,
+  "augmentation": 28,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 20,
+  "share": 7,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "医疗器械装配工 医疗器械高精度护城河高"
+ },
+ {
+  "code": "6-21-06-02",
+  "overall": 18,
+  "automation": 23,
+  "augmentation": 26,
+  "digital": 28,
+  "moat": 72,
+  "adoption": 18,
+  "share": 7,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "矫形器装配工 矫形器技能护城河高"
+ },
+ {
+  "code": "6-21-06-03",
+  "overall": 18,
+  "automation": 23,
+  "augmentation": 26,
+  "digital": 28,
+  "moat": 72,
+  "adoption": 18,
+  "share": 7,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "假肢装配工 假肢技能护城河高"
+ },
+ {
+  "code": "6-21-06-04",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 7,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "医用材料产品生产工 医用材料可自动化"
+ },
+ {
+  "code": "6-22-01-01",
+  "overall": 50,
+  "automation": 55,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 45,
+  "adoption": 50,
+  "share": 20,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "汽车生产线操作工 生产线自动化程度高"
+ },
+ {
+  "code": "6-22-01-02",
+  "overall": 35,
+  "automation": 40,
+  "augmentation": 45,
+  "digital": 50,
+  "moat": 50,
+  "adoption": 35,
+  "share": 20,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "汽车饰件制造工 饰件制造可自动化"
+ },
+ {
+  "code": "6-22-01-03",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 20,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "汽车零部件再制造工 再制造绿色职业可自动化"
+ },
+ {
+  "code": "6-22-02-01",
+  "overall": 30,
+  "automation": 35,
+  "augmentation": 38,
+  "digital": 42,
+  "moat": 55,
+  "adoption": 30,
+  "share": 20,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "汽车装调工 装配调试技能护城河中等"
+ },
+ {
+  "code": "6-22-02-02",
+  "overall": 25,
+  "automation": 30,
+  "augmentation": 33,
+  "digital": 35,
+  "moat": 60,
+  "adoption": 25,
+  "share": 20,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "汽车回收拆解工 回收拆解绿色职业部分自动化"
+ },
+ {
+  "code": "6-23-01-01",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "传统机械装配与维修，现场操作为主，AI应用有限"
+ },
+ {
+  "code": "6-23-01-02",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "车辆装配维修依赖手工，数字化渗透慢"
+ },
+ {
+  "code": "6-23-01-03",
+  "overall": 45,
+  "automation": 35,
+  "augmentation": 50,
+  "digital": 55,
+  "moat": 60,
+  "adoption": 40,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "高端制造岗位，AI辅助设计但装配仍需人"
+ },
+ {
+  "code": "6-23-01-04",
+  "overall": 35,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 30,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "制动系统精密调试，护城河较高"
+ },
+ {
+  "code": "6-23-01-05",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 20,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "道岔维护需现场操作，AI替代空间小"
+ },
+ {
+  "code": "6-23-02-01",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 20,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "船体建造依赖焊接等现场作业"
+ },
+ {
+  "code": "6-23-02-02",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 20,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "机械装配需现场经验，AI辅助有限"
+ },
+ {
+  "code": "6-23-02-03",
+  "overall": 35,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 50,
+  "moat": 60,
+  "adoption": 30,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "电气系统装配数字化程度较高"
+ },
+ {
+  "code": "6-23-02-04",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 20,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "附件生产以机械加工为主"
+ },
+ {
+  "code": "6-23-02-05",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 15,
+  "digital": 25,
+  "moat": 75,
+  "adoption": 15,
+  "share": 3,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "传统工艺岗位，AI冲击极小"
+ },
+ {
+  "code": "6-23-02-06",
+  "overall": 15,
+  "automation": 10,
+  "augmentation": 10,
+  "digital": 20,
+  "moat": 80,
+  "adoption": 15,
+  "share": 2,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "绿色职业，体力劳动为主"
+ },
+ {
+  "code": "6-23-03-01",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 35,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "航空制造高精度，现场装配不可替代"
+ },
+ {
+  "code": "6-23-03-02",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 35,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "系统调试需现场经验，AI辅助有限"
+ },
+ {
+  "code": "6-23-03-03",
+  "overall": 45,
+  "automation": 30,
+  "augmentation": 45,
+  "digital": 50,
+  "moat": 70,
+  "adoption": 35,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "高",
+  "level": "中",
+  "eval": "发动机装配精度要求高"
+ },
+ {
+  "code": "6-23-03-04",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 35,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "螺旋桨装配需专业技能"
+ },
+ {
+  "code": "6-23-03-05",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 55,
+  "moat": 60,
+  "adoption": 35,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "电气系统调试数字化程度较高"
+ },
+ {
+  "code": "6-23-03-06",
+  "overall": 35,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 65,
+  "adoption": 30,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "附件装配以机械为主"
+ },
+ {
+  "code": "6-23-03-07",
+  "overall": 45,
+  "automation": 35,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 60,
+  "adoption": 40,
+  "share": 3,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "仪表装配精度高，AI辅助设计"
+ },
+ {
+  "code": "6-23-03-08",
+  "overall": 35,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 30,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "平衡调试需经验，护城河较高"
+ },
+ {
+  "code": "6-23-03-09",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 35,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "无线电调试需现场操作"
+ },
+ {
+  "code": "6-23-03-10",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 35,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "雷达系统调试专业性强"
+ },
+ {
+  "code": "6-23-03-11",
+  "overall": 35,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 30,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "特种设备检测需资质"
+ },
+ {
+  "code": "6-23-03-12",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 25,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "透明件胶接工艺特殊"
+ },
+ {
+  "code": "6-23-03-13",
+  "overall": 35,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 30,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "外场维护需现场经验"
+ },
+ {
+  "code": "6-23-03-14",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 25,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "救生装备维护需专业资质"
+ },
+ {
+  "code": "6-23-03-15",
+  "overall": 60,
+  "automation": 50,
+  "augmentation": 65,
+  "digital": 70,
+  "moat": 40,
+  "adoption": 60,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "高",
+  "eval": "无人机与AI结合紧密，冲击较大"
+ },
+ {
+  "code": "6-23-04-01",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 25,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低",
+  "eval": "摩托车装配以机械为主"
+ },
+ {
+  "code": "6-23-04-02",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 20,
+  "share": 3,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "简单装配，AI冲击小"
+ },
+ {
+  "code": "6-26-01-01",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 55,
+  "digital": 65,
+  "moat": 50,
+  "adoption": 50,
+  "share": 50,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "仪器仪表制造涉及精密加工"
+ },
+ {
+  "code": "6-26-01-02",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 30,
+  "moat": 75,
+  "adoption": 20,
+  "share": 50,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "极低",
+  "eval": "精细手工，护城河高"
+ },
+ {
+  "code": "6-27-01-00",
+  "overall": 20,
+  "automation": 15,
+  "augmentation": 15,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 20,
+  "share": 100,
+  "education": "初中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "绿色职业，体力劳动为主"
+ },
+ {
+  "code": "6-28-01-01",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 50,
+  "digital": 60,
+  "moat": 50,
+  "adoption": 50,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "监控锅炉运行，数字化程度较高"
+ },
+ {
+  "code": "6-28-01-02",
+  "overall": 45,
+  "automation": 35,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 55,
+  "adoption": 45,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "燃料管理需现场经验"
+ },
+ {
+  "code": "6-28-01-03",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 50,
+  "digital": 60,
+  "moat": 50,
+  "adoption": 50,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "汽轮机运行需监控"
+ },
+ {
+  "code": "6-28-01-04",
+  "overall": 55,
+  "automation": 45,
+  "augmentation": 55,
+  "digital": 65,
+  "moat": 45,
+  "adoption": 55,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "燃气轮机监控数字化高"
+ },
+ {
+  "code": "6-28-01-05",
+  "overall": 65,
+  "automation": 60,
+  "augmentation": 70,
+  "digital": 80,
+  "moat": 30,
+  "adoption": 70,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "高",
+  "eval": "核心监控岗位，AI优化潜力大"
+ },
+ {
+  "code": "6-28-01-06",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 50,
+  "digital": 60,
+  "moat": 50,
+  "adoption": 50,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "电气监控需专业能力"
+ },
+ {
+  "code": "6-28-01-07",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 60,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "氢冷系统监控较专业"
+ },
+ {
+  "code": "6-28-01-08",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 50,
+  "adoption": 40,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "绿色职业，自动化较低"
+ },
+ {
+  "code": "6-28-01-09",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 50,
+  "adoption": 40,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "水力发电监控，绿色职业"
+ },
+ {
+  "code": "6-28-01-10",
+  "overall": 55,
+  "automation": 45,
+  "augmentation": 60,
+  "digital": 65,
+  "moat": 40,
+  "adoption": 60,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "光伏运维涉及AI监控"
+ },
+ {
+  "code": "6-28-01-11",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 60,
+  "adoption": 30,
+  "share": 3,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "低",
+  "eval": "基础锅炉操作，自动化程度低"
+ },
+ {
+  "code": "6-28-01-12",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 50,
+  "digital": 55,
+  "moat": 45,
+  "adoption": 50,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "风电运维需现场检查"
+ },
+ {
+  "code": "6-28-01-13",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 50,
+  "adoption": 40,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "供热管网监控，数字化中等"
+ },
+ {
+  "code": "6-28-01-14",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 50,
+  "digital": 60,
+  "moat": 50,
+  "adoption": 50,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "变配电监控数字化高"
+ },
+ {
+  "code": "6-28-01-15",
+  "overall": 45,
+  "automation": 35,
+  "augmentation": 45,
+  "digital": 55,
+  "moat": 70,
+  "adoption": 40,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "高",
+  "level": "中",
+  "eval": "继电保护需专业资质，护城河高"
+ },
+ {
+  "code": "6-28-02-01",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "燃气储运需现场操作"
+ },
+ {
+  "code": "6-28-02-02",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "深冷分离工艺专业"
+ },
+ {
+  "code": "6-28-02-03",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "气体生产需监控"
+ },
+ {
+  "code": "6-28-02-04",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "液化工需操作"
+ },
+ {
+  "code": "6-28-02-05",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "绿色职业，体力劳动为主"
+ },
+ {
+  "code": "6-28-02-06",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "压缩机操作需经验"
+ },
+ {
+  "code": "6-28-02-07",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "风机操作简单"
+ },
+ {
+  "code": "6-28-03-01",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "水处理需现场操作"
+ },
+ {
+  "code": "6-28-03-02",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "水输排需监控"
+ },
+ {
+  "code": "6-28-03-03",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "绿色职业，现场操作"
+ },
+ {
+  "code": "6-28-03-04",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "泵操作简单"
+ },
+ {
+  "code": "6-28-03-05",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 55,
+  "adoption": 40,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "管廊监控需巡检"
+ },
+ {
+  "code": "6-30-01-00",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 50,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "部分可被自动驾驶替代，落地慢"
+ },
+ {
+  "code": "6-30-02-01",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 50,
+  "digital": 70,
+  "moat": 40,
+  "adoption": 50,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "行车调度数字化程度高"
+ },
+ {
+  "code": "6-30-02-02",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 60,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "调车需现场指挥"
+ },
+ {
+  "code": "6-30-02-03",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 50,
+  "digital": 70,
+  "moat": 40,
+  "adoption": 50,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "调度工作数字化高"
+ },
+ {
+  "code": "6-30-02-04",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 20,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "整备作业以体力为主"
+ },
+ {
+  "code": "6-30-02-05",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "救援操作需经验"
+ },
+ {
+  "code": "6-30-02-06",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 55,
+  "adoption": 40,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "设备维修需技术"
+ },
+ {
+  "code": "6-30-02-07",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "电源维护需现场操作"
+ },
+ {
+  "code": "6-30-03-01",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 50,
+  "digital": 70,
+  "moat": 40,
+  "adoption": 50,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "通信导航监控数字化高"
+ },
+ {
+  "code": "6-30-03-02",
+  "overall": 35,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 60,
+  "adoption": 35,
+  "share": 5,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "设备维护需技术"
+ },
+ {
+  "code": "6-30-03-03",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "油料管理需现场操作"
+ },
+ {
+  "code": "6-30-04-01",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "甲板操作需经验"
+ },
+ {
+  "code": "6-30-04-02",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "机舱操作需技术"
+ },
+ {
+  "code": "6-30-04-03",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "船闸管理需现场操作"
+ },
+ {
+  "code": "6-30-04-04",
+  "overall": 20,
+  "automation": 10,
+  "augmentation": 15,
+  "digital": 20,
+  "moat": 80,
+  "adoption": 20,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "极低",
+  "eval": "高风险岗位，护城河高"
+ },
+ {
+  "code": "6-30-05-01",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "起重操作需经验"
+ },
+ {
+  "code": "6-30-05-02",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "基础起重作业"
+ },
+ {
+  "code": "6-30-05-03",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "输送机操作简单"
+ },
+ {
+  "code": "6-30-05-04",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 25,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "索道操作需技能"
+ },
+ {
+  "code": "6-30-05-05",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 65,
+  "adoption": 30,
+  "share": 5,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "机械操作需经验"
+ },
+ {
+  "code": "6-31-01-01",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 50,
+  "digital": 50,
+  "moat": 60,
+  "adoption": 50,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "AI辅助点检，现场仍需人"
+ },
+ {
+  "code": "6-31-01-02",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "机修以手工为主"
+ },
+ {
+  "code": "6-31-01-03",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "电气维修需现场操作"
+ },
+ {
+  "code": "6-31-01-04",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 55,
+  "adoption": 40,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "仪表维修数字化较高"
+ },
+ {
+  "code": "6-31-01-05",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "锅炉检修需经验"
+ },
+ {
+  "code": "6-31-01-06",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "检修需专业技能"
+ },
+ {
+  "code": "6-31-01-07",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "电机检修需技术"
+ },
+ {
+  "code": "6-31-01-08",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 55,
+  "adoption": 40,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "变电检修数字化高"
+ },
+ {
+  "code": "6-31-01-09",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "工程机械维修需经验"
+ },
+ {
+  "code": "6-31-01-10",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 70,
+  "adoption": 30,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "机电设备维修综合"
+ },
+ {
+  "code": "6-31-02-01",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 35,
+  "moat": 70,
+  "adoption": 25,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "船舶维修需现场操作"
+ },
+ {
+  "code": "6-31-02-02",
+  "overall": 35,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 35,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "航空维护严格，护城河高"
+ },
+ {
+  "code": "6-31-02-03",
+  "overall": 35,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 35,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "部件维修需专业"
+ },
+ {
+  "code": "6-31-02-04",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 40,
+  "digital": 50,
+  "moat": 65,
+  "adoption": 40,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "高",
+  "level": "中",
+  "eval": "发动机维修高技能"
+ },
+ {
+  "code": "6-31-02-05",
+  "overall": 35,
+  "automation": 25,
+  "augmentation": 35,
+  "digital": 45,
+  "moat": 70,
+  "adoption": 35,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "外场维护需现场经验"
+ },
+ {
+  "code": "6-31-03-01",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 50,
+  "adoption": 50,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "AI辅助分析，但需人判断"
+ },
+ {
+  "code": "6-31-03-02",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 50,
+  "adoption": 50,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "物理检验需设备操作"
+ },
+ {
+  "code": "6-31-03-03",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 50,
+  "adoption": 50,
+  "share": 4,
+  "education": "本科",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "生化检验需专业"
+ },
+ {
+  "code": "6-31-03-04",
+  "overall": 40,
+  "automation": 30,
+  "augmentation": 50,
+  "digital": 55,
+  "moat": 55,
+  "adoption": 45,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "无损检测AI辅助，但需人操作"
+ },
+ {
+  "code": "6-31-03-05",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 50,
+  "adoption": 50,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "AI辅助质检，但需人最终判断"
+ },
+ {
+  "code": "6-31-03-06",
+  "overall": 50,
+  "automation": 40,
+  "augmentation": 60,
+  "digital": 60,
+  "moat": 50,
+  "adoption": 50,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "中",
+  "eval": "试验操作需人监督"
+ },
+ {
+  "code": "6-31-04-00",
+  "overall": 25,
+  "automation": 15,
+  "augmentation": 20,
+  "digital": 30,
+  "moat": 70,
+  "adoption": 25,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "极低",
+  "eval": "称重操作简单"
+ },
+ {
+  "code": "6-31-05-00",
+  "overall": 40,
+  "automation": 60,
+  "augmentation": 30,
+  "digital": 50,
+  "moat": 30,
+  "adoption": 50,
+  "share": 4,
+  "education": "高中",
+  "pay_tier": "低",
+  "level": "中",
+  "eval": "包装可部分自动化"
+ },
+ {
+  "code": "6-31-06-00",
+  "overall": 30,
+  "automation": 20,
+  "augmentation": 30,
+  "digital": 40,
+  "moat": 75,
+  "adoption": 30,
+  "share": 4,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "低",
+  "eval": "安全管理需人担责"
+ },
+ {
+  "code": "6-31-07-01",
+  "overall": 70,
+  "automation": 60,
+  "augmentation": 80,
+  "digital": 90,
+  "moat": 40,
+  "adoption": 70,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "高",
+  "eval": "数字职业，AI与机器人结合紧密"
+ },
+ {
+  "code": "6-31-07-02",
+  "overall": 70,
+  "automation": 60,
+  "augmentation": 80,
+  "digital": 90,
+  "moat": 40,
+  "adoption": 70,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "高",
+  "eval": "视觉系统与AI深度结合"
+ },
+ {
+  "code": "6-31-07-03",
+  "overall": 70,
+  "automation": 60,
+  "augmentation": 80,
+  "digital": 90,
+  "moat": 40,
+  "adoption": 70,
+  "share": 3,
+  "education": "大专",
+  "pay_tier": "中",
+  "level": "高",
+  "eval": "操作员需监控AI系统"
  },
  {
   "code": "1-06-01-01",
@@ -6300,7 +13587,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI辅助影像读片已应用，但复杂修复、种植手术需人"
+  "eval": "AI辅助影像读片已应用，但复杂修复、种植手术需人",
+  "digital": 72
  },
  {
   "code": "2-05-01-08",
@@ -6313,7 +13601,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "皮肤镜AI诊断已较成熟，但复杂病例仍需人"
+  "eval": "皮肤镜AI诊断已较成熟，但复杂病例仍需人",
+  "digital": 75
  },
  {
   "code": "2-05-01-09",
@@ -6326,7 +13615,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI问诊辅助工具已试点，但心理治疗、危机干预不可替代"
+  "eval": "AI问诊辅助工具已试点，但心理治疗、危机干预不可替代",
+  "digital": 60
  },
  {
   "code": "2-05-01-10",
@@ -6339,7 +13629,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "疫情监测AI已应用，但临床诊疗决策需人"
+  "eval": "疫情监测AI已应用，但临床诊疗决策需人",
+  "digital": 68
  },
  {
   "code": "2-05-01-11",
@@ -6352,7 +13643,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI分诊系统已落地，但危急重症处理、多任务决策不可替代"
+  "eval": "AI分诊系统已落地，但危急重症处理、多任务决策不可替代",
+  "digital": 65
  },
  {
   "code": "2-05-01-12",
@@ -6365,7 +13657,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI康复方案推荐已试点，但手法治疗、患者反馈需人"
+  "eval": "AI康复方案推荐已试点，但手法治疗、患者反馈需人",
+  "digital": 68
  },
  {
   "code": "2-05-01-13",
@@ -6378,7 +13671,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "术中监测AI已应用，但麻醉决策、紧急处理需人"
+  "eval": "术中监测AI已应用，但麻醉决策、紧急处理需人",
+  "digital": 62
  },
  {
   "code": "2-05-01-14",
@@ -6391,7 +13685,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "AI病理读片已获NMPA认证，但复杂病例诊断仍需人"
+  "eval": "AI病理读片已获NMPA认证，但复杂病例诊断仍需人",
+  "digital": 85
  },
  {
   "code": "2-05-01-15",
@@ -6404,7 +13699,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "AI辅助影像诊断已大规模落地，但疑难病例仍需人"
+  "eval": "AI辅助影像诊断已大规模落地，但疑难病例仍需人",
+  "digital": 85
  },
  {
   "code": "2-05-01-16",
@@ -6417,7 +13713,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI辅助核素显像分析已试点，但设备操作、患者管理需人"
+  "eval": "AI辅助核素显像分析已试点，但设备操作、患者管理需人",
+  "digital": 58
  },
  {
   "code": "2-05-01-17",
@@ -6430,7 +13727,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "AI辅助超声诊断已落地，但设备操作、实时判断需人"
+  "eval": "AI辅助超声诊断已落地，但设备操作、实时判断需人",
+  "digital": 78
  },
  {
   "code": "2-05-01-18",
@@ -6443,7 +13741,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI辅助治疗方案推荐已试点，但个体化治疗决策需人"
+  "eval": "AI辅助治疗方案推荐已试点，但个体化治疗决策需人",
+  "digital": 70
  },
  {
   "code": "2-05-01-19",
@@ -6456,7 +13755,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI辅助慢病管理已试点，但社区医疗、健康咨询需人"
+  "eval": "AI辅助慢病管理已试点，但社区医疗、健康咨询需人",
+  "digital": 68
  },
  {
   "code": "2-05-01-20",
@@ -6469,7 +13769,8 @@
   "education": "硕士",
   "pay_tier": "高",
   "level": "中",
-  "eval": "AI辅助基因分析已应用，但遗传咨询、伦理决策需人"
+  "eval": "AI辅助基因分析已应用，但遗传咨询、伦理决策需人",
+  "digital": 70
  },
  {
   "code": "2-05-01-21",
@@ -6482,7 +13783,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI辅助产检已落地，但围产期管理、新生儿护理需人"
+  "eval": "AI辅助产检已落地，但围产期管理、新生儿护理需人",
+  "digital": 72
  },
  {
   "code": "2-05-01-22",
@@ -6494,7 +13796,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI辅助疼痛评估已试点，但介入治疗、复杂疼痛管理需人"
+  "eval": "AI辅助疼痛评估已试点，但介入治疗、复杂疼痛管理需人",
+  "automation": 28,
+  "digital": 62
  },
  {
   "code": "2-05-01-23",
@@ -6506,7 +13810,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI辅助ICU监测已落地，但危急抢救、多器官支持决策需人"
+  "eval": "AI辅助ICU监测已落地，但危急抢救、多器官支持决策需人",
+  "automation": 28,
+  "digital": 65
  },
  {
   "code": "2-05-01-24",
@@ -6518,7 +13824,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "AI辅助检验结果分析已应用，但标本处理、异常结果复核需人"
+  "eval": "AI辅助检验结果分析已应用，但标本处理、异常结果复核需人",
+  "automation": 55,
+  "digital": 85
  },
  {
   "code": "2-05-01-25",
@@ -6530,7 +13838,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI辅助职业暴露评估已试点，但现场调查、个体化诊疗需人"
+  "eval": "AI辅助职业暴露评估已试点，但现场调查、个体化诊疗需人",
+  "automation": 25,
+  "digital": 58
  },
  {
   "code": "2-05-03-01",
@@ -6655,7 +13965,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "疾病控制医师 AI辅助疫情分析和数据建模已应用，但现场流行病学调查和应急决策仍需人；风险在常规数据统计，护城河在应急响应和现场指导"
+  "eval": "疾病控制医师 AI辅助疫情分析和数据建模已应用，但现场流行病学调查和应急决策仍需人；风险在常规数据统计，护城河在应急响应和现场指导",
+  "digital": 68
  },
  {
   "code": "2-05-05-02",
@@ -6668,7 +13979,8 @@
   "education": "本科",
   "pay_tier": "低",
   "level": "低",
-  "eval": "健康教育医师 AI可生成标准化宣教内容，但社区互动和个体化指导仍需人；风险在材料制作和简单咨询，护城河在关系建立和现场教学"
+  "eval": "健康教育医师 AI可生成标准化宣教内容，但社区互动和个体化指导仍需人；风险在材料制作和简单咨询，护城河在关系建立和现场教学",
+  "digital": 70
  },
  {
   "code": "2-05-05-03",
@@ -6681,7 +13993,8 @@
   "education": "硕士",
   "pay_tier": "中",
   "level": "中",
-  "eval": "公共卫生医师 AI优化资源分配和疫情预警，但政策制定和现场监督需人；风险在数据分析和报告撰写，护城河在跨部门协调和应急管理"
+  "eval": "公共卫生医师 AI优化资源分配和疫情预警，但政策制定和现场监督需人；风险在数据分析和报告撰写，护城河在跨部门协调和应急管理",
+  "digital": 75
  },
  {
   "code": "2-05-06-01",
@@ -6694,7 +14007,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "药师 AI处方审核系统已普及，但复杂药物相互作用和患者用药指导仍需人；风险在常规审方和库存管理，护城河在临床药学服务"
+  "eval": "药师 AI处方审核系统已普及，但复杂药物相互作用和患者用药指导仍需人；风险在常规审方和库存管理，护城河在临床药学服务",
+  "digital": 80
  },
  {
   "code": "2-05-06-02",
@@ -6707,7 +14021,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "低",
-  "eval": "中药师 中药鉴别和炮制经验难AI化；风险在处方审核和库存管理，护城河在传统理论和炮制技术"
+  "eval": "中药师 中药鉴别和炮制经验难AI化；风险在处方审核和库存管理，护城河在传统理论和炮制技术",
+  "digital": 55
  },
  {
   "code": "2-05-06-03",
@@ -6720,7 +14035,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "极低",
-  "eval": "民族药师 民族药知识体系独特，AI难以覆盖；风险在常见病用药指导，护城河在文化传承和地域需求"
+  "eval": "民族药师 民族药知识体系独特，AI难以覆盖；风险在常见病用药指导，护城河在文化传承和地域需求",
+  "digital": 40
  },
  {
   "code": "2-05-07-01",
@@ -6733,7 +14049,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "高",
-  "eval": "影像技师 AI辅助诊断已大规模落地（肺结节筛查等），但复杂病例判读和设备操作仍需人；风险在常规筛查和报告初筛，护城河在疑难病例和设备维护"
+  "eval": "影像技师 AI辅助诊断已大规模落地（肺结节筛查等），但复杂病例判读和设备操作仍需人；风险在常规筛查和报告初筛，护城河在疑难病例和设备维护",
+  "digital": 85
  },
  {
   "code": "2-05-07-02",
@@ -6746,7 +14063,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "口腔医学技师 AI设计修复体已应用，但手工操作和患者口腔检查仍需人；风险在模型设计和简单操作，护城河在复杂修复和临床沟通"
+  "eval": "口腔医学技师 AI设计修复体已应用，但手工操作和患者口腔检查仍需人；风险在模型设计和简单操作，护城河在复杂修复和临床沟通",
+  "digital": 75
  },
  {
   "code": "2-05-07-03",
@@ -6759,7 +14077,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "病理技师 AI辅助病理诊断已试点，但复杂组织判读和 frozen section 仍需人；风险在常规切片描述，护城河在疑难诊断和Frozen section快速判断"
+  "eval": "病理技师 AI辅助病理诊断已试点，但复杂组织判读和 frozen section 仍需人；风险在常规切片描述，护城河在疑难诊断和Frozen section快速判断",
+  "digital": 82
  },
  {
   "code": "2-05-07-04",
@@ -6772,7 +14091,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "临床检验技师 AI已覆盖血常规等常规项目判读，但特殊项目质控和设备维护仍需人；风险在报告解读和简单操作，护城河在疑难检验和质控体系"
+  "eval": "临床检验技师 AI已覆盖血常规等常规项目判读，但特殊项目质控和设备维护仍需人；风险在报告解读和简单操作，护城河在疑难检验和质控体系",
+  "digital": 82
  },
  {
   "code": "2-05-07-05",
@@ -6785,7 +14105,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "低",
-  "eval": "公卫检验技师 AI辅助检测数据分析，但现场采样和应急检测仍需人；风险在常规检测操作，护城河在应急检测和现场质控"
+  "eval": "公卫检验技师 AI辅助检测数据分析，但现场采样和应急检测仍需人；风险在常规检测操作，护城河在应急检测和现场质控",
+  "digital": 70
  },
  {
   "code": "2-05-07-06",
@@ -6798,7 +14119,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "低",
-  "eval": "卫生工程技师 AI优化设备维护策略，但现场安装和故障排除仍需人；风险在常规维护计划，护城河在复杂设备调试和应急维修"
+  "eval": "卫生工程技师 AI优化设备维护策略，但现场安装和故障排除仍需人；风险在常规维护计划，护城河在复杂设备调试和应急维修",
+  "digital": 60
  },
  {
   "code": "2-05-07-07",
@@ -6811,7 +14133,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "低",
-  "eval": "输血技师 AI辅助配血分析，但血液采集和紧急输血仍需人；风险在常规配血操作，护城河在紧急情况处理和献血者管理"
+  "eval": "输血技师 AI辅助配血分析，但血液采集和紧急输血仍需人；风险在常规配血操作，护城河在紧急情况处理和献血者管理",
+  "digital": 65
  },
  {
   "code": "2-05-07-08",
@@ -6824,7 +14147,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "低",
-  "eval": "临床营养技师 AI计算营养方案已应用，但患者饮食管理和并发症评估仍需人；风险在方案计算和常规评估，护城河在饮食指导和并发症监测"
+  "eval": "临床营养技师 AI计算营养方案已应用，但患者饮食管理和并发症评估仍需人；风险在方案计算和常规评估，护城河在饮食指导和并发症监测",
+  "digital": 72
  },
  {
   "code": "2-05-07-09",
@@ -6837,7 +14161,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "极低",
-  "eval": "消毒技师 AI监控消毒流程，但现场消毒操作和应急处理仍需人；风险在常规消毒记录，护城河在感染控制和应急消毒"
+  "eval": "消毒技师 AI监控消毒流程，但现场消毒操作和应急处理仍需人；风险在常规消毒记录，护城河在感染控制和应急消毒",
+  "digital": 60
  },
  {
   "code": "2-05-07-10",
@@ -6850,7 +14175,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "肿瘤放射治疗技师 AI辅助放疗计划已普及，但设备操作和患者摆位仍需人；风险在计划设计，护城河在设备操作和患者安全"
+  "eval": "肿瘤放射治疗技师 AI辅助放疗计划已普及，但设备操作和患者摆位仍需人；风险在计划设计，护城河在设备操作和患者安全",
+  "digital": 80
  },
  {
   "code": "2-05-07-11",
@@ -6863,7 +14189,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "高",
-  "eval": "心电学技师 AI自动判读心电图已成熟，但复杂心律分析和设备操作仍需人；风险在常规报告生成，护城河在疑难心律判读和设备维护"
+  "eval": "心电学技师 AI自动判读心电图已成熟，但复杂心律分析和设备操作仍需人；风险在常规报告生成，护城河在疑难心律判读和设备维护",
+  "digital": 85
  },
  {
   "code": "2-05-07-12",
@@ -6876,7 +14203,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "神经电生理脑电图技师 AI辅助脑电图分析，但复杂癫痫判读和设备操作仍需人；风险在常规报告生成，护城河在疑难波形判读和临床沟通"
+  "eval": "神经电生理脑电图技师 AI辅助脑电图分析，但复杂癫痫判读和设备操作仍需人；风险在常规报告生成，护城河在疑难波形判读和临床沟通",
+  "digital": 82
  },
  {
   "code": "2-05-07-13",
@@ -6889,7 +14217,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "低",
-  "eval": "康复技师 AI辅助康复方案生成，但手法治疗和患者指导仍需人；风险在方案设计，护城河在手法治疤断和患者陪伴"
+  "eval": "康复技师 AI辅助康复方案生成，但手法治疗和患者指导仍需人；风险在方案设计，护城河在手法治疤断和患者陪伴",
+  "digital": 72
  },
  {
   "code": "2-05-07-14",
@@ -6902,7 +14231,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "心理治疗技师 AI聊天机器人已出现，但深度咨询和危机干预仍需人；风险在简单情绪疏导，护城河在复杂心理评估和关系建立"
+  "eval": "心理治疗技师 AI聊天机器人已出现，但深度咨询和危机干预仍需人；风险在简单情绪疏导，护城河在复杂心理评估和关系建立",
+  "digital": 65
  },
  {
   "code": "2-05-07-15",
@@ -6914,7 +14244,9 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "病案信息技师 AI自动编码和质控已应用，但复杂病例整理和医疗文书仍需人；风险在常规编码和录入，护城河在医疗法律文书和纠纷应对"
+  "eval": "病案信息技师 AI自动编码和质控已应用，但复杂病例整理和医疗文书仍需人；风险在常规编码和录入，护城河在医疗法律文书和纠纷应对",
+  "automation": 60,
+  "digital": 82
  },
  {
   "code": "2-05-07-16",
@@ -6926,7 +14258,9 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "极低",
-  "eval": "中医技师 AI难模型化中医操作技术；风险在简单理疗操作，护城河在特色技术（针灸等）和患者信任"
+  "eval": "中医技师 AI难模型化中医操作技术；风险在简单理疗操作，护城河在特色技术（针灸等）和患者信任",
+  "automation": 25,
+  "digital": 50
  },
  {
   "code": "2-09-01-01",
@@ -6977,7 +14311,8 @@
   "share": 2,
   "education": "本科",
   "pay_tier": "高",
-  "level": "中"
+  "level": "中",
+  "automation": 57
  },
  {
   "code": "2-09-01-05",
@@ -6988,7 +14323,9 @@
   "share": 2,
   "education": "本科",
   "pay_tier": "中",
-  "level": "中"
+  "level": "中",
+  "automation": 60,
+  "digital": 65
  },
  {
   "code": "2-09-01-06",
@@ -6999,7 +14336,9 @@
   "share": 2,
   "education": "本科",
   "pay_tier": "高",
-  "level": "中"
+  "level": "中",
+  "automation": 30,
+  "digital": 50
  },
  {
   "code": "2-09-01-07",
@@ -7010,7 +14349,9 @@
   "share": 1,
   "education": "本科",
   "pay_tier": "中",
-  "level": "低"
+  "level": "低",
+  "automation": 35,
+  "digital": 55
  },
  {
   "code": "2-09-01-08",
@@ -7021,7 +14362,9 @@
   "share": 1,
   "education": "本科",
   "pay_tier": "中",
-  "level": "低"
+  "level": "低",
+  "automation": 40,
+  "digital": 60
  },
  {
   "code": "2-03-01-00",
@@ -7132,7 +14475,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "类似兽医，AI辅助诊断但宠物情绪和-owner沟通是关键；护城河在临床与沟通"
+  "eval": "类似兽医，AI辅助诊断但宠物情绪和-owner沟通是关键；护城河在临床与沟通",
+  "digital": 50
  },
  {
   "code": "2-03-07-01",
@@ -7145,7 +14489,8 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "低",
-  "eval": "AI可监控环境参数，但活体繁殖管理、疫病现场处置和饲养员协调仍需人；护城河在现场管理"
+  "eval": "AI可监控环境参数，但活体繁殖管理、疫病现场处置和饲养员协调仍需人；护城河在现场管理",
+  "digital": 45
  },
  {
   "code": "2-03-07-02",
@@ -7158,7 +14503,8 @@
   "education": "本科",
   "pay_tier": "低",
   "level": "极低",
-  "eval": "AI辅助草地规划，但生态修复和牧草品种选择仍需实地经验；护城河在生态知识"
+  "eval": "AI辅助草地规划，但生态修复和牧草品种选择仍需实地经验；护城河在生态知识",
+  "digital": 40
  },
  {
   "code": "2-03-08-01",
@@ -7170,7 +14516,9 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "AI水质监控和投喂优化，但活体捕捞、病害现场处置和养殖户指导仍需人；护城河在现场判断"
+  "eval": "AI水质监控和投喂优化，但活体捕捞、病害现场处置和养殖户指导仍需人；护城河在现场判断",
+  "automation": 45,
+  "digital": 45
  },
  {
   "code": "2-03-08-02",
@@ -7182,7 +14530,9 @@
   "education": "硕士",
   "pay_tier": "中",
   "level": "极低",
-  "eval": "AI辅助资源评估，但渔业政策、资源保护和渔政管理仍需人；护城河在政策与管理"
+  "eval": "AI辅助资源评估，但渔业政策、资源保护和渔政管理仍需人；护城河在政策与管理",
+  "automation": 30,
+  "digital": 35
  },
  {
   "code": "2-03-09-00",
@@ -7194,7 +14544,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "低",
-  "eval": "AI辅助设计优化，但农田水利施工、农机具适配和现场质量控制仍需人；护城河在工程经验"
+  "eval": "AI辅助设计优化，但农田水利施工、农机具适配和现场质量控制仍需人；护城河在工程经验",
+  "automation": 40,
+  "digital": 45
  },
  {
   "code": "3-02-01-00",
@@ -7557,7 +14909,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "道路运输调度员 智能调度系统已应用但多因素综合决策仍需人，护城河在于调度经验"
+  "eval": "道路运输调度员 智能调度系统已应用但多因素综合决策仍需人，护城河在于调度经验",
+  "digital": 75
  },
  {
   "code": "4-02-02-06",
@@ -7570,7 +14923,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "极高",
-  "eval": "公路收费及监控员 ETC和智能监控已基本取代人工收费，剩余监控也趋向自动化，护城河极低"
+  "eval": "公路收费及监控员 ETC和智能监控已基本取代人工收费，剩余监控也趋向自动化，护城河极低",
+  "digital": 90
  },
  {
   "code": "4-02-02-07",
@@ -7583,7 +14937,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "机动车驾驶教练员 教学本质难以自动化，但模拟器和AI辅助教学已应用，护城河在于教学经验和沟通能力"
+  "eval": "机动车驾驶教练员 教学本质难以自动化，但模拟器和AI辅助教学已应用，护城河在于教学经验和沟通能力",
+  "digital": 50
  },
  {
   "code": "4-02-02-08",
@@ -7596,7 +14951,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "油气电站操作员 工业控制已部分自动化但紧急处理仍需人，护城河在于专业知识和安全经验"
+  "eval": "油气电站操作员 工业控制已部分自动化但紧急处理仍需人，护城河在于专业知识和安全经验",
+  "digital": 65
  },
  {
   "code": "4-02-02-09",
@@ -7609,7 +14965,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "汽车救援员 现场救援和车辆维修需要人工操作，但AI可辅助诊断，护城河在于实操经验"
+  "eval": "汽车救援员 现场救援和车辆维修需要人工操作，但AI可辅助诊断，护城河在于实操经验",
+  "digital": 40
  },
  {
   "code": "4-07-01-01",
@@ -8448,7 +15805,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "极低",
-  "eval": "地勘掘进工 类似钻探工，体力劳动为主，AI难以替代；环境恶劣"
+  "eval": "地勘掘进工 类似钻探工，体力劳动为主，AI难以替代；环境恶劣",
+  "digital": 25
  },
  {
   "code": "4-08-07-03",
@@ -8461,7 +15819,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "物探工 现场物探操作，AI可辅助数据处理但现场仍需人；需求稳定"
+  "eval": "物探工 现场物探操作，AI可辅助数据处理但现场仍需人；需求稳定",
+  "digital": 50
  },
  {
   "code": "4-08-07-04",
@@ -8474,7 +15833,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "低",
-  "eval": "地质调查员 需要专业判断，AI可辅助但野外判断仍需人；传统方法仍占主导"
+  "eval": "地质调查员 需要专业判断，AI可辅助但野外判断仍需人；传统方法仍占主导",
+  "digital": 45
  },
  {
   "code": "4-08-07-05",
@@ -8487,7 +15847,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "地质实验员 实验室工作，AI可辅助分析但实验操作仍需人；需求稳定"
+  "eval": "地质实验员 实验室工作，AI可辅助分析但实验操作仍需人；需求稳定",
+  "digital": 55
  },
  {
   "code": "4-09-01-01",
@@ -8990,7 +16351,8 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "房地产策划师 AI可快速生成市场报告、文案和数据分析，但项目定位决策、政府关系和创意把控仍需人；头部策划公司已用AI提效，中低端岗位受冲击大。门槛较高，本科以上为主"
+  "eval": "房地产策划师 AI可快速生成市场报告、文案和数据分析，但项目定位决策、政府关系和创意把控仍需人；头部策划公司已用AI提效，中低端岗位受冲击大。门槛较高，本科以上为主",
+  "digital": 55
  },
  {
   "code": "4-06-02-03",
@@ -9003,7 +16365,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "验房师 AI+传感器可辅助标准化检测，但现场隐蔽问题判断、经验积累仍是核心价值；行业需求稳定，护城河来自专业知识。需求量小，持证上岗"
+  "eval": "验房师 AI+传感器可辅助标准化检测，但现场隐蔽问题判断、经验积累仍是核心价值；行业需求稳定，护城河来自专业知识。需求量小，持证上岗",
+  "digital": 45
  },
  {
   "code": "4-11-01-01",
@@ -9015,7 +16378,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "高",
-  "eval": "供电服务员 智能客服、自动计费已落地，常规业务办理可被AI替代；但电网运维、故障抢修仍需人，护城河来自专业技能和资质要求。国网系统推进智能化"
+  "eval": "供电服务员 智能客服、自动计费已落地，常规业务办理可被AI替代；但电网运维、故障抢修仍需人，护城河来自专业技能和资质要求。国网系统推进智能化",
+  "automation": 60,
+  "digital": 55
  },
  {
   "code": "4-11-01-02",
@@ -9027,7 +16392,9 @@
   "education": "本科",
   "pay_tier": "高",
   "level": "中",
-  "eval": "电力交易员 AI可进行市场预测、策略分析，但最终交易决策和风险管理仍需人；电力市场化改革推进中，该岗位处于发展期。门槛高，本科以上"
+  "eval": "电力交易员 AI可进行市场预测、策略分析，但最终交易决策和风险管理仍需人；电力市场化改革推进中，该岗位处于发展期。门槛高，本科以上",
+  "automation": 50,
+  "digital": 70
  },
  {
   "code": "4-11-01-03",
@@ -9039,7 +16406,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "综合能源服务员 AI可优化能源管理方案，但现场安装调试和客户对接仍需人；属于新兴岗位，行业规范正在建立。需求增长中"
+  "eval": "综合能源服务员 AI可优化能源管理方案，但现场安装调试和客户对接仍需人；属于新兴岗位，行业规范正在建立。需求增长中",
+  "automation": 50,
+  "digital": 55
  },
  {
   "code": "4-11-02-00",
@@ -9051,7 +16420,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "燃气供应服务员 智能巡检、远程监控已部分落地，但管道维护、应急抢修仍需人；行业安全要求高，持证上岗，护城河来自安全规范。需求稳定"
+  "eval": "燃气供应服务员 智能巡检、远程监控已部分落地，但管道维护、应急抢修仍需人；行业安全要求高，持证上岗，护城河来自安全规范。需求稳定",
+  "automation": 60,
+  "digital": 50
  },
  {
   "code": "4-11-03-01",
@@ -9063,7 +16434,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "水供应服务员 智能水表、自动计费已普及，日常管理可被AI替代；但管网维护、水质检测仍需人。护城河中等，需求量较大"
+  "eval": "水供应服务员 智能水表、自动计费已普及，日常管理可被AI替代；但管网维护、水质检测仍需人。护城河中等，需求量较大",
+  "automation": 60,
+  "digital": 50
  },
  {
   "code": "4-11-03-02",
@@ -9075,7 +16448,9 @@
   "education": "初中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "村镇供水员 偏远地区智能化程度低，人工值守仍为主；但长期趋势是自动化设备下沉，护城河较低。需求量小，薪资低"
+  "eval": "村镇供水员 偏远地区智能化程度低，人工值守仍为主；但长期趋势是自动化设备下沉，护城河较低。需求量小，薪资低",
+  "automation": 40,
+  "digital": 35
  },
  {
   "code": "4-13-01-01",
@@ -9087,7 +16462,9 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "群众文化指导员 AI可生成活动方案，但现场组织、社区动员仍需人；属于基层文化岗位，护城河来自本地关系。需求稳定但薪资低"
+  "eval": "群众文化指导员 AI可生成活动方案，但现场组织、社区动员仍需人；属于基层文化岗位，护城河来自本地关系。需求稳定但薪资低",
+  "automation": 30,
+  "digital": 40
  },
  {
   "code": "4-13-01-02",
@@ -9099,7 +16476,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "礼仪主持人 AI可生成主持词，但现场临场应变、情感互动仍需人；属于表演类岗位，护城河来自个人魅力和经验。需求小"
+  "eval": "礼仪主持人 AI可生成主持词，但现场临场应变、情感互动仍需人；属于表演类岗位，护城河来自个人魅力和经验。需求小",
+  "automation": 30,
+  "digital": 35
  },
  {
   "code": "4-13-01-03",
@@ -9111,7 +16490,9 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "讲解员 AI可生成讲解词，但现场互动、知识深度和应变仍需人；景区、博物馆讲解是核心体验，护城河来自讲解技巧。需求稳定"
+  "eval": "讲解员 AI可生成讲解词，但现场互动、知识深度和应变仍需人；景区、博物馆讲解是核心体验，护城河来自讲解技巧。需求稳定",
+  "automation": 30,
+  "digital": 35
  },
  {
   "code": "4-13-01-04",
@@ -9123,7 +16504,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "文化经纪人 AI可辅助信息匹配，但文化项目信任建立、商务谈判仍需人；护城河来自行业资源和人脉。需求小但收入较高"
+  "eval": "文化经纪人 AI可辅助信息匹配，但文化项目信任建立、商务谈判仍需人；护城河来自行业资源和人脉。需求小但收入较高",
+  "automation": 30,
+  "digital": 40
  },
  {
   "code": "4-13-01-05",
@@ -9135,7 +16518,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "高",
-  "eval": "全媒体运营师 AI已广泛落地内容生成、数据分析、投放优化，但账号调性把控、热点判断和危机公关仍需人；行业变化快，数字技能是核心。需求量大"
+  "eval": "全媒体运营师 AI已广泛落地内容生成、数据分析、投放优化，但账号调性把控、热点判断和危机公关仍需人；行业变化快，数字技能是核心。需求量大",
+  "automation": 55,
+  "digital": 75
  },
  {
   "code": "4-13-01-06",
@@ -9147,7 +16532,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "档案数字化管理师 AI可辅助扫描、分类和OCR，但档案鉴定、安全管理仍需人；属于过渡性岗位，随数字化完成需求下降。护城河中等"
+  "eval": "档案数字化管理师 AI可辅助扫描、分类和OCR，但档案鉴定、安全管理仍需人；属于过渡性岗位，随数字化完成需求下降。护城河中等",
+  "automation": 65,
+  "digital": 65
  },
  {
   "code": "4-13-01-07",
@@ -9159,7 +16546,9 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "图书馆服务员 自助借还、智能推荐已普及，日常服务可被AI替代；但阅读推广、儿童服务等仍需人。需求稳定但薪资低"
+  "eval": "图书馆服务员 自助借还、智能推荐已普及，日常服务可被AI替代；但阅读推广、儿童服务等仍需人。需求稳定但薪资低",
+  "automation": 60,
+  "digital": 55
  },
  {
   "code": "4-13-01-08",
@@ -9171,7 +16560,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "手语翻译 AI手语识别仍在发展中，准确度和实时性不足；敏感场景和深度交流仍需人，护城河高。需求小但不可替代性强"
+  "eval": "手语翻译 AI手语识别仍在发展中，准确度和实时性不足；敏感场景和深度交流仍需人，护城河高。需求小但不可替代性强",
+  "automation": 20,
+  "digital": 30
  },
  {
   "code": "4-13-02-01",
@@ -9183,7 +16574,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "影视置景制作员 AI可辅助场景设计，但物理搭建、材料搬运仍需人；属于体力密集型，护城河来自实操经验。需求稳定"
+  "eval": "影视置景制作员 AI可辅助场景设计，但物理搭建、材料搬运仍需人；属于体力密集型，护城河来自实操经验。需求稳定",
+  "automation": 20,
+  "digital": 30
  },
  {
   "code": "4-13-02-02",
@@ -9195,7 +16588,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "动画制作员 AI可辅助中间帧生成、风格迁移，但创意构思、导演把控仍需人；行业分化明显，高端人才护城河高。需求增长中"
+  "eval": "动画制作员 AI可辅助中间帧生成、风格迁移，但创意构思、导演把控仍需人；行业分化明显，高端人才护城河高。需求增长中",
+  "automation": 40,
+  "digital": 65
  },
  {
   "code": "4-13-02-03",
@@ -9207,7 +16602,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "影视烟火特效员 AI可模拟特效，但实际爆破操作安全风险高，必须人工；护城河来自资质和经验。需求小但不可替代"
+  "eval": "影视烟火特效员 AI可模拟特效，但实际爆破操作安全风险高，必须人工；护城河来自资质和经验。需求小但不可替代",
+  "automation": 10,
+  "digital": 20
  },
  {
   "code": "4-13-02-04",
@@ -9219,7 +16616,9 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "极高",
-  "eval": "电影洗印员 数字电影已主流，胶片洗印需求快速萎缩；该岗位正在消亡，护城河极低。属于夕阳岗位"
+  "eval": "电影洗印员 数字电影已主流，胶片洗印需求快速萎缩；该岗位正在消亡，护城河极低。属于夕阳岗位",
+  "automation": 75,
+  "digital": 50
  },
  {
   "code": "4-13-02-05",
@@ -9231,7 +16630,9 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "极高",
-  "eval": "电影放映员 数字放映已自动化，远程监控普及；但设备维护和现场服务仍需少量人。需求快速下降"
+  "eval": "电影放映员 数字放映已自动化，远程监控普及；但设备维护和现场服务仍需少量人。需求快速下降",
+  "automation": 70,
+  "digital": 55
  },
  {
   "code": "4-13-02-06",
@@ -9243,7 +16644,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "音响调音员 AI可辅助自动调音，但大型演出现场调试和声场设计仍需人；护城河来自经验和耳朵。需求稳定但小众"
+  "eval": "音响调音员 AI可辅助自动调音，但大型演出现场调试和声场设计仍需人；护城河来自经验和耳朵。需求稳定但小众",
+  "automation": 25,
+  "digital": 35
  },
  {
   "code": "4-13-02-07",
@@ -9255,7 +16658,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "照明工 AI可辅助照明方案设计，但现场布光、调试仍需人；护城河来自实操经验。需求稳定"
+  "eval": "照明工 AI可辅助照明方案设计，但现场布光、调试仍需人；护城河来自实操经验。需求稳定",
+  "automation": 20,
+  "digital": 30
  },
  {
   "code": "4-13-02-08",
@@ -9267,7 +16672,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "影视服装员 AI可辅助服装设计，但制作、租赁管理、现场应急仍需人；护城河来自行业资源。需求稳定"
+  "eval": "影视服装员 AI可辅助服装设计，但制作、租赁管理、现场应急仍需人；护城河来自行业资源。需求稳定",
+  "automation": 20,
+  "digital": 30
  },
  {
   "code": "4-13-02-09",
@@ -9279,7 +16686,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "电视摄像员 AI自动跟拍、稳定器已普及，但创意运镜、现场决策仍需人；护城河来自艺术感知。需求稳定"
+  "eval": "电视摄像员 AI自动跟拍、稳定器已普及，但创意运镜、现场决策仍需人；护城河来自艺术感知。需求稳定",
+  "automation": 35,
+  "digital": 40
  },
  {
   "code": "4-13-03-01",
@@ -9291,7 +16700,9 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "考古探掘工 AI可辅助数据分析，但现场发掘、文物甄别仍需人；护城河来自专业知识。需求极小但不可替代"
+  "eval": "考古探掘工 AI可辅助数据分析，但现场发掘、文物甄别仍需人；护城河来自专业知识。需求极小但不可替代",
+  "automation": 10,
+  "digital": 20
  },
  {
   "code": "4-13-03-02",
@@ -9303,7 +16714,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "文物修复师 AI可辅助鉴定，但精细修复需手工和经验；属于高技能手工岗位，护城河高。需求稳定但小众"
+  "eval": "文物修复师 AI可辅助鉴定，但精细修复需手工和经验；属于高技能手工岗位，护城河高。需求稳定但小众",
+  "automation": 10,
+  "digital": 20
  },
  {
   "code": "4-13-04-01",
@@ -9315,7 +16728,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "在线学习服务师 AI可提供个性化学习路径，但学习监督、情感支持和问题解答仍需人；护城河来自教育经验和同理心。需求增长中"
+  "eval": "在线学习服务师 AI可提供个性化学习路径，但学习监督、情感支持和问题解答仍需人；护城河来自教育经验和同理心。需求增长中",
+  "automation": 45,
+  "digital": 60
  },
  {
   "code": "4-13-04-02",
@@ -9327,7 +16742,9 @@
   "education": "本科",
   "pay_tier": "低",
   "level": "中",
-  "eval": "国防教育辅导员 AI可辅助内容制作，但现场教育互动、组织训练仍需人；护城河来自军事知识和组织能力。需求小"
+  "eval": "国防教育辅导员 AI可辅助内容制作，但现场教育互动、组织训练仍需人；护城河来自军事知识和组织能力。需求小",
+  "automation": 20,
+  "digital": 25
  },
  {
   "code": "4-13-04-03",
@@ -9339,7 +16756,9 @@
   "education": "本科",
   "pay_tier": "中",
   "level": "中",
-  "eval": "家庭教育指导师 AI可提供一般性建议，但深度亲子关系干预和情感支持仍需人；护城河来自心理学背景和经验。需求增长中"
+  "eval": "家庭教育指导师 AI可提供一般性建议，但深度亲子关系干预和情感支持仍需人；护城河来自心理学背景和经验。需求增长中",
+  "automation": 30,
+  "digital": 40
  },
  {
   "code": "4-13-04-04",
@@ -9351,7 +16770,9 @@
   "education": "大专",
   "pay_tier": "低",
   "level": "中",
-  "eval": "研学旅行指导师 AI可辅助行程规划，但现场引导、安全保障和互动教学仍需人；护城河来自教育能力和应变。需求增长中"
+  "eval": "研学旅行指导师 AI可辅助行程规划，但现场引导、安全保障和互动教学仍需人；护城河来自教育能力和应变。需求增长中",
+  "automation": 30,
+  "digital": 35
  },
  {
   "code": "5-03-01-01",
@@ -10236,7 +17657,8 @@
   "share": 2,
   "education": "大专",
   "pay_tier": "中",
-  "level": "低"
+  "level": "低",
+  "automation": 58
  },
  {
   "code": "6-25-01-11",
@@ -10247,7 +17669,9 @@
   "share": 4,
   "education": "高中",
   "pay_tier": "中",
-  "level": "中"
+  "level": "中",
+  "automation": 68,
+  "digital": 65
  },
  {
   "code": "6-25-01-12",
@@ -10258,7 +17682,9 @@
   "share": 3,
   "education": "高中",
   "pay_tier": "中",
-  "level": "中"
+  "level": "中",
+  "automation": 65,
+  "digital": 68
  },
  {
   "code": "6-25-01-13",
@@ -10269,7 +17695,9 @@
   "share": 6,
   "education": "高中",
   "pay_tier": "中",
-  "level": "中"
+  "level": "中",
+  "automation": 72,
+  "digital": 70
  },
  {
   "code": "6-25-01-14",
@@ -10280,7 +17708,9 @@
   "share": 1,
   "education": "大专",
   "pay_tier": "中",
-  "level": "低"
+  "level": "低",
+  "automation": 48,
+  "digital": 45
  },
  {
   "code": "6-25-01-15",
@@ -10291,7 +17721,9 @@
   "share": 1,
   "education": "大专",
   "pay_tier": "中",
-  "level": "低"
+  "level": "低",
+  "automation": 50,
+  "digital": 48
  },
  {
   "code": "6-25-01-16",
@@ -10302,7 +17734,9 @@
   "share": 2,
   "education": "高中",
   "pay_tier": "中",
-  "level": "中"
+  "level": "中",
+  "automation": 60,
+  "digital": 55
  },
  {
   "code": "6-25-02-01",
@@ -10313,7 +17747,9 @@
   "share": 2,
   "education": "大专",
   "pay_tier": "中",
-  "level": "低"
+  "level": "低",
+  "automation": 55,
+  "digital": 50
  },
  {
   "code": "6-25-02-02",
@@ -10324,7 +17760,9 @@
   "share": 1,
   "education": "高中",
   "pay_tier": "中",
-  "level": "低"
+  "level": "低",
+  "automation": 55,
+  "digital": 48
  },
  {
   "code": "6-25-02-03",
@@ -10335,7 +17773,9 @@
   "share": 5,
   "education": "大专",
   "pay_tier": "中",
-  "level": "高"
+  "level": "高",
+  "automation": 78,
+  "digital": 75
  },
  {
   "code": "6-25-02-04",
@@ -10346,7 +17786,9 @@
   "share": 3,
   "education": "大专",
   "pay_tier": "中",
-  "level": "中"
+  "level": "中",
+  "automation": 72,
+  "digital": 70
  },
  {
   "code": "6-25-02-05",
@@ -10357,7 +17799,9 @@
   "share": 2,
   "education": "本科",
   "pay_tier": "高",
-  "level": "高"
+  "level": "高",
+  "automation": 75,
+  "digital": 78
  },
  {
   "code": "6-25-02-06",
@@ -10368,7 +17812,9 @@
   "share": 2,
   "education": "大专",
   "pay_tier": "中",
-  "level": "中"
+  "level": "中",
+  "automation": 70,
+  "digital": 72
  },
  {
   "code": "6-25-02-07",
@@ -10379,7 +17825,9 @@
   "share": 1,
   "education": "大专",
   "pay_tier": "中",
-  "level": "低"
+  "level": "低",
+  "automation": 48,
+  "digital": 45
  },
  {
   "code": "6-25-03-00",
@@ -10390,7 +17838,9 @@
   "share": 3,
   "education": "高中",
   "pay_tier": "中",
-  "level": "高"
+  "level": "高",
+  "automation": 80,
+  "digital": 70
  },
  {
   "code": "6-25-04-01",
@@ -10401,7 +17851,9 @@
   "share": 5,
   "education": "高中",
   "pay_tier": "中",
-  "level": "高"
+  "level": "高",
+  "automation": 78,
+  "digital": 72
  },
  {
   "code": "6-25-04-02",
@@ -10412,7 +17864,9 @@
   "share": 6,
   "education": "高中",
   "pay_tier": "中",
-  "level": "高"
+  "level": "高",
+  "automation": 82,
+  "digital": 75
  },
  {
   "code": "6-25-04-03",
@@ -10423,7 +17877,9 @@
   "share": 2,
   "education": "本科",
   "pay_tier": "中",
-  "level": "中"
+  "level": "中",
+  "automation": 55,
+  "digital": 58
  },
  {
   "code": "6-25-04-04",
@@ -10434,7 +17890,9 @@
   "share": 2,
   "education": "大专",
   "pay_tier": "中",
-  "level": "中"
+  "level": "中",
+  "automation": 58,
+  "digital": 60
  },
  {
   "code": "6-25-04-05",
@@ -10445,7 +17903,9 @@
   "share": 3,
   "education": "大专",
   "pay_tier": "中",
-  "level": "高"
+  "level": "高",
+  "automation": 65,
+  "digital": 80
  },
  {
   "code": "6-25-04-06",
@@ -10456,7 +17916,9 @@
   "share": 4,
   "education": "高中",
   "pay_tier": "中",
-  "level": "高"
+  "level": "高",
+  "automation": 75,
+  "digital": 65
  },
  {
   "code": "6-25-04-07",
@@ -10467,7 +17929,9 @@
   "share": 5,
   "education": "高中",
   "pay_tier": "中",
-  "level": "高"
+  "level": "高",
+  "automation": 78,
+  "digital": 68
  },
  {
   "code": "6-25-04-08",
@@ -10478,7 +17942,9 @@
   "share": 4,
   "education": "大专",
   "pay_tier": "中",
-  "level": "中"
+  "level": "中",
+  "automation": 68,
+  "digital": 70
  },
  {
   "code": "6-25-04-09",
@@ -10489,7 +17955,9 @@
   "share": 3,
   "education": "大专",
   "pay_tier": "中",
-  "level": "高"
+  "level": "高",
+  "automation": 62,
+  "digital": 82
  },
  {
   "code": "6-01-01-01",
@@ -11944,7 +19412,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI辅助设计图案，但布面/纸面创作仍需人；中低端易被替代"
+  "eval": "AI辅助设计图案，但布面/纸面创作仍需人；中低端易被替代",
+  "digital": 55
  },
  {
   "code": "6-09-03-11",
@@ -11957,7 +19426,8 @@
   "education": "初中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "机器刺绣已替代大量重复图案，高端手工苏绣湘绣仍需人；AI设计图案冲击传统花样"
+  "eval": "机器刺绣已替代大量重复图案，高端手工苏绣湘绣仍需人；AI设计图案冲击传统花样",
+  "digital": 55
  },
  {
   "code": "6-09-03-12",
@@ -11970,7 +19440,8 @@
   "education": "初中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "纯手工编织，文化价值高；AI无法复制手工纹理，护城河深"
+  "eval": "纯手工编织，文化价值高；AI无法复制手工纹理，护城河深",
+  "digital": 30
  },
  {
   "code": "6-09-03-13",
@@ -11983,7 +19454,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "极低",
-  "eval": "机器织造，AI影响小；但岗位本身在减少"
+  "eval": "机器织造，AI影响小；但岗位本身在减少",
+  "digital": 25
  },
  {
   "code": "6-09-03-14",
@@ -11995,7 +19467,9 @@
   "education": "初中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "极精密手工，每颗宝石形态不同；AI可辅助设计但打磨不可替代"
+  "eval": "极精密手工，每颗宝石形态不同；AI可辅助设计但打磨不可替代",
+  "automation": 25,
+  "digital": 35
  },
  {
   "code": "6-09-03-15",
@@ -12007,7 +19481,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "手工掐丝+镶嵌，AI辅助3D设计；高端定制仍有需求"
+  "eval": "手工掐丝+镶嵌，AI辅助3D设计；高端定制仍有需求",
+  "automation": 30,
+  "digital": 50
  },
  {
   "code": "6-09-03-16",
@@ -12019,7 +19495,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "纯手工，AI无法替代古画修复装裱；文化保护属性护城河高"
+  "eval": "纯手工，AI无法替代古画修复装裱；文化保护属性护城河高",
+  "automation": 20,
+  "digital": 30
  },
  {
   "code": "6-09-03-17",
@@ -12031,7 +19509,9 @@
   "education": "初中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "手工为主，文化属性强；AI影响小，但市场萎缩"
+  "eval": "手工为主，文化属性强；AI影响小，但市场萎缩",
+  "automation": 25,
+  "digital": 30
  },
  {
   "code": "6-09-03-18",
@@ -12043,7 +19523,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "影视定制需求，AI辅助设计但量体制作仍需人；护城河在快速响应"
+  "eval": "影视定制需求，AI辅助设计但量体制作仍需人；护城河在快速响应",
+  "automation": 30,
+  "digital": 45
  },
  {
   "code": "6-09-03-19",
@@ -12055,7 +19537,9 @@
   "education": "初中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "个人IP+手工技艺，AI难以复制风格；护城河在个人品牌"
+  "eval": "个人IP+手工技艺，AI难以复制风格；护城河在个人品牌",
+  "automation": 18,
+  "digital": 35
  },
  {
   "code": "6-09-04-01",
@@ -12067,7 +19551,9 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "极低",
-  "eval": "橡胶/皮革加工，部分环节可自动化；AI影响小"
+  "eval": "橡胶/皮革加工，部分环节可自动化；AI影响小",
+  "automation": 65,
+  "digital": 25
  },
  {
   "code": "6-09-04-02",
@@ -12079,7 +19565,9 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "极低",
-  "eval": "碳纤维加工+穿线，AI影响小；标准化程度中"
+  "eval": "碳纤维加工+穿线，AI影响小；标准化程度中",
+  "automation": 60,
+  "digital": 28
  },
  {
   "code": "6-09-04-03",
@@ -12090,7 +19578,10 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "极低",
-  "eval": "钢材切割焊接+组装，AI影响小；规模化生产"
+  "eval": "钢材切割焊接+组装，AI影响小；规模化生产",
+  "automation": 65,
+  "augmentation": 20,
+  "digital": 25
  },
  {
   "code": "6-09-05-00",
@@ -12101,7 +19592,10 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "AI辅助设计降低创意门槛，但注塑/缝合/组装仍需人；中低端玩具需求萎缩"
+  "eval": "AI辅助设计降低创意门槛，但注塑/缝合/组装仍需人；中低端玩具需求萎缩",
+  "automation": 45,
+  "augmentation": 50,
+  "digital": 55
  },
  {
   "code": "6-11-01-01",
@@ -12170,7 +19664,8 @@
   "education": "初中",
   "pay_tier": "低",
   "level": "极高",
-  "eval": "制冷循环操作标准化程度高，PLC已广泛应用；现场维修、冷媒更换仍需人工。依据：食品冷链行业制冷自动化率快速提升"
+  "eval": "制冷循环操作标准化程度高，PLC已广泛应用；现场维修、冷媒更换仍需人工。依据：食品冷链行业制冷自动化率快速提升",
+  "digital": 55
  },
  {
   "code": "6-11-01-06",
@@ -12183,7 +19678,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "清洗作业环境恶劣、重复性高，高压水枪、自动化清洗线已逐步替代人工；复杂结构清洗仍需人但总量收缩。依据：石化企业清洗外包比例上升"
+  "eval": "清洗作业环境恶劣、重复性高，高压水枪、自动化清洗线已逐步替代人工；复杂结构清洗仍需人但总量收缩。依据：石化企业清洗外包比例上升",
+  "digital": 50
  },
  {
   "code": "6-11-02-01",
@@ -12196,7 +19692,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "需现场检测腐蚀程度、制定防护方案，AI辅助腐蚀模型但实际施工判断仍需经验；属于小众工种。依据：腐蚀控制岗位多见于海洋工程、管道行业"
+  "eval": "需现场检测腐蚀程度、制定防护方案，AI辅助腐蚀模型但实际施工判断仍需经验；属于小众工种。依据：腐蚀控制岗位多见于海洋工程、管道行业",
+  "digital": 70
  },
  {
   "code": "6-11-02-02",
@@ -12209,7 +19706,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "接触法硫酸工艺成熟，DCS已全面覆盖；焙烧、吸收、转化工序可高度自动化。依据：大型硫酸装置趋向全自动化"
+  "eval": "接触法硫酸工艺成熟，DCS已全面覆盖；焙烧、吸收、转化工序可高度自动化。依据：大型硫酸装置趋向全自动化",
+  "digital": 68
  },
  {
   "code": "6-11-02-03",
@@ -12222,7 +19720,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "氨氧化法工艺固定，自动化水平高；尾气处理需人工干预但比例小。依据：新建硝酸装置自动化率超90%"
+  "eval": "氨氧化法工艺固定，自动化水平高；尾气处理需人工干预但比例小。依据：新建硝酸装置自动化率超90%",
+  "digital": 72
  },
  {
   "code": "6-11-02-04",
@@ -12235,7 +19734,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "合成盐酸工艺简单，合成炉、吸收塔已普遍DCS控制；人工岗位持续缩减。依据：联碱企业盐酸岗位招人减少"
+  "eval": "合成盐酸工艺简单，合成炉、吸收塔已普遍DCS控制；人工岗位持续缩减。依据：联碱企业盐酸岗位招人减少",
+  "digital": 65
  },
  {
   "code": "6-11-02-05",
@@ -12248,7 +19748,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "湿法磷酸工艺中等复杂度，矿石破碎、酸浸环节可自动化；磷石膏处理仍需人工。依据：磷化工企业自动化改造加速"
+  "eval": "湿法磷酸工艺中等复杂度，矿石破碎、酸浸环节可自动化；磷石膏处理仍需人工。依据：磷化工企业自动化改造加速",
+  "digital": 70
  },
  {
   "code": "6-11-02-06",
@@ -12261,7 +19762,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "索尔维法/联碱法工艺成熟，蒸氨、碳化等工序自动化程度高。依据：纯碱行业人工成本压力推动自动化"
+  "eval": "索尔维法/联碱法工艺成熟，蒸氨、碳化等工序自动化程度高。依据：纯碱行业人工成本压力推动自动化",
+  "digital": 68
  },
  {
   "code": "6-11-02-07",
@@ -12274,7 +19776,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "隔膜法/离子膜法烧碱，电解槽控制已高度自动化；盐水精制环节仍需人工。依据：氯碱行业自动化率持续提升"
+  "eval": "隔膜法/离子膜法烧碱，电解槽控制已高度自动化；盐水精制环节仍需人工。依据：氯碱行业自动化率持续提升",
+  "digital": 72
  },
  {
   "code": "6-11-02-08",
@@ -12287,7 +19790,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "无机盐种类多但单品种工艺简单，结晶、离心、干燥环节易自动化。依据：小盐厂合并大厂趋势明显"
+  "eval": "无机盐种类多但单品种工艺简单，结晶、离心、干燥环节易自动化。依据：小盐厂合并大厂趋势明显",
+  "digital": 75
  },
  {
   "code": "6-11-02-09",
@@ -12300,7 +19804,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "提硝工序温度控制要求精确，但流程固定，PLC已广泛应用。依据：硝酸盐企业岗位缩减明显"
+  "eval": "提硝工序温度控制要求精确，但流程固定，PLC已广泛应用。依据：硝酸盐企业岗位缩减明显",
+  "digital": 60
  },
  {
   "code": "6-11-02-10",
@@ -12313,7 +19818,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "卤水提纯涉及多级蒸发、结晶，工艺有一定变化性；AI可优化参数但现场操作仍需人。依据：盐湖企业开始引入智能控制"
+  "eval": "卤水提纯涉及多级蒸发、结晶，工艺有一定变化性；AI可优化参数但现场操作仍需人。依据：盐湖企业开始引入智能控制",
+  "digital": 65
  },
  {
   "code": "6-11-02-11",
@@ -12326,7 +19832,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "涉及多种无机反应，配方和条件调整需要经验；AI辅助配方优化但责任仍在人。依据：无机化工企业对高级技工需求稳定"
+  "eval": "涉及多种无机反应，配方和条件调整需要经验；AI辅助配方优化但责任仍在人。依据：无机化工企业对高级技工需求稳定",
+  "digital": 62
  },
  {
   "code": "6-11-02-12",
@@ -12339,7 +19846,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "脂肪烃裂解、加氢等工序已有DCS控制；原料变化时需人工调整。依据：石化裂解装置趋向全自动化"
+  "eval": "脂肪烃裂解、加氢等工序已有DCS控制；原料变化时需人工调整。依据：石化裂解装置趋向全自动化",
+  "digital": 58
  },
  {
   "code": "6-11-02-13",
@@ -12352,7 +19860,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "芳烃抽提工艺复杂，但已有成熟DCS方案；人工主要在异常处理。依据：炼化一体化项目高度自动化"
+  "eval": "芳烃抽提工艺复杂，但已有成熟DCS方案；人工主要在异常处理。依据：炼化一体化项目高度自动化",
+  "digital": 60
  },
  {
   "code": "6-11-02-14",
@@ -12365,7 +19874,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "衍生物合成步骤多，AI可辅助配方但现场操作仍需人；技术门槛中等。依据：脂肪醇、脂肪酸企业招聘减少"
+  "eval": "衍生物合成步骤多，AI可辅助配方但现场操作仍需人；技术门槛中等。依据：脂肪醇、脂肪酸企业招聘减少",
+  "digital": 58
  },
  {
   "code": "6-11-02-15",
@@ -12378,7 +19888,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "苯酚、苯胺等衍生品生产已有自动化产线；工艺波动时需人工干预。依据：芳烃下游装置自动化率提升"
+  "eval": "苯酚、苯胺等衍生品生产已有自动化产线；工艺波动时需人工干预。依据：芳烃下游装置自动化率提升",
+  "digital": 60
  },
  {
   "code": "6-11-03-01",
@@ -12391,7 +19902,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "有机合成涉及多步反应、条件敏感，AI辅助路线设计和工艺优化空间大但实验操作仍需人；责任归属需人。依据：药企CDMO中AI辅助合成是趋势"
+  "eval": "有机合成涉及多步反应、条件敏感，AI辅助路线设计和工艺优化空间大但实验操作仍需人；责任归属需人。依据：药企CDMO中AI辅助合成是趋势",
+  "digital": 72
  },
  {
   "code": "6-11-03-02",
@@ -12404,7 +19916,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "哈伯法合成氨工艺成熟，大型装置已DCS全控；人工岗位大幅缩减。依据：煤化工项目趋向全自动化"
+  "eval": "哈伯法合成氨工艺成熟，大型装置已DCS全控；人工岗位大幅缩减。依据：煤化工项目趋向全自动化",
+  "digital": 73
  },
  {
   "code": "6-11-03-03",
@@ -12417,7 +19930,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "水溶液法尿素工艺固定，蒸发、造粒环节可自动化；新建装置几乎无人操作。依据：尿素企业招人持续减少"
+  "eval": "水溶液法尿素工艺固定，蒸发、造粒环节可自动化；新建装置几乎无人操作。依据：尿素企业招人持续减少",
+  "digital": 74
  },
  {
   "code": "6-11-03-04",
@@ -12430,7 +19944,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "硝铵生产工序简单，中和、结晶、造粒可全自动化。依据：复合肥一体化趋势推动自动化"
+  "eval": "硝铵生产工序简单，中和、结晶、造粒可全自动化。依据：复合肥一体化趋势推动自动化",
+  "digital": 75
  },
  {
   "code": "6-11-03-05",
@@ -12443,7 +19958,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "硫酸铵为副产品，生产流程短，自动化程度高。依据：硫铵装置普遍DCS控制"
+  "eval": "硫酸铵为副产品，生产流程短，自动化程度高。依据：硫铵装置普遍DCS控制",
+  "digital": 66
  },
  {
   "code": "6-11-03-06",
@@ -12456,7 +19972,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "过磷酸钙工艺中等，磷矿粉碎、酸解环节可自动化；地脚料处理需人。依据：磷肥企业小厂合并大厂趋势"
+  "eval": "过磷酸钙工艺中等，磷矿粉碎、酸解环节可自动化；地脚料处理需人。依据：磷肥企业小厂合并大厂趋势",
+  "digital": 78
  },
  {
   "code": "6-11-03-07",
@@ -12469,7 +19986,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "复混肥搅拌、造粒、包装高度标准化，自动化产线已普及；人工岗位极少。依据：复合肥企业产线自动化率超85%"
+  "eval": "复混肥搅拌、造粒、包装高度标准化，自动化产线已普及；人工岗位极少。依据：复合肥企业产线自动化率超85%",
+  "digital": 64
  },
  {
   "code": "6-11-03-08",
@@ -12482,7 +20000,8 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "高",
-  "eval": "高炉法生产钙镁磷肥，工艺较老但可改造；人工主要集中在上料、出渣。依据：磷肥行业集中度提升"
+  "eval": "高炉法生产钙镁磷肥，工艺较老但可改造；人工主要集中在上料、出渣。依据：磷肥行业集中度提升",
+  "digital": 70
  },
  {
   "code": "6-11-04-00",
@@ -12495,7 +20014,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "钾肥焙烧、浸取、结晶环节可自动化；青海盐湖提钾已有智能监控。依据：盐湖提钾项目趋向自动化"
+  "eval": "钾肥焙烧、浸取、结晶环节可自动化；青海盐湖提钾已有智能监控。依据：盐湖提钾项目趋向自动化",
+  "digital": 58
  },
  {
   "code": "6-11-05-01",
@@ -12508,7 +20028,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "农药涉及有毒有害、环保监管严，配方生产有一定复杂度；AI辅助配方但生产安全责任需人。依据：农药企业对高级操作工需求稳定"
+  "eval": "农药涉及有毒有害、环保监管严，配方生产有一定复杂度；AI辅助配方但生产安全责任需人。依据：农药企业对高级操作工需求稳定",
+  "digital": 55
  },
  {
   "code": "6-11-05-02",
@@ -12521,7 +20042,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "涂料配方调色需经验，AI可辅助色号匹配但现场调漆仍需人；小批量多品种限制自动化。依据：涂料企业招调漆工需求下降但配方师需求稳定"
+  "eval": "涂料配方调色需经验，AI可辅助色号匹配但现场调漆仍需人；小批量多品种限制自动化。依据：涂料企业招调漆工需求下降但配方师需求稳定",
+  "digital": 52
  },
  {
   "code": "6-11-05-03",
@@ -12534,7 +20056,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "油墨涉及树脂、颜料分散，配方调整需要经验；AI辅助分散参数但现场仍需人。依据：油墨企业对高级技工需求平稳"
+  "eval": "油墨涉及树脂、颜料分散，配方调整需要经验；AI辅助分散参数但现场仍需人。依据：油墨企业对高级技工需求平稳",
+  "digital": 50
  },
  {
   "code": "6-11-05-04",
@@ -12547,7 +20070,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "颜料生产涉及高温煅烧、研磨，工艺有一定变化性；AI可优化工艺但质量判定需人。依据：颜料行业招人稳定但技术门槛中等"
+  "eval": "颜料生产涉及高温煅烧、研磨，工艺有一定变化性；AI可优化工艺但质量判定需人。依据：颜料行业招人稳定但技术门槛中等",
+  "digital": 53
  },
  {
   "code": "6-11-06-00",
@@ -12560,7 +20084,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "染料合成步骤多、条件敏感，AI辅助合成路线但现场操作和色牢度测试需人。依据：染料企业招高级技工为主"
+  "eval": "染料合成步骤多、条件敏感，AI辅助合成路线但现场操作和色牢度测试需人。依据：染料企业招高级技工为主",
+  "digital": 68
  },
  {
   "code": "6-11-07-00",
@@ -12573,7 +20098,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "聚乙烯、聚丙烯等大宗树脂生产已高度自动化；小品种树脂仍需人工调试。依据：石化树脂装置趋向全自动化"
+  "eval": "聚乙烯、聚丙烯等大宗树脂生产已高度自动化；小品种树脂仍需人工调试。依据：石化树脂装置趋向全自动化",
+  "digital": 65
  },
  {
   "code": "6-11-08-01",
@@ -12586,7 +20112,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "丁苯、顺丁橡胶生产已有DCS控制；聚合反应条件调整需人工经验。依据：合成橡胶装置自动化率提升"
+  "eval": "丁苯、顺丁橡胶生产已有DCS控制；聚合反应条件调整需人工经验。依据：合成橡胶装置自动化率提升",
+  "digital": 58
  },
  {
   "code": "6-11-08-02",
@@ -12599,7 +20126,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "催化剂配方和制备条件敏感，AI辅助配方优化但制备过程质量管控需人；技术门槛较高。依据：催化剂企业对高级技工需求稳定"
+  "eval": "催化剂配方和制备条件敏感，AI辅助配方优化但制备过程质量管控需人；技术门槛较高。依据：催化剂企业对高级技工需求稳定",
+  "digital": 60
  },
  {
   "code": "6-11-08-03",
@@ -12612,7 +20140,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "溶剂精馏、纯化环节可自动化；多品种切换时需人工调整。依据：溶剂企业招人趋稳"
+  "eval": "溶剂精馏、纯化环节可自动化；多品种切换时需人工调整。依据：溶剂企业招人趋稳",
+  "digital": 52
  },
  {
   "code": "6-11-08-04",
@@ -14225,7 +21754,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "挤压控参数，AI优化有应用但质量判断需经验"
+  "eval": "挤压控参数，AI优化有应用但质量判断需经验",
+  "digital": 58
  },
  {
   "code": "6-17-09-10",
@@ -14238,7 +21768,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "铸轧操作控参数，AI优化有应用但操作判断需经验，核心岗位"
+  "eval": "铸轧操作控参数，AI优化有应用但操作判断需经验，核心岗位",
+  "digital": 58
  },
  {
   "code": "6-17-09-11",
@@ -14250,7 +21781,8 @@
   "education": "初中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "多工序生产，AI检测逐步应用但复杂结构仍需人，操作复杂"
+  "eval": "多工序生产，AI检测逐步应用但复杂结构仍需人，操作复杂",
+  "digital": 52
  },
  {
   "code": "6-17-10-01",
@@ -14263,7 +21795,8 @@
   "education": "初中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "原料混合，AI配比优化有应用但均匀性判断需经验，粉尘大"
+  "eval": "原料混合，AI配比优化有应用但均匀性判断需经验，粉尘大",
+  "digital": 55
  },
  {
   "code": "6-17-10-02",
@@ -14276,7 +21809,8 @@
   "education": "初中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "成型控压力，AI监控有应用但成品判断需经验，操作简单重复"
+  "eval": "成型控压力，AI监控有应用但成品判断需经验，操作简单重复",
+  "digital": 52
  },
  {
   "code": "6-17-10-03",
@@ -14289,7 +21823,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "烧结高温，AI温控有应用但质量判断需经验，核心环节"
+  "eval": "烧结高温，AI温控有应用但质量判断需经验，核心环节",
+  "digital": 58
  },
  {
   "code": "6-17-10-04",
@@ -14302,7 +21837,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "精加工控尺寸，AI检测逐步应用但复杂形状仍需人，精度要求高"
+  "eval": "精加工控尺寸，AI检测逐步应用但复杂形状仍需人，精度要求高",
+  "digital": 58
  },
  {
   "code": "6-20-01-01",
@@ -14483,7 +22019,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "焊接质量检测AI化，但设备调试和现场焊接仍需人；护城河在焊接工艺经验"
+  "eval": "焊接质量检测AI化，但设备调试和现场焊接仍需人；护城河在焊接工艺经验",
+  "digital": 50
  },
  {
   "code": "6-20-03-03",
@@ -14496,7 +22033,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "批量生产，自动化程度高；AI控制配方和工艺，简单操作可被替代"
+  "eval": "批量生产，自动化程度高；AI控制配方和工艺，简单操作可被替代",
+  "digital": 60
  },
  {
   "code": "6-20-04-00",
@@ -14509,7 +22047,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "AI故障诊断辅助，但现场安装和调试需人；电梯安全监管严格，护城河在资质"
+  "eval": "AI故障诊断辅助，但现场安装和调试需人；电梯安全监管严格，护城河在资质",
+  "digital": 55
  },
  {
   "code": "6-20-05-01",
@@ -14522,7 +22061,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "调试需根据实际工况，AI辅助但经验判断不可替代；通用设备，护城河中等"
+  "eval": "调试需根据实际工况，AI辅助但经验判断不可替代；通用设备，护城河中等",
+  "digital": 50
  },
  {
   "code": "6-20-05-02",
@@ -14535,7 +22075,8 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "精密设备，调试经验重要；AI辅助但特殊工况判断不可替代，护城河较高"
+  "eval": "精密设备，调试经验重要；AI辅助但特殊工况判断不可替代，护城河较高",
+  "digital": 50
  },
  {
   "code": "6-20-05-03",
@@ -14548,7 +22089,8 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "调试环节AI辅助，但实际工况匹配需经验；护城河在压缩机应用知识"
+  "eval": "调试环节AI辅助，但实际工况匹配需经验；护城河在压缩机应用知识",
+  "digital": 50
  },
  {
   "code": "6-20-05-04",
@@ -14560,7 +22102,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "批量生产，部分自动化；调试AI辅助，但现场安装经验不可替代"
+  "eval": "批量生产，部分自动化；调试AI辅助，但现场安装经验不可替代",
+  "automation": 55,
+  "digital": 55
  },
  {
   "code": "6-20-05-05",
@@ -14572,7 +22116,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "通用设备，调试经验重要；AI辅助设计，但现场调试需人"
+  "eval": "通用设备，调试经验重要；AI辅助设计，但现场调试需人",
+  "automation": 53,
+  "digital": 50
  },
  {
   "code": "6-20-05-06",
@@ -14584,7 +22130,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "专业设备，技术壁垒较高；AI辅助但特殊工况调试需经验，护城河中等"
+  "eval": "专业设备，技术壁垒较高；AI辅助但特殊工况调试需经验，护城河中等",
+  "automation": 52,
+  "digital": 50
  },
  {
   "code": "6-20-05-07",
@@ -14596,7 +22144,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "现场安装需人，AI辅助设计；但实际安装和调试经验不可替代，需求稳定"
+  "eval": "现场安装需人，AI辅助设计；但实际安装和调试经验不可替代，需求稳定",
+  "automation": 50,
+  "digital": 50
  },
  {
   "code": "6-20-05-08",
@@ -14608,7 +22158,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "精密阀门装配，AI辅助检测；但特殊工况调试需经验，护城河在阀门应用知识"
+  "eval": "精密阀门装配，AI辅助检测；但特殊工况调试需经验，护城河在阀门应用知识",
+  "automation": 52,
+  "digital": 50
  },
  {
   "code": "6-20-05-09",
@@ -14620,7 +22172,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "批量制造，自动化程度高；AI控制工艺，简单操作可被替代"
+  "eval": "批量制造，自动化程度高；AI控制工艺，简单操作可被替代",
+  "automation": 68,
+  "digital": 65
  },
  {
   "code": "6-20-06-01",
@@ -14632,7 +22186,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "大型设备，现场装配需人；AI辅助设计，但安装调试经验不可替代"
+  "eval": "大型设备，现场装配需人；AI辅助设计，但安装调试经验不可替代",
+  "automation": 50,
+  "digital": 50
  },
  {
   "code": "6-20-06-02",
@@ -14644,7 +22200,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "新兴领域，AI辅助研发；但制造工艺仍需人，护城河在技术积累"
+  "eval": "新兴领域，AI辅助研发；但制造工艺仍需人，护城河在技术积累",
+  "automation": 52,
+  "digital": 55
  },
  {
   "code": "6-20-06-03",
@@ -14656,7 +22214,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "专业设备，小众领域；AI辅助但制造经验不可替代，护城河低"
+  "eval": "专业设备，小众领域；AI辅助但制造经验不可替代，护城河低",
+  "automation": 55,
+  "digital": 55
  },
  {
   "code": "6-20-06-04",
@@ -14668,7 +22228,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "批量生产，高度自动化；AI控制产线，简单操作易被替代"
+  "eval": "批量生产，高度自动化；AI控制产线，简单操作易被替代",
+  "automation": 70,
+  "digital": 65
  },
  {
   "code": "6-20-06-05",
@@ -14680,7 +22242,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "精密计量设备，AI辅助校准；但装配和调试需经验，护城河在计量标准知识"
+  "eval": "精密计量设备，AI辅助校准；但装配和调试需经验，护城河在计量标准知识",
+  "automation": 55,
+  "digital": 50
  },
  {
   "code": "6-20-07-01",
@@ -14692,7 +22256,9 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "低",
-  "eval": "小众领域，需求萎缩；AI数字替代明显，护城河低"
+  "eval": "小众领域，需求萎缩；AI数字替代明显，护城河低",
+  "automation": 58,
+  "digital": 55
  },
  {
   "code": "6-20-07-02",
@@ -14704,7 +22270,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "光学精密制造，AI辅助设计；但精密装配和调试经验不可替代，护城河在光学工艺"
+  "eval": "光学精密制造，AI辅助设计；但精密装配和调试经验不可替代，护城河在光学工艺",
+  "automation": 55,
+  "digital": 50
  },
  {
   "code": "6-20-07-03",
@@ -14716,7 +22284,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "自动化程度高，AI控制产线；简单操作易被替代，护城河低"
+  "eval": "自动化程度高，AI控制产线；简单操作易被替代，护城河低",
+  "automation": 68,
+  "digital": 65
  },
  {
   "code": "6-20-07-04",
@@ -14728,7 +22298,9 @@
   "education": "初中",
   "pay_tier": "低",
   "level": "低",
-  "eval": "简单机械，高度自动化；AI设计辅助，但制造环节易被替代"
+  "eval": "简单机械，高度自动化；AI设计辅助，但制造环节易被替代",
+  "automation": 72,
+  "digital": 65
  },
  {
   "code": "6-20-07-05",
@@ -14740,7 +22312,9 @@
   "education": "大专",
   "pay_tier": "中",
   "level": "中",
-  "eval": "高精密制造，AI辅助设计；但精密装配和检测经验不可替代，护城河高"
+  "eval": "高精密制造，AI辅助设计；但精密装配和检测经验不可替代，护城河高",
+  "automation": 55,
+  "digital": 50
  },
  {
   "code": "6-20-07-06",
@@ -14752,7 +22326,9 @@
   "education": "高中",
   "pay_tier": "中",
   "level": "中",
-  "eval": "批量生产，高度自动化；AI控制工艺，简单操作易被替代"
+  "eval": "批量生产，高度自动化；AI控制工艺，简单操作易被替代",
+  "automation": 70,
+  "digital": 65
  },
  {
   "code": "6-20-07-07",
@@ -14764,7 +22340,9 @@
   "education": "高中",
   "pay_tier": "低",
   "level": "中",
-  "eval": "再制造领域，AI辅助拆解分类；但实际拆解和修复经验不可替代，护城河低"
+  "eval": "再制造领域，AI辅助拆解分类；但实际拆解和修复经验不可替代，护城河低",
+  "automation": 58,
+  "digital": 60
  },
  {
   "code": "6-24-01-00",

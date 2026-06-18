@@ -127,7 +127,7 @@
   </div>
   <div class="daRow"><div class="ct">八大类 · AI 综合冲击(就业加权,点击进入)</div><div class="daGrid" id="daGrid"></div></div>
   <div id="detailview">
-    <div class="dv-l"><h3 id="dName">—</h3><div class="meta" id="dMeta"></div><div id="dDims"></div><div class="kv" id="dKv"></div></div>
+    <div class="dv-l"><h3 id="dName">-</h3><div class="meta" id="dMeta"></div><div id="dDims"></div><div class="kv" id="dKv"></div></div>
     <div class="dv-m"><canvas id="dvradar"></canvas></div>
     <div class="dv-r"><div style="font-size:11px;color:var(--muted);margin-bottom:4px" id="dModelsH"></div><canvas id="dvbars"></canvas><div id="dModels" style="margin-top:5px"></div><div class="rat" id="dRat"></div><div class="src" id="dSrc"></div></div>
   </div>
@@ -170,7 +170,7 @@ let RANGE=[0,100];
 const rawMetric=n=>S.dim==='pay'?(n.pay?Math.log(n.pay):null):S.dim==='education'?(EDU[n.education]||null):(n.dims?n.dims[S.dim]:null);
 function updateRange(){const vs=ALLZ.map(rawMetric).filter(v=>v!=null&&!isNaN(v));const mn=Math.min(...vs),mx=Math.max(...vs);RANGE=[mn,mx>mn?mx:mn+1];}
 function metricV(n){const r=rawMetric(n),c01=r==null?0:Math.max(0,Math.min(1,(r-RANGE[0])/(RANGE[1]-RANGE[0])));
-  let label;if(S.dim==='pay')label=n.pay?(n.pay>=1e4?Math.round(n.pay/1e4)+'万':n.pay):'—';else if(S.dim==='education')label=n.education||'—';else label=n.dims?n.dims[S.dim]:'—';return{c01,label};}
+  let label;if(S.dim==='pay')label=n.pay?(n.pay>=1e4?Math.round(n.pay/1e4)+'万':n.pay):'-';else if(S.dim==='education')label=n.education||'-';else label=n.dims?n.dims[S.dim]:'-';return{c01,label};}
 const tileRGB=t=>S.disagree?lerpC(UNCERT[theme()],(t.node.std||0)/12):lerpC(RAMP[theme()],Math.pow(metricV(t.node).c01,0.78));
 
 const worst=(r,s)=>{const sum=r.reduce((a,b)=>a+b,0),mx=Math.max(...r),mn=Math.min(...r);return Math.max(s*s*mx/(sum*sum),sum*sum/(s*s*mn));};
@@ -259,11 +259,11 @@ function updateCrumb(){const c=document.getElementById('crumb');if(!S.drill){c.i
 const top=document.getElementById('top'),backTab=document.getElementById('backTab');
 function fillDetail(g){document.getElementById('dName').innerHTML=g.title+(g.digital?' <span class="tag">数字职业S</span>':'')+(g.green?' <span class="tag green">绿色L</span>':'');
   document.getElementById('dMeta').textContent=g.da+' · '+g.code+(g.english?' · '+g.english:'')+' · '+(g.n_xi||0)+'细类';
-  document.getElementById('dDims').innerHTML=DIMS.map(d=>'<div class="dimrow"><span>'+d.label+'</span><b>'+(g.dims[d.key]!=null?g.dims[d.key]:'—')+(g.dims_std&&g.dims_std[d.key]?' <span style="color:var(--soft)">±'+g.dims_std[d.key]+'</span>':'')+'</b></div>').join('');
+  document.getElementById('dDims').innerHTML=DIMS.map(d=>'<div class="dimrow"><span>'+d.label+'</span><b>'+(g.dims[d.key]!=null?g.dims[d.key]:'-')+(g.dims_std&&g.dims_std[d.key]?' <span style="color:var(--soft)">±'+g.dims_std[d.key]+'</span>':'')+'</b></div>').join('');
   const prov=(g.flags||[]).some(f=>/provisional|missing/.test(f));
-  document.getElementById('dKv').innerHTML='<span>就业</span><b>'+(g.employment?fmtJobs(g.employment):'—')+'</b><span>年薪</span><b>'+(g.pay?'¥'+g.pay.toLocaleString():'—')+(prov?'<span class="tag warn">估</span>':'')+'</b><span>学历</span><b>'+(g.education||'—')+'</b><span>模型</span><b>'+(g.n_models||0)+'</b>';
+  document.getElementById('dKv').innerHTML='<span>就业</span><b>'+(g.employment?fmtJobs(g.employment):'-')+'</b><span>年薪</span><b>'+(g.pay?'¥'+g.pay.toLocaleString():'-')+(prov?'<span class="tag warn">估</span>':'')+'</b><span>学历</span><b>'+(g.education||'-')+'</b><span>模型</span><b>'+(g.n_models||0)+'</b>';
   document.getElementById('dModelsH').textContent='各模型综合冲击('+(g.n_models||0)+') · 条形见分歧';
-  document.getElementById('dModels').innerHTML=SCOREM.map(m=>{const v=g.by_model&&g.by_model[m]?g.by_model[m].overall:null;return v==null?'':'<span class="chip" title="'+((g.rationales&&g.rationales[m])||'').replace(/"/g,'')+'"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')||'—';
+  document.getElementById('dModels').innerHTML=SCOREM.map(m=>{const v=g.by_model&&g.by_model[m]?g.by_model[m].overall:null;return v==null?'':'<span class="chip" title="'+((g.rationales&&g.rationales[m])||'').replace(/"/g,'')+'"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')||'-';
   const rat=g.rationales?Object.values(g.rationales).filter(Boolean)[0]:'';document.getElementById('dRat').textContent=rat?'「'+rat+'」':'';
   const os=(g.official_sources||[]).slice(0,3).map(s=>s.url?'<a href="'+s.url+'" target="_blank" style="color:var(--accent)">'+(s.name||'源')+'</a>':(s.name||'')).filter(Boolean).join(' · ');
   document.getElementById('dSrc').innerHTML=(os?'官方来源:'+os:'')+(g.flags&&g.flags.length?'<br>标记:'+g.flags.join('、'):'');
