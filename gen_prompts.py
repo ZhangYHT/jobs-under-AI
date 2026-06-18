@@ -368,29 +368,53 @@ TAILSPEC = ('〔编码 名称〕综合NN 自动化NN 增强NN 数字NN 护城河
 def _blocks(groups):
     out = []
     for zl, codes in groups:
-        zt = GMAP[zl]['title']
-        sub = '\n'.join(f"    {c} {TITLE_XI[c]['title']}" + (' [数字S]' if TITLE_XI[c]['digital'] else '') + (' [绿色L]' if TITLE_XI[c]['green'] else '') for c in codes if c in TITLE_XI)
-        out.append(f"◇ 中类 {zl} {zt}({len(codes)}个):\n{sub}")
+        g = GMAP[zl]
+        sub = '\n'.join(f"    {c} {TITLE_XI[c]['title']}" + (' [数字职业S]' if TITLE_XI[c]['digital'] else '') + (' [绿色职业L]' if TITLE_XI[c]['green'] else '') for c in codes if c in TITLE_XI)
+        out.append(f"◇ 中类 {zl} {g['title']}(属 大类{g['parent']} {g['da_title']}),本批含 {len(codes)} 个细类:\n{sub}")
     return '\n'.join(out)
 
-def gapfill_prompt(name, lens, groups):
+def gapfill_prompt(name, lens, groups, ri, total):
     n = sum(len(cs) for _, cs in groups)
-    mm = "\n【你支持团队/多智能体】可选启用 Agent 团队模式,但仍按统一尾行一次性输出。" if name.startswith('MiniMax') else ""
-    return f"""【AI众议院 · {name} · 细类深评打分 · 查漏补缺批(共{n}个)】
+    mm = "\n【你若支持多智能体】可启用 Agent 团队模式分工检索,但最终仍按下方统一格式一次性输出。" if name.startswith('MiniMax') else ""
+    return f"""【AI众议院 · {name} · 中国岗位 AI 冲击 · 细类深评(第{ri}/{total}次 · 本批{n}个)】
 
-【为什么再次发给你】上一轮你这部分只给了一部分就停下了。下面是你尚未评分的细类,这一次请一口气全部补齐。
-【你的专属视角(只补强判断,不必面面俱到)】{lens}{mm}
-【口径】人数给"该细类在其所属中类内部的就业占比%"(同一中类内可与你已给的合计≈100);薪资给相对本中类的高/中/低档。
+你是一位研究"AI 对中国大陆各职业冲击"的资深专家。请对下面列出的 {n} 个《中华人民共和国职业分类大典(2022年版)》细类职业,逐一做 AI 冲击评估与打分。这是一次独立完整的任务,所需信息已全部写在本提示词中,你无需任何前置记忆。
+
+【你的专属研究视角(用于补强判断,不必面面俱到)】{lens}{mm}
+
+【背景与口径(务必先理解)】
+官方统计只到"中类",细类(最细一级的具体职业)没有官方人数与薪资,因此:
+- 人数:估"该细类在其所属中类内部就业人数的占比%"。同一中类下各细类占比之和≈100;不同中类各自独立归一。
+- 薪资:给"相对其所属中类平均水平"的 高/中/低 档。
+- 学历:给该细类典型入职学历(博士/硕士/本科/大专/高中/初中)。
+六个打分维度均为 0-100 整数,分数越高表示该性质越强:
+- 综合冲击 = 该职业在当前及可见近未来被 AI 整体重塑的程度(高=被深度重塑、生产力剧变;不等于失业)。
+- 任务自动化 = 其日常任务可被 AI 或自动化直接替代的比例。
+- AI增强 = AI 作为工具放大该岗位产出的程度。
+- 数字化程度 = 该工作本身在电脑/线上/数据环境中进行的程度。
+- 技能护城河 = 人类不可替代性(高=AI 难替代,如重体力、手艺、人际信任、现场担责)。
+- 行业落地速度 = 在中国大陆该岗位 AI 应用的真实落地速度。
+等级由综合冲击分映射:极高=81-100,高=61-80,中=41-60,低=21-40,极低=0-20。
+
+【打分尺度:务必拉开差距,敢打极端】
+- 几乎全在电脑上、信息处理为主、可远程(编程/数据/文案/客服/录入/财会/设计/翻译)→ 综合 75-100。
+- 重体力/不可预测现场/强人际信任/线下手艺(种地/建筑/护理/餐饮/美发/家政/非遗手工)→ 综合 5-30。
+- 真正一半一半的才给 40-70。同一中类内部,不同细类也要分出明显高低。
 {CHINA}
 
-【待补细类(共 {n} 个,逐项不漏)】
+【需要你评估的细类(共 {n} 个,按所属中类分组,逐项不漏)】
 {_blocks(groups)}
 
-【对每个细类:1 句评价 + 一行尾行】
+【输出格式:每个细类先一句话评价(约20-40字),紧跟一行结构化尾行】
+尾行务必逐字照此格式,编码与名称照抄清单:
 {TAILSPEC}
 
+【示例(仅示范体例,X-XX-XX-XX 为占位)】
+基础信息处理高度可被 AI 接管,复杂判断与担责仍需人。
+〔X-XX-XX-XX 示例职业〕综合72 自动化70 增强85 数字80 护城河45 落地75 ┃ 占比8% ┃ 学历本科 ┃ 薪资中 ┃ 等级高
+
 {ANTILAZY.format(n=n)}
-不要 JSON、不使用破折号。"""
+不要输出 JSON,不使用破折号,不要写报告/前言/章节/总述。"""
 
 def arena_prompt(groups):
     n = sum(len(cs) for _, cs in groups)
@@ -408,42 +432,83 @@ def arena_prompt(groups):
 {ANTILAZY.format(n=n)}
 请自包含作答(不要反问、不要要求更多上下文),不要 JSON、不使用破折号。"""
 
-def _pack_codes(codes, size=70):
-    return [codes[i:i+size] for i in range(0, len(codes), size)]
-
 def _regroup(chunk):
     bz = _c.OrderedDict()
     for c in chunk: bz.setdefault('-'.join(c.split('-')[:2]), []).append(c)
     return list(bz.items())
 
-# --- 查漏补缺:读 data/collected/xilei_gaps/<model>.json ---
-gapdir = os.path.join(ROOT, 'data', 'collected', 'xilei_gaps')
+# --- 查漏补缺:按"第几次发送"分轮(应采 vs 已采,自包含详细提示词) ---
+WEB_GAP = ['wenxin', 'qwen', 'zhipu', 'yuanbao', 'gpt', 'gemini', 'deepseek', 'doubao', 'grok', 'kimi', 'mimo', 'minimax']
+EXCL_TAIL = {'gemini', 'doubao', 'yuanbao'}     # 长尾中类不投这三家
+LATE_MODELS = {'mimo', 'minimax'}               # 后加入,首批10个重点中类不强求(已有11票)
+BIGCAP = {'qwen', 'zhipu', 'gpt', 'deepseek', 'kimi', 'minimax'}  # 一次性输出可靠,大批量
+def _cap(m): return 185 if m in BIGCAP else 150
+def _returned(m):
+    fp = os.path.join(ROOT, 'data', 'collected', 'xilei', m + '.json')
+    return {r['code'] for r in json.load(open(fp, encoding='utf-8'))} if os.path.exists(fp) else set()
+def _chunk(codes, cap):
+    byz = _c.OrderedDict()
+    for c in codes: byz.setdefault('-'.join(c.split('-')[:2]), []).append(c)
+    out, cur = [], []
+    for cs in byz.values():
+        if len(cs) > cap:
+            if cur: out.append(cur); cur = []
+            for i in range(0, len(cs), cap): out.append(cs[i:i+cap])
+            continue
+        if cur and len(cur) + len(cs) > cap: out.append(cur); cur = []
+        cur += cs
+    if cur: out.append(cur)
+    # 合并过小批次到相邻批次(上限 1.2*cap),减少发送轮次
+    changed = True
+    while changed and len(out) > 1:
+        changed = False
+        for i in range(len(out)):
+            if len(out[i]) >= 0.35 * cap: continue
+            for j in sorted([k for k in (i - 1, i + 1) if 0 <= k < len(out)], key=lambda k: len(out[k])):
+                if len(out[i]) + len(out[j]) <= int(cap * 1.2):
+                    lo, hi = sorted((i, j)); out[lo] = out[lo] + out[hi]; out.pop(hi); changed = True; break
+            if changed: break
+    return out
+
+g_gap = {}
+for m in WEB_GAP:
+    rt = _returned(m); asg = []
+    for g in G:
+        xis = g.get('细类', [])
+        if not xis: continue
+        if m in LATE_MODELS and g['code'] in PRI_SET: continue
+        if is_key_zl(g['code']) or m not in EXCL_TAIL:
+            asg += [x['code'] for x in xis]
+    g_gap[m] = [c for c in asg if c not in rt]
+g_sends = {m: _chunk(g_gap[m], _cap(m)) for m in WEB_GAP if g_gap[m]}
+
 gxd = os.path.join(PROMPTS, 'xilei_gaps')
 if os.path.isdir(gxd): shutil.rmtree(gxd)
-gap_files, gap_rows = 0, []
-if os.path.isdir(gapdir):
-    for fp in sorted(_glob.glob(os.path.join(gapdir, '*.json'))):
-        key = os.path.splitext(os.path.basename(fp))[0]
-        if key == 'claude' or key not in NAME_OF: continue       # claude 由我自采,不投喂
-        codes = [it['code'] for it in json.load(open(fp, encoding='utf-8')) if it['code'] in TITLE_XI]
-        seen = list(dict.fromkeys(codes))
-        if not seen: continue
-        d = os.path.join(gxd, key); os.makedirs(d, exist_ok=True)
-        chunks = _pack_codes(seen, 70)
-        for bi, ch in enumerate(chunks, 1):
-            open(os.path.join(d, f'g{bi:02d}.md'), 'w', encoding='utf-8').write(gapfill_prompt(NAME_OF[key], LENS_OF[key], _regroup(ch)))
-            gap_files += 1
-        gap_rows.append((key, len(seen), len(chunks)))
-    greadme = ["# 查漏补缺提示词(把各模型上一轮偷懒/截断漏掉的细类补齐)", "",
-               "上一轮许多非深度研究模式的模型只输出一部分就停下等「继续」。这里按模型汇总它们漏掉的细类,",
-               "用强化版「一次性完整输出」提示词重新投喂。强调:禁止「继续」、一口气写全。", "",
-               "结构:`xilei_gaps/<模型>/g01.md ...`。每个模型把自己目录下的每条投喂给它本人,回复存为 `<模型>.txt` 再跑 `tools/parse_xilei.py`(按编码自动并入,不会覆盖已有)。", "",
-               "## 各模型待补量"]
-    for key, n, nb in sorted(gap_rows, key=lambda r: -r[1]):
-        greadme.append(f"- **{key}**:待补 {n} 个,分 {nb} 批")
-    greadme.append("\n> `claude` 的那份(约1200+)由本系统作者模型(我)自行产出,不在此目录。")
-    open(os.path.join(gxd, 'README.md'), 'w', encoding='utf-8').write('\n'.join(greadme) + '\n')
-    print(f"已生成查漏补缺提示词 {gap_files} 个,覆盖 {len(gap_rows)} 个模型 -> {gxd}")
+gap_files = 0; round_n = max((len(s) for s in g_sends.values()), default=0)
+per_round = _c.defaultdict(list)
+for m, sends in g_sends.items():
+    for ri, ch in enumerate(sends, 1):
+        d = os.path.join(gxd, f'第{ri}次发送'); os.makedirs(d, exist_ok=True)
+        open(os.path.join(d, m + '.md'), 'w', encoding='utf-8').write(gapfill_prompt(NAME_OF[m], LENS_OF[m], _regroup(ch), ri, len(sends)))
+        gap_files += 1; per_round[ri].append((m, len(ch)))
+greadme = [f"# 查漏补缺提示词(按发送轮次组织 · 共 {gap_files} 个文件 / {round_n} 轮)", "",
+           "把各模型上一轮被截断/漏掉的细类补齐。每个文件都是**自包含**的完整任务(含背景、口径、六维定义、打分尺度、示例),模型无需任何记忆。", "",
+           "## 怎么用(关键)",
+           "- 一个文件夹 = **一次发送**。打开 `第1次发送/`,把里面每个 `<模型>.md` 同时投喂给对应模型,一次并发启动多个模型。",
+           "- 收齐第1轮回复后,再打开 `第2次发送/` 重复;越往后模型越少(先做完的模型自动退出后续轮次)。",
+           "- 回复按模型存为 `<模型>.txt`(如 `gpt.txt`),放进任一目录,跑 `python tools/parse_xilei.py <目录>`,按编码自动并入,不覆盖已有。", "",
+           "## 每轮包含的模型(括号内为该批细类数)"]
+for ri in range(1, round_n + 1):
+    items = per_round[ri]
+    greadme.append(f"- **第{ri}次发送**({len(items)} 个模型):" + " · ".join(f"{m}({c})" for m, c in items))
+greadme += ["", "## 各模型缺口与批次", "| 模型 | 缺口 | 批次 | 每批数量 |", "|---|---|---|---|"]
+for m in WEB_GAP:
+    if g_gap[m]:
+        greadme.append(f"| {m} | {len(g_gap[m])} | {len(g_sends[m])} | {', '.join(str(len(x)) for x in g_sends[m])} |")
+greadme += ["", "> 容量:深度研究/思考/任务模式(qwen/zhipu/gpt/deepseek/kimi/minimax)每批约185,其余约150;按中类边界切分,不硬切。",
+            "> claude 已由作者模型全量自采(1639),不在此目录;mimo/minimax 的首批10重点中类暂不强求(已有11票)。"]
+open(os.path.join(gxd, 'README.md'), 'w', encoding='utf-8').write('\n'.join(greadme) + '\n')
+print(f"已生成查漏补缺提示词 {gap_files} 个,{round_n} 轮发送 -> {gxd}")
 
 # --- Arena 双盲:对剩余69中类生成中性匿名提示词(一批可投喂 lmarena,收两个匿名模型的票) ---
 axd = os.path.join(PROMPTS, 'xilei_arena')
