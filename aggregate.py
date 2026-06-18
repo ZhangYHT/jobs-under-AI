@@ -159,7 +159,7 @@ def main():
             ovs = [r['overall'] for r in rows if isinstance(r.get('overall'), (int, float))]
             x['std'] = round(statistics.pstdev(ovs), 1) if len(ovs) > 1 else 0.0
             x['by_model'] = {m: xl[m][x['code']]['overall'] for m in xl if x['code'] in xl[m] and isinstance(xl[m][x['code']].get('overall'), (int, float))}
-            x['rationales'] = {m: xl[m][x['code']]['eval'] for m in xl if x['code'] in xl[m] and xl[m][x['code']].get('eval')}
+            # 细类不逐模型存理由文本(体积大头,1.4M字符);分歧由 by_model 分数体现,代表性评价见 eval
             shs = [r['share'] for r in rows if isinstance(r.get('share'), (int, float)) and r['share'] > 0]
             x['_share'] = statistics.median(shs) if shs else 1.0   # 中位数,抗离群 share
             edus = [r['education'] for r in rows if r.get('education')]
