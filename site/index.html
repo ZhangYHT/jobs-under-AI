@@ -116,10 +116,10 @@
   </div>
   <div class="cards">
     <div class="card"><div class="ct">概况(当前视图)</div><div class="grid2">
-      <div class="num"><div class="v" id="sJobs">–</div><div class="k">覆盖就业</div></div>
-      <div class="num"><div class="v" id="sAvg">–</div><div class="k">加权综合冲击</div></div>
-      <div class="num"><div class="v" id="sCnt">–</div><div class="k">中类数</div></div>
-      <div class="num"><div class="v" id="sTop" style="font-size:12px">–</div><div class="k">冲击最高</div></div>
+      <div class="num"><div class="v" id="sJobs">-</div><div class="k">覆盖就业</div></div>
+      <div class="num"><div class="v" id="sAvg">-</div><div class="k">加权综合冲击</div></div>
+      <div class="num"><div class="v" id="sCnt">-</div><div class="k">中类数</div></div>
+      <div class="num"><div class="v" id="sTop" style="font-size:12px">-</div><div class="k">冲击最高</div></div>
     </div></div>
     <div class="card"><div class="ct">六维画像(就业加权)</div><canvas id="radarc"></canvas></div>
     <div class="card"><div class="ct">综合冲击分布(按就业)</div><div id="hist"></div></div>
@@ -147,7 +147,7 @@ const DIMS=[{key:'overall',label:'综合冲击',short:'综合',main:1},{key:'aut
 const DIMKEYS=DIMS.map(d=>d.key);
 const EDU={'博士':6,'硕士':5,'本科':4,'大专':3,'高中':2,'初中':1};
 const METRICS=[...DIMS,{key:'pay',label:'薪资',extra:1},{key:'education',label:'学历',extra:1}];
-const SCOREM=[...new Set(DATA.groups.flatMap(g=>Object.keys(g.by_model||{})))];
+const SCOREM=[...new Set(DATA.groups.flatMap(g=>[...Object.keys(g.by_model||{}),...((g['细类']||[]).flatMap(x=>Object.keys(x.by_model||{})))]))];
 document.getElementById('sub').innerHTML='就业=七普 · 薪资=统计局 · 分类=大典2022 · AI冲击='+SCOREM.length+'模型集成';
 const byDa={};DATA.groups.forEach(g=>{(byDa[g.parent]=byDa[g.parent]||[]).push(g);});
 const TREE=DATA.categories.map(c=>({code:c.code,name:c.title,children:(byDa[c.code]||[]).filter(g=>g.employment)})).filter(d=>d.children.length);
@@ -164,11 +164,12 @@ const lerpC=(r,t)=>{t=Math.max(0,Math.min(1,t));const s=r.length-1,x=t*s,i=Math.
 const rgb=c=>`rgb(${c[0]|0},${c[1]|0},${c[2]|0})`;
 const lum=c=>(0.2126*c[0]+0.7152*c[1]+0.0722*c[2])/255;
 const cssv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
+const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const fmtJobs=n=>n>=1e8?(n/1e8).toFixed(2)+'亿':Math.round(n/1e4)+'万';
 const colorAbs=v=>rgb(lerpC(RAMP[theme()],Math.pow((v||0)/100,0.9)));
 let RANGE=[0,100];
 const rawMetric=n=>S.dim==='pay'?(n.pay?Math.log(n.pay):null):S.dim==='education'?(EDU[n.education]||null):(n.dims?n.dims[S.dim]:null);
-function updateRange(){const vs=ALLZ.map(rawMetric).filter(v=>v!=null&&!isNaN(v));const mn=Math.min(...vs),mx=Math.max(...vs);RANGE=[mn,mx>mn?mx:mn+1];}
+function updateRange(){const vs=ALLZ.map(rawMetric).filter(v=>v!=null&&!isNaN(v));if(!vs.length){RANGE=[0,1];return;}const mn=Math.min(...vs),mx=Math.max(...vs);RANGE=[mn,mx>mn?mx:mn+1];}
 function metricV(n){const r=rawMetric(n),c01=r==null?0:Math.max(0,Math.min(1,(r-RANGE[0])/(RANGE[1]-RANGE[0])));
   let label;if(S.dim==='pay')label=n.pay?(n.pay>=1e4?Math.round(n.pay/1e4)+'万':n.pay):'-';else if(S.dim==='education')label=n.education||'-';else label=n.dims?n.dims[S.dim]:'-';return{c01,label};}
 const tileRGB=t=>S.disagree?lerpC(UNCERT[theme()],(t.node.std||0)/12):lerpC(RAMP[theme()],Math.pow(metricV(t.node).c01,0.78));
@@ -192,8 +193,8 @@ function computeTargets(){const T=[],L=[],pad=6;
     squarify(da.children.map(g=>({value:g.employment,ref:g})),ir.x,ir.y,ir.w,ir.h).forEach(t=>T.push({id:'z:'+t.ref.code,node:t.ref,kind:'zhong',tx:t.x,ty:t.y,tw:t.w,th:t.h}));});}
   else{const g=ALLZ.find(x=>x.code===S.drill);const kids=g['细类']||[];const anyS=kids.some(k=>k.overall!=null);
     kids.length&&squarify(kids.map(k=>({value:anyS?(k.employment||1):1,ref:k})),pad,pad,W()-2*pad,H()-2*pad).forEach(t=>{const k=t.ref,sc=k.overall!=null;
-      const node=sc?{name:k.title,title:k.title,code:k.code,S:k.digital,green:k.green,dims:k.dims,std:k.std,employment:k.employment,pay:k.pay,education:k.education,level:k.level,by_model:k.by_model,rationales:k.rationales,n_models:k.n_models}
-        :{name:k.title,S:k.digital,green:k.green,dims:g.dims,std:g.std,inherit:g.title,pay:g.pay,education:g.education};
+      const node=sc?{name:k.title,title:k.title,code:k.code,S:k.digital,green:k.green,dims:k.dims,overall:k.overall,std:k.std,employment:k.employment,pay:k.pay,education:k.education,pay_tier:k.pay_tier,level:k.level,eval:k.eval,by_model:k.by_model,rationales:k.rationales,n_models:k.n_models}
+        :{name:k.title,S:k.digital,green:k.green,dims:g.dims,std:g.std,inherit:g.title,pay:g.pay,education:g.education,pending:1};
       T.push({id:'l:'+k.code,node:node,kind:'leaf',tx:t.x,ty:t.y,tw:t.w,th:t.h});});}
   return{T,L};}
 function rebuild(o){const{T,L}=computeTargets();daLabels=L;const m=new Map(tiles.map(t=>[t.id,t]));
@@ -202,14 +203,15 @@ function rebuild(o){const{T,L}=computeTargets();daLabels=L;const m=new Map(tiles
 const matches=t=>!S.query||t.node.name.toLowerCase().includes(S.query.toLowerCase())||(t.kind==='zhong'&&(t.node['细类']||[]).some(k=>k.title.toLowerCase().includes(S.query.toLowerCase())));
 function rr(x,y,w,h,r){r=Math.max(0,Math.min(r,w/2,h/2));ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
 function wrap(name,maxW,maxLines){const out=[];let cur='';for(const ch of name){if(ctx.measureText(cur+ch).width>maxW&&cur){out.push(cur);cur=ch;if(out.length===maxLines-1){if(ctx.measureText(cur).width>maxW){while(cur&&ctx.measureText(cur+'…').width>maxW)cur=cur.slice(0,-1);cur+='…';}out.push(cur);return out;}}else cur+=ch;}if(cur)out.push(cur);return out;}
-function paintTile(x,y,w,h,c,node,hl,alpha){ctx.globalAlpha=alpha;ctx.save();if(hl>.02){ctx.shadowColor='rgba(0,0,0,.55)';ctx.shadowBlur=18*hl;ctx.shadowOffsetY=6*hl;}
+function paintTile(x,y,w,h,c,node,hl,alpha){ctx.globalAlpha=node.pending?alpha*.5:alpha;ctx.save();if(hl>.02){ctx.shadowColor='rgba(0,0,0,.55)';ctx.shadowBlur=18*hl;ctx.shadowOffsetY=6*hl;}
   ctx.fillStyle=`rgb(${c[0]+18*hl|0},${c[1]+18*hl|0},${c[2]+18*hl|0})`;rr(x+1,y+1,w-2,h-2,5);ctx.fill();ctx.restore();
   ctx.globalAlpha=alpha;ctx.lineWidth=1+1.8*hl;ctx.strokeStyle=hl>.02?(theme()==='dark'?'rgba(255,255,255,'+(.3+.5*hl)+')':'rgba(30,40,70,'+(.25+.4*hl)+')'):(theme()==='dark'?'rgba(8,11,18,.5)':'rgba(255,255,255,.7)');rr(x+1,y+1,w-2,h-2,5);ctx.stroke();
   if(w>44&&h>22){const drk=lum(c)<.55;ctx.fillStyle=drk?'rgba(255,255,255,.96)':'rgba(15,20,30,.93)';ctx.textBaseline='top';
     const fs=w<82?10.5:11.5;ctx.font=fs+'px sans-serif';const lines=wrap(node.name,w-9,Math.max(1,Math.min(3,Math.floor((h-20)/(fs+2)))));
     lines.forEach((ln,i)=>ctx.fillText(ln,x+5,y+4+i*(fs+2)));
     ctx.font='bold 13px sans-serif';ctx.fillText(S.disagree?('±'+(node.std||0)):metricV(node).label,x+5,y+4+lines.length*(fs+2)+1);
-    if(node.S&&w>72){ctx.font='9px sans-serif';ctx.globalAlpha=alpha*.85;ctx.fillStyle=drk?'rgba(255,255,255,.7)':'rgba(15,20,30,.6)';ctx.fillText('S',x+w-12,y+5);ctx.globalAlpha=alpha;}}}
+    if(node.S&&w>72){ctx.font='9px sans-serif';ctx.globalAlpha=alpha*.85;ctx.fillStyle=drk?'rgba(255,255,255,.7)':'rgba(15,20,30,.6)';ctx.fillText('S',x+w-12,y+5);ctx.globalAlpha=alpha;}}
+  if(node.pending&&w>10&&h>10){ctx.globalAlpha=alpha;ctx.fillStyle=theme()==='dark'?'rgba(255,255,255,.85)':'rgba(20,30,60,.7)';ctx.beginPath();ctx.arc(x+w-8,y+8,2.4,0,7);ctx.fill();ctx.globalAlpha=alpha;}}
 function fitRect(t){const nm=t.node.name;ctx.font='11.5px sans-serif';const fw=ctx.measureText(nm).width;
   let tw=Math.min(W()-12,Math.max(t.cw*1.08,Math.min(182,fw/2+16))),th=Math.max(t.ch*1.08,50);
   let cx=t.cx+t.cw/2,cy=t.cy+t.ch/2,x=cx-tw/2,y=cy-th/2;x=Math.max(4,Math.min(W()-tw-4,x));y=Math.max(4,Math.min(H()-th-4,y));return{x,y,w:tw,h:th};}
@@ -245,13 +247,13 @@ function drawTier(){const cv2=document.getElementById('tierc'),c=cv2.getContext(
   for(let i=0;i<5;i++){const f=ti[i]/t,a1=a0+f*2*Math.PI;if(f>0){c.beginPath();c.moveTo(cx,cy);c.arc(cx,cy,R,a0,a1);c.closePath();c.fillStyle=rgb(lerpC(RAMP[theme()],i/4));c.fill();}a0=a1;}
   c.fillStyle=cssv('--panel');c.beginPath();c.arc(cx,cy,ri,0,7);c.fill();c.fillStyle=cssv('--text');c.font='bold 14px sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(fmtJobs(t),cx,cy);}
 function updateSummary(){const ls=scope(),t=ls.reduce((s,l)=>s+(l.employment||0),0),a=ls.reduce((s,l)=>s+(l.dims.overall||0)*(l.employment||0),0)/(t||1);let top=ls[0];ls.forEach(l=>{if((l.dims.overall||0)>(top.dims.overall||0))top=l;});
-  document.getElementById('sJobs').textContent=fmtJobs(t);document.getElementById('sAvg').textContent=a.toFixed(1);document.getElementById('sCnt').textContent=ls.length;document.getElementById('sTop').textContent=top?top.title+' ('+(top.dims.overall||0)+')':'–';
+  document.getElementById('sJobs').textContent=fmtJobs(t);document.getElementById('sAvg').textContent=a.toFixed(1);document.getElementById('sCnt').textContent=ls.length;document.getElementById('sTop').textContent=top?top.title+' ('+(top.dims.overall||0)+')':'-';
   const bins=[0,0,0,0,0],lab=['0-20','-40','-60','-80','-100'];ls.forEach(l=>bins[Math.min(4,Math.floor((l.dims.overall||0)/20))]+=(l.employment||0));const mx=Math.max(...bins)||1,hw=document.getElementById('hist');hw.innerHTML='';
   bins.forEach((v,i)=>{const cel=document.createElement('div');cel.className='hb';const b=document.createElement('div');b.className='b';b.style.background=rgb(lerpC(RAMP[theme()],i/4));requestAnimationFrame(()=>b.style.height=(v/mx*100)+'%');const l=document.createElement('div');l.className='l';l.textContent=lab[i];cel.append(b,l);hw.append(cel);});drawTier();}
 const curDim=()=>METRICS.find(d=>d.key===S.dim)||DIMS[0];
 function updateLegend(){document.getElementById('legbar').style.background=S.disagree?'linear-gradient(90deg,'+UNCERT[theme()].map((c,i)=>rgb(c)+' '+(i/2*100)+'%').join(',')+')':'linear-gradient(90deg,'+RAMP[theme()].map((c,i)=>rgb(c)+' '+(i/4*100)+'%').join(',')+')';
-  document.getElementById('legLo').textContent=(S.disagree?'分歧 低':curDim().label+' 低');document.getElementById('legNote').textContent=S.disagree?'·11模型离散':(curDim().note?'·'+curDim().note:'');}
-function updateDa(){document.getElementById('daGrid').innerHTML=DA.map(d=>`<div class="dac" data-code="${d.code}" title="${(d.summary||'').replace(/"/g,'')}"><div class="t"><span>${d.name.length>13?d.name.slice(0,12)+'…':d.name}</span><b>${d.overall}</b></div><div class="track"><div class="fill" style="width:${d.overall}%;background:${colorAbs(d.overall)}"></div></div>${d.summary?'<div class="sm">'+d.summary+'</div>':''}</div>`).join('');
+  document.getElementById('legLo').textContent=(S.disagree?'分歧 低':curDim().label+' 低');document.getElementById('legNote').textContent=S.disagree?'·'+SCOREM.length+'模型离散':(curDim().note?'·'+curDim().note:'');}
+function updateDa(){document.getElementById('daGrid').innerHTML=DA.map(d=>{const nm=d.name.length>13?d.name.slice(0,12)+'…':d.name;return `<div class="dac" data-code="${esc(d.code)}" title="${esc(d.summary||'')}"><div class="t"><span>${esc(nm)}</span><b>${d.overall}</b></div><div class="track"><div class="fill" style="width:${d.overall}%;background:${colorAbs(d.overall)}"></div></div>${d.summary?'<div class="sm">'+esc(d.summary)+'</div>':''}</div>`;}).join('');
   document.querySelectorAll('#daGrid .dac').forEach(x=>x.onclick=()=>{const da=DA.find(z=>z.code===x.dataset.code);if(da){const big=da.children.reduce((p,g)=>g.employment>p.employment?g:p);const t=tiles.find(z=>z.id==='z:'+big.code);if(t)drillInto(t);}});}
 function updateCrumb(){const c=document.getElementById('crumb');if(!S.drill){c.innerHTML='<b>全部职业</b> · 大类 → 中类 · 点方块进入具体职业';return;}
   const g=ALLZ.find(x=>x.code===S.drill);c.innerHTML='<a data-h>全部</a> › <a data-h>'+g.da+'</a> › <b>'+g.title+'</b>';c.querySelectorAll('a').forEach(a=>a.onclick=back);}
@@ -274,13 +276,15 @@ backTab.onclick=back;
 
 const tip=document.getElementById('tip');let tipFull=false,tipTimer=null,tipXY=[0,0];
 const nodeOf=id=>{const t=tiles.find(x=>x.id===id);return t?t.node:null;};
-function tipHtml(n,full){const d=n.dims;let h='<div class="t">'+(n.title||n.name)+(n.digital||n.S?'<span class="tag">数字S</span>':'')+(n.green?'<span class="tag green">绿L</span>':'')+'</div>';
+function tipHtml(n,full){const d=n.dims;let h='<div class="t">'+esc(n.title||n.name)+(n.digital||n.S?'<span class="tag">数字S</span>':'')+(n.green?'<span class="tag green">绿L</span>':'')+(n.pending?'<span class="tag warn">待采集</span>':'')+'</div>';
   h+='<div class="big" style="color:'+colorAbs(d.overall)+'">综合冲击 '+d.overall+' / 100'+(n.std?'  分歧±'+n.std:'')+'</div>';
   h+='<div class="grid"><span>任务自动化</span><b>'+d.automation+'</b><span>AI增强</span><b>'+d.augmentation+'</b><span>数字化</span><b>'+d.digital+'</b><span>护城河</span><b>'+d.moat+'</b><span>落地速度</span><b>'+d.adoption+'</b>';
-  if(n.pay)h+='<span>年薪</span><b>¥'+n.pay.toLocaleString()+'</b>';if(n.education)h+='<span>学历</span><b>'+n.education+'</b>';if(n.employment)h+='<span>就业</span><b>'+fmtJobs(n.employment)+'</b>';if(n.level)h+='<span>等级</span><b>'+n.level+'</b>';h+='</div>';
+  if(n.pay)h+='<span>年薪</span><b>¥'+n.pay.toLocaleString()+'</b>';if(n.education)h+='<span>学历</span><b>'+esc(n.education)+'</b>';if(n.employment)h+='<span>就业</span><b>'+fmtJobs(n.employment)+'</b>';if(n.level)h+='<span>等级</span><b>'+esc(n.level)+'</b>';h+='</div>';
+  if(n.eval){let ev=String(n.eval);if(ev.length>60)ev=ev.slice(0,60)+'…';h+='<div class="r">「'+esc(ev)+'」</div>';}
+  else if(n.pending)h+='<div class="hint">待采集 / 继承所属中类'+(n.inherit?'「'+esc(n.inherit)+'」':'')+',尚未单独打分</div>';
   if(full){h+='<canvas id="tipr"></canvas>';const bm=n.by_model;
     if(bm){h+='<div class="mods">'+SCOREM.map(m=>{const e=bm[m];const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')+'</div>';}
-    const rat=n.rationales?Object.values(n.rationales).filter(Boolean)[0]:(n.inherit?'继承所属中类「'+n.inherit+'」':'');if(rat)h+='<div class="r">「'+rat+'」</div>';}
+    const rat=n.rationales?Object.values(n.rationales).filter(Boolean)[0]:'';if(rat)h+='<div class="r">「'+esc(rat)+'」</div>';}
   else h+='<div class="hint">静止片刻 → 展开各模型分歧与雷达</div>';return h;}
 function showTip(n,full){tip.innerHTML=tipHtml(n,full);tip.classList.add('show');if(full){const c=document.getElementById('tipr');if(c)drawRadar(c,DIMKEYS.map(k=>n.dims[k]||0));}place();}
 function place(){const[x,y]=tipXY;let tw=tip.offsetWidth,th=tip.offsetHeight,tx=x+16,ty=y+16;if(tx+tw>innerWidth-8)tx=x-tw-16;if(ty+th>innerHeight-8)ty=innerHeight-th-8;if(ty<8)ty=8;tip.style.left=tx+'px';tip.style.top=ty+'px';}

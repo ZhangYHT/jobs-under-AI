@@ -14,13 +14,24 @@
   步骤1-3 官方锚定 —— 取有官方来源的值;否则用中位数并标 provisional;保留所有来源。
   步骤4   集成     —— 每维 均值/中位数/标准差(分歧度) + 各模型分。
 """
-import json, glob, os, statistics, collections
+import json, glob, os, re, statistics, collections
 
 DIMS = ['overall', 'automation', 'augmentation', 'digital', 'moat', 'adoption']
 def LEVEL(o): return '极高' if o >= 81 else '高' if o >= 61 else '中' if o >= 41 else '低' if o >= 21 else '极低'
 PAY_TIER = {'高': 1.3, '中': 1.0, '低': 0.75}
 ROOT = os.path.dirname(os.path.abspath(__file__))
 def p(*a): return os.path.join(ROOT, *a)
+
+# 温和可信度加权(data/model_weights.json)。未列模型默认 1.0;Arena 匿名票 0.80。
+try:
+    _W = dict(json.load(open(p('data', 'model_weights.json'), encoding='utf-8')).get('weights', {}))
+except Exception as e:
+    print(f'  [warn] 未能加载 model_weights.json,改用等权: {e}'); _W = {}
+_W.setdefault('arena', 0.80)
+def W(m): return _W.get(m, 1.0)
+def wmean(pairs):
+    sw = sum(w for _, w in pairs)
+    return sum(v * w for v, w in pairs) / sw if sw else 0.0
 
 def load_models(step):
     out = {}
@@ -113,9 +124,10 @@ def main():
             for m in sc:
                 if code in sc[m] and d in sc[m][code]: by_model.setdefault(m, {})[d] = sc[m][code][d]
         for d in DIMS:
-            vs = [by_model[m][d] for m in by_model if d in by_model[m]]
+            pairs = [(by_model[m][d], W(m)) for m in by_model if d in by_model[m]]
+            vs = [v for v, _ in pairs]
             if vs:
-                mean[d] = round(statistics.mean(vs))
+                mean[d] = round(wmean(pairs))                      # 加权均值
                 median[d] = round(statistics.median(vs))
                 std[d] = round(statistics.pstdev(vs), 1) if len(vs) > 1 else 0.0
         rec['dims'] = mean
@@ -135,25 +147,34 @@ def main():
         # ---- 细类深评(若已采集):人数=中类官方×归一占比;薪资=中类×档位;等级由分分档 ----
         scored = []
         for x in rec['细类']:
-            rows = [xl[m][x['code']] for m in xl if x['code'] in xl[m]]
-            if not rows: continue
+            mrows = [(m, xl[m][x['code']]) for m in xl if x['code'] in xl[m]]
+            if not mrows: continue
+            rows = [r for _, r in mrows]
             xd = {}
             for dd in DIMS:
-                vs = [r[dd] for r in rows if isinstance(r.get(dd), (int, float))]
-                if vs: xd[dd] = round(statistics.mean(vs))
+                pairs = [(r[dd], W(m)) for m, r in mrows if isinstance(r.get(dd), (int, float))]
+                if pairs: xd[dd] = round(wmean(pairs))            # 加权均值
             ov = xd.get('overall')
             x['overall'] = ov; x['dims'] = xd
             ovs = [r['overall'] for r in rows if isinstance(r.get('overall'), (int, float))]
             x['std'] = round(statistics.pstdev(ovs), 1) if len(ovs) > 1 else 0.0
             x['by_model'] = {m: xl[m][x['code']]['overall'] for m in xl if x['code'] in xl[m] and isinstance(xl[m][x['code']].get('overall'), (int, float))}
             x['rationales'] = {m: xl[m][x['code']]['eval'] for m in xl if x['code'] in xl[m] and xl[m][x['code']].get('eval')}
-            shs = [r['share'] for r in rows if isinstance(r.get('share'), (int, float))]
-            x['_share'] = statistics.mean(shs) if shs else 1.0
+            shs = [r['share'] for r in rows if isinstance(r.get('share'), (int, float)) and r['share'] > 0]
+            x['_share'] = statistics.median(shs) if shs else 1.0   # 中位数,抗离群 share
             edus = [r['education'] for r in rows if r.get('education')]
             x['education'] = collections.Counter(edus).most_common(1)[0][0] if edus else None
             tiers = [r['pay_tier'] for r in rows if r.get('pay_tier')]
             x['pay_tier'] = collections.Counter(tiers).most_common(1)[0][0] if tiers else None
-            x['eval'] = next((r['eval'] for r in rows if r.get('eval')), '')
+            _bad = ('报告', '摘要', '评估说明', '方法论', '口径')
+            evs = [r['eval'] for r in rows if r.get('eval')
+                   and not r['eval'].startswith(('占比', '学历', '薪资', '等级', '综合', '说明', '注', '本中类', '同一中类'))
+                   and not any(b in r['eval'][:30] for b in _bad)]
+            ev = max(evs, key=len) if evs else next((r['eval'] for r in rows if r.get('eval')), '')
+            ev = re.sub(r'\s*[（(]\[.*$', '', ev)                 # 砍掉 ([来源…]) 引用括注(常被截断)
+            ev = re.sub(r'\[[^\]\n]{0,40}\]', '', ev)             # 去 [1]/[OECD] 等剩余方括号标记
+            ev = re.sub(r'[（(]\s*[)）]', '', ev)                  # 去清空后的空括号
+            x['eval'] = re.sub(r'\s{2,}', ' ', ev).strip(' ，,、;；')
             x['n_models'] = len(x['by_model'])
             if ov is not None:
                 x['level'] = LEVEL(ov); scored.append(x)
@@ -179,8 +200,9 @@ def main():
             'title': 'AI 时代各岗位冲击图谱 · 中国版',
             'taxonomy': occ['meta'],
             'models': all_models, 'n_models': len(all_models),
+            'xilei_models': sorted(xl), 'weights': _W,
             'unit': '中类(79)', 'dims': DIMS,
-            'disclaimer': '分类与S/L标注=职业分类大典2022;就业=第七次全国人口普查(年鉴表4-7);薪资=国家统计局2023分岗位+分行业平均工资;学历=AI估计;AI冲击=多模型集成估算。仅供参考,不代表官方结论。',
+            'disclaimer': '分类与S/L标注=职业分类大典2022;就业=第七次全国人口普查(年鉴表4-7);薪资=国家统计局2023分岗位+分行业平均工资;学历=AI估计;AI冲击=多模型集成估算(细类层13个模型+Arena匿名双盲补充票,按温和可信度加权)。仅供参考,不代表官方结论。',
         },
         'categories': occ['categories'],
         'da_summary': {k: {'overall': round(statistics.mean(v['totals'])) if v['totals'] else None,
