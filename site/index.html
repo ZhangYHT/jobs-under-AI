@@ -209,7 +209,7 @@
 <div id="backTab" title="返回全部职业">‹</div>
 
 <div id="top">
-  <div class="head"><h1>AI 时代各岗位冲击图谱 · 中国版</h1><span class="brand" title="Project Babel · 打破国别信息壁垒">巴别塔工程</span><div class="sub" id="sub"></div><div class="sp"></div><button class="pill" id="themebtn">🌗 跟随设备</button></div>
+  <div class="head"><h1>AI 时代各岗位冲击图谱 · 中国版</h1><div class="sub" id="sub"></div><div class="sp"></div><button class="pill" id="themebtn">🌗 跟随设备</button></div>
   <div class="row1">
     <div class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="search" placeholder="搜索职业…"></div>
     <div class="tg" id="tg"></div>
@@ -493,6 +493,22 @@ window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},b
   hover:c=>{const t=tiles.find(x=>x.id==='z:'+c||x.id==='l:'+c);if(t){hoverId=t.id;tipXY=[innerWidth/2,innerHeight*0.62];showTip(t.node,true);}},
   settle:()=>{updateRange();for(const t of tiles){t.cx=t.tx;t.cy=t.ty;t.cw=t.tw;t.ch=t.th;t.alpha=matches(t)?1:.12;const c=tileRGB(t);t.cr=c[0];t.cg=c[1];t.cb=c[2];t.hl=(t.id===hoverId?1:0);}const r=radarT();for(let i=0;i<6;i++)radarCur[i]=r[i];draw();drawRadar(document.getElementById('radarc'),radarCur);if(S.drill){const g=ALLZ.find(x=>x.code===S.drill);if(g){drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>g.dims[k]||0));drawBars(document.getElementById('dvbars'),g);}}}};
 })();}
+</script>
+<div id="mobileTip">建议使用大屏幕设备(电脑/平板)进行浏览,效果最佳</div>
+<style>
+#mobileTip{position:fixed;top:max(14px,env(safe-area-inset-top,0px));left:50%;transform:translateX(-50%) translateY(-10px);z-index:60;
+  max-width:88vw;background:var(--glass);backdrop-filter:blur(12px);-webkit-backdrop-filter:blur(12px);border:1px solid var(--line);
+  border-radius:12px;box-shadow:var(--shadow);padding:10px 16px;font-size:12.5px;font-weight:600;color:var(--text);text-align:center;line-height:1.5;
+  opacity:0;pointer-events:none;transition:opacity .7s ease,transform .7s ease;}
+#mobileTip.show{opacity:1;transform:translateX(-50%) translateY(0);}
+</style>
+<script>
+(function(){var t=document.getElementById('mobileTip');if(!t)return;
+  var touch=('ontouchstart' in window)||navigator.maxTouchPoints>0;
+  if(!(touch&&Math.min(innerWidth,innerHeight)<=600))return;   // 仅手机:触屏且最小边≤600px(平板/电脑不弹)
+  requestAnimationFrame(function(){t.classList.add('show');});
+  setTimeout(function(){t.classList.remove('show');setTimeout(function(){t.style.display='none';},800);},5000);
+})();
 </script>
 </body>
 </html>
