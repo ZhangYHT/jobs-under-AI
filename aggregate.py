@@ -28,6 +28,22 @@ def clean_rat(t):
     t = re.sub(r'^[^:：\n]{0,14}[:：]\s*', '', t)       # 去开头"名称:"标签
     return t.strip(' 　。.，,、;；')
 
+# 细类代表性评价(eval)的污染识别:剔除"思考过程/方法论/批次脚手架/报告标题/跨批汇总/装饰横幅/HTML"
+# 等非本细类正文的候选,使各细类从 13 个模型里挑到真正描述本职业的那条(详见 README 数据说明)。
+EVAL_START = ('占比', '学历', '薪资', '等级', '综合', '说明', '注', '本中类', '同一中类')
+_EVAL_BAD = re.compile(
+    r'好的[，,。]|收到[，,。]|^行[，,]|来[，,]\s*先[交上给]|先出前|这个批次|继续(输出|交|给)|我来|我将|我们开始|让我[来帮]|我先|我明确|我需要|首先[，,]|现在开始|下面(按|开始)|'
+    r'根据搜索|基于搜索|本报告|以下是|打分标准|评分标准|评分口径|统计口径|(占比|学历|薪资)[^。]{0,12}口径|作为(研究|资深|一名|对)|从第一性原理|基于(公开|国内官方)|官方智库|头部招聘|'
+    r'研究报告|评估报告|综合评估报告|深度研究|宏观背景|中类研判|研判脉络|涵盖编码|编码范围|细类深评|系列[｜|]|评估说明|方法论|摘要[ 　]|'
+    r'中类\s*[「『]|中类\s*\d|大类\s*[\d一二三四五六]|小类\s*\d|第\s*[\d一二三四五六]\s*[/／]?\s*[\d六]?\s*批|共[6六]批|逐一(进行|处理|评估)|上述(职业|细类|岗位)|本批[次的]|得分均(超过|高于|低于|在)|\d\s*个细类|集群[（(]约|'
+    r'[═━─＝]{3,}|={4,}|</?[a-zA-Z]|section-|WEF|OECD|ILO|O\*NET')
+def bad_eval(e):
+    return (not e) or e.startswith(EVAL_START) or bool(_EVAL_BAD.search(e[:60]))
+def clean_eval_head(e):
+    e = re.sub(r'^[\s#>*•·\-]+', '', e)                 # 去开头 markdown/项目符
+    e = re.sub(r'^【[^】]{0,30}】\s*', '', e)            # 去开头【编码 名称】
+    return re.sub(r'^\d-\d\d(-\d\d-\d\d)?[ 　]*', '', e)  # 去开头裸编码
+
 # 温和可信度加权(data/model_weights.json)。未列模型默认 1.0;Arena 匿名票 0.80。
 try:
     _W = dict(json.load(open(p('data', 'model_weights.json'), encoding='utf-8')).get('weights', {}))
@@ -179,11 +195,9 @@ def main():
             x['education'] = collections.Counter(edus).most_common(1)[0][0] if edus else None
             tiers = [r['pay_tier'] for r in rows if r.get('pay_tier')]
             x['pay_tier'] = collections.Counter(tiers).most_common(1)[0][0] if tiers else None
-            _bad = ('报告', '摘要', '评估说明', '方法论', '口径')
-            evs = [r['eval'] for r in rows if r.get('eval')
-                   and not r['eval'].startswith(('占比', '学历', '薪资', '等级', '综合', '说明', '注', '本中类', '同一中类'))
-                   and not any(b in r['eval'][:30] for b in _bad)]
+            evs = [r['eval'] for r in rows if not bad_eval(r.get('eval'))]   # 剔除思考/方法论/批次脚手架等污染候选
             ev = max(evs, key=len) if evs else next((r['eval'] for r in rows if r.get('eval')), '')
+            ev = clean_eval_head(ev)                              # 去开头 markdown/编码/横幅装饰
             ev = re.sub(r'\s*[（(]\[.*$', '', ev)                 # 砍掉 ([来源…]) 引用括注(常被截断)
             ev = re.sub(r'\[[^\]\n]{0,40}\]', '', ev)             # 去 [1]/[OECD] 等剩余方括号标记
             ev = re.sub(r'[（(]\s*[)）]', '', ev)                  # 去清空后的空括号
