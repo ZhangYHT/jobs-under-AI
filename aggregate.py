@@ -22,6 +22,12 @@ PAY_TIER = {'高': 1.3, '中': 1.0, '低': 0.75}
 ROOT = os.path.dirname(os.path.abspath(__file__))
 def p(*a): return os.path.join(ROOT, *a)
 
+def clean_rat(t):
+    """清掉中类理由里串进来的评分尾巴/下一条编码名称(parse_step4 的 70 字截断遗留),用作简介回退。"""
+    t = re.split(r'综合冲击', t)[0]                     # 砍掉串入的评分尾巴(连带其后的下一条编码名称)
+    t = re.sub(r'^[^:：\n]{0,14}[:：]\s*', '', t)       # 去开头"名称:"标签
+    return t.strip(' 　。.，,、;；')
+
 # 温和可信度加权(data/model_weights.json)。未列模型默认 1.0;Arena 匿名票 0.80。
 try:
     _W = dict(json.load(open(p('data', 'model_weights.json'), encoding='utf-8')).get('weights', {}))
@@ -57,6 +63,10 @@ def main():
     scn = load_models('step4_overall')   # 自然语言版综合冲击(更拉开)
     xl  = load_models('xilei')            # 细类深评打分
     all_models = sorted((set(emp) | set(pe) | set(sc) | set(scn)) - {'census7', 'official'})
+    # 人工挑选的高质量大类/中类简介(逐字摘自各模型概述,覆盖自动抽取版,避免把思考过程当摘要)
+    curated = json.load(open(p('data', 'curated_summaries.json'), encoding='utf-8'))
+    cur_da = {k: (v.get('summary') if isinstance(v, dict) else v) for k, v in curated.get('da', {}).items()}
+    cur_zhong = {k: (v.get('summary') if isinstance(v, dict) else v) for k, v in curated.get('zhong', {}).items()}
     # 大类一句话总结(自然语言版)
     da_sum = {}
     for f in sorted(glob.glob(p('data', 'collected', 'step4_da', '*.json'))):
@@ -137,6 +147,9 @@ def main():
         rec['rationales'] = {m: (scn[m][code]['rationale'] if code in scn.get(m, {}) and scn[m][code].get('rationale')
                                  else sc.get(m, {}).get(code, {}).get('rationale', '')) for m in by_model}
         rec['rationales'] = {m: r for m, r in rec['rationales'].items() if r}
+        # 中类简介:优先人工挑选(curated zhong),否则回退最长的一条"干净"模型理由
+        _cln = [c for c in (clean_rat(r) for r in rec['rationales'].values()) if len(c) >= 12]
+        rec['summary'] = cur_zhong.get(code) or (max(_cln, key=len) if _cln else '')
         rec['n_models'] = len([m for m in by_model if 'overall' in by_model[m]])
         rec['std'] = std.get('overall', 0)
         if rec['n_models'] == 0:
@@ -206,7 +219,7 @@ def main():
         },
         'categories': occ['categories'],
         'da_summary': {k: {'overall': round(statistics.mean(v['totals'])) if v['totals'] else None,
-                           'summary': v['summary']} for k, v in da_sum.items()},
+                           'summary': cur_da.get(k) or v['summary']} for k, v in da_sum.items()},
         'groups': out_groups,
     }
     json.dump(agg, open(p('data', 'aggregated.cn.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)

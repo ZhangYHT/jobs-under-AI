@@ -403,7 +403,7 @@ function fillDetail(g){document.getElementById('dName').innerHTML=g.title+(g.dig
   document.getElementById('dKv').innerHTML='<span>就业</span><b>'+(g.employment?fmtJobs(g.employment):'-')+'</b><span>年薪</span><b>'+(g.pay?'¥'+g.pay.toLocaleString():'-')+(prov?'<span class="tag warn">估</span>':'')+'</b><span>学历</span><b>'+(g.education||'-')+'</b><span>模型</span><b>'+(g.n_models||0)+'</b>';
   document.getElementById('dModelsH').textContent='各模型综合冲击('+(g.n_models||0)+') · 条形见分歧';
   document.getElementById('dModels').innerHTML=SCOREM.map(m=>{const v=g.by_model&&g.by_model[m]?g.by_model[m].overall:null;return v==null?'':'<span class="chip" title="'+((g.rationales&&g.rationales[m])||'').replace(/"/g,'')+'"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')||'-';
-  const rat=g.rationales?Object.values(g.rationales).filter(Boolean)[0]:'';document.getElementById('dRat').textContent=rat?'「'+rat+'」':'';
+  const rat=g.summary||(g.rationales?Object.values(g.rationales).filter(Boolean)[0]:'');document.getElementById('dRat').textContent=rat?'「'+rat+'」':'';
   const os=(g.official_sources||[]).slice(0,3).map(s=>s.url?'<a href="'+s.url+'" target="_blank" style="color:var(--accent)">'+(s.name||'源')+'</a>':(s.name||'')).filter(Boolean).join(' · ');
   document.getElementById('dSrc').innerHTML=(os?'官方来源:'+os:'')+(g.flags&&g.flags.length?'<br>标记:'+g.flags.join('、'):'');
   requestAnimationFrame(()=>{drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>g.dims[k]||0));drawBars(document.getElementById('dvbars'),g);});}
