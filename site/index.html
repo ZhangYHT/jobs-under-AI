@@ -47,6 +47,15 @@
   .tg button:hover{color:var(--text);}
   .tg button.active{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-color:transparent;font-weight:700;}
   .tg button.extra{border-style:dashed;border-color:var(--accent2);}
+  .tg button{position:relative;}
+  .qm{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;margin-left:5px;border-radius:50%;
+    border:1px solid var(--line);background:var(--panel);color:var(--muted);font-size:9.5px;font-weight:700;line-height:1;cursor:help;vertical-align:middle;position:relative;}
+  .tg button.active .qm{border-color:rgba(255,255,255,.55);background:rgba(255,255,255,.18);color:#fff;}
+  .qm:hover{color:var(--text);border-color:var(--accent);}
+  .qm:hover::after{content:attr(data-desc);position:absolute;left:50%;bottom:calc(100% + 8px);transform:translateX(-50%);z-index:80;
+    width:max-content;max-width:240px;white-space:normal;text-align:left;font-weight:500;line-height:1.5;
+    background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);color:var(--text);
+    border:1px solid var(--line);border-radius:9px;box-shadow:var(--shadow);padding:7px 9px;font-size:11.5px;pointer-events:none;}
   .sw{display:flex;align-items:center;gap:7px;font-size:12px;color:var(--muted);cursor:pointer;background:var(--panel2);border:1px solid var(--line);padding:5px 10px;border-radius:8px;user-select:none;}
   .sw .dot{width:30px;height:16px;border-radius:20px;background:var(--line);position:relative;transition:.2s;}
   .sw .dot::after{content:"";position:absolute;top:2px;left:2px;width:12px;height:12px;border-radius:50%;background:#fff;transition:.2s;}
@@ -74,6 +83,7 @@
   .dac .t{display:flex;justify-content:space-between;font-size:11.5px;align-items:center;}.dac .t b{font-variant-numeric:tabular-nums;}
   .dac .track{height:5px;border-radius:4px;background:var(--panel2);margin-top:4px;overflow:hidden;}.dac .fill{height:100%;border-radius:4px;}
   .dac .sm{font-size:9.5px;color:var(--soft);margin-top:4px;line-height:1.4;max-height:26px;overflow:hidden;}
+  .dac .dalab{font-size:9.5px;color:var(--accent);font-weight:600;margin-top:2px;}
   /* 中类详情(顶栏内) */
   #detailview{display:none;gap:16px;align-items:flex-start;}
   #top.detail .cards,#top.detail .daRow{display:none;}#top.detail #detailview{display:flex;}
@@ -255,6 +265,7 @@
 <script>
 if(!window.DATA){document.getElementById('err').style.display='flex';}
 else{(function(){
+try{
 const DATA=window.DATA,DASUM=DATA.da_summary||{};
 const DIMS=[{key:'overall',label:'综合冲击',short:'综合',main:1,desc:'综合冲击=该职业被 AI 整体重塑的程度(高=被深度重塑、生产力剧变,不等于失业)'},{key:'automation',label:'任务自动化',short:'自动化',desc:'任务自动化=日常任务可被 AI 直接替代的比例'},
   {key:'augmentation',label:'AI增强',short:'AI增强',desc:'AI增强=AI 作为工具放大该岗位产出的程度'},{key:'digital',label:'数字化程度',short:'数字化',desc:'数字化程度=工作本身在电脑/线上/数据环境中进行的程度'},
@@ -496,9 +507,10 @@ const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bili
 window.addEventListener('resize',resize);
 updateRange();resize();updateCrumb();updateLegend();updateSummary();updateDa();renderTierLegend();setHandle();requestAnimationFrame(frame);requestAnimationFrame(radarFrame);
 window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},back:back,theme:m=>{themeMode=m;applyTheme();},collapse:()=>{top.classList.toggle('collapsed');setHandle();},
-  metric:k=>{S.dim=k;S.disagree=false;dis.classList.remove('on');[...tg.children].forEach(x=>x.classList.toggle('active',x.textContent===((METRICS.find(m=>m.key===k)||{}).label)));updateRange();updateLegend();},
+  metric:k=>{S.dim=k;S.disagree=false;dis.classList.remove('on');[...tg.children].forEach(x=>x.classList.toggle('active',x.dataset.key===k));updateRange();updateLegend();},
   hover:c=>{const t=tiles.find(x=>x.id==='z:'+c||x.id==='l:'+c);if(t){hoverId=t.id;tipXY=[innerWidth/2,innerHeight*0.62];showTip(t.node,true);}},
   settle:()=>{updateRange();for(const t of tiles){t.cx=t.tx;t.cy=t.ty;t.cw=t.tw;t.ch=t.th;t.alpha=matches(t)?1:.12;const c=tileRGB(t);t.cr=c[0];t.cg=c[1];t.cb=c[2];t.hl=(t.id===hoverId?1:0);}const r=radarT();for(let i=0;i<6;i++)radarCur[i]=r[i];draw();drawRadar(document.getElementById('radarc'),radarCur);if(S.drill){const g=ALLZ.find(x=>x.code===S.drill);if(g){drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>g.dims[k]||0));drawBars(document.getElementById('dvbars'),g);}}}};
+}catch(e){var el=document.getElementById('err');if(el)el.style.display='flex';console.error(e);}
 })();}
 </script>
 <div id="mobileTip">建议使用大屏幕设备(电脑/平板)进行浏览,效果最佳</div>
