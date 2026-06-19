@@ -324,6 +324,25 @@
      "moat": 74,
      "adoption": 46
     },
+    "deepseek": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 20,
+     "digital": 30,
+     "moat": 90,
+     "adoption": 10
+    },
+    "doubao": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 90,
+     "adoption": 10
+    },
+    "gemini": {
+     "overall": 40
+    },
     "gpt": {
      "overall": 38,
      "automation": 55,
@@ -340,13 +359,13 @@
      "moat": 85,
      "adoption": 20
     },
-    "doubao": {
-     "overall": 15,
-     "automation": 5,
-     "augmentation": 30,
-     "digital": 20,
+    "kimi": {
+     "overall": 10,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 35,
      "moat": 90,
-     "adoption": 10
+     "adoption": 20
     },
     "qwen": {
      "overall": 85,
@@ -356,28 +375,12 @@
      "moat": 65,
      "adoption": 35
     },
-    "zhipu": {
-     "overall": 8,
-     "automation": 12,
-     "augmentation": 40,
-     "digital": 30,
-     "moat": 92,
-     "adoption": 15
-    },
     "wenxin": {
      "overall": 12,
      "automation": 20,
      "augmentation": 40,
      "digital": 50,
      "moat": 80,
-     "adoption": 20
-    },
-    "kimi": {
-     "overall": 10,
-     "automation": 15,
-     "augmentation": 40,
-     "digital": 35,
-     "moat": 90,
      "adoption": 20
     },
     "yuanbao": {
@@ -388,29 +391,26 @@
      "moat": 85,
      "adoption": 20
     },
-    "deepseek": {
-     "overall": 15,
-     "automation": 5,
-     "augmentation": 20,
+    "zhipu": {
+     "overall": 8,
+     "automation": 12,
+     "augmentation": 40,
      "digital": 30,
-     "moat": 90,
-     "adoption": 10
-    },
-    "gemini": {
-     "overall": 40
+     "moat": 92,
+     "adoption": 15
     }
    },
    "rationales": {
     "claude": "党的机关负责人:决策被增强,领导与担责难替代",
+    "deepseek": "核心职责是政治引领、思想统一与组织建设，高度依赖人的权威、信念和人格化信任，AI无法模拟政治责任",
+    "gemini": "核心职能在于政治动员、思想引领与复杂的社会关系协调，极度依赖人际共情与意识形态认同。综合冲击 101-02 国家机关负责人: 宏观政策制定需",
     "gpt": "主要受影响在材料起草、数据汇总和督导跟踪，核心的政治判断与组织动员仍靠人",
     "grok": "战略决策、组织动员和政治判断高度依赖人为权威，AI仅用于数据参考",
-    "qwen": "AI用于舆情监测、党建数据分析与会议材料生成，减轻事务性负担",
-    "zhipu": "政治判断、组织动员与意识形态工作高度依赖人际权威与信任，AI无从替代",
-    "wenxin": "核心是政治引领与组织动员，AI仅能辅助信息汇总",
     "kimi": "意识形态、政治判断与组织动员不可替代，AI 仅作信息整理",
+    "qwen": "AI用于舆情监测、党建数据分析与会议材料生成，减轻事务性负担",
+    "wenxin": "核心是政治引领与组织动员，AI仅能辅助信息汇总",
     "yuanbao": "核心在方向与政治把关，AI 仅辅助材料整理",
-    "deepseek": "核心职责是政治引领、思想统一与组织建设，高度依赖人的权威、信念和人格化信任，AI无法模拟政治责任",
-    "gemini": "核心职能在于政治动员、思想引领与复杂的社会关系协调，极度依赖人际共情与意识形态认同。综合冲击 101-02 国家机关负责人: 宏观政策制定需"
+    "zhipu": "政治判断、组织动员与意识形态工作高度依赖人际权威与信任，AI无从替代"
    },
    "n_models": 11,
    "std": 22.7,
@@ -751,6 +751,22 @@
      "moat": 74,
      "adoption": 46
     },
+    "deepseek": {
+     "overall": 20,
+     "automation": 8,
+     "augmentation": 25,
+     "digital": 40,
+     "moat": 85,
+     "adoption": 15
+    },
+    "doubao": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 90,
+     "adoption": 10
+    },
     "gpt": {
      "overall": 42,
      "automation": 58,
@@ -767,13 +783,13 @@
      "moat": 82,
      "adoption": 25
     },
-    "doubao": {
+    "kimi": {
      "overall": 15,
-     "automation": 5,
-     "augmentation": 30,
-     "digital": 20,
-     "moat": 90,
-     "adoption": 10
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 40,
+     "moat": 88,
+     "adoption": 25
     },
     "qwen": {
      "overall": 85,
@@ -783,14 +799,6 @@
      "moat": 65,
      "adoption": 35
     },
-    "zhipu": {
-     "overall": 15,
-     "automation": 15,
-     "augmentation": 42,
-     "digital": 32,
-     "moat": 90,
-     "adoption": 18
-    },
     "wenxin": {
      "overall": 18,
      "automation": 20,
@@ -798,14 +806,6 @@
      "digital": 50,
      "moat": 80,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 15,
-     "automation": 20,
-     "augmentation": 45,
-     "digital": 40,
-     "moat": 88,
-     "adoption": 25
     },
     "yuanbao": {
      "overall": 10,
@@ -815,25 +815,25 @@
      "moat": 88,
      "adoption": 22
     },
-    "deepseek": {
-     "overall": 20,
-     "automation": 8,
-     "augmentation": 25,
-     "digital": 40,
-     "moat": 85,
-     "adoption": 15
+    "zhipu": {
+     "overall": 15,
+     "automation": 15,
+     "augmentation": 42,
+     "digital": 32,
+     "moat": 90,
+     "adoption": 18
     }
    },
    "rationales": {
     "claude": "国家机关负责人:研判被辅助,决策担责仍靠人",
+    "deepseek": "公共决策涉及法律授权、民意权衡和最终拍板担责，AI仅能提供模拟推演和文书辅助",
     "gpt": "政策研究、会议材料、流程管理会被 AI 大幅提效，但行政责任和跨部门协调仍是人主导",
     "grok": "行政决策、舆情应对和跨部门协调仍需人际平衡，AI辅助分析但不主导",
-    "qwen": "政务AI平台实现政策模拟、风险预警与跨部门协同，管理层需掌握AI治理能力",
-    "zhipu": "政策决策需政治智慧与责任担当，AI仅辅助信息汇总",
-    "wenxin": "政策制定与执行需担责，AI可辅助调研但决策权在人",
     "kimi": "公共政策决策与行政责任高度依赖人的政治判断，AI 辅助有限",
+    "qwen": "政务AI平台实现政策模拟、风险预警与跨部门协同，管理层需掌握AI治理能力",
+    "wenxin": "政策制定与执行需担责，AI可辅助调研但决策权在人",
     "yuanbao": "政策与人事决策复杂，问责链条长，AI 难介入实质",
-    "deepseek": "公共决策涉及法律授权、民意权衡和最终拍板担责，AI仅能提供模拟推演和文书辅助"
+    "zhipu": "政策决策需政治智慧与责任担当，AI仅辅助信息汇总"
    },
    "n_models": 10,
    "std": 22.2,
@@ -1023,6 +1023,22 @@
      "moat": 74,
      "adoption": 44
     },
+    "deepseek": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 20,
+     "digital": 30,
+     "moat": 90,
+     "adoption": 10
+    },
+    "doubao": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 90,
+     "adoption": 10
+    },
     "gpt": {
      "overall": 35,
      "automation": 35,
@@ -1039,13 +1055,13 @@
      "moat": 88,
      "adoption": 18
     },
-    "doubao": {
-     "overall": 15,
-     "automation": 5,
-     "augmentation": 30,
-     "digital": 20,
-     "moat": 90,
-     "adoption": 10
+    "kimi": {
+     "overall": 12,
+     "automation": 15,
+     "augmentation": 35,
+     "digital": 30,
+     "moat": 85,
+     "adoption": 15
     },
     "qwen": {
      "overall": 80,
@@ -1055,14 +1071,6 @@
      "moat": 65,
      "adoption": 35
     },
-    "zhipu": {
-     "overall": 10,
-     "automation": 10,
-     "augmentation": 35,
-     "digital": 28,
-     "moat": 90,
-     "adoption": 12
-    },
     "wenxin": {
      "overall": 15,
      "automation": 20,
@@ -1070,14 +1078,6 @@
      "digital": 50,
      "moat": 80,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 12,
-     "automation": 15,
-     "augmentation": 35,
-     "digital": 30,
-     "moat": 85,
-     "adoption": 15
     },
     "yuanbao": {
      "overall": 10,
@@ -1087,25 +1087,25 @@
      "moat": 86,
      "adoption": 21
     },
-    "deepseek": {
-     "overall": 15,
-     "automation": 5,
-     "augmentation": 20,
-     "digital": 30,
+    "zhipu": {
+     "overall": 10,
+     "automation": 10,
+     "augmentation": 35,
+     "digital": 28,
      "moat": 90,
-     "adoption": 10
+     "adoption": 12
     }
    },
    "rationales": {
     "claude": "民主党派工商联负责人:事务被增强",
+    "deepseek": "核心是政治协商、利益表达与人际互信构建，面对面沟通与政治默契无法被算法替代",
     "gpt": "文书、调研、联络类工作会被重塑较多，但身份属性和协商功能决定替代空间有限",
     "grok": "协商、联络和代表性工作以人际信任为核心",
-    "qwen": "日常办公自动化程度提高，但核心议政活动仍依赖人际网络与政治判断",
-    "zhipu": "政治协商与统战工作以人际网络和情感联结为根基",
-    "wenxin": "政治协商与行业协调，人际信任为主",
     "kimi": "统战协商与信任构建以人际互动为核心，AI 难以介入",
+    "qwen": "日常办公自动化程度提高，但核心议政活动仍依赖人际网络与政治判断",
+    "wenxin": "政治协商与行业协调，人际信任为主",
     "yuanbao": "协商与代表性强，AI 无法替代人际与政治判断",
-    "deepseek": "核心是政治协商、利益表达与人际互信构建，面对面沟通与政治默契无法被算法替代"
+    "zhipu": "政治协商与统战工作以人际网络和情感联结为根基"
    },
    "n_models": 10,
    "std": 21.4,
@@ -1547,6 +1547,22 @@
      "moat": 70,
      "adoption": 46
     },
+    "deepseek": {
+     "overall": 20,
+     "automation": 5,
+     "augmentation": 25,
+     "digital": 35,
+     "moat": 85,
+     "adoption": 15
+    },
+    "doubao": {
+     "overall": 15,
+     "automation": 5,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 90,
+     "adoption": 10
+    },
     "gpt": {
      "overall": 48,
      "automation": 38,
@@ -1563,13 +1579,13 @@
      "moat": 85,
      "adoption": 20
     },
-    "doubao": {
-     "overall": 15,
-     "automation": 5,
-     "augmentation": 30,
-     "digital": 20,
-     "moat": 90,
-     "adoption": 10
+    "kimi": {
+     "overall": 18,
+     "automation": 18,
+     "augmentation": 40,
+     "digital": 35,
+     "moat": 82,
+     "adoption": 22
     },
     "qwen": {
      "overall": 80,
@@ -1579,14 +1595,6 @@
      "moat": 65,
      "adoption": 35
     },
-    "zhipu": {
-     "overall": 18,
-     "automation": 10,
-     "augmentation": 30,
-     "digital": 25,
-     "moat": 88,
-     "adoption": 10
-    },
     "wenxin": {
      "overall": 20,
      "automation": 20,
@@ -1594,14 +1602,6 @@
      "digital": 50,
      "moat": 80,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 18,
-     "automation": 18,
-     "augmentation": 40,
-     "digital": 35,
-     "moat": 82,
-     "adoption": 22
     },
     "yuanbao": {
      "overall": 15,
@@ -1611,25 +1611,25 @@
      "moat": 87,
      "adoption": 23
     },
-    "deepseek": {
-     "overall": 20,
-     "automation": 5,
-     "augmentation": 25,
-     "digital": 35,
-     "moat": 85,
-     "adoption": 15
+    "zhipu": {
+     "overall": 18,
+     "automation": 10,
+     "augmentation": 30,
+     "digital": 25,
+     "moat": 88,
+     "adoption": 10
     }
    },
    "rationales": {
     "claude": "群团社会组织负责人:行政被增强",
+    "deepseek": "组织动员和共识营造依赖人的感召力和同理心，AI可做会员数据分析但无法替代领导力",
     "gpt": "宣传、活动、筹资、联络很容易被 AI 改写，组织信任和现场动员还得靠人",
     "grok": "动员群众、调解矛盾，线下互动主导",
-    "qwen": "文案撰写、会员管理趋于智能化，组织动员仍需人工主导",
-    "zhipu": "群众动员与组织协调需面对面沟通和人格感召",
-    "wenxin": "组织协调与资源整合，AI辅助有限",
     "kimi": "社会动员与情感连接依赖人的号召力，AI 工具化程度低",
+    "qwen": "文案撰写、会员管理趋于智能化，组织动员仍需人工主导",
+    "wenxin": "组织协调与资源整合，AI辅助有限",
     "yuanbao": "动员与信任关系关键，AI 作用有限",
-    "deepseek": "组织动员和共识营造依赖人的感召力和同理心，AI可做会员数据分析但无法替代领导力"
+    "zhipu": "群众动员与组织协调需面对面沟通和人格感召"
    },
    "n_models": 10,
    "std": 20.7,
@@ -1819,6 +1819,22 @@
      "moat": 76,
      "adoption": 42
     },
+    "deepseek": {
+     "overall": 30,
+     "automation": 3,
+     "augmentation": 15,
+     "digital": 20,
+     "moat": 95,
+     "adoption": 5
+    },
+    "doubao": {
+     "overall": 20,
+     "automation": 10,
+     "augmentation": 30,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 15
+    },
     "gpt": {
      "overall": 25,
      "automation": 28,
@@ -1835,12 +1851,12 @@
      "moat": 90,
      "adoption": 15
     },
-    "doubao": {
-     "overall": 20,
+    "kimi": {
+     "overall": 15,
      "automation": 10,
      "augmentation": 30,
      "digital": 25,
-     "moat": 85,
+     "moat": 88,
      "adoption": 15
     },
     "qwen": {
@@ -1851,14 +1867,6 @@
      "moat": 65,
      "adoption": 35
     },
-    "zhipu": {
-     "overall": 15,
-     "automation": 8,
-     "augmentation": 25,
-     "digital": 20,
-     "moat": 90,
-     "adoption": 8
-    },
     "wenxin": {
      "overall": 25,
      "automation": 20,
@@ -1866,14 +1874,6 @@
      "digital": 50,
      "moat": 80,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 15,
-     "automation": 10,
-     "augmentation": 30,
-     "digital": 25,
-     "moat": 88,
-     "adoption": 15
     },
     "yuanbao": {
      "overall": 20,
@@ -1883,25 +1883,25 @@
      "moat": 84,
      "adoption": 19
     },
-    "deepseek": {
-     "overall": 30,
-     "automation": 3,
-     "augmentation": 15,
+    "zhipu": {
+     "overall": 15,
+     "automation": 8,
+     "augmentation": 25,
      "digital": 20,
-     "moat": 95,
-     "adoption": 5
+     "moat": 90,
+     "adoption": 8
     }
    },
    "rationales": {
     "claude": "基层自治组织负责人:线下治理为主",
+    "deepseek": "日常有大量表格填报和通知传达等文书工作可被AI辅助，但调解纠纷、动员群众仍高度依赖在地人情和应变能力",
     "gpt": "工作很接地气，现场协调、邻里关系和应急处置占比高，AI 只能辅助",
     "grok": "社区治理、纠纷处理高度本地化和人情化",
-    "qwen": "社区事务系统集成AI助手处理居民咨询与报表填报，现场协调不可替代",
-    "zhipu": "社区治理依赖人情判断与现场协调，AI难以介入",
-    "wenxin": "直接面对群众诉求，现场处理为主",
     "kimi": "社区矛盾调解与在地关系网络高度依赖人本经验",
+    "qwen": "社区事务系统集成AI助手处理居民咨询与报表填报，现场协调不可替代",
+    "wenxin": "直接面对群众诉求，现场处理为主",
     "yuanbao": "高度本地化、现场协调，AI 难替代面对面治理",
-    "deepseek": "日常有大量表格填报和通知传达等文书工作可被AI辅助，但调解纠纷、动员群众仍高度依赖在地人情和应变能力"
+    "zhipu": "社区治理依赖人情判断与现场协调，AI难以介入"
    },
    "n_models": 10,
    "std": 17.1,
@@ -2181,6 +2181,22 @@
      "moat": 64,
      "adoption": 54
     },
+    "deepseek": {
+     "overall": 25,
+     "automation": 10,
+     "augmentation": 40,
+     "digital": 55,
+     "moat": 75,
+     "adoption": 30
+    },
+    "doubao": {
+     "overall": 2,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
     "gpt": {
      "overall": 62,
      "automation": 60,
@@ -2197,13 +2213,13 @@
      "moat": 70,
      "adoption": 35
     },
-    "doubao": {
-     "overall": 2,
-     "automation": 15,
-     "augmentation": 40,
-     "digital": 30,
-     "moat": 80,
-     "adoption": 20
+    "kimi": {
+     "overall": 35,
+     "automation": 30,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 70,
+     "adoption": 50
     },
     "qwen": {
      "overall": 90,
@@ -2213,14 +2229,6 @@
      "moat": 55,
      "adoption": 50
     },
-    "zhipu": {
-     "overall": 48,
-     "automation": 20,
-     "augmentation": 65,
-     "digital": 55,
-     "moat": 72,
-     "adoption": 40
-    },
     "wenxin": {
      "overall": 28,
      "automation": 30,
@@ -2228,14 +2236,6 @@
      "digital": 60,
      "moat": 60,
      "adoption": 40
-    },
-    "kimi": {
-     "overall": 35,
-     "automation": 30,
-     "augmentation": 65,
-     "digital": 55,
-     "moat": 70,
-     "adoption": 50
     },
     "yuanbao": {
      "overall": 20,
@@ -2245,26 +2245,26 @@
      "moat": 80,
      "adoption": 25
     },
-    "deepseek": {
-     "overall": 25,
-     "automation": 10,
-     "augmentation": 40,
+    "zhipu": {
+     "overall": 48,
+     "automation": 20,
+     "augmentation": 65,
      "digital": 55,
-     "moat": 75,
-     "adoption": 30
+     "moat": 72,
+     "adoption": 40
     }
    },
    "rationales": {
     "claude": "企事业单位负责人:经营分析被大幅增强",
+    "deepseek": "战略方向和商业判断需在不确定条件下做终极决策并承担全部后果，AI提供智能驾驶舱但方向盘必须由人掌握",
+    "doubao": "专业技术人员 总冲击 62 大类总结：本大类职业的工作任务覆盖从高度标准化、完全可数字化处理到高度非标准化、强线下依赖或强人际依赖的宽幅光谱",
     "gpt": "战略、经营分析、经营报告会被 AI 强烈渗透，但最终决策、用人和风险承担不会轻易自动化",
     "grok": "战略制定、团队激励和风险担责，AI提供洞察但最终决策靠人",
-    "doubao": "专业技术人员 总冲击 62 大类总结：本大类职业的工作任务覆盖从高度标准化、完全可数字化处理到高度非标准化、强线下依赖或强人际依赖的宽幅光谱",
-    "qwen": "战略规划、财务分析、人力资源管理广泛采用AI工具，决策模式发生根本性变化",
-    "zhipu": "经营数据分析与战略模拟可被AI辅助，但最终决策与担责仍需人",
-    "wenxin": "战略决策与团队管理，AI可辅助数据分析但责任在领导",
     "kimi": "企业管理中数据分析与流程优化已被 AI 深度渗透，但战略决断与责任承担仍在人",
+    "qwen": "战略规划、财务分析、人力资源管理广泛采用AI工具，决策模式发生根本性变化",
+    "wenxin": "战略决策与团队管理，AI可辅助数据分析但责任在领导",
     "yuanbao": "战略与人事权集中，AI 可做分析，最终拍板仍靠人",
-    "deepseek": "战略方向和商业判断需在不确定条件下做终极决策并承担全部后果，AI提供智能驾驶舱但方向盘必须由人掌握"
+    "zhipu": "经营数据分析与战略模拟可被AI辅助，但最终决策与担责仍需人"
    },
    "n_models": 10,
    "std": 23.6,
@@ -3096,6 +3096,22 @@
      "moat": 46,
      "adoption": 62
     },
+    "deepseek": {
+     "overall": 75,
+     "automation": 50,
+     "augmentation": 95,
+     "digital": 90,
+     "moat": 30,
+     "adoption": 70
+    },
+    "doubao": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 40
+    },
     "gpt": {
      "overall": 78,
      "automation": 66,
@@ -3112,13 +3128,13 @@
      "moat": 45,
      "adoption": 75
     },
-    "doubao": {
-     "overall": 45,
-     "automation": 30,
-     "augmentation": 70,
-     "digital": 60,
+    "kimi": {
+     "overall": 75,
+     "automation": 55,
+     "augmentation": 85,
+     "digital": 80,
      "moat": 50,
-     "adoption": 40
+     "adoption": 65
     },
     "qwen": {
      "overall": 80,
@@ -3128,14 +3144,6 @@
      "moat": 40,
      "adoption": 65
     },
-    "zhipu": {
-     "overall": 78,
-     "automation": 45,
-     "augmentation": 88,
-     "digital": 85,
-     "moat": 35,
-     "adoption": 68
-    },
     "wenxin": {
      "overall": 78,
      "automation": 40,
@@ -3143,14 +3151,6 @@
      "digital": 90,
      "moat": 60,
      "adoption": 50
-    },
-    "kimi": {
-     "overall": 75,
-     "automation": 55,
-     "augmentation": 85,
-     "digital": 80,
-     "moat": 50,
-     "adoption": 65
     },
     "yuanbao": {
      "overall": 80,
@@ -3160,25 +3160,25 @@
      "moat": 40,
      "adoption": 60
     },
-    "deepseek": {
-     "overall": 75,
-     "automation": 50,
-     "augmentation": 95,
-     "digital": 90,
-     "moat": 30,
-     "adoption": 70
+    "zhipu": {
+     "overall": 78,
+     "automation": 45,
+     "augmentation": 88,
+     "digital": 85,
+     "moat": 35,
+     "adoption": 68
     }
    },
    "rationales": {
     "claude": "科研人员:文献综述与数据分析被强力增强",
+    "deepseek": "文献综述、实验设计、数据分析已被AI大幅加速，但提出原创假说和设计颠覆性实验仍需要人的科学直觉",
     "gpt": "文献综述、实验设计、数据分析和论文写作会被 AI 强力加速，但真正的新问题定义仍需要人",
     "grok": "文献综述、数据建模和假设生成被AI大幅加速，原创实验设计仍需人",
-    "qwen": "科研设计、文献综述、实验模拟由AI加速，原创思维与假设提出仍属人类优势",
-    "zhipu": "文献综述、假设生成、数据分析被AI大幅加速，但原创问题提出与实验设计仍需人",
-    "wenxin": "AI加速文献分析与数据挖掘，但假设提出与实验设计仍需人",
     "kimi": "文献综述、实验设计与数据分析被 AI 大幅加速，但原创性突破与实验验证仍依赖人",
+    "qwen": "科研设计、文献综述、实验模拟由AI加速，原创思维与假设提出仍属人类优势",
+    "wenxin": "AI加速文献分析与数据挖掘，但假设提出与实验设计仍需人",
     "yuanbao": "文献梳理、数据建模、假设生成加速明显",
-    "deepseek": "文献综述、实验设计、数据分析已被AI大幅加速，但提出原创假说和设计颠覆性实验仍需要人的科学直觉"
+    "zhipu": "文献综述、假设生成、数据分析被AI大幅加速，但原创问题提出与实验设计仍需人"
    },
    "n_models": 10,
    "std": 10.3,
@@ -10987,6 +10987,22 @@
      "moat": 36,
      "adoption": 72
     },
+    "deepseek": {
+     "overall": 80,
+     "automation": 62,
+     "augmentation": 90,
+     "digital": 88,
+     "moat": 36,
+     "adoption": 72
+    },
+    "doubao": {
+     "overall": 50,
+     "automation": 35,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 45
+    },
     "gpt": {
      "overall": 92,
      "automation": 68,
@@ -11003,13 +11019,13 @@
      "moat": 36,
      "adoption": 72
     },
-    "doubao": {
-     "overall": 50,
-     "automation": 35,
-     "augmentation": 75,
-     "digital": 70,
-     "moat": 45,
-     "adoption": 45
+    "kimi": {
+     "overall": 85,
+     "automation": 62,
+     "augmentation": 90,
+     "digital": 88,
+     "moat": 36,
+     "adoption": 72
     },
     "qwen": {
      "overall": 85,
@@ -11019,14 +11035,6 @@
      "moat": 35,
      "adoption": 70
     },
-    "zhipu": {
-     "overall": 75,
-     "automation": 55,
-     "augmentation": 92,
-     "digital": 88,
-     "moat": 30,
-     "adoption": 75
-    },
     "wenxin": {
      "overall": 75,
      "automation": 40,
@@ -11034,14 +11042,6 @@
      "digital": 80,
      "moat": 60,
      "adoption": 50
-    },
-    "kimi": {
-     "overall": 85,
-     "automation": 62,
-     "augmentation": 90,
-     "digital": 88,
-     "moat": 36,
-     "adoption": 72
     },
     "yuanbao": {
      "overall": 85,
@@ -11051,25 +11051,25 @@
      "moat": 36,
      "adoption": 72
     },
-    "deepseek": {
-     "overall": 80,
-     "automation": 62,
-     "augmentation": 90,
+    "zhipu": {
+     "overall": 75,
+     "automation": 55,
+     "augmentation": 92,
      "digital": 88,
-     "moat": 36,
-     "adoption": 72
+     "moat": 30,
+     "adoption": 75
     }
    },
    "rationales": {
     "claude": "工程技术人员:设计编码分析被AI显著增强",
+    "deepseek": "软件代码生成、图纸绘制、仿真测试已高度自动化，现场系统集成、复杂故障排查和方案担责保留人的角色",
     "gpt": "设计、仿真、编码、排错和方案生成几乎都会被 AI 深度重构，剩下的是现场落地和责任闭环",
     "grok": "代码生成、仿真优化和方案迭代高度自动化，现场验证与集成仍需人",
-    "qwen": "CAD建模、代码生成、项目文档自动整理已被AI接管，现场调试与责任担当仍需人",
-    "zhipu": "设计、编码、仿真大量被AI接管，现场调试与工程担责仍需人",
-    "wenxin": "设计、编码、仿真大量被AI接管，现场调试与担责仍需人",
     "kimi": "设计、编码、仿真与测试大量被 AI 接管，现场调试与安全担责仍需人",
+    "qwen": "CAD建模、代码生成、项目文档自动整理已被AI接管，现场调试与责任担当仍需人",
+    "wenxin": "设计、编码、仿真大量被AI接管，现场调试与担责仍需人",
     "yuanbao": "设计仿真、代码编写、参数优化高度自动化",
-    "deepseek": "软件代码生成、图纸绘制、仿真测试已高度自动化，现场系统集成、复杂故障排查和方案担责保留人的角色"
+    "zhipu": "设计、编码、仿真大量被AI接管，现场调试与工程担责仍需人"
    },
    "n_models": 10,
    "std": 11.0,
@@ -11668,6 +11668,22 @@
      "moat": 62,
      "adoption": 48
     },
+    "deepseek": {
+     "overall": 40,
+     "automation": 25,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 70,
+     "adoption": 40
+    },
+    "doubao": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 35,
+     "moat": 70,
+     "adoption": 25
+    },
     "gpt": {
      "overall": 34,
      "automation": 45,
@@ -11684,13 +11700,13 @@
      "moat": 60,
      "adoption": 50
     },
-    "doubao": {
+    "kimi": {
      "overall": 30,
-     "automation": 20,
-     "augmentation": 45,
-     "digital": 35,
-     "moat": 70,
-     "adoption": 25
+     "automation": 35,
+     "augmentation": 60,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 40
     },
     "qwen": {
      "overall": 35,
@@ -11700,14 +11716,6 @@
      "moat": 60,
      "adoption": 45
     },
-    "zhipu": {
-     "overall": 32,
-     "automation": 25,
-     "augmentation": 60,
-     "digital": 45,
-     "moat": 55,
-     "adoption": 35
-    },
     "wenxin": {
      "overall": 32,
      "automation": 30,
@@ -11715,14 +11723,6 @@
      "digital": 50,
      "moat": 70,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 30,
-     "automation": 35,
-     "augmentation": 60,
-     "digital": 45,
-     "moat": 65,
-     "adoption": 40
     },
     "yuanbao": {
      "overall": 35,
@@ -11732,25 +11732,25 @@
      "moat": 70,
      "adoption": 50
     },
-    "deepseek": {
-     "overall": 40,
+    "zhipu": {
+     "overall": 32,
      "automation": 25,
      "augmentation": 60,
-     "digital": 50,
-     "moat": 70,
-     "adoption": 40
+     "digital": 45,
+     "moat": 55,
+     "adoption": 35
     }
    },
    "rationales": {
     "claude": "农业技术人员:田间实操与本地化经验为主",
+    "deepseek": "AI在病虫害识别、气象预警和精准施肥方面辅助性强，但田间实地研判和本地化适配仍需人完成",
     "gpt": "田间经验、本地环境和实操判断仍很重，AI 更多是做预测、诊断和辅助决策",
     "grok": "本地土壤、气候和作物实操经验为主，AI辅助遥感决策",
-    "qwen": "田间实操与本地经验为主，AI多用于病虫害识别与施肥建议辅助决策",
-    "zhipu": "田间实操与本地经验为主，AI多在辅助决策与遥感监测",
-    "wenxin": "田间实操与本地经验为主，AI多在辅助决策",
     "kimi": "田间实操、作物观察与本地经验为主，AI 多在辅助决策与遥感监测",
+    "qwen": "田间实操与本地经验为主，AI多用于病虫害识别与施肥建议辅助决策",
+    "wenxin": "田间实操与本地经验为主，AI多在辅助决策",
     "yuanbao": "田间诊断与本地经验主导，AI 多用于监测建议",
-    "deepseek": "AI在病虫害识别、气象预警和精准施肥方面辅助性强，但田间实地研判和本地化适配仍需人完成"
+    "zhipu": "田间实操与本地经验为主，AI多在辅助决策与遥感监测"
    },
    "n_models": 10,
    "std": 5.9,
@@ -12131,6 +12131,22 @@
      "moat": 72,
      "adoption": 46
     },
+    "deepseek": {
+     "overall": 50,
+     "automation": 35,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 75,
+     "adoption": 55
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 30
+    },
     "gpt": {
      "overall": 55,
      "automation": 48,
@@ -12147,13 +12163,13 @@
      "moat": 50,
      "adoption": 65
     },
-    "doubao": {
-     "overall": 35,
-     "automation": 25,
-     "augmentation": 50,
+    "kimi": {
+     "overall": 25,
+     "automation": 30,
+     "augmentation": 55,
      "digital": 40,
-     "moat": 65,
-     "adoption": 30
+     "moat": 80,
+     "adoption": 35
     },
     "qwen": {
      "overall": 60,
@@ -12163,14 +12179,6 @@
      "moat": 45,
      "adoption": 60
     },
-    "zhipu": {
-     "overall": 28,
-     "automation": 20,
-     "augmentation": 45,
-     "digital": 35,
-     "moat": 85,
-     "adoption": 25
-    },
     "wenxin": {
      "overall": 45,
      "automation": 40,
@@ -12178,14 +12186,6 @@
      "digital": 70,
      "moat": 70,
      "adoption": 40
-    },
-    "kimi": {
-     "overall": 25,
-     "automation": 30,
-     "augmentation": 55,
-     "digital": 40,
-     "moat": 80,
-     "adoption": 35
     },
     "yuanbao": {
      "overall": 30,
@@ -12195,25 +12195,25 @@
      "moat": 80,
      "adoption": 30
     },
-    "deepseek": {
-     "overall": 50,
-     "automation": 35,
-     "augmentation": 70,
-     "digital": 60,
-     "moat": 75,
-     "adoption": 55
+    "zhipu": {
+     "overall": 28,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 35,
+     "moat": 85,
+     "adoption": 25
     }
    },
    "rationales": {
     "claude": "飞机船舶技术人员:安全冗余与实操约束强",
+    "deepseek": "AI主导自动驾驶和导航优化是可见趋势，但复杂气象起降、应急接管和法律担责使高级操控员长期不可缺位",
     "gpt": "规范化文档、故障诊断、维修决策会被 AI 提效，但高风险现场与资质责任限制很强",
     "grok": "复杂系统维护和突发故障处理依赖现场判断",
-    "qwen": "维护手册查询、故障诊断初筛由AI完成，复杂排故与安全确认仍靠人工",
-    "zhipu": "高安全门槛与现场操作为主，AI辅助导航但不可替代人",
-    "wenxin": "安全监管严格，AI辅助维护但现场操作需持证人员",
     "kimi": "安全关键系统、现场操作与法规责任高度绑定人的判断，AI 以辅助为主",
+    "qwen": "维护手册查询、故障诊断初筛由AI完成，复杂排故与安全确认仍靠人工",
+    "wenxin": "安全监管严格，AI辅助维护但现场操作需持证人员",
     "yuanbao": "高安全责任与现场操作，AI 仅辅助诊断",
-    "deepseek": "AI主导自动驾驶和导航优化是可见趋势，但复杂气象起降、应急接管和法律担责使高级操控员长期不可缺位"
+    "zhipu": "高安全门槛与现场操作为主，AI辅助导航但不可替代人"
    },
    "n_models": 10,
    "std": 11.3,
@@ -15461,6 +15461,22 @@
      "moat": 80,
      "adoption": 44
     },
+    "deepseek": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 80,
+     "digital": 60,
+     "moat": 80,
+     "adoption": 50
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 25,
+     "augmentation": 60,
+     "digital": 45,
+     "moat": 70,
+     "adoption": 35
+    },
     "gpt": {
      "overall": 58,
      "automation": 42,
@@ -15477,13 +15493,13 @@
      "moat": 75,
      "adoption": 55
     },
-    "doubao": {
+    "kimi": {
      "overall": 40,
-     "automation": 25,
-     "augmentation": 60,
-     "digital": 45,
-     "moat": 70,
-     "adoption": 35
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 50,
+     "moat": 75,
+     "adoption": 50
     },
     "qwen": {
      "overall": 70,
@@ -15493,14 +15509,6 @@
      "moat": 50,
      "adoption": 65
     },
-    "zhipu": {
-     "overall": 55,
-     "automation": 25,
-     "augmentation": 72,
-     "digital": 50,
-     "moat": 78,
-     "adoption": 45
-    },
     "wenxin": {
      "overall": 60,
      "automation": 50,
@@ -15508,14 +15516,6 @@
      "digital": 70,
      "moat": 80,
      "adoption": 40
-    },
-    "kimi": {
-     "overall": 40,
-     "automation": 40,
-     "augmentation": 70,
-     "digital": 50,
-     "moat": 75,
-     "adoption": 50
     },
     "yuanbao": {
      "overall": 60,
@@ -15525,25 +15525,25 @@
      "moat": 75,
      "adoption": 55
     },
-    "deepseek": {
-     "overall": 45,
-     "automation": 30,
-     "augmentation": 80,
-     "digital": 60,
-     "moat": 80,
-     "adoption": 50
+    "zhipu": {
+     "overall": 55,
+     "automation": 25,
+     "augmentation": 72,
+     "digital": 50,
+     "moat": 78,
+     "adoption": 45
     }
    },
    "rationales": {
     "claude": "卫生专业技术人员:诊疗被辅助,操作担责难替代",
+    "deepseek": "影像判读和病历整理AI效率极高，但临床查体、手术操作、医患沟通和医疗责任归属构成坚实护城河",
     "gpt": "影像、病历、辅助诊断和知识查询会被重塑很深，但临床判断、沟通和手术护理仍很难自动化",
     "grok": "诊断辅助强大，但手术、护理和患者沟通高度人性化",
-    "qwen": "AI辅助诊断、影像识别、电子病历生成普及，临床决策与医患沟通不可替代",
-    "zhipu": "影像诊断与病历处理被AI深度重塑，但临床决策和患者沟通不可替代",
-    "wenxin": "诊疗依赖人际信任，AI辅助诊断但责任在医生",
     "kimi": "影像诊断与病历分析 AI 渗透快，但治疗操作、医患信任与伦理责任核心在人",
+    "qwen": "AI辅助诊断、影像识别、电子病历生成普及，临床决策与医患沟通不可替代",
+    "wenxin": "诊疗依赖人际信任，AI辅助诊断但责任在医生",
     "yuanbao": "影像与辅助诊断进展快，但诊疗决策与操作仍重人",
-    "deepseek": "影像判读和病历整理AI效率极高，但临床查体、手术操作、医患沟通和医疗责任归属构成坚实护城河"
+    "zhipu": "影像诊断与病历处理被AI深度重塑，但临床决策和患者沟通不可替代"
    },
    "n_models": 10,
    "std": 9.5,
@@ -17882,6 +17882,22 @@
      "moat": 38,
      "adoption": 76
     },
+    "deepseek": {
+     "overall": 80,
+     "automation": 70,
+     "augmentation": 90,
+     "digital": 95,
+     "moat": 25,
+     "adoption": 80
+    },
+    "doubao": {
+     "overall": 70,
+     "automation": 65,
+     "augmentation": 80,
+     "digital": 85,
+     "moat": 30,
+     "adoption": 65
+    },
     "gpt": {
      "overall": 90,
      "automation": 67,
@@ -17898,19 +17914,35 @@
      "moat": 30,
      "adoption": 80
     },
-    "doubao": {
-     "overall": 70,
+    "kimi": {
+     "overall": 80,
      "automation": 65,
-     "augmentation": 80,
+     "augmentation": 88,
      "digital": 85,
-     "moat": 30,
-     "adoption": 65
+     "moat": 40,
+     "adoption": 78
     },
     "qwen": {
      "overall": 85,
      "automation": 60,
      "augmentation": 80,
      "digital": 80,
+     "moat": 40,
+     "adoption": 70
+    },
+    "wenxin": {
+     "overall": 82,
+     "automation": 60,
+     "augmentation": 90,
+     "digital": 90,
+     "moat": 70,
+     "adoption": 60
+    },
+    "yuanbao": {
+     "overall": 85,
+     "automation": 65,
+     "augmentation": 85,
+     "digital": 90,
      "moat": 40,
      "adoption": 70
     },
@@ -17921,50 +17953,18 @@
      "digital": 92,
      "moat": 32,
      "adoption": 75
-    },
-    "wenxin": {
-     "overall": 82,
-     "automation": 60,
-     "augmentation": 90,
-     "digital": 90,
-     "moat": 70,
-     "adoption": 60
-    },
-    "kimi": {
-     "overall": 80,
-     "automation": 65,
-     "augmentation": 88,
-     "digital": 85,
-     "moat": 40,
-     "adoption": 78
-    },
-    "yuanbao": {
-     "overall": 85,
-     "automation": 65,
-     "augmentation": 85,
-     "digital": 90,
-     "moat": 40,
-     "adoption": 70
-    },
-    "deepseek": {
-     "overall": 80,
-     "automation": 70,
-     "augmentation": 90,
-     "digital": 95,
-     "moat": 25,
-     "adoption": 80
     }
    },
    "rationales": {
     "claude": "经济金融专业:数据建模与报告高度可自动",
+    "deepseek": "量化分析、报告撰写、合规审查AI几近接管，但高净值客户信任和重大投资直觉判断仍需人",
     "gpt": "研究、报表、估值、风控、投研和写作几乎全中枪，是高冲击区",
     "grok": "数据分析、报告生成和交易算法被AI重塑，监管决策仍需人",
-    "qwen": "财报分析、投资建议、风控模型由AI驱动，策略制定与客户关系仍需人类专家",
-    "zhipu": "量化分析、风控建模、投研报告被AI深度渗透，是信息处理密集型重灾区",
-    "wenxin": "量化分析被AI接管，但政策制定与风险判断需人",
     "kimi": "量化分析、报告撰写与风险评估大量被算法与生成式 AI 替代",
+    "qwen": "财报分析、投资建议、风控模型由AI驱动，策略制定与客户关系仍需人类专家",
+    "wenxin": "量化分析被AI接管，但政策制定与风险判断需人",
     "yuanbao": "量化分析、报告生成、风控建模高度 AI 化",
-    "deepseek": "量化分析、报告撰写、合规审查AI几近接管，但高净值客户信任和重大投资直觉判断仍需人"
+    "zhipu": "量化分析、风控建模、投研报告被AI深度渗透，是信息处理密集型重灾区"
    },
    "n_models": 10,
    "std": 5.1,
@@ -18596,6 +18596,22 @@
      "moat": 60,
      "adoption": 58
     },
+    "deepseek": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 80,
+     "digital": 70,
+     "moat": 75,
+     "adoption": 50
+    },
+    "doubao": {
+     "overall": 75,
+     "automation": 70,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 25,
+     "adoption": 70
+    },
     "gpt": {
      "overall": 66,
      "automation": 50,
@@ -18612,13 +18628,13 @@
      "moat": 65,
      "adoption": 60
     },
-    "doubao": {
-     "overall": 75,
-     "automation": 70,
-     "augmentation": 80,
-     "digital": 90,
-     "moat": 25,
-     "adoption": 70
+    "kimi": {
+     "overall": 45,
+     "automation": 35,
+     "augmentation": 65,
+     "digital": 45,
+     "moat": 78,
+     "adoption": 40
     },
     "qwen": {
      "overall": 65,
@@ -18628,28 +18644,12 @@
      "moat": 45,
      "adoption": 60
     },
-    "zhipu": {
-     "overall": 58,
-     "automation": 30,
-     "augmentation": 68,
-     "digital": 55,
-     "moat": 75,
-     "adoption": 42
-    },
     "wenxin": {
      "overall": 70,
      "automation": 50,
      "augmentation": 80,
      "digital": 80,
      "moat": 70,
-     "adoption": 40
-    },
-    "kimi": {
-     "overall": 45,
-     "automation": 35,
-     "augmentation": 65,
-     "digital": 45,
-     "moat": 78,
      "adoption": 40
     },
     "yuanbao": {
@@ -18660,25 +18660,25 @@
      "moat": 70,
      "adoption": 55
     },
-    "deepseek": {
-     "overall": 50,
-     "automation": 45,
-     "augmentation": 80,
-     "digital": 70,
+    "zhipu": {
+     "overall": 58,
+     "automation": 30,
+     "augmentation": 68,
+     "digital": 55,
      "moat": 75,
-     "adoption": 50
+     "adoption": 42
     }
    },
    "rationales": {
     "claude": "监察法律社会宗教:检索起草被增强,裁量靠人",
+    "deepseek": "案卷检索与文书草拟被AI强力赋能，但法庭辩论、心理疏导和伦理裁量无法脱离人的临场共情与价值判断",
     "gpt": "法条检索、审查、材料整理、案例比对会被 AI 强烈渗透，但正式裁量和现场处理仍靠人",
     "grok": "案例检索快，但解释、庭审和伦理判断依赖人为权威",
-    "qwen": "合同审查、法规检索高度自动化，法庭辩论、伦理判断、信仰引导依赖人性洞察",
-    "zhipu": "法律检索与文书生成被AI大幅替代，但庭审辩论与调查取证仍需人",
-    "wenxin": "法律文书AI可生成，但庭审与调解需人际判断",
     "kimi": "法律检索与合同审查 AI 效率高，但监察判断、法庭博弈与宗教仪式依赖人",
+    "qwen": "合同审查、法规检索高度自动化，法庭辩论、伦理判断、信仰引导依赖人性洞察",
+    "wenxin": "法律文书AI可生成，但庭审与调解需人际判断",
     "yuanbao": "文书检索与初稿生成可用，裁决与伦理判断仍靠人",
-    "deepseek": "案卷检索与文书草拟被AI强力赋能，但法庭辩论、心理疏导和伦理裁量无法脱离人的临场共情与价值判断"
+    "zhipu": "法律检索与文书生成被AI大幅替代，但庭审辩论与调查取证仍需人"
    },
    "n_models": 10,
    "std": 9.4,
@@ -19094,6 +19094,22 @@
      "moat": 74,
      "adoption": 46
     },
+    "deepseek": {
+     "overall": 55,
+     "automation": 25,
+     "augmentation": 75,
+     "digital": 60,
+     "moat": 80,
+     "adoption": 45
+    },
+    "doubao": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 75,
+     "digital": 75,
+     "moat": 40,
+     "adoption": 55
+    },
     "gpt": {
      "overall": 82,
      "automation": 62,
@@ -19110,12 +19126,12 @@
      "moat": 55,
      "adoption": 70
     },
-    "doubao": {
-     "overall": 60,
-     "automation": 50,
+    "kimi": {
+     "overall": 35,
+     "automation": 30,
      "augmentation": 75,
-     "digital": 75,
-     "moat": 40,
+     "digital": 50,
+     "moat": 70,
      "adoption": 55
     },
     "qwen": {
@@ -19126,14 +19142,6 @@
      "moat": 55,
      "adoption": 50
     },
-    "zhipu": {
-     "overall": 55,
-     "automation": 28,
-     "augmentation": 75,
-     "digital": 60,
-     "moat": 60,
-     "adoption": 50
-    },
     "wenxin": {
      "overall": 65,
      "automation": 40,
@@ -19141,14 +19149,6 @@
      "digital": 60,
      "moat": 70,
      "adoption": 40
-    },
-    "kimi": {
-     "overall": 35,
-     "automation": 30,
-     "augmentation": 75,
-     "digital": 50,
-     "moat": 70,
-     "adoption": 55
     },
     "yuanbao": {
      "overall": 50,
@@ -19158,25 +19158,25 @@
      "moat": 75,
      "adoption": 50
     },
-    "deepseek": {
+    "zhipu": {
      "overall": 55,
-     "automation": 25,
+     "automation": 28,
      "augmentation": 75,
      "digital": 60,
-     "moat": 80,
-     "adoption": 45
+     "moat": 60,
+     "adoption": 50
     }
    },
    "rationales": {
     "claude": "教学人员:备课答疑被增强,育人与管教难替代",
+    "deepseek": "标准内容讲授和作业批改被AI替代风险高，但启发思考、人格影响和课堂动态管理构成教育不可自动化内核",
     "gpt": "备课、出题、批改、答疑和个性化辅导都会被 AI 重塑，课堂管理与育人关系仍保留人的核心位置",
     "grok": "个性化辅导和课堂互动仍以人为核心，内容生成辅助",
-    "qwen": "教案设计、作业批改、个性化学习路径由AI支持，课堂教学互动与育人职能难以替代",
-    "zhipu": "知识传授与题库生成可被AI替代，但育人、课堂管理与情感互动不可替代",
-    "wenxin": "知识传授可被AI替代，但育人引导与情感交互难替代",
     "kimi": "知识传授与习题批改可被 AI 替代，但育人、课堂管理与情感互动不可替代",
+    "qwen": "教案设计、作业批改、个性化学习路径由AI支持，课堂教学互动与育人职能难以替代",
+    "wenxin": "知识传授可被AI替代，但育人引导与情感交互难替代",
     "yuanbao": "知识讲授可被生成，育人、激励与课堂管理难替代",
-    "deepseek": "标准内容讲授和作业批改被AI替代风险高，但启发思考、人格影响和课堂动态管理构成教育不可自动化内核"
+    "zhipu": "知识传授与题库生成可被AI替代，但育人、课堂管理与情感互动不可替代"
    },
    "n_models": 10,
    "std": 12.4,
@@ -21274,6 +21274,22 @@
      "moat": 58,
      "adoption": 54
     },
+    "deepseek": {
+     "overall": 60,
+     "automation": 20,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 70,
+     "adoption": 50
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 20,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 75,
+     "adoption": 30
+    },
     "gpt": {
      "overall": 74,
      "automation": 50,
@@ -21290,13 +21306,13 @@
      "moat": 40,
      "adoption": 65
     },
-    "doubao": {
-     "overall": 35,
-     "automation": 20,
-     "augmentation": 50,
-     "digital": 40,
-     "moat": 75,
-     "adoption": 30
+    "kimi": {
+     "overall": 60,
+     "automation": 45,
+     "augmentation": 80,
+     "digital": 70,
+     "moat": 55,
+     "adoption": 65
     },
     "qwen": {
      "overall": 40,
@@ -21304,14 +21320,6 @@
      "augmentation": 60,
      "digital": 55,
      "moat": 60,
-     "adoption": 45
-    },
-    "zhipu": {
-     "overall": 45,
-     "automation": 30,
-     "augmentation": 70,
-     "digital": 55,
-     "moat": 55,
      "adoption": 45
     },
     "wenxin": {
@@ -21322,14 +21330,6 @@
      "moat": 60,
      "adoption": 40
     },
-    "kimi": {
-     "overall": 60,
-     "automation": 45,
-     "augmentation": 80,
-     "digital": 70,
-     "moat": 55,
-     "adoption": 65
-    },
     "yuanbao": {
      "overall": 65,
      "automation": 45,
@@ -21338,25 +21338,25 @@
      "moat": 50,
      "adoption": 60
     },
-    "deepseek": {
-     "overall": 60,
-     "automation": 20,
+    "zhipu": {
+     "overall": 45,
+     "automation": 30,
      "augmentation": 70,
-     "digital": 60,
-     "moat": 70,
-     "adoption": 50
+     "digital": 55,
+     "moat": 55,
+     "adoption": 45
     }
    },
    "rationales": {
     "claude": "文学艺术体育:生成式AI冲击创作,展演靠人",
+    "deepseek": "AI在图像、音乐、文本生成上冲击巨大，但基于肉身经验的创作与竞技表演以及个人IP价值反被凸显",
     "gpt": "内容创作、脚本、分镜、训练分析会被 AI 大幅重写，但个人风格、临场表现和身体执行仍有硬边界",
     "grok": "创意生成工具普及，但情感表达和现场表演难以替代",
-    "qwen": "创意灵感、身体表现、竞技状态无法复制，AI仅作为创作工具或训练辅助",
-    "zhipu": "数字艺术与AI创作冲击大，体育竞技与现场表演不可替代，内部撕裂严重",
-    "wenxin": "创作灵感与身体表达AI难模仿，但辅助工具会渗透",
     "kimi": "文学、美术与音乐创作被 AIGC 剧烈冲击，但体育竞技与表演艺术仍需人身",
+    "qwen": "创意灵感、身体表现、竞技状态无法复制，AI仅作为创作工具或训练辅助",
+    "wenxin": "创作灵感与身体表达AI难模仿，但辅助工具会渗透",
     "yuanbao": "创作灵感与表现力核心在人，AI 辅助工具化",
-    "deepseek": "AI在图像、音乐、文本生成上冲击巨大，但基于肉身经验的创作与竞技表演以及个人IP价值反被凸显"
+    "zhipu": "数字艺术与AI创作冲击大，体育竞技与现场表演不可替代，内部撕裂严重"
    },
    "n_models": 10,
    "std": 11.8,
@@ -22257,6 +22257,22 @@
      "moat": 38,
      "adoption": 70
     },
+    "deepseek": {
+     "overall": 75,
+     "automation": 65,
+     "augmentation": 85,
+     "digital": 95,
+     "moat": 30,
+     "adoption": 75
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 65,
+     "digital": 60,
+     "moat": 60,
+     "adoption": 35
+    },
     "gpt": {
      "overall": 88,
      "automation": 60,
@@ -22273,13 +22289,13 @@
      "moat": 25,
      "adoption": 85
     },
-    "doubao": {
-     "overall": 40,
-     "automation": 30,
-     "augmentation": 65,
-     "digital": 60,
-     "moat": 60,
-     "adoption": 35
+    "kimi": {
+     "overall": 78,
+     "automation": 55,
+     "augmentation": 85,
+     "digital": 80,
+     "moat": 45,
+     "adoption": 75
     },
     "qwen": {
      "overall": 80,
@@ -22289,14 +22305,6 @@
      "moat": 45,
      "adoption": 65
     },
-    "zhipu": {
-     "overall": 82,
-     "automation": 50,
-     "augmentation": 85,
-     "digital": 90,
-     "moat": 30,
-     "adoption": 70
-    },
     "wenxin": {
      "overall": 80,
      "automation": 50,
@@ -22304,14 +22312,6 @@
      "digital": 90,
      "moat": 50,
      "adoption": 60
-    },
-    "kimi": {
-     "overall": 78,
-     "automation": 55,
-     "augmentation": 85,
-     "digital": 80,
-     "moat": 45,
-     "adoption": 75
     },
     "yuanbao": {
      "overall": 80,
@@ -22321,25 +22321,25 @@
      "moat": 55,
      "adoption": 60
     },
-    "deepseek": {
-     "overall": 75,
-     "automation": 65,
+    "zhipu": {
+     "overall": 82,
+     "automation": 50,
      "augmentation": 85,
-     "digital": 95,
+     "digital": 90,
      "moat": 30,
-     "adoption": 75
+     "adoption": 70
     }
    },
    "rationales": {
     "claude": "新闻出版文化:采写编排与内容生产受冲击大",
+    "deepseek": "快讯写作和翻译编校几近全面自动化，深度调查报道和内容策展仍需人的价值判断和叙事建构",
     "gpt": "写稿、选题、编辑、翻译、排版和内容分发都会被 AI 强烈冲击",
     "grok": "内容撰写、编辑和分发被AI剧变，深度调查和价值观把关仍需人",
-    "qwen": "新闻稿撰写、排版校对、内容分发自动化，深度调查与舆论引导仍需记者编辑",
-    "zhipu": "内容生成、编辑校对、翻译被AI深度渗透，是文字信息处理的重灾区",
-    "wenxin": "内容生产AI可批量生成，但深度报道与价值判断需人",
     "kimi": "写作、编辑、翻译与内容分发已被生成式 AI 高度渗透",
+    "qwen": "新闻稿撰写、排版校对、内容分发自动化，深度调查与舆论引导仍需记者编辑",
+    "wenxin": "内容生产AI可批量生成，但深度报道与价值判断需人",
     "yuanbao": "采编写作、内容生成高度自动化，策划与价值观仍靠人",
-    "deepseek": "快讯写作和翻译编校几近全面自动化，深度调查报道和内容策展仍需人的价值判断和叙事建构"
+    "zhipu": "内容生成、编辑校对、翻译被AI深度渗透，是文字信息处理的重灾区"
    },
    "n_models": 10,
    "std": 12.5,
@@ -22468,6 +22468,14 @@
      "moat": 48,
      "adoption": 58
     },
+    "deepseek": {
+     "overall": 50,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 70,
+     "moat": 40,
+     "adoption": 50
+    },
     "gpt": {
      "overall": 68,
      "automation": 56,
@@ -22484,6 +22492,14 @@
      "moat": 48,
      "adoption": 65
     },
+    "kimi": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 70,
+     "digital": 55,
+     "moat": 60,
+     "adoption": 50
+    },
     "qwen": {
      "overall": 70,
      "automation": 50,
@@ -22492,27 +22508,11 @@
      "moat": 50,
      "adoption": 55
     },
-    "zhipu": {
-     "overall": 48,
-     "automation": 30,
-     "augmentation": 65,
-     "digital": 55,
-     "moat": 50,
-     "adoption": 40
-    },
     "wenxin": {
      "overall": 50,
      "automation": 50,
      "augmentation": 80,
      "digital": 80,
-     "moat": 60,
-     "adoption": 50
-    },
-    "kimi": {
-     "overall": 50,
-     "automation": 40,
-     "augmentation": 70,
-     "digital": 55,
      "moat": 60,
      "adoption": 50
     },
@@ -22524,25 +22524,25 @@
      "moat": 60,
      "adoption": 50
     },
-    "deepseek": {
-     "overall": 50,
-     "automation": 50,
-     "augmentation": 70,
-     "digital": 70,
-     "moat": 40,
-     "adoption": 50
+    "zhipu": {
+     "overall": 48,
+     "automation": 30,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 50,
+     "adoption": 40
     }
    },
    "rationales": {
     "claude": "其他专业技术人员",
+    "deepseek": "取决于具体技术形态，若偏数据分析类则冲击高，偏现场实操类则低",
     "gpt": "这一类内部差异很大，但凡偏知识密集、文本密集、远程协作的，冲击都不会低",
     "grok": "视具体领域，整体偏信息密集",
-    "qwen": "视具体职能而定，多数偏向信息处理，面临不同程度AI渗透",
-    "zhipu": "构成异质，取中间值",
-    "wenxin": "具体岗位差异大，但多数涉及专业判断",
     "kimi": "职业边界模糊，部分岗位数字化程度高，部分仍依赖现场技能",
+    "qwen": "视具体职能而定，多数偏向信息处理，面临不同程度AI渗透",
+    "wenxin": "具体岗位差异大，但多数涉及专业判断",
     "yuanbao": "差异大，整体偏向信息处理型，AI 渗透深",
-    "deepseek": "取决于具体技术形态，若偏数据分析类则冲击高，偏现场实操类则低"
+    "zhipu": "构成异质，取中间值"
    },
    "n_models": 9,
    "std": 9.5,
@@ -23462,6 +23462,25 @@
      "moat": 22,
      "adoption": 82
     },
+    "deepseek": {
+     "overall": 90,
+     "automation": 70,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 25,
+     "adoption": 70
+    },
+    "doubao": {
+     "overall": 80,
+     "automation": 75,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 20,
+     "adoption": 75
+    },
+    "gemini": {
+     "overall": 95
+    },
     "gpt": {
      "overall": 94,
      "automation": 66,
@@ -23478,13 +23497,13 @@
      "moat": 40,
      "adoption": 70
     },
-    "doubao": {
-     "overall": 80,
-     "automation": 75,
-     "augmentation": 80,
-     "digital": 90,
-     "moat": 20,
-     "adoption": 75
+    "kimi": {
+     "overall": 88,
+     "automation": 60,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 40,
+     "adoption": 65
     },
     "qwen": {
      "overall": 90,
@@ -23494,14 +23513,6 @@
      "moat": 35,
      "adoption": 70
     },
-    "zhipu": {
-     "overall": 88,
-     "automation": 55,
-     "augmentation": 75,
-     "digital": 80,
-     "moat": 25,
-     "adoption": 60
-    },
     "wenxin": {
      "overall": 88,
      "automation": 60,
@@ -23509,14 +23520,6 @@
      "digital": 80,
      "moat": 30,
      "adoption": 60
-    },
-    "kimi": {
-     "overall": 88,
-     "automation": 60,
-     "augmentation": 75,
-     "digital": 70,
-     "moat": 40,
-     "adoption": 65
     },
     "yuanbao": {
      "overall": 60,
@@ -23526,29 +23529,26 @@
      "moat": 30,
      "adoption": 75
     },
-    "deepseek": {
-     "overall": 90,
-     "automation": 70,
-     "augmentation": 80,
-     "digital": 90,
+    "zhipu": {
+     "overall": 88,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 80,
      "moat": 25,
-     "adoption": 70
-    },
-    "gemini": {
-     "overall": 95
+     "adoption": 60
     }
    },
    "rationales": {
     "claude": "行政办事:排程文档纪要例行处理高度自动化",
+    "deepseek": "文档处理、信息录入、接续流转和基础沟通几乎全在电脑上完成，自动化门槛最低",
+    "gemini": "日程排期、会议纪要生成、表格汇总与标准化公文流转，正是企业级AI智能体目前落地最成熟、降本增效最显著的场景。综合冲击 983-02 安全和消",
     "gpt": "收发、录入、整理、流转、通知、排程这些都会被 AI 和自动化大幅吞掉",
     "grok": "文件起草、数据录入和流程审批大量自动化",
-    "qwen": "会议纪要、公文流转、日程安排已由AI自动化处理，人工转向异常处理与流程优化",
-    "zhipu": "表单处理、数据录入、流程审批是AI替代最典型的场景",
-    "wenxin": "文件处理、信息录入等重复工作易被AI替代",
     "kimi": "文书、档案、流程审批与数据录入是 AI 替代性最高的领域之一",
+    "qwen": "会议纪要、公文流转、日程安排已由AI自动化处理，人工转向异常处理与流程优化",
+    "wenxin": "文件处理、信息录入等重复工作易被AI替代",
     "yuanbao": "表单、预约、流转大量系统化，人工转向异常处理",
-    "deepseek": "文档处理、信息录入、接续流转和基础沟通几乎全在电脑上完成，自动化门槛最低",
-    "gemini": "日程排期、会议纪要生成、表格汇总与标准化公文流转，正是企业级AI智能体目前落地最成熟、降本增效最显著的场景。综合冲击 983-02 安全和消"
+    "zhipu": "表单处理、数据录入、流程审批是AI替代最典型的场景"
    },
    "n_models": 11,
    "std": 9.6,
@@ -24105,6 +24105,22 @@
      "moat": 72,
      "adoption": 44
     },
+    "deepseek": {
+     "overall": 30,
+     "automation": 10,
+     "augmentation": 25,
+     "digital": 30,
+     "moat": 95,
+     "adoption": 20
+    },
+    "doubao": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 35,
+     "moat": 75,
+     "adoption": 25
+    },
     "gpt": {
      "overall": 22,
      "automation": 34,
@@ -24121,13 +24137,13 @@
      "moat": 80,
      "adoption": 25
     },
-    "doubao": {
-     "overall": 30,
-     "automation": 20,
+    "kimi": {
+     "overall": 15,
+     "automation": 15,
      "augmentation": 40,
-     "digital": 35,
-     "moat": 75,
-     "adoption": 25
+     "digital": 25,
+     "moat": 85,
+     "adoption": 20
     },
     "qwen": {
      "overall": 40,
@@ -24137,28 +24153,12 @@
      "moat": 60,
      "adoption": 45
     },
-    "zhipu": {
-     "overall": 22,
-     "automation": 12,
-     "augmentation": 35,
-     "digital": 25,
-     "moat": 82,
-     "adoption": 15
-    },
     "wenxin": {
      "overall": 15,
      "automation": 30,
      "augmentation": 50,
      "digital": 50,
      "moat": 80,
-     "adoption": 20
-    },
-    "kimi": {
-     "overall": 15,
-     "automation": 15,
-     "augmentation": 40,
-     "digital": 25,
-     "moat": 85,
      "adoption": 20
     },
     "yuanbao": {
@@ -24169,25 +24169,25 @@
      "moat": 85,
      "adoption": 25
     },
-    "deepseek": {
-     "overall": 30,
-     "automation": 10,
-     "augmentation": 25,
-     "digital": 30,
-     "moat": 95,
-     "adoption": 20
+    "zhipu": {
+     "overall": 22,
+     "automation": 12,
+     "augmentation": 35,
+     "digital": 25,
+     "moat": 82,
+     "adoption": 15
     }
    },
    "rationales": {
     "claude": "安全消防:现场处置与应急,体力与责任为主",
+    "deepseek": "风险评估报告和隐患排查记录可AI生成，但现场火情判断、生死瞬间应急指挥和物理干预仍需人直接执行",
     "gpt": "现场巡查、应急处置和责任链条太强，AI 主要做监测和预警，替代有限",
     "grok": "现场巡查、应急处置和物理干预为主",
-    "qwen": "监控视频分析、火警预判由AI增强，现场处置与应急指挥仍需人力",
-    "zhipu": "现场巡逻与应急处置为主，AI仅辅助监控与预警",
-    "wenxin": "现场应急与体力操作，AI难以替代",
     "kimi": "应急处置、体能消耗与危险环境作业必须人在现场",
+    "qwen": "监控视频分析、火警预判由AI增强，现场处置与应急指挥仍需人力",
+    "wenxin": "现场应急与体力操作，AI难以替代",
     "yuanbao": "现场判断与应急反应关键，AI 仅监控辅助",
-    "deepseek": "风险评估报告和隐患排查记录可AI生成，但现场火情判断、生死瞬间应急指挥和物理干预仍需人直接执行"
+    "zhipu": "现场巡逻与应急处置为主，AI仅辅助监控与预警"
    },
    "n_models": 10,
    "std": 8.7,
@@ -24426,6 +24426,22 @@
      "moat": 40,
      "adoption": 68
     },
+    "deepseek": {
+     "overall": 65,
+     "automation": 50,
+     "augmentation": 75,
+     "digital": 80,
+     "moat": 50,
+     "adoption": 45
+    },
+    "doubao": {
+     "overall": 4,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
     "gpt": {
      "overall": 83,
      "automation": 56,
@@ -24442,13 +24458,13 @@
      "moat": 60,
      "adoption": 50
     },
-    "doubao": {
-     "overall": 4,
-     "automation": 15,
-     "augmentation": 40,
-     "digital": 30,
-     "moat": 80,
-     "adoption": 20
+    "kimi": {
+     "overall": 55,
+     "automation": 35,
+     "augmentation": 65,
+     "digital": 45,
+     "moat": 75,
+     "adoption": 40
     },
     "qwen": {
      "overall": 80,
@@ -24458,28 +24474,12 @@
      "moat": 45,
      "adoption": 60
     },
-    "zhipu": {
-     "overall": 42,
-     "automation": 30,
-     "augmentation": 62,
-     "digital": 55,
-     "moat": 65,
-     "adoption": 38
-    },
     "wenxin": {
      "overall": 68,
      "automation": 50,
      "augmentation": 70,
      "digital": 80,
      "moat": 70,
-     "adoption": 40
-    },
-    "kimi": {
-     "overall": 55,
-     "automation": 35,
-     "augmentation": 65,
-     "digital": 45,
-     "moat": 75,
      "adoption": 40
     },
     "yuanbao": {
@@ -24490,26 +24490,26 @@
      "moat": 75,
      "adoption": 40
     },
-    "deepseek": {
-     "overall": 65,
-     "automation": 50,
-     "augmentation": 75,
-     "digital": 80,
-     "moat": 50,
-     "adoption": 45
+    "zhipu": {
+     "overall": 42,
+     "automation": 30,
+     "augmentation": 62,
+     "digital": 55,
+     "moat": 65,
+     "adoption": 38
     }
    },
    "rationales": {
     "claude": "仲裁调解法律辅助:文书检索高度可自动",
+    "deepseek": "案件材料整理和法律检索被AI高度取代，但当事方情绪安抚和调解信任建立依赖人的在场感",
+    "doubao": "社会生产服务和生活服务人员 总冲击 45 大类总结：本大类岗位的核心职能为面向消费者或下游生产企业的各类服务提供，本质是通过现场或远程交互，",
     "gpt": "文书、检索、比对、归档会被强力自动化，但正式调解和程序把控还要人",
     "grok": "材料整理快，但面对面调解和信任建立靠人",
-    "doubao": "社会生产服务和生活服务人员 总冲击 45 大类总结：本大类岗位的核心职能为面向消费者或下游生产企业的各类服务提供，本质是通过现场或远程交互，",
-    "qwen": "证据整理、法条匹配、文书模板生成高度自动化，谈判斡旋仍需人类介入",
-    "zhipu": "调解需人际沟通与情感判断，文书辅助可被AI替代",
-    "wenxin": "程序性工作可被AI辅助，但调解需人际",
     "kimi": "法律检索与文书生成 AI 效率高，但调解技巧与现场沟通依赖人",
+    "qwen": "证据整理、法条匹配、文书模板生成高度自动化，谈判斡旋仍需人类介入",
+    "wenxin": "程序性工作可被AI辅助，但调解需人际",
     "yuanbao": "文书与案例检索可自动化，沟通斡旋难替代",
-    "deepseek": "案件材料整理和法律检索被AI高度取代，但当事方情绪安抚和调解信任建立依赖人的在场感"
+    "zhipu": "调解需人际沟通与情感判断，文书辅助可被AI替代"
    },
    "n_models": 10,
    "std": 21.9,
@@ -24639,6 +24639,14 @@
      "moat": 30,
      "adoption": 72
     },
+    "deepseek": {
+     "overall": 60,
+     "automation": 60,
+     "augmentation": 75,
+     "digital": 80,
+     "moat": 30,
+     "adoption": 60
+    },
     "gpt": {
      "overall": 70,
      "automation": 60,
@@ -24655,6 +24663,14 @@
      "moat": 50,
      "adoption": 60
     },
+    "kimi": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 55,
+     "adoption": 45
+    },
     "qwen": {
      "overall": 85,
      "automation": 60,
@@ -24662,14 +24678,6 @@
      "digital": 70,
      "moat": 45,
      "adoption": 60
-    },
-    "zhipu": {
-     "overall": 48,
-     "automation": 38,
-     "augmentation": 65,
-     "digital": 65,
-     "moat": 35,
-     "adoption": 45
     },
     "wenxin": {
      "overall": 80,
@@ -24679,14 +24687,6 @@
      "moat": 30,
      "adoption": 60
     },
-    "kimi": {
-     "overall": 45,
-     "automation": 40,
-     "augmentation": 60,
-     "digital": 50,
-     "moat": 55,
-     "adoption": 45
-    },
     "yuanbao": {
      "overall": 55,
      "automation": 45,
@@ -24695,25 +24695,25 @@
      "moat": 55,
      "adoption": 50
     },
-    "deepseek": {
-     "overall": 60,
-     "automation": 60,
-     "augmentation": 75,
-     "digital": 80,
-     "moat": 30,
-     "adoption": 60
+    "zhipu": {
+     "overall": 48,
+     "automation": 38,
+     "augmentation": 65,
+     "digital": 65,
+     "moat": 35,
+     "adoption": 45
     }
    },
    "rationales": {
     "claude": "其他办事人员:文案与流程性工作易自动",
+    "deepseek": "杂项事务若以信息流转为主则冲击高，若含大量跨部门人工协调则保留较多",
     "gpt": "只要是偏文书、登记、协调、对接的，AI 冲击都会很高",
     "grok": "混合事务，偏行政辅助",
-    "qwen": "涵盖各类行政支持角色，多数任务可被RPA+AI替代",
-    "zhipu": "构成异质，取中间值",
-    "wenxin": "如窗口服务、档案管理等，重复性高",
     "kimi": "岗位杂糅，部分偏文职冲击高，部分偏现场冲击低",
+    "qwen": "涵盖各类行政支持角色，多数任务可被RPA+AI替代",
+    "wenxin": "如窗口服务、档案管理等，重复性高",
     "yuanbao": "多为规则执行，AI 替代空间中等",
-    "deepseek": "杂项事务若以信息流转为主则冲击高，若含大量跨部门人工协调则保留较多"
+    "zhipu": "构成异质，取中间值"
    },
    "n_models": 9,
    "std": 13.5,
@@ -25455,6 +25455,22 @@
      "moat": 46,
      "adoption": 58
     },
+    "deepseek": {
+     "overall": 55,
+     "automation": 30,
+     "augmentation": 55,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 45
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 45,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 40
+    },
     "gpt": {
      "overall": 66,
      "automation": 58,
@@ -25471,13 +25487,13 @@
      "moat": 55,
      "adoption": 60
     },
-    "doubao": {
-     "overall": 40,
-     "automation": 35,
-     "augmentation": 45,
-     "digital": 50,
-     "moat": 60,
-     "adoption": 40
+    "kimi": {
+     "overall": 50,
+     "automation": 50,
+     "augmentation": 65,
+     "digital": 60,
+     "moat": 45,
+     "adoption": 60
     },
     "qwen": {
      "overall": 70,
@@ -25487,14 +25503,6 @@
      "moat": 50,
      "adoption": 55
     },
-    "zhipu": {
-     "overall": 52,
-     "automation": 30,
-     "augmentation": 58,
-     "digital": 50,
-     "moat": 45,
-     "adoption": 42
-    },
     "wenxin": {
      "overall": 72,
      "automation": 40,
@@ -25502,14 +25510,6 @@
      "digital": 60,
      "moat": 60,
      "adoption": 50
-    },
-    "kimi": {
-     "overall": 50,
-     "automation": 50,
-     "augmentation": 65,
-     "digital": 60,
-     "moat": 45,
-     "adoption": 60
     },
     "yuanbao": {
      "overall": 60,
@@ -25519,25 +25519,25 @@
      "moat": 45,
      "adoption": 70
     },
-    "deepseek": {
-     "overall": 55,
+    "zhipu": {
+     "overall": 52,
      "automation": 30,
-     "augmentation": 55,
+     "augmentation": 58,
      "digital": 50,
-     "moat": 60,
-     "adoption": 45
+     "moat": 45,
+     "adoption": 42
     }
    },
    "rationales": {
     "claude": "批发零售:自助收银与电商持续分流",
+    "deepseek": "无人零售和智能客服解决标准化咨询，但大宗贸易谈判和高客单价导购仍依赖人际信任",
     "gpt": "线上导购、智能客服、库存推荐、自动补货会重塑零售，但线下成交和服务仍有空间",
     "grok": "电商推荐、智能客服和库存管理剧变，线下体验店仍需人",
-    "qwen": "商品描述生成、库存预测、客户画像由AI完成，线下导购体验仍具价值",
-    "zhipu": "线上电商与智能推荐重塑零售，但线下导购与体验仍需人",
-    "wenxin": "线上交易AI可处理，但线下体验与服务需人",
     "kimi": "智能推荐、无人零售与电商系统冲击大，但线下体验与即时服务仍需人",
+    "qwen": "商品描述生成、库存预测、客户画像由AI完成，线下导购体验仍具价值",
+    "wenxin": "线上交易AI可处理，但线下体验与服务需人",
     "yuanbao": "电商推荐与库存管理 AI 化，导购体验仍靠人",
-    "deepseek": "无人零售和智能客服解决标准化咨询，但大宗贸易谈判和高客单价导购仍依赖人际信任"
+    "zhipu": "线上电商与智能推荐重塑零售，但线下导购与体验仍需人"
    },
    "n_models": 10,
    "std": 9.6,
@@ -27469,6 +27469,22 @@
      "moat": 58,
      "adoption": 52
     },
+    "deepseek": {
+     "overall": 60,
+     "automation": 60,
+     "augmentation": 50,
+     "digital": 45,
+     "moat": 35,
+     "adoption": 60
+    },
+    "doubao": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 50,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 45
+    },
     "gpt": {
      "overall": 68,
      "automation": 52,
@@ -27485,13 +27501,13 @@
      "moat": 45,
      "adoption": 65
     },
-    "doubao": {
-     "overall": 45,
-     "automation": 40,
-     "augmentation": 50,
+    "kimi": {
+     "overall": 60,
+     "automation": 55,
+     "augmentation": 65,
      "digital": 55,
-     "moat": 55,
-     "adoption": 45
+     "moat": 50,
+     "adoption": 65
     },
     "qwen": {
      "overall": 65,
@@ -27499,14 +27515,6 @@
      "augmentation": 65,
      "digital": 55,
      "moat": 55,
-     "adoption": 50
-    },
-    "zhipu": {
-     "overall": 58,
-     "automation": 35,
-     "augmentation": 65,
-     "digital": 55,
-     "moat": 42,
      "adoption": 50
     },
     "wenxin": {
@@ -27517,14 +27525,6 @@
      "moat": 60,
      "adoption": 50
     },
-    "kimi": {
-     "overall": 60,
-     "automation": 55,
-     "augmentation": 65,
-     "digital": 55,
-     "moat": 50,
-     "adoption": 65
-    },
     "yuanbao": {
      "overall": 70,
      "automation": 50,
@@ -27533,25 +27533,25 @@
      "moat": 70,
      "adoption": 55
     },
-    "deepseek": {
-     "overall": 60,
-     "automation": 60,
-     "augmentation": 50,
-     "digital": 45,
-     "moat": 35,
-     "adoption": 60
+    "zhipu": {
+     "overall": 58,
+     "automation": 35,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 42,
+     "adoption": 50
     }
    },
    "rationales": {
     "claude": "交通运输仓储邮政:调度自动化,驾驶搬运待突破",
+    "deepseek": "仓储分拣已高度自动化，无人配送在结构化道路可行，但末端复杂场景交付保留",
     "gpt": "调度、路线优化、分拣和部分驾驶会被 AI 改写很深，但大规模落地受现场和安全约束",
     "grok": "路线优化和分拣自动化，驾驶与装卸仍依赖人",
-    "qwen": "调度算法、路径优化、订单抽取智能化，驾驶与搬运逐步自动化",
-    "zhipu": "自动驾驶与智能仓储推进快，但最后一公里与复杂路况仍需人",
-    "wenxin": "无人驾驶与智能仓储推进，但最后一公里配送需人",
     "kimi": "自动驾驶、智能仓储与路径优化重塑行业，但司机与快递员仍大量存在",
+    "qwen": "调度算法、路径优化、订单抽取智能化，驾驶与搬运逐步自动化",
+    "wenxin": "无人驾驶与智能仓储推进，但最后一公里配送需人",
     "yuanbao": "调度与路径优化高度算法化，驾驶操作逐步自动化",
-    "deepseek": "仓储分拣已高度自动化，无人配送在结构化道路可行，但末端复杂场景交付保留"
+    "zhipu": "自动驾驶与智能仓储推进快，但最后一公里与复杂路况仍需人"
    },
    "n_models": 10,
    "std": 8.5,
@@ -28255,6 +28255,22 @@
      "moat": 80,
      "adoption": 34
     },
+    "deepseek": {
+     "overall": 25,
+     "automation": 20,
+     "augmentation": 35,
+     "digital": 25,
+     "moat": 80,
+     "adoption": 25
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 45,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 40
+    },
     "gpt": {
      "overall": 30,
      "automation": 30,
@@ -28271,13 +28287,13 @@
      "moat": 85,
      "adoption": 20
     },
-    "doubao": {
-     "overall": 40,
-     "automation": 35,
+    "kimi": {
+     "overall": 20,
+     "automation": 25,
      "augmentation": 45,
-     "digital": 50,
-     "moat": 60,
-     "adoption": 40
+     "digital": 30,
+     "moat": 75,
+     "adoption": 30
     },
     "qwen": {
      "overall": 25,
@@ -28287,14 +28303,6 @@
      "moat": 65,
      "adoption": 40
     },
-    "zhipu": {
-     "overall": 12,
-     "automation": 12,
-     "augmentation": 30,
-     "digital": 20,
-     "moat": 72,
-     "adoption": 15
-    },
     "wenxin": {
      "overall": 22,
      "automation": 30,
@@ -28302,14 +28310,6 @@
      "digital": 50,
      "moat": 70,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 20,
-     "automation": 25,
-     "augmentation": 45,
-     "digital": 30,
-     "moat": 75,
-     "adoption": 30
     },
     "yuanbao": {
      "overall": 30,
@@ -28319,25 +28319,25 @@
      "moat": 80,
      "adoption": 25
     },
-    "deepseek": {
-     "overall": 25,
-     "automation": 20,
-     "augmentation": 35,
-     "digital": 25,
-     "moat": 80,
-     "adoption": 25
+    "zhipu": {
+     "overall": 12,
+     "automation": 12,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 72,
+     "adoption": 15
     }
    },
    "rationales": {
     "claude": "住宿餐饮:现场服务与人际,冲击低",
+    "deepseek": "前台自助和传菜机器人辅助明显，但烹饪创意、对客情绪反馈和复杂投诉处理不可自动化",
     "gpt": "点餐、排班、前台、营销会被提效，但后厨、上菜、清洁和现场体验仍很依赖人",
     "grok": "点单推荐辅助，烹饪、服务和氛围营造高度人工",
-    "qwen": "点餐推荐、成本核算由AI优化，烹饪技艺与宾客接待依赖人工",
-    "zhipu": "烹饪、端菜、客房清洁均为体力与现场操作，AI几乎无法介入",
-    "wenxin": "服务体验与现场管理难被AI替代",
     "kimi": "现场服务、食品操作与情感互动为核心，AI 仅作预订与推荐辅助",
+    "qwen": "点餐推荐、成本核算由AI优化，烹饪技艺与宾客接待依赖人工",
+    "wenxin": "服务体验与现场管理难被AI替代",
     "yuanbao": "后厨标准化与前端接待分化，人工服务仍占感观体验",
-    "deepseek": "前台自助和传菜机器人辅助明显，但烹饪创意、对客情绪反馈和复杂投诉处理不可自动化"
+    "zhipu": "烹饪、端菜、客房清洁均为体力与现场操作，AI几乎无法介入"
    },
    "n_models": 10,
    "std": 7.1,
@@ -29385,6 +29385,22 @@
      "moat": 30,
      "adoption": 78
     },
+    "deepseek": {
+     "overall": 70,
+     "automation": 75,
+     "augmentation": 95,
+     "digital": 98,
+     "moat": 15,
+     "adoption": 90
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 30,
+     "augmentation": 40,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 35
+    },
     "gpt": {
      "overall": 95,
      "automation": 82,
@@ -29401,13 +29417,13 @@
      "moat": 20,
      "adoption": 90
     },
-    "doubao": {
-     "overall": 35,
-     "automation": 30,
-     "augmentation": 40,
-     "digital": 45,
-     "moat": 65,
-     "adoption": 35
+    "kimi": {
+     "overall": 95,
+     "automation": 75,
+     "augmentation": 95,
+     "digital": 98,
+     "moat": 20,
+     "adoption": 90
     },
     "qwen": {
      "overall": 95,
@@ -29417,14 +29433,6 @@
      "moat": 25,
      "adoption": 85
     },
-    "zhipu": {
-     "overall": 92,
-     "automation": 60,
-     "augmentation": 92,
-     "digital": 95,
-     "moat": 18,
-     "adoption": 88
-    },
     "wenxin": {
      "overall": 95,
      "automation": 60,
@@ -29432,14 +29440,6 @@
      "digital": 95,
      "moat": 50,
      "adoption": 80
-    },
-    "kimi": {
-     "overall": 95,
-     "automation": 75,
-     "augmentation": 95,
-     "digital": 98,
-     "moat": 20,
-     "adoption": 90
     },
     "yuanbao": {
      "overall": 85,
@@ -29449,25 +29449,25 @@
      "moat": 20,
      "adoption": 85
     },
-    "deepseek": {
-     "overall": 70,
-     "automation": 75,
-     "augmentation": 95,
-     "digital": 98,
-     "moat": 15,
-     "adoption": 90
+    "zhipu": {
+     "overall": 92,
+     "automation": 60,
+     "augmentation": 92,
+     "digital": 95,
+     "moat": 18,
+     "adoption": 88
     }
    },
    "rationales": {
     "claude": "信息传输软件IT服务:核心数字工作,冲击高",
+    "deepseek": "传统运维和基础客服被AI取代，但系统架构设计和安全攻防仍需深度专家",
     "gpt": "这是 AI 冲击最直接的岗位群之一，编码、测试、运维、产品协作都会被强烈重塑",
     "grok": "代码、运维和数据服务被AI深度重塑",
-    "qwen": "编程、测试、运维高度AI化，初级岗位萎缩明显",
-    "zhipu": "编程、运维、测试是AI替代最前沿，冲击最剧烈",
-    "wenxin": "编码、运维、数据分析高度可被AI接管",
     "kimi": "纯数字环境工作，编码、运维与网络管理被 AI 剧烈重塑",
+    "qwen": "编程、测试、运维高度AI化，初级岗位萎缩明显",
+    "wenxin": "编码、运维、数据分析高度可被AI接管",
     "yuanbao": "开发与运维高度 AI 辅助，需求理解仍关键",
-    "deepseek": "传统运维和基础客服被AI取代，但系统架构设计和安全攻防仍需深度专家"
+    "zhipu": "编程、运维、测试是AI替代最前沿，冲击最剧烈"
    },
    "n_models": 10,
    "std": 17.9,
@@ -30098,6 +30098,22 @@
      "moat": 36,
      "adoption": 76
     },
+    "deepseek": {
+     "overall": 65,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 70,
+     "moat": 50,
+     "adoption": 65
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 45,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 40
+    },
     "gpt": {
      "overall": 88,
      "automation": 60,
@@ -30114,19 +30130,35 @@
      "moat": 35,
      "adoption": 75
     },
-    "doubao": {
-     "overall": 40,
-     "automation": 35,
-     "augmentation": 45,
-     "digital": 50,
-     "moat": 60,
-     "adoption": 40
+    "kimi": {
+     "overall": 50,
+     "automation": 60,
+     "augmentation": 85,
+     "digital": 80,
+     "moat": 45,
+     "adoption": 75
     },
     "qwen": {
      "overall": 85,
      "automation": 60,
      "augmentation": 80,
      "digital": 80,
+     "moat": 40,
+     "adoption": 75
+    },
+    "wenxin": {
+     "overall": 85,
+     "automation": 60,
+     "augmentation": 80,
+     "digital": 90,
+     "moat": 70,
+     "adoption": 60
+    },
+    "yuanbao": {
+     "overall": 75,
+     "automation": 70,
+     "augmentation": 80,
+     "digital": 90,
      "moat": 40,
      "adoption": 75
     },
@@ -30137,50 +30169,18 @@
      "digital": 88,
      "moat": 35,
      "adoption": 70
-    },
-    "wenxin": {
-     "overall": 85,
-     "automation": 60,
-     "augmentation": 80,
-     "digital": 90,
-     "moat": 70,
-     "adoption": 60
-    },
-    "kimi": {
-     "overall": 50,
-     "automation": 60,
-     "augmentation": 85,
-     "digital": 80,
-     "moat": 45,
-     "adoption": 75
-    },
-    "yuanbao": {
-     "overall": 75,
-     "automation": 70,
-     "augmentation": 80,
-     "digital": 90,
-     "moat": 40,
-     "adoption": 75
-    },
-    "deepseek": {
-     "overall": 65,
-     "automation": 50,
-     "augmentation": 70,
-     "digital": 70,
-     "moat": 50,
-     "adoption": 65
     }
    },
    "rationales": {
     "claude": "金融服务:核保理赔风控等流程高度可自动",
+    "deepseek": "标准化产品销售和柜面业务被数字渠道和智能投顾替代，财富管理和投行撮合仍需要人际信任",
     "gpt": "前台销售、理财建议、审核、运营、客服都很容易被 AI 吃掉一大块",
     "grok": "柜台交易和基础咨询自动化，复杂理财和信任服务保留",
-    "qwen": "智能投顾、信贷审批、反欺诈系统广泛应用，高端理财顾问仍需信任建立",
-    "zhipu": "柜面与审批被AI大量替代，理财顾问需人际信任仍需人",
-    "wenxin": "量化交易与风控AI主导，但客户关系需人",
     "kimi": "柜台业务被智能机具替代明显，但理财顾问与风控信任仍需人际交互",
+    "qwen": "智能投顾、信贷审批、反欺诈系统广泛应用，高端理财顾问仍需信任建立",
+    "wenxin": "量化交易与风控AI主导，但客户关系需人",
     "yuanbao": "风控与投顾算法化，客户关系与复杂谈判需人",
-    "deepseek": "标准化产品销售和柜面业务被数字渠道和智能投顾替代，财富管理和投行撮合仍需要人际信任"
+    "zhipu": "柜面与审批被AI大量替代，理财顾问需人际信任仍需人"
    },
    "n_models": 10,
    "std": 14.9,
@@ -30562,6 +30562,22 @@
      "moat": 50,
      "adoption": 56
     },
+    "deepseek": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 60,
+     "digital": 55,
+     "moat": 65,
+     "adoption": 40
+    },
+    "doubao": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 50,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 45
+    },
     "gpt": {
      "overall": 62,
      "automation": 48,
@@ -30578,13 +30594,13 @@
      "moat": 30,
      "adoption": 80
     },
-    "doubao": {
-     "overall": 45,
-     "automation": 40,
-     "augmentation": 50,
-     "digital": 55,
-     "moat": 55,
-     "adoption": 45
+    "kimi": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 55,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 40
     },
     "qwen": {
      "overall": 70,
@@ -30594,28 +30610,12 @@
      "moat": 45,
      "adoption": 70
     },
-    "zhipu": {
-     "overall": 42,
-     "automation": 22,
-     "augmentation": 50,
-     "digital": 45,
-     "moat": 55,
-     "adoption": 30
-    },
     "wenxin": {
      "overall": 65,
      "automation": 40,
      "augmentation": 70,
      "digital": 80,
      "moat": 60,
-     "adoption": 40
-    },
-    "kimi": {
-     "overall": 40,
-     "automation": 30,
-     "augmentation": 55,
-     "digital": 40,
-     "moat": 70,
      "adoption": 40
     },
     "yuanbao": {
@@ -30626,25 +30626,25 @@
      "moat": 70,
      "adoption": 50
     },
-    "deepseek": {
-     "overall": 40,
-     "automation": 30,
-     "augmentation": 60,
-     "digital": 55,
-     "moat": 65,
-     "adoption": 40
+    "zhipu": {
+     "overall": 42,
+     "automation": 22,
+     "augmentation": 50,
+     "digital": 45,
+     "moat": 55,
+     "adoption": 30
     }
    },
    "rationales": {
     "claude": "房地产服务:获客与文书被增强,带看靠人",
+    "deepseek": "VR看房和智能匹配削弱中介信息优势，但签约谈判、产权尽调和邻里纠纷调解保留人的角色",
     "gpt": "房源匹配、文案、带看安排、合同初审都会被 AI 强化，但线下交易和信任仍在",
     "grok": "虚拟看房和合同生成快，实地谈判和本地关系仍关键",
-    "qwen": "房源匹配、VR看房、合同生成自动化，实地带看与交易谈判保留人工主导",
-    "zhipu": "线上估价与信息匹配AI可做，带看与谈判仍需人",
-    "wenxin": "信息匹配可AI化，但谈判与现场看房需人",
     "kimi": "带看、交易撮合与信任建立依赖线下，但线上信息整合与 VR 看房已普及",
+    "qwen": "房源匹配、VR看房、合同生成自动化，实地带看与交易谈判保留人工主导",
+    "wenxin": "信息匹配可AI化，但谈判与现场看房需人",
     "yuanbao": "房源匹配与估价自动化，带看与议价仍靠人",
-    "deepseek": "VR看房和智能匹配削弱中介信息优势，但签约谈判、产权尽调和邻里纠纷调解保留人的角色"
+    "zhipu": "线上估价与信息匹配AI可做，带看与谈判仍需人"
    },
    "n_models": 10,
    "std": 10.4,
@@ -32013,6 +32013,22 @@
      "moat": 46,
      "adoption": 62
     },
+    "deepseek": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 65,
+     "moat": 50,
+     "adoption": 50
+    },
+    "doubao": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 50
+    },
     "gpt": {
      "overall": 78,
      "automation": 58,
@@ -32029,13 +32045,13 @@
      "moat": 45,
      "adoption": 70
     },
-    "doubao": {
-     "overall": 50,
+    "kimi": {
+     "overall": 55,
      "automation": 45,
-     "augmentation": 55,
+     "augmentation": 70,
      "digital": 60,
      "moat": 50,
-     "adoption": 50
+     "adoption": 55
     },
     "qwen": {
      "overall": 75,
@@ -32045,14 +32061,6 @@
      "moat": 45,
      "adoption": 65
     },
-    "zhipu": {
-     "overall": 52,
-     "automation": 28,
-     "augmentation": 55,
-     "digital": 50,
-     "moat": 45,
-     "adoption": 35
-    },
     "wenxin": {
      "overall": 78,
      "automation": 40,
@@ -32060,14 +32068,6 @@
      "digital": 80,
      "moat": 60,
      "adoption": 40
-    },
-    "kimi": {
-     "overall": 55,
-     "automation": 45,
-     "augmentation": 70,
-     "digital": 60,
-     "moat": 50,
-     "adoption": 55
     },
     "yuanbao": {
      "overall": 45,
@@ -32077,25 +32077,25 @@
      "moat": 50,
      "adoption": 65
     },
-    "deepseek": {
-     "overall": 50,
-     "automation": 45,
-     "augmentation": 65,
-     "digital": 65,
-     "moat": 50,
-     "adoption": 50
+    "zhipu": {
+     "overall": 52,
+     "automation": 28,
+     "augmentation": 55,
+     "digital": 50,
+     "moat": 45,
+     "adoption": 35
     }
    },
    "rationales": {
     "claude": "租赁商务服务:咨询外包文书类受冲击",
+    "deepseek": "标准合同生成和法务咨询被AI取代，但复杂商务谈判和危机公关依赖人的策略和应变",
     "gpt": "商务对接、招投标材料、代理、租赁撮合、客服和销售支持都会被 AI 深度重塑",
     "grok": "合同处理和匹配算法主导，高端咨询保留",
-    "qwen": "会展策划、翻译速记、客户筛选可通过AI完成，高端商务谈判除外",
-    "zhipu": "商务咨询与合同审核被AI渗透，线下交付仍需人",
-    "wenxin": "合同审查、日程管理等可被AI辅助",
     "kimi": "行政支持、会议安排与基础咨询被 AI 替代，高端商务谈判仍依赖人",
+    "qwen": "会展策划、翻译速记、客户筛选可通过AI完成，高端商务谈判除外",
+    "wenxin": "合同审查、日程管理等可被AI辅助",
     "yuanbao": "合同与流程标准化，个性化服务难替代",
-    "deepseek": "标准合同生成和法务咨询被AI取代，但复杂商务谈判和危机公关依赖人的策略和应变"
+    "zhipu": "商务咨询与合同审核被AI渗透，线下交付仍需人"
    },
    "n_models": 10,
    "std": 12.0,
@@ -34690,6 +34690,22 @@
      "moat": 48,
      "adoption": 60
     },
+    "deepseek": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 70,
+     "digital": 55,
+     "moat": 60,
+     "adoption": 40
+    },
+    "doubao": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 50,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 45
+    },
     "gpt": {
      "overall": 76,
      "automation": 54,
@@ -34706,13 +34722,13 @@
      "moat": 55,
      "adoption": 60
     },
-    "doubao": {
-     "overall": 45,
-     "automation": 40,
-     "augmentation": 50,
-     "digital": 55,
-     "moat": 55,
-     "adoption": 45
+    "kimi": {
+     "overall": 70,
+     "automation": 50,
+     "augmentation": 75,
+     "digital": 65,
+     "moat": 45,
+     "adoption": 60
     },
     "qwen": {
      "overall": 60,
@@ -34722,14 +34738,6 @@
      "moat": 50,
      "adoption": 60
     },
-    "zhipu": {
-     "overall": 75,
-     "automation": 40,
-     "augmentation": 72,
-     "digital": 72,
-     "moat": 30,
-     "adoption": 55
-    },
     "wenxin": {
      "overall": 40,
      "automation": 50,
@@ -34737,14 +34745,6 @@
      "digital": 80,
      "moat": 50,
      "adoption": 50
-    },
-    "kimi": {
-     "overall": 70,
-     "automation": 50,
-     "augmentation": 75,
-     "digital": 65,
-     "moat": 45,
-     "adoption": 60
     },
     "yuanbao": {
      "overall": 65,
@@ -34754,25 +34754,25 @@
      "moat": 55,
      "adoption": 60
     },
-    "deepseek": {
-     "overall": 40,
-     "automation": 35,
-     "augmentation": 70,
-     "digital": 55,
-     "moat": 60,
-     "adoption": 40
+    "zhipu": {
+     "overall": 75,
+     "automation": 40,
+     "augmentation": 72,
+     "digital": 72,
+     "moat": 30,
+     "adoption": 55
     }
    },
    "rationales": {
     "claude": "技术辅助服务:检测记录类逐步自动",
+    "deepseek": "简单检测报告可AI生成，但现场取样、设备标定和环境适应性判断需人力实操",
     "gpt": "检测、测量、制图、资料整理、技术支持很容易被 AI 压缩人工",
     "grok": "远程支持和故障诊断被AI增强",
-    "qwen": "设备远程诊断、操作指引生成由AI支持，现场服务仍需技师到场",
-    "zhipu": "技术文档与测试用例生成被AI大幅替代",
-    "wenxin": "如维修支持、技术指导，现场操作仍需人",
     "kimi": "测试、运维、技术支持与数据标注被自动化与生成式 AI 快速渗透",
+    "qwen": "设备远程诊断、操作指引生成由AI支持，现场服务仍需技师到场",
+    "wenxin": "如维修支持、技术指导，现场操作仍需人",
     "yuanbao": "检测、校准等规则性强，AI 替代度高",
-    "deepseek": "简单检测报告可AI生成，但现场取样、设备标定和环境适应性判断需人力实操"
+    "zhipu": "技术文档与测试用例生成被AI大幅替代"
    },
    "n_models": 10,
    "std": 14.0,
@@ -36052,6 +36052,22 @@
      "moat": 62,
      "adoption": 48
     },
+    "deepseek": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 75,
+     "adoption": 25
+    },
+    "doubao": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 50
+    },
     "gpt": {
      "overall": 42,
      "automation": 40,
@@ -36068,13 +36084,13 @@
      "moat": 70,
      "adoption": 45
     },
-    "doubao": {
-     "overall": 50,
-     "automation": 45,
-     "augmentation": 55,
-     "digital": 60,
-     "moat": 50,
-     "adoption": 50
+    "kimi": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 35,
+     "moat": 75,
+     "adoption": 35
     },
     "qwen": {
      "overall": 50,
@@ -36084,14 +36100,6 @@
      "moat": 45,
      "adoption": 65
     },
-    "zhipu": {
-     "overall": 28,
-     "automation": 15,
-     "augmentation": 40,
-     "digital": 30,
-     "moat": 68,
-     "adoption": 20
-    },
     "wenxin": {
      "overall": 30,
      "automation": 30,
@@ -36099,14 +36107,6 @@
      "digital": 50,
      "moat": 70,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 35,
-     "automation": 25,
-     "augmentation": 50,
-     "digital": 35,
-     "moat": 75,
-     "adoption": 35
     },
     "yuanbao": {
      "overall": 35,
@@ -36116,25 +36116,25 @@
      "moat": 80,
      "adoption": 30
     },
-    "deepseek": {
-     "overall": 30,
-     "automation": 20,
-     "augmentation": 45,
+    "zhipu": {
+     "overall": 28,
+     "automation": 15,
+     "augmentation": 40,
      "digital": 30,
-     "moat": 75,
-     "adoption": 25
+     "moat": 68,
+     "adoption": 20
     }
    },
    "rationales": {
     "claude": "水利环境公共设施管理:户外作业为主",
+    "deepseek": "监控数据分析和异常预警AI增强明显，但实地巡检、清污和设施维护需物理在场",
     "gpt": "巡检、监测、报表和调度会被 AI 加强，但大量现场处置仍是人",
     "grok": "监测数据分析自动化，实地维护为主",
-    "qwen": "水质监测、管网巡检由AI视觉识别，抢修施工仍靠人工",
-    "zhipu": "现场巡检与设施维护为主，AI辅助监测",
-    "wenxin": "现场巡检与应急处置需人",
     "kimi": "设备远程监测 AI 辅助强，但现场巡检与抢修仍需人",
+    "qwen": "水质监测、管网巡检由AI视觉识别，抢修施工仍靠人工",
+    "wenxin": "现场巡检与应急处置需人",
     "yuanbao": "现场巡检与维护为主，AI 用于监测预警",
-    "deepseek": "监控数据分析和异常预警AI增强明显，但实地巡检、清污和设施维护需物理在场"
+    "zhipu": "现场巡检与设施维护为主，AI辅助监测"
    },
    "n_models": 10,
    "std": 8.3,
@@ -37410,6 +37410,22 @@
      "moat": 86,
      "adoption": 30
     },
+    "deepseek": {
+     "overall": 15,
+     "automation": 10,
+     "augmentation": 20,
+     "digital": 15,
+     "moat": 90,
+     "adoption": 10
+    },
+    "doubao": {
+     "overall": 48,
+     "automation": 42,
+     "augmentation": 53,
+     "digital": 58,
+     "moat": 52,
+     "adoption": 48
+    },
     "gpt": {
      "overall": 18,
      "automation": 26,
@@ -37426,13 +37442,13 @@
      "moat": 88,
      "adoption": 15
     },
-    "doubao": {
-     "overall": 48,
-     "automation": 42,
-     "augmentation": 53,
-     "digital": 58,
-     "moat": 52,
-     "adoption": 48
+    "kimi": {
+     "overall": 15,
+     "automation": 15,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 85,
+     "adoption": 15
     },
     "qwen": {
      "overall": 15,
@@ -37442,14 +37458,6 @@
      "moat": 65,
      "adoption": 40
     },
-    "zhipu": {
-     "overall": 8,
-     "automation": 8,
-     "augmentation": 22,
-     "digital": 15,
-     "moat": 80,
-     "adoption": 10
-    },
     "wenxin": {
      "overall": 18,
      "automation": 20,
@@ -37457,14 +37465,6 @@
      "digital": 30,
      "moat": 70,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 15,
-     "automation": 15,
-     "augmentation": 30,
-     "digital": 20,
-     "moat": 85,
-     "adoption": 15
     },
     "yuanbao": {
      "overall": 15,
@@ -37474,25 +37474,25 @@
      "moat": 85,
      "adoption": 25
     },
-    "deepseek": {
-     "overall": 15,
-     "automation": 10,
-     "augmentation": 20,
+    "zhipu": {
+     "overall": 8,
+     "automation": 8,
+     "augmentation": 22,
      "digital": 15,
-     "moat": 90,
+     "moat": 80,
      "adoption": 10
     }
    },
    "rationales": {
     "claude": "居民服务:家政美容等手工与人际,冲击极低",
+    "deepseek": "家政、美发、殡葬等高度依赖物理接触、情绪安抚和个性化手艺，AI仅能优化预约和客服环节",
     "gpt": "家政、保洁、照护、上门服务受现场环境影响太强，AI 只能做辅助调度",
     "grok": "家政、保姆等高度个性化体力服务",
-    "qwen": "家政、理发、按摩等强触感服务基本不受AI影响",
-    "zhipu": "美发、家政、保洁均为线下体力服务，AI几乎无法介入",
-    "wenxin": "家政、维修等高度依赖现场人际",
     "kimi": "家政、保洁、养老护理为高度线下人身服务，AI 几乎无法替代",
+    "qwen": "家政、理发、按摩等强触感服务基本不受AI影响",
+    "wenxin": "家政、维修等高度依赖现场人际",
     "yuanbao": "家政、理发等强人际与手工，AI 难以介入",
-    "deepseek": "家政、美发、殡葬等高度依赖物理接触、情绪安抚和个性化手艺，AI仅能优化预约和客服环节"
+    "zhipu": "美发、家政、保洁均为线下体力服务，AI几乎无法介入"
    },
    "n_models": 10,
    "std": 10.5,
@@ -37837,6 +37837,22 @@
      "moat": 58,
      "adoption": 52
     },
+    "deepseek": {
+     "overall": 35,
+     "automation": 20,
+     "augmentation": 35,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 30
+    },
+    "doubao": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 50,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 45
+    },
     "gpt": {
      "overall": 45,
      "automation": 34,
@@ -37853,12 +37869,12 @@
      "moat": 75,
      "adoption": 40
     },
-    "doubao": {
-     "overall": 45,
-     "automation": 40,
-     "augmentation": 50,
-     "digital": 55,
-     "moat": 55,
+    "kimi": {
+     "overall": 30,
+     "automation": 35,
+     "augmentation": 55,
+     "digital": 40,
+     "moat": 70,
      "adoption": 45
     },
     "qwen": {
@@ -37869,14 +37885,6 @@
      "moat": 55,
      "adoption": 50
     },
-    "zhipu": {
-     "overall": 28,
-     "automation": 18,
-     "augmentation": 42,
-     "digital": 35,
-     "moat": 70,
-     "adoption": 22
-    },
     "wenxin": {
      "overall": 25,
      "automation": 30,
@@ -37884,14 +37892,6 @@
      "digital": 60,
      "moat": 70,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 30,
-     "automation": 35,
-     "augmentation": 55,
-     "digital": 40,
-     "moat": 70,
-     "adoption": 45
     },
     "yuanbao": {
      "overall": 40,
@@ -37901,25 +37901,25 @@
      "moat": 75,
      "adoption": 45
     },
-    "deepseek": {
-     "overall": 35,
-     "automation": 20,
-     "augmentation": 35,
-     "digital": 30,
-     "moat": 80,
-     "adoption": 30
+    "zhipu": {
+     "overall": 28,
+     "automation": 18,
+     "augmentation": 42,
+     "digital": 35,
+     "moat": 70,
+     "adoption": 22
     }
    },
    "rationales": {
     "claude": "电力燃气水供应服务:巡检被增强,现场为主",
+    "deepseek": "远程抄表和智能调度AI化程度高，但野外抢修和高压带电作业必须由人执行",
     "gpt": "监控、预测、调度会被 AI 改写，但安全生产和现场维护仍需大量人工",
     "grok": "系统监控自动化，现场抢修依赖人",
-    "qwen": "读表计费、负荷预测智能化，管线检修与应急抢修依赖现场操作",
-    "zhipu": "现场操作与抢修为主，AI辅助调度",
-    "wenxin": "管网维护与现场操作，AI难以替代",
     "kimi": "中控自动化程度高，但管线巡检与应急抢修依赖现场人员",
+    "qwen": "读表计费、负荷预测智能化，管线检修与应急抢修依赖现场操作",
+    "wenxin": "管网维护与现场操作，AI难以替代",
     "yuanbao": "监控与调度自动化，现场抢修需人",
-    "deepseek": "远程抄表和智能调度AI化程度高，但野外抢修和高压带电作业必须由人执行"
+    "zhipu": "现场操作与抢修为主，AI辅助调度"
    },
    "n_models": 10,
    "std": 7.8,
@@ -38693,6 +38693,22 @@
      "moat": 74,
      "adoption": 40
     },
+    "deepseek": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 35,
+     "digital": 20,
+     "moat": 85,
+     "adoption": 20
+    },
+    "doubao": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 50
+    },
     "gpt": {
      "overall": 40,
      "automation": 46,
@@ -38709,13 +38725,13 @@
      "moat": 78,
      "adoption": 30
     },
-    "doubao": {
-     "overall": 50,
-     "automation": 45,
-     "augmentation": 55,
-     "digital": 60,
-     "moat": 50,
-     "adoption": 50
+    "kimi": {
+     "overall": 25,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 25
     },
     "qwen": {
      "overall": 30,
@@ -38725,14 +38741,6 @@
      "moat": 60,
      "adoption": 45
     },
-    "zhipu": {
-     "overall": 22,
-     "automation": 12,
-     "augmentation": 35,
-     "digital": 25,
-     "moat": 72,
-     "adoption": 15
-    },
     "wenxin": {
      "overall": 20,
      "automation": 30,
@@ -38740,14 +38748,6 @@
      "digital": 40,
      "moat": 70,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 25,
-     "automation": 20,
-     "augmentation": 45,
-     "digital": 30,
-     "moat": 80,
-     "adoption": 25
     },
     "yuanbao": {
      "overall": 30,
@@ -38757,25 +38757,25 @@
      "moat": 80,
      "adoption": 35
     },
-    "deepseek": {
-     "overall": 25,
-     "automation": 15,
+    "zhipu": {
+     "overall": 22,
+     "automation": 12,
      "augmentation": 35,
-     "digital": 20,
-     "moat": 85,
-     "adoption": 20
+     "digital": 25,
+     "moat": 72,
+     "adoption": 15
     }
    },
    "rationales": {
     "claude": "修理及制作服务:手工与现场诊断为主",
+    "deepseek": "标准件更换和故障码读取AI可指导，但非标件修复和复杂拆装对手眼协同的要求保留手艺活",
     "gpt": "诊断、备件推荐、工单派发会被 AI 影响，真正动手维修还是强现场工作",
     "grok": "诊断辅助，动手修理仍需熟练工",
-    "qwen": "家电维修、钟表装配等精细手工难以替代，诊断环节可获AI辅助",
-    "zhipu": "手工修理与现场操作为主，AI辅助故障诊断",
-    "wenxin": "手工维修与定制制作，现场技能不可替代",
     "kimi": "动手技能、故障排查与精细操作是核心，AI 仅能提供诊断辅助",
+    "qwen": "家电维修、钟表装配等精细手工难以替代，诊断环节可获AI辅助",
+    "wenxin": "手工维修与定制制作，现场技能不可替代",
     "yuanbao": "故障判断可辅助，动手操作难替代",
-    "deepseek": "标准件更换和故障码读取AI可指导，但非标件修复和复杂拆装对手眼协同的要求保留手艺活"
+    "zhipu": "手工修理与现场操作为主，AI辅助故障诊断"
    },
    "n_models": 10,
    "std": 8.7,
@@ -39734,6 +39734,22 @@
      "moat": 52,
      "adoption": 56
     },
+    "deepseek": {
+     "overall": 30,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 30
+    },
+    "doubao": {
+     "overall": 48,
+     "automation": 42,
+     "augmentation": 53,
+     "digital": 58,
+     "moat": 52,
+     "adoption": 48
+    },
     "gpt": {
      "overall": 64,
      "automation": 58,
@@ -39750,13 +39766,13 @@
      "moat": 60,
      "adoption": 55
     },
-    "doubao": {
-     "overall": 48,
-     "automation": 42,
-     "augmentation": 53,
-     "digital": 58,
-     "moat": 52,
-     "adoption": 48
+    "kimi": {
+     "overall": 45,
+     "automation": 30,
+     "augmentation": 70,
+     "digital": 50,
+     "moat": 65,
+     "adoption": 50
     },
     "qwen": {
      "overall": 60,
@@ -39766,14 +39782,6 @@
      "moat": 55,
      "adoption": 50
     },
-    "zhipu": {
-     "overall": 52,
-     "automation": 25,
-     "augmentation": 65,
-     "digital": 55,
-     "moat": 50,
-     "adoption": 40
-    },
     "wenxin": {
      "overall": 60,
      "automation": 40,
@@ -39781,14 +39789,6 @@
      "digital": 60,
      "moat": 60,
      "adoption": 40
-    },
-    "kimi": {
-     "overall": 45,
-     "automation": 30,
-     "augmentation": 70,
-     "digital": 50,
-     "moat": 65,
-     "adoption": 50
     },
     "yuanbao": {
      "overall": 55,
@@ -39798,25 +39798,25 @@
      "moat": 70,
      "adoption": 50
     },
-    "deepseek": {
-     "overall": 30,
+    "zhipu": {
+     "overall": 52,
      "automation": 25,
-     "augmentation": 50,
-     "digital": 45,
-     "moat": 65,
-     "adoption": 30
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 50,
+     "adoption": 40
     }
    },
    "rationales": {
     "claude": "文化教育服务:内容与辅导类受冲击",
+    "deepseek": "场馆自助导览和AI讲解普及，但深度导赏和沉浸式体验设计依赖人的共情与知识融通",
     "gpt": "内容讲解、培训、导览、活动运营会被 AI 提效，标准化服务会明显变薄",
     "grok": "在线内容和辅导工具普及，线下体验保留",
-    "qwen": "课程推荐、学习反馈自动化，亲子互动与兴趣激发仍需真人参与",
-    "zhipu": "线上教育内容生成被AI渗透，线下培训与辅导仍需人",
-    "wenxin": "知识传播可AI化，但互动教学需人",
     "kimi": "教辅、场馆讲解与活动组织部分可被数字人替代，但互动体验仍需人",
+    "qwen": "课程推荐、学习反馈自动化，亲子互动与兴趣激发仍需真人参与",
+    "wenxin": "知识传播可AI化，但互动教学需人",
     "yuanbao": "内容生成工具化，互动与引导仍靠人",
-    "deepseek": "场馆自助导览和AI讲解普及，但深度导赏和沉浸式体验设计依赖人的共情与知识融通"
+    "zhipu": "线上教育内容生成被AI渗透，线下培训与辅导仍需人"
    },
    "n_models": 10,
    "std": 9.7,
@@ -40952,6 +40952,22 @@
      "moat": 78,
      "adoption": 38
     },
+    "deepseek": {
+     "overall": 25,
+     "automation": 10,
+     "augmentation": 40,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 25
+    },
+    "doubao": {
+     "overall": 5,
+     "automation": 35,
+     "augmentation": 45,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 40
+    },
     "gpt": {
      "overall": 36,
      "automation": 46,
@@ -40968,13 +40984,13 @@
      "moat": 68,
      "adoption": 50
     },
-    "doubao": {
-     "overall": 5,
-     "automation": 35,
-     "augmentation": 45,
-     "digital": 50,
-     "moat": 60,
-     "adoption": 40
+    "kimi": {
+     "overall": 20,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 20
     },
     "qwen": {
      "overall": 20,
@@ -40984,28 +41000,12 @@
      "moat": 60,
      "adoption": 45
     },
-    "zhipu": {
-     "overall": 32,
-     "automation": 12,
-     "augmentation": 38,
-     "digital": 30,
-     "moat": 65,
-     "adoption": 20
-    },
     "wenxin": {
      "overall": 28,
      "automation": 30,
      "augmentation": 50,
      "digital": 40,
      "moat": 70,
-     "adoption": 20
-    },
-    "kimi": {
-     "overall": 20,
-     "automation": 15,
-     "augmentation": 40,
-     "digital": 25,
-     "moat": 85,
      "adoption": 20
     },
     "yuanbao": {
@@ -41016,26 +41016,26 @@
      "moat": 75,
      "adoption": 45
     },
-    "deepseek": {
-     "overall": 25,
-     "automation": 10,
-     "augmentation": 40,
-     "digital": 25,
-     "moat": 85,
-     "adoption": 25
+    "zhipu": {
+     "overall": 32,
+     "automation": 12,
+     "augmentation": 38,
+     "digital": 30,
+     "moat": 65,
+     "adoption": 20
     }
    },
    "rationales": {
     "claude": "健康体育休闲服务:身体接触与陪伴为主",
+    "deepseek": "运动数据分析和康复方案AI化，但按摩理疗、教练指导和现场安全保护不可或缺人的身体在场",
+    "doubao": "农、林、牧、渔业生产及辅助人员 总冲击 15 大类总结：本大类岗位的核心职能为在户外非标准化自然环境中开展种植、养殖、捕捞、培育等生产活动，",
     "gpt": "预约、方案、记录、陪练和基础咨询会被重塑，但线下体验和身体互动很关键",
     "grok": "健身指导APP辅助，陪练和康复需人",
-    "doubao": "农、林、牧、渔业生产及辅助人员 总冲击 15 大类总结：本大类岗位的核心职能为在户外非标准化自然环境中开展种植、养殖、捕捞、培育等生产活动，",
-    "qwen": "健身指导、心理疏导、旅游陪伴高度依赖情感连接",
-    "zhipu": "健身指导与康复训练需现场互动，AI辅助方案设计",
-    "wenxin": "健身指导、休闲体验需人际互动",
     "kimi": "健身教练、美容美体与按摩依赖身体接触和个性化指导",
+    "qwen": "健身指导、心理疏导、旅游陪伴高度依赖情感连接",
+    "wenxin": "健身指导、休闲体验需人际互动",
     "yuanbao": "方案可生成，陪伴与激励依赖真人",
-    "deepseek": "运动数据分析和康复方案AI化，但按摩理疗、教练指导和现场安全保护不可或缺人的身体在场"
+    "zhipu": "健身指导与康复训练需现场互动，AI辅助方案设计"
    },
    "n_models": 10,
    "std": 10.3,
@@ -41162,6 +41162,14 @@
      "moat": 58,
      "adoption": 50
     },
+    "deepseek": {
+     "overall": 40,
+     "automation": 20,
+     "augmentation": 35,
+     "digital": 30,
+     "moat": 70,
+     "adoption": 25
+    },
     "gpt": {
      "overall": 50,
      "automation": 38,
@@ -41178,11 +41186,35 @@
      "moat": 65,
      "adoption": 40
     },
+    "kimi": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 60,
+     "adoption": 40
+    },
     "qwen": {
      "overall": 30,
      "automation": 45,
      "augmentation": 65,
      "digital": 55,
+     "moat": 55,
+     "adoption": 50
+    },
+    "wenxin": {
+     "overall": 22,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 30,
+     "adoption": 50
+    },
+    "yuanbao": {
+     "overall": 50,
+     "automation": 45,
+     "augmentation": 60,
+     "digital": 65,
      "moat": 55,
      "adoption": 50
     },
@@ -41193,50 +41225,18 @@
      "digital": 40,
      "moat": 52,
      "adoption": 28
-    },
-    "wenxin": {
-     "overall": 22,
-     "automation": 50,
-     "augmentation": 70,
-     "digital": 60,
-     "moat": 30,
-     "adoption": 50
-    },
-    "kimi": {
-     "overall": 40,
-     "automation": 35,
-     "augmentation": 55,
-     "digital": 45,
-     "moat": 60,
-     "adoption": 40
-    },
-    "yuanbao": {
-     "overall": 50,
-     "automation": 45,
-     "augmentation": 60,
-     "digital": 65,
-     "moat": 55,
-     "adoption": 50
-    },
-    "deepseek": {
-     "overall": 40,
-     "automation": 20,
-     "augmentation": 35,
-     "digital": 30,
-     "moat": 70,
-     "adoption": 25
     }
    },
    "rationales": {
     "claude": "其他社会生产生活服务人员",
+    "deepseek": "依赖于是否与人发生直接物理接触，若以信息匹配为主则冲击偏高",
     "gpt": "只要偏流程、信息和协调，AI 冲击就会上来",
     "grok": "混合，偏服务端",
-    "qwen": "总体偏向现场服务，AI冲击有限",
-    "zhipu": "构成异质，取中间偏低值",
-    "wenxin": "如洗车、美容等，现场服务为主",
     "kimi": "职业边界不清，整体偏向生活服务，AI 渗透有限",
+    "qwen": "总体偏向现场服务，AI冲击有限",
+    "wenxin": "如洗车、美容等，现场服务为主",
     "yuanbao": "混合特征明显，整体中等",
-    "deepseek": "依赖于是否与人发生直接物理接触，若以信息匹配为主则冲击偏高"
+    "zhipu": "构成异质，取中间偏低值"
    },
    "n_models": 9,
    "std": 9.1,
@@ -41611,6 +41611,25 @@
      "moat": 86,
      "adoption": 30
     },
+    "deepseek": {
+     "overall": 20,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 25,
+     "moat": 70,
+     "adoption": 30
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 30
+    },
+    "gemini": {
+     "overall": 15
+    },
     "gpt": {
      "overall": 15,
      "automation": 18,
@@ -41627,12 +41646,12 @@
      "moat": 82,
      "adoption": 25
     },
-    "doubao": {
-     "overall": 35,
+    "kimi": {
+     "overall": 10,
      "automation": 25,
-     "augmentation": 50,
-     "digital": 40,
-     "moat": 70,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 80,
      "adoption": 30
     },
     "qwen": {
@@ -41643,14 +41662,6 @@
      "moat": 70,
      "adoption": 35
     },
-    "zhipu": {
-     "overall": 18,
-     "automation": 18,
-     "augmentation": 45,
-     "digital": 30,
-     "moat": 62,
-     "adoption": 22
-    },
     "wenxin": {
      "overall": 12,
      "automation": 20,
@@ -41658,14 +41669,6 @@
      "digital": 30,
      "moat": 80,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 10,
-     "automation": 25,
-     "augmentation": 45,
-     "digital": 30,
-     "moat": 80,
-     "adoption": 30
     },
     "yuanbao": {
      "overall": 20,
@@ -41675,29 +41678,26 @@
      "moat": 85,
      "adoption": 25
     },
-    "deepseek": {
-     "overall": 20,
-     "automation": 25,
-     "augmentation": 50,
-     "digital": 25,
-     "moat": 70,
-     "adoption": 30
-    },
-    "gemini": {
-     "overall": 15
+    "zhipu": {
+     "overall": 18,
+     "automation": 18,
+     "augmentation": 45,
+     "digital": 30,
+     "moat": 62,
+     "adoption": 22
     }
    },
    "rationales": {
     "claude": "农业生产:户外不可预测,以机械化为主",
+    "deepseek": "AI在无人农机和精准施肥上有进展，但大田作业的复杂地形适应性和农事经验判断仍由人主导",
+    "gemini": "智能农机仅适用于广袤平原的单一种植，在复杂梯田除草、果树高空嫁接与非标软体农产品采摘方面，人类双手的柔性无可替代。综合冲击 155-02 林",
     "gpt": "依赖土地、天气、作物状态和现场操作，AI 主要是辅助种植决策",
     "grok": "种植、收割等田间作业高度体力，智能农机辅助有限",
-    "qwen": "无人机播种、AI灌溉决策普及，田间管理与灾害应对仍需农民经验",
-    "zhipu": "田间劳作受天气与土壤影响大，AI辅助精准农业但无法替代人力",
-    "wenxin": "耕种、收割等体力劳动，AI难以替代",
     "kimi": "种植、养殖与田间管理受自然条件制约，现场经验与体力不可替代",
+    "qwen": "无人机播种、AI灌溉决策普及，田间管理与灾害应对仍需农民经验",
+    "wenxin": "耕种、收割等体力劳动，AI难以替代",
     "yuanbao": "耕种收高度依赖环境与体力，机械化优先于智能化",
-    "deepseek": "AI在无人农机和精准施肥上有进展，但大田作业的复杂地形适应性和农事经验判断仍由人主导",
-    "gemini": "智能农机仅适用于广袤平原的单一种植，在复杂梯田除草、果树高空嫁接与非标软体农产品采摘方面，人类双手的柔性无可替代。综合冲击 155-02 林"
+    "zhipu": "田间劳作受天气与土壤影响大，AI辅助精准农业但无法替代人力"
    },
    "n_models": 11,
    "std": 7.0,
@@ -42079,6 +42079,22 @@
      "moat": 82,
      "adoption": 32
     },
+    "deepseek": {
+     "overall": 15,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 20,
+     "moat": 80,
+     "adoption": 20
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 35
+    },
     "gpt": {
      "overall": 18,
      "automation": 16,
@@ -42095,13 +42111,13 @@
      "moat": 80,
      "adoption": 30
     },
-    "doubao": {
-     "overall": 40,
-     "automation": 30,
-     "augmentation": 55,
-     "digital": 45,
-     "moat": 65,
-     "adoption": 35
+    "kimi": {
+     "overall": 10,
+     "automation": 15,
+     "augmentation": 30,
+     "digital": 20,
+     "moat": 90,
+     "adoption": 15
     },
     "qwen": {
      "overall": 20,
@@ -42111,14 +42127,6 @@
      "moat": 72,
      "adoption": 33
     },
-    "zhipu": {
-     "overall": 12,
-     "automation": 15,
-     "augmentation": 38,
-     "digital": 25,
-     "moat": 65,
-     "adoption": 18
-    },
     "wenxin": {
      "overall": 10,
      "automation": 20,
@@ -42126,14 +42134,6 @@
      "digital": 30,
      "moat": 80,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 10,
-     "automation": 15,
-     "augmentation": 30,
-     "digital": 20,
-     "moat": 90,
-     "adoption": 15
     },
     "yuanbao": {
      "overall": 15,
@@ -42143,25 +42143,25 @@
      "moat": 85,
      "adoption": 25
     },
-    "deepseek": {
-     "overall": 15,
-     "automation": 20,
-     "augmentation": 40,
-     "digital": 20,
-     "moat": 80,
-     "adoption": 20
+    "zhipu": {
+     "overall": 12,
+     "automation": 15,
+     "augmentation": 38,
+     "digital": 25,
+     "moat": 65,
+     "adoption": 18
     }
    },
    "rationales": {
     "claude": "林业生产:野外作业,自动化难",
+    "deepseek": "遥感监测和防火预警AI化，但深山造林、抚育间伐和高危采伐仍需人员实地艰苦作业",
     "gpt": "野外环境复杂，AI 主要用于监测、巡护和资源管理",
     "grok": "山地作业和生态管护，现场不可替代",
-    "qwen": "森林防火监测、病虫害识别由AI辅助，伐木造林作业依赖体力劳动",
-    "zhipu": "山地作业与野外环境不可预测，AI几乎无法介入",
-    "wenxin": "伐木、护林等现场作业，AI作用有限",
     "kimi": "巡山、采伐与野外作业环境复杂，AI 仅作遥感监测",
+    "qwen": "森林防火监测、病虫害识别由AI辅助，伐木造林作业依赖体力劳动",
+    "wenxin": "伐木、护林等现场作业，AI作用有限",
     "yuanbao": "野外作业与经验判断为主，AI 应用有限",
-    "deepseek": "遥感监测和防火预警AI化，但深山造林、抚育间伐和高危采伐仍需人员实地艰苦作业"
+    "zhipu": "山地作业与野外环境不可预测，AI几乎无法介入"
    },
    "n_models": 10,
    "std": 8.5,
@@ -42562,6 +42562,22 @@
      "moat": 76,
      "adoption": 40
     },
+    "deepseek": {
+     "overall": 20,
+     "automation": 25,
+     "augmentation": 45,
+     "digital": 25,
+     "moat": 75,
+     "adoption": 30
+    },
+    "doubao": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 35,
+     "moat": 75,
+     "adoption": 25
+    },
     "gpt": {
      "overall": 16,
      "automation": 16,
@@ -42578,12 +42594,12 @@
      "moat": 85,
      "adoption": 20
     },
-    "doubao": {
-     "overall": 30,
+    "kimi": {
+     "overall": 15,
      "automation": 20,
-     "augmentation": 45,
-     "digital": 35,
-     "moat": 75,
+     "augmentation": 40,
+     "digital": 25,
+     "moat": 85,
      "adoption": 25
     },
     "qwen": {
@@ -42594,14 +42610,6 @@
      "moat": 70,
      "adoption": 35
     },
-    "zhipu": {
-     "overall": 15,
-     "automation": 15,
-     "augmentation": 40,
-     "digital": 28,
-     "moat": 62,
-     "adoption": 20
-    },
     "wenxin": {
      "overall": 15,
      "automation": 20,
@@ -42609,14 +42617,6 @@
      "digital": 30,
      "moat": 80,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 15,
-     "automation": 20,
-     "augmentation": 40,
-     "digital": 25,
-     "moat": 85,
-     "adoption": 25
     },
     "yuanbao": {
      "overall": 25,
@@ -42626,25 +42626,25 @@
      "moat": 85,
      "adoption": 25
     },
-    "deepseek": {
-     "overall": 20,
-     "automation": 25,
-     "augmentation": 45,
-     "digital": 25,
-     "moat": 75,
-     "adoption": 30
+    "zhipu": {
+     "overall": 15,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 28,
+     "moat": 62,
+     "adoption": 20
     }
    },
    "rationales": {
     "claude": "畜牧业生产:智慧养殖监测兴起",
+    "deepseek": "智能环控和饲喂系统普及，但接产、疫病现场诊断和动物行为细微观察依赖经验丰富牧民",
     "gpt": "喂养、巡检、防疫和现场管理占主导，AI 只是辅助",
     "grok": "饲养、防疫和观察动物行为靠经验",
-    "qwen": "健康预警、喂养调度由AI系统控制，接生防疫等操作仍需人工",
-    "zhipu": "动物照料需现场经验与体力，AI辅助饲料配方",
-    "wenxin": "养殖管理依赖经验，AI辅助有限",
     "kimi": "饲养管理与疫病防治依赖生物经验与即时判断，AI 辅助有限",
+    "qwen": "健康预警、喂养调度由AI系统控制，接生防疫等操作仍需人工",
+    "wenxin": "养殖管理依赖经验，AI辅助有限",
     "yuanbao": "饲养与观察需现场，AI 用于健康监测",
-    "deepseek": "智能环控和饲喂系统普及，但接产、疫病现场诊断和动物行为细微观察依赖经验丰富牧民"
+    "zhipu": "动物照料需现场经验与体力，AI辅助饲料配方"
    },
    "n_models": 10,
    "std": 7.1,
@@ -43060,6 +43060,22 @@
      "moat": 82,
      "adoption": 34
     },
+    "deepseek": {
+     "overall": 15,
+     "automation": 20,
+     "augmentation": 40,
+     "digital": 20,
+     "moat": 80,
+     "adoption": 20
+    },
+    "doubao": {
+     "overall": 38,
+     "automation": 28,
+     "augmentation": 53,
+     "digital": 43,
+     "moat": 68,
+     "adoption": 33
+    },
     "gpt": {
      "overall": 20,
      "automation": 14,
@@ -43076,13 +43092,13 @@
      "moat": 78,
      "adoption": 28
     },
-    "doubao": {
-     "overall": 38,
-     "automation": 28,
-     "augmentation": 53,
-     "digital": 43,
-     "moat": 68,
-     "adoption": 33
+    "kimi": {
+     "overall": 10,
+     "automation": 10,
+     "augmentation": 25,
+     "digital": 15,
+     "moat": 90,
+     "adoption": 10
     },
     "qwen": {
      "overall": 25,
@@ -43092,14 +43108,6 @@
      "moat": 75,
      "adoption": 30
     },
-    "zhipu": {
-     "overall": 8,
-     "automation": 12,
-     "augmentation": 32,
-     "digital": 22,
-     "moat": 68,
-     "adoption": 15
-    },
     "wenxin": {
      "overall": 14,
      "automation": 20,
@@ -43107,14 +43115,6 @@
      "digital": 30,
      "moat": 80,
      "adoption": 20
-    },
-    "kimi": {
-     "overall": 10,
-     "automation": 10,
-     "augmentation": 25,
-     "digital": 15,
-     "moat": 90,
-     "adoption": 10
     },
     "yuanbao": {
      "overall": 15,
@@ -43124,25 +43124,25 @@
      "moat": 85,
      "adoption": 25
     },
-    "deepseek": {
-     "overall": 15,
-     "automation": 20,
-     "augmentation": 40,
-     "digital": 20,
-     "moat": 80,
-     "adoption": 20
+    "zhipu": {
+     "overall": 8,
+     "automation": 12,
+     "augmentation": 32,
+     "digital": 22,
+     "moat": 68,
+     "adoption": 15
     }
    },
    "rationales": {
     "claude": "渔业生产:作业环境复杂,冲击低",
+    "deepseek": "养殖水质监控和鱼群探测AI增强，但捕捞作业、网具修补和突发海况应对仍是重体力与经验活",
     "gpt": "海上和水域环境不稳定，AI 更多做导航、监测和预测",
     "grok": "捕捞和养殖环境复杂多变",
-    "qwen": "水质调控、投喂管理智能化，捕捞加工环节难以自动化",
-    "zhipu": "海上作业环境极端不可预测，AI仅辅助气象与鱼群预测",
-    "wenxin": "捕鱼、养殖需现场操作，AI难以替代",
     "kimi": "水上捕捞与养殖作业受自然条件限制，现场操作不可替代",
+    "qwen": "水质调控、投喂管理智能化，捕捞加工环节难以自动化",
+    "wenxin": "捕鱼、养殖需现场操作，AI难以替代",
     "yuanbao": "水上作业环境特殊，自动化难度高",
-    "deepseek": "养殖水质监控和鱼群探测AI增强，但捕捞作业、网具修补和突发海况应对仍是重体力与经验活"
+    "zhipu": "海上作业环境极端不可预测，AI仅辅助气象与鱼群预测"
    },
    "n_models": 10,
    "std": 8.3,
@@ -44168,6 +44168,9 @@
      "moat": 78,
      "adoption": 36
     },
+    "deepseek": {
+     "overall": 25
+    },
     "gpt": {
      "overall": 28,
      "automation": 30,
@@ -44184,20 +44187,6 @@
      "moat": 70,
      "adoption": 35
     },
-    "qwen": {
-     "overall": 50,
-     "automation": 35,
-     "augmentation": 55,
-     "digital": 45,
-     "moat": 65,
-     "adoption": 40
-    },
-    "zhipu": {
-     "overall": 35
-    },
-    "wenxin": {
-     "overall": 25
-    },
     "kimi": {
      "overall": 25,
      "automation": 25,
@@ -44206,23 +44195,34 @@
      "moat": 75,
      "adoption": 30
     },
+    "qwen": {
+     "overall": 50,
+     "automation": 35,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 40
+    },
+    "wenxin": {
+     "overall": 25
+    },
     "yuanbao": {
      "overall": 45
     },
-    "deepseek": {
-     "overall": 25
+    "zhipu": {
+     "overall": 35
     }
    },
    "rationales": {
     "claude": "农林牧渔辅助人员",
+    "deepseek": "无人机植保和AI虫害识别大幅提高效率，但具体作业执行仍须人力操作机械或设备",
     "gpt": "机械、监测、记录和分发会被部分自动化，但仍然偏现场",
     "grok": "数据监测和 drone辅助提升，但基础操作仍人为主",
-    "qwen": "数据采集、系统维护等新增岗位由AI催生，传统辅助工作减少",
-    "zhipu": "数据监测与精准农业辅助可被AI部分替代，是此大类中冲击最高的",
-    "wenxin": "如农技推广，AI可辅助信息传播",
     "kimi": "农机操作与农业数据监测数字化程度略高，但现场仍依赖人",
+    "qwen": "数据采集、系统维护等新增岗位由AI催生，传统辅助工作减少",
+    "wenxin": "如农技推广，AI可辅助信息传播",
     "yuanbao": "无人机植保等新兴环节 AI 渗透较高",
-    "deepseek": "无人机植保和AI虫害识别大幅提高效率，但具体作业执行仍须人力操作机械或设备"
+    "zhipu": "数据监测与精准农业辅助可被AI部分替代，是此大类中冲击最高的"
    },
    "n_models": 9,
    "std": 8.9,
@@ -44349,6 +44349,9 @@
      "moat": 80,
      "adoption": 34
     },
+    "deepseek": {
+     "overall": 15
+    },
     "gpt": {
      "overall": 16,
      "automation": 18,
@@ -44365,20 +44368,6 @@
      "moat": 82,
      "adoption": 22
     },
-    "qwen": {
-     "overall": 20,
-     "automation": 30,
-     "augmentation": 50,
-     "digital": 35,
-     "moat": 70,
-     "adoption": 35
-    },
-    "zhipu": {
-     "overall": 18
-    },
-    "wenxin": {
-     "overall": 20
-    },
     "kimi": {
      "overall": 15,
      "automation": 20,
@@ -44387,23 +44376,34 @@
      "moat": 80,
      "adoption": 20
     },
+    "qwen": {
+     "overall": 20,
+     "automation": 30,
+     "augmentation": 50,
+     "digital": 35,
+     "moat": 70,
+     "adoption": 35
+    },
+    "wenxin": {
+     "overall": 20
+    },
     "yuanbao": {
      "overall": 20
     },
-    "deepseek": {
-     "overall": 15
+    "zhipu": {
+     "overall": 18
     }
    },
    "rationales": {
     "claude": "其他农林牧渔人员",
+    "deepseek": "若偏向数据采集与分析则冲击稍高，若偏体力与野外操作则低",
     "gpt": "总体还是低冲击，更多是工具升级而不是岗位重写",
     "grok": "类似体力导向",
-    "qwen": "整体机械化水平较低，AI渗透缓慢",
-    "zhipu": "构成异质，取中间值",
-    "wenxin": "差异大但整体低冲击",
     "kimi": "岗位杂糅，整体以现场体力劳动为主",
+    "qwen": "整体机械化水平较低，AI渗透缓慢",
+    "wenxin": "差异大但整体低冲击",
     "yuanbao": "零星场景智能化，整体低",
-    "deepseek": "若偏向数据采集与分析则冲击稍高，若偏体力与野外操作则低"
+    "zhipu": "构成异质，取中间值"
    },
    "n_models": 9,
    "std": 2.8,
@@ -45072,6 +45072,17 @@
      "moat": 62,
      "adoption": 48
     },
+    "deepseek": {
+     "overall": 60
+    },
+    "doubao": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
     "gpt": {
      "overall": 30,
      "automation": 44,
@@ -45088,13 +45099,13 @@
      "moat": 65,
      "adoption": 40
     },
-    "doubao": {
-     "overall": 25,
-     "automation": 15,
-     "augmentation": 40,
-     "digital": 30,
-     "moat": 80,
-     "adoption": 20
+    "kimi": {
+     "overall": 40,
+     "automation": 35,
+     "augmentation": 50,
+     "digital": 35,
+     "moat": 70,
+     "adoption": 40
     },
     "qwen": {
      "overall": 40,
@@ -45104,37 +45115,26 @@
      "moat": 55,
      "adoption": 50
     },
-    "zhipu": {
-     "overall": 45
-    },
     "wenxin": {
      "overall": 70
-    },
-    "kimi": {
-     "overall": 40,
-     "automation": 35,
-     "augmentation": 50,
-     "digital": 35,
-     "moat": 70,
-     "adoption": 40
     },
     "yuanbao": {
      "overall": 70
     },
-    "deepseek": {
-     "overall": 60
+    "zhipu": {
+     "overall": 45
     }
    },
    "rationales": {
     "claude": "农副产品加工:产线自动化推进",
+    "deepseek": "自动化产线已大规模普及，AI主要在品控视觉检测和调度优化上进一步减人",
     "gpt": "流水线和质检可被自动化提效，但现场加工仍占比高",
     "grok": "简单分拣和初加工易自动化",
-    "qwen": "分拣包装自动化程度提高，但原料品质判断仍需感官经验与现场把控",
-    "zhipu": "流水线操作为主，自动化程度较高，AI优化品控",
-    "wenxin": "分拣、包装等重复劳动，AI可替代",
     "kimi": "流水线标准化操作部分可被自动化替代，但分拣与品控仍需人",
+    "qwen": "分拣包装自动化程度提高，但原料品质判断仍需感官经验与现场把控",
+    "wenxin": "分拣、包装等重复劳动，AI可替代",
     "yuanbao": "流程相对固定，自动化程度高",
-    "deepseek": "自动化产线已大规模普及，AI主要在品控视觉检测和调度优化上进一步减人"
+    "zhipu": "流水线操作为主，自动化程度较高，AI优化品控"
    },
    "n_models": 10,
    "std": 14.7,
@@ -46298,6 +46298,17 @@
      "moat": 60,
      "adoption": 50
     },
+    "deepseek": {
+     "overall": 50
+    },
+    "doubao": {
+     "overall": 20,
+     "automation": 10,
+     "augmentation": 35,
+     "digital": 25,
+     "moat": 85,
+     "adoption": 15
+    },
     "gpt": {
      "overall": 34,
      "automation": 42,
@@ -46314,13 +46325,13 @@
      "moat": 62,
      "adoption": 45
     },
-    "doubao": {
-     "overall": 20,
-     "automation": 10,
-     "augmentation": 35,
-     "digital": 25,
-     "moat": 85,
-     "adoption": 15
+    "kimi": {
+     "overall": 45,
+     "automation": 40,
+     "augmentation": 55,
+     "digital": 40,
+     "moat": 65,
+     "adoption": 45
     },
     "qwen": {
      "overall": 45,
@@ -46330,37 +46341,26 @@
      "moat": 50,
      "adoption": 55
     },
-    "zhipu": {
-     "overall": 38
-    },
     "wenxin": {
      "overall": 55
-    },
-    "kimi": {
-     "overall": 45,
-     "automation": 40,
-     "augmentation": 55,
-     "digital": 40,
-     "moat": 65,
-     "adoption": 45
     },
     "yuanbao": {
      "overall": 65
     },
-    "deepseek": {
-     "overall": 50
+    "zhipu": {
+     "overall": 38
     }
    },
    "rationales": {
     "claude": "食品饮料生产加工:标准化产线易自动",
+    "deepseek": "配方优化和包装质检AI化，但小批量定制和风味品控仍需要人的感官评价介入",
     "gpt": "配料、质检、包装和排产会被 AI 影响，现场卫生和工艺约束较强",
     "grok": "配方控制和质检辅助，现场操作保留",
-    "qwen": "灌装流水线高度自动化，风味调配与新品研发仍依赖人工试制",
-    "zhipu": "配方与品控可被AI优化，但现场操作仍需人",
-    "wenxin": "生产线操作，部分可自动化",
     "kimi": "流程工业自动化程度中等，配方调试与卫生监管依赖人",
+    "qwen": "灌装流水线高度自动化，风味调配与新品研发仍依赖人工试制",
+    "wenxin": "生产线操作，部分可自动化",
     "yuanbao": "配方与包装线高度自动化",
-    "deepseek": "配方优化和包装质检AI化，但小批量定制和风味品控仍需要人的感官评价介入"
+    "zhipu": "配方与品控可被AI优化，但现场操作仍需人"
    },
    "n_models": 10,
    "std": 11.6,
@@ -46694,6 +46694,17 @@
      "moat": 58,
      "adoption": 50
     },
+    "deepseek": {
+     "overall": 55
+    },
+    "doubao": {
+     "overall": 25,
+     "automation": 15,
+     "augmentation": 40,
+     "digital": 30,
+     "moat": 80,
+     "adoption": 20
+    },
     "gpt": {
      "overall": 32,
      "automation": 24,
@@ -46710,13 +46721,13 @@
      "moat": 70,
      "adoption": 35
     },
-    "doubao": {
-     "overall": 25,
-     "automation": 15,
-     "augmentation": 40,
-     "digital": 30,
-     "moat": 80,
-     "adoption": 20
+    "kimi": {
+     "overall": 40,
+     "automation": 45,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 60,
+     "adoption": 50
     },
     "qwen": {
      "overall": 45,
@@ -46726,37 +46737,26 @@
      "moat": 55,
      "adoption": 50
     },
-    "zhipu": {
-     "overall": 50
-    },
     "wenxin": {
      "overall": 60
-    },
-    "kimi": {
-     "overall": 40,
-     "automation": 45,
-     "augmentation": 55,
-     "digital": 45,
-     "moat": 60,
-     "adoption": 50
     },
     "yuanbao": {
      "overall": 75
     },
-    "deepseek": {
-     "overall": 55
+    "zhipu": {
+     "overall": 50
     }
    },
    "rationales": {
     "claude": "烟草制品加工:高度自动化产线",
+    "deepseek": "高度自动化连续流程工业，AI主要用于工艺参数优化和设备预测性维护",
     "gpt": "生产流程高度标准化，检测、排产和控制会被重塑",
     "grok": "工艺特定，部分自动化",
-    "qwen": "制丝卷接工艺机械化水平高，关键参数调整由AI辅助优化",
-    "zhipu": "高度自动化产线，AI进一步优化流程",
-    "wenxin": "标准化生产，AI监控提升效率",
     "kimi": "传统工艺与自动化设备结合，整体重塑程度中等",
+    "qwen": "制丝卷接工艺机械化水平高，关键参数调整由AI辅助优化",
+    "wenxin": "标准化生产，AI监控提升效率",
     "yuanbao": "产线封闭且标准化，AI 控制强",
-    "deepseek": "高度自动化连续流程工业，AI主要用于工艺参数优化和设备预测性维护"
+    "zhipu": "高度自动化产线，AI进一步优化流程"
    },
    "n_models": 10,
    "std": 13.4,
@@ -47666,6 +47666,17 @@
      "moat": 62,
      "adoption": 48
     },
+    "deepseek": {
+     "overall": 50
+    },
+    "doubao": {
+     "overall": 30,
+     "automation": 20,
+     "augmentation": 45,
+     "digital": 35,
+     "moat": 75,
+     "adoption": 25
+    },
     "gpt": {
      "overall": 54,
      "automation": 36,
@@ -47682,13 +47693,13 @@
      "moat": 60,
      "adoption": 48
     },
-    "doubao": {
-     "overall": 30,
-     "automation": 20,
-     "augmentation": 45,
-     "digital": 35,
-     "moat": 75,
-     "adoption": 25
+    "kimi": {
+     "overall": 50,
+     "automation": 50,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 50,
+     "adoption": 55
     },
     "qwen": {
      "overall": 50,
@@ -47698,37 +47709,26 @@
      "moat": 52,
      "adoption": 53
     },
-    "zhipu": {
-     "overall": 28
-    },
     "wenxin": {
      "overall": 65
-    },
-    "kimi": {
-     "overall": 50,
-     "automation": 50,
-     "augmentation": 60,
-     "digital": 50,
-     "moat": 50,
-     "adoption": 55
     },
     "yuanbao": {
      "overall": 60
     },
-    "deepseek": {
-     "overall": 50
+    "zhipu": {
+     "overall": 28
     }
    },
    "rationales": {
     "claude": "纺织针织印染:产线自动化,部分工序仍需人",
+    "deepseek": "智能排产和染色配方AI化已相当成熟，但小单快反时代换款和断线处理仍需机修工灵活介入",
     "gpt": "设计、排产、质检和部分设备控制会被 AI 改写不少",
     "grok": "机器操作和质量把控仍需人",
-    "qwen": "图案设计由AI生成，织造染色流程实现自动控制",
-    "zhipu": "传统工艺与现场操作为主，AI辅助花型设计",
-    "wenxin": "重复性高，AI可辅助设计但操作需人",
     "kimi": "传统劳动密集型环节逐步被自动化与 AI 配色替代",
+    "qwen": "图案设计由AI生成，织造染色流程实现自动控制",
+    "wenxin": "重复性高，AI可辅助设计但操作需人",
     "yuanbao": "图案设计与排产可 AI 化，操作仍靠人",
-    "deepseek": "智能排产和染色配方AI化已相当成熟，但小单快反时代换款和断线处理仍需机修工灵活介入"
+    "zhipu": "传统工艺与现场操作为主，AI辅助花型设计"
    },
    "n_models": 10,
    "std": 11.3,
@@ -48267,6 +48267,17 @@
      "moat": 66,
      "adoption": 46
     },
+    "deepseek": {
+     "overall": 25
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 50,
+     "digital": 40,
+     "moat": 70,
+     "adoption": 30
+    },
     "gpt": {
      "overall": 45,
      "automation": 40,
@@ -48283,13 +48294,13 @@
      "moat": 58,
      "adoption": 50
     },
-    "doubao": {
+    "kimi": {
      "overall": 35,
-     "automation": 25,
+     "automation": 35,
      "augmentation": 50,
-     "digital": 40,
-     "moat": 70,
-     "adoption": 30
+     "digital": 35,
+     "moat": 65,
+     "adoption": 40
     },
     "qwen": {
      "overall": 40,
@@ -48299,37 +48310,26 @@
      "moat": 55,
      "adoption": 50
     },
-    "zhipu": {
-     "overall": 25
-    },
     "wenxin": {
      "overall": 45
-    },
-    "kimi": {
-     "overall": 35,
-     "automation": 35,
-     "augmentation": 50,
-     "digital": 35,
-     "moat": 65,
-     "adoption": 40
     },
     "yuanbao": {
      "overall": 55
     },
-    "deepseek": {
+    "zhipu": {
      "overall": 25
     }
    },
    "rationales": {
     "claude": "服装皮革毛皮制作:柔性操作自动化较难",
+    "deepseek": "裁剪已可自动化，但高级定制缝制和皮具整饰严重依赖手艺和触觉反馈",
     "gpt": "打版、样衣、图样生成会被 AI 吃掉一部分，手工制作仍在",
     "grok": "缝制和手工环节多",
-    "qwen": "裁剪缝制逐步自动化，高端定制与手工工艺保留人工主导",
-    "zhipu": "缝纫与手工操作为主，AI辅助打版",
-    "wenxin": "定制化生产，现场技能不可替代",
     "kimi": "缝纫、裁剪等精细操作仍高度依赖人手",
+    "qwen": "裁剪缝制逐步自动化，高端定制与手工工艺保留人工主导",
+    "wenxin": "定制化生产，现场技能不可替代",
     "yuanbao": "裁剪与缝制自动化推进中，定制环节仍手工",
-    "deepseek": "裁剪已可自动化，但高级定制缝制和皮具整饰严重依赖手艺和触觉反馈"
+    "zhipu": "缝纫与手工操作为主，AI辅助打版"
    },
    "n_models": 10,
    "std": 8.8,
@@ -48862,6 +48862,9 @@
      "moat": 66,
      "adoption": 46
     },
+    "deepseek": {
+     "overall": 30
+    },
     "gpt": {
      "overall": 41,
      "automation": 42,
@@ -48878,20 +48881,6 @@
      "moat": 65,
      "adoption": 42
     },
-    "qwen": {
-     "overall": 35,
-     "automation": 42,
-     "augmentation": 62,
-     "digital": 52,
-     "moat": 58,
-     "adoption": 48
-    },
-    "zhipu": {
-     "overall": 22
-    },
-    "wenxin": {
-     "overall": 30
-    },
     "kimi": {
      "overall": 30,
      "automation": 25,
@@ -48900,23 +48889,34 @@
      "moat": 80,
      "adoption": 25
     },
+    "qwen": {
+     "overall": 35,
+     "automation": 42,
+     "augmentation": 62,
+     "digital": 52,
+     "moat": 58,
+     "adoption": 48
+    },
+    "wenxin": {
+     "overall": 30
+    },
     "yuanbao": {
      "overall": 50
     },
-    "deepseek": {
-     "overall": 30
+    "zhipu": {
+     "overall": 22
     }
    },
    "rationales": {
     "claude": "木材家具木制品制作:部分工序自动",
+    "deepseek": "数控加工普及率高，但传统榫卯和异形打磨仍需工匠手眼协调",
     "gpt": "设计和切割可提效，但现场制作与装配仍很重",
     "grok": "精细手工和装配",
-    "qwen": "数控机床普及提升加工精度，雕刻组装仍需技工操作",
-    "zhipu": "手工操作与现场加工为主",
-    "wenxin": "手工制作，AI难替代",
     "kimi": "定制家具与手工价值突出，AI 仅作设计辅助",
+    "qwen": "数控机床普及提升加工精度，雕刻组装仍需技工操作",
+    "wenxin": "手工制作，AI难替代",
     "yuanbao": "数控设备普及，复杂工艺依赖技工",
-    "deepseek": "数控加工普及率高，但传统榫卯和异形打磨仍需工匠手眼协调"
+    "zhipu": "手工操作与现场加工为主"
    },
    "n_models": 9,
    "std": 8.1,
@@ -49244,6 +49244,9 @@
      "moat": 60,
      "adoption": 48
     },
+    "deepseek": {
+     "overall": 55
+    },
     "gpt": {
      "overall": 50,
      "automation": 40,
@@ -49260,20 +49263,6 @@
      "moat": 55,
      "adoption": 52
     },
-    "qwen": {
-     "overall": 40,
-     "automation": 50,
-     "augmentation": 70,
-     "digital": 60,
-     "moat": 50,
-     "adoption": 55
-    },
-    "zhipu": {
-     "overall": 45
-    },
-    "wenxin": {
-     "overall": 68
-    },
     "kimi": {
      "overall": 45,
      "automation": 45,
@@ -49282,23 +49271,34 @@
      "moat": 55,
      "adoption": 50
     },
+    "qwen": {
+     "overall": 40,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
+    },
+    "wenxin": {
+     "overall": 68
+    },
     "yuanbao": {
      "overall": 70
     },
-    "deepseek": {
-     "overall": 55
+    "zhipu": {
+     "overall": 45
     }
    },
    "rationales": {
     "claude": "纸及纸制品生产加工:连续产线自动化高",
+    "deepseek": "流程工业自动化高，AI作用于质量在线检测和生产调度，现场操作人员需求持续减少",
     "gpt": "流程标准化高，自动监控、排产和检测会继续强化",
     "grok": "流水线为主但调整靠人",
-    "qwen": "生产线全自动运行，异常停机排查与维护依赖人工介入",
-    "zhipu": "流程化生产，自动化程度较高",
-    "wenxin": "造纸流程可自动化",
     "kimi": "流程工业属性强，自动化程度中等",
+    "qwen": "生产线全自动运行，异常停机排查与维护依赖人工介入",
+    "wenxin": "造纸流程可自动化",
     "yuanbao": "连续生产线自动化程度高",
-    "deepseek": "流程工业自动化高，AI作用于质量在线检测和生产调度，现场操作人员需求持续减少"
+    "zhipu": "流程化生产，自动化程度较高"
    },
    "n_models": 9,
    "std": 9.8,
@@ -49561,6 +49561,9 @@
      "moat": 54,
      "adoption": 54
     },
+    "deepseek": {
+     "overall": 70
+    },
     "gpt": {
      "overall": 78,
      "automation": 62,
@@ -49577,20 +49580,6 @@
      "moat": 35,
      "adoption": 70
     },
-    "qwen": {
-     "overall": 50,
-     "automation": 55,
-     "augmentation": 75,
-     "digital": 70,
-     "moat": 45,
-     "adoption": 60
-    },
-    "zhipu": {
-     "overall": 62
-    },
-    "wenxin": {
-     "overall": 75
-    },
     "kimi": {
      "overall": 55,
      "automation": 55,
@@ -49599,23 +49588,34 @@
      "moat": 45,
      "adoption": 55
     },
+    "qwen": {
+     "overall": 50,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 60
+    },
+    "wenxin": {
+     "overall": 75
+    },
     "yuanbao": {
      "overall": 75
     },
-    "deepseek": {
-     "overall": 70
+    "zhipu": {
+     "overall": 62
     }
    },
    "rationales": {
     "claude": "印刷和记录媒介复制:数字化与按需印刷",
+    "deepseek": "数字印刷和印前流程已高度软件化，传统制版和校色被AI替代",
     "gpt": "版面、排版、校对、印前设计和内容处理会被 AI 大幅冲击",
     "grok": "数字印刷剧变，创意校对保留",
-    "qwen": "排版印刷全流程数字化，设计师岗位受AI影响更大",
-    "zhipu": "数字印刷与AI排版冲击大，传统印刷萎缩",
-    "wenxin": "排版AI可替代，但设备操作需人",
     "kimi": "数字印刷与 AI 排版渗透深，但设备操作与色彩管理需人",
+    "qwen": "排版印刷全流程数字化，设计师岗位受AI影响更大",
+    "wenxin": "排版AI可替代，但设备操作需人",
     "yuanbao": "数字印刷与色彩管理 AI 介入深",
-    "deepseek": "数字印刷和印前流程已高度软件化，传统制版和校色被AI替代"
+    "zhipu": "数字印刷与AI排版冲击大，传统印刷萎缩"
    },
    "n_models": 9,
    "std": 9.7,
@@ -51133,6 +51133,9 @@
      "moat": 62,
      "adoption": 48
     },
+    "deepseek": {
+     "overall": 25
+    },
     "gpt": {
      "overall": 43,
      "automation": 36,
@@ -51149,20 +51152,6 @@
      "moat": 68,
      "adoption": 40
     },
-    "qwen": {
-     "overall": 30,
-     "automation": 45,
-     "augmentation": 65,
-     "digital": 55,
-     "moat": 55,
-     "adoption": 50
-    },
-    "zhipu": {
-     "overall": 22
-    },
-    "wenxin": {
-     "overall": 50
-    },
     "kimi": {
      "overall": 30,
      "automation": 30,
@@ -51171,23 +51160,34 @@
      "moat": 75,
      "adoption": 30
     },
+    "qwen": {
+     "overall": 30,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
+    },
+    "wenxin": {
+     "overall": 50
+    },
     "yuanbao": {
      "overall": 45
     },
-    "deepseek": {
-     "overall": 25
+    "zhipu": {
+     "overall": 22
     }
    },
    "rationales": {
     "claude": "文教工美体育娱乐用品制造",
+    "deepseek": "文体用品标准化生产可自动化，但工美类依赖创意手艺和非标制作，冲击明显分化",
     "gpt": "设计辅助会被 AI 加速，但实际制造和打样仍需人工",
     "grok": "手工工艺主导",
-    "qwen": "批量生产趋于自动化，手工艺品与创意模型制作依赖人工",
-    "zhipu": "手工技艺与创意为主，AI辅助设计",
-    "wenxin": "设计AI可辅助，但制作需人",
     "kimi": "工艺美术与玩具制造依赖手工与创意，AI 辅助设计",
+    "qwen": "批量生产趋于自动化，手工艺品与创意模型制作依赖人工",
+    "wenxin": "设计AI可辅助，但制作需人",
     "yuanbao": "创意与手工并重，AI 辅助设计",
-    "deepseek": "文体用品标准化生产可自动化，但工美类依赖创意手艺和非标制作，冲击明显分化"
+    "zhipu": "手工技艺与创意为主，AI辅助设计"
    },
    "n_models": 9,
    "std": 9.7,
@@ -51981,6 +51981,9 @@
      "moat": 60,
      "adoption": 52
     },
+    "deepseek": {
+     "overall": 50
+    },
     "gpt": {
      "overall": 40,
      "automation": 24,
@@ -51997,20 +52000,6 @@
      "moat": 62,
      "adoption": 45
     },
-    "qwen": {
-     "overall": 50,
-     "automation": 52,
-     "augmentation": 72,
-     "digital": 65,
-     "moat": 48,
-     "adoption": 58
-    },
-    "zhipu": {
-     "overall": 55
-    },
-    "wenxin": {
-     "overall": 35
-    },
     "kimi": {
      "overall": 50,
      "automation": 45,
@@ -52019,23 +52008,34 @@
      "moat": 60,
      "adoption": 50
     },
+    "qwen": {
+     "overall": 50,
+     "automation": 52,
+     "augmentation": 72,
+     "digital": 65,
+     "moat": 48,
+     "adoption": 58
+    },
+    "wenxin": {
+     "overall": 35
+    },
     "yuanbao": {
      "overall": 65
     },
-    "deepseek": {
-     "overall": 50
+    "zhipu": {
+     "overall": 55
     }
    },
    "rationales": {
     "claude": "石油加工炼焦煤化工:流程自动化高",
+    "deepseek": "典型流程工业，集散控制系统与AI优化使现场巡检岗减少，但安全应急与工艺决策保留",
     "gpt": "流程控制、预测维护和监测会被 AI 深入介入，但高危现场仍难替代",
     "grok": "危险环境监控自动化，操作谨慎",
-    "qwen": "DCS系统广泛用于过程控制，异常工况处理需人工干预保障安全",
-    "zhipu": "流程工业自动化程度高，AI优化控制",
-    "wenxin": "高危作业，AI监控但操作需人",
     "kimi": "流程工业 DCS 控制成熟，AI 主要优化工艺参数",
+    "qwen": "DCS系统广泛用于过程控制，异常工况处理需人工干预保障安全",
+    "wenxin": "高危作业，AI监控但操作需人",
     "yuanbao": "过程控制高度自动化，现场巡检仍需人",
-    "deepseek": "典型流程工业，集散控制系统与AI优化使现场巡检岗减少，但安全应急与工艺决策保留"
+    "zhipu": "流程工业自动化程度高，AI优化控制"
    },
    "n_models": 9,
    "std": 8.3,
@@ -54917,6 +54917,9 @@
      "moat": 58,
      "adoption": 54
     },
+    "deepseek": {
+     "overall": 45
+    },
     "gpt": {
      "overall": 56,
      "automation": 44,
@@ -54933,20 +54936,6 @@
      "moat": 50,
      "adoption": 60
     },
-    "qwen": {
-     "overall": 55,
-     "automation": 55,
-     "augmentation": 75,
-     "digital": 70,
-     "moat": 45,
-     "adoption": 62
-    },
-    "zhipu": {
-     "overall": 50
-    },
-    "wenxin": {
-     "overall": 40
-    },
     "kimi": {
      "overall": 55,
      "automation": 50,
@@ -54955,23 +54944,34 @@
      "moat": 55,
      "adoption": 55
     },
+    "qwen": {
+     "overall": 55,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 62
+    },
+    "wenxin": {
+     "overall": 40
+    },
     "yuanbao": {
      "overall": 70
     },
-    "deepseek": {
-     "overall": 45
+    "zhipu": {
+     "overall": 50
     }
    },
    "rationales": {
     "claude": "化学原料和制品制造:连续流程自动化",
+    "deepseek": "智能反应控制和危险源监测AI化显著，但小批量精细化学品合成研发保留大量实验操作",
     "gpt": "工艺优化、配方模拟、质检和安全管理会被 AI 强化",
     "grok": "配方模拟加速，现场安全操作关键",
-    "qwen": "反应参数由AI模型优化调控，安全生产监控仍需人工值守",
-    "zhipu": "流程工业AI可深度优化，但安全操作仍需人",
-    "wenxin": "流程控制AI可辅助，但安全需人",
     "kimi": "流程控制与安全监测自动化程度高，AI 渗透较深",
+    "qwen": "反应参数由AI模型优化调控，安全生产监控仍需人工值守",
+    "wenxin": "流程控制AI可辅助，但安全需人",
     "yuanbao": "配方优化与安全监控 AI 化明显",
-    "deepseek": "智能反应控制和危险源监测AI化显著，但小批量精细化学品合成研发保留大量实验操作"
+    "zhipu": "流程工业AI可深度优化，但安全操作仍需人"
    },
    "n_models": 9,
    "std": 7.8,
@@ -55406,6 +55406,9 @@
      "moat": 58,
      "adoption": 54
     },
+    "deepseek": {
+     "overall": 40
+    },
     "gpt": {
      "overall": 60,
      "automation": 40,
@@ -55422,20 +55425,6 @@
      "moat": 58,
      "adoption": 55
     },
-    "qwen": {
-     "overall": 50,
-     "automation": 58,
-     "augmentation": 78,
-     "digital": 75,
-     "moat": 42,
-     "adoption": 68
-    },
-    "zhipu": {
-     "overall": 42
-    },
-    "wenxin": {
-     "overall": 45
-    },
     "kimi": {
      "overall": 50,
      "automation": 50,
@@ -55444,23 +55433,34 @@
      "moat": 55,
      "adoption": 55
     },
+    "qwen": {
+     "overall": 50,
+     "automation": 58,
+     "augmentation": 78,
+     "digital": 75,
+     "moat": 42,
+     "adoption": 68
+    },
+    "wenxin": {
+     "overall": 45
+    },
     "yuanbao": {
      "overall": 60
     },
-    "deepseek": {
-     "overall": 40
+    "zhipu": {
+     "overall": 42
     }
    },
    "rationales": {
     "claude": "医药制造:GMP自动化与质控",
+    "deepseek": "GMP合规和批记录审查AI化，但无菌操作和复杂制剂工艺放大仍需资深操作员",
     "gpt": "配方研发、质控和生产优化会被 AI 推动，但监管和工艺要求很硬",
     "grok": "洁净环境和精密控制，合规验证需人",
-    "qwen": "制剂灌装高度自动化，GMP合规性检查由AI视觉辅助完成",
-    "zhipu": "AI加速药物研发，但生产操作与合规仍需人",
-    "wenxin": "GMP要求严格，AI辅助但现场操作需人",
     "kimi": "GMP 规范下的自动化生产普及，但质量复核与异常处理需人",
+    "qwen": "制剂灌装高度自动化，GMP合规性检查由AI视觉辅助完成",
+    "wenxin": "GMP要求严格，AI辅助但现场操作需人",
     "yuanbao": "合规与精度要求高，AI 用于质控与分析",
-    "deepseek": "GMP合规和批记录审查AI化，但无菌操作和复杂制剂工艺放大仍需资深操作员"
+    "zhipu": "AI加速药物研发，但生产操作与合规仍需人"
    },
    "n_models": 9,
    "std": 7.1,
@@ -55714,6 +55714,9 @@
      "moat": 56,
      "adoption": 54
     },
+    "deepseek": {
+     "overall": 50
+    },
     "gpt": {
      "overall": 48,
      "automation": 24,
@@ -55730,20 +55733,6 @@
      "moat": 60,
      "adoption": 48
     },
-    "qwen": {
-     "overall": 50,
-     "automation": 52,
-     "augmentation": 72,
-     "digital": 65,
-     "moat": 48,
-     "adoption": 58
-    },
-    "zhipu": {
-     "overall": 48
-    },
-    "wenxin": {
-     "overall": 60
-    },
     "kimi": {
      "overall": 50,
      "automation": 50,
@@ -55752,23 +55741,34 @@
      "moat": 50,
      "adoption": 55
     },
+    "qwen": {
+     "overall": 50,
+     "automation": 52,
+     "augmentation": 72,
+     "digital": 65,
+     "moat": 48,
+     "adoption": 58
+    },
+    "wenxin": {
+     "overall": 60
+    },
     "yuanbao": {
      "overall": 70
     },
-    "deepseek": {
-     "overall": 50
+    "zhipu": {
+     "overall": 48
     }
    },
    "rationales": {
     "claude": "化学纤维制造:高度连续化产线",
+    "deepseek": "连续化高速纺丝工艺中AI辅助调优，现场巡检和组件更换暂难完全无人化",
     "gpt": "生产控制和检测自动化空间较大，但仍偏流水线和设备操作",
     "grok": "连续生产流程自动化程度较高",
-    "qwen": "纺丝成型过程自动化，品质抽检由AI视觉系统执行",
-    "zhipu": "流程化生产，自动化程度较高",
-    "wenxin": "流程监控AI可替代部分",
     "kimi": "流程工业属性强，自动化控制成熟",
+    "qwen": "纺丝成型过程自动化，品质抽检由AI视觉系统执行",
+    "wenxin": "流程监控AI可替代部分",
     "yuanbao": "产线连续稳定，自动化程度高",
-    "deepseek": "连续化高速纺丝工艺中AI辅助调优，现场巡检和组件更换暂难完全无人化"
+    "zhipu": "流程化生产，自动化程度较高"
    },
    "n_models": 9,
    "std": 7.1,
@@ -55986,6 +55986,9 @@
      "moat": 60,
      "adoption": 50
     },
+    "deepseek": {
+     "overall": 35
+    },
     "gpt": {
      "overall": 52,
      "automation": 38,
@@ -56002,20 +56005,6 @@
      "moat": 55,
      "adoption": 52
     },
-    "qwen": {
-     "overall": 45,
-     "automation": 50,
-     "augmentation": 70,
-     "digital": 60,
-     "moat": 50,
-     "adoption": 55
-    },
-    "zhipu": {
-     "overall": 32
-    },
-    "wenxin": {
-     "overall": 38
-    },
     "kimi": {
      "overall": 45,
      "automation": 45,
@@ -56024,23 +56013,34 @@
      "moat": 55,
      "adoption": 50
     },
+    "qwen": {
+     "overall": 45,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
+    },
+    "wenxin": {
+     "overall": 38
+    },
     "yuanbao": {
      "overall": 65
     },
-    "deepseek": {
-     "overall": 35
+    "zhipu": {
+     "overall": 32
     }
    },
    "rationales": {
     "claude": "橡胶和塑料制品制造",
+    "deepseek": "注塑和混炼工艺参数可由AI推荐，但模具调试和换色清机仍需经验干预",
     "gpt": "设计、排产、质检和设备监控会被 AI 改写一部分",
     "grok": "模具和成型操作",
-    "qwen": "注塑压延自动化率高，模具调试与维修需技术工人支持",
-    "zhipu": "注塑与硫化等工序自动化程度中等",
-    "wenxin": "模具操作需技能，AI辅助有限",
     "kimi": "注塑等环节自动化程度中等，换模与调试依赖人",
+    "qwen": "注塑压延自动化率高，模具调试与维修需技术工人支持",
+    "wenxin": "模具操作需技能，AI辅助有限",
     "yuanbao": "模具与成型参数可 AI 优化",
-    "deepseek": "注塑和混炼工艺参数可由AI推荐，但模具调试和换色清机仍需经验干预"
+    "zhipu": "注塑与硫化等工序自动化程度中等"
    },
    "n_models": 9,
    "std": 9.3,
@@ -57702,6 +57702,9 @@
      "moat": 62,
      "adoption": 48
     },
+    "deepseek": {
+     "overall": 35
+    },
     "gpt": {
      "overall": 33,
      "automation": 30,
@@ -57718,20 +57721,6 @@
      "moat": 70,
      "adoption": 38
     },
-    "qwen": {
-     "overall": 50,
-     "automation": 48,
-     "augmentation": 68,
-     "digital": 58,
-     "moat": 52,
-     "adoption": 53
-    },
-    "zhipu": {
-     "overall": 25
-    },
-    "wenxin": {
-     "overall": 58
-    },
     "kimi": {
      "overall": 35,
      "automation": 40,
@@ -57740,23 +57729,34 @@
      "moat": 65,
      "adoption": 40
     },
+    "qwen": {
+     "overall": 50,
+     "automation": 48,
+     "augmentation": 68,
+     "digital": 58,
+     "moat": 52,
+     "adoption": 53
+    },
+    "wenxin": {
+     "overall": 58
+    },
     "yuanbao": {
      "overall": 55
     },
-    "deepseek": {
-     "overall": 35
+    "zhipu": {
+     "overall": 25
     }
    },
    "rationales": {
     "claude": "非金属矿物制品制造",
+    "deepseek": "水泥和玻璃等重化工流程AI优化，但窑炉看火和原料波动调整依赖一线经验判断",
     "gpt": "传统重工业属性强，AI 主要做监测和优化",
     "grok": "高温重体力",
-    "qwen": "水泥玻璃生产高度自动化，窑炉温度调控由AI优化",
-    "zhipu": "窑炉与现场操作为主",
-    "wenxin": "如水泥、玻璃生产，自动化程度高",
     "kimi": "水泥、陶瓷等工艺经验与高温环境限制 AI 渗透",
+    "qwen": "水泥玻璃生产高度自动化，窑炉温度调控由AI优化",
+    "wenxin": "如水泥、玻璃生产，自动化程度高",
     "yuanbao": "高温与重型设备为主，AI 多用于监控",
-    "deepseek": "水泥和玻璃等重化工流程AI优化，但窑炉看火和原料波动调整依赖一线经验判断"
+    "zhipu": "窑炉与现场操作为主"
    },
    "n_models": 9,
    "std": 11.3,
@@ -59058,6 +59058,9 @@
      "moat": 70,
      "adoption": 46
     },
+    "deepseek": {
+     "overall": 30
+    },
     "gpt": {
      "overall": 22,
      "automation": 14,
@@ -59074,20 +59077,6 @@
      "moat": 82,
      "adoption": 25
     },
-    "qwen": {
-     "overall": 40,
-     "automation": 45,
-     "augmentation": 65,
-     "digital": 55,
-     "moat": 55,
-     "adoption": 50
-    },
-    "zhipu": {
-     "overall": 22
-    },
-    "wenxin": {
-     "overall": 15
-    },
     "kimi": {
      "overall": 25,
      "automation": 30,
@@ -59096,23 +59085,34 @@
      "moat": 80,
      "adoption": 35
     },
+    "qwen": {
+     "overall": 40,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
+    },
+    "wenxin": {
+     "overall": 15
+    },
     "yuanbao": {
      "overall": 40
     },
-    "deepseek": {
-     "overall": 30
+    "zhipu": {
+     "overall": 22
     }
    },
    "rationales": {
     "claude": "采矿人员:井下与现场作业,自动化渐进",
+    "deepseek": "无人矿卡和远程遥控铲装发展快，但井下复杂地质应对和应急抢险要求人在关键环节兜底",
     "gpt": "现场环境危险且复杂，AI 更多是远程操控、监测和安全预警",
     "grok": "地下危险作业，远程监控有限",
-    "qwen": "地下矿井实现远程操控与无人运输，地质采样与勘探仍需人工执行",
-    "zhipu": "井下作业环境极端，AI辅助无人矿车但大量仍需人",
-    "wenxin": "高危体力劳动，AI难以替代",
     "kimi": "井下作业与危险环境为主，智能矿山推进但现场仍需人",
+    "qwen": "地下矿井实现远程操控与无人运输，地质采样与勘探仍需人工执行",
+    "wenxin": "高危体力劳动，AI难以替代",
     "yuanbao": "井下环境危险，无人化推进但进度受限",
-    "deepseek": "无人矿卡和远程遥控铲装发展快，但井下复杂地质应对和应急抢险要求人在关键环节兜底"
+    "zhipu": "井下作业环境极端，AI辅助无人矿车但大量仍需人"
    },
    "n_models": 9,
    "std": 9.7,
@@ -61130,6 +61130,9 @@
      "moat": 60,
      "adoption": 52
     },
+    "deepseek": {
+     "overall": 55
+    },
     "gpt": {
      "overall": 38,
      "automation": 32,
@@ -61146,20 +61149,6 @@
      "moat": 65,
      "adoption": 42
     },
-    "qwen": {
-     "overall": 55,
-     "automation": 52,
-     "augmentation": 72,
-     "digital": 65,
-     "moat": 48,
-     "adoption": 58
-    },
-    "zhipu": {
-     "overall": 52
-    },
-    "wenxin": {
-     "overall": 25
-    },
     "kimi": {
      "overall": 40,
      "automation": 45,
@@ -61168,23 +61157,34 @@
      "moat": 60,
      "adoption": 50
     },
+    "qwen": {
+     "overall": 55,
+     "automation": 52,
+     "augmentation": 72,
+     "digital": 65,
+     "moat": 48,
+     "adoption": 58
+    },
+    "wenxin": {
+     "overall": 25
+    },
     "yuanbao": {
      "overall": 60
     },
-    "deepseek": {
-     "overall": 55
+    "zhipu": {
+     "overall": 52
     }
    },
    "rationales": {
     "claude": "金属冶炼和压延加工:连续产线自动化",
+    "deepseek": "高炉和轧线智能控制普及，AI用于过程优化和缺陷检测，操作室逐渐无人化",
     "gpt": "流程和控制很重要，AI 会持续渗透，但现场约束仍然强",
     "grok": "高温高危环境",
-    "qwen": "高炉炼钢过程由AI闭环控制，取样化验与成分分析依赖人工操作",
-    "zhipu": "流程工业自动化程度高，AI优化能耗与质量控制",
-    "wenxin": "高温作业，AI监控但操作需人",
     "kimi": "高温危险环境，自动化控制普及但现场监控仍需人",
+    "qwen": "高炉炼钢过程由AI闭环控制，取样化验与成分分析依赖人工操作",
+    "wenxin": "高温作业，AI监控但操作需人",
     "yuanbao": "过程控制自动化，现场操作仍关键",
-    "deepseek": "高炉和轧线智能控制普及，AI用于过程优化和缺陷检测，操作室逐渐无人化"
+    "zhipu": "流程工业自动化程度高，AI优化能耗与质量控制"
    },
    "n_models": 9,
    "std": 12.3,
@@ -62402,6 +62402,9 @@
      "moat": 60,
      "adoption": 50
     },
+    "deepseek": {
+     "overall": 50
+    },
     "gpt": {
      "overall": 58,
      "automation": 50,
@@ -62418,20 +62421,6 @@
      "moat": 45,
      "adoption": 65
     },
-    "qwen": {
-     "overall": 60,
-     "automation": 50,
-     "augmentation": 70,
-     "digital": 60,
-     "moat": 50,
-     "adoption": 55
-    },
-    "zhipu": {
-     "overall": 48
-    },
-    "wenxin": {
-     "overall": 48
-    },
     "kimi": {
      "overall": 55,
      "automation": 50,
@@ -62440,23 +62429,34 @@
      "moat": 50,
      "adoption": 55
     },
+    "qwen": {
+     "overall": 60,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
+    },
+    "wenxin": {
+     "overall": 48
+    },
     "yuanbao": {
      "overall": 80
     },
-    "deepseek": {
-     "overall": 50
+    "zhipu": {
+     "overall": 48
     }
    },
    "rationales": {
     "claude": "机械制造基础加工",
+    "deepseek": "数控机床与机器人上下料已高度覆盖，AI生成加工程序冲击编程岗，但精密刮研等高阶手艺残存",
     "gpt": "编程、工艺、视觉检测和设备参数优化会被 AI 强烈影响",
     "grok": "CNC和编程被AI优化，装配仍需熟练技工",
-    "qwen": "车铣刨磨数控化程度高，编程任务部分由AI辅助生成",
-    "zhipu": "数控与AI编程替代部分操作，但装夹与质检仍需人",
-    "wenxin": "如车工、铣工，AI可辅助编程但操作需人",
     "kimi": "数控编程与 AI 工艺优化渗透快，但装夹测量仍需人",
+    "qwen": "车铣刨磨数控化程度高，编程任务部分由AI辅助生成",
+    "wenxin": "如车工、铣工，AI可辅助编程但操作需人",
     "yuanbao": "CNC 与编程高度数字化",
-    "deepseek": "数控机床与机器人上下料已高度覆盖，AI生成加工程序冲击编程岗，但精密刮研等高阶手艺残存"
+    "zhipu": "数控与AI编程替代部分操作，但装夹与质检仍需人"
    },
    "n_models": 9,
    "std": 10.6,
@@ -62858,6 +62858,9 @@
      "moat": 60,
      "adoption": 50
     },
+    "deepseek": {
+     "overall": 35
+    },
     "gpt": {
      "overall": 50,
      "automation": 36,
@@ -62874,20 +62877,6 @@
      "moat": 60,
      "adoption": 48
     },
-    "qwen": {
-     "overall": 45,
-     "automation": 48,
-     "augmentation": 68,
-     "digital": 58,
-     "moat": 52,
-     "adoption": 53
-    },
-    "zhipu": {
-     "overall": 28
-    },
-    "wenxin": {
-     "overall": 32
-    },
     "kimi": {
      "overall": 50,
      "automation": 45,
@@ -62896,23 +62885,34 @@
      "moat": 60,
      "adoption": 45
     },
+    "qwen": {
+     "overall": 45,
+     "automation": 48,
+     "augmentation": 68,
+     "digital": 58,
+     "moat": 52,
+     "adoption": 53
+    },
+    "wenxin": {
+     "overall": 32
+    },
     "yuanbao": {
      "overall": 55
     },
-    "deepseek": {
-     "overall": 35
+    "zhipu": {
+     "overall": 28
     }
    },
    "rationales": {
     "claude": "金属制品制造",
+    "deepseek": "冲压焊接标准化产品自动化率高，但非标钣金和多品种小批量仍需灵巧工人",
     "gpt": "标准件和重复加工越多，AI 和自动化冲击越大",
     "grok": "焊接和加工",
-    "qwen": "冲压焊接自动化普及，结构装配与质检仍需人工参与",
-    "zhipu": "焊接与钣金等现场操作为主",
-    "wenxin": "焊接等技能难替代",
     "kimi": "焊接、铸造等环节机器人渗透率高",
+    "qwen": "冲压焊接自动化普及，结构装配与质检仍需人工参与",
+    "wenxin": "焊接等技能难替代",
     "yuanbao": "焊接与组装半自动化，复杂件靠人",
-    "deepseek": "冲压焊接标准化产品自动化率高，但非标钣金和多品种小批量仍需灵巧工人"
+    "zhipu": "焊接与钣金等现场操作为主"
    },
    "n_models": 9,
    "std": 8.7,
@@ -64318,6 +64318,9 @@
      "moat": 58,
      "adoption": 52
     },
+    "deepseek": {
+     "overall": 40
+    },
     "gpt": {
      "overall": 60,
      "automation": 44,
@@ -64334,20 +64337,6 @@
      "moat": 52,
      "adoption": 58
     },
-    "qwen": {
-     "overall": 50,
-     "automation": 52,
-     "augmentation": 72,
-     "digital": 65,
-     "moat": 48,
-     "adoption": 58
-    },
-    "zhipu": {
-     "overall": 40
-    },
-    "wenxin": {
-     "overall": 42
-    },
     "kimi": {
      "overall": 45,
      "automation": 50,
@@ -64356,23 +64345,34 @@
      "moat": 50,
      "adoption": 55
     },
+    "qwen": {
+     "overall": 50,
+     "automation": 52,
+     "augmentation": 72,
+     "digital": 65,
+     "moat": 48,
+     "adoption": 58
+    },
+    "wenxin": {
+     "overall": 42
+    },
     "yuanbao": {
      "overall": 50
     },
-    "deepseek": {
+    "zhipu": {
      "overall": 40
     }
    },
    "rationales": {
     "claude": "通用设备制造",
+    "deepseek": "标准化泵阀和传动件生产自动化程度高，整机装配测试仍需人工介入",
     "gpt": "设计、工艺、质检、装配辅助都会被 AI 逐步重塑",
     "grok": "设计与调试结合",
-    "qwen": "装配线自动化水平提升，设备调试测试由AI辅助完成",
-    "zhipu": "AI辅助设计与工艺规划，装配仍需人",
-    "wenxin": "装配与调试需人",
     "kimi": "装配与调试人机协作，标准化程度中等",
+    "qwen": "装配线自动化水平提升，设备调试测试由AI辅助完成",
+    "wenxin": "装配与调试需人",
     "yuanbao": "装配与调试依赖经验",
-    "deepseek": "标准化泵阀和传动件生产自动化程度高，整机装配测试仍需人工介入"
+    "zhipu": "AI辅助设计与工艺规划，装配仍需人"
    },
    "n_models": 9,
    "std": 7.6,
@@ -64986,6 +64986,9 @@
      "moat": 58,
      "adoption": 52
     },
+    "deepseek": {
+     "overall": 30
+    },
     "gpt": {
      "overall": 56,
      "automation": 38,
@@ -65002,20 +65005,6 @@
      "moat": 55,
      "adoption": 55
     },
-    "qwen": {
-     "overall": 45,
-     "automation": 50,
-     "augmentation": 70,
-     "digital": 60,
-     "moat": 50,
-     "adoption": 55
-    },
-    "zhipu": {
-     "overall": 35
-    },
-    "wenxin": {
-     "overall": 35
-    },
     "kimi": {
      "overall": 40,
      "automation": 40,
@@ -65024,23 +65013,34 @@
      "moat": 60,
      "adoption": 45
     },
+    "qwen": {
+     "overall": 45,
+     "automation": 50,
+     "augmentation": 70,
+     "digital": 60,
+     "moat": 50,
+     "adoption": 55
+    },
+    "wenxin": {
+     "overall": 35
+    },
     "yuanbao": {
      "overall": 55
     },
-    "deepseek": {
-     "overall": 30
+    "zhipu": {
+     "overall": 35
     }
    },
    "rationales": {
     "claude": "专用设备制造",
+    "deepseek": "工程机械和农机的批量小、定制多，总装调试复杂性使全自动化难度大",
     "gpt": "非标定制较多，AI 会提效但不至于全面替代",
     "grok": "定制化高，现场集成关键",
-    "qwen": "特种装备定制化程度高，人工参与贯穿制造全过程",
-    "zhipu": "定制化程度高，AI辅助但核心仍需人",
-    "wenxin": "定制化生产，现场技能不可替代",
     "kimi": "小批量定制化强，经验依赖度高",
+    "qwen": "特种装备定制化程度高，人工参与贯穿制造全过程",
+    "wenxin": "定制化生产，现场技能不可替代",
     "yuanbao": "定制化强，AI 辅助设计",
-    "deepseek": "工程机械和农机的批量小、定制多，总装调试复杂性使全自动化难度大"
+    "zhipu": "定制化程度高，AI辅助但核心仍需人"
    },
    "n_models": 9,
    "std": 9.4,
@@ -65343,6 +65343,9 @@
      "moat": 56,
      "adoption": 56
     },
+    "deepseek": {
+     "overall": 60
+    },
     "gpt": {
      "overall": 66,
      "automation": 38,
@@ -65359,20 +65362,6 @@
      "moat": 45,
      "adoption": 68
     },
-    "qwen": {
-     "overall": 55,
-     "automation": 55,
-     "augmentation": 75,
-     "digital": 68,
-     "moat": 45,
-     "adoption": 62
-    },
-    "zhipu": {
-     "overall": 52
-    },
-    "wenxin": {
-     "overall": 55
-    },
     "kimi": {
      "overall": 60,
      "automation": 55,
@@ -65381,23 +65370,34 @@
      "moat": 45,
      "adoption": 65
     },
+    "qwen": {
+     "overall": 55,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 68,
+     "moat": 45,
+     "adoption": 62
+    },
+    "wenxin": {
+     "overall": 55
+    },
     "yuanbao": {
      "overall": 65
     },
-    "deepseek": {
-     "overall": 60
+    "zhipu": {
+     "overall": 52
     }
    },
    "rationales": {
     "claude": "汽车制造:产线高度自动化(机器人密集)",
+    "deepseek": "冲压焊装涂装已大规模机器人化，总装环节柔性化和协作机器人引入正逐步减少人工",
     "gpt": "机器人、视觉检测、工艺优化和产线调度会持续重构岗位",
     "grok": "装配线部分自动化，质检复杂",
-    "qwen": "焊装涂装自动化率领先，总装线仍需大量工人进行装配与检测",
-    "zhipu": "产线自动化程度高，AI进一步优化排产与质检",
-    "wenxin": "流水线装配AI可替代部分，但质量检测需人",
     "kimi": "整车流水线高度自动化，机器人焊接与涂装普及，但总装仍需人",
+    "qwen": "焊装涂装自动化率领先，总装线仍需大量工人进行装配与检测",
+    "wenxin": "流水线装配AI可替代部分，但质量检测需人",
     "yuanbao": "整车装配线机器人密集，质检与总装仍用人",
-    "deepseek": "冲压焊装涂装已大规模机器人化，总装环节柔性化和协作机器人引入正逐步减少人工"
+    "zhipu": "产线自动化程度高，AI进一步优化排产与质检"
    },
    "n_models": 9,
    "std": 4.8,
@@ -66515,6 +66515,9 @@
      "moat": 60,
      "adoption": 52
     },
+    "deepseek": {
+     "overall": 25
+    },
     "gpt": {
      "overall": 58,
      "automation": 36,
@@ -66531,20 +66534,6 @@
      "moat": 58,
      "adoption": 55
     },
-    "qwen": {
-     "overall": 50,
-     "automation": 52,
-     "augmentation": 72,
-     "digital": 65,
-     "moat": 48,
-     "adoption": 58
-    },
-    "zhipu": {
-     "overall": 32
-    },
-    "wenxin": {
-     "overall": 40
-    },
     "kimi": {
      "overall": 50,
      "automation": 45,
@@ -66553,23 +66542,34 @@
      "moat": 55,
      "adoption": 50
     },
+    "qwen": {
+     "overall": 50,
+     "automation": 52,
+     "augmentation": 72,
+     "digital": 65,
+     "moat": 48,
+     "adoption": 58
+    },
+    "wenxin": {
+     "overall": 40
+    },
     "yuanbao": {
      "overall": 60
     },
-    "deepseek": {
-     "overall": 25
+    "zhipu": {
+     "overall": 32
     }
    },
    "rationales": {
     "claude": "铁路船舶航空设备制造",
+    "deepseek": "大型部件装配和复杂线缆敷设自动化率有限，精密铆接和系统联调难以完全去人",
     "gpt": "高标准、高流程、高协作，AI 提效明显但替代更慢",
     "grok": "大型构件和安全验证",
-    "qwen": "大型结构件组装依赖人工，AI主要用于工艺仿真与设计验证",
-    "zhipu": "复杂装配与质检仍需大量人力",
-    "wenxin": "高精度制造，AI辅助但操作需人",
     "kimi": "精密制造与安全关键，自动化与人工结合",
+    "qwen": "大型结构件组装依赖人工，AI主要用于工艺仿真与设计验证",
+    "wenxin": "高精度制造，AI辅助但操作需人",
     "yuanbao": "高精度与安全性要求，AI 辅助检测",
-    "deepseek": "大型部件装配和复杂线缆敷设自动化率有限，精密铆接和系统联调难以完全去人"
+    "zhipu": "复杂装配与质检仍需大量人力"
    },
    "n_models": 9,
    "std": 10.9,
@@ -67364,6 +67364,9 @@
      "moat": 56,
      "adoption": 54
     },
+    "deepseek": {
+     "overall": 45
+    },
     "gpt": {
      "overall": 64,
      "automation": 40,
@@ -67380,20 +67383,6 @@
      "moat": 50,
      "adoption": 62
     },
-    "qwen": {
-     "overall": 55,
-     "automation": 55,
-     "augmentation": 75,
-     "digital": 70,
-     "moat": 45,
-     "adoption": 65
-    },
-    "zhipu": {
-     "overall": 32
-    },
-    "wenxin": {
-     "overall": 38
-    },
     "kimi": {
      "overall": 45,
      "automation": 50,
@@ -67402,23 +67391,34 @@
      "moat": 50,
      "adoption": 55
     },
+    "qwen": {
+     "overall": 55,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 65
+    },
+    "wenxin": {
+     "overall": 38
+    },
     "yuanbao": {
      "overall": 55
     },
-    "deepseek": {
-     "overall": 45
+    "zhipu": {
+     "overall": 32
     }
    },
    "rationales": {
     "claude": "电气机械和器材制造",
+    "deepseek": "家电和线缆类标准化产品生产自动化高，成套设备装配和调试则仍须电工技师",
     "gpt": "设计、测试、排产、质检和运维都会被 AI 影响",
     "grok": "精密组装",
-    "qwen": "电子元器件贴装自动化，整机功能检测由AI视觉系统完成",
-    "zhipu": "绕线与装配等操作为主",
-    "wenxin": "电气操作需技能，AI辅助有限",
     "kimi": "电机与电器装配自动化程度中等",
+    "qwen": "电子元器件贴装自动化，整机功能检测由AI视觉系统完成",
+    "wenxin": "电气操作需技能，AI辅助有限",
     "yuanbao": "绕线、装配等半自动化",
-    "deepseek": "家电和线缆类标准化产品生产自动化高，成套设备装配和调试则仍须电工技师"
+    "zhipu": "绕线与装配等操作为主"
    },
    "n_models": 9,
    "std": 10.5,
@@ -68806,6 +68806,9 @@
      "moat": 52,
      "adoption": 56
     },
+    "deepseek": {
+     "overall": 55
+    },
     "gpt": {
      "overall": 84,
      "automation": 42,
@@ -68822,20 +68825,6 @@
      "moat": 25,
      "adoption": 85
     },
-    "qwen": {
-     "overall": 60,
-     "automation": 65,
-     "augmentation": 85,
-     "digital": 85,
-     "moat": 35,
-     "adoption": 75
-    },
-    "zhipu": {
-     "overall": 42
-    },
-    "wenxin": {
-     "overall": 65
-    },
     "kimi": {
      "overall": 65,
      "automation": 60,
@@ -68844,23 +68833,34 @@
      "moat": 35,
      "adoption": 70
     },
+    "qwen": {
+     "overall": 60,
+     "automation": 65,
+     "augmentation": 85,
+     "digital": 85,
+     "moat": 35,
+     "adoption": 75
+    },
+    "wenxin": {
+     "overall": 65
+    },
     "yuanbao": {
      "overall": 85
     },
-    "deepseek": {
-     "overall": 55
+    "zhipu": {
+     "overall": 42
     }
    },
    "rationales": {
     "claude": "计算机通信电子设备制造:精密自动化",
+    "deepseek": "芯片和电路板制造高度自动化，但消费电子整机组装因柔性不足暂时保留较多人工",
     "gpt": "自动检测、工艺优化、供应链和工程协作都会被深度重塑",
     "grok": "芯片和组装高度技术化但仍需人",
-    "qwen": "SMT贴片自动化普及，产品老化与性能检测由AI执行",
-    "zhipu": "精密组装与检测仍需人，AI优化产线调度",
-    "wenxin": "电子组装AI可替代部分",
     "kimi": "SMT 贴片与自动检测高度自动化，重塑程度深",
+    "qwen": "SMT贴片自动化普及，产品老化与性能检测由AI执行",
+    "wenxin": "电子组装AI可替代部分",
     "yuanbao": "SMT 与测试高度自动化",
-    "deepseek": "芯片和电路板制造高度自动化，但消费电子整机组装因柔性不足暂时保留较多人工"
+    "zhipu": "精密组装与检测仍需人，AI优化产线调度"
    },
    "n_models": 9,
    "std": 13.3,
@@ -69048,6 +69048,9 @@
      "moat": 54,
      "adoption": 56
     },
+    "deepseek": {
+     "overall": 35
+    },
     "gpt": {
      "overall": 70,
      "automation": 36,
@@ -69064,20 +69067,6 @@
      "moat": 40,
      "adoption": 70
     },
-    "qwen": {
-     "overall": 45,
-     "automation": 58,
-     "augmentation": 78,
-     "digital": 75,
-     "moat": 42,
-     "adoption": 68
-    },
-    "zhipu": {
-     "overall": 28
-    },
-    "wenxin": {
-     "overall": 45
-    },
     "kimi": {
      "overall": 40,
      "automation": 50,
@@ -69086,23 +69075,34 @@
      "moat": 50,
      "adoption": 55
     },
+    "qwen": {
+     "overall": 45,
+     "automation": 58,
+     "augmentation": 78,
+     "digital": 75,
+     "moat": 42,
+     "adoption": 68
+    },
+    "wenxin": {
+     "overall": 45
+    },
     "yuanbao": {
      "overall": 50
     },
-    "deepseek": {
-     "overall": 35
+    "zhipu": {
+     "overall": 28
     }
    },
    "rationales": {
     "claude": "仪器仪表制造",
+    "deepseek": "精密装配和校准环节依赖人的手感与判断，大批量标准表计可自动化，冲击不均衡",
     "gpt": "高精度设计、校准、检测和文档流程会被 AI 明显改写",
     "grok": "精密校准",
-    "qwen": "精密装配仍需人工操作，校准过程可获AI辅助支持",
-    "zhipu": "精密装配与校准需手工技艺",
-    "wenxin": "精密制造需人，AI辅助设计",
     "kimi": "精密装配与校准依赖人工技能，AI 辅助有限",
+    "qwen": "精密装配仍需人工操作，校准过程可获AI辅助支持",
+    "wenxin": "精密制造需人，AI辅助设计",
     "yuanbao": "精密装配与校准依赖技工",
-    "deepseek": "精密装配和校准环节依赖人的手感与判断，大批量标准表计可自动化，冲击不均衡"
+    "zhipu": "精密装配与校准需手工技艺"
    },
    "n_models": 9,
    "std": 13.3,
@@ -69251,6 +69251,9 @@
      "moat": 62,
      "adoption": 50
     },
+    "deepseek": {
+     "overall": 30
+    },
     "gpt": {
      "overall": 46,
      "automation": 30,
@@ -69267,20 +69270,6 @@
      "moat": 58,
      "adoption": 50
     },
-    "qwen": {
-     "overall": 40,
-     "automation": 45,
-     "augmentation": 65,
-     "digital": 55,
-     "moat": 55,
-     "adoption": 50
-    },
-    "zhipu": {
-     "overall": 18
-    },
-    "wenxin": {
-     "overall": 72
-    },
     "kimi": {
      "overall": 25,
      "automation": 30,
@@ -69289,23 +69278,34 @@
      "moat": 75,
      "adoption": 30
     },
+    "qwen": {
+     "overall": 40,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
+    },
+    "wenxin": {
+     "overall": 72
+    },
     "yuanbao": {
      "overall": 60
     },
-    "deepseek": {
-     "overall": 30
+    "zhipu": {
+     "overall": 18
     }
    },
    "rationales": {
     "claude": "再生资源综合利用",
+    "deepseek": "智能分拣线和拆解机器人发展快，但混合垃圾非结构化性质仍需人工预分拣",
     "gpt": "分拣、识别、流程优化会被 AI 提效，但现场脏活累活仍多",
     "grok": "分拣和处理体力为主",
-    "qwen": "分拣回收逐步实现自动化，复杂物料处理仍需人工介入",
-    "zhipu": "分拣与现场操作为主",
-    "wenxin": "分拣、拆解等重复劳动，AI可辅助",
     "kimi": "分拣、回收与处理环境复杂，标准化程度低",
+    "qwen": "分拣回收逐步实现自动化，复杂物料处理仍需人工介入",
+    "wenxin": "分拣、拆解等重复劳动，AI可辅助",
     "yuanbao": "分拣与识别 AI 化，处理仍靠设备与人",
-    "deepseek": "智能分拣线和拆解机器人发展快，但混合垃圾非结构化性质仍需人工预分拣"
+    "zhipu": "分拣与现场操作为主"
    },
    "n_models": 9,
    "std": 16.2,
@@ -70389,6 +70389,9 @@
      "moat": 60,
      "adoption": 52
     },
+    "deepseek": {
+     "overall": 35
+    },
     "gpt": {
      "overall": 48,
      "automation": 40,
@@ -70405,20 +70408,6 @@
      "moat": 65,
      "adoption": 48
     },
-    "qwen": {
-     "overall": 50,
-     "automation": 58,
-     "augmentation": 78,
-     "digital": 75,
-     "moat": 42,
-     "adoption": 68
-    },
-    "zhipu": {
-     "overall": 38
-    },
-    "wenxin": {
-     "overall": 30
-    },
     "kimi": {
      "overall": 35,
      "automation": 45,
@@ -70427,23 +70416,34 @@
      "moat": 65,
      "adoption": 50
     },
+    "qwen": {
+     "overall": 50,
+     "automation": 58,
+     "augmentation": 78,
+     "digital": 75,
+     "moat": 42,
+     "adoption": 68
+    },
+    "wenxin": {
+     "overall": 30
+    },
     "yuanbao": {
      "overall": 50
     },
-    "deepseek": {
-     "overall": 35
+    "zhipu": {
+     "overall": 38
     }
    },
    "rationales": {
     "claude": "电力热力气体水生产输配:巡检自动化",
+    "deepseek": "智能调度和远程监控替代值守岗，但高压检修和突发停送电操作保留刚需",
     "gpt": "监控调度和预测维护会越来越 AI 化，但现场维护和安全责任很重",
     "grok": "系统调度自动化，维护现场化",
-    "qwen": "电网调度由AI优化，现场检修与应急抢修依赖人工",
-    "zhipu": "AI优化调度与预测，但现场运维仍需人",
-    "wenxin": "系统监控AI可替代部分，但现场操作需人",
     "kimi": "中控自动化成熟，但管线巡检与应急抢修需人",
+    "qwen": "电网调度由AI优化，现场检修与应急抢修依赖人工",
+    "wenxin": "系统监控AI可替代部分，但现场操作需人",
     "yuanbao": "调度中心高度自动化，现场维护需人",
-    "deepseek": "智能调度和远程监控替代值守岗，但高压检修和突发停送电操作保留刚需"
+    "zhipu": "AI优化调度与预测，但现场运维仍需人"
    },
    "n_models": 9,
    "std": 7.8,
@@ -71883,6 +71883,9 @@
      "moat": 80,
      "adoption": 40
     },
+    "deepseek": {
+     "overall": 15
+    },
     "gpt": {
      "overall": 18,
      "automation": 16,
@@ -71899,20 +71902,6 @@
      "moat": 85,
      "adoption": 25
     },
-    "qwen": {
-     "overall": 20,
-     "automation": 40,
-     "augmentation": 60,
-     "digital": 50,
-     "moat": 60,
-     "adoption": 45
-    },
-    "zhipu": {
-     "overall": 15
-    },
-    "wenxin": {
-     "overall": 20
-    },
     "kimi": {
      "overall": 15,
      "automation": 15,
@@ -71921,23 +71910,34 @@
      "moat": 88,
      "adoption": 20
     },
+    "qwen": {
+     "overall": 20,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 45
+    },
+    "wenxin": {
+     "overall": 20
+    },
     "yuanbao": {
      "overall": 20
     },
-    "deepseek": {
+    "zhipu": {
      "overall": 15
     }
    },
    "rationales": {
     "claude": "建筑施工:现场作业为主,冲击低",
+    "deepseek": "砌筑抹灰等部分工序有机器人尝试，但工地环境高度非结构化，全周期人工作业韧性极强",
     "gpt": "现场不可预测性太强，AI 主要辅助设计、调度和安全管理",
     "grok": "高空和复杂现场作业",
-    "qwen": "现场环境多变且不可预测，施工建造难以标准化，AI主要用于设计与监理环节",
-    "zhipu": "工地环境不可预测，体力与现场操作为主",
-    "wenxin": "现场施工依赖体力与技能，AI难以替代",
     "kimi": "现场重体力、不可预测环境与安全责任，AI 仅作辅助",
+    "qwen": "现场环境多变且不可预测，施工建造难以标准化，AI主要用于设计与监理环节",
+    "wenxin": "现场施工依赖体力与技能，AI难以替代",
     "yuanbao": "现场环境复杂，机器人替代慢",
-    "deepseek": "砌筑抹灰等部分工序有机器人尝试，但工地环境高度非结构化，全周期人工作业韧性极强"
+    "zhipu": "工地环境不可预测，体力与现场操作为主"
    },
    "n_models": 9,
    "std": 5.6,
@@ -72768,6 +72768,9 @@
      "moat": 64,
      "adoption": 50
     },
+    "deepseek": {
+     "overall": 30
+    },
     "gpt": {
      "overall": 24,
      "automation": 24,
@@ -72784,20 +72787,6 @@
      "moat": 75,
      "adoption": 35
     },
-    "qwen": {
-     "overall": 30,
-     "automation": 45,
-     "augmentation": 65,
-     "digital": 55,
-     "moat": 55,
-     "adoption": 50
-    },
-    "zhipu": {
-     "overall": 32
-    },
-    "wenxin": {
-     "overall": 25
-    },
     "kimi": {
      "overall": 35,
      "automation": 30,
@@ -72806,23 +72795,34 @@
      "moat": 80,
      "adoption": 35
     },
+    "qwen": {
+     "overall": 30,
+     "automation": 45,
+     "augmentation": 65,
+     "digital": 55,
+     "moat": 55,
+     "adoption": 50
+    },
+    "wenxin": {
+     "overall": 25
+    },
     "yuanbao": {
      "overall": 40
     },
-    "deepseek": {
-     "overall": 30
+    "zhipu": {
+     "overall": 32
     }
    },
    "rationales": {
     "claude": "运输设备和工程机械操作:辅助驾驶渐进",
+    "deepseek": "矿山和码头已现无人驾驶，但市政和农田等复杂场景通用操作仍由人驾驭",
     "gpt": "自动驾驶和远程控制会慢慢推进，但复杂工地仍高度依赖人工",
     "grok": "驾驶操作仍为主",
-    "qwen": "工程机械远程操控发展迅速，但多数作业仍需现场驾驶与操作",
-    "zhipu": "自动驾驶推进中，但复杂工地仍需人操作",
-    "wenxin": "设备操作需人，AI辅助导航",
     "kimi": "驾驶与操作岗位受自动驾驶与远程操控冲击",
+    "qwen": "工程机械远程操控发展迅速，但多数作业仍需现场驾驶与操作",
+    "wenxin": "设备操作需人，AI辅助导航",
     "yuanbao": "自动驾驶与遥控逐步渗透",
-    "deepseek": "矿山和码头已现无人驾驶，但市政和农田等复杂场景通用操作仍由人驾驭"
+    "zhipu": "自动驾驶推进中，但复杂工地仍需人操作"
    },
    "n_models": 9,
    "std": 6.6,
@@ -73979,6 +73979,9 @@
      "moat": 60,
      "adoption": 52
     },
+    "deepseek": {
+     "overall": 40
+    },
     "gpt": {
      "overall": 72,
      "automation": 48,
@@ -73995,20 +73998,6 @@
      "moat": 50,
      "adoption": 55
     },
-    "qwen": {
-     "overall": 65,
-     "automation": 55,
-     "augmentation": 75,
-     "digital": 70,
-     "moat": 45,
-     "adoption": 60
-    },
-    "zhipu": {
-     "overall": 52
-    },
-    "wenxin": {
-     "overall": 78
-    },
     "kimi": {
      "overall": 50,
      "automation": 50,
@@ -74017,23 +74006,34 @@
      "moat": 50,
      "adoption": 55
     },
+    "qwen": {
+     "overall": 65,
+     "automation": 55,
+     "augmentation": 75,
+     "digital": 70,
+     "moat": 45,
+     "adoption": 60
+    },
+    "wenxin": {
+     "overall": 78
+    },
     "yuanbao": {
      "overall": 70
     },
-    "deepseek": {
-     "overall": 40
+    "zhipu": {
+     "overall": 52
     }
    },
    "rationales": {
     "claude": "生产辅助人员",
+    "deepseek": "质检和排产调度AI化程度高，但物料搬运和仓储理货在非标场景下仍需人",
     "gpt": "排产、质检、仓储、跟单、记录这些都很适合被 AI 吃掉",
     "grok": "物流和辅助数据高度优化",
-    "qwen": "物料配送、设备点检等任务由AGV和AI监控系统替代，人工转向异常响应与系统维护",
-    "zhipu": "质检与数据采集可被AI替代部分，调度优化空间大",
-    "wenxin": "如仓库管理、质检，重复性高可被AI替代",
     "kimi": "质检、物料搬运与设备维护被 AI 视觉与自动化渗透",
+    "qwen": "物料配送、设备点检等任务由AGV和AI监控系统替代，人工转向异常响应与系统维护",
+    "wenxin": "如仓库管理、质检，重复性高可被AI替代",
     "yuanbao": "物料、质检等规则性强，AI 替代度高",
-    "deepseek": "质检和排产调度AI化程度高，但物料搬运和仓储理货在非标场景下仍需人"
+    "zhipu": "质检与数据采集可被AI替代部分，调度优化空间大"
    },
    "n_models": 9,
    "std": 12.4,
@@ -74144,6 +74144,9 @@
      "moat": 60,
      "adoption": 50
     },
+    "deepseek": {
+     "overall": 35
+    },
     "gpt": {
      "overall": 40,
      "automation": 34,
@@ -74160,20 +74163,6 @@
      "moat": 62,
      "adoption": 45
     },
-    "qwen": {
-     "overall": 50,
-     "automation": 48,
-     "augmentation": 68,
-     "digital": 58,
-     "moat": 52,
-     "adoption": 53
-    },
-    "zhipu": {
-     "overall": 32
-    },
-    "wenxin": {
-     "overall": 35
-    },
     "kimi": {
      "overall": 40,
      "automation": 40,
@@ -74182,23 +74171,34 @@
      "moat": 60,
      "adoption": 40
     },
+    "qwen": {
+     "overall": 50,
+     "automation": 48,
+     "augmentation": 68,
+     "digital": 58,
+     "moat": 52,
+     "adoption": 53
+    },
+    "wenxin": {
+     "overall": 35
+    },
     "yuanbao": {
      "overall": 55
     },
-    "deepseek": {
-     "overall": 35
+    "zhipu": {
+     "overall": 32
     }
    },
    "rationales": {
     "claude": "其他生产制造人员",
+    "deepseek": "取决于具体岗位与自动化产线的耦合度，边缘工序保留较多",
     "gpt": "如果岗位偏标准流程和信息流，AI 冲击会很明显",
     "grok": "混合体力导向",
-    "qwen": "总体处于自动化升级进程中，AI对传统岗位构成中等程度冲击",
-    "zhipu": "构成异质，取中间值",
-    "wenxin": "差异大但整体中等冲击",
     "kimi": "岗位边界模糊，整体以制造现场为主",
+    "qwen": "总体处于自动化升级进程中，AI对传统岗位构成中等程度冲击",
+    "wenxin": "差异大但整体中等冲击",
     "yuanbao": "零散工种，整体中等偏上",
-    "deepseek": "取决于具体岗位与自动化产线的耦合度，边缘工序保留较多"
+    "zhipu": "构成异质，取中间值"
    },
    "n_models": 9,
    "std": 7.3,
@@ -74305,6 +74305,20 @@
      "moat": 72,
      "adoption": 46
     },
+    "deepseek": {
+     "overall": 30
+    },
+    "doubao": {
+     "overall": 40,
+     "automation": 30,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 35
+    },
+    "gemini": {
+     "overall": 85
+    },
     "gpt": {
      "overall": 38,
      "automation": 20,
@@ -74321,13 +74335,13 @@
      "moat": 92,
      "adoption": 15
     },
-    "doubao": {
-     "overall": 40,
-     "automation": 30,
-     "augmentation": 60,
-     "digital": 50,
-     "moat": 60,
-     "adoption": 35
+    "kimi": {
+     "overall": 10,
+     "automation": 10,
+     "augmentation": 30,
+     "digital": 25,
+     "moat": 95,
+     "adoption": 15
     },
     "qwen": {
      "overall": 65,
@@ -74337,41 +74351,27 @@
      "moat": 70,
      "adoption": 35
     },
-    "zhipu": {
-     "overall": 25
-    },
     "wenxin": {
      "overall": 20
-    },
-    "kimi": {
-     "overall": 10,
-     "automation": 10,
-     "augmentation": 30,
-     "digital": 25,
-     "moat": 95,
-     "adoption": 15
     },
     "yuanbao": {
      "overall": 10
     },
-    "deepseek": {
-     "overall": 30
-    },
-    "gemini": {
-     "overall": 85
+    "zhipu": {
+     "overall": 25
     }
    },
    "rationales": {
     "claude": "军官警官:特殊领域,样例参考",
+    "deepseek": "AI赋能战场态势融合和方案推演，但指挥责任、士气激励和交战规则判定必须由人掌握",
+    "gemini": "战略博弈、地缘心理战与兵力统筹涉及人类最复杂的生死抉择与政治目标妥协，AI永远只能充当提供火力概率的冰冷参谋。综合冲击 157-02 军士(",
     "gpt": "情报分析、文书、训练规划和指挥辅助会被 AI 强化，但决策责任仍在人",
     "grok": "指挥决策和战场判断高度人为",
-    "qwen": "作战方案拟制、战场态势感知由AI系统辅助生成，大幅提升信息处理效率，最终作战决策权仍掌握在指挥员手中",
-    "zhipu": "指挥决策需战场直觉与责任担当，AI辅助情报分析与作战模拟",
-    "wenxin": "战略决策与指挥，AI辅助情报但责任在军官",
     "kimi": "指挥决策、战场应变与政治属性为核心，AI 仅作情报辅助",
+    "qwen": "作战方案拟制、战场态势感知由AI系统辅助生成，大幅提升信息处理效率，最终作战决策权仍掌握在指挥员手中",
+    "wenxin": "战略决策与指挥，AI辅助情报但责任在军官",
     "yuanbao": "指挥决策与带兵核心在人",
-    "deepseek": "AI赋能战场态势融合和方案推演，但指挥责任、士气激励和交战规则判定必须由人掌握",
-    "gemini": "战略博弈、地缘心理战与兵力统筹涉及人类最复杂的生死抉择与政治目标妥协，AI永远只能充当提供火力概率的冰冷参谋。综合冲击 157-02 军士("
+    "zhipu": "指挥决策需战场直觉与责任担当，AI辅助情报分析与作战模拟"
    },
    "n_models": 11,
    "std": 21.7,
@@ -74481,6 +74481,17 @@
      "moat": 72,
      "adoption": 44
     },
+    "deepseek": {
+     "overall": 20
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 30
+    },
     "gpt": {
      "overall": 22,
      "automation": 12,
@@ -74497,13 +74508,13 @@
      "moat": 88,
      "adoption": 18
     },
-    "doubao": {
-     "overall": 35,
-     "automation": 25,
-     "augmentation": 55,
-     "digital": 45,
-     "moat": 65,
-     "adoption": 30
+    "kimi": {
+     "overall": 15,
+     "automation": 8,
+     "augmentation": 25,
+     "digital": 20,
+     "moat": 95,
+     "adoption": 12
     },
     "qwen": {
      "overall": 60,
@@ -74513,37 +74524,26 @@
      "moat": 65,
      "adoption": 40
     },
-    "zhipu": {
-     "overall": 10
-    },
     "wenxin": {
      "overall": 15
-    },
-    "kimi": {
-     "overall": 15,
-     "automation": 8,
-     "augmentation": 25,
-     "digital": 20,
-     "moat": 95,
-     "adoption": 12
     },
     "yuanbao": {
      "overall": 10
     },
-    "deepseek": {
-     "overall": 20
+    "zhipu": {
+     "overall": 10
     }
    },
    "rationales": {
     "claude": "军士警士:特殊领域,样例参考",
+    "deepseek": "装备智能维护和辅助教学系统提升效率，但基层带兵、日常训管和实战技能示范无法被AI取代",
     "gpt": "训练、维护、保障和现场执行都很强，AI 主要是辅助工具",
     "grok": "一线执行和训练督导",
-    "qwen": "装备操作与战术执行中接收AI指令支持，实战应变、临场判断及复杂环境适应能力不可替代",
-    "zhipu": "一线作战与训练以体能和现场为主，AI几乎无法介入",
-    "wenxin": "训练与执行任务，现场操作需人",
     "kimi": "战术执行、装备操作与团队管理依赖现场经验",
+    "qwen": "装备操作与战术执行中接收AI指令支持，实战应变、临场判断及复杂环境适应能力不可替代",
+    "wenxin": "训练与执行任务，现场操作需人",
     "yuanbao": "技术与操作骨干，AI 难替代表率作用",
-    "deepseek": "装备智能维护和辅助教学系统提升效率，但基层带兵、日常训管和实战技能示范无法被AI取代"
+    "zhipu": "一线作战与训练以体能和现场为主，AI几乎无法介入"
    },
    "n_models": 10,
    "std": 14.8,
@@ -74653,6 +74653,17 @@
      "moat": 74,
      "adoption": 40
     },
+    "deepseek": {
+     "overall": 15
+    },
+    "doubao": {
+     "overall": 8,
+     "automation": 35,
+     "augmentation": 65,
+     "digital": 60,
+     "moat": 55,
+     "adoption": 40
+    },
     "gpt": {
      "overall": 12,
      "automation": 8,
@@ -74669,13 +74680,13 @@
      "moat": 95,
      "adoption": 10
     },
-    "doubao": {
-     "overall": 8,
-     "automation": 35,
-     "augmentation": 65,
-     "digital": 60,
-     "moat": 55,
-     "adoption": 40
+    "kimi": {
+     "overall": 10,
+     "automation": 5,
+     "augmentation": 20,
+     "digital": 15,
+     "moat": 95,
+     "adoption": 10
     },
     "qwen": {
      "overall": 40,
@@ -74685,38 +74696,27 @@
      "moat": 70,
      "adoption": 35
     },
-    "zhipu": {
-     "overall": 5
-    },
     "wenxin": {
      "overall": 12
-    },
-    "kimi": {
-     "overall": 10,
-     "automation": 5,
-     "augmentation": 20,
-     "digital": 15,
-     "moat": 95,
-     "adoption": 10
     },
     "yuanbao": {
      "overall": 5
     },
-    "deepseek": {
-     "overall": 15
+    "zhipu": {
+     "overall": 5
     }
    },
    "rationales": {
     "claude": "义务兵:特殊领域,样例参考",
+    "deepseek": "无人化装备操作比例上升将部分改变执勤形态，但体能、意志和基本战斗技能训练仍是人的绝对领域",
+    "doubao": "其他从业人员 总冲击 35 大类总结：本大类为无法被归入上述七大类的特殊岗位集合，这类岗位的工作内容、场景、任务逻辑存在高度差异化特征，行业",
     "gpt": "岗位本身更偏执行与纪律，AI 对其直接重塑有限",
     "grok": "基础体能和服从执行",
-    "doubao": "其他从业人员 总冲击 35 大类总结：本大类为无法被归入上述七大类的特殊岗位集合，这类岗位的工作内容、场景、任务逻辑存在高度差异化特征，行业",
-    "qwen": "基础军事训练可通过VR与AI教练系统强化，战场勤务与一线作战高度依赖人力执行，AI影响极为有限",
-    "zhipu": "基层军事训练与作战以体力为主，AI无从替代",
-    "wenxin": "基础军事技能，AI难以替代",
     "kimi": "基础训练与勤务执行以人身行动为主，AI 几乎无关",
+    "qwen": "基础军事训练可通过VR与AI教练系统强化，战场勤务与一线作战高度依赖人力执行，AI影响极为有限",
+    "wenxin": "基础军事技能，AI难以替代",
     "yuanbao": "基础执行层，训练与纪律体系非 AI 目标",
-    "deepseek": "无人化装备操作比例上升将部分改变执勤形态，但体能、意志和基本战斗技能训练仍是人的绝对领域"
+    "zhipu": "基层军事训练与作战以体力为主，AI无从替代"
    },
    "n_models": 10,
    "std": 11.4,
@@ -74825,6 +74825,17 @@
      "moat": 52,
      "adoption": 54
     },
+    "deepseek": {
+     "overall": 55
+    },
+    "doubao": {
+     "overall": 35,
+     "automation": 25,
+     "augmentation": 55,
+     "digital": 45,
+     "moat": 65,
+     "adoption": 30
+    },
     "gpt": {
      "overall": 58,
      "automation": 28,
@@ -74841,13 +74852,13 @@
      "moat": 65,
      "adoption": 40
     },
-    "doubao": {
-     "overall": 35,
-     "automation": 25,
-     "augmentation": 55,
-     "digital": 45,
-     "moat": 65,
-     "adoption": 30
+    "kimi": {
+     "overall": 30,
+     "automation": 35,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 70,
+     "adoption": 45
     },
     "qwen": {
      "overall": 70,
@@ -74857,37 +74868,26 @@
      "moat": 55,
      "adoption": 50
     },
-    "zhipu": {
-     "overall": 42
-    },
     "wenxin": {
      "overall": 25
-    },
-    "kimi": {
-     "overall": 30,
-     "automation": 35,
-     "augmentation": 60,
-     "digital": 50,
-     "moat": 70,
-     "adoption": 45
     },
     "yuanbao": {
      "overall": 20
     },
-    "deepseek": {
-     "overall": 55
+    "zhipu": {
+     "overall": 42
     }
    },
    "rationales": {
     "claude": "文职人员:文书与技术保障类被增强",
+    "deepseek": "军事领域的行政、财务、档案管理等文书工作受AI冲击模式与地方同类岗位一致",
     "gpt": "文书、统计、后勤、流程管理会被 AI 明显改写",
     "grok": "后勤和行政支持，部分信息工作受影响",
-    "qwen": "行政管理、科研支持、医疗保障等岗位受AI冲击程度与其他行业同类岗位相当，流程性工作被自动化取代",
-    "zhipu": "行政与后勤部分可被AI替代，是军队中冲击最高的",
-    "wenxin": "行政与后勤，部分可被AI替代",
     "kimi": "行政、技术与后勤管理受办公自动化与 AI 渗透，但涉密与纪律限制深度应用",
+    "qwen": "行政管理、科研支持、医疗保障等岗位受AI冲击程度与其他行业同类岗位相当，流程性工作被自动化取代",
+    "wenxin": "行政与后勤，部分可被AI替代",
     "yuanbao": "行政与技术岗位，部分文书可被自动化",
-    "deepseek": "军事领域的行政、财务、档案管理等文书工作受AI冲击模式与地方同类岗位一致"
+    "zhipu": "行政与后勤部分可被AI替代，是军队中冲击最高的"
    },
    "n_models": 10,
    "std": 15.4,
@@ -75036,6 +75036,12 @@
      "moat": 56,
      "adoption": 50
     },
+    "deepseek": {
+     "overall": 30
+    },
+    "gemini": {
+     "overall": 40
+    },
     "gpt": {
      "overall": 40,
      "automation": 30,
@@ -75052,20 +75058,6 @@
      "moat": 70,
      "adoption": 30
     },
-    "qwen": {
-     "overall": 50,
-     "automation": 40,
-     "augmentation": 60,
-     "digital": 50,
-     "moat": 60,
-     "adoption": 45
-    },
-    "zhipu": {
-     "overall": 32
-    },
-    "wenxin": {
-     "overall": 40
-    },
     "kimi": {
      "overall": 40,
      "automation": 30,
@@ -75074,27 +75066,35 @@
      "moat": 65,
      "adoption": 30
     },
+    "qwen": {
+     "overall": 50,
+     "automation": 40,
+     "augmentation": 60,
+     "digital": 50,
+     "moat": 60,
+     "adoption": 45
+    },
+    "wenxin": {
+     "overall": 40
+    },
     "yuanbao": {
      "overall": 50
     },
-    "deepseek": {
-     "overall": 30
-    },
-    "gemini": {
-     "overall": 40
+    "zhipu": {
+     "overall": 32
     }
    },
    "rationales": {
     "claude": "不便分类的其他从业人员",
+    "deepseek": "职业形态非标、边界模糊，通常需复合技能和灵活应变，暂非AI能整体重塑",
+    "gemini": "任务通常在物理跑腿、碎片化本地服务与零星线上数字接单之间频繁切换，虽然受算法平台控制日益加深，但彻底剥离人类实体的难度较大",
     "gpt": "只要岗位带有明显的信息整理、协调、标准流程属性，AI 冲击就会往上走",
     "grok": "包含多种边缘或过渡职业，AI渗透程度差异大",
-    "qwen": "包括零工经济参与者、自由撰稿人、小微创业者等，部分可通过AIGC工具实现内容生成与流程自动化以提升效率，但其生存核心仍依赖差异化服务能力、人",
-    "zhipu": "构成不明，假设以低端服务业与零工为主，线下操作居多，AI冲击有限",
-    "wenxin": "如灵活就业、临时工等，冲击因岗位而异",
     "kimi": "类别不明，取中位数估计。",
+    "qwen": "包括零工经济参与者、自由撰稿人、小微创业者等，部分可通过AIGC工具实现内容生成与流程自动化以提升效率，但其生存核心仍依赖差异化服务能力、人",
+    "wenxin": "如灵活就业、临时工等，冲击因岗位而异",
     "yuanbao": "涵盖边缘与新兴混合岗位，AI 冲击不一",
-    "deepseek": "职业形态非标、边界模糊，通常需复合技能和灵活应变，暂非AI能整体重塑",
-    "gemini": "任务通常在物理跑腿、碎片化本地服务与零星线上数字接单之间频繁切换，虽然受算法平台控制日益加深，但彻底剥离人类实体的难度较大"
+    "zhipu": "构成不明，假设以低端服务业与零工为主，线下操作居多，AI冲击有限"
    },
    "n_models": 10,
    "std": 6.7,

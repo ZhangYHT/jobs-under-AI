@@ -116,7 +116,7 @@ def main():
 
         # ---- 步骤4 打分:综合冲击优先取自然语言版(更拉开),子维取 JSON 版 ----
         by_model, mean, median, std = {}, {}, {}, {}
-        for m in (set(scn) | set(sc)):                       # 综合冲击
+        for m in sorted(set(scn) | set(sc)):                 # 综合冲击(sorted 保证 by_model 键序稳定,避免每次跑出无意义大 diff)
             ov = scn[m][code].get('overall') if code in scn.get(m, {}) else None
             if ov is None and code in sc.get(m, {}): ov = sc[m][code].get('overall')
             if ov is not None: by_model.setdefault(m, {})['overall'] = ov
@@ -212,8 +212,17 @@ def main():
     json.dump(agg, open(p('data', 'aggregated.cn.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     # 同时输出站点可直接 <script> 加载的数据(双击 HTML 也能渲染,免本地服务器)
     os.makedirs(p('site'), exist_ok=True)
-    open(p('site', 'data.cn.js'), 'w', encoding='utf-8').write(
-        'window.DATA=' + json.dumps(agg, ensure_ascii=False) + ';')
+    data_js = 'window.DATA=' + json.dumps(agg, ensure_ascii=False) + ';'
+    open(p('site', 'data.cn.js'), 'w', encoding='utf-8').write(data_js)
+    # 自包含单文件:把数据内联进 HTML,免相对路径(供 WordPress 等自托管直接上传;GitHub Pages 仍用双文件 index.html)
+    idx = open(p('site', 'index.html'), encoding='utf-8').read()
+    marker = '<script src="data.cn.js"></script>'
+    if marker in idx:
+        inline = '<script>' + data_js.replace('</', '<\\/') + '</script>'  # 转义 </ 防数据里万一出现 </script> 提前闭合
+        open(p('site', 'index.standalone.html'), 'w', encoding='utf-8').write(idx.replace(marker, inline, 1))
+        print('✅ index.standalone.html:数据已内联,免路径自托管版')
+    else:
+        print('⚠ 未在 index.html 找到 data.cn.js 引用,跳过自包含单文件(检查加载方式是否变了)')
 
     # QA 报告
     by_flag = collections.defaultdict(list)
