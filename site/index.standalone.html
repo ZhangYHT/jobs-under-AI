@@ -42,6 +42,24 @@
   .search input{background:var(--panel);border:1px solid var(--line);color:var(--text);border-radius:9px;padding:7px 12px 7px 30px;font-size:12.5px;width:160px;outline:none;transition:.16s;}
   .search input:focus{border-color:var(--accent);width:200px;}
   .search svg{position:absolute;left:9px;top:50%;transform:translateY(-50%);opacity:.55;}
+  /* C4 搜索结果下拉 */
+  #sResults{position:absolute;top:calc(100% + 5px);left:0;z-index:60;width:312px;max-width:80vw;max-height:344px;overflow-y:auto;
+    background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);
+    border-radius:11px;box-shadow:var(--shadow);padding:5px;display:none;}
+  #sResults.show{display:block;}
+  #sResults .sr{display:flex;align-items:center;gap:7px;padding:6px 8px;border-radius:8px;cursor:pointer;}
+  #sResults .sr:hover,#sResults .sr.sel{background:var(--panel2);}
+  #sResults .sr .sc{flex:none;min-width:24px;text-align:center;font-size:10.5px;font-weight:700;color:#fff;border-radius:20px;padding:1px 6px;}
+  #sResults .sr .nm{color:var(--text);font-weight:600;font-size:12px;flex:1;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  #sResults .sr .pa{color:var(--soft);font-size:10px;flex:none;max-width:38%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
+  #sResults .sr .tag2{flex:none;font-size:9px;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:0 4px;}
+  #sResults .none{padding:10px;color:var(--soft);font-size:11.5px;text-align:center;}
+  /* C4 维度阈值筛选 */
+  #filt{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--muted);background:var(--panel2);border:1px solid var(--line);padding:4px 10px;border-radius:8px;}
+  #filt input[type=range]{width:92px;accent-color:var(--accent);cursor:pointer;height:14px;}
+  #filt .fv{min-width:64px;font-variant-numeric:tabular-nums;}
+  #filt .freset{cursor:pointer;color:var(--accent);border:none;background:none;font-size:11px;font-family:inherit;padding:0;}
+  #filt.dis{opacity:.42;pointer-events:none;}
   .tg{display:flex;flex-wrap:wrap;gap:6px;}
   .tg button{background:var(--panel2);color:var(--muted);border:1px solid var(--line);padding:6px 10px;border-radius:8px;font-size:12px;cursor:pointer;transition:.16s;}
   .tg button:hover{color:var(--text);}
@@ -263,13 +281,14 @@
 <div id="top">
   <div class="head"><h1>AI 时代各岗位冲击图谱 · 中国版</h1><div class="sub" id="sub"></div><div class="sp"></div><button class="pill" id="aboutBtn" type="button" aria-label="关于与数据方法">&#9432; 说明</button><button class="pill" id="themebtn">🌗 跟随设备</button></div>
   <div class="row1">
-    <div class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="search" placeholder="搜索职业…"></div>
+    <div class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="search" placeholder="搜索职业…" autocomplete="off"><div id="sResults"></div></div>
     <div class="tg" id="tg"></div>
     <div class="sw" id="disagree"><span class="dot"></span>模型分歧</div>
     <div class="legend"><span id="legLo">低</span><div class="bar" id="legbar"></div><span id="legHi">高</span><span id="legNote" style="margin-left:3px"></span></div>
   </div>
   <div class="row1" style="margin-bottom:9px">
     <div class="tier-legend" id="tierLegend"><span class="tt">等级色阶</span></div>
+    <div id="filt"><span>筛选</span><input type="range" id="filtR" min="0" max="100" step="5" value="0" aria-label="按当前维度筛选方块"><span class="fv" id="filtV">全部</span><button type="button" class="freset" id="filtReset">重置</button></div>
   </div>
   <div class="cards">
     <div class="card"><div class="ct">概况(当前视图)</div><div class="grid2">
@@ -341,7 +360,7 @@ const ALLZ=[];TREE.forEach(d=>d.children.forEach(g=>{g.da=d.name;g.daCode=d.code
 const DA=TREE.map(d=>{const t=d.children.reduce((s,g)=>s+(g.employment||0),0)||1;
   return {code:d.code,name:d.name,jobs:t,overall:Math.round(d.children.reduce((s,g)=>s+(g.dims.overall||0)*(g.employment||0),0)/t),children:d.children,summary:(DASUM[d.code]||{}).summary||''};}).sort((a,b)=>b.overall-a.overall);
 
-const S={dim:'overall',drill:null,leaf:null,disagree:false,query:''};
+const S={dim:'overall',drill:null,leaf:null,disagree:false,query:'',minPct:0};
 const mq=matchMedia('(prefers-color-scheme: dark)');let themeMode='auto';
 const theme=()=>themeMode==='auto'?(mq.matches?'dark':'light'):themeMode;
 const RAMP={dark:[[64,160,150],[128,178,108],[224,190,104],[226,138,84],[206,78,94]],light:[[36,150,138],[110,170,86],[212,168,72],[214,120,72],[196,64,86]]};
@@ -386,7 +405,8 @@ function computeTargets(){const T=[],L=[],pad=6;
 function rebuild(o){const{T,L}=computeTargets();daLabels=L;const m=new Map(tiles.map(t=>[t.id,t]));
   T.forEach(t=>{const p=m.get(t.id);if(p){Object.assign(t,{cx:p.cx,cy:p.cy,cw:p.cw,ch:p.ch,alpha:p.alpha,cr:p.cr,cg:p.cg,cb:p.cb,hl:p.hl||0});}
     else{const c=tileRGB(t);Object.assign(t,{cx:o.x,cy:o.y,cw:o.w,ch:o.h,alpha:0,cr:c[0],cg:c[1],cb:c[2],hl:0});}});tiles=T;}
-const matches=t=>!S.query||t.node.name.toLowerCase().includes(S.query.toLowerCase())||(t.kind==='zhong'&&(t.node['细类']||[]).some(k=>k.title.toLowerCase().includes(S.query.toLowerCase())));
+const passFilter=t=>S.minPct<=0||S.disagree||(metricV(t.node).c01*100)>=S.minPct;
+const matches=t=>(!S.query||t.node.name.toLowerCase().includes(S.query.toLowerCase())||(t.kind==='zhong'&&(t.node['细类']||[]).some(k=>k.title.toLowerCase().includes(S.query.toLowerCase()))))&&passFilter(t);
 function rr(x,y,w,h,r){r=Math.max(0,Math.min(r,w/2,h/2));ctx.beginPath();ctx.moveTo(x+r,y);ctx.arcTo(x+w,y,x+w,y+h,r);ctx.arcTo(x+w,y+h,x,y+h,r);ctx.arcTo(x,y+h,x,y,r);ctx.arcTo(x,y,x+w,y,r);ctx.closePath();}
 function wrap(name,maxW,maxLines){const out=[];let cur='';for(const ch of name){if(ctx.measureText(cur+ch).width>maxW&&cur){out.push(cur);cur=ch;if(out.length===maxLines-1){if(ctx.measureText(cur).width>maxW){while(cur&&ctx.measureText(cur+'…').width>maxW)cur=cur.slice(0,-1);cur+='…';}out.push(cur);return out;}}else cur+=ch;}if(cur)out.push(cur);return out;}
 function paintTile(x,y,w,h,c,node,hl,alpha){ctx.globalAlpha=node.pending?alpha*.5:alpha;ctx.save();if(hl>.02){ctx.shadowColor='rgba(0,0,0,.55)';ctx.shadowBlur=18*hl;ctx.shadowOffsetY=6*hl;}
@@ -518,9 +538,45 @@ cv.addEventListener('click',e=>{const r=cv.getBoundingClientRect();const t=hit(e
 const tg=document.getElementById('tg');
 METRICS.forEach(d=>{const b=document.createElement('button');b.dataset.key=d.key;b.textContent=d.label;if(d.main)b.classList.add('active');if(d.extra)b.classList.add('extra');
   if(d.desc){const q=document.createElement('span');q.className='qm';q.dataset.desc=d.desc;q.textContent='?';q.onclick=ev=>ev.stopPropagation();b.appendChild(q);}
-  b.onclick=()=>{S.dim=d.key;S.disagree=false;document.getElementById('disagree').classList.remove('on');[...tg.children].forEach(x=>x.classList.remove('active'));b.classList.add('active');updateRange();updateLegend();};tg.appendChild(b);});
-const dis=document.getElementById('disagree');dis.onclick=()=>{S.disagree=!S.disagree;dis.classList.toggle('on',S.disagree);updateLegend();};
-document.getElementById('search').addEventListener('input',e=>{S.query=e.target.value.trim();});
+  b.onclick=()=>{S.dim=d.key;S.disagree=false;document.getElementById('disagree').classList.remove('on');[...tg.children].forEach(x=>x.classList.remove('active'));b.classList.add('active');resetFilt();updateRange();updateLegend();};tg.appendChild(b);});
+const dis=document.getElementById('disagree');dis.onclick=()=>{S.disagree=!S.disagree;dis.classList.toggle('on',S.disagree);syncFiltDisabled();updateLegend();};
+// C4 搜索结果下拉(可跨层直接跳到具体职业)
+const SI=[];
+ALLZ.forEach(g=>{SI.push({k:'z',code:g.code,nm:g.name,en:(g.english||''),da:g.da,emp:g.employment||0,node:g});
+  (g['细类']||[]).forEach(x=>SI.push({k:'l',code:x.code,zcode:g.code,nm:x.title,en:'',da:g.da,zhong:g.name,emp:x.employment||0,node:x}));});
+const searchEl=document.getElementById('search'),sRes=document.getElementById('sResults');
+let curHits=[],selIdx=-1;
+const ovOf=n=>n.overall!=null?n.overall:(n.dims&&n.dims.overall!=null?n.dims.overall:null);
+const sChip=n=>{const o=ovOf(n);return o==null?'<span class="sc" style="background:var(--line)">-</span>':'<span class="sc" style="background:'+colorAbs(o)+'">'+o+'</span>';};
+function rankHits(q){q=q.toLowerCase();const out=[];for(const it of SI){const nm=it.nm.toLowerCase();let s;if(nm.startsWith(q))s=0;else if(nm.includes(q))s=1;else if(it.en&&it.en.toLowerCase().includes(q))s=2;else continue;out.push([s,-it.emp,it]);}out.sort((a,b)=>a[0]-b[0]||a[1]-b[1]);return out.slice(0,12).map(x=>x[2]);}
+function renderResults(q){if(!q){sRes.classList.remove('show');sRes.innerHTML='';curHits=[];selIdx=-1;return;}
+  curHits=rankHits(q);selIdx=-1;
+  if(!curHits.length){sRes.innerHTML='<div class="none">没有匹配的职业</div>';sRes.classList.add('show');return;}
+  sRes.innerHTML=curHits.map((it,i)=>'<div class="sr" data-i="'+i+'">'+sChip(it.node)+'<span class="nm">'+esc(it.nm)+'</span><span class="pa">'+esc(it.da)+(it.k==='l'?' › '+esc(it.zhong):'')+'</span><span class="tag2">'+(it.k==='l'?'细类':'中类')+'</span></div>').join('');
+  sRes.classList.add('show');
+  [...sRes.querySelectorAll('.sr')].forEach(el=>el.addEventListener('mousedown',ev=>{ev.preventDefault();pickHit(+el.dataset.i);}));}
+function pickHit(i){const it=curHits[i];if(it)jumpTo(it);}
+function jumpTo(it){searchEl.value='';S.query='';sRes.classList.remove('show');sRes.innerHTML='';curHits=[];selIdx=-1;
+  S.leaf=null;S.drill=null;rebuild(full());top.classList.remove('detail');backTab.style.display='none';
+  const t=tiles.find(x=>x.id==='z:'+(it.k==='l'?it.zcode:it.code));
+  if(t){drillInto(t);if(it.k==='l')openLeaf(it.node);}updateCrumb();updateSummary();}
+function updateSel(){[...sRes.querySelectorAll('.sr')].forEach((el,i)=>el.classList.toggle('sel',i===selIdx));const s=sRes.querySelector('.sr.sel');if(s)s.scrollIntoView({block:'nearest'});}
+searchEl.addEventListener('input',e=>{S.query=e.target.value.trim();renderResults(S.query);});
+searchEl.addEventListener('focus',()=>{if(S.query)renderResults(S.query);});
+searchEl.addEventListener('blur',()=>setTimeout(()=>sRes.classList.remove('show'),160));
+searchEl.addEventListener('keydown',e=>{if(!sRes.classList.contains('show')||!curHits.length)return;
+  if(e.key==='ArrowDown'){e.preventDefault();selIdx=Math.min(curHits.length-1,selIdx+1);updateSel();}
+  else if(e.key==='ArrowUp'){e.preventDefault();selIdx=Math.max(0,selIdx-1);updateSel();}
+  else if(e.key==='Enter'){e.preventDefault();pickHit(selIdx<0?0:selIdx);}
+  else if(e.key==='Escape'){sRes.classList.remove('show');}});
+// C4 维度阈值筛选(按当前维度归一值,连续帧自动应用)
+const filtR=document.getElementById('filtR'),filtV=document.getElementById('filtV'),filtBox=document.getElementById('filt');
+function fmtFilt(){filtV.textContent=S.minPct<=0?'全部':'本维度前 '+(100-S.minPct)+'%';}
+function syncFiltDisabled(){filtBox.classList.toggle('dis',S.disagree);}
+function resetFilt(){S.minPct=0;filtR.value=0;fmtFilt();syncFiltDisabled();}
+filtR.addEventListener('input',()=>{S.minPct=+filtR.value;fmtFilt();});
+document.getElementById('filtReset').onclick=resetFilt;
+fmtFilt();syncFiltDisabled();
 const tbtn=document.getElementById('themebtn');
 function applyTheme(){document.documentElement.dataset.theme=theme();tbtn.textContent=(themeMode==='auto'?'🌗 跟随设备':themeMode==='dark'?'🌙 深色':'☀️ 浅色');updateLegend();updateSummary();updateDa();renderTierLegend();}
 tbtn.onclick=()=>{themeMode=themeMode==='auto'?'light':themeMode==='light'?'dark':'auto';applyTheme();};
@@ -598,7 +654,7 @@ const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bili
 window.addEventListener('resize',resize);
 updateRange();resize();updateCrumb();updateLegend();updateSummary();updateDa();renderTierLegend();setHandle();requestAnimationFrame(frame);requestAnimationFrame(radarFrame);
 window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},back:back,theme:m=>{themeMode=m;applyTheme();},collapse:()=>{top.classList.toggle('collapsed');setHandle();},
-  metric:k=>{S.dim=k;S.disagree=false;dis.classList.remove('on');[...tg.children].forEach(x=>x.classList.toggle('active',x.dataset.key===k));updateRange();updateLegend();},
+  metric:k=>{S.dim=k;S.disagree=false;dis.classList.remove('on');[...tg.children].forEach(x=>x.classList.toggle('active',x.dataset.key===k));resetFilt();updateRange();updateLegend();},
   hover:c=>{const t=tiles.find(x=>x.id==='z:'+c||x.id==='l:'+c);if(t){hoverId=t.id;tipXY=[innerWidth/2,innerHeight*0.62];showTip(t.node,true);}},
   settle:()=>{updateRange();for(const t of tiles){t.cx=t.tx;t.cy=t.ty;t.cw=t.tw;t.ch=t.th;t.alpha=matches(t)?1:.12;const c=tileRGB(t);t.cr=c[0];t.cg=c[1];t.cb=c[2];t.hl=(t.id===hoverId?1:0);}const r=radarT();for(let i=0;i<6;i++)radarCur[i]=r[i];draw();drawRadar(document.getElementById('radarc'),radarCur);if(S.drill){const g=ALLZ.find(x=>x.code===S.drill);if(g){drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>g.dims[k]||0));drawBars(document.getElementById('dvbars'),g);}}}};
 }catch(e){var el=document.getElementById('err');if(el)el.style.display='flex';console.error(e);}
