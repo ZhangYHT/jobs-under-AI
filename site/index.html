@@ -155,6 +155,48 @@
     background:var(--panel2);border:1px solid var(--line);color:var(--accent);font-size:12px;font-weight:600;text-decoration:none;transition:.15s;}
   #supPanel .sp-social a:hover{border-color:var(--accent);transform:translateY(-1px);}
   #supPanel .sp-qr{display:flex;gap:11px;}
+  /* 关于/方法论面板:复用支持抽屉范式,定位在右上(由顶部"说明"按钮触发) */
+  #aboutMask{position:fixed;inset:0;z-index:48;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;transition:opacity .3s;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);}
+  #aboutMask.show{opacity:1;pointer-events:auto;}
+  #aboutPanel{position:fixed;right:16px;top:14px;z-index:50;width:366px;max-width:calc(100vw - 24px);max-height:88vh;overflow:auto;
+    background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);
+    border-radius:16px;box-shadow:var(--shadow);padding:16px 17px 17px;color:var(--text);
+    opacity:0;transform:translateY(-16px) scale(.97);pointer-events:none;transform-origin:top right;
+    transition:opacity .3s,transform .34s cubic-bezier(.22,1,.36,1);}
+  #aboutPanel.show{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
+  #aboutPanel .sp-h{display:flex;align-items:center;gap:8px;margin-bottom:7px;}
+  #aboutPanel .sp-h h3{margin:0;font-size:15px;font-weight:800;color:var(--text);}
+  #aboutPanel .sp-x{margin-left:auto;cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--muted);
+    width:26px;height:26px;border-radius:8px;font-size:15px;line-height:1;display:flex;align-items:center;justify-content:center;transition:.15s;}
+  #aboutPanel .sp-x:hover{color:var(--text);border-color:var(--accent);}
+  #aboutPanel .ab-body{font-size:12px;line-height:1.7;color:var(--muted);}
+  #aboutPanel .ab-body h4{margin:12px 0 3px;font-size:12.5px;color:var(--text);font-weight:800;}
+  #aboutPanel .ab-body h4:first-child{margin-top:2px;}
+  #aboutPanel .ab-body p{margin:0;}
+  #aboutPanel .ab-body b{color:var(--text);}
+  /* 首屏说明卡(居中模态) */
+  #introMask{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .35s;
+    backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:18px;}
+  #introMask.show{opacity:1;pointer-events:auto;}
+  #introCard{width:464px;max-width:100%;max-height:90vh;overflow:auto;background:var(--glass);backdrop-filter:blur(18px);-webkit-backdrop-filter:blur(18px);
+    border:1px solid var(--line);border-radius:18px;box-shadow:var(--shadow);padding:22px 22px 18px;color:var(--text);
+    transform:translateY(14px) scale(.96);transition:transform .4s cubic-bezier(.22,1,.36,1);}
+  #introMask.show #introCard{transform:none;}
+  #introCard h2{margin:0 0 3px;font-size:18px;font-weight:800;line-height:1.3;}
+  #introCard .isub{font-size:12px;color:var(--muted);margin-bottom:13px;line-height:1.55;}
+  #introCard .il{display:flex;gap:10px;align-items:flex-start;margin:9px 0;font-size:13px;line-height:1.5;}
+  #introCard .il .ic{flex:none;width:26px;height:26px;border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:13px;
+    background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;}
+  #introCard .il b{color:var(--text);}
+  #introCard .cav{margin:13px 0 4px;padding:9px 11px;border-radius:10px;background:color-mix(in srgb,var(--accent) 10%,transparent);
+    border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);font-size:12px;line-height:1.55;color:var(--text);}
+  #introCard .isrc{font-size:11px;color:var(--soft);margin:9px 0 14px;line-height:1.5;}
+  #introCard .ibtns{display:flex;gap:9px;justify-content:flex-end;flex-wrap:wrap;}
+  #introCard .ibtns button{font-family:inherit;cursor:pointer;border-radius:10px;padding:8px 15px;font-size:13px;font-weight:700;transition:.15s;border:1px solid var(--line);}
+  #introCard .ibtns .ghost{background:var(--panel2);color:var(--muted);}
+  #introCard .ibtns .ghost:hover{color:var(--text);border-color:var(--accent);}
+  #introCard .ibtns .prim{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-color:transparent;}
+  #introCard .ibtns .prim:hover{transform:translateY(-1px);box-shadow:var(--shadow);}
   #supPanel .sp-qr .qb{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;}
   #supPanel .sp-qr .qb .ql{font-size:11.5px;font-weight:600;color:var(--text);}
   #supPanel .sp-qr .qb img{width:100%;height:auto;max-width:160px;max-height:250px;object-fit:contain;border-radius:10px;border:1px solid var(--line);background:#fff;display:block;}
@@ -219,7 +261,7 @@
 <div id="backTab" title="返回全部职业">‹</div>
 
 <div id="top">
-  <div class="head"><h1>AI 时代各岗位冲击图谱 · 中国版</h1><div class="sub" id="sub"></div><div class="sp"></div><button class="pill" id="themebtn">🌗 跟随设备</button></div>
+  <div class="head"><h1>AI 时代各岗位冲击图谱 · 中国版</h1><div class="sub" id="sub"></div><div class="sp"></div><button class="pill" id="aboutBtn" type="button" aria-label="关于与数据方法">&#9432; 说明</button><button class="pill" id="themebtn">🌗 跟随设备</button></div>
   <div class="row1">
     <div class="search"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg><input id="search" placeholder="搜索职业…"></div>
     <div class="tg" id="tg"></div>
@@ -260,6 +302,23 @@
   <div class="sp-qr" id="supQr"></div>
   <div class="sp-social" id="supSocial"></div>
 </div>
+
+<div id="aboutMask"></div>
+<div id="aboutPanel" role="dialog" aria-label="关于与数据方法" aria-modal="true">
+  <div class="sp-h"><h3>关于 · 数据与方法</h3><div class="sp-x" id="aboutClose" title="关闭">&times;</div></div>
+  <div class="ab-body" id="aboutBody"></div>
+</div>
+
+<div id="introMask"><div id="introCard" role="dialog" aria-label="使用说明" aria-modal="true">
+  <h2>AI 时代各岗位冲击图谱 · 中国版</h2>
+  <div class="isub">用官方就业 / 薪资数据打底,叠加多个大模型对每个职业"被 AI 冲击程度"的评分。</div>
+  <div class="il"><span class="ic">▣</span><div><b>方块面积 = 就业人数</b>。格子越大,从业者越多。</div></div>
+  <div class="il"><span class="ic">🎨</span><div><b>方块颜色 = 所选维度的高低</b>。顶部可切换综合冲击 / 自动化 / 护城河 / 薪资 / 学历等。</div></div>
+  <div class="il"><span class="ic">👆</span><div><b>点方块逐层下钻</b>:八大类 → 中类 → 具体细类职业,再点开看各模型评价。</div></div>
+  <div class="cav"><b>重要:</b>冲击分代表岗位"被 AI 重塑的程度",高分<b>不等于</b>失业或裁员,更多是工作方式被改变、效率被放大。</div>
+  <div class="isrc">数据来源:职业分类大典2022 · 第七次全国人口普查 · 国家统计局;AI 冲击为多模型集成估算,仅供参考。</div>
+  <div class="ibtns"><button class="ghost" id="introMore" type="button">查看数据与方法</button><button class="prim" id="introOk" type="button">知道了,开始探索</button></div>
+</div></div>
 
 <script src="data.cn.js"></script>
 <script>
@@ -502,6 +561,38 @@ const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bili
   const close=()=>{panel.classList.remove('show');mask.classList.remove('show');btn.style.opacity='';btn.style.pointerEvents='';};
   btn.onclick=open;closeX.onclick=close;mask.onclick=close;
   document.addEventListener('keydown',e=>{if(e.key==='Escape'&&panel.classList.contains('show'))close();});
+
+  // 关于 · 数据与方法面板(E4)+ 首屏说明卡(C3)
+  (function(){
+    const meta=DATA.meta||{}, Wt=meta.weights||{};
+    const wl=Object.entries(Wt).filter(([k])=>k!=='arena').sort((a,b)=>b[1]-a[1]);
+    const wHi=wl.slice(0,2).map(x=>x[0]).join('、'), wLo=wl.slice(-2).map(x=>x[0]).join('、');
+    const nXi=(meta.xilei_models||[]).filter(m=>m!=='arena').length, nZh=(meta.models||[]).length;
+    const days=(typeof SUPPORT!=='undefined'&&SUPPORT.days)?SUPPORT.days:'';
+    const ab=document.getElementById('aboutBody');
+    if(ab) ab.innerHTML=
+      '<h4>这是什么</h4><p>用官方就业与薪资数据打底,叠加多个大模型对每个职业“被 AI 冲击程度”的评分,做成可逐层下钻的树状图,覆盖职业分类大典 2022 的 8 大类 / 79 中类 / 1639 细类。</p>'
+     +'<h4>怎么看</h4><p>方块<b>面积=就业人数</b>;<b>颜色=顶部所选维度的高低</b>;点方块<b>下钻</b>(大类→中类→细类),再点开看各模型评价与六维画像。打开“模型分歧”可看不同模型打分的离散程度。</p>'
+     +'<h4>数据来源(官方锚定)</h4><p>分类与数字S / 绿色L标注=<b>职业分类大典2022</b>;就业人数=<b>第七次全国人口普查</b>;薪资=<b>国家统计局</b>分岗位 / 分行业平均工资;学历为 AI 估计。</p>'
+     +'<h4>AI 冲击怎么来的</h4><p>由 <b>'+nXi+' 个主流大模型</b>对每个细类逐项打分,再叠加 <b>Arena 匿名双盲票</b>,按温和可信度<b>加权集成</b>(评分更稳的模型权重略高,如 '+esc(wHi)+' 偏高、'+esc(wLo)+' 偏低,Arena 票 0.80)。中类分来自首轮 <b>'+nZh+' 个模型</b>。</p>'
+     +'<h4>重要提醒</h4><p>冲击分是“<b>被 AI 重塑的程度</b>”,<b>不等于失业或裁员</b>,衡量的是工作方式被改变、效率被放大的强度,高分岗位很多会是“人 + AI”协作。结果为研究性估算,<b>不代表官方结论</b>。</p>'
+     +'<p style="margin-top:11px;color:var(--soft)">版本 '+esc(meta.version||'v1.0')+(days?' · 数据更新:'+esc(days):'')+'</p>';
+    const abtn=document.getElementById('aboutBtn'),apanel=document.getElementById('aboutPanel'),amask=document.getElementById('aboutMask'),ax=document.getElementById('aboutClose');
+    const aopen=()=>{apanel.classList.add('show');amask.classList.add('show');},aclose=()=>{apanel.classList.remove('show');amask.classList.remove('show');};
+    if(abtn)abtn.onclick=aopen; if(ax)ax.onclick=aclose; if(amask)amask.onclick=aclose;
+    document.addEventListener('keydown',e=>{if(e.key==='Escape'&&apanel&&apanel.classList.contains('show'))aclose();});
+
+    const intro=document.getElementById('introMask');
+    if(intro){
+      let seen='1'; try{seen=localStorage.getItem('intro_v1');}catch(e){}
+      const closeIntro=()=>{intro.classList.remove('show');try{localStorage.setItem('intro_v1','1');}catch(e){}};
+      const ok=document.getElementById('introOk'),more=document.getElementById('introMore');
+      if(ok)ok.onclick=closeIntro;
+      if(more)more.onclick=()=>{closeIntro();aopen();};
+      intro.addEventListener('click',e=>{if(e.target===intro)closeIntro();});
+      if(!seen) requestAnimationFrame(()=>intro.classList.add('show'));
+    }
+  })();
 })();
 
 window.addEventListener('resize',resize);
@@ -525,6 +616,7 @@ window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},b
 (function(){var t=document.getElementById('mobileTip');if(!t)return;
   var touch=('ontouchstart' in window)||navigator.maxTouchPoints>0;
   if(!(touch&&Math.min(innerWidth,innerHeight)<=600))return;   // 仅手机:触屏且最小边≤600px(平板/电脑不弹)
+  try{if(!localStorage.getItem('intro_v1'))return;}catch(e){}  // 首访只弹说明卡,避免与说明卡同时弹
   requestAnimationFrame(function(){t.classList.add('show');});
   setTimeout(function(){t.classList.remove('show');setTimeout(function(){t.style.display='none';},800);},5000);
 })();

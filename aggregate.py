@@ -225,6 +225,7 @@ def main():
     agg = {
         'meta': {
             'title': 'AI 时代各岗位冲击图谱 · 中国版',
+            'version': 'v1.0',
             'taxonomy': occ['meta'],
             'models': all_models, 'n_models': len(all_models),
             'xilei_models': sorted(xl), 'weights': _W,
