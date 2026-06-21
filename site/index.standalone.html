@@ -90,6 +90,12 @@
   .tg button{background:var(--panel2);color:var(--muted);border:1px solid var(--line);padding:6px 10px;border-radius:8px;font-size:12px;cursor:pointer;transition:.16s;}
   .tg button:hover{color:var(--text);}
   .tg button.active{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-color:transparent;font-weight:700;}
+  /* C1 方块面积口径分段开关 */
+  #areaSw{display:flex;align-items:center;gap:4px;font-size:11px;color:var(--muted);background:var(--panel2);border:1px solid var(--line);padding:3px 7px;border-radius:8px;}
+  #areaSw .al{font-weight:600;margin-right:1px;}
+  #areaSw button{background:none;border:1px solid transparent;color:var(--muted);padding:3px 8px;border-radius:6px;font-size:11px;font-family:inherit;cursor:pointer;transition:.16s;white-space:nowrap;}
+  #areaSw button:hover{color:var(--text);}
+  #areaSw button.active{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;font-weight:700;}
   .tg button.extra{border-style:dashed;border-color:var(--accent2);}
   .tg button{position:relative;}
   .qm{display:inline-flex;align-items:center;justify-content:center;width:14px;height:14px;margin-left:5px;border-radius:50%;
@@ -306,6 +312,7 @@
   <div class="row1" style="margin-bottom:9px">
     <div class="tier-legend" id="tierLegend"><span class="tt">等级色阶</span></div>
     <div id="filt"><span>筛选</span><input type="range" id="filtR" min="0" max="100" step="5" value="0" aria-label="按当前维度筛选方块"><span class="fv" id="filtV">全部</span><button type="button" class="freset" id="filtReset">重置</button></div>
+    <div class="areaSw" id="areaSw" role="group" aria-label="方块面积依据"><span class="al">面积</span><button type="button" data-area="emp" class="active">人数</button><button type="button" data-area="impact">影响体量</button><button type="button" data-area="score">纯分</button></div>
   </div>
   <div class="cards">
     <div class="card"><div class="ct">概况(当前视图)</div><div class="grid2">
@@ -380,7 +387,7 @@ const ALLZ=[];TREE.forEach(d=>d.children.forEach(g=>{g.da=d.name;g.daCode=d.code
 const DA=TREE.map(d=>{const t=d.children.reduce((s,g)=>s+(g.employment||0),0)||1;
   return {code:d.code,name:d.name,jobs:t,overall:Math.round(d.children.reduce((s,g)=>s+(g.dims.overall||0)*(g.employment||0),0)/t),children:d.children,summary:(DASUM[d.code]||{}).summary||''};}).sort((a,b)=>b.overall-a.overall);
 
-const S={dim:'overall',drill:null,leaf:null,disagree:false,query:'',minPct:0};
+const S={dim:'overall',drill:null,leaf:null,disagree:false,query:'',minPct:0,area:'emp'};
 const mq=matchMedia('(prefers-color-scheme: dark)');let themeMode='auto';
 const theme=()=>themeMode==='auto'?(mq.matches?'dark':'light'):themeMode;
 const RAMP={dark:[[64,160,150],[128,178,108],[224,190,104],[226,138,84],[206,78,94]],light:[[36,150,138],[110,170,86],[212,168,72],[214,120,72],[196,64,86]]};
@@ -416,13 +423,16 @@ function bumpTop(){topAnimFrames=34;wake();}  /* 顶栏滑动/改高的约 0.5s 
 const W=()=>cv.width/DPR,H=()=>cv.height/DPR;
 const full=()=>({x:6,y:6,w:W()-12,h:H()-12});
 function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());bumpTop();}
+const ovAll=n=>(n.dims&&n.dims.overall!=null)?n.dims.overall:(n.overall!=null?n.overall:0);
+/* C1 方块面积口径:emp 人数 / impact 影响体量(人数×冲击/100)/ score 纯分(综合冲击)。均加 1e-4 地板防 squarify 除零 */
+function sizeOf(n){const e=n.employment||0;return S.area==='score'?Math.max(1e-4,ovAll(n)):S.area==='impact'?Math.max(1e-4,e*ovAll(n)/100):Math.max(1e-4,e);}
 function computeTargets(){const T=[],L=[],pad=6;
-  if(!S.drill){squarify(TREE.map(d=>({value:d.children.reduce((s,g)=>s+g.employment,0),ref:d})),pad,pad,W()-2*pad,H()-2*pad).forEach(dr=>{
+  if(!S.drill){squarify(TREE.map(d=>({value:d.children.reduce((s,g)=>s+sizeOf(g),0),ref:d})),pad,pad,W()-2*pad,H()-2*pad).forEach(dr=>{
     const da=dr.ref,lh=dr.h>56?20:0;L.push({name:da.name,jobs:da.children.reduce((s,g)=>s+g.employment,0),x:dr.x,y:dr.y,w:dr.w,h:dr.h,lh});
     const ir={x:dr.x+4,y:dr.y+3+lh,w:dr.w-8,h:dr.h-6-lh};
-    squarify(da.children.map(g=>({value:g.employment,ref:g})),ir.x,ir.y,ir.w,ir.h).forEach(t=>T.push({id:'z:'+t.ref.code,node:t.ref,kind:'zhong',tx:t.x,ty:t.y,tw:t.w,th:t.h}));});}
-  else{const g=ALLZ.find(x=>x.code===S.drill);const kids=g['细类']||[];const anyS=kids.some(k=>k.overall!=null);
-    kids.length&&squarify(kids.map(k=>({value:anyS?(k.employment||1):1,ref:k})),pad,pad,W()-2*pad,H()-2*pad).forEach(t=>{const k=t.ref,sc=k.overall!=null;
+    squarify(da.children.map(g=>({value:sizeOf(g),ref:g})),ir.x,ir.y,ir.w,ir.h).forEach(t=>T.push({id:'z:'+t.ref.code,node:t.ref,kind:'zhong',tx:t.x,ty:t.y,tw:t.w,th:t.h}));});}
+  else{const g=ALLZ.find(x=>x.code===S.drill);const kids=g['细类']||[];
+    kids.length&&squarify(kids.map(k=>({value:sizeOf(k),ref:k})),pad,pad,W()-2*pad,H()-2*pad).forEach(t=>{const k=t.ref,sc=k.overall!=null;
       const node=sc?{name:k.title,title:k.title,code:k.code,S:k.digital,green:k.green,dims:k.dims,overall:k.overall,std:k.std,employment:k.employment,pay:k.pay,education:k.education,pay_tier:k.pay_tier,level:k.level,eval:k.eval,by_model:k.by_model,rationales:k.rationales,n_models:k.n_models}
         :{name:k.title,S:k.digital,green:k.green,dims:g.dims,std:g.std,inherit:g.title,pay:g.pay,education:g.education,pending:1};
       T.push({id:'l:'+k.code,node:node,kind:'leaf',tx:t.x,ty:t.y,tw:t.w,th:t.h});});}
@@ -604,6 +614,10 @@ function resetFilt(){S.minPct=0;filtR.value=0;fmtFilt();syncFiltDisabled();wake(
 filtR.addEventListener('input',()=>{S.minPct=+filtR.value;fmtFilt();wake();});
 document.getElementById('filtReset').onclick=resetFilt;
 fmtFilt();syncFiltDisabled();
+// C1 方块面积口径切换(人数/影响体量/纯分):重排当前层级,复用 frame() tween 平滑过渡
+const areaSw=document.getElementById('areaSw');
+function setArea(m){if(S.area===m)return;S.area=m;areaSw.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.area===m));rebuild(full());wake();}
+areaSw.querySelectorAll('button').forEach(b=>b.onclick=()=>setArea(b.dataset.area));
 const tbtn=document.getElementById('themebtn');
 function applyTheme(){document.documentElement.dataset.theme=theme();tbtn.textContent=(themeMode==='auto'?'🌗 跟随设备':themeMode==='dark'?'🌙 深色':'☀️ 浅色');updateLegend();updateSummary();updateDa();renderTierLegend();wake();wakeRadar();}
 tbtn.onclick=()=>{themeMode=themeMode==='auto'?'light':themeMode==='light'?'dark':'auto';applyTheme();};
@@ -681,7 +695,7 @@ const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bili
 window.addEventListener('resize',resize);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){wake();wakeRadar();}});  /* 隐藏标签页时浏览器自动暂停 rAF;回前台唤醒重绘 */
 updateRange();resize();updateCrumb();updateLegend();updateSummary();updateDa();renderTierLegend();setHandle();wake();wakeRadar();
-window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},back:back,theme:m=>{themeMode=m;applyTheme();},collapse:()=>{top.classList.toggle('collapsed');setHandle();bumpTop();},
+window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},back:back,theme:m=>{themeMode=m;applyTheme();},collapse:()=>{top.classList.toggle('collapsed');setHandle();bumpTop();},area:setArea,
   metric:k=>{S.dim=k;S.disagree=false;dis.classList.remove('on');[...tg.children].forEach(x=>x.classList.toggle('active',x.dataset.key===k));resetFilt();updateRange();updateLegend();wake();},
   hover:c=>{const t=tiles.find(x=>x.id==='z:'+c||x.id==='l:'+c);if(t){hoverId=t.id;wake();tipXY=[innerWidth/2,innerHeight*0.62];showTip(t.node,true);}},
   settle:()=>{updateRange();for(const t of tiles){t.cx=t.tx;t.cy=t.ty;t.cw=t.tw;t.ch=t.th;t.alpha=matches(t)?1:.12;const c=tileRGB(t);t.cr=c[0];t.cg=c[1];t.cb=c[2];t.hl=(t.id===hoverId?1:0);}const r=radarT();for(let i=0;i<6;i++)radarCur[i]=r[i];draw();drawRadar(document.getElementById('radarc'),radarCur);if(S.drill){const g=ALLZ.find(x=>x.code===S.drill);if(g){drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>g.dims[k]||0));drawBars(document.getElementById('dvbars'),g);}}}};
