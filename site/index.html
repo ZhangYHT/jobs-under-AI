@@ -358,7 +358,8 @@
   <div class="ibtns"><button class="ghost" id="introMore" type="button">查看数据与方法</button><button class="prim" id="introOk" type="button">知道了,开始探索</button></div>
 </div></div>
 
-<script src="data.cn.js"></script>
+<!-- 数据:?v= 为缓存版本号,数据更新时与 meta.version 同步 bump 即可失效旧缓存(版本不变则 F5 走缓存) -->
+<script src="data.cn.js?v=v1.0"></script>
 <script>
 if(!window.DATA){document.getElementById('err').style.display='flex';}
 else{(function(){

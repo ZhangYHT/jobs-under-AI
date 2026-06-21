@@ -244,10 +244,12 @@ def main():
     open(p('site', 'data.cn.js'), 'w', encoding='utf-8').write(data_js)
     # 自包含单文件:把数据内联进 HTML,免相对路径(供 WordPress 等自托管直接上传;GitHub Pages 仍用双文件 index.html)
     idx = open(p('site', 'index.html'), encoding='utf-8').read()
-    marker = '<script src="data.cn.js"></script>'
-    if marker in idx:
+    mpat = re.compile(r'<script src="data\.cn\.js[^"]*"></script>')  # 容忍 ?v= 缓存版本号参数
+    m = mpat.search(idx)
+    if m:
         inline = '<script>' + data_js.replace('</', '<\\/') + '</script>'  # 转义 </ 防数据里万一出现 </script> 提前闭合
-        open(p('site', 'index.standalone.html'), 'w', encoding='utf-8').write(idx.replace(marker, inline, 1))
+        out = idx[:m.start()] + inline + idx[m.end():]  # 切片拼接,避免 re.sub 把数据里的 \1 等当反向引用
+        open(p('site', 'index.standalone.html'), 'w', encoding='utf-8').write(out)
         print('✅ index.standalone.html:数据已内联,免路径自托管版')
     else:
         print('⚠ 未在 index.html 找到 data.cn.js 引用,跳过自包含单文件(检查加载方式是否变了)')
