@@ -225,6 +225,28 @@
   #aboutPanel .ab-body h4:first-child{margin-top:2px;}
   #aboutPanel .ab-body p{margin:0;}
   #aboutPanel .ab-body b{color:var(--text);}
+  /* C5 更新日志:左下角 v1.0 pill 触发,抽屉范式(左下弹出) */
+  #logBtn{position:fixed;left:10px;bottom:calc(var(--both) + 8px);z-index:36;background:var(--glass);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+    border:1px solid var(--line);color:var(--muted);font-size:10.5px;font-weight:700;font-family:inherit;letter-spacing:.3px;
+    padding:3px 9px;border-radius:20px;cursor:pointer;box-shadow:var(--shadow);transition:.15s;}
+  #logBtn:hover{color:var(--accent);border-color:var(--accent);transform:translateY(-1px);}
+  #logMask{position:fixed;inset:0;z-index:48;background:rgba(0,0,0,.42);opacity:0;pointer-events:none;transition:opacity .3s;backdrop-filter:blur(2px);-webkit-backdrop-filter:blur(2px);}
+  #logMask.show{opacity:1;pointer-events:auto;}
+  #logPanel{position:fixed;left:16px;bottom:16px;z-index:50;width:340px;max-width:calc(100vw - 24px);max-height:80vh;overflow:auto;
+    background:var(--glass);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);border:1px solid var(--line);
+    border-radius:16px;box-shadow:var(--shadow);padding:15px 16px 16px;color:var(--text);
+    opacity:0;transform:translateY(16px) scale(.97);pointer-events:none;transform-origin:bottom left;
+    transition:opacity .3s,transform .34s cubic-bezier(.22,1,.36,1);}
+  #logPanel.show{opacity:1;transform:translateY(0) scale(1);pointer-events:auto;}
+  #logPanel .sp-h{display:flex;align-items:center;gap:8px;margin-bottom:8px;}
+  #logPanel .sp-h h3{margin:0;font-size:15px;font-weight:800;}
+  #logPanel .sp-x{margin-left:auto;cursor:pointer;border:1px solid var(--line);background:var(--panel2);color:var(--muted);width:26px;height:26px;border-radius:8px;font-size:15px;line-height:1;display:flex;align-items:center;justify-content:center;transition:.15s;}
+  #logPanel .sp-x:hover{color:var(--text);border-color:var(--accent);}
+  #logPanel .lg-body{font-size:12px;line-height:1.7;color:var(--muted);}
+  #logPanel .lg-body h4{margin:0 0 5px;font-size:13px;color:var(--text);font-weight:800;}
+  #logPanel .lg-body .ver{font-size:11px;color:var(--accent);font-weight:600;margin-left:4px;}
+  #logPanel .lg-body ul{margin:0;padding-left:17px;}
+  #logPanel .lg-body li{margin:3px 0;}
   /* 首屏说明卡(居中模态) */
   #introMask{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .35s;
     backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:18px;}
@@ -352,6 +374,13 @@
 <div id="aboutPanel" role="dialog" aria-label="关于与数据方法" aria-modal="true">
   <div class="sp-h"><h3>关于 · 数据与方法</h3><div class="sp-x" id="aboutClose" title="关闭">&times;</div></div>
   <div class="ab-body" id="aboutBody"></div>
+</div>
+
+<button id="logBtn" type="button" aria-label="更新日志">v1.0</button>
+<div id="logMask"></div>
+<div id="logPanel" role="dialog" aria-label="更新日志" aria-modal="true">
+  <div class="sp-h"><h3>更新日志</h3><div class="sp-x" id="logClose" title="关闭">&times;</div></div>
+  <div class="lg-body" id="logBody"></div>
 </div>
 
 <div id="introMask"><div id="introCard" role="dialog" aria-label="使用说明" aria-modal="true">
@@ -678,6 +707,23 @@ const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bili
     const aopen=()=>{apanel.classList.add('show');amask.classList.add('show');},aclose=()=>{apanel.classList.remove('show');amask.classList.remove('show');};
     if(abtn)abtn.onclick=aopen; if(ax)ax.onclick=aclose; if(amask)amask.onclick=aclose;
     document.addEventListener('keydown',e=>{if(e.key==='Escape'&&apanel&&apanel.classList.contains('show'))aclose();});
+
+    // C5 更新日志 changelog 抽屉:左下角 v1.0 触发,镜像 about 范式
+    const lbtn=document.getElementById('logBtn'),lpanel=document.getElementById('logPanel'),lmask=document.getElementById('logMask'),lx=document.getElementById('logClose'),lbody=document.getElementById('logBody');
+    if(lbtn)lbtn.textContent=meta.version||'v1.0';
+    if(lbody)lbody.innerHTML=
+      '<h4>'+esc(meta.version||'v1.0')+'<span class="ver">首发</span></h4><ul>'
+     +'<li>官方分类打底:职业分类大典2022 + 七普就业 + 统计局薪资</li>'
+     +'<li>AI 冲击 = '+nXi+' 个主流大模型集成 + Arena 匿名双盲票,温和可信度加权</li>'
+     +'<li>三层下钻:大类 → 中类 → 细类(全 1639 细类已打分)</li>'
+     +'<li>六维画像 + 综合冲击 + 等级 + 模型分歧</li>'
+     +'<li>方块面积三态:人数 / 影响体量 / 纯分</li>'
+     +'<li>搜索(中类+细类)+ 维度阈值筛选 + 维度切换</li>'
+     +'<li>社交分享卡(OG / Twitter)、首屏说明卡、关于面板</li>'
+     +'<li>性能:静止停帧省电,回前台唤醒</li></ul>';
+    if(lpanel){const lopen=()=>{lpanel.classList.add('show');lmask.classList.add('show');},lclose=()=>{lpanel.classList.remove('show');lmask.classList.remove('show');};
+      if(lbtn)lbtn.onclick=lopen; if(lx)lx.onclick=lclose; if(lmask)lmask.onclick=lclose;
+      document.addEventListener('keydown',e=>{if(e.key==='Escape'&&lpanel.classList.contains('show'))lclose();});}
 
     const intro=document.getElementById('introMask');
     if(intro){
