@@ -157,6 +157,14 @@
   .bb-disc{justify-self:center;color:var(--soft);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;max-width:100%;}
   #supTrigger{justify-self:end;display:inline-flex;align-items:center;gap:5px;cursor:pointer;background:none;border:none;font-family:inherit;font-size:11.5px;font-weight:600;color:var(--accent);padding:4px 2px;white-space:nowrap;}
   #supTrigger:hover{text-decoration:underline;}
+  .bb-tools{justify-self:end;display:inline-flex;align-items:center;gap:13px;}
+  .tm-wrap{position:relative;display:inline-flex;}
+  #toolsBtn{cursor:pointer;background:none;border:none;font-family:inherit;font-size:11.5px;font-weight:600;color:var(--accent);padding:4px 2px;white-space:nowrap;}
+  #toolsBtn:hover{text-decoration:underline;}
+  #toolsMenu{position:absolute;right:0;bottom:calc(100% + 9px);min-width:172px;background:var(--panel);border:1px solid var(--line);border-radius:11px;box-shadow:0 10px 34px rgba(0,0,0,.34);padding:5px;display:none;z-index:46;}
+  #toolsMenu.show{display:block;}
+  #toolsMenu button{display:block;width:100%;text-align:left;background:none;border:none;font-family:inherit;font-size:12px;color:var(--text);padding:8px 11px;border-radius:7px;cursor:pointer;white-space:nowrap;}
+  #toolsMenu button:hover{background:var(--line);}
   #supTrigger .hb{color:var(--accent2);font-size:12px;line-height:1;}
   #tip{position:fixed;pointer-events:none;z-index:40;background:var(--glass);border:1px solid var(--line);border-radius:11px;padding:10px 12px;font-size:12px;box-shadow:var(--shadow);display:none;width:250px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);}
   #tip.show{display:block;}
@@ -363,7 +371,16 @@
 <div id="botbar">
   <div id="crumb"></div>
   <div class="bb-disc">AI 冲击为多模型集成估算,仅供参考,不代表官方结论</div>
-  <button id="supTrigger" type="button" aria-label="支持作者"><span class="hb">&#9829;</span><span class="lbl">支持作者</span></button>
+  <div class="bb-tools">
+    <div class="tm-wrap">
+      <button id="toolsBtn" type="button" aria-haspopup="true" aria-expanded="false">&#9881; 工具</button>
+      <div id="toolsMenu" role="menu">
+        <button type="button" data-act="csv" role="menuitem">&#11015; 导出当前层 CSV</button>
+        <button type="button" data-act="csvAll" role="menuitem">&#11015; 导出全部细类 CSV</button>
+      </div>
+    </div>
+    <button id="supTrigger" type="button" aria-label="支持作者"><span class="hb">&#9829;</span><span class="lbl">支持作者</span></button>
+  </div>
 </div>
 <div id="supMask"></div>
 <div id="supPanel" role="dialog" aria-label="支持作者">
@@ -430,6 +447,8 @@ const lum=c=>(0.2126*c[0]+0.7152*c[1]+0.0722*c[2])/255;
 const cssv=n=>getComputedStyle(document.documentElement).getPropertyValue(n).trim();
 const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
 const fmtJobs=n=>n>=1e8?(n/1e8).toFixed(2)+'亿':Math.round(n/1e4)+'万';
+function download(filename,data){const a=document.createElement('a');a.download=filename;const url=(typeof data==='string')?data:URL.createObjectURL(data);a.href=url;document.body.appendChild(a);a.click();a.remove();if(typeof data!=='string')setTimeout(()=>URL.revokeObjectURL(url),1000);}
+const csvCell=s=>{s=String(s==null?'':s);return /[",\n]/.test(s)?'"'+s.replace(/"/g,'""')+'"':s;};
 const colorAbs=v=>rgb(lerpC(RAMP[theme()],Math.pow((v||0)/100,0.9)));
 let RANGE=[0,100];
 const rawMetric=n=>S.dim==='pay'?(n.pay?Math.log(n.pay):null):S.dim==='education'?(EDU[n.education]||null):(n.dims?n.dims[S.dim]:null);
@@ -650,6 +669,20 @@ fmtFilt();syncFiltDisabled();
 const areaSw=document.getElementById('areaSw');
 function setArea(m){if(S.area===m)return;S.area=m;areaSw.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.area===m));rebuild(full());wake();}
 areaSw.querySelectorAll('button').forEach(b=>b.onclick=()=>setArea(b.dataset.area));
+/* ===== D3 导出 CSV(共用 download/csvCell)===== */
+const CSV_COLS=['code','title','大类','employment','pay','education','overall','automation','augmentation','digital','moat','adoption','std','n_models'];
+function csvRows(allLeaves){const rows=[];
+  const rz=g=>[g.code,g.name,g.da,g.employment||'',g.pay||'',g.education||'',...DIMKEYS.map(k=>g.dims&&g.dims[k]!=null?g.dims[k]:''),g.std!=null?g.std:'',g.n_models||''];
+  const rl=(x,g)=>[x.code,x.title,g.da,x.employment||'',x.pay||'',x.education||'',...DIMKEYS.map(k=>x.dims&&x.dims[k]!=null?x.dims[k]:''),x.std!=null?x.std:'',x.n_models||''];
+  if(allLeaves)ALLZ.forEach(g=>(g['细类']||[]).forEach(x=>{if(x.overall!=null)rows.push(rl(x,g));}));
+  else if(S.drill){const g=ALLZ.find(z=>z.code===S.drill);if(g)(g['细类']||[]).forEach(x=>{if(x.overall!=null)rows.push(rl(x,g));});}
+  else ALLZ.forEach(g=>rows.push(rz(g)));
+  return rows;}
+function exportCSV(allLeaves){const rows=csvRows(allLeaves);if(!rows.length)return;const body=[CSV_COLS,...rows].map(r=>r.map(csvCell).join(',')).join('\r\n');const blob=new Blob(['﻿'+body],{type:'text/csv;charset=utf-8'});download((allLeaves?'AI岗位_全部细类':S.drill?('AI岗位_'+S.drill+'_细类'):'AI岗位_中类全部')+'.csv',blob);}
+const toolsBtn=document.getElementById('toolsBtn'),toolsMenu=document.getElementById('toolsMenu');
+toolsBtn.onclick=e=>{e.stopPropagation();const o=toolsMenu.classList.toggle('show');toolsBtn.setAttribute('aria-expanded',o);};
+toolsMenu.onclick=e=>{const b=e.target.closest('[data-act]');if(!b)return;toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');const act=b.dataset.act;if(act==='csv')exportCSV(false);else if(act==='csvAll')exportCSV(true);};
+document.addEventListener('click',e=>{if(toolsMenu.classList.contains('show')&&!e.target.closest('.tm-wrap')){toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');}});
 const tbtn=document.getElementById('themebtn');
 function applyTheme(){document.documentElement.dataset.theme=theme();tbtn.textContent=(themeMode==='auto'?'🌗 跟随设备':themeMode==='dark'?'🌙 深色':'☀️ 浅色');updateLegend();updateSummary();updateDa();renderTierLegend();wake();wakeRadar();}
 tbtn.onclick=()=>{themeMode=themeMode==='auto'?'light':themeMode==='light'?'dark':'auto';applyTheme();};
@@ -759,7 +792,7 @@ window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},b
     const k=e.key;
     if(k==='/'||k==='s'||k==='S'){e.preventDefault();searchEl.focus();}
     else if(k==='Backspace'){e.preventDefault();back();}
-    else if(k==='Escape'){if(!panelOpen()){e.preventDefault();back();}}      // 有面板时交给面板自己的 Esc 关闭,不返回
+    else if(k==='Escape'){if(toolsMenu.classList.contains('show')){toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');}else if(!panelOpen()){e.preventDefault();back();}}      // 工具菜单优先关;有面板时交给面板自己的 Esc 关闭,不返回
     else if(k>='1'&&k<='9'){const b=tg.children[+k-1];if(b&&b.onclick){e.preventDefault();b.onclick();}}
     else if(k==='d'||k==='D'){if(dis.onclick)dis.onclick();}
     else if(k==='t'||k==='T'){if(tbtn.onclick)tbtn.onclick();}
