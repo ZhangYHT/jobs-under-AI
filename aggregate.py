@@ -15,12 +15,20 @@
   步骤4   集成     —— 每维 均值/中位数/标准差(分歧度) + 各模型分。
 """
 import json, glob, os, re, statistics, collections
+from pypinyin import lazy_pinyin
 
 DIMS = ['overall', 'automation', 'augmentation', 'digital', 'moat', 'adoption']
 def LEVEL(o): return '极高' if o >= 81 else '高' if o >= 61 else '中' if o >= 41 else '低' if o >= 21 else '极低'
 PAY_TIER = {'高': 1.3, '中': 1.0, '低': 0.75}
 ROOT = os.path.dirname(os.path.abspath(__file__))
 def p(*a): return os.path.join(ROOT, *a)
+
+def pyfull(s):
+    """全拼小写拼接,用于拼音搜索(管理 -> guanli)。"""
+    return ''.join(lazy_pinyin(s or '')).lower()
+def pyinit(s):
+    """拼音首字母拼接(管理 -> gl)。"""
+    return ''.join(w[0] for w in lazy_pinyin(s or '') if w).lower()
 
 def clean_rat(t):
     """清掉中类理由里串进来的评分尾巴/下一条编码名称(parse_step4 的 70 字截断遗留),用作简介回退。"""
@@ -81,6 +89,8 @@ def main():
     all_models = sorted((set(emp) | set(pe) | set(sc) | set(scn)) - {'census7', 'official'})
     # 人工挑选的高质量大类/中类简介(逐字摘自各模型概述,覆盖自动抽取版,避免把思考过程当摘要)
     curated = json.load(open(p('data', 'curated_summaries.json'), encoding='utf-8'))
+    alias_path = p('data', 'aliases.cn.json')   # 招聘叫法/近义别名(子代理 harvest 产出,缺失则空)
+    aliases = json.load(open(alias_path, encoding='utf-8')) if os.path.exists(alias_path) else {}
     cur_da = {k: (v.get('summary') if isinstance(v, dict) else v) for k, v in curated.get('da', {}).items()}
     cur_zhong = {k: (v.get('summary') if isinstance(v, dict) else v) for k, v in curated.get('zhong', {}).items()}
     # 大类一句话总结(自然语言版)
@@ -96,6 +106,8 @@ def main():
         rec = {k: g.get(k) for k in ('code', 'title', 'parent', 'da_title', 'english',
                                      'digital', 'green', 'n_xi', 'n_digital', 'n_green', 'official_sources')}
         rec['细类'] = g.get('细类', [])
+        rec['py'] = pyfull(rec.get('title', '')); rec['pyi'] = pyinit(rec.get('title', ''))
+        rec['alias'] = aliases.get(code, [])
         flags = []
 
         # ---- 步骤2 就业(七普官方优先,其次众议院) ----
@@ -176,6 +188,8 @@ def main():
         # ---- 细类深评(若已采集):人数=中类官方×归一占比;薪资=中类×档位;等级由分分档 ----
         scored = []
         for x in rec['细类']:
+            x['py'] = pyfull(x.get('title', '')); x['pyi'] = pyinit(x.get('title', ''))
+            x['alias'] = aliases.get(x.get('code', ''), [])
             mrows = [(m, xl[m][x['code']]) for m in xl if x['code'] in xl[m]]
             if not mrows: continue
             rows = [r for _, r in mrows]

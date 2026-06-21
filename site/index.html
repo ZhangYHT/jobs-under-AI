@@ -611,13 +611,13 @@ METRICS.forEach(d=>{const b=document.createElement('button');b.dataset.key=d.key
 const dis=document.getElementById('disagree');dis.onclick=()=>{S.disagree=!S.disagree;dis.classList.toggle('on',S.disagree);syncFiltDisabled();updateLegend();wake();};
 // C4 搜索结果下拉(可跨层直接跳到具体职业)
 const SI=[];
-ALLZ.forEach(g=>{SI.push({k:'z',code:g.code,nm:g.name,en:(g.english||''),da:g.da,emp:g.employment||0,node:g});
-  (g['细类']||[]).forEach(x=>SI.push({k:'l',code:x.code,zcode:g.code,nm:x.title,en:'',da:g.da,zhong:g.name,emp:x.employment||0,node:x}));});
+ALLZ.forEach(g=>{SI.push({k:'z',code:g.code,nm:g.name,en:(g.english||''),py:(g.py||''),pyi:(g.pyi||''),alias:(g.alias||[]),da:g.da,emp:g.employment||0,node:g});
+  (g['细类']||[]).forEach(x=>SI.push({k:'l',code:x.code,zcode:g.code,nm:x.title,en:'',py:(x.py||''),pyi:(x.pyi||''),alias:(x.alias||[]),da:g.da,zhong:g.name,emp:x.employment||0,node:x}));});
 const searchEl=document.getElementById('search'),sRes=document.getElementById('sResults');
 let curHits=[],selIdx=-1;
 const ovOf=n=>n.overall!=null?n.overall:(n.dims&&n.dims.overall!=null?n.dims.overall:null);
 const sChip=n=>{const o=ovOf(n);return o==null?'<span class="sc" style="background:var(--line)">-</span>':'<span class="sc" style="background:'+colorAbs(o)+'">'+o+'</span>';};
-function rankHits(q){q=q.toLowerCase();const out=[];for(const it of SI){const nm=it.nm.toLowerCase();let s;if(nm.startsWith(q))s=0;else if(nm.includes(q))s=1;else if(it.en&&it.en.toLowerCase().includes(q))s=2;else continue;out.push([s,-it.emp,it]);}out.sort((a,b)=>a[0]-b[0]||a[1]-b[1]);return out.slice(0,12).map(x=>x[2]);}
+function rankHits(q){q=q.toLowerCase();const out=[];for(const it of SI){const nm=it.nm.toLowerCase();let s;if(nm.startsWith(q))s=0;else if(nm.includes(q))s=1;else if(it.en&&it.en.toLowerCase().includes(q))s=2;else if(it.py&&it.py.startsWith(q))s=3;else if(it.pyi&&q.length>=2&&it.pyi.startsWith(q))s=3.5;else if(it.py&&it.py.includes(q))s=4;else if(it.alias&&it.alias.some(a=>a.toLowerCase().includes(q)))s=4.5;else continue;out.push([s,-it.emp,it]);}out.sort((a,b)=>a[0]-b[0]||a[1]-b[1]);return out.slice(0,12).map(x=>x[2]);}
 function renderResults(q){if(!q){sRes.classList.remove('show');sRes.innerHTML='';curHits=[];selIdx=-1;return;}
   curHits=rankHits(q);selIdx=-1;
   if(!curHits.length){sRes.innerHTML='<div class="none">没有匹配的职业</div>';sRes.classList.add('show');return;}

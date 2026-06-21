@@ -1,0 +1,3 @@
+# 构建依赖(运行 aggregate.py 前:pip install -r requirements.txt)
+# 仅 build 时需要;产物 py/pyi 已写入 site/data.cn.js 并提交,部署端无需安装。
+pypinyin>=0.50
