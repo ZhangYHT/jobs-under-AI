@@ -247,6 +247,8 @@
   #logPanel .lg-body .ver{font-size:11px;color:var(--accent);font-weight:600;margin-left:4px;}
   #logPanel .lg-body ul{margin:0;padding-left:17px;}
   #logPanel .lg-body li{margin:3px 0;}
+  /* C6 屏幕阅读器专用(视觉隐藏) */
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
   /* 首屏说明卡(居中模态) */
   #introMask{position:fixed;inset:0;z-index:70;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .35s;
     backdrop-filter:blur(3px);-webkit-backdrop-filter:blur(3px);display:flex;align-items:center;justify-content:center;padding:18px;}
@@ -319,6 +321,7 @@
 </head>
 <body>
 <div id="stage"><canvas id="cv"></canvas></div>
+<p class="sr-only" id="kbdHelp">键盘快捷键:斜杠或 s 聚焦搜索;数字键 1 到 6 切换维度;d 切换模型分歧;t 切换主题;退格键返回上一层;问号打开说明面板。手机可在图上向右滑动返回上一层。</p>
 <div id="err"><div>数据加载遇到问题。请刷新页面重试;若反复出现,可能是网络波动或数据正在更新。<br><button class="pill" style="margin-top:12px" onclick="location.reload()">刷新页面</button></div></div>
 <div id="handle">⌃</div>
 <div id="backTab" title="返回全部职业">‹</div>
@@ -597,7 +600,7 @@ cv.addEventListener('mousemove',e=>{if(TOUCH){hideTip();cv.style.cursor='default
   cv.style.cursor=t.kind==='zhong'?'zoom-in':(t.kind==='leaf'&&!t.node.pending?'pointer':'default');
   if(t.id!==hoverId){hoverId=t.id;wake();tipFull=false;showTip(t.node,false);clearTimeout(tipTimer);tipTimer=setTimeout(()=>{tipFull=true;const n=nodeOf(hoverId);if(n)showTip(n,true);},500);}else place();});
 cv.addEventListener('mouseleave',()=>{if(hoverId!=null){hoverId=null;wake();}tip.classList.remove('show');clearTimeout(tipTimer);});
-cv.addEventListener('click',e=>{const r=cv.getBoundingClientRect();const t=hit(e.clientX-r.left,e.clientY-r.top);if(!t)return;
+cv.addEventListener('click',e=>{if(swiped){swiped=false;return;}const r=cv.getBoundingClientRect();const t=hit(e.clientX-r.left,e.clientY-r.top);if(!t)return;
   if(TOUCH){hideTip();tapFlash(t.id);}
   if(t.kind==='zhong')drillInto(t);else if(t.kind==='leaf'&&!t.node.pending)openLeaf(t.node);});
 
@@ -702,6 +705,7 @@ const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bili
      +'<h4>数据来源(官方锚定)</h4><p>分类与数字S / 绿色L标注=<b>职业分类大典2022</b>;就业人数=<b>第七次全国人口普查</b>;薪资=<b>国家统计局</b>分岗位 / 分行业平均工资;学历为 AI 估计。</p>'
      +'<h4>AI 冲击怎么来的</h4><p>由 <b>'+nXi+' 个主流大模型</b>对每个细类逐项打分,再叠加 <b>Arena 匿名双盲票</b>,按温和可信度<b>加权集成</b>(评分更稳的模型权重略高,如 '+esc(wHi)+' 偏高、'+esc(wLo)+' 偏低,Arena 票 0.80)。中类分来自首轮 <b>'+nZh+' 个模型</b>。</p>'
      +'<h4>重要提醒</h4><p>冲击分是“<b>被 AI 重塑的程度</b>”,<b>不等于失业或裁员</b>,衡量的是工作方式被改变、效率被放大的强度,高分岗位很多会是“人 + AI”协作。结果为研究性估算,<b>不代表官方结论</b>。</p>'
+     +'<h4>键盘快捷键</h4><p>/ 或 s 聚焦搜索 · 1-6 切换维度 · d 模型分歧 · t 主题 · 退格返回上层 · ? 打开本说明。手机:在图上向右滑动返回上层。</p>'
      +'<p style="margin-top:11px;color:var(--soft)">版本 '+esc(meta.version||'v1.0')+(days?' · 数据更新:'+esc(days):'')+'</p>';
     const abtn=document.getElementById('aboutBtn'),apanel=document.getElementById('aboutPanel'),amask=document.getElementById('aboutMask'),ax=document.getElementById('aboutClose');
     const aopen=()=>{apanel.classList.add('show');amask.classList.add('show');},aclose=()=>{apanel.classList.remove('show');amask.classList.remove('show');};
@@ -745,6 +749,42 @@ window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},b
   metric:k=>{S.dim=k;S.disagree=false;dis.classList.remove('on');[...tg.children].forEach(x=>x.classList.toggle('active',x.dataset.key===k));resetFilt();updateRange();updateLegend();wake();},
   hover:c=>{const t=tiles.find(x=>x.id==='z:'+c||x.id==='l:'+c);if(t){hoverId=t.id;wake();tipXY=[innerWidth/2,innerHeight*0.62];showTip(t.node,true);}},
   settle:()=>{updateRange();for(const t of tiles){t.cx=t.tx;t.cy=t.ty;t.cw=t.tw;t.ch=t.th;t.alpha=matches(t)?1:.12;const c=tileRGB(t);t.cr=c[0];t.cg=c[1];t.cb=c[2];t.hl=(t.id===hoverId?1:0);}const r=radarT();for(let i=0;i<6;i++)radarCur[i]=r[i];draw();drawRadar(document.getElementById('radarc'),radarCur);if(S.drill){const g=ALLZ.find(x=>x.code===S.drill);if(g){drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>g.dims[k]||0));drawBars(document.getElementById('dvbars'),g);}}}};
+
+  /* ===== C6 快捷键 + 手势 + 键盘可达(ARIA) ===== */
+  // 桌面快捷键:用捕获阶段绑定,让 Esc 在各面板自身的冒泡 Esc 关闭之前先判定是否有面板打开
+  const panelOpen=()=>['supPanel','aboutPanel','logPanel','sResults'].some(id=>{const el=document.getElementById(id);return el&&el.classList.contains('show');});
+  document.addEventListener('keydown',e=>{
+    const tag=(e.target&&e.target.tagName)||'';
+    if(tag==='INPUT'||tag==='TEXTAREA'||e.ctrlKey||e.metaKey||e.altKey)return;
+    const k=e.key;
+    if(k==='/'||k==='s'||k==='S'){e.preventDefault();searchEl.focus();}
+    else if(k==='Backspace'){e.preventDefault();back();}
+    else if(k==='Escape'){if(!panelOpen()){e.preventDefault();back();}}      // 有面板时交给面板自己的 Esc 关闭,不返回
+    else if(k>='1'&&k<='9'){const b=tg.children[+k-1];if(b&&b.onclick){e.preventDefault();b.onclick();}}
+    else if(k==='d'||k==='D'){if(dis.onclick)dis.onclick();}
+    else if(k==='t'||k==='T'){if(tbtn.onclick)tbtn.onclick();}
+    else if(k==='?'){const ab=document.getElementById('aboutBtn');if(ab&&ab.onclick){e.preventDefault();ab.onclick();}}
+  },true);
+  // 手机手势:画布上向右滑动 => 返回上一层(限制主轴位移 > 1.5×副轴,避免与下钻 tap 冲突);swiped 供 click 守卫抑制误触
+  let swX=0,swY=0,swT=0,swiped=false;
+  cv.addEventListener('touchstart',e=>{const t=e.touches[0];if(!t)return;swX=t.clientX;swY=t.clientY;swT=Date.now();swiped=false;},{passive:true});
+  cv.addEventListener('touchend',e=>{const t=e.changedTouches[0];if(!t)return;const dx=t.clientX-swX,dy=t.clientY-swY;
+    if(Date.now()-swT<600&&dx>60&&Math.abs(dx)>1.5*Math.abs(dy)){swiped=true;back();}},{passive:true});
+  // ARIA / 键盘可达:控件标签 + 自定义 div 按钮可聚焦可回车触发
+  const setAttr=(id,a,v)=>{const el=document.getElementById(id);if(el)el.setAttribute(a,v);};
+  setAttr('search','aria-label','搜索职业,支持中类与细类名称');
+  setAttr('themebtn','aria-label','切换主题(浅色/深色/跟随设备)');
+  setAttr('disagree','aria-label','切换模型分歧视图');
+  setAttr('backTab','aria-label','返回上一层');
+  setAttr('handle','aria-label','展开或收起顶部信息面板');
+  setAttr('crumb','aria-live','polite');
+  setAttr('cv','role','img');
+  setAttr('cv','aria-label','职业 AI 冲击树状图,可用键盘快捷键操作,说明见下');
+  setAttr('cv','aria-describedby','kbdHelp');
+  setAttr('sResults','role','listbox');
+  ['disagree','backTab','handle'].forEach(id=>{const el=document.getElementById(id);if(!el)return;el.setAttribute('role','button');el.setAttribute('tabindex','0');
+    el.addEventListener('keydown',ev=>{if((ev.key==='Enter'||ev.key===' ')&&el.onclick){ev.preventDefault();el.onclick(ev);}});});
+
 }catch(e){var el=document.getElementById('err');if(el)el.style.display='flex';console.error(e);}
 })();}
 </script>
