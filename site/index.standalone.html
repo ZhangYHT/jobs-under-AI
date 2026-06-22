@@ -165,6 +165,26 @@
   #toolsMenu.show{display:block;}
   #toolsMenu button{display:block;width:100%;text-align:left;background:none;border:none;font-family:inherit;font-size:12px;color:var(--text);padding:8px 11px;border-radius:7px;cursor:pointer;white-space:nowrap;}
   #toolsMenu button:hover{background:var(--line);}
+  #cmpTray{cursor:pointer;background:var(--accent);color:#fff;border:none;font-family:inherit;font-size:11.5px;font-weight:700;padding:4px 11px;border-radius:20px;white-space:nowrap;}
+  #ovMask{position:fixed;inset:0;background:rgba(0,0,0,.5);opacity:0;pointer-events:none;transition:opacity .2s;z-index:52;}
+  #ovMask.show{opacity:1;pointer-events:auto;}
+  #ovModal{position:fixed;left:50%;top:50%;transform:translate(-50%,-46%) scale(.98);width:min(1040px,calc(100vw - 30px));max-height:86vh;overflow:auto;background:var(--panel);border:1px solid var(--line);border-radius:16px;box-shadow:0 24px 80px rgba(0,0,0,.5);z-index:54;opacity:0;pointer-events:none;transition:opacity .2s,transform .2s;padding:0 18px 18px;}
+  #ovModal.show{opacity:1;pointer-events:auto;transform:translate(-50%,-50%) scale(1);}
+  #ovModal .sp-h{position:sticky;top:0;background:var(--panel);padding-top:14px;}
+  .dv-add{margin-top:8px;width:100%;cursor:pointer;background:none;border:1px solid var(--line);color:var(--accent);font-family:inherit;font-size:12px;font-weight:600;padding:6px;border-radius:8px;}
+  .dv-add:hover{background:var(--line);}
+  .cmp-legend{display:flex;flex-wrap:wrap;gap:8px;margin:2px 0 14px;}
+  .cmp-legend .cl{display:inline-flex;align-items:center;gap:5px;font-size:12px;font-weight:600;background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:3px 4px 3px 9px;}
+  .cmp-legend .cl i{width:10px;height:10px;border-radius:3px;}
+  .cmp-legend .cl button{background:none;border:none;color:var(--soft);cursor:pointer;font-size:14px;line-height:1;padding:0 4px;}
+  .cmp-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:16px;align-items:start;}
+  .cmp-grid canvas{width:100%;height:300px;display:block;}
+  .cmp-table{width:100%;border-collapse:collapse;font-size:12px;}
+  .cmp-table th,.cmp-table td{padding:5px 7px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;}
+  .cmp-table th:first-child,.cmp-table td:first-child{text-align:left;color:var(--muted);}
+  .cmp-table thead th{font-weight:700;border-bottom:2px solid var(--line);}
+  .cmp-table td.best{font-weight:800;background:var(--panel2);}
+  @media(max-width:720px){.cmp-grid{grid-template-columns:1fr;}}
   #supTrigger .hb{color:var(--accent2);font-size:12px;line-height:1;}
   #tip{position:fixed;pointer-events:none;z-index:40;background:var(--glass);border:1px solid var(--line);border-radius:11px;padding:10px 12px;font-size:12px;box-shadow:var(--shadow);display:none;width:250px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);}
   #tip.show{display:block;}
@@ -361,7 +381,7 @@
   <div class="daRow"><div class="ct">八大类 · AI 综合冲击(就业加权,点击进入)</div><div class="daGrid" id="daGrid"></div></div>
   <div id="detailview">
     <div class="dv-l"><h3 id="dName">-</h3><div class="meta" id="dMeta"></div><div id="dDims"></div><div class="kv" id="dKv"></div></div>
-    <div class="dv-m"><canvas id="dvradar"></canvas></div>
+    <div class="dv-m"><canvas id="dvradar"></canvas><button class="dv-add" id="dCmpAdd" type="button">+ 加入对比</button></div>
     <div class="dv-r"><div style="font-size:11px;color:var(--muted);margin-bottom:4px" id="dModelsH"></div><canvas id="dvbars"></canvas><div id="dModels" style="margin-top:5px"></div><div class="rat" id="dRat"></div><div class="src" id="dSrc"></div></div>
   </div>
 </div>
@@ -372,6 +392,7 @@
   <div id="crumb"></div>
   <div class="bb-disc">AI 冲击为多模型集成估算,仅供参考,不代表官方结论</div>
   <div class="bb-tools">
+    <button id="cmpTray" type="button" hidden>对比 <b id="cmpN">0</b></button>
     <div class="tm-wrap">
       <button id="toolsBtn" type="button" aria-haspopup="true" aria-expanded="false">&#9881; 工具</button>
       <div id="toolsMenu" role="menu">
@@ -401,6 +422,12 @@
 <div id="logPanel" role="dialog" aria-label="更新日志" aria-modal="true">
   <div class="sp-h"><h3>更新日志</h3><div class="sp-x" id="logClose" title="关闭">&times;</div></div>
   <div class="lg-body" id="logBody"></div>
+</div>
+
+<div id="ovMask"></div>
+<div id="ovModal" role="dialog" aria-label="职业对比" aria-modal="true">
+  <div class="sp-h"><h3 id="ovTitle">职业对比</h3><div class="sp-x" id="ovClose" title="关闭">&times;</div></div>
+  <div id="ovBody"></div>
 </div>
 
 <div id="introMask"><div id="introCard" role="dialog" aria-label="使用说明" aria-modal="true">
@@ -524,6 +551,11 @@ function drawRadar(canvas,vals){const c=canvas.getContext('2d'),r=canvas.getBoun
   c.clearRect(0,0,w,h);for(let g=1;g<=3;g++){c.beginPath();for(let i=0;i<=n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*g/3;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.strokeStyle=ln;c.stroke();}
   for(let i=0;i<n;i++){const a=-Math.PI/2+i*2*Math.PI/n;c.fillStyle=tx;c.font='9px sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(DIMS[i].short,cx+Math.cos(a)*(R+9),cy+Math.sin(a)*(R+7));}
   const ac=cssv('--accent');c.beginPath();for(let i=0;i<n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*Math.max(0,Math.min(100,vals[i]))/100;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.fillStyle=ac+'44';c.strokeStyle=ac;c.lineWidth=2;c.fill();c.stroke();}
+function drawCompareRadar(canvas,series){const c=canvas.getContext('2d'),r=canvas.getBoundingClientRect();if(r.width<2||r.height<2)return;canvas.width=r.width*DPR;canvas.height=r.height*DPR;c.setTransform(DPR,0,0,DPR,0,0);
+  const w=r.width,h=r.height,cx=w/2,cy=h/2+2,R=Math.min(w,h)/2-18,n=6,ln=theme()==='dark'?'rgba(255,255,255,.13)':'rgba(20,30,60,.13)',tx=cssv('--muted');
+  c.clearRect(0,0,w,h);for(let g=1;g<=3;g++){c.beginPath();for(let i=0;i<=n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*g/3;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.strokeStyle=ln;c.stroke();}
+  for(let i=0;i<n;i++){const a=-Math.PI/2+i*2*Math.PI/n;c.fillStyle=tx;c.font='10px sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(DIMS[i].short,cx+Math.cos(a)*(R+11),cy+Math.sin(a)*(R+9));}
+  series.forEach(s=>{c.beginPath();for(let i=0;i<n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*Math.max(0,Math.min(100,s.vals[i]||0))/100;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.fillStyle=s.color+'22';c.strokeStyle=s.color;c.lineWidth=2;c.fill();c.stroke();});}
 function drawBars(canvas,g){const c=canvas.getContext('2d'),r=canvas.getBoundingClientRect();if(r.width<2||r.height<2)return;canvas.width=r.width*DPR;canvas.height=r.height*DPR;c.setTransform(DPR,0,0,DPR,0,0);
   const arr=SCOREM.map(m=>{const e=g.by_model?g.by_model[m]:null;const v=e==null?null:(typeof e==='object'?e.overall:e);return{m,v};}).filter(x=>x.v!=null).sort((a,b)=>b.v-a.v);
   const w=r.width,h=r.height,n=arr.length;if(!n)return;const bw=Math.min(26,(w-(n-1)*4)/n),gap=(w-bw*n)/(n-1||1),base=h-13,top=4;
@@ -683,6 +715,34 @@ const toolsBtn=document.getElementById('toolsBtn'),toolsMenu=document.getElement
 toolsBtn.onclick=e=>{e.stopPropagation();const o=toolsMenu.classList.toggle('show');toolsBtn.setAttribute('aria-expanded',o);};
 toolsMenu.onclick=e=>{const b=e.target.closest('[data-act]');if(!b)return;toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');const act=b.dataset.act;if(act==='csv')exportCSV(false);else if(act==='csvAll')exportCSV(true);};
 document.addEventListener('click',e=>{if(toolsMenu.classList.contains('show')&&!e.target.closest('.tm-wrap')){toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');}});
+/* ===== D1 加入对比(共用 #ovModal 居中大模态)===== */
+const CMP={level:null,codes:[],items:[]},CMP_MAX=4,CMP_COLORS=['#6d8cf0','#e0be68','#ca4e5e','#5fbf9f'];
+const ovMask=document.getElementById('ovMask'),ovModal=document.getElementById('ovModal'),ovBody=document.getElementById('ovBody'),ovTitle=document.getElementById('ovTitle');
+let ovKind=null;
+function ovOpen(kind,title){ovKind=kind;ovTitle.textContent=title||'';ovModal.classList.add('show');ovMask.classList.add('show');}
+function ovClose(){ovKind=null;ovModal.classList.remove('show');ovMask.classList.remove('show');}
+ovMask.onclick=ovClose;document.getElementById('ovClose').onclick=ovClose;
+const cmpTray=document.getElementById('cmpTray'),cmpN=document.getElementById('cmpN');
+function cmpSync(){cmpN.textContent=CMP.codes.length;cmpTray.hidden=CMP.codes.length===0;}
+function curDetailNode(){if(S.leaf){const g=ALLZ.find(x=>x.code===S.drill);return(g&&(g['细类']||[]).find(x=>x.code===S.leaf))||null;}if(S.drill)return ALLZ.find(x=>x.code===S.drill)||null;return null;}
+function cmpAdd(node,level){if(!node)return;if(CMP.level&&CMP.level!==level){if(!confirm('对比仅限同层级(中类或细类)。清空当前对比并切换?'))return;CMP.codes=[];CMP.items=[];}
+  CMP.level=level;if(CMP.codes.includes(node.code)){cmpSync();return;}if(CMP.codes.length>=CMP_MAX){alert('最多对比 '+CMP_MAX+' 个职业');return;}
+  CMP.codes.push(node.code);CMP.items.push(node);cmpSync();}
+function cmpRemove(code){const i=CMP.codes.indexOf(code);if(i>=0){CMP.codes.splice(i,1);CMP.items.splice(i,1);}if(!CMP.codes.length)CMP.level=null;cmpSync();if(ovKind==='cmp'){if(CMP.codes.length)cmpRender();else ovClose();}}
+function cmpOpen(){if(CMP.codes.length<2){alert('请至少加入 2 个同层级职业再对比');return;}ovOpen('cmp','职业对比 ('+CMP.codes.length+')');cmpRender();}
+function cmpRender(){const items=CMP.items;
+  const legend='<div class="cmp-legend">'+items.map((n,i)=>'<span class="cl"><i style="background:'+CMP_COLORS[i]+'"></i>'+esc(n.title||n.name)+'<button data-rm="'+esc(n.code)+'" title="移除">&times;</button></span>').join('')+'</div>';
+  const rowsDef=[['就业',n=>n.employment?fmtJobs(n.employment):'-',n=>n.employment||0],['年薪',n=>n.pay?'¥'+n.pay.toLocaleString():'-',n=>n.pay||0],['学历',n=>n.education||'-',null]].concat(DIMS.map(d=>[d.label,n=>{const v=n.dims?n.dims[d.key]:null;return v!=null?v:'-';},n=>{const v=n.dims?n.dims[d.key]:null;return typeof v==='number'?v:null;}]));
+  let tbl='<table class="cmp-table"><thead><tr><th>指标</th>'+items.map((n,i)=>'<th style="color:'+CMP_COLORS[i]+'">'+esc((n.title||n.name).slice(0,7))+'</th>').join('')+'</tr></thead><tbody>';
+  rowsDef.forEach(rd=>{const fmt=rd[1],val=rd[2];let best=null;if(val){const vs=items.map(val),nums=vs.filter(v=>typeof v==='number');if(nums.length){const m=Math.max(...nums);best=vs.map(v=>v===m&&nums.some(x=>x!==m));}}
+    tbl+='<tr><td>'+rd[0]+'</td>'+items.map((n,i)=>'<td class="'+(best&&best[i]?'best':'')+'">'+fmt(n)+'</td>').join('')+'</tr>';});
+  tbl+='</tbody></table>';
+  ovBody.innerHTML=legend+'<div class="cmp-grid"><canvas id="cmpRadar"></canvas><div>'+tbl+'</div></div>';
+  ovBody.querySelectorAll('[data-rm]').forEach(b=>b.onclick=()=>cmpRemove(b.dataset.rm));
+  requestAnimationFrame(()=>drawCompareRadar(document.getElementById('cmpRadar'),items.map((n,i)=>({vals:DIMKEYS.map(k=>n.dims?(n.dims[k]||0):0),color:CMP_COLORS[i]}))));}
+cmpTray.onclick=cmpOpen;
+{const a=document.getElementById('dCmpAdd');if(a)a.onclick=()=>{const cur=curDetailNode();if(cur)cmpAdd(cur,S.leaf?'l':'z');};}
+cmpSync();
 const tbtn=document.getElementById('themebtn');
 function applyTheme(){document.documentElement.dataset.theme=theme();tbtn.textContent=(themeMode==='auto'?'🌗 跟随设备':themeMode==='dark'?'🌙 深色':'☀️ 浅色');updateLegend();updateSummary();updateDa();renderTierLegend();wake();wakeRadar();}
 tbtn.onclick=()=>{themeMode=themeMode==='auto'?'light':themeMode==='light'?'dark':'auto';applyTheme();};
@@ -792,7 +852,7 @@ window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},b
     const k=e.key;
     if(k==='/'||k==='s'||k==='S'){e.preventDefault();searchEl.focus();}
     else if(k==='Backspace'){e.preventDefault();back();}
-    else if(k==='Escape'){if(toolsMenu.classList.contains('show')){toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');}else if(!panelOpen()){e.preventDefault();back();}}      // 工具菜单优先关;有面板时交给面板自己的 Esc 关闭,不返回
+    else if(k==='Escape'){if(toolsMenu.classList.contains('show')){toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');}else if(ovModal.classList.contains('show')){e.preventDefault();ovClose();}else if(!panelOpen()){e.preventDefault();back();}}      // 工具菜单/对比浮层优先关;有面板时交给面板自己的 Esc,不返回
     else if(k>='1'&&k<='9'){const b=tg.children[+k-1];if(b&&b.onclick){e.preventDefault();b.onclick();}}
     else if(k==='d'||k==='D'){if(dis.onclick)dis.onclick();}
     else if(k==='t'||k==='T'){if(tbtn.onclick)tbtn.onclick();}
