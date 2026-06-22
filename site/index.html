@@ -654,7 +654,7 @@ function tipHtml(n,full){const d=n.dims;let h='<div class="t">'+esc(n.title||n.n
   h+='<div class="big" style="color:'+colorAbs(d.overall)+'">综合冲击 '+d.overall+' / 100'+(n.std?'  分歧±'+n.std:'')+'</div>';
   h+='<div class="grid"><span>任务自动化</span><b>'+d.automation+'</b><span>AI增强</span><b>'+d.augmentation+'</b><span>数字化</span><b>'+d.digital+'</b><span>护城河</span><b>'+d.moat+'</b><span>落地速度</span><b>'+d.adoption+'</b>';
   if(n.pay)h+='<span>年薪</span><b>¥'+n.pay.toLocaleString()+'</b>';if(n.education)h+='<span>学历</span><b>'+esc(n.education)+'</b>';if(n.employment)h+='<span>就业</span><b>'+fmtJobs(n.employment)+'</b>';if(n.level)h+='<span>等级</span><b>'+esc(n.level)+'</b>';h+='</div>';
-  if(n.eval){let ev=String(n.eval);if(ev.length>60)ev=ev.slice(0,60)+'…';h+='<div class="r">「'+esc(ev)+'」</div>';}
+  if(n.eval){h+='<div class="r">「'+esc(String(n.eval))+'」</div>';}
   else if(n.pending)h+='<div class="hint">待采集 / 继承所属中类'+(n.inherit?'「'+esc(n.inherit)+'」':'')+',尚未单独打分</div>';
   if(full){h+='<canvas id="tipr"></canvas>';const bm=n.by_model;
     if(bm){h+='<div class="mods">'+SCOREM.map(m=>{const e=bm[m];const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')+'</div>';}
