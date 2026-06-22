@@ -189,6 +189,15 @@
   .sc-stage{position:relative;}
   #scatterC{width:100%;height:62vh;max-height:560px;display:block;cursor:pointer;}
   #scatterTip{position:absolute;display:none;pointer-events:none;background:var(--panel2);border:1px solid var(--line);border-radius:7px;padding:5px 8px;font-size:11.5px;color:var(--text);box-shadow:0 4px 16px rgba(0,0,0,.3);white-space:nowrap;z-index:2;}
+  #tourLayer{position:fixed;inset:0;z-index:75;display:none;}
+  #tourLayer.show{display:block;}
+  #tourHole{position:absolute;border-radius:10px;box-shadow:0 0 0 9999px rgba(0,0,0,.62);border:2px solid var(--accent);transition:.22s ease;pointer-events:none;}
+  #tourBubble{position:absolute;width:300px;max-width:calc(100vw - 16px);background:var(--panel);border:1px solid var(--line);border-radius:12px;padding:13px 15px;box-shadow:0 14px 44px rgba(0,0,0,.4);font-size:13px;color:var(--text);line-height:1.6;transition:.22s ease;}
+  #tourBubble .tb-foot{display:flex;align-items:center;justify-content:space-between;margin-top:11px;gap:8px;}
+  #tourStep{font-size:11px;color:var(--soft);}
+  .tb-btns{display:inline-flex;gap:7px;}
+  #tourBubble button{font-family:inherit;font-size:12px;border-radius:7px;padding:5px 11px;cursor:pointer;border:1px solid var(--line);background:none;color:var(--muted);}
+  #tourBubble #tourNext{background:var(--accent);color:#fff;border-color:var(--accent);font-weight:700;}
   #supTrigger .hb{color:var(--accent2);font-size:12px;line-height:1;}
   #tip{position:fixed;pointer-events:none;z-index:40;background:var(--glass);border:1px solid var(--line);border-radius:11px;padding:10px 12px;font-size:12px;box-shadow:var(--shadow);display:none;width:250px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);}
   #tip.show{display:block;}
@@ -404,6 +413,7 @@
         <button type="button" data-act="share" role="menuitem">&#128247; 生成分享图</button>
         <button type="button" data-act="csv" role="menuitem">&#11015; 导出当前层 CSV</button>
         <button type="button" data-act="csvAll" role="menuitem">&#11015; 导出全部细类 CSV</button>
+        <button type="button" data-act="tour" role="menuitem">&#129517; 新手向导</button>
       </div>
     </div>
     <button id="supTrigger" type="button" aria-label="支持作者"><span class="hb">&#9829;</span><span class="lbl">支持作者</span></button>
@@ -434,6 +444,11 @@
 <div id="ovModal" role="dialog" aria-label="职业对比" aria-modal="true">
   <div class="sp-h"><h3 id="ovTitle">职业对比</h3><div class="sp-x" id="ovClose" title="关闭">&times;</div></div>
   <div id="ovBody"></div>
+</div>
+
+<div id="tourLayer">
+  <div id="tourHole"></div>
+  <div id="tourBubble"><div id="tourText"></div><div class="tb-foot"><span id="tourStep"></span><span class="tb-btns"><button type="button" id="tourSkip">跳过</button><button type="button" id="tourPrev">上一步</button><button type="button" id="tourNext">下一步</button></span></div></div>
 </div>
 
 <div id="introMask"><div id="introCard" role="dialog" aria-label="使用说明" aria-modal="true">
@@ -506,7 +521,7 @@ function wakeRadar(){if(!radarOn){radarOn=true;requestAnimationFrame(radarFrame)
 function bumpTop(){topAnimFrames=34;wake();}  /* 顶栏滑动/改高的约 0.5s 内保持帧循环,使手柄持续贴其底边 */
 const W=()=>cv.width/DPR,H=()=>cv.height/DPR;
 const full=()=>({x:6,y:6,w:W()-12,h:H()-12});
-function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());bumpTop();if(ovKind==='scatter')drawScatter();}
+function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());bumpTop();if(ovKind==='scatter')drawScatter();if(tourI>=0)tourShow();}
 const ovAll=n=>(n.dims&&n.dims.overall!=null)?n.dims.overall:(n.overall!=null?n.overall:0);
 /* C1 方块面积口径:emp 人数 / impact 影响体量(人数×冲击/100)/ score 纯分(综合冲击)。均加 1e-4 地板防 squarify 除零 */
 function sizeOf(n){const e=n.employment||0;return S.area==='score'?Math.max(1e-4,ovAll(n)):S.area==='impact'?Math.max(1e-4,e*ovAll(n)/100):Math.max(1e-4,e);}
@@ -720,7 +735,7 @@ function csvRows(allLeaves){const rows=[];
 function exportCSV(allLeaves){const rows=csvRows(allLeaves);if(!rows.length)return;const body=[CSV_COLS,...rows].map(r=>r.map(csvCell).join(',')).join('\r\n');const blob=new Blob(['﻿'+body],{type:'text/csv;charset=utf-8'});download((allLeaves?'AI岗位_全部细类':S.drill?('AI岗位_'+S.drill+'_细类'):'AI岗位_中类全部')+'.csv',blob);}
 const toolsBtn=document.getElementById('toolsBtn'),toolsMenu=document.getElementById('toolsMenu');
 toolsBtn.onclick=e=>{e.stopPropagation();const o=toolsMenu.classList.toggle('show');toolsBtn.setAttribute('aria-expanded',o);};
-toolsMenu.onclick=e=>{const b=e.target.closest('[data-act]');if(!b)return;toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');const act=b.dataset.act;if(act==='scatter')openScatter();else if(act==='share')exportShare();else if(act==='csv')exportCSV(false);else if(act==='csvAll')exportCSV(true);};
+toolsMenu.onclick=e=>{const b=e.target.closest('[data-act]');if(!b)return;toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');const act=b.dataset.act;if(act==='scatter')openScatter();else if(act==='share')exportShare();else if(act==='csv')exportCSV(false);else if(act==='csvAll')exportCSV(true);else if(act==='tour')startTour();};
 document.addEventListener('click',e=>{if(toolsMenu.classList.contains('show')&&!e.target.closest('.tm-wrap')){toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');}});
 /* ===== D1 加入对比(共用 #ovModal 居中大模态)===== */
 const CMP={level:null,codes:[],items:[]},CMP_MAX=4,CMP_COLORS=['#6d8cf0','#e0be68','#ca4e5e','#5fbf9f'];
@@ -795,6 +810,31 @@ function exportShare(){const SC=2,W=1200,H=630,cv2=document.createElement('canva
   paintRadar(c,940,312,150,radarT(),acc,14);
   c.fillStyle=mut;c.font='15px sans-serif';c.textAlign='center';c.fillText('六维画像(就业加权)',940,478);c.textAlign='left';
   if(cv2.toBlob)cv2.toBlob(b=>{if(b)download('AI岗位冲击_'+(S.drill||'全部')+'.png',b);},'image/png');else download('AI岗位冲击.png',cv2.toDataURL('image/png'));}
+/* ===== C3 分步引导(独立 tour_v1,工具菜单触发)===== */
+const TOUR=[
+  {sel:'#tg',title:'切换维度',text:'顶部这排按钮切换方块<b>颜色代表的维度</b>:综合冲击 / 自动化 / 护城河 / 薪资 / 学历 等。'},
+  {sel:'#areaSw',title:'方块面积',text:'切换方块<b>大小的含义</b>:人数 / 影响体量 / 纯分。'},
+  {sel:'#search',title:'搜索职业',text:'支持名称、<b>拼音、招聘叫法别名</b>(如 码农 / HR / 月嫂);方向键加回车直达。'},
+  {tile:true,title:'点方块下钻',text:'点任意方块逐层进入:<b>大类 - 中类 - 细类</b>,看该职业的六维画像与各模型评分。'},
+  {sel:'#botbar',title:'更多工具',text:'底部是面包屑;右侧「<b>工具</b>」里有 散点图 / 导出 CSV / 分享图 / 本向导。'}
+];
+let tourI=-1;
+const tourLayer=document.getElementById('tourLayer'),tourHole=document.getElementById('tourHole'),tourBubble=document.getElementById('tourBubble');
+function tourRect(step){if(step.tile){if(!tiles.length)return null;const t=tiles.find(x=>x.alpha>0.5)||tiles[0],cr=cv.getBoundingClientRect();return{left:cr.left+t.cx,top:cr.top+t.cy,width:t.cw,height:t.ch};}
+  const el=document.querySelector(step.sel);return el?el.getBoundingClientRect():null;}
+function tourShow(){const step=TOUR[tourI];if(!step){endTour();return;}const rc=tourRect(step);if(!rc||rc.width<2||rc.height<2){tourNext();return;}
+  const pad=6;tourHole.style.left=(rc.left-pad)+'px';tourHole.style.top=(rc.top-pad)+'px';tourHole.style.width=(rc.width+pad*2)+'px';tourHole.style.height=(rc.height+pad*2)+'px';
+  document.getElementById('tourText').innerHTML='<b style="font-size:14px">'+step.title+'</b><br>'+step.text;
+  document.getElementById('tourStep').textContent=(tourI+1)+' / '+TOUR.length;
+  document.getElementById('tourPrev').style.visibility=tourI>0?'visible':'hidden';
+  document.getElementById('tourNext').textContent=tourI===TOUR.length-1?'完成':'下一步';
+  const bw=300,bh=158,vw=innerWidth,vh=innerHeight;let bx=Math.min(Math.max(8,rc.left),vw-bw-8),by=rc.top+rc.height+14;if(by+bh>vh)by=Math.max(8,rc.top-bh-14);
+  tourBubble.style.left=bx+'px';tourBubble.style.top=by+'px';}
+function startTour(){tourI=0;tourLayer.classList.add('show');tourShow();}
+function endTour(){tourLayer.classList.remove('show');tourI=-1;try{localStorage.setItem('tour_v1','1');}catch(e){}}
+function tourNext(){if(tourI>=TOUR.length-1)endTour();else{tourI++;tourShow();}}
+function tourPrev(){if(tourI>0){tourI--;tourShow();}}
+document.getElementById('tourSkip').onclick=endTour;document.getElementById('tourNext').onclick=tourNext;document.getElementById('tourPrev').onclick=tourPrev;
 const tbtn=document.getElementById('themebtn');
 function applyTheme(){document.documentElement.dataset.theme=theme();tbtn.textContent=(themeMode==='auto'?'🌗 跟随设备':themeMode==='dark'?'🌙 深色':'☀️ 浅色');updateLegend();updateSummary();updateDa();renderTierLegend();wake();wakeRadar();}
 tbtn.onclick=()=>{themeMode=themeMode==='auto'?'light':themeMode==='light'?'dark':'auto';applyTheme();};
@@ -904,7 +944,7 @@ window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},b
     const k=e.key;
     if(k==='/'||k==='s'||k==='S'){e.preventDefault();searchEl.focus();}
     else if(k==='Backspace'){e.preventDefault();back();}
-    else if(k==='Escape'){if(toolsMenu.classList.contains('show')){toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');}else if(ovModal.classList.contains('show')){e.preventDefault();ovClose();}else if(!panelOpen()){e.preventDefault();back();}}      // 工具菜单/对比浮层优先关;有面板时交给面板自己的 Esc,不返回
+    else if(k==='Escape'){if(toolsMenu.classList.contains('show')){toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');}else if(tourLayer.classList.contains('show')){e.preventDefault();endTour();}else if(ovModal.classList.contains('show')){e.preventDefault();ovClose();}else if(!panelOpen()){e.preventDefault();back();}}      // 工具菜单/向导/对比浮层优先关;有面板时交给面板自己的 Esc,不返回
     else if(k>='1'&&k<='9'){const b=tg.children[+k-1];if(b&&b.onclick){e.preventDefault();b.onclick();}}
     else if(k==='d'||k==='D'){if(dis.onclick)dis.onclick();}
     else if(k==='t'||k==='T'){if(tbtn.onclick)tbtn.onclick();}
