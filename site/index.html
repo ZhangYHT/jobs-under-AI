@@ -401,6 +401,7 @@
       <button id="toolsBtn" type="button" aria-haspopup="true" aria-expanded="false">&#9881; 工具</button>
       <div id="toolsMenu" role="menu">
         <button type="button" data-act="scatter" role="menuitem">&#128200; 综合散点图</button>
+        <button type="button" data-act="share" role="menuitem">&#128247; 生成分享图</button>
         <button type="button" data-act="csv" role="menuitem">&#11015; 导出当前层 CSV</button>
         <button type="button" data-act="csvAll" role="menuitem">&#11015; 导出全部细类 CSV</button>
       </div>
@@ -551,11 +552,12 @@ function draw(){ctx.clearRect(0,0,W(),H());const dk=theme()==='dark';
     let s=d.name+'  ·  '+fmtJobs(d.jobs),mw=d.w-12;while(ctx.measureText(s).width>mw&&s.length>1)s=s.slice(0,-1);ctx.fillText(s,d.x+8,d.y+5);}});
   if(hov){const fr=fitRect(hov),k=hov.hl;const x=hov.cx+(fr.x-hov.cx)*k,y=hov.cy+(fr.y-hov.cy)*k,w=hov.cw+(fr.w-hov.cw)*k,h=hov.ch+(fr.h-hov.ch)*k;paintTile(x,y,w,h,[hov.cr,hov.cg,hov.cb],hov.node,hov.hl,1);}}
 
+function paintRadar(c,cx,cy,R,vals,ac,fs){const n=6,ln=theme()==='dark'?'rgba(255,255,255,.13)':'rgba(20,30,60,.13)',tx=cssv('--muted');ac=ac||cssv('--accent');fs=fs||9;
+  for(let g=1;g<=3;g++){c.beginPath();for(let i=0;i<=n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*g/3;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.strokeStyle=ln;c.stroke();}
+  for(let i=0;i<n;i++){const a=-Math.PI/2+i*2*Math.PI/n;c.fillStyle=tx;c.font=fs+'px sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(DIMS[i].short,cx+Math.cos(a)*(R+9),cy+Math.sin(a)*(R+7));}
+  c.beginPath();for(let i=0;i<n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*Math.max(0,Math.min(100,vals[i]||0))/100;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.fillStyle=ac+'44';c.strokeStyle=ac;c.lineWidth=2;c.fill();c.stroke();}
 function drawRadar(canvas,vals){const c=canvas.getContext('2d'),r=canvas.getBoundingClientRect();if(r.width<2||r.height<2)return;canvas.width=r.width*DPR;canvas.height=r.height*DPR;c.setTransform(DPR,0,0,DPR,0,0);
-  const w=r.width,h=r.height,cx=w/2,cy=h/2+2,R=Math.min(w,h)/2-15,n=6,ln=theme()==='dark'?'rgba(255,255,255,.13)':'rgba(20,30,60,.13)',tx=cssv('--muted');
-  c.clearRect(0,0,w,h);for(let g=1;g<=3;g++){c.beginPath();for(let i=0;i<=n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*g/3;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.strokeStyle=ln;c.stroke();}
-  for(let i=0;i<n;i++){const a=-Math.PI/2+i*2*Math.PI/n;c.fillStyle=tx;c.font='9px sans-serif';c.textAlign='center';c.textBaseline='middle';c.fillText(DIMS[i].short,cx+Math.cos(a)*(R+9),cy+Math.sin(a)*(R+7));}
-  const ac=cssv('--accent');c.beginPath();for(let i=0;i<n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*Math.max(0,Math.min(100,vals[i]))/100;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.fillStyle=ac+'44';c.strokeStyle=ac;c.lineWidth=2;c.fill();c.stroke();}
+  const w=r.width,h=r.height;c.clearRect(0,0,w,h);paintRadar(c,w/2,h/2+2,Math.min(w,h)/2-15,vals);}
 function drawCompareRadar(canvas,series){const c=canvas.getContext('2d'),r=canvas.getBoundingClientRect();if(r.width<2||r.height<2)return;canvas.width=r.width*DPR;canvas.height=r.height*DPR;c.setTransform(DPR,0,0,DPR,0,0);
   const w=r.width,h=r.height,cx=w/2,cy=h/2+2,R=Math.min(w,h)/2-18,n=6,ln=theme()==='dark'?'rgba(255,255,255,.13)':'rgba(20,30,60,.13)',tx=cssv('--muted');
   c.clearRect(0,0,w,h);for(let g=1;g<=3;g++){c.beginPath();for(let i=0;i<=n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*g/3;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.strokeStyle=ln;c.stroke();}
@@ -718,7 +720,7 @@ function csvRows(allLeaves){const rows=[];
 function exportCSV(allLeaves){const rows=csvRows(allLeaves);if(!rows.length)return;const body=[CSV_COLS,...rows].map(r=>r.map(csvCell).join(',')).join('\r\n');const blob=new Blob(['﻿'+body],{type:'text/csv;charset=utf-8'});download((allLeaves?'AI岗位_全部细类':S.drill?('AI岗位_'+S.drill+'_细类'):'AI岗位_中类全部')+'.csv',blob);}
 const toolsBtn=document.getElementById('toolsBtn'),toolsMenu=document.getElementById('toolsMenu');
 toolsBtn.onclick=e=>{e.stopPropagation();const o=toolsMenu.classList.toggle('show');toolsBtn.setAttribute('aria-expanded',o);};
-toolsMenu.onclick=e=>{const b=e.target.closest('[data-act]');if(!b)return;toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');const act=b.dataset.act;if(act==='scatter')openScatter();else if(act==='csv')exportCSV(false);else if(act==='csvAll')exportCSV(true);};
+toolsMenu.onclick=e=>{const b=e.target.closest('[data-act]');if(!b)return;toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');const act=b.dataset.act;if(act==='scatter')openScatter();else if(act==='share')exportShare();else if(act==='csv')exportCSV(false);else if(act==='csvAll')exportCSV(true);};
 document.addEventListener('click',e=>{if(toolsMenu.classList.contains('show')&&!e.target.closest('.tm-wrap')){toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');}});
 /* ===== D1 加入对比(共用 #ovModal 居中大模态)===== */
 const CMP={level:null,codes:[],items:[]},CMP_MAX=4,CMP_COLORS=['#6d8cf0','#e0be68','#ca4e5e','#5fbf9f'];
@@ -775,6 +777,24 @@ function openScatter(){ovOpen('scatter','综合散点图 · 就业 x 综合冲�
   cv2.onmouseleave=()=>{tip.style.display='none';};
   cv2.onclick=e=>{const hit=scHit(e);if(!hit)return;const p=hit.p;if(p.level==='z'){ovClose();const t=tiles.find(x=>x.id==='z:'+p.code);if(t)drillInto(t);}else{const g=ALLZ.find(x=>x.code===S.drill),node=g&&(g['细类']||[]).find(x=>x.code===p.code);if(node){ovClose();openLeaf(node);}}};
   requestAnimationFrame(drawScatter);}
+/* ===== D3 分享图(离屏 1200x630 canvas -> PNG)===== */
+const SITE_URL='unifytopia.com/jobs_under_AI';
+function exportShare(){const SC=2,W=1200,H=630,cv2=document.createElement('canvas');cv2.width=W*SC;cv2.height=H*SC;const c=cv2.getContext('2d');c.scale(SC,SC);
+  const ls=scope(),t=ls.reduce((s,l)=>s+(l.employment||0),0),a=ls.reduce((s,l)=>s+((l.dims&&l.dims.overall)||0)*(l.employment||0),0)/(t||1);let top=ls[0]||null;ls.forEach(l=>{if(((l.dims&&l.dims.overall)||0)>((top&&top.dims&&top.dims.overall)||0))top=l;});
+  const dk=theme()==='dark',bg=dk?'#0e1320':'#f6f8fc',fg=dk?'#e9edf6':'#1b2333',mut=dk?'#93a0ba':'#5d6a82',acc=(cssv('--accent')||'#6d8cf0').trim();
+  c.fillStyle=bg;c.fillRect(0,0,W,H);c.fillStyle=acc;c.fillRect(0,0,W,8);
+  c.textBaseline='top';c.textAlign='left';
+  c.fillStyle=fg;c.font='bold 42px sans-serif';c.fillText('AI 时代各岗位冲击图谱',64,56);
+  c.fillStyle=mut;c.font='22px sans-serif';c.fillText('中国版 · 官方就业薪资打底 + 13 模型加权集成',64,116);
+  const scopeName=S.drill?((ALLZ.find(x=>x.code===S.drill)||{}).name||'当前中类'):'全部职业 · 8 大类 / 79 中类 / 1639 细类';
+  c.fillStyle=acc;c.font='bold 24px sans-serif';c.fillText(scopeName,64,168);
+  c.fillStyle=fg;c.font='bold 34px sans-serif';c.fillText('覆盖就业 '+fmtJobs(t),64,236);c.fillText('就业加权综合冲击 '+a.toFixed(1),64,290);
+  c.fillStyle=mut;c.font='22px sans-serif';c.fillText('冲击最高:'+(top?(top.title||top.name)+' ('+((top.dims&&top.dims.overall)||0)+')':'-'),64,348);
+  c.fillStyle=mut;c.font='16px sans-serif';c.fillText('AI 冲击=多模型集成估算,代表被 AI 重塑程度,不等于失业裁员;仅供参考。',64,544);
+  c.fillStyle=acc;c.font='bold 18px sans-serif';c.fillText(SITE_URL,64,576);
+  paintRadar(c,940,312,150,radarT(),acc,14);
+  c.fillStyle=mut;c.font='15px sans-serif';c.textAlign='center';c.fillText('六维画像(就业加权)',940,478);c.textAlign='left';
+  if(cv2.toBlob)cv2.toBlob(b=>{if(b)download('AI岗位冲击_'+(S.drill||'全部')+'.png',b);},'image/png');else download('AI岗位冲击.png',cv2.toDataURL('image/png'));}
 const tbtn=document.getElementById('themebtn');
 function applyTheme(){document.documentElement.dataset.theme=theme();tbtn.textContent=(themeMode==='auto'?'🌗 跟随设备':themeMode==='dark'?'🌙 深色':'☀️ 浅色');updateLegend();updateSummary();updateDa();renderTierLegend();wake();wakeRadar();}
 tbtn.onclick=()=>{themeMode=themeMode==='auto'?'light':themeMode==='light'?'dark':'auto';applyTheme();};
