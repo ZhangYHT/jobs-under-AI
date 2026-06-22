@@ -15,12 +15,42 @@
   步骤4   集成     —— 每维 均值/中位数/标准差(分歧度) + 各模型分。
 """
 import json, glob, os, re, statistics, collections
+from pypinyin import lazy_pinyin
 
 DIMS = ['overall', 'automation', 'augmentation', 'digital', 'moat', 'adoption']
 def LEVEL(o): return '极高' if o >= 81 else '高' if o >= 61 else '中' if o >= 41 else '低' if o >= 21 else '极低'
 PAY_TIER = {'高': 1.3, '中': 1.0, '低': 0.75}
 ROOT = os.path.dirname(os.path.abspath(__file__))
 def p(*a): return os.path.join(ROOT, *a)
+
+def pyfull(s):
+    """全拼小写拼接,用于拼音搜索(管理 -> guanli)。"""
+    return ''.join(lazy_pinyin(s or '')).lower()
+def pyinit(s):
+    """拼音首字母拼接(管理 -> gl)。"""
+    return ''.join(w[0] for w in lazy_pinyin(s or '') if w).lower()
+
+def clean_rat(t):
+    """清掉中类理由里串进来的评分尾巴/下一条编码名称(parse_step4 的 70 字截断遗留),用作简介回退。"""
+    t = re.split(r'综合冲击', t)[0]                     # 砍掉串入的评分尾巴(连带其后的下一条编码名称)
+    t = re.sub(r'^[^:：\n]{0,14}[:：]\s*', '', t)       # 去开头"名称:"标签
+    return t.strip(' 　。.，,、;；')
+
+# 细类代表性评价(eval)的污染识别:剔除"思考过程/方法论/批次脚手架/报告标题/跨批汇总/装饰横幅/HTML"
+# 等非本细类正文的候选,使各细类从 13 个模型里挑到真正描述本职业的那条(详见 README 数据说明)。
+EVAL_START = ('占比', '学历', '薪资', '等级', '综合', '说明', '注', '本中类', '同一中类')
+_EVAL_BAD = re.compile(
+    r'好的[，,。]|收到[，,。]|^行[，,]|来[，,]\s*先[交上给]|先出前|这个批次|继续(输出|交|给)|我来|我将|我们开始|让我[来帮]|我先|我明确|我需要|首先[，,]|现在开始|下面(按|开始)|'
+    r'根据搜索|基于搜索|本报告|以下是|打分标准|评分标准|评分口径|统计口径|(占比|学历|薪资)[^。]{0,12}口径|作为(研究|资深|一名|对)|从第一性原理|基于(公开|国内官方)|官方智库|头部招聘|'
+    r'研究报告|评估报告|综合评估报告|深度研究|宏观背景|中类研判|研判脉络|涵盖编码|编码范围|细类深评|系列[｜|]|评估说明|方法论|摘要[ 　]|'
+    r'中类\s*[「『]|中类\s*\d|大类\s*[\d一二三四五六]|小类\s*\d|第\s*[\d一二三四五六]\s*[/／]?\s*[\d六]?\s*批|共[6六]批|逐一(进行|处理|评估)|上述(职业|细类|岗位)|本批[次的]|得分均(超过|高于|低于|在)|\d\s*个细类|集群[（(]约|'
+    r'[═━─＝]{3,}|={4,}|</?[a-zA-Z]|section-|WEF|OECD|ILO|O\*NET')
+def bad_eval(e):
+    return (not e) or e.startswith(EVAL_START) or bool(_EVAL_BAD.search(e[:60]))
+def clean_eval_head(e):
+    e = re.sub(r'^[\s#>*•·\-]+', '', e)                 # 去开头 markdown/项目符
+    e = re.sub(r'^【[^】]{0,30}】\s*', '', e)            # 去开头【编码 名称】
+    return re.sub(r'^\d-\d\d(-\d\d-\d\d)?[ 　]*', '', e)  # 去开头裸编码
 
 # 温和可信度加权(data/model_weights.json)。未列模型默认 1.0;Arena 匿名票 0.80。
 try:
@@ -57,6 +87,12 @@ def main():
     scn = load_models('step4_overall')   # 自然语言版综合冲击(更拉开)
     xl  = load_models('xilei')            # 细类深评打分
     all_models = sorted((set(emp) | set(pe) | set(sc) | set(scn)) - {'census7', 'official'})
+    # 人工挑选的高质量大类/中类简介(逐字摘自各模型概述,覆盖自动抽取版,避免把思考过程当摘要)
+    curated = json.load(open(p('data', 'curated_summaries.json'), encoding='utf-8'))
+    alias_path = p('data', 'aliases.cn.json')   # 招聘叫法/近义别名(子代理 harvest 产出,缺失则空)
+    aliases = json.load(open(alias_path, encoding='utf-8')) if os.path.exists(alias_path) else {}
+    cur_da = {k: (v.get('summary') if isinstance(v, dict) else v) for k, v in curated.get('da', {}).items()}
+    cur_zhong = {k: (v.get('summary') if isinstance(v, dict) else v) for k, v in curated.get('zhong', {}).items()}
     # 大类一句话总结(自然语言版)
     da_sum = {}
     for f in sorted(glob.glob(p('data', 'collected', 'step4_da', '*.json'))):
@@ -70,6 +106,8 @@ def main():
         rec = {k: g.get(k) for k in ('code', 'title', 'parent', 'da_title', 'english',
                                      'digital', 'green', 'n_xi', 'n_digital', 'n_green', 'official_sources')}
         rec['细类'] = g.get('细类', [])
+        rec['py'] = pyfull(rec.get('title', '')); rec['pyi'] = pyinit(rec.get('title', ''))
+        rec['alias'] = aliases.get(code, [])
         flags = []
 
         # ---- 步骤2 就业(七普官方优先,其次众议院) ----
@@ -116,7 +154,7 @@ def main():
 
         # ---- 步骤4 打分:综合冲击优先取自然语言版(更拉开),子维取 JSON 版 ----
         by_model, mean, median, std = {}, {}, {}, {}
-        for m in (set(scn) | set(sc)):                       # 综合冲击
+        for m in sorted(set(scn) | set(sc)):                 # 综合冲击(sorted 保证 by_model 键序稳定,避免每次跑出无意义大 diff)
             ov = scn[m][code].get('overall') if code in scn.get(m, {}) else None
             if ov is None and code in sc.get(m, {}): ov = sc[m][code].get('overall')
             if ov is not None: by_model.setdefault(m, {})['overall'] = ov
@@ -137,6 +175,9 @@ def main():
         rec['rationales'] = {m: (scn[m][code]['rationale'] if code in scn.get(m, {}) and scn[m][code].get('rationale')
                                  else sc.get(m, {}).get(code, {}).get('rationale', '')) for m in by_model}
         rec['rationales'] = {m: r for m, r in rec['rationales'].items() if r}
+        # 中类简介:优先人工挑选(curated zhong),否则回退最长的一条"干净"模型理由
+        _cln = [c for c in (clean_rat(r) for r in rec['rationales'].values()) if len(c) >= 12]
+        rec['summary'] = cur_zhong.get(code) or (max(_cln, key=len) if _cln else '')
         rec['n_models'] = len([m for m in by_model if 'overall' in by_model[m]])
         rec['std'] = std.get('overall', 0)
         if rec['n_models'] == 0:
@@ -147,6 +188,8 @@ def main():
         # ---- 细类深评(若已采集):人数=中类官方×归一占比;薪资=中类×档位;等级由分分档 ----
         scored = []
         for x in rec['细类']:
+            x['py'] = pyfull(x.get('title', '')); x['pyi'] = pyinit(x.get('title', ''))
+            x['alias'] = aliases.get(x.get('code', ''), [])
             mrows = [(m, xl[m][x['code']]) for m in xl if x['code'] in xl[m]]
             if not mrows: continue
             rows = [r for _, r in mrows]
@@ -166,11 +209,9 @@ def main():
             x['education'] = collections.Counter(edus).most_common(1)[0][0] if edus else None
             tiers = [r['pay_tier'] for r in rows if r.get('pay_tier')]
             x['pay_tier'] = collections.Counter(tiers).most_common(1)[0][0] if tiers else None
-            _bad = ('报告', '摘要', '评估说明', '方法论', '口径')
-            evs = [r['eval'] for r in rows if r.get('eval')
-                   and not r['eval'].startswith(('占比', '学历', '薪资', '等级', '综合', '说明', '注', '本中类', '同一中类'))
-                   and not any(b in r['eval'][:30] for b in _bad)]
+            evs = [r['eval'] for r in rows if not bad_eval(r.get('eval'))]   # 剔除思考/方法论/批次脚手架等污染候选
             ev = max(evs, key=len) if evs else next((r['eval'] for r in rows if r.get('eval')), '')
+            ev = clean_eval_head(ev)                              # 去开头 markdown/编码/横幅装饰
             ev = re.sub(r'\s*[（(]\[.*$', '', ev)                 # 砍掉 ([来源…]) 引用括注(常被截断)
             ev = re.sub(r'\[[^\]\n]{0,40}\]', '', ev)             # 去 [1]/[OECD] 等剩余方括号标记
             ev = re.sub(r'[（(]\s*[)）]', '', ev)                  # 去清空后的空括号
@@ -198,6 +239,7 @@ def main():
     agg = {
         'meta': {
             'title': 'AI 时代各岗位冲击图谱 · 中国版',
+            'version': 'v1.0',
             'taxonomy': occ['meta'],
             'models': all_models, 'n_models': len(all_models),
             'xilei_models': sorted(xl), 'weights': _W,
@@ -206,14 +248,25 @@ def main():
         },
         'categories': occ['categories'],
         'da_summary': {k: {'overall': round(statistics.mean(v['totals'])) if v['totals'] else None,
-                           'summary': v['summary']} for k, v in da_sum.items()},
+                           'summary': cur_da.get(k) or v['summary']} for k, v in da_sum.items()},
         'groups': out_groups,
     }
     json.dump(agg, open(p('data', 'aggregated.cn.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     # 同时输出站点可直接 <script> 加载的数据(双击 HTML 也能渲染,免本地服务器)
     os.makedirs(p('site'), exist_ok=True)
-    open(p('site', 'data.cn.js'), 'w', encoding='utf-8').write(
-        'window.DATA=' + json.dumps(agg, ensure_ascii=False) + ';')
+    data_js = 'window.DATA=' + json.dumps(agg, ensure_ascii=False) + ';'
+    open(p('site', 'data.cn.js'), 'w', encoding='utf-8').write(data_js)
+    # 自包含单文件:把数据内联进 HTML,免相对路径(供 WordPress 等自托管直接上传;GitHub Pages 仍用双文件 index.html)
+    idx = open(p('site', 'index.html'), encoding='utf-8').read()
+    mpat = re.compile(r'<script src="data\.cn\.js[^"]*"></script>')  # 容忍 ?v= 缓存版本号参数
+    m = mpat.search(idx)
+    if m:
+        inline = '<script>' + data_js.replace('</', '<\\/') + '</script>'  # 转义 </ 防数据里万一出现 </script> 提前闭合
+        out = idx[:m.start()] + inline + idx[m.end():]  # 切片拼接,避免 re.sub 把数据里的 \1 等当反向引用
+        open(p('site', 'index.standalone.html'), 'w', encoding='utf-8').write(out)
+        print('✅ index.standalone.html:数据已内联,免路径自托管版')
+    else:
+        print('⚠ 未在 index.html 找到 data.cn.js 引用,跳过自包含单文件(检查加载方式是否变了)')
 
     # QA 报告
     by_flag = collections.defaultdict(list)
