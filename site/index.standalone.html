@@ -378,7 +378,7 @@
   <div class="row1" style="margin-bottom:9px">
     <div class="tier-legend" id="tierLegend"><span class="tt">等级色阶</span></div>
     <div id="filt"><span>筛选</span><input type="range" id="filtR" min="0" max="100" step="5" value="0" aria-label="按当前维度筛选方块"><span class="fv" id="filtV">全部</span><button type="button" class="freset" id="filtReset">重置</button></div>
-    <div class="areaSw" id="areaSw" role="group" aria-label="方块面积依据"><span class="al">面积</span><button type="button" data-area="emp" class="active">人数</button><button type="button" data-area="impact">影响体量</button><button type="button" data-area="score">纯分</button></div>
+    <div class="areaSw" id="areaSw" role="group" aria-label="方块面积依据"><span class="al">面积</span><button type="button" data-area="emp" class="active">人数</button><button type="button" data-area="impact">影响规模</button><button type="button" data-area="score">冲击分</button></div>
   </div>
   <div class="cards">
     <div class="card"><div class="ct">概况(当前视图)</div><div class="grid2">
@@ -403,7 +403,7 @@
 
 <div id="botbar">
   <div id="crumb"></div>
-  <div class="bb-disc">AI 冲击为多模型集成估算,仅供参考,不代表官方结论</div>
+  <div class="bb-disc">AI 冲击为多个大模型综合打分,仅供参考,不代表官方结论</div>
   <div class="bb-tools">
     <button id="cmpTray" type="button" hidden>对比 <b id="cmpN">0</b></button>
     <div class="tm-wrap">
@@ -411,7 +411,7 @@
       <div id="toolsMenu" role="menu">
         <button type="button" data-act="scatter" role="menuitem">&#128200; 综合散点图</button>
         <button type="button" data-act="share" role="menuitem">&#128247; 生成分享图</button>
-        <button type="button" data-act="csv" role="menuitem">&#11015; 导出当前层 CSV</button>
+        <button type="button" data-act="csv" role="menuitem">&#11015; 导出本层职业 CSV</button>
         <button type="button" data-act="csvAll" role="menuitem">&#11015; 导出全部细类 CSV</button>
         <button type="button" data-act="tour" role="menuitem">&#129517; 新手向导</button>
       </div>
@@ -453,12 +453,12 @@
 
 <div id="introMask"><div id="introCard" role="dialog" aria-label="使用说明" aria-modal="true">
   <h2>AI 时代各岗位冲击图谱 · 中国版</h2>
-  <div class="isub">用官方就业 / 薪资数据打底,叠加多个大模型对每个职业"被 AI 冲击程度"的评分。</div>
+  <div class="isub">用官方的就业和薪资数据打底,再汇总多个 AI 大模型给每个职业"被 AI 冲击程度"的打分。</div>
   <div class="il"><span class="ic">▣</span><div><b>方块面积 = 就业人数</b>。格子越大,从业者越多。</div></div>
-  <div class="il"><span class="ic">🎨</span><div><b>方块颜色 = 所选维度的高低</b>。顶部可切换综合冲击 / 自动化 / 护城河 / 薪资 / 学历等。</div></div>
+  <div class="il"><span class="ic">🎨</span><div><b>方块颜色 = 所选维度的高低</b>。顶部可切换综合冲击 / 自动化 / AI难替代 / 薪资 / 学历等。</div></div>
   <div class="il"><span class="ic">👆</span><div><b>点方块逐层下钻</b>:八大类 → 中类 → 具体细类职业,再点开看各模型评价。</div></div>
   <div class="cav"><b>重要:</b>冲击分代表岗位"被 AI 重塑的程度",高分<b>不等于</b>失业或裁员,更多是工作方式被改变、效率被放大。</div>
-  <div class="isrc">数据来源:职业分类大典2022 · 第七次全国人口普查 · 国家统计局;AI 冲击为多模型集成估算,仅供参考。</div>
+  <div class="isrc">数据来源:职业分类大典2022 · 第七次全国人口普查 · 国家统计局;AI 冲击为多个大模型综合打分的估算,仅供参考。</div>
   <div class="ibtns"><button class="ghost" id="introMore" type="button">查看数据与方法</button><button class="prim" id="introOk" type="button">知道了,开始探索</button></div>
 </div></div>
 
@@ -469,15 +469,15 @@ if(!window.DATA){document.getElementById('err').style.display='flex';}
 else{(function(){
 try{
 const DATA=window.DATA,DASUM=DATA.da_summary||{};
-const DIMS=[{key:'overall',label:'综合冲击',short:'综合',main:1,desc:'综合冲击=该职业被 AI 整体重塑的程度(高=被深度重塑、生产力剧变,不等于失业)'},{key:'automation',label:'任务自动化',short:'自动化',desc:'任务自动化=日常任务可被 AI 直接替代的比例'},
-  {key:'augmentation',label:'AI增强',short:'AI增强',desc:'AI增强=AI 作为工具放大该岗位产出的程度'},{key:'digital',label:'数字化程度',short:'数字化',desc:'数字化程度=工作本身在电脑/线上/数据环境中进行的程度'},
-  {key:'moat',label:'护城河',short:'护城河',note:'红=护城河强',desc:'技能护城河=人类不可替代性(高=AI 难替代,如重体力、手艺、人际信任、现场担责)'},{key:'adoption',label:'落地速度',short:'落地',desc:'行业落地速度=该岗位 AI 应用在中国大陆的真实落地速度'}];
+const DIMS=[{key:'overall',label:'综合冲击',short:'综合',main:1,desc:'这个职业整体被 AI 改变的程度;分越高,干活方式被改变得越多(高分不等于失业,而是工作方式变了)'},{key:'automation',label:'任务自动化',short:'自动化',desc:'日常工作里,有多少能被 AI 直接代劳'},
+  {key:'augmentation',label:'AI增强',short:'AI增强',desc:'把 AI 当工具用,帮这个岗位干得更快、更多的程度'},{key:'digital',label:'数字化程度',short:'数字化',desc:'工作有多少是在电脑、网上、数据里完成(相对于动手或跑现场)'},
+  {key:'moat',label:'AI难替代',short:'难替代',note:'红=越难被AI替代',desc:'人比 AI 更靠得住、AI 难取代的程度(如重体力、手艺活、现场担责、靠人情信任)'},{key:'adoption',label:'普及速度',short:'普及',desc:'这个岗位的 AI 应用,目前在中国铺开得有多快'}];
 const DIMKEYS=DIMS.map(d=>d.key);
 const EDU={'博士':6,'硕士':5,'本科':4,'大专':3,'高中':2,'初中':1};
-const METRICS=[...DIMS,{key:'pay',label:'薪资',extra:1,desc:'薪资=该职业年薪水平(锚定国家统计局)'},{key:'education',label:'学历',extra:1,desc:'学历=典型入职学历'}];
-const DALAB={'1':['管理者','党政机关、企事业单位的领导岗'],'2':['专业技术','工程师、医生、教师、研究/文艺等脑力专业岗'],'3':['办事文职','行政、办公室事务'],'4':['服务业','商业、餐饮、IT 与生活服务等'],'5':['农林牧渔','种植养殖捕捞等第一产业'],'6':['生产制造','工厂、建筑、操作设备的蓝领岗'],'7':['军人','军队人员'],'8':['其他','不便分类的零散职业']};
+const METRICS=[...DIMS,{key:'pay',label:'薪资',extra:1,desc:'这个职业的大致年薪水平(参考国家统计局)'},{key:'education',label:'学历',extra:1,desc:'入行通常要求的学历'}];
+const DALAB={'1':['管理者','政府、企业、事业单位的负责人'],'2':['专业技术','工程师、医生、教师、研发、文艺等专业岗'],'3':['行政文职','行政、办公室文员等'],'4':['服务业','商业、餐饮、IT 与生活服务等'],'5':['农林牧渔','种地、养殖、打渔等'],'6':['生产制造','工厂、建筑、操作设备的蓝领岗'],'7':['军人','军队人员'],'8':['其他','不好归类的零散职业']};
 const SCOREM=[...new Set(DATA.groups.flatMap(g=>[...Object.keys(g.by_model||{}),...((g['细类']||[]).flatMap(x=>Object.keys(x.by_model||{})))]))];
-document.getElementById('sub').innerHTML='官方数据打底 · AI 众议院加权集成 &nbsp;|&nbsp; 就业=七普 · 薪资=统计局 · 分类=大典2022 · AI冲击='+SCOREM.length+'模型集成';
+document.getElementById('sub').innerHTML='官方数据为底,综合 '+SCOREM.length+' 个 AI 大模型的打分 &nbsp;|&nbsp; 就业=七普 · 薪资=统计局 · 分类=职业大典2022';
 const byDa={};DATA.groups.forEach(g=>{(byDa[g.parent]=byDa[g.parent]||[]).push(g);});
 const TREE=DATA.categories.map(c=>({code:c.code,name:c.title,children:(byDa[c.code]||[]).filter(g=>g.employment)})).filter(d=>d.children.length);
 const ALLZ=[];TREE.forEach(d=>d.children.forEach(g=>{g.da=d.name;g.daCode=d.code;g.name=g.title;ALLZ.push(g);}));
@@ -617,27 +617,27 @@ function renderCrumb(c){if(!c)return;if(!S.drill){c.innerHTML='<b>全部职业</
 function updateCrumb(){renderCrumb(document.getElementById('crumb'));}
 
 const top=document.getElementById('top'),backTab=document.getElementById('backTab');
-function fillDetail(g){document.getElementById('dName').innerHTML=g.title+(g.digital?' <span class="tag">数字职业S</span>':'')+(g.green?' <span class="tag green">绿色L</span>':'');
+function fillDetail(g){document.getElementById('dName').innerHTML=g.title+(g.digital?' <span class="tag">数字职业</span>':'')+(g.green?' <span class="tag green">绿色职业</span>':'');
   document.getElementById('dMeta').textContent=g.da+' · '+g.code+(g.english?' · '+g.english:'')+' · '+(g.n_xi||0)+'细类';
   document.getElementById('dDims').innerHTML=DIMS.map(d=>'<div class="dimrow"><span>'+d.label+'</span><b>'+(g.dims[d.key]!=null?g.dims[d.key]:'-')+(g.dims_std&&g.dims_std[d.key]?' <span style="color:var(--soft)">±'+g.dims_std[d.key]+'</span>':'')+'</b></div>').join('');
   const prov=(g.flags||[]).some(f=>/provisional|missing/.test(f));
   document.getElementById('dKv').innerHTML='<span>就业</span><b>'+(g.employment?fmtJobs(g.employment):'-')+'</b><span>年薪</span><b>'+(g.pay?'¥'+g.pay.toLocaleString():'-')+(prov?'<span class="tag warn">估</span>':'')+'</b><span>学历</span><b>'+(g.education||'-')+'</b><span>模型</span><b>'+(g.n_models||0)+'</b>';
-  document.getElementById('dModelsH').textContent='各模型综合冲击('+(g.n_models||0)+') · 条形见分歧';
+  document.getElementById('dModelsH').textContent='各 AI 模型给的综合冲击分('+(g.n_models||0)+'个) · 柱形高低=分歧';
   document.getElementById('dModels').innerHTML=SCOREM.map(m=>{const v=g.by_model&&g.by_model[m]?g.by_model[m].overall:null;return v==null?'':'<span class="chip" title="'+((g.rationales&&g.rationales[m])||'').replace(/"/g,'')+'"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')||'-';
   const rat=g.summary||(g.rationales?Object.values(g.rationales).filter(Boolean)[0]:'');document.getElementById('dRat').textContent=rat?'「'+rat+'」':'';
   const os=(g.official_sources||[]).slice(0,3).map(s=>s.url?'<a href="'+s.url+'" target="_blank" style="color:var(--accent)">'+(s.name||'源')+'</a>':(s.name||'')).filter(Boolean).join(' · ');
   document.getElementById('dSrc').innerHTML=(os?'官方来源:'+os:'')+(g.flags&&g.flags.length?'<br>标记:'+g.flags.join('、'):'');
   requestAnimationFrame(()=>{drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>g.dims[k]||0));drawBars(document.getElementById('dvbars'),g);});}
 function fillLeaf(node){const g=ALLZ.find(x=>x.code===S.drill)||{};const d=node.dims||{};
-  document.getElementById('dName').innerHTML=esc(node.title||node.name)+((node.digital||node.S)?' <span class="tag">数字职业S</span>':'')+(node.green?' <span class="tag green">绿色L</span>':'');
+  document.getElementById('dName').innerHTML=esc(node.title||node.name)+((node.digital||node.S)?' <span class="tag">数字职业</span>':'')+(node.green?' <span class="tag green">绿色职业</span>':'');
   document.getElementById('dMeta').textContent=(g.title||'')+' · '+(node.code||'-')+(node.level?' · 等级'+node.level:'');
   document.getElementById('dDims').innerHTML=DIMS.map(x=>'<div class="dimrow"><span>'+x.label+'</span><b>'+(d[x.key]!=null?d[x.key]:'-')+'</b></div>').join('');
   const pt=node.pay_tier?'<span class="tag warn">'+esc(node.pay_tier)+'</span>':'';
   document.getElementById('dKv').innerHTML='<span>就业</span><b>'+(node.employment?fmtJobs(node.employment):'-')+'</b><span>年薪</span><b>'+(node.pay?'¥'+node.pay.toLocaleString():'-')+pt+'</b><span>学历</span><b>'+(node.education||'-')+'</b><span>等级</span><b>'+(node.level||'-')+'</b><span>模型</span><b>'+(node.n_models||0)+'</b>';
-  document.getElementById('dModelsH').textContent='各模型综合冲击('+(node.n_models||0)+') · 条形见分歧';
+  document.getElementById('dModelsH').textContent='各 AI 模型给的综合冲击分('+(node.n_models||0)+'个) · 柱形高低=分歧';
   document.getElementById('dModels').innerHTML=SCOREM.map(m=>{const e=node.by_model?node.by_model[m]:null;const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+esc(m)+' <b>'+v+'</b></span>';}).join('')||'-';
   document.getElementById('dRat').textContent=node.eval?'「'+node.eval+'」':'';
-  document.getElementById('dSrc').innerHTML='细类为多模型集成估算,人数由所属中类官方就业按占比分配。';
+  document.getElementById('dSrc').innerHTML='该职业评分综合多个 AI 模型;人数按官方就业数据推算。';
   requestAnimationFrame(()=>{drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>d[k]||0));drawBars(document.getElementById('dvbars'),node);});}
 function openLeaf(node){S.leaf=node.code;top.classList.remove('collapsed');top.classList.add('detail');backTab.style.display='block';fillLeaf(node);updateCrumb();bumpTop();}
 function drillInto(t){S.leaf=null;S.drill=t.node.code;rebuild({x:t.cx,y:t.cy,w:t.cw,h:t.ch});top.classList.remove('collapsed');top.classList.add('detail');backTab.style.display='block';fillDetail(t.node);updateCrumb();updateSummary();bumpTop();wakeRadar();}
@@ -650,17 +650,17 @@ function hideTip(){if(hoverId!=null){hoverId=null;wake();}tip.classList.remove('
 /* 触摸下没有 hover,点按命中给该方块一个短暂高亮作为触感反馈(不弹 tooltip) */
 function tapFlash(id){clearTimeout(flashTimer);hoverId=id;wake();flashTimer=setTimeout(()=>{if(hoverId===id){hoverId=null;wake();}},300);}
 const nodeOf=id=>{const t=tiles.find(x=>x.id===id);return t?t.node:null;};
-function tipHtml(n,full){const d=n.dims;let h='<div class="t">'+esc(n.title||n.name)+(n.digital||n.S?'<span class="tag">数字S</span>':'')+(n.green?'<span class="tag green">绿L</span>':'')+(n.pending?'<span class="tag warn">待采集</span>':'')+'</div>';
-  h+='<div class="big" style="color:'+colorAbs(d.overall)+'">综合冲击 '+d.overall+' / 100'+(n.std?'  分歧±'+n.std:'')+'</div>';
-  h+='<div class="grid"><span>任务自动化</span><b>'+d.automation+'</b><span>AI增强</span><b>'+d.augmentation+'</b><span>数字化</span><b>'+d.digital+'</b><span>护城河</span><b>'+d.moat+'</b><span>落地速度</span><b>'+d.adoption+'</b>';
+function tipHtml(n,full){const d=n.dims;let h='<div class="t">'+esc(n.title||n.name)+(n.digital||n.S?'<span class="tag">数字</span>':'')+(n.green?'<span class="tag green">绿色</span>':'')+(n.pending?'<span class="tag warn">待采集</span>':'')+'</div>';
+  h+='<div class="big" style="color:'+colorAbs(d.overall)+'">综合冲击 '+d.overall+' / 100'+(n.std?'  评分差异±'+n.std:'')+'</div>';
+  h+='<div class="grid"><span>任务自动化</span><b>'+d.automation+'</b><span>AI增强</span><b>'+d.augmentation+'</b><span>数字化</span><b>'+d.digital+'</b><span>AI难替代</span><b>'+d.moat+'</b><span>普及速度</span><b>'+d.adoption+'</b>';
   if(n.pay)h+='<span>年薪</span><b>¥'+n.pay.toLocaleString()+'</b>';if(n.education)h+='<span>学历</span><b>'+esc(n.education)+'</b>';if(n.employment)h+='<span>就业</span><b>'+fmtJobs(n.employment)+'</b>';if(n.level)h+='<span>等级</span><b>'+esc(n.level)+'</b>';h+='</div>';
   if(n.eval){h+='<div class="r">「'+esc(String(n.eval))+'」</div>';}
-  else if(n.pending)h+='<div class="hint">待采集 / 继承所属中类'+(n.inherit?'「'+esc(n.inherit)+'」':'')+',尚未单独打分</div>';
+  else if(n.pending)h+='<div class="hint">暂无单独评分,沿用所属分类'+(n.inherit?'「'+esc(n.inherit)+'」':'')+'的数据</div>';
   if(full){h+='<canvas id="tipr"></canvas>';const bm=n.by_model;
     if(bm){h+='<div class="mods">'+SCOREM.map(m=>{const e=bm[m];const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')+'</div>';}
     const rat=n.rationales?Object.values(n.rationales).filter(Boolean)[0]:'';if(rat)h+='<div class="r">「'+esc(rat)+'」</div>';
     if(S.drill&&!n.pending)h+='<div class="hint">点击查看该细类完整详情</div>';}
-  else h+='<div class="hint">静止片刻 → 展开各模型分歧与雷达</div>';return h;}
+  else h+='<div class="hint">鼠标停一下,展开各模型评分和雷达图</div>';return h;}
 function showTip(n,full){tip.innerHTML=tipHtml(n,full);tip.classList.add('show');if(full){const c=document.getElementById('tipr');if(c)drawRadar(c,DIMKEYS.map(k=>n.dims[k]||0));}place();}
 function place(){const[x,y]=tipXY;let tw=tip.offsetWidth,th=tip.offsetHeight,tx=x+16,ty=y+16;if(tx+tw>innerWidth-8)tx=x-tw-16;if(ty+th>innerHeight-8)ty=innerHeight-th-8;if(ty<8)ty=8;tip.style.left=tx+'px';tip.style.top=ty+'px';}
 function hit(px,py){for(let i=tiles.length-1;i>=0;i--){const t=tiles[i];if(px>=t.cx&&px<=t.cx+t.cw&&py>=t.cy&&py<=t.cy+t.ch&&t.alpha>.3)return t;}return null;}
@@ -713,7 +713,7 @@ searchEl.addEventListener('keydown',e=>{if(!sRes.classList.contains('show')||!cu
   else if(e.key==='Escape'){sRes.classList.remove('show');}});
 // C4 维度阈值筛选(按当前维度归一值,连续帧自动应用)
 const filtR=document.getElementById('filtR'),filtV=document.getElementById('filtV'),filtBox=document.getElementById('filt');
-function fmtFilt(){filtV.textContent=S.minPct<=0?'全部':'本维度前 '+(100-S.minPct)+'%';}
+function fmtFilt(){filtV.textContent=S.minPct<=0?'全部':'只看前 '+(100-S.minPct)+'%';}
 function syncFiltDisabled(){filtBox.classList.toggle('dis',S.disagree);}
 function resetFilt(){S.minPct=0;filtR.value=0;fmtFilt();syncFiltDisabled();wake();}
 filtR.addEventListener('input',()=>{S.minPct=+filtR.value;fmtFilt();wake();});
@@ -805,17 +805,17 @@ function exportShare(){const SC=2,W=1200,H=630,cv2=document.createElement('canva
   c.fillStyle=acc;c.font='bold 24px sans-serif';c.fillText(scopeName,64,168);
   c.fillStyle=fg;c.font='bold 34px sans-serif';c.fillText('覆盖就业 '+fmtJobs(t),64,236);c.fillText('就业加权综合冲击 '+a.toFixed(1),64,290);
   c.fillStyle=mut;c.font='22px sans-serif';c.fillText('冲击最高:'+(top?(top.title||top.name)+' ('+((top.dims&&top.dims.overall)||0)+')':'-'),64,348);
-  c.fillStyle=mut;c.font='16px sans-serif';c.fillText('AI 冲击=多模型集成估算,代表被 AI 重塑程度,不等于失业裁员;仅供参考。',64,544);
+  c.fillStyle=mut;c.font='16px sans-serif';c.fillText('AI 冲击=多个大模型综合打分,代表被 AI 改变的程度,不等于失业裁员;仅供参考。',64,544);
   c.fillStyle=acc;c.font='bold 18px sans-serif';c.fillText(SITE_URL,64,576);
   paintRadar(c,940,312,150,radarT(),acc,14);
   c.fillStyle=mut;c.font='15px sans-serif';c.textAlign='center';c.fillText('六维画像(就业加权)',940,478);c.textAlign='left';
   if(cv2.toBlob)cv2.toBlob(b=>{if(b)download('AI岗位冲击_'+(S.drill||'全部')+'.png',b);},'image/png');else download('AI岗位冲击.png',cv2.toDataURL('image/png'));}
 /* ===== C3 分步引导(独立 tour_v1,工具菜单触发)===== */
 const TOUR=[
-  {sel:'#tg',title:'切换维度',text:'顶部这排按钮切换方块<b>颜色代表的维度</b>:综合冲击 / 自动化 / 护城河 / 薪资 / 学历 等。'},
-  {sel:'#areaSw',title:'方块面积',text:'切换方块<b>大小的含义</b>:人数 / 影响体量 / 纯分。'},
+  {sel:'#tg',title:'切换维度',text:'顶部这排按钮切换方块<b>颜色代表的维度</b>:综合冲击 / 自动化 / AI难替代 / 薪资 / 学历 等。'},
+  {sel:'#areaSw',title:'方块面积',text:'切换方块<b>大小的含义</b>:人数 / 影响规模 / 冲击分。'},
   {sel:'#search',title:'搜索职业',text:'支持名称、<b>拼音、招聘叫法别名</b>(如 码农 / HR / 月嫂);方向键加回车直达。'},
-  {tile:true,title:'点方块下钻',text:'点任意方块逐层进入:<b>大类 - 中类 - 细类</b>,看该职业的六维画像与各模型评分。'},
+  {tile:true,title:'点开方块',text:'点任意方块逐层进入:<b>大类 - 中类 - 细类</b>,看该职业的六维画像与各模型评分。'},
   {sel:'#botbar',title:'更多工具',text:'底部是面包屑;右侧「<b>工具</b>」里有 散点图 / 导出 CSV / 分享图 / 本向导。'}
 ];
 let tourI=-1;
@@ -906,7 +906,7 @@ const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bili
      +'<li>AI 冲击 = '+nXi+' 个主流大模型集成 + Arena 匿名双盲票,温和可信度加权</li>'
      +'<li>三层下钻:大类 → 中类 → 细类(全 1639 细类已打分)</li>'
      +'<li>六维画像 + 综合冲击 + 等级 + 模型分歧</li>'
-     +'<li>方块面积三态:人数 / 影响体量 / 纯分</li>'
+     +'<li>方块面积三态:人数 / 影响规模 / 冲击分</li>'
      +'<li>搜索(中类+细类)+ 维度阈值筛选 + 维度切换</li>'
      +'<li>社交分享卡(OG / Twitter)、首屏说明卡、关于面板</li>'
      +'<li>性能:静止停帧省电,回前台唤醒</li></ul>';
