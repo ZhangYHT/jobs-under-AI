@@ -44,13 +44,30 @@ _EVAL_BAD = re.compile(
     r'根据搜索|基于搜索|本报告|以下是|打分标准|评分标准|评分口径|统计口径|(占比|学历|薪资)[^。]{0,12}口径|作为(研究|资深|一名|对)|从第一性原理|基于(公开|国内官方)|官方智库|头部招聘|'
     r'研究报告|评估报告|综合评估报告|深度研究|宏观背景|中类研判|研判脉络|涵盖编码|编码范围|细类深评|系列[｜|]|评估说明|方法论|摘要[ 　]|'
     r'中类\s*[「『]|中类\s*\d|大类\s*[\d一二三四五六]|小类\s*\d|第\s*[\d一二三四五六]\s*[/／]?\s*[\d六]?\s*批|共[6六]批|逐一(进行|处理|评估)|上述(职业|细类|岗位)|本批[次的]|得分均(超过|高于|低于|在)|\d\s*个细类|集群[（(]约|'
-    r'[═━─＝]{3,}|={4,}|</?[a-zA-Z]|section-|WEF|OECD|ILO|O\*NET')
+    r'[═━─＝]{3,}|={4,}|</?[a-zA-Z]|section-|WEF|OECD|ILO|O\*NET|'
+    r'\d\s*\+\s*\d[\d\s+.]*=\s*\d|\*\*|◇|-{3,}|我按|这一批|其余[^。]{0,6}批|见表\s*\d|细类编码|官方职业名称|\d-\d\d-\d\d-\d\d[^。]{0,30}\d-\d\d-\d\d-\d\d')   # +数学和草稿/markdown/装饰/口语批头/表格脚手架/多码批表
 def bad_eval(e):
-    return (not e) or e.startswith(EVAL_START) or bool(_EVAL_BAD.search(e[:60]))
+    return (not e) or e.startswith(EVAL_START) or bool(_EVAL_BAD.search(e[:240]))
 def clean_eval_head(e):
     e = re.sub(r'^[\s#>*•·\-]+', '', e)                 # 去开头 markdown/项目符
     e = re.sub(r'^【[^】]{0,30}】\s*', '', e)            # 去开头【编码 名称】
     return re.sub(r'^\d-\d\d(-\d\d-\d\d)?[ 　]*', '', e)  # 去开头裸编码
+def strip_scaffold(e, t):                              # 去模型行首脚手架(中类名/编码/序号/重复职业名/破折号);多遍至稳定
+    if not e: return e
+    t = (t or '').strip(); P = ' 　，,、;；:：（）()。！？!?'
+    for _ in range(4):
+        b = e = e.strip(P)
+        e = re.sub(r'^(?:[一二三四五六七八九十]+、|[（(]?\d{1,2}(?:\.\d{1,2})*[)）]?[ 　.、)]\s*)', '', e)  # 列表/小节序号(含 2.1)
+        e = re.sub(r'^编[码号]\s*', '', e)                                                          # "编码 "
+        e = re.sub(r'^职业概述[^。]{0,16}?[ 　：:，]+', '', e)                                         # "职业概述与核心内容"小节头
+        e = re.sub(r'^[^。；：:]{2,40}?(?:类职业|细类|职业)(?:评估|评价|研判)[ 　：:，]*', '', e)         # "XX评估/研判"批头
+        e = re.sub(r'^.{0,40}?\d-\d\d-\d\d-\d\d[)）]?[ 　]*', '', e, count=1)                          # "中类名+4段职业码(可带右括号)"前缀
+        if t:
+            e = re.sub(r'^[^。！？!?]{0,40}?' + re.escape(t) + r'(?:[ 　]*[：:、，][ 　]*|[ 　]+)', '', e, count=1)  # "(前缀)+本职业名"
+        e = re.sub(r'^自然语言评价[ 　]*[：:]\s*', '', e)                                            # "自然语言评价:"
+        if e == b: break
+    e = re.sub(r'[ 　]*(?:-{2,}|[—–]+)[ 　]*', '，', e)                                  # 破折号/连字符串 -> 中文逗号
+    return e.strip(P)
 
 # 温和可信度加权(data/model_weights.json)。未列模型默认 1.0;Arena 匿名票 0.80。
 try:
@@ -210,8 +227,10 @@ def main():
             tiers = [r['pay_tier'] for r in rows if r.get('pay_tier')]
             x['pay_tier'] = collections.Counter(tiers).most_common(1)[0][0] if tiers else None
             evs = [r['eval'] for r in rows if not bad_eval(r.get('eval'))]   # 剔除思考/方法论/批次脚手架等污染候选
-            ev = max(evs, key=len) if evs else next((r['eval'] for r in rows if r.get('eval')), '')
-            ev = clean_eval_head(ev)                              # 去开头 markdown/编码/横幅装饰
+            ev = max(evs, key=len) if evs else ''                 # 无干净候选则留空,宁缺勿脏
+            ev = re.sub(r'^\s*\d[\d\s+.]*=\s*\d+\s*[✓]?', '', ev)  # 防御:去残留行首数学和草稿
+            ev = re.sub(r'\*+|◇|✓', '', ev)                       # 防御:去残留 markdown 装饰
+            ev = strip_scaffold(clean_eval_head(ev), x.get('title', ''))  # 去行首脚手架(中类名/编码/序号/重复职业名)+破折号
             ev = re.sub(r'\s*[（(]\[.*$', '', ev)                 # 砍掉 ([来源…]) 引用括注(常被截断)
             ev = re.sub(r'\[[^\]\n]{0,40}\]', '', ev)             # 去 [1]/[OECD] 等剩余方括号标记
             ev = re.sub(r'[（(]\s*[)）]', '', ev)                  # 去清空后的空括号
