@@ -15,7 +15,7 @@ for g in occ['groups']:
     for x in g.get('细类', []):
         TITLE[x['code']] = x.get('title', '')
 
-MAXLEN, MAXN = 16, 15
+MAXLEN, MAXN = 16, 20
 def clean(code, lst):
     t = TITLE.get(code, ''); tl = t.lower()
     seen, out = set(), []

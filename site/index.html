@@ -69,7 +69,7 @@
   .search input:focus{border-color:var(--accent);width:200px;}
   .search svg{position:absolute;left:9px;top:50%;transform:translateY(-50%);opacity:.55;}
   /* C4 搜索结果下拉 */
-  #sResults{position:absolute;top:calc(100% + 5px);left:0;z-index:60;width:312px;max-width:80vw;max-height:344px;overflow-y:auto;
+  #sResults{position:absolute;top:calc(100% + 5px);left:0;z-index:60;width:312px;max-width:80vw;max-height:min(64vh,560px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain;
     background:var(--glass);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border:1px solid var(--line);
     border-radius:11px;box-shadow:var(--shadow);padding:5px;display:none;}
   #sResults.show{display:block;}
@@ -80,6 +80,8 @@
   #sResults .sr .pa{color:var(--soft);font-size:10px;flex:none;max-width:38%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;}
   #sResults .sr .tag2{flex:none;font-size:9px;color:var(--muted);border:1px solid var(--line);border-radius:5px;padding:0 4px;}
   #sResults .none{padding:10px;color:var(--soft);font-size:11.5px;text-align:center;}
+  #sResults .srMore{padding:7px;text-align:center;font-size:10.5px;color:var(--accent);}
+  #sResults .srMore.done{color:var(--soft);}
   /* C4 维度阈值筛选 */
   #filt{display:flex;align-items:center;gap:7px;font-size:11px;color:var(--muted);background:var(--panel2);border:1px solid var(--line);padding:4px 10px;border-radius:8px;}
   #filt input[type=range]{width:92px;accent-color:var(--accent);cursor:pointer;height:14px;}
@@ -689,22 +691,25 @@ const SI=[];
 ALLZ.forEach(g=>{SI.push({k:'z',code:g.code,nm:g.name,en:(g.english||''),py:(g.py||''),pyi:(g.pyi||''),alias:(g.alias||[]),da:g.da,emp:g.employment||0,node:g});
   (g['细类']||[]).forEach(x=>SI.push({k:'l',code:x.code,zcode:g.code,nm:x.title,en:'',py:(x.py||''),pyi:(x.pyi||''),alias:(x.alias||[]),da:g.da,zhong:g.name,emp:x.employment||0,node:x}));});
 const searchEl=document.getElementById('search'),sRes=document.getElementById('sResults');
-let curHits=[],selIdx=-1;
+let curHits=[],selIdx=-1,shown=0;const SR_BATCH=40;
 const ovOf=n=>n.overall!=null?n.overall:(n.dims&&n.dims.overall!=null?n.dims.overall:null);
 const sChip=n=>{const o=ovOf(n);return o==null?'<span class="sc" style="background:var(--line)">-</span>':'<span class="sc" style="background:'+colorAbs(o)+'">'+o+'</span>';};
-function rankHits(q){q=q.toLowerCase();const out=[];for(const it of SI){const nm=it.nm.toLowerCase();let s;if(nm.startsWith(q))s=0;else if(nm.includes(q))s=1;else if(it.en&&it.en.toLowerCase().includes(q))s=2;else if(it.py&&it.py.startsWith(q))s=3;else if(it.pyi&&q.length>=2&&it.pyi.startsWith(q))s=3.5;else if(it.py&&it.py.includes(q))s=4;else if(it.alias&&it.alias.some(a=>a.toLowerCase().includes(q)))s=4.5;else continue;out.push([s,-it.emp,it]);}out.sort((a,b)=>a[0]-b[0]||a[1]-b[1]);return out.slice(0,12).map(x=>x[2]);}
-function renderResults(q){if(!q){sRes.classList.remove('show');sRes.innerHTML='';curHits=[];selIdx=-1;return;}
-  curHits=rankHits(q);selIdx=-1;
+function rankHits(q){q=q.toLowerCase();const out=[];for(const it of SI){const nm=it.nm.toLowerCase();let s;if(nm.startsWith(q))s=0;else if(nm.includes(q))s=1;else if(it.en&&it.en.toLowerCase().includes(q))s=2;else if(it.py&&it.py.startsWith(q))s=3;else if(it.pyi&&q.length>=2&&it.pyi.startsWith(q))s=3.5;else if(it.py&&it.py.includes(q))s=4;else if(it.alias&&it.alias.some(a=>a.toLowerCase().includes(q)))s=4.5;else continue;out.push([s,-it.emp,it]);}out.sort((a,b)=>a[0]-b[0]||a[1]-b[1]);return out.map(x=>x[2]);}
+function srRow(it,i){return '<div class="sr" data-i="'+i+'">'+sChip(it.node)+'<span class="nm">'+esc(it.nm)+'</span><span class="pa">'+esc(it.da)+(it.k==='l'?' › '+esc(it.zhong):'')+'</span><span class="tag2">'+(it.k==='l'?'细类':'中类')+'</span></div>';}
+function srGrow(){const f=sRes.querySelector('.srMore');if(f)f.remove();const next=Math.min(curHits.length,shown+SR_BATCH);let html='';for(let i=shown;i<next;i++)html+=srRow(curHits[i],i);sRes.insertAdjacentHTML('beforeend',html);shown=next;
+  if(shown<curHits.length)sRes.insertAdjacentHTML('beforeend','<div class="srMore">下滑加载更多 '+(curHits.length-shown)+' 个</div>');else if(curHits.length>SR_BATCH)sRes.insertAdjacentHTML('beforeend','<div class="srMore done">已显示全部 '+curHits.length+' 个</div>');}
+function renderResults(q){if(!q){sRes.classList.remove('show');sRes.innerHTML='';curHits=[];selIdx=-1;shown=0;return;}
+  curHits=rankHits(q);selIdx=-1;shown=0;sRes.scrollTop=0;sRes.innerHTML='';
   if(!curHits.length){sRes.innerHTML='<div class="none">没有匹配的职业</div>';sRes.classList.add('show');return;}
-  sRes.innerHTML=curHits.map((it,i)=>'<div class="sr" data-i="'+i+'">'+sChip(it.node)+'<span class="nm">'+esc(it.nm)+'</span><span class="pa">'+esc(it.da)+(it.k==='l'?' › '+esc(it.zhong):'')+'</span><span class="tag2">'+(it.k==='l'?'细类':'中类')+'</span></div>').join('');
-  sRes.classList.add('show');
-  [...sRes.querySelectorAll('.sr')].forEach(el=>el.addEventListener('mousedown',ev=>{ev.preventDefault();pickHit(+el.dataset.i);}));}
+  srGrow();sRes.classList.add('show');}
+sRes.addEventListener('mousedown',ev=>{const el=ev.target.closest('.sr');if(el){ev.preventDefault();pickHit(+el.dataset.i);}});
+sRes.addEventListener('scroll',()=>{if(shown<curHits.length&&sRes.scrollTop+sRes.clientHeight>=sRes.scrollHeight-60)srGrow();});
 function pickHit(i){const it=curHits[i];if(it)jumpTo(it);}
 function jumpTo(it){searchEl.value='';S.query='';sRes.classList.remove('show');sRes.innerHTML='';curHits=[];selIdx=-1;
   S.leaf=null;S.drill=null;rebuild(full());top.classList.remove('detail');backTab.style.display='none';
   const t=tiles.find(x=>x.id==='z:'+(it.k==='l'?it.zcode:it.code));
   if(t){drillInto(t);if(it.k==='l')openLeaf(it.node);}updateCrumb();updateSummary();}
-function updateSel(){[...sRes.querySelectorAll('.sr')].forEach((el,i)=>el.classList.toggle('sel',i===selIdx));const s=sRes.querySelector('.sr.sel');if(s)s.scrollIntoView({block:'nearest'});}
+function updateSel(){while(selIdx>=0&&shown<=selIdx&&shown<curHits.length)srGrow();[...sRes.querySelectorAll('.sr')].forEach((el,i)=>el.classList.toggle('sel',i===selIdx));const s=sRes.querySelector('.sr.sel');if(s)s.scrollIntoView({block:'nearest'});}
 searchEl.addEventListener('input',e=>{S.query=e.target.value.trim();renderResults(S.query);wake();});
 searchEl.addEventListener('focus',()=>{if(S.query)renderResults(S.query);});
 searchEl.addEventListener('blur',()=>setTimeout(()=>sRes.classList.remove('show'),160));
