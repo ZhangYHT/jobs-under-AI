@@ -311,6 +311,8 @@
   #introCard .ibtns button{font-family:inherit;cursor:pointer;border-radius:10px;padding:8px 15px;font-size:13px;font-weight:700;transition:.15s;border:1px solid var(--line);}
   #introCard .ibtns .ghost{background:var(--panel2);color:var(--muted);}
   #introCard .ibtns .ghost:hover{color:var(--text);border-color:var(--accent);}
+  #introCard .ibtns .ghost.dim{opacity:.5;font-weight:600;}
+  #introCard .ibtns .ghost.dim:hover{opacity:1;}
   #introCard .ibtns .prim{background:linear-gradient(135deg,var(--accent),var(--accent2));color:#fff;border-color:transparent;}
   #introCard .ibtns .prim:hover{transform:translateY(-1px);box-shadow:var(--shadow);}
   #supPanel .sp-qr .qb{flex:1;display:flex;flex-direction:column;align-items:center;gap:6px;}
@@ -459,7 +461,7 @@
   <div class="il"><span class="ic">👆</span><div><b>点方块逐层下钻</b>:八大类 → 中类 → 具体细类职业,再点开看各模型评价。</div></div>
   <div class="cav"><b>重要:</b>冲击分代表岗位"被 AI 重塑的程度",高分<b>不等于</b>失业或裁员,更多是工作方式被改变、效率被放大。</div>
   <div class="isrc">数据来源:职业分类大典2022 · 第七次全国人口普查 · 国家统计局;AI 冲击为多个大模型综合打分的估算,仅供参考。</div>
-  <div class="ibtns"><button class="ghost" id="introMore" type="button">查看数据与方法</button><button class="prim" id="introOk" type="button">知道了,开始探索</button></div>
+  <div class="ibtns"><button class="ghost dim" id="introSkip" type="button">跳过,直接探索</button><button class="prim" id="introTour" type="button">&#9654; 看新手教程(30秒)</button></div>
 </div></div>
 
 <!-- 数据:?v= 为缓存版本号,数据更新时与 meta.version 同步 bump 即可失效旧缓存(版本不变则 F5 走缓存) -->
@@ -818,7 +820,7 @@ const TOUR=[
   {tile:true,title:'点开方块',text:'点任意方块逐层进入:<b>大类 - 中类 - 细类</b>,看该职业的六维画像与各模型评分。'},
   {sel:'#botbar',title:'更多工具',text:'底部是面包屑;右侧「<b>工具</b>」里有 散点图 / 导出 CSV / 分享图 / 本向导。'}
 ];
-let tourI=-1;
+let tourI=-1,tourThenAbout=false;
 const tourLayer=document.getElementById('tourLayer'),tourHole=document.getElementById('tourHole'),tourBubble=document.getElementById('tourBubble');
 function tourRect(step){if(step.tile){if(!tiles.length)return null;const t=tiles.find(x=>x.alpha>0.5)||tiles[0],cr=cv.getBoundingClientRect();return{left:cr.left+t.cx,top:cr.top+t.cy,width:t.cw,height:t.ch};}
   const el=document.querySelector(step.sel);return el?el.getBoundingClientRect():null;}
@@ -831,8 +833,8 @@ function tourShow(){const step=TOUR[tourI];if(!step){endTour();return;}const rc=
   const bw=300,bh=158,vw=innerWidth,vh=innerHeight;let bx=Math.min(Math.max(8,rc.left),vw-bw-8),by=rc.top+rc.height+14;if(by+bh>vh)by=Math.max(8,rc.top-bh-14);
   tourBubble.style.left=bx+'px';tourBubble.style.top=by+'px';}
 function startTour(){tourI=0;tourLayer.classList.add('show');tourShow();}
-function endTour(){tourLayer.classList.remove('show');tourI=-1;try{localStorage.setItem('tour_v1','1');}catch(e){}}
-function tourNext(){if(tourI>=TOUR.length-1)endTour();else{tourI++;tourShow();}}
+function endTour(completed){tourLayer.classList.remove('show');tourI=-1;try{localStorage.setItem('tour_v1','1');}catch(e){}if(tourThenAbout){tourThenAbout=false;if(completed)aopen();}}
+function tourNext(){if(tourI>=TOUR.length-1)endTour(true);else{tourI++;tourShow();}}
 function tourPrev(){if(tourI>0){tourI--;tourShow();}}
 document.getElementById('tourSkip').onclick=endTour;document.getElementById('tourNext').onclick=tourNext;document.getElementById('tourPrev').onclick=tourPrev;
 const tbtn=document.getElementById('themebtn');
@@ -918,9 +920,9 @@ const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bili
     if(intro){
       let seen='1'; try{seen=localStorage.getItem('intro_v1');}catch(e){}
       const closeIntro=()=>{intro.classList.remove('show');try{localStorage.setItem('intro_v1','1');}catch(e){}};
-      const ok=document.getElementById('introOk'),more=document.getElementById('introMore');
-      if(ok)ok.onclick=closeIntro;
-      if(more)more.onclick=()=>{closeIntro();aopen();};
+      const tourBtn=document.getElementById('introTour'),skipBtn=document.getElementById('introSkip');
+      if(tourBtn)tourBtn.onclick=()=>{closeIntro();tourThenAbout=true;startTour();};
+      if(skipBtn)skipBtn.onclick=closeIntro;
       intro.addEventListener('click',e=>{if(e.target===intro)closeIntro();});
       if(!seen) requestAnimationFrame(()=>intro.classList.add('show'));
     }
