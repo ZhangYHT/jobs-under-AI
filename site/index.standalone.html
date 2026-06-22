@@ -185,6 +185,10 @@
   .cmp-table thead th{font-weight:700;border-bottom:2px solid var(--line);}
   .cmp-table td.best{font-weight:800;background:var(--panel2);}
   @media(max-width:720px){.cmp-grid{grid-template-columns:1fr;}}
+  .sc-head{font-size:12px;color:var(--muted);margin:2px 0 10px;}
+  .sc-stage{position:relative;}
+  #scatterC{width:100%;height:62vh;max-height:560px;display:block;cursor:pointer;}
+  #scatterTip{position:absolute;display:none;pointer-events:none;background:var(--panel2);border:1px solid var(--line);border-radius:7px;padding:5px 8px;font-size:11.5px;color:var(--text);box-shadow:0 4px 16px rgba(0,0,0,.3);white-space:nowrap;z-index:2;}
   #supTrigger .hb{color:var(--accent2);font-size:12px;line-height:1;}
   #tip{position:fixed;pointer-events:none;z-index:40;background:var(--glass);border:1px solid var(--line);border-radius:11px;padding:10px 12px;font-size:12px;box-shadow:var(--shadow);display:none;width:250px;backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);}
   #tip.show{display:block;}
@@ -396,6 +400,7 @@
     <div class="tm-wrap">
       <button id="toolsBtn" type="button" aria-haspopup="true" aria-expanded="false">&#9881; 工具</button>
       <div id="toolsMenu" role="menu">
+        <button type="button" data-act="scatter" role="menuitem">&#128200; 综合散点图</button>
         <button type="button" data-act="csv" role="menuitem">&#11015; 导出当前层 CSV</button>
         <button type="button" data-act="csvAll" role="menuitem">&#11015; 导出全部细类 CSV</button>
       </div>
@@ -500,7 +505,7 @@ function wakeRadar(){if(!radarOn){radarOn=true;requestAnimationFrame(radarFrame)
 function bumpTop(){topAnimFrames=34;wake();}  /* 顶栏滑动/改高的约 0.5s 内保持帧循环,使手柄持续贴其底边 */
 const W=()=>cv.width/DPR,H=()=>cv.height/DPR;
 const full=()=>({x:6,y:6,w:W()-12,h:H()-12});
-function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());bumpTop();}
+function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());bumpTop();if(ovKind==='scatter')drawScatter();}
 const ovAll=n=>(n.dims&&n.dims.overall!=null)?n.dims.overall:(n.overall!=null?n.overall:0);
 /* C1 方块面积口径:emp 人数 / impact 影响体量(人数×冲击/100)/ score 纯分(综合冲击)。均加 1e-4 地板防 squarify 除零 */
 function sizeOf(n){const e=n.employment||0;return S.area==='score'?Math.max(1e-4,ovAll(n)):S.area==='impact'?Math.max(1e-4,e*ovAll(n)/100):Math.max(1e-4,e);}
@@ -713,7 +718,7 @@ function csvRows(allLeaves){const rows=[];
 function exportCSV(allLeaves){const rows=csvRows(allLeaves);if(!rows.length)return;const body=[CSV_COLS,...rows].map(r=>r.map(csvCell).join(',')).join('\r\n');const blob=new Blob(['﻿'+body],{type:'text/csv;charset=utf-8'});download((allLeaves?'AI岗位_全部细类':S.drill?('AI岗位_'+S.drill+'_细类'):'AI岗位_中类全部')+'.csv',blob);}
 const toolsBtn=document.getElementById('toolsBtn'),toolsMenu=document.getElementById('toolsMenu');
 toolsBtn.onclick=e=>{e.stopPropagation();const o=toolsMenu.classList.toggle('show');toolsBtn.setAttribute('aria-expanded',o);};
-toolsMenu.onclick=e=>{const b=e.target.closest('[data-act]');if(!b)return;toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');const act=b.dataset.act;if(act==='csv')exportCSV(false);else if(act==='csvAll')exportCSV(true);};
+toolsMenu.onclick=e=>{const b=e.target.closest('[data-act]');if(!b)return;toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');const act=b.dataset.act;if(act==='scatter')openScatter();else if(act==='csv')exportCSV(false);else if(act==='csvAll')exportCSV(true);};
 document.addEventListener('click',e=>{if(toolsMenu.classList.contains('show')&&!e.target.closest('.tm-wrap')){toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');}});
 /* ===== D1 加入对比(共用 #ovModal 居中大模态)===== */
 const CMP={level:null,codes:[],items:[]},CMP_MAX=4,CMP_COLORS=['#6d8cf0','#e0be68','#ca4e5e','#5fbf9f'];
@@ -743,6 +748,33 @@ function cmpRender(){const items=CMP.items;
 cmpTray.onclick=cmpOpen;
 {const a=document.getElementById('dCmpAdd');if(a)a.onclick=()=>{const cur=curDetailNode();if(cur)cmpAdd(cur,S.leaf?'l':'z');};}
 cmpSync();
+/* ===== D2 综合散点图(overlay,点击联动主图)===== */
+const DACOLOR={'1':'#6d8cf0','2':'#5fbf9f','3':'#e0be68','4':'#e0895b','5':'#9d7bd8','6':'#d6688a','7':'#5aa9d6','8':'#9aa4b4'};
+const daColor=c=>DACOLOR[String(c)]||'#8a96ac';
+function scatterData(){
+  if(!S.drill)return ALLZ.map(g=>({code:g.code,level:'z',name:g.name,emp:g.employment||0,ov:(g.dims&&g.dims.overall)||0,da:g.daCode}));
+  const g=ALLZ.find(x=>x.code===S.drill);if(!g)return[];
+  return (g['细类']||[]).filter(x=>x.overall!=null).map(x=>({code:x.code,level:'l',name:x.title,emp:x.employment||0,ov:x.overall||0,da:g.daCode}));}
+let scPts=[];
+function drawScatter(){const cv2=document.getElementById('scatterC');if(!cv2)return;const c=cv2.getContext('2d'),r=cv2.getBoundingClientRect();if(r.width<2||r.height<2)return;
+  cv2.width=r.width*DPR;cv2.height=r.height*DPR;c.setTransform(DPR,0,0,DPR,0,0);
+  const w=r.width,h=r.height,pad={l:48,r:16,t:14,b:34},pts=scatterData().filter(p=>p.emp>0);c.clearRect(0,0,w,h);if(!pts.length){return;}
+  const xs=pts.map(p=>Math.log10(p.emp));let xmin=Math.min(...xs),xmax=Math.max(...xs);if(xmax<=xmin)xmax=xmin+1;
+  const X=v=>pad.l+(Math.log10(v)-xmin)/(xmax-xmin)*(w-pad.l-pad.r),Y=v=>h-pad.b-(Math.max(0,Math.min(100,v))/100)*(h-pad.t-pad.b);
+  const ln=theme()==='dark'?'rgba(255,255,255,.10)':'rgba(20,30,60,.10)',tx=cssv('--soft');c.font='9px sans-serif';
+  c.textBaseline='middle';c.textAlign='right';for(let v=0;v<=100;v+=20){const y=Y(v);c.strokeStyle=ln;c.beginPath();c.moveTo(pad.l,y);c.lineTo(w-pad.r,y);c.stroke();c.fillStyle=tx;c.fillText(v,pad.l-5,y);}
+  c.textBaseline='top';c.textAlign='center';for(let d=Math.ceil(xmin);d<=Math.floor(xmax);d++){const x=X(Math.pow(10,d));c.fillStyle=tx;c.fillText(fmtJobs(Math.pow(10,d)),x,h-pad.b+6);}
+  c.textAlign='left';c.fillStyle=tx;c.fillText('就业人数(对数)',pad.l,h-pad.b+18);c.fillText('综合冲击',6,pad.t);
+  scPts=pts.map(p=>({...p,px:X(p.emp),py:Y(p.ov)}));
+  scPts.forEach(p=>{c.beginPath();c.arc(p.px,p.py,5,0,7);c.globalAlpha=.82;c.fillStyle=daColor(p.da);c.fill();c.globalAlpha=1;c.lineWidth=1;c.strokeStyle=theme()==='dark'?'rgba(0,0,0,.35)':'rgba(255,255,255,.6)';c.stroke();});}
+function scHit(e){const cv2=document.getElementById('scatterC');if(!cv2)return null;const rect=cv2.getBoundingClientRect(),mx=e.clientX-rect.left,my=e.clientY-rect.top;let best=null,bd=1e9;for(const p of scPts){const dx=p.px-mx,dy=p.py-my,d=dx*dx+dy*dy;if(d<bd){bd=d;best=p;}}return(best&&bd<240)?{p:best,rect}:null;}
+function openScatter(){ovOpen('scatter','综合散点图 · 就业 x 综合冲击');
+  ovBody.innerHTML='<div class="sc-head">横轴=就业人数(对数刻度)· 纵轴=综合冲击 0-100 · 颜色=大类 · 点圆点进入该职业(与主图联动)</div><div class="sc-stage"><canvas id="scatterC"></canvas><div id="scatterTip"></div></div>';
+  const cv2=document.getElementById('scatterC'),tip=document.getElementById('scatterTip');
+  cv2.onmousemove=e=>{const hit=scHit(e);if(hit){const p=hit.p;tip.style.display='block';tip.style.left=Math.min(p.px+12,hit.rect.width-160)+'px';tip.style.top=(p.py+10)+'px';tip.innerHTML='<b>'+esc(p.name)+'</b><br>就业 '+fmtJobs(p.emp)+' · 综合 '+p.ov;}else tip.style.display='none';};
+  cv2.onmouseleave=()=>{tip.style.display='none';};
+  cv2.onclick=e=>{const hit=scHit(e);if(!hit)return;const p=hit.p;if(p.level==='z'){ovClose();const t=tiles.find(x=>x.id==='z:'+p.code);if(t)drillInto(t);}else{const g=ALLZ.find(x=>x.code===S.drill),node=g&&(g['细类']||[]).find(x=>x.code===p.code);if(node){ovClose();openLeaf(node);}}};
+  requestAnimationFrame(drawScatter);}
 const tbtn=document.getElementById('themebtn');
 function applyTheme(){document.documentElement.dataset.theme=theme();tbtn.textContent=(themeMode==='auto'?'🌗 跟随设备':themeMode==='dark'?'🌙 深色':'☀️ 浅色');updateLegend();updateSummary();updateDa();renderTierLegend();wake();wakeRadar();}
 tbtn.onclick=()=>{themeMode=themeMode==='auto'?'light':themeMode==='light'?'dark':'auto';applyTheme();};
