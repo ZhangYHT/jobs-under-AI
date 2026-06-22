@@ -181,6 +181,13 @@
   .cmp-legend .cl button{background:none;border:none;color:var(--soft);cursor:pointer;font-size:14px;line-height:1;padding:0 4px;}
   .cmp-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:16px;align-items:start;}
   .cmp-grid canvas{width:100%;height:300px;display:block;}
+  #ovBody .lm-meta{color:var(--muted);font-size:11.5px;margin:2px 0 12px;display:flex;gap:6px;align-items:center;flex-wrap:wrap;}
+  #ovBody .lm-grid{display:grid;grid-template-columns:1fr 200px 1.25fr;gap:18px;align-items:start;}
+  #ovBody .lm-grid #lmRadar{width:200px;height:166px;display:block;margin:0 auto;}
+  #ovBody .lm-grid #lmBars{width:100%;height:132px;display:block;}
+  #ovBody .lm-mh{font-size:11px;color:var(--muted);margin-bottom:4px;}
+  #ovBody .lm-dims{margin-bottom:6px;} #ovBody .mods{margin-top:6px;}
+  @media(max-width:720px){#ovBody .lm-grid{grid-template-columns:1fr;}#ovBody .lm-grid #lmRadar{margin:0;}}
   .cmp-table{width:100%;border-collapse:collapse;font-size:12px;}
   .cmp-table th,.cmp-table td{padding:5px 7px;border-bottom:1px solid var(--line);text-align:right;white-space:nowrap;}
   .cmp-table th:first-child,.cmp-table td:first-child{text-align:left;color:var(--muted);}
@@ -535,7 +542,7 @@ function zoomAt(mx,my,f){const old=tf.scale,ns=Math.max(1,Math.min(8,old*f));if(
 function setView(v){VIEW=v;const vs=document.getElementById('viewSw');if(vs)[...vs.children].forEach(b=>b.dataset&&b.dataset.view&&b.classList.toggle('active',b.dataset.view===v));
   const vr=document.getElementById('viewReset');if(vr)vr.style.display=v==='free'?'':'none';
   if(v==='free'){tf.scale=1;clampPan();}else{tf.ox=tf.oy=0;tf.scale=1;}wake();}
-function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());if(VIEW==='free')clampPan();bumpTop();if(ovKind==='scatter')drawScatter();if(tourI>=0)tourShow();}
+function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());if(VIEW==='free')clampPan();bumpTop();if(ovKind==='scatter')drawScatter();if(ovKind==='leaf')drawLeafCharts();if(tourI>=0)tourShow();}
 const ovAll=n=>(n.dims&&n.dims.overall!=null)?n.dims.overall:(n.overall!=null?n.overall:0);
 /* C1 方块面积口径:emp 人数 / impact 影响体量(人数×冲击/100)/ score 纯分(综合冲击)。均加 1e-4 地板防 squarify 除零 */
 function sizeOf(n){const e=n.employment||0;return S.area==='score'?Math.max(1e-4,ovAll(n)):S.area==='impact'?Math.max(1e-4,e*ovAll(n)/100):Math.max(1e-4,e);}
@@ -561,13 +568,13 @@ function paintTile(x,y,w,h,c,node,hl,alpha){ctx.globalAlpha=node.pending?alpha*.
   ctx.fillStyle=`rgb(${c[0]+18*hl|0},${c[1]+18*hl|0},${c[2]+18*hl|0})`;rr(x+1,y+1,w-2,h-2,5);ctx.fill();ctx.restore();
   ctx.globalAlpha=alpha;ctx.lineWidth=1+1.8*hl;ctx.strokeStyle=hl>.02?(theme()==='dark'?'rgba(255,255,255,'+(.3+.5*hl)+')':'rgba(30,40,70,'+(.25+.4*hl)+')'):(theme()==='dark'?'rgba(8,11,18,.5)':'rgba(255,255,255,.7)');rr(x+1,y+1,w-2,h-2,5);ctx.stroke();
   if(w>44&&h>22){const drk=lum(c)<.55;ctx.fillStyle=drk?'rgba(255,255,255,.96)':'rgba(15,20,30,.93)';ctx.textBaseline='top';
-    const fs=w<82?10.5:11.5;ctx.font=fs+'px sans-serif';const lines=wrap(node.name,w-9,Math.max(1,Math.min(3,Math.floor((h-20)/(fs+2)))));
-    lines.forEach((ln,i)=>ctx.fillText(ln,x+5,y+4+i*(fs+2)));
-    ctx.font='bold 13px sans-serif';ctx.fillText(S.disagree?('±'+(node.std||0)):metricV(node).label,x+5,y+4+lines.length*(fs+2)+1);
+    const fs=w<82?10.5:11.5;ctx.font=fs+'px sans-serif';const lines=wrap(node.name,w-14,Math.max(1,Math.min(3,Math.floor((h-22)/(fs+2)))));
+    lines.forEach((ln,i)=>ctx.fillText(ln,x+8,y+6+i*(fs+2)));
+    ctx.font='bold 13px sans-serif';ctx.fillText(S.disagree?('±'+(node.std||0)):metricV(node).label,x+8,y+6+lines.length*(fs+2)+1);
     if(node.S&&w>72){ctx.font='9px sans-serif';ctx.globalAlpha=alpha*.85;ctx.fillStyle=drk?'rgba(255,255,255,.7)':'rgba(15,20,30,.6)';ctx.fillText('S',x+w-12,y+5);ctx.globalAlpha=alpha;}}
   if(node.pending&&w>10&&h>10){ctx.globalAlpha=alpha;ctx.fillStyle=theme()==='dark'?'rgba(255,255,255,.85)':'rgba(20,30,60,.7)';ctx.beginPath();ctx.arc(x+w-8,y+8,2.4,0,7);ctx.fill();ctx.globalAlpha=alpha;}}
 function fitRect(t){const nm=t.node.name;ctx.font='11.5px sans-serif';const fw=ctx.measureText(nm).width;
-  let tw=Math.min(W()-12,t.cw+40,Math.max(t.cw*1.02,Math.min(182,fw/2+16))),th=Math.min(t.ch+14,Math.max(t.ch*1.02,50));
+  let tw=Math.min(W()-12,t.cw+54,Math.max(t.cw*1.04,Math.min(206,fw/2+26))),th=Math.min(t.ch+18,Math.max(t.ch*1.04,52));
   let cx=t.cx+t.cw/2,cy=t.cy+t.ch/2,x=cx-tw/2,y=cy-th/2;x=Math.max(4,Math.min(W()-tw-4,x));y=Math.max(4,Math.min(H()-th-4,y));return{x,y,w:tw,h:th};}
 function frame(){let moving=false;for(const t of tiles){t.cx+=(t.tx-t.cx)*.22;t.cy+=(t.ty-t.cy)*.22;t.cw+=(t.tw-t.cw)*.22;t.ch+=(t.th-t.ch)*.22;
   const at=matches(t)?1:.12;t.alpha+=(at-t.alpha)*.18;const c=tileRGB(t);t.cr+=(c[0]-t.cr)*.16;t.cg+=(c[1]-t.cg)*.16;t.cb+=(c[2]-t.cb)*.16;const ht=t.id===hoverId?1:0;t.hl+=(ht-t.hl)*.2;
@@ -689,7 +696,7 @@ cv.addEventListener('mousemove',e=>{if(TOUCH){hideTip();cv.style.cursor='default
 cv.addEventListener('mouseleave',()=>{if(hoverId!=null){hoverId=null;wake();}tip.classList.remove('show');clearTimeout(tipTimer);});
 cv.addEventListener('click',e=>{if(swiped){swiped=false;return;}if(panMoved){panMoved=false;return;}const r=cv.getBoundingClientRect();const t=hit(e.clientX-r.left,e.clientY-r.top);if(!t)return;
   if(TOUCH){hideTip();tapFlash(t.id);}
-  if(t.kind==='zhong')drillInto(t);else if(t.kind==='leaf'&&!t.node.pending)openLeaf(t.node);});
+  if(t.kind==='zhong')drillInto(t);else if(t.kind==='leaf'&&!t.node.pending)openLeafModal(t.node);});
 /* #6 自由画布:滚轮缩放 / 拖拽平移 / 双指缩放(仅自由模式;固定模式完全不介入)*/
 cv.addEventListener('wheel',e=>{if(VIEW!=='free')return;e.preventDefault();const r=cv.getBoundingClientRect();zoomAt(e.clientX-r.left,e.clientY-r.top,e.deltaY<0?1.12:1/1.12);},{passive:false});
 cv.addEventListener('mousedown',e=>{if(TOUCH||VIEW!=='free'||e.button!==0)return;panning=true;panMoved=false;_px=e.clientX;_py=e.clientY;_ox0=tf.ox;_oy0=tf.oy;cv.style.cursor='grabbing';});
@@ -728,7 +735,7 @@ function pickHit(i){const it=curHits[i];if(it)jumpTo(it);}
 function jumpTo(it){searchEl.value='';S.query='';sRes.classList.remove('show');sRes.innerHTML='';curHits=[];selIdx=-1;
   S.leaf=null;S.drill=null;rebuild(full());top.classList.remove('detail');backTab.style.display='none';
   const t=tiles.find(x=>x.id==='z:'+(it.k==='l'?it.zcode:it.code));
-  if(t){drillInto(t);if(it.k==='l')openLeaf(it.node);}updateCrumb();updateSummary();}
+  if(t){drillInto(t);if(it.k==='l')openLeafModal(it.node);}updateCrumb();updateSummary();}
 function updateSel(){while(selIdx>=0&&shown<=selIdx&&shown<curHits.length)srGrow();[...sRes.querySelectorAll('.sr')].forEach((el,i)=>el.classList.toggle('sel',i===selIdx));const s=sRes.querySelector('.sr.sel');if(s)s.scrollIntoView({block:'nearest'});}
 searchEl.addEventListener('input',e=>{S.query=e.target.value.trim();renderResults(S.query);wake();});
 searchEl.addEventListener('focus',()=>{if(S.query)renderResults(S.query);});
@@ -768,10 +775,26 @@ document.addEventListener('click',e=>{if(toolsMenu.classList.contains('show')&&!
 /* ===== D1 加入对比(共用 #ovModal 居中大模态)===== */
 const CMP={codes:[],items:[]},CMP_MAX=4,CMP_COLORS=['#6d8cf0','#e0be68','#ca4e5e','#5fbf9f'];
 const ovMask=document.getElementById('ovMask'),ovModal=document.getElementById('ovModal'),ovBody=document.getElementById('ovBody'),ovTitle=document.getElementById('ovTitle');
-let ovKind=null;
+let ovKind=null,leafNode=null;
 function ovOpen(kind,title){ovKind=kind;ovTitle.textContent=title||'';ovModal.classList.add('show');ovMask.classList.add('show');}
-function ovClose(){ovKind=null;ovModal.classList.remove('show');ovMask.classList.remove('show');}
+function ovClose(){ovKind=null;leafNode=null;ovModal.classList.remove('show');ovMask.classList.remove('show');}
 ovMask.onclick=ovClose;document.getElementById('ovClose').onclick=ovClose;
+/* #9 细类详情:居中弹出(复用 #ovModal),不再用上方抽屉(抽屉留给中类) */
+function drawLeafCharts(){if(!leafNode)return;const d=leafNode.dims||{};const rc=document.getElementById('lmRadar'),bc=document.getElementById('lmBars');if(rc)drawRadar(rc,DIMKEYS.map(k=>d[k]||0));if(bc)drawBars(bc,leafNode);}
+function openLeafModal(node){if(!node)return;leafNode=node;const g=ALLZ.find(x=>x.code===S.drill)||{};const d=node.dims||{};
+  const tags=((node.digital||node.S)?'<span class="tag">数字职业</span>':'')+(node.green?'<span class="tag green">绿色职业</span>':'')+(node.pay_tier?'<span class="tag warn">'+esc(node.pay_tier)+'</span>':'');
+  const dims=DIMS.map(x=>'<div class="dimrow"><span>'+x.label+'</span><b>'+(d[x.key]!=null?d[x.key]:'-')+'</b></div>').join('');
+  const kv='<span>就业</span><b>'+(node.employment?fmtJobs(node.employment):'-')+'</b><span>年薪</span><b>'+(node.pay?'¥'+node.pay.toLocaleString():'-')+'</b><span>学历</span><b>'+(node.education||'-')+'</b><span>等级</span><b>'+(node.level||'-')+'</b>';
+  const chips=SCOREM.map(m=>{const e=node.by_model?node.by_model[m]:null;const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+esc(m)+' <b>'+v+'</b></span>';}).join('')||'-';
+  ovOpen('leaf',(node.title||node.name));
+  ovBody.innerHTML='<div class="lm-meta">'+esc(g.title||'')+' · '+esc(node.code||'-')+(tags?' '+tags:'')+'</div>'
+    +'<div class="lm-grid"><div><div class="lm-dims">'+dims+'</div><div class="kv">'+kv+'</div><button class="dv-add" id="lmCmpAdd" type="button">+ 加入对比</button></div>'
+    +'<div><canvas id="lmRadar"></canvas></div>'
+    +'<div><div class="lm-mh">各 AI 模型给的综合冲击分('+(node.n_models||0)+'个) · 柱形高低=分歧</div><canvas id="lmBars"></canvas><div class="mods">'+chips+'</div></div></div>'
+    +(node.eval?'<div class="rat">「'+esc(node.eval)+'」</div>':'')
+    +'<div class="src">该职业评分综合多个 AI 模型;人数按官方就业数据推算。</div>';
+  const ca=document.getElementById('lmCmpAdd');if(ca)ca.onclick=()=>{cmpAdd(node);ca.textContent='✓ 已加入对比 ('+CMP.codes.length+')';};
+  requestAnimationFrame(drawLeafCharts);}
 const cmpTray=document.getElementById('cmpTray'),cmpN=document.getElementById('cmpN');
 function cmpSync(){cmpN.textContent=CMP.codes.length;cmpTray.hidden=CMP.codes.length===0;}
 function curDetailNode(){if(S.leaf){const g=ALLZ.find(x=>x.code===S.drill);return(g&&(g['细类']||[]).find(x=>x.code===S.leaf))||null;}if(S.drill)return ALLZ.find(x=>x.code===S.drill)||null;return null;}
@@ -817,7 +840,7 @@ function openScatter(){ovOpen('scatter','综合散点图 · 就业 x 综合冲�
   const cv2=document.getElementById('scatterC'),tip=document.getElementById('scatterTip');
   cv2.onmousemove=e=>{const hit=scHit(e);if(hit){const p=hit.p;tip.style.display='block';tip.style.left=Math.min(p.px+12,hit.rect.width-160)+'px';tip.style.top=(p.py+10)+'px';tip.innerHTML='<b>'+esc(p.name)+'</b><br>就业 '+fmtJobs(p.emp)+' · 综合 '+p.ov;}else tip.style.display='none';};
   cv2.onmouseleave=()=>{tip.style.display='none';};
-  cv2.onclick=e=>{const hit=scHit(e);if(!hit)return;const p=hit.p;if(p.level==='z'){ovClose();const t=tiles.find(x=>x.id==='z:'+p.code);if(t)drillInto(t);}else{const g=ALLZ.find(x=>x.code===S.drill),node=g&&(g['细类']||[]).find(x=>x.code===p.code);if(node){ovClose();openLeaf(node);}}};
+  cv2.onclick=e=>{const hit=scHit(e);if(!hit)return;const p=hit.p;if(p.level==='z'){ovClose();const t=tiles.find(x=>x.id==='z:'+p.code);if(t)drillInto(t);}else{const g=ALLZ.find(x=>x.code===S.drill),node=g&&(g['细类']||[]).find(x=>x.code===p.code);if(node)openLeafModal(node);}};
   requestAnimationFrame(drawScatter);}
 /* ===== D3 分享图(离屏 1200x630 canvas -> PNG)===== */
 const SITE_URL='unifytopia.com/jobs_under_AI';
