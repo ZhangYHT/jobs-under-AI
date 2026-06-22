@@ -383,6 +383,7 @@
     <div class="tier-legend" id="tierLegend"><span class="tt">等级色阶</span></div>
     <div id="filt"><span>筛选</span><input type="range" id="filtR" min="0" max="100" step="5" value="0" aria-label="按当前维度筛选方块"><span class="fv" id="filtV">全部</span><button type="button" class="freset" id="filtReset">重置</button></div>
     <div class="areaSw" id="areaSw" role="group" aria-label="方块面积依据"><span class="al">面积</span><button type="button" data-area="emp" class="active">人数</button><button type="button" data-area="impact">影响规模</button><button type="button" data-area="score">冲击分</button></div>
+    <div class="areaSw" id="viewSw" role="group" aria-label="视图模式"><span class="al">视图</span><button type="button" data-view="fixed" class="active">固定</button><button type="button" data-view="free">自由画布</button></div><button type="button" id="viewReset" class="freset" style="display:none">复位视图</button>
   </div>
   <div class="cards">
     <div class="card"><div class="ct">概况(当前视图)</div><div class="grid2">
@@ -518,6 +519,7 @@ function squarify(it,x,y,w,h){const out=[],L=it.filter(i=>i.value>0).sort((a,b)=
 
 const stage=document.getElementById('stage'),cv=document.getElementById('cv'),ctx=cv.getContext('2d');
 let DPR=Math.max(1,window.devicePixelRatio||1),tiles=[],daLabels=[],hoverId=null;
+let VIEW='fixed';const tf={ox:0,oy:0,scale:1};let panning=false,panMoved=false,_px=0,_py=0,_ox0=0,_oy0=0,_pinch=0;  /* #6 自由画布:平移缩放变换 */
 /* 帧循环按需运行:有动画/交互时跑,静止即停(省 CPU 与电,低端/手机更省);任何改变画布的状态变更都要 wake() */
 let rafOn=false,topAnimFrames=0,radarOn=false;
 function wake(){if(!rafOn){rafOn=true;requestAnimationFrame(frame);}}
@@ -525,7 +527,15 @@ function wakeRadar(){if(!radarOn){radarOn=true;requestAnimationFrame(radarFrame)
 function bumpTop(){topAnimFrames=34;wake();}  /* 顶栏滑动/改高的约 0.5s 内保持帧循环,使手柄持续贴其底边 */
 const W=()=>cv.width/DPR,H=()=>cv.height/DPR;
 const full=()=>({x:6,y:6,w:W()-12,h:H()-12});
-function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());bumpTop();if(ovKind==='scatter')drawScatter();if(tourI>=0)tourShow();}
+/* #6 自由画布:pan/zoom 仅作用于显示层(布局/tween 不变);scale<=1 居中,>1 夹界防跑飞 */
+function clampPan(){const cw=W()*tf.scale,ch=H()*tf.scale,m=90;
+  if(tf.scale<=1.001){tf.ox=(W()-cw)/2;tf.oy=(H()-ch)/2;}
+  else{tf.ox=Math.min(m,Math.max(W()-cw-m,tf.ox));tf.oy=Math.min(m,Math.max(H()-ch-m,tf.oy));}}
+function zoomAt(mx,my,f){const old=tf.scale,ns=Math.max(1,Math.min(8,old*f));if(ns===old)return;tf.ox=mx-(mx-tf.ox)/old*ns;tf.oy=my-(my-tf.oy)/old*ns;tf.scale=ns;clampPan();wake();}
+function setView(v){VIEW=v;const vs=document.getElementById('viewSw');if(vs)[...vs.children].forEach(b=>b.dataset&&b.dataset.view&&b.classList.toggle('active',b.dataset.view===v));
+  const vr=document.getElementById('viewReset');if(vr)vr.style.display=v==='free'?'':'none';
+  if(v==='free'){tf.scale=1;clampPan();}else{tf.ox=tf.oy=0;tf.scale=1;}wake();}
+function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());if(VIEW==='free')clampPan();bumpTop();if(ovKind==='scatter')drawScatter();if(tourI>=0)tourShow();}
 const ovAll=n=>(n.dims&&n.dims.overall!=null)?n.dims.overall:(n.overall!=null?n.overall:0);
 /* C1 方块面积口径:emp 人数 / impact 影响体量(人数×冲击/100)/ score 纯分(综合冲击)。均加 1e-4 地板防 squarify 除零 */
 function sizeOf(n){const e=n.employment||0;return S.area==='score'?Math.max(1e-4,ovAll(n)):S.area==='impact'?Math.max(1e-4,e*ovAll(n)/100):Math.max(1e-4,e);}
@@ -564,12 +574,12 @@ function frame(){let moving=false;for(const t of tiles){t.cx+=(t.tx-t.cx)*.22;t.
   if(!moving&&(Math.abs(t.tx-t.cx)>.4||Math.abs(t.ty-t.cy)>.4||Math.abs(t.tw-t.cw)>.4||Math.abs(t.th-t.ch)>.4||Math.abs(at-t.alpha)>.004||Math.abs(c[0]-t.cr)>.5||Math.abs(c[1]-t.cg)>.5||Math.abs(c[2]-t.cb)>.5||Math.abs(ht-t.hl)>.004))moving=true;}
   draw();placeHandle();if(topAnimFrames>0)topAnimFrames--;
   if(moving||topAnimFrames>0)requestAnimationFrame(frame);else rafOn=false;}
-function draw(){ctx.clearRect(0,0,W(),H());const dk=theme()==='dark';
+function draw(){ctx.clearRect(0,0,W(),H());const dk=theme()==='dark';const fz=VIEW==='free';if(fz){ctx.save();ctx.translate(tf.ox,tf.oy);ctx.scale(tf.scale,tf.scale);}
   if(!S.drill)daLabels.forEach(d=>{ctx.fillStyle=dk?'rgba(255,255,255,.02)':'rgba(20,30,60,.03)';rr(d.x+2,d.y+2,d.w-4,d.h-4,7);ctx.fill();});
   let hov=null;for(const t of tiles){if(t.id===hoverId&&t.hl>.05){hov=t;continue;}if(t.cw<1||t.ch<1)continue;paintTile(t.cx,t.cy,t.cw,t.ch,[t.cr,t.cg,t.cb],t.node,t.hl,t.alpha);}
   ctx.globalAlpha=1;if(!S.drill)daLabels.forEach(d=>{if(d.lh){ctx.fillStyle=cssv('--text');ctx.font='bold 13px sans-serif';ctx.textBaseline='top';
     let s=d.name+'  ·  '+fmtJobs(d.jobs),mw=d.w-12;while(ctx.measureText(s).width>mw&&s.length>1)s=s.slice(0,-1);ctx.fillText(s,d.x+8,d.y+5);}});
-  if(hov){const fr=fitRect(hov),k=hov.hl;const x=hov.cx+(fr.x-hov.cx)*k,y=hov.cy+(fr.y-hov.cy)*k,w=hov.cw+(fr.w-hov.cw)*k,h=hov.ch+(fr.h-hov.ch)*k;paintTile(x,y,w,h,[hov.cr,hov.cg,hov.cb],hov.node,hov.hl,1);}}
+  if(hov){const fr=fitRect(hov),k=hov.hl;const x=hov.cx+(fr.x-hov.cx)*k,y=hov.cy+(fr.y-hov.cy)*k,w=hov.cw+(fr.w-hov.cw)*k,h=hov.ch+(fr.h-hov.ch)*k;paintTile(x,y,w,h,[hov.cr,hov.cg,hov.cb],hov.node,hov.hl,1);}if(fz)ctx.restore();}
 
 function paintRadar(c,cx,cy,R,vals,ac,fs){const n=6,ln=theme()==='dark'?'rgba(255,255,255,.13)':'rgba(20,30,60,.13)',tx=cssv('--muted');ac=ac||cssv('--accent');fs=fs||9;
   for(let g=1;g<=3;g++){c.beginPath();for(let i=0;i<=n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*g/3;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.strokeStyle=ln;c.stroke();}
@@ -667,19 +677,29 @@ function tipHtml(n,full){const d=n.dims;let h='<div class="t">'+esc(n.title||n.n
   else h+='<div class="hint">鼠标停一下,展开各模型评分和雷达图</div>';return h;}
 function showTip(n,full){tip.innerHTML=tipHtml(n,full);tip.classList.add('show');if(full){const c=document.getElementById('tipr');if(c)drawRadar(c,DIMKEYS.map(k=>n.dims[k]||0));}place();}
 function place(){const[x,y]=tipXY;let tw=tip.offsetWidth,th=tip.offsetHeight,tx=x+16,ty=y+16;if(tx+tw>innerWidth-8)tx=x-tw-16;if(ty+th>innerHeight-8)ty=innerHeight-th-8;if(ty<8)ty=8;tip.style.left=tx+'px';tip.style.top=ty+'px';}
-function hit(px,py){for(let i=tiles.length-1;i>=0;i--){const t=tiles[i];if(px>=t.cx&&px<=t.cx+t.cw&&py>=t.cy&&py<=t.cy+t.ch&&t.alpha>.3)return t;}return null;}
+function hit(px,py){if(VIEW==='free'){px=(px-tf.ox)/tf.scale;py=(py-tf.oy)/tf.scale;}for(let i=tiles.length-1;i>=0;i--){const t=tiles[i];if(px>=t.cx&&px<=t.cx+t.cw&&py>=t.cy&&py<=t.cy+t.ch&&t.alpha>.3)return t;}return null;}
 /* 首个 touchstart -> 标记为触摸设备,关闭 hover tooltip(避免点按时详情与悬停框双触发) */
 cv.addEventListener('touchstart',()=>{TOUCH=true;hideTip();},{passive:true});
 cv.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'){TOUCH=true;hideTip();}});
-cv.addEventListener('mousemove',e=>{if(TOUCH){hideTip();cv.style.cursor='default';return;}
+cv.addEventListener('mousemove',e=>{if(TOUCH){hideTip();cv.style.cursor='default';return;}if(panning)return;
   const r=cv.getBoundingClientRect();tipXY=[e.clientX,e.clientY];const t=hit(e.clientX-r.left,e.clientY-r.top);
-  if(!t){if(hoverId!=null){hoverId=null;wake();}tip.classList.remove('show');clearTimeout(tipTimer);cv.style.cursor='default';return;}
+  if(!t){if(hoverId!=null){hoverId=null;wake();}tip.classList.remove('show');clearTimeout(tipTimer);cv.style.cursor=VIEW==='free'?'grab':'default';return;}
   cv.style.cursor=t.kind==='zhong'?'zoom-in':(t.kind==='leaf'&&!t.node.pending?'pointer':'default');
   if(t.id!==hoverId){hoverId=t.id;wake();tipFull=false;showTip(t.node,false);clearTimeout(tipTimer);tipTimer=setTimeout(()=>{tipFull=true;const n=nodeOf(hoverId);if(n)showTip(n,true);},500);}else place();});
 cv.addEventListener('mouseleave',()=>{if(hoverId!=null){hoverId=null;wake();}tip.classList.remove('show');clearTimeout(tipTimer);});
-cv.addEventListener('click',e=>{if(swiped){swiped=false;return;}const r=cv.getBoundingClientRect();const t=hit(e.clientX-r.left,e.clientY-r.top);if(!t)return;
+cv.addEventListener('click',e=>{if(swiped){swiped=false;return;}if(panMoved){panMoved=false;return;}const r=cv.getBoundingClientRect();const t=hit(e.clientX-r.left,e.clientY-r.top);if(!t)return;
   if(TOUCH){hideTip();tapFlash(t.id);}
   if(t.kind==='zhong')drillInto(t);else if(t.kind==='leaf'&&!t.node.pending)openLeaf(t.node);});
+/* #6 自由画布:滚轮缩放 / 拖拽平移 / 双指缩放(仅自由模式;固定模式完全不介入)*/
+cv.addEventListener('wheel',e=>{if(VIEW!=='free')return;e.preventDefault();const r=cv.getBoundingClientRect();zoomAt(e.clientX-r.left,e.clientY-r.top,e.deltaY<0?1.12:1/1.12);},{passive:false});
+cv.addEventListener('mousedown',e=>{if(TOUCH||VIEW!=='free'||e.button!==0)return;panning=true;panMoved=false;_px=e.clientX;_py=e.clientY;_ox0=tf.ox;_oy0=tf.oy;cv.style.cursor='grabbing';});
+window.addEventListener('mousemove',e=>{if(!panning)return;const dx=e.clientX-_px,dy=e.clientY-_py;if(Math.abs(dx)+Math.abs(dy)>3)panMoved=true;tf.ox=_ox0+dx;tf.oy=_oy0+dy;clampPan();wake();});
+window.addEventListener('mouseup',()=>{if(panning){panning=false;cv.style.cursor=VIEW==='free'?'grab':'default';}});
+cv.addEventListener('touchstart',e=>{if(VIEW!=='free')return;if(e.touches.length===1){panning=true;panMoved=false;_px=e.touches[0].clientX;_py=e.touches[0].clientY;_ox0=tf.ox;_oy0=tf.oy;}else if(e.touches.length===2){panning=false;_pinch=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);}},{passive:true});
+cv.addEventListener('touchmove',e=>{if(VIEW!=='free')return;const r=cv.getBoundingClientRect();
+  if(e.touches.length>=2){e.preventDefault();const d=Math.hypot(e.touches[0].clientX-e.touches[1].clientX,e.touches[0].clientY-e.touches[1].clientY);if(_pinch>0){const mx=(e.touches[0].clientX+e.touches[1].clientX)/2-r.left,my=(e.touches[0].clientY+e.touches[1].clientY)/2-r.top;zoomAt(mx,my,d/_pinch);}_pinch=d;panMoved=true;}
+  else if(panning&&e.touches.length===1){e.preventDefault();const dx=e.touches[0].clientX-_px,dy=e.touches[0].clientY-_py;if(Math.abs(dx)+Math.abs(dy)>3)panMoved=true;tf.ox=_ox0+dx;tf.oy=_oy0+dy;clampPan();wake();}},{passive:false});
+cv.addEventListener('touchend',e=>{if(VIEW==='free'&&e.touches.length===0){panning=false;_pinch=0;}});
 
 const tg=document.getElementById('tg');
 METRICS.forEach(d=>{const b=document.createElement('button');b.dataset.key=d.key;b.textContent=d.label;if(d.main)b.classList.add('active');if(d.extra)b.classList.add('extra');
@@ -730,6 +750,7 @@ fmtFilt();syncFiltDisabled();
 const areaSw=document.getElementById('areaSw');
 function setArea(m){if(S.area===m)return;S.area=m;areaSw.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.area===m));rebuild(full());wake();}
 areaSw.querySelectorAll('button').forEach(b=>b.onclick=()=>setArea(b.dataset.area));
+{const _vs=document.getElementById('viewSw');if(_vs)_vs.querySelectorAll('button').forEach(b=>b.onclick=()=>setView(b.dataset.view));const _vr=document.getElementById('viewReset');if(_vr)_vr.onclick=()=>{tf.scale=1;clampPan();wake();};}
 /* ===== D3 导出 CSV(共用 download/csvCell)===== */
 const CSV_COLS=['code','title','大类','employment','pay','education','overall','automation','augmentation','digital','moat','adoption','std','n_models'];
 function csvRows(allLeaves){const rows=[];
@@ -960,7 +981,7 @@ window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},b
   let swX=0,swY=0,swT=0,swiped=false;
   cv.addEventListener('touchstart',e=>{const t=e.touches[0];if(!t)return;swX=t.clientX;swY=t.clientY;swT=Date.now();swiped=false;},{passive:true});
   cv.addEventListener('touchend',e=>{const t=e.changedTouches[0];if(!t)return;const dx=t.clientX-swX,dy=t.clientY-swY;
-    if(Date.now()-swT<600&&dx>60&&Math.abs(dx)>1.5*Math.abs(dy)){swiped=true;back();}},{passive:true});
+    if(VIEW!=='free'&&Date.now()-swT<600&&dx>60&&Math.abs(dx)>1.5*Math.abs(dy)){swiped=true;back();}},{passive:true});
   // ARIA / 键盘可达:控件标签 + 自定义 div 按钮可聚焦可回车触发
   const setAttr=(id,a,v)=>{const el=document.getElementById(id);if(el)el.setAttribute(a,v);};
   setAttr('search','aria-label','搜索职业,支持中类与细类名称');
