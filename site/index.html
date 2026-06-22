@@ -745,7 +745,7 @@ toolsBtn.onclick=e=>{e.stopPropagation();const o=toolsMenu.classList.toggle('sho
 toolsMenu.onclick=e=>{const b=e.target.closest('[data-act]');if(!b)return;toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');const act=b.dataset.act;if(act==='scatter')openScatter();else if(act==='share')exportShare();else if(act==='csv')exportCSV(false);else if(act==='csvAll')exportCSV(true);else if(act==='tour')startTour();};
 document.addEventListener('click',e=>{if(toolsMenu.classList.contains('show')&&!e.target.closest('.tm-wrap')){toolsMenu.classList.remove('show');toolsBtn.setAttribute('aria-expanded','false');}});
 /* ===== D1 加入对比(共用 #ovModal 居中大模态)===== */
-const CMP={level:null,codes:[],items:[]},CMP_MAX=4,CMP_COLORS=['#6d8cf0','#e0be68','#ca4e5e','#5fbf9f'];
+const CMP={codes:[],items:[]},CMP_MAX=4,CMP_COLORS=['#6d8cf0','#e0be68','#ca4e5e','#5fbf9f'];
 const ovMask=document.getElementById('ovMask'),ovModal=document.getElementById('ovModal'),ovBody=document.getElementById('ovBody'),ovTitle=document.getElementById('ovTitle');
 let ovKind=null;
 function ovOpen(kind,title){ovKind=kind;ovTitle.textContent=title||'';ovModal.classList.add('show');ovMask.classList.add('show');}
@@ -754,14 +754,13 @@ ovMask.onclick=ovClose;document.getElementById('ovClose').onclick=ovClose;
 const cmpTray=document.getElementById('cmpTray'),cmpN=document.getElementById('cmpN');
 function cmpSync(){cmpN.textContent=CMP.codes.length;cmpTray.hidden=CMP.codes.length===0;}
 function curDetailNode(){if(S.leaf){const g=ALLZ.find(x=>x.code===S.drill);return(g&&(g['细类']||[]).find(x=>x.code===S.leaf))||null;}if(S.drill)return ALLZ.find(x=>x.code===S.drill)||null;return null;}
-function cmpAdd(node,level){if(!node)return;if(CMP.level&&CMP.level!==level){if(!confirm('对比仅限同层级(中类或细类)。清空当前对比并切换?'))return;CMP.codes=[];CMP.items=[];}
-  CMP.level=level;if(CMP.codes.includes(node.code)){cmpSync();return;}if(CMP.codes.length>=CMP_MAX){alert('最多对比 '+CMP_MAX+' 个职业');return;}
-  CMP.codes.push(node.code);CMP.items.push(node);cmpSync();}
-function cmpRemove(code){const i=CMP.codes.indexOf(code);if(i>=0){CMP.codes.splice(i,1);CMP.items.splice(i,1);}if(!CMP.codes.length)CMP.level=null;cmpSync();if(ovKind==='cmp'){if(CMP.codes.length)cmpRender();else ovClose();}}
-function cmpOpen(){if(CMP.codes.length<2){alert('请至少加入 2 个同层级职业再对比');return;}ovOpen('cmp','职业对比 ('+CMP.codes.length+')');cmpRender();}
+function cmpAdd(node,level){if(!node)return;if(CMP.codes.includes(node.code)){cmpSync();return;}if(CMP.codes.length>=CMP_MAX){alert('最多对比 '+CMP_MAX+' 个职业');return;}
+  CMP.codes.push(node.code);CMP.items.push(node);cmpSync();}  // 任意大类/中类/细类自由混选,不再限同层
+function cmpRemove(code){const i=CMP.codes.indexOf(code);if(i>=0){CMP.codes.splice(i,1);CMP.items.splice(i,1);}cmpSync();if(ovKind==='cmp'){if(CMP.codes.length)cmpRender();else ovClose();}}
+function cmpOpen(){if(CMP.codes.length<2){alert('请至少加入 2 个职业再对比(可跨大类/中类/细类任意选)');return;}ovOpen('cmp','职业对比 ('+CMP.codes.length+')');cmpRender();}
 function cmpRender(){const items=CMP.items;
   const legend='<div class="cmp-legend">'+items.map((n,i)=>'<span class="cl"><i style="background:'+CMP_COLORS[i]+'"></i>'+esc(n.title||n.name)+'<button data-rm="'+esc(n.code)+'" title="移除">&times;</button></span>').join('')+'</div>';
-  const rowsDef=[['就业',n=>n.employment?fmtJobs(n.employment):'-',n=>n.employment||0],['年薪',n=>n.pay?'¥'+n.pay.toLocaleString():'-',n=>n.pay||0],['学历',n=>n.education||'-',null]].concat(DIMS.map(d=>[d.label,n=>{const v=n.dims?n.dims[d.key]:null;return v!=null?v:'-';},n=>{const v=n.dims?n.dims[d.key]:null;return typeof v==='number'?v:null;}]));
+  const rowsDef=[['层级',n=>n['细类']?'中类':'细类',null],['就业',n=>n.employment?fmtJobs(n.employment):'-',n=>n.employment||0],['年薪',n=>n.pay?'¥'+n.pay.toLocaleString():'-',n=>n.pay||0],['学历',n=>n.education||'-',null]].concat(DIMS.map(d=>[d.label,n=>{const v=n.dims?n.dims[d.key]:null;return v!=null?v:'-';},n=>{const v=n.dims?n.dims[d.key]:null;return typeof v==='number'?v:null;}]));
   let tbl='<table class="cmp-table"><thead><tr><th>指标</th>'+items.map((n,i)=>'<th style="color:'+CMP_COLORS[i]+'">'+esc((n.title||n.name).slice(0,7))+'</th>').join('')+'</tr></thead><tbody>';
   rowsDef.forEach(rd=>{const fmt=rd[1],val=rd[2];let best=null;if(val){const vs=items.map(val),nums=vs.filter(v=>typeof v==='number');if(nums.length){const m=Math.max(...nums);best=vs.map(v=>v===m&&nums.some(x=>x!==m));}}
     tbl+='<tr><td>'+rd[0]+'</td>'+items.map((n,i)=>'<td class="'+(best&&best[i]?'best':'')+'">'+fmt(n)+'</td>').join('')+'</tr>';});
