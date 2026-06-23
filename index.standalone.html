@@ -509,6 +509,29 @@ const ALLZ=[];TREE.forEach(d=>d.children.forEach(g=>{g.da=d.name;g.daCode=d.code
 const DA=TREE.map(d=>{const t=d.children.reduce((s,g)=>s+(g.employment||0),0)||1;
   return {code:d.code,name:d.name,jobs:t,overall:Math.round(d.children.reduce((s,g)=>s+(g.dims.overall||0)*(g.employment||0),0)/t),children:d.children,summary:(DASUM[d.code]||{}).summary||''};}).sort((a,b)=>b.overall-a.overall);
 
+const BYZ=new Map(ALLZ.map(g=>[g.code,g]));
+const BYX=new Map();ALLZ.forEach(g=>(g['细类']||[]).forEach(x=>BYX.set(x.code,x)));
+const workerOK=()=>typeof Worker!=='undefined'&&typeof Blob!=='undefined'&&typeof URL!=='undefined';
+let PERF_W=null,PERF_READY=false,PERF_SEQ=0,PERF_CANVAS_KEY='';const PERF_LAYOUTS=new Map();
+function makePerfWorker(){if(!workerOK())return null;const src=`
+let DATA=null,SI=null;
+function ov(n){return n&&n.dims&&n.dims.overall!=null?n.dims.overall:n&&n.overall!=null?n.overall:0;}
+function sizeOf(n,area){const e=n.employment||0;return area==='score'?Math.max(1e-4,ov(n)):area==='impact'?Math.max(1e-4,e*ov(n)/100):Math.max(1e-4,e);}
+function worst(r,s){const sum=r.reduce((a,b)=>a+b,0),mx=Math.max(...r),mn=Math.min(...r);return Math.max(s*s*mx/(sum*sum),sum*sum/(s*s*mn));}
+function squarify(it,x,y,w,h){const out=[],L=it.filter(i=>i.value>0).sort((a,b)=>b.value-a.value),tot=L.reduce((s,i)=>s+i.value,0);if(tot<=0||w<=0||h<=0)return out;const sc=w*h/tot,ar=L.map(i=>i.value*sc);let i=0,cx=x,cy=y,cw=w,ch=h;while(i<L.length){const sd=Math.min(cw,ch);let row=[ar[i]],rf=[L[i]];i++;while(i<L.length){if(worst(row.concat(ar[i]),sd)<=worst(row,sd)){row.push(ar[i]);rf.push(L[i]);i++;}else break;}const sm=row.reduce((a,b)=>a+b,0);if(cw>=ch){const cW=sm/ch;let oy=cy;for(let k=0;k<row.length;k++){const cH=row[k]/cW;out.push({ref:rf[k].ref,x:cx,y:oy,w:cW,h:cH});oy+=cH;}cx+=cW;cw-=cW;}else{const rH=sm/cw;let ox=cx;for(let k=0;k<row.length;k++){const cW=row[k]/rH;out.push({ref:rf[k].ref,x:ox,y:cy,w:cW,h:rH});ox+=cW;}cy+=rH;ch-=rH;}}return out;}
+function buildSI(){if(SI)return SI;SI=[];for(const g of DATA.groups){SI.push({k:'z',code:g.code,nm:g.name,en:g.english||'',py:g.py||'',pyi:g.pyi||'',alias:g.alias||[],da:g.da,emp:g.employment||0});for(const x of g.children||[])SI.push({k:'l',code:x.code,zcode:g.code,nm:x.title,en:'',py:x.py||'',pyi:x.pyi||'',alias:x.alias||[],da:g.da,zhong:g.name,emp:x.employment||0});}return SI;}
+function buildCanvas(w,h,area){const r={x:6,y:6,w:w-12,h:h-12},GAP=22,out=[];squarify(DATA.categories.map(d=>({value:d.children.reduce((s,g)=>s+sizeOf(g,area),0),ref:d})),r.x,r.y,r.w,r.h).forEach(dr=>{const da=dr.ref,lh=18,ix=dr.x+GAP/2,iy=dr.y+GAP/2+lh,iw=dr.w-GAP,ih=dr.h-GAP-lh,zhongs=[];if(iw>6&&ih>6)squarify(da.children.map(g=>({value:sizeOf(g,area),ref:g})),ix,iy,iw,ih).forEach(zr=>{const g=zr.ref,zlh=Math.min(14,zr.h*0.16),leaves=[];if(zr.w>8&&zr.h>zlh+8&&g.children&&g.children.length)squarify(g.children.map(k=>({value:sizeOf(k,area),ref:k})),zr.x+1,zr.y+zlh,zr.w-2,zr.h-zlh-1).forEach(lr=>leaves.push({code:lr.ref.code,x:lr.x,y:lr.y,w:lr.w,h:lr.h}));zhongs.push({code:g.code,x:zr.x,y:zr.y,w:zr.w,h:zr.h,zlh,leaves});});out.push({code:da.code,x:dr.x,y:dr.y,w:dr.w,h:dr.h,lh,zhongs});});return out;}
+onmessage=e=>{const m=e.data;if(m.type==='init'){const byDa={};for(const g of m.groups){(byDa[g.parent]=byDa[g.parent]||[]).push(g);}DATA={categories:m.categories.map(c=>({code:c.code,name:c.title,children:byDa[c.code]||[]})),groups:m.groups};postMessage({type:'ready',si:buildSI()});}
+else if(m.type==='canvas'&&DATA){postMessage({type:'canvas',seq:m.seq,key:m.key,layout:buildCanvas(m.w,m.h,m.area)});}};`;
+  try{const url=URL.createObjectURL(new Blob([src],{type:'text/javascript'}));const w=new Worker(url);URL.revokeObjectURL(url);return w;}catch(e){return null;}}
+function workerPayload(){return {categories:DATA.categories,groups:ALLZ.map(g=>({code:g.code,name:g.name,title:g.title,parent:g.parent,da:g.da,english:g.english||'',py:g.py||'',pyi:g.pyi||'',alias:g.alias||[],employment:g.employment||0,dims:g.dims,overall:g.overall,children:(g['细类']||[]).map(x=>({code:x.code,title:x.title,py:x.py||'',pyi:x.pyi||'',alias:x.alias||[],employment:x.employment||0,dims:x.dims,overall:x.overall}))}))};}
+function hydrateSearch(a){return a.map(it=>({...it,node:it.k==='l'?BYX.get(it.code):BYZ.get(it.code)})).filter(it=>it.node);}
+function hydrateCanvasLayout(layout){return layout.map(da=>({ref:DA.find(d=>d.code===da.code),x:da.x,y:da.y,w:da.w,h:da.h,lh:da.lh,zhongs:da.zhongs.map(z=>({ref:BYZ.get(z.code),x:z.x,y:z.y,w:z.w,h:z.h,zlh:z.zlh,leaves:z.leaves.map(l=>({ref:BYX.get(l.code),x:l.x,y:l.y,w:l.w,h:l.h})).filter(l=>l.ref)})).filter(z=>z.ref)})).filter(d=>d.ref);}
+function initPerfWorker(){PERF_W=makePerfWorker();if(!PERF_W)return;PERF_W.onmessage=e=>{const m=e.data;if(m.type==='ready'){PERF_READY=true;if(m.si)SI=hydrateSearch(m.si);requestWorkerCanvas();}
+  else if(m.type==='canvas'){PERF_LAYOUTS.set(m.key,hydrateCanvasLayout(m.layout));if(m.key===PERF_CANVAS_KEY&&VIEW==='free'){CANVAS=PERF_LAYOUTS.get(m.key);CV_HOV=null;wake();}}};PERF_W.onerror=()=>{PERF_W=null;PERF_READY=false;};PERF_W.postMessage({type:'init',...workerPayload()});}
+function canvasCacheKey(){return S.area+':'+Math.round(W())+'x'+Math.round(H());}
+function requestWorkerCanvas(){if(!PERF_W||!PERF_READY)return;const key=canvasCacheKey();if(PERF_LAYOUTS.has(key))return;PERF_W.postMessage({type:'canvas',seq:++PERF_SEQ,key,area:S.area,w:Math.round(W()),h:Math.round(H())});}
+
 const S={dim:'overall',drill:null,leaf:null,disagree:false,query:'',minPct:0,area:'emp'};
 const mq=matchMedia('(prefers-color-scheme: dark)');let themeMode='auto';
 const theme=()=>themeMode==='auto'?(mq.matches?'dark':'light'):themeMode;
@@ -559,7 +582,8 @@ function setView(v){VIEW=v;const vs=document.getElementById('viewSw');if(vs)[...
 /* ===== A 自由画布:语义缩放嵌套画布(大类>中类>细类);固定模式不走此路径 ===== */
 let CANVAS=null,tfT=null;const CV_MAXSCALE=16;
 let CV_OPEN=[],CV_HOV=null,cvHL=0;const cvFocus=()=>CV_OPEN[CV_OPEN.length-1]||null;  /* A: 已展开中类 code 列表(末位=焦点);CV_HOV 悬停目标 */
-function buildCanvas(){const r=full(),GAP=22;CANVAS=[];CV_HOV=null;
+function buildCanvas(){const key=canvasCacheKey();PERF_CANVAS_KEY=key;if(PERF_LAYOUTS.has(key)){CANVAS=PERF_LAYOUTS.get(key);CV_HOV=null;requestWorkerCanvas();return;}
+  requestWorkerCanvas();const r=full(),GAP=22;CANVAS=[];CV_HOV=null;
   squarify(TREE.map(d=>({value:d.children.reduce((s,g)=>s+sizeOf(g),0),ref:d})),r.x,r.y,r.w,r.h).forEach(dr=>{
     const da=dr.ref,lh=18,ix=dr.x+GAP/2,iy=dr.y+GAP/2+lh,iw=dr.w-GAP,ih=dr.h-GAP-lh,zhongs=[];
     if(iw>6&&ih>6)squarify(da.children.map(g=>({value:sizeOf(g),ref:g})),ix,iy,iw,ih).forEach(zr=>{
@@ -1067,7 +1091,7 @@ const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bili
 
 window.addEventListener('resize',resize);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){wake();wakeRadar();}});  /* 隐藏标签页时浏览器自动暂停 rAF;回前台唤醒重绘 */
-updateRange();resize();updateCrumb();updateLegend();updateSummary();updateDa();renderTierLegend();setHandle();wake();wakeRadar();
+initPerfWorker();updateRange();resize();updateCrumb();updateLegend();updateSummary();updateDa();renderTierLegend();setHandle();wake();wakeRadar();
 requestAnimationFrame(()=>{var _ld=document.getElementById('loading');if(_ld)_ld.remove();});  // C 首帧绘制后移除加载层
 window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},back:back,theme:m=>{themeMode=m;applyTheme();},collapse:()=>{top.classList.toggle('collapsed');setHandle();bumpTop();},area:setArea,
   metric:k=>{S.dim=k;S.disagree=false;dis.classList.remove('on');[...tg.children].forEach(x=>x.classList.toggle('active',x.dataset.key===k));resetFilt();updateRange();updateLegend();wake();},
