@@ -36,7 +36,7 @@
 | **#7** | 06-23 | 新增 WORKLOG.md + CLAUDE.md + AGENTS.md(协作机制落地) | 2 |
 | **#8** | 06-23 | Codex 首次提交(Worker 预计算)同步入 claude 分支 | Codex 1 |
 | **#9** | 06-23 | 同一 Codex 提交(`f6c916f`)同步入 main | Codex 1(同 #8) |
-| **#10** | 进行中 | Codex:自由画布「复位视图」整改(尚未合并) | Codex 1 |
+| **#10** | 06-23 | Codex:自由画布「复位视图」整改(并入 claude 分支) | Codex 1 |
 
 > 注:个别提交标题里的 `#6`(如「#6 2D 自由画布视图」)是作者内部的功能编号,**不是** PR 号;该提交实际并入 PR #4。
 > 注:#8 与 #9 是同一个 Codex 提交分别同步进 claude 分支与 main,由作者手动操作,目的是避免两条分支互相不知道对方进度。
@@ -256,13 +256,19 @@ PR #4 部分(以下 8 条):
   - 文件:.github/workflows/deploy.yml(找回此前本分支缺失的部署工作流)
   - 说明:遵守「开工前先同步最新 main」纪律,把 `origin/main`(含 PR #8/#9)合进本分支,确保在最新版本上改动。
 
+### 2026-06-23 · [Codex] 自由画布复位整改(PR #10 → claude 分支)
+- `a9fc370` [Codex] 自由画布复位关闭展开并固定全局概况
+  - 文件:site/index.html · site/index.standalone.html · WORKLOG.md(3f)
+  - 说明:自由画布「复位视图」同步清空已展开中类与悬停状态;顶部抽屉概况不再跟随展开的中类,始终保持全局综合视图。
+- `68fd7a1` [作者] Merge pull request #10 ·  并入 claude 分支(06-23);该改动随后再经 PR 流向 main。
+
 ---
 
 ## 当前状态快照(2026-06-23 刷新)
 
-- **main**:`97c9195`(PR #9 合并点);PR #1~#9 均已并入。
-- **活动分支**:`claude/vigilant-babbage-atJ5w`,已合入最新 `origin/main`(含 Codex 的 PR #8/#9),并叠加本轮 WORKLOG 维护提交,工作树干净。
-- **进行中 PR**:**#10**(Codex,分支 `gpt/...-smmnf3`,base = claude 分支),内容是自由画布「复位视图」整改,**尚未合并**;其改动与日志条目待该 PR 合并后再随之入库,本分支暂不代记。
+- **main**:`b2e01b7`(PR #11 合并点);PR #1~#9、#11 已并入。
+- **活动分支**:`claude/vigilant-babbage-atJ5w`,已合入最新 `origin/main` 与 Codex 的 PR #10(自由画布复位整改),并叠加本轮 WORKLOG 维护提交,工作树干净。
+- **待回流 main**:PR #10 的 `a9fc370` 目前在 claude 分支上,尚未单独流入 main(下次 claude 分支并入 main 时一并带过去)。
 - **已知遗留**(launch 后再办):
   - `by_model` 数组化(减小 data.cn.js)。
   - eval(细类代表性评价)懒加载。
