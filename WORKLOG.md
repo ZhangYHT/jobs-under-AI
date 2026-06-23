@@ -233,6 +233,9 @@ PR #4 部分(以下 8 条):
 - `6c096a9` [Claude] 全面体检·数据:细类代表性评价(eval)不再选到被截断的半句
   - 文件:aggregate.py · data/aggregated.cn.json · site/data.cn.js · site/index.standalone.html(4f)
   - 说明:全面体检发现细类「代表性评价」会选到被 140 字截断的半句,改进选句逻辑后重跑聚合。
+- `8c0f5c6` [Claude] 新增协作改动日志 WORKLOG.md + Claude/Codex 维护须知
+  - 文件:WORKLOG.md · CLAUDE.md · AGENTS.md(3f,纯新增文档,未动任何代码/数据)
+  - 说明:为与 Codex 共同开发建立单一事实源的改动日志与维护规矩(本条由 Claude 应作者要求创建)。注:本日志自身的「创建/维护」提交属引导性提交,不再逐条自列其后续 commit 哈希,以免哈希自指无限套娃;功能性改动从下一次起按约定逐条记录。
 
 ---
 
