@@ -49,6 +49,7 @@
     border:1px solid var(--line);border-radius:var(--r);box-shadow:var(--shadow);padding:11px 13px;max-height:74vh;overflow:auto;
     transition:transform .42s cubic-bezier(.22,1,.36,1),opacity .32s;}
   #top.collapsed{transform:translateY(calc(-100% - 40px));opacity:0;pointer-events:none;}
+  #top.no-trans{transition:none;}
   #handle{position:fixed;top:0;left:50%;z-index:33;transform:translateX(-50%);transform-origin:top center;
     background:var(--glass);border:1px solid var(--line);border-top:none;border-radius:0 0 13px 13px;
     padding:4px 26px 5px;cursor:pointer;box-shadow:var(--shadow);color:var(--muted);font-size:13px;font-weight:700;user-select:none;transition:padding .15s;}
@@ -872,7 +873,7 @@ let tourI=-1,tourThenAbout=false;
 const tourLayer=document.getElementById('tourLayer'),tourHole=document.getElementById('tourHole'),tourBubble=document.getElementById('tourBubble');
 function tourRect(step){if(step.tile){if(!tiles.length)return null;const t=tiles.find(x=>x.alpha>0.5)||tiles[0],cr=cv.getBoundingClientRect();return{left:cr.left+t.cx,top:cr.top+t.cy,width:t.cw,height:t.ch};}
   const el=document.querySelector(step.sel);return el?el.getBoundingClientRect():null;}
-function tourShow(){const step=TOUR[tourI];if(!step){endTour();return;}const rc=tourRect(step);if(!rc||rc.width<2||rc.height<2){tourNext();return;}
+function tourShow(){const step=TOUR[tourI];if(!step){endTour();return;}top.classList.toggle('collapsed',!!step.tile);setHandle();const rc=tourRect(step);if(!rc||rc.width<2||rc.height<2){tourNext();return;}
   const pad=6;tourHole.style.left=(rc.left-pad)+'px';tourHole.style.top=(rc.top-pad)+'px';tourHole.style.width=(rc.width+pad*2)+'px';tourHole.style.height=(rc.height+pad*2)+'px';
   document.getElementById('tourText').innerHTML='<b style="font-size:14px">'+step.title+'</b><br>'+step.text;
   document.getElementById('tourStep').textContent=(tourI+1)+' / '+TOUR.length;
@@ -880,8 +881,8 @@ function tourShow(){const step=TOUR[tourI];if(!step){endTour();return;}const rc=
   document.getElementById('tourNext').textContent=tourI===TOUR.length-1?'完成':'下一步';
   const bw=300,bh=158,vw=innerWidth,vh=innerHeight;let bx=Math.min(Math.max(8,rc.left),vw-bw-8),by=rc.top+rc.height+14;if(by+bh>vh)by=Math.max(8,rc.top-bh-14);
   tourBubble.style.left=bx+'px';tourBubble.style.top=by+'px';}
-function startTour(){tourI=0;tourLayer.classList.add('show');tourShow();}
-function endTour(completed){tourLayer.classList.remove('show');tourI=-1;try{localStorage.setItem('tour_v1','1');}catch(e){}if(tourThenAbout){tourThenAbout=false;if(completed)aopen();}}
+function startTour(){top.classList.add('no-trans');top.classList.remove('collapsed');setHandle();tourI=0;tourLayer.classList.add('show');tourShow();}
+function endTour(completed){tourLayer.classList.remove('show');top.classList.remove('no-trans');tourI=-1;try{localStorage.setItem('tour_v1','1');}catch(e){}if(tourThenAbout){tourThenAbout=false;if(completed)aopen();}}
 function tourNext(){if(tourI>=TOUR.length-1)endTour(true);else{tourI++;tourShow();}}
 function tourPrev(){if(tourI>0){tourI--;tourShow();}}
 document.getElementById('tourSkip').onclick=endTour;document.getElementById('tourNext').onclick=tourNext;document.getElementById('tourPrev').onclick=tourPrev;
