@@ -13,6 +13,7 @@
 
 ## 关键纪律
 - **分支**:不要直接推 main;在你自己的开发分支上工作,合并走 PR。Claude 的分支是 `claude/vigilant-babbage-atJ5w`,**不要在上面改动**(那是 Claude 的),除非作者明确要求。
+- **开工前/推送前先同步最新 main**:开始改动前先拉取并合并最新 `origin/main` 到你的分支,确保改动基于最新版本;**推送/开 PR 前再同步一次**(Claude 可能在你工作期间已把改动合进 main)。这是避免两边互相不知道对方进度、产生冲突或互相覆盖的硬性步骤。
 - **产物禁破折号**:`site/*.js`、`*.html`、`data/*.json` 等产物不得出现长破折号(em-dash, U+2014)或短破折号(en-dash, U+2013),用 ASCII `-` 或中文标点。
 - **改 UI 后重生 standalone**:UI 全在单文件 `site/index.html`(HTML/CSS/JS 全内联、零外部依赖)。改完务必 `python aggregate.py` 重生 `site/index.standalone.html` 与 `site/data.cn.js`。
 - **模型 ID 不进产物**:模型标识只在对话里说,不写进仓库任何文件。
