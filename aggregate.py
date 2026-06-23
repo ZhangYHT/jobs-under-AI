@@ -14,7 +14,7 @@
   步骤1-3 官方锚定 —— 取有官方来源的值;否则用中位数并标 provisional;保留所有来源。
   步骤4   集成     —— 每维 均值/中位数/标准差(分歧度) + 各模型分。
 """
-import json, glob, os, re, statistics, collections
+import json, glob, os, re, statistics, collections, copy
 from pypinyin import lazy_pinyin
 
 DIMS = ['overall', 'automation', 'augmentation', 'digital', 'moat', 'adoption']
@@ -273,7 +273,16 @@ def main():
     json.dump(agg, open(p('data', 'aggregated.cn.json'), 'w', encoding='utf-8'), ensure_ascii=False, indent=1)
     # 同时输出站点可直接 <script> 加载的数据(双击 HTML 也能渲染,免本地服务器)
     os.makedirs(p('site'), exist_ok=True)
-    data_js = 'window.DATA=' + json.dumps(agg, ensure_ascii=False) + ';'
+    # 站点数据瘦身:剔前端未用字段 + dims 转定长数组(前端 expandData 还原)+ 去冒号后空格,显著减小 data.cn.js / standalone(aggregated.cn.json 仍存全字段作 provenance)
+    _DROP_Z = ('n_digital', 'n_green', 'employment_basis', 'employment_sources', 'pay_basis', 'pay_sources', 'dims_median', 'xilei_scored')
+    def _dims_arr(d): return [d.get(k) for k in DIMS] if isinstance(d, dict) else d
+    slim = copy.deepcopy(agg)
+    for g in slim['groups']:
+        for k in _DROP_Z: g.pop(k, None)
+        if 'dims' in g: g['dims'] = _dims_arr(g['dims'])
+        for x in g.get('细类', []):
+            if 'dims' in x: x['dims'] = _dims_arr(x['dims'])
+    data_js = 'window.DATA=' + json.dumps(slim, ensure_ascii=False, separators=(',', ':')) + ';'
     open(p('site', 'data.cn.js'), 'w', encoding='utf-8').write(data_js)
     # 自包含单文件:把数据内联进 HTML,免相对路径(供 WordPress 等自托管直接上传;GitHub Pages 仍用双文件 index.html)
     idx = open(p('site', 'index.html'), encoding='utf-8').read()
