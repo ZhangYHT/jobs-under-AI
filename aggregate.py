@@ -48,6 +48,12 @@ _EVAL_BAD = re.compile(
     r'\d\s*\+\s*\d[\d\s+.]*=\s*\d|\*\*|◇|-{3,}|我按|这一批|其余[^。]{0,6}批|见表\s*\d|细类编码|官方职业名称|\d-\d\d-\d\d-\d\d[^。]{0,30}\d-\d\d-\d\d-\d\d')   # +数学和草稿/markdown/装饰/口语批头/表格脚手架/多码批表
 def bad_eval(e):
     return (not e) or e.startswith(EVAL_START) or bool(_EVAL_BAD.search(e[:240]))
+_EVAL_TERM = '。！？!?…”』）)'
+def eval_complete(e):                                  # 结尾是否完整句(有终止标点)
+    e = (e or '').rstrip()
+    return bool(e) and e[-1] in _EVAL_TERM
+def eval_truncated(e):                                 # 源采集对 eval 截到 140 字,常半句/半词收尾;凭"贴顶且无终止标点"识别
+    return len(e or '') >= 138 and not eval_complete(e)
 def clean_eval_head(e):
     e = re.sub(r'^[\s#>*•·\-]+', '', e)                 # 去开头 markdown/项目符
     e = re.sub(r'^【[^】]{0,30}】\s*', '', e)            # 去开头【编码 名称】
@@ -227,7 +233,8 @@ def main():
             tiers = [r['pay_tier'] for r in rows if r.get('pay_tier')]
             x['pay_tier'] = collections.Counter(tiers).most_common(1)[0][0] if tiers else None
             evs = [r['eval'] for r in rows if not bad_eval(r.get('eval'))]   # 剔除思考/方法论/批次脚手架等污染候选
-            ev = max(evs, key=len) if evs else ''                 # 无干净候选则留空,宁缺勿脏
+            _good = [e for e in evs if not eval_truncated(e)]     # 优先未被 140 截断的完整候选(否则最长的往往是半句截断的那条)
+            ev = max(_good, key=len) if _good else (max(evs, key=len) if evs else '')  # 无干净候选则留空,宁缺勿脏
             ev = re.sub(r'^\s*\d[\d\s+.]*=\s*\d+\s*[✓]?', '', ev)  # 防御:去残留行首数学和草稿
             ev = re.sub(r'\*+|◇|✓', '', ev)                       # 防御:去残留 markdown 装饰
             ev = strip_scaffold(clean_eval_head(ev), x.get('title', ''))  # 去行首脚手架(中类名/编码/序号/重复职业名)+破折号
