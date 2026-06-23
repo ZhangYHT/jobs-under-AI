@@ -221,6 +221,10 @@
   #loading{position:fixed;inset:0;z-index:88;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:center;background:var(--bg);color:var(--muted);font-size:13.5px;}
   #loading .ld-spin{width:34px;height:34px;border:3px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:ldspin .8s linear infinite;}
   @keyframes ldspin{to{transform:rotate(360deg);}}
+  #cvHint{position:fixed;left:50%;bottom:calc(var(--both) + 52px);transform:translateX(-50%);z-index:33;background:var(--glass);border:1px solid var(--line);border-radius:20px;padding:6px 15px;font-size:12px;color:var(--muted);box-shadow:var(--shadow);opacity:0;pointer-events:none;transition:opacity .35s;white-space:nowrap;max-width:94vw;overflow:hidden;text-overflow:ellipsis;}
+  #cvHint.show{opacity:1;}
+  #cvReset{position:fixed;right:14px;bottom:calc(var(--both) + 12px);z-index:36;display:none;background:var(--glass);border:1px solid var(--line);border-radius:9px;padding:7px 13px;font-size:12px;font-weight:600;color:var(--accent);cursor:pointer;box-shadow:var(--shadow);font-family:inherit;}
+  #cvReset:hover{border-color:var(--accent);}
   /* 等级色阶图例 */
   .tier-legend{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);flex-wrap:wrap;margin-left:auto;}
   .tier-legend .tt{font-weight:600;color:var(--soft);}
@@ -377,6 +381,8 @@
 </head>
 <body>
 <div id="stage"><canvas id="cv"></canvas></div>
+<div id="cvHint">滚轮缩放 · 拖拽平移 · 点中类展开细类 · 点细类看详情</div>
+<button id="cvReset" type="button">⤺ 复位视图</button>
 <p class="sr-only" id="kbdHelp">键盘快捷键:斜杠或 s 聚焦搜索;数字键 1 到 6 切换维度;d 切换模型分歧;t 切换主题;退格键返回上一层;问号打开说明面板。手机可在图上向右滑动返回上一层。</p>
 <div id="err"><div>数据加载遇到问题。请刷新页面重试;若反复出现,可能是网络波动或数据正在更新。<br><button class="pill" style="margin-top:12px" onclick="location.reload()">刷新页面</button></div></div>
 <div id="loading"><div class="ld-spin"></div>加载中…</div>
@@ -395,7 +401,7 @@
     <div class="tier-legend" id="tierLegend"><span class="tt">等级色阶</span></div>
     <div id="filt"><span>筛选</span><input type="range" id="filtR" min="0" max="100" step="5" value="0" aria-label="按当前维度筛选方块"><span class="fv" id="filtV">全部</span><button type="button" class="freset" id="filtReset">重置</button></div>
     <div class="areaSw" id="areaSw" role="group" aria-label="方块面积依据"><span class="al">面积</span><button type="button" data-area="emp" class="active">人数</button><button type="button" data-area="impact">影响规模</button><button type="button" data-area="score">冲击分</button></div>
-    <div class="areaSw" id="viewSw" role="group" aria-label="视图模式"><span class="al">视图</span><button type="button" data-view="fixed" class="active">固定</button><button type="button" data-view="free">自由画布</button></div><button type="button" id="viewReset" class="freset" style="display:none">复位视图</button>
+    <div class="areaSw" id="viewSw" role="group" aria-label="视图模式"><span class="al">视图</span><button type="button" data-view="fixed" class="active">固定</button><button type="button" data-view="free">自由画布</button></div>
   </div>
   <div class="cards">
     <div class="card"><div class="ct">概况(当前视图)</div><div class="grid2">
@@ -542,14 +548,56 @@ function bumpTop(){topAnimFrames=34;wake();}  /* 顶栏滑动/改高的约 0.5s 
 const W=()=>cv.width/DPR,H=()=>cv.height/DPR;
 const full=()=>({x:6,y:6,w:W()-12,h:H()-12});
 /* #6 自由画布:pan/zoom 仅作用于显示层(布局/tween 不变);scale<=1 居中,>1 夹界防跑飞 */
-function clampPan(){const cw=W()*tf.scale,ch=H()*tf.scale,m=90;
-  if(tf.scale<=1.001){tf.ox=(W()-cw)/2;tf.oy=(H()-ch)/2;}
-  else{tf.ox=Math.min(m,Math.max(W()-cw-m,tf.ox));tf.oy=Math.min(m,Math.max(H()-ch-m,tf.oy));}}
-function zoomAt(mx,my,f){const old=tf.scale,ns=Math.max(1,Math.min(8,old*f));if(ns===old)return;tf.ox=mx-(mx-tf.ox)/old*ns;tf.oy=my-(my-tf.oy)/old*ns;tf.scale=ns;clampPan();wake();}
+function _clampTo(t){const cw=W()*t.scale,ch=H()*t.scale,m=90;
+  if(t.scale<=1.001){t.ox=(W()-cw)/2;t.oy=(H()-ch)/2;}
+  else{t.ox=Math.min(m,Math.max(W()-cw-m,t.ox));t.oy=Math.min(m,Math.max(H()-ch-m,t.oy));}return t;}
+function clampPan(){_clampTo(tf);}
+function zoomAt(mx,my,f){const old=tf.scale,ns=Math.max(1,Math.min(CV_MAXSCALE,old*f));if(ns===old)return;tfT=null;tf.ox=mx-(mx-tf.ox)/old*ns;tf.oy=my-(my-tf.oy)/old*ns;tf.scale=ns;clampPan();wake();}
 function setView(v){VIEW=v;const vs=document.getElementById('viewSw');if(vs)[...vs.children].forEach(b=>b.dataset&&b.dataset.view&&b.classList.toggle('active',b.dataset.view===v));
-  const vr=document.getElementById('viewReset');if(vr)vr.style.display=v==='free'?'':'none';
-  if(v==='free'){tf.scale=1;clampPan();}else{tf.ox=tf.oy=0;tf.scale=1;}wake();}
-function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());if(VIEW==='free')clampPan();bumpTop();if(ovKind==='scatter')drawScatter();if(ovKind==='leaf')drawLeafCharts();if(tourI>=0)tourShow();}
+  const vr=document.getElementById('cvReset');if(vr)vr.style.display=v==='free'?'block':'none';
+  tfT=null;if(v==='free'){buildCanvas();tf.scale=1;tf.ox=0;tf.oy=0;clampPan();showCanvasHint();}else{tf.ox=tf.oy=0;tf.scale=1;}wake();}
+/* ===== A 自由画布:语义缩放嵌套画布(大类>中类>细类);固定模式不走此路径 ===== */
+let CANVAS=null,tfT=null;const CV_MAXSCALE=16;
+function buildCanvas(){const r=full(),GAP=22;CANVAS=[];
+  squarify(TREE.map(d=>({value:d.children.reduce((s,g)=>s+sizeOf(g),0),ref:d})),r.x,r.y,r.w,r.h).forEach(dr=>{
+    const da=dr.ref,lh=18,ix=dr.x+GAP/2,iy=dr.y+GAP/2+lh,iw=dr.w-GAP,ih=dr.h-GAP-lh,zhongs=[];
+    if(iw>6&&ih>6)squarify(da.children.map(g=>({value:sizeOf(g),ref:g})),ix,iy,iw,ih).forEach(zr=>{
+      const g=zr.ref,zlh=Math.min(14,zr.h*0.16),leaves=[],kids=(g['细类']||[]);
+      if(zr.w>8&&zr.h>zlh+8&&kids.length)squarify(kids.map(k=>({value:sizeOf(k),ref:k})),zr.x+1,zr.y+zlh,zr.w-2,zr.h-zlh-1).forEach(lr=>leaves.push({ref:lr.ref,x:lr.x,y:lr.y,w:lr.w,h:lr.h}));
+      zhongs.push({ref:g,x:zr.x,y:zr.y,w:zr.w,h:zr.h,zlh,leaves});});
+    CANVAS.push({ref:da,x:dr.x,y:dr.y,w:dr.w,h:dr.h,lh,zhongs});});}
+function _clip(s,mw){s=String(s||'');if(ctx.measureText(s).width<=mw)return s;while(s.length>1&&ctx.measureText(s+'…').width>mw)s=s.slice(0,-1);return s+'…';}
+function _clab(s,X,Y,mw,c){const drk=lum(c)<.55;ctx.fillStyle=drk?'rgba(255,255,255,.96)':'rgba(15,20,30,.92)';ctx.textBaseline='top';ctx.font='11px sans-serif';ctx.fillText(_clip(s,mw-8),X+5,Y+4);}
+function drawCanvas(){if(!CANVAS)buildCanvas();ctx.clearRect(0,0,W(),H());const dk=theme()==='dark',sc=tf.scale,ox=tf.ox,oy=tf.oy,vw=W(),vh=H();
+  for(const da of CANVAS){const X=da.x*sc+ox,Y=da.y*sc+oy,DW=da.w*sc,DH=da.h*sc;if(X>vw||Y>vh||X+DW<0||Y+DH<0)continue;
+    ctx.fillStyle=dk?'rgba(255,255,255,.045)':'rgba(20,30,60,.05)';rr(X,Y,DW,DH,9);ctx.fill();ctx.lineWidth=1.5;ctx.strokeStyle=dk?'rgba(255,255,255,.16)':'rgba(20,30,60,.18)';ctx.stroke();
+    for(const z of da.zhongs){const zX=z.x*sc+ox,zY=z.y*sc+oy,ZW=z.w*sc,ZH=z.h*sc;if(ZW<2||zX>vw||zY>vh||zX+ZW<0||zY+ZH<0)continue;
+      const showL=ZW>150&&ZH>96&&z.leaves.length;
+      if(showL){const stripH=z.zlh*sc;
+        for(const lf of z.leaves){const lX=lf.x*sc+ox,lY=lf.y*sc+oy,LW=lf.w*sc,LH=lf.h*sc;if(LW<3||lX>vw||lY>vh||lX+LW<0||lY+LH<0)continue;
+          const c=tileRGB({node:lf.ref});ctx.fillStyle='rgb('+(c[0]|0)+','+(c[1]|0)+','+(c[2]|0)+')';rr(lX+.5,lY+.5,LW-1,LH-1,3);ctx.fill();
+          if(LW>46&&LH>20)_clab(lf.ref.title,lX,lY,LW,c);}
+        ctx.lineWidth=1.4;ctx.strokeStyle=dk?'rgba(255,255,255,.25)':'rgba(20,30,60,.22)';rr(zX,zY,ZW,ZH,4);ctx.stroke();
+        ctx.fillStyle=cssv('--text');ctx.font='bold 11px sans-serif';ctx.textBaseline='top';ctx.fillText(_clip(z.ref.name,ZW-8),zX+5,zY+Math.max(1,(stripH-13)/2));
+      }else{const c=tileRGB({node:z.ref});ctx.fillStyle='rgb('+(c[0]|0)+','+(c[1]|0)+','+(c[2]|0)+')';rr(zX+.5,zY+.5,ZW-1,ZH-1,4);ctx.fill();
+        if(ZW>48&&ZH>22)_clab(z.ref.name,zX,zY,ZW,c);}}
+    if(DW>70){ctx.fillStyle=cssv('--text');ctx.font='bold 13px sans-serif';ctx.textBaseline='top';ctx.fillText(_clip(da.ref.name,DW-14),X+7,Y+4);}}}
+function canvasHit(px,py){if(!CANVAS)return null;const sc=tf.scale,wx=(px-tf.ox)/sc,wy=(py-tf.oy)/sc;
+  for(const da of CANVAS){if(wx<da.x||wx>da.x+da.w||wy<da.y||wy>da.y+da.h)continue;
+    for(const z of da.zhongs){if(wx<z.x||wx>z.x+z.w||wy<z.y||wy>z.y+z.h)continue;
+      if(z.w*sc>150&&z.h*sc>96&&z.leaves.length){for(const lf of z.leaves)if(wx>=lf.x&&wx<=lf.x+lf.w&&wy>=lf.y&&wy<=lf.y+lf.h)return{level:'leaf',ref:lf.ref,rect:lf,parent:z.ref};}
+      return{level:'zhong',ref:z.ref,rect:z};}
+    return{level:'da',ref:da.ref,rect:da};}
+  return null;}
+function canvasFindZhong(code){if(!CANVAS)return null;for(const da of CANVAS)for(const z of da.zhongs)if(z.ref.code===code)return z;return null;}
+function zoomToRect(r){const s=Math.min(W()/r.w,H()/r.h)*0.86,ns=Math.max(1,Math.min(CV_MAXSCALE,s));tfT=_clampTo({scale:ns,ox:W()/2-(r.x+r.w/2)*ns,oy:H()/2-(r.y+r.h/2)*ns});wake();}
+function canvasHover(e){if(panning){cv.style.cursor='grabbing';return;}const r=cv.getBoundingClientRect();tipXY=[e.clientX,e.clientY];const h=canvasHit(e.clientX-r.left,e.clientY-r.top);
+  if(!h||h.level==='da'){tip.classList.remove('show');clearTimeout(tipTimer);cv.style.cursor='grab';return;}
+  cv.style.cursor=h.level==='leaf'?'pointer':'zoom-in';tipFull=false;showTip(h.ref,false);}
+function canvasClick(e){const r=cv.getBoundingClientRect();const h=canvasHit(e.clientX-r.left,e.clientY-r.top);if(!h)return;
+  if(h.level==='leaf'&&h.ref.overall!=null)openLeafModal(h.ref,h.parent);else if(h.level==='leaf')zoomToRect((canvasFindZhong(h.parent.code)||{rect:h.rect}).rect||h.rect);else zoomToRect(h.rect);}
+let _hintT=0;function showCanvasHint(){const el=document.getElementById('cvHint');if(!el)return;el.classList.add('show');clearTimeout(_hintT);_hintT=setTimeout(()=>el.classList.remove('show'),4500);}
+function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());if(VIEW==='free'){buildCanvas();clampPan();tfT=null;}bumpTop();if(ovKind==='scatter')drawScatter();if(ovKind==='leaf')drawLeafCharts();if(tourI>=0)tourShow();}
 const ovAll=n=>(n.dims&&n.dims.overall!=null)?n.dims.overall:(n.overall!=null?n.overall:0);
 /* C1 方块面积口径:emp 人数 / impact 影响体量(人数×冲击/100)/ score 纯分(综合冲击)。均加 1e-4 地板防 squarify 除零 */
 function sizeOf(n){const e=n.employment||0;return S.area==='score'?Math.max(1e-4,ovAll(n)):S.area==='impact'?Math.max(1e-4,e*ovAll(n)/100):Math.max(1e-4,e);}
@@ -583,17 +631,20 @@ function paintTile(x,y,w,h,c,node,hl,alpha){ctx.globalAlpha=node.pending?alpha*.
 function fitRect(t){const nm=t.node.name;ctx.font='11.5px sans-serif';const fw=ctx.measureText(nm).width;
   let tw=Math.min(W()-12,t.cw+54,Math.max(t.cw*1.04,Math.min(206,fw/2+26))),th=Math.min(t.ch+18,Math.max(t.ch*1.04,52));
   let cx=t.cx+t.cw/2,cy=t.cy+t.ch/2,x=cx-tw/2,y=cy-th/2;x=Math.max(4,Math.min(W()-tw-4,x));y=Math.max(4,Math.min(H()-th-4,y));return{x,y,w:tw,h:th};}
-function frame(){let moving=false;for(const t of tiles){t.cx+=(t.tx-t.cx)*.22;t.cy+=(t.ty-t.cy)*.22;t.cw+=(t.tw-t.cw)*.22;t.ch+=(t.th-t.ch)*.22;
+function frame(){if(VIEW==='free'){let mv=false;if(tfT){tf.scale+=(tfT.scale-tf.scale)*.22;tf.ox+=(tfT.ox-tf.ox)*.22;tf.oy+=(tfT.oy-tf.oy)*.22;
+    if(Math.abs(tfT.scale-tf.scale)<.003&&Math.abs(tfT.ox-tf.ox)<.6&&Math.abs(tfT.oy-tf.oy)<.6){tf.scale=tfT.scale;tf.ox=tfT.ox;tf.oy=tfT.oy;tfT=null;}else mv=true;}
+    draw();placeHandle();if(topAnimFrames>0)topAnimFrames--;if(mv||topAnimFrames>0)requestAnimationFrame(frame);else rafOn=false;return;}
+  let moving=false;for(const t of tiles){t.cx+=(t.tx-t.cx)*.22;t.cy+=(t.ty-t.cy)*.22;t.cw+=(t.tw-t.cw)*.22;t.ch+=(t.th-t.ch)*.22;
   const at=matches(t)?1:.12;t.alpha+=(at-t.alpha)*.18;const c=tileRGB(t);t.cr+=(c[0]-t.cr)*.16;t.cg+=(c[1]-t.cg)*.16;t.cb+=(c[2]-t.cb)*.16;const ht=t.id===hoverId?1:0;t.hl+=(ht-t.hl)*.2;
   if(!moving&&(Math.abs(t.tx-t.cx)>.4||Math.abs(t.ty-t.cy)>.4||Math.abs(t.tw-t.cw)>.4||Math.abs(t.th-t.ch)>.4||Math.abs(at-t.alpha)>.004||Math.abs(c[0]-t.cr)>.5||Math.abs(c[1]-t.cg)>.5||Math.abs(c[2]-t.cb)>.5||Math.abs(ht-t.hl)>.004))moving=true;}
   draw();placeHandle();if(topAnimFrames>0)topAnimFrames--;
   if(moving||topAnimFrames>0)requestAnimationFrame(frame);else rafOn=false;}
-function draw(){ctx.clearRect(0,0,W(),H());const dk=theme()==='dark';const fz=VIEW==='free';if(fz){ctx.save();ctx.translate(tf.ox,tf.oy);ctx.scale(tf.scale,tf.scale);}
+function draw(){if(VIEW==='free'){drawCanvas();return;}ctx.clearRect(0,0,W(),H());const dk=theme()==='dark';
   if(!S.drill)daLabels.forEach(d=>{ctx.fillStyle=dk?'rgba(255,255,255,.02)':'rgba(20,30,60,.03)';rr(d.x+2,d.y+2,d.w-4,d.h-4,7);ctx.fill();});
   let hov=null;for(const t of tiles){if(t.id===hoverId&&t.hl>.05){hov=t;continue;}if(t.cw<1||t.ch<1)continue;paintTile(t.cx,t.cy,t.cw,t.ch,[t.cr,t.cg,t.cb],t.node,t.hl,t.alpha);}
   ctx.globalAlpha=1;if(!S.drill)daLabels.forEach(d=>{if(d.lh){ctx.fillStyle=cssv('--text');ctx.font='bold 13px sans-serif';ctx.textBaseline='top';
     let s=d.name+'  ·  '+fmtJobs(d.jobs),mw=d.w-12;while(ctx.measureText(s).width>mw&&s.length>1)s=s.slice(0,-1);ctx.fillText(s,d.x+8,d.y+5);}});
-  if(hov){const fr=fitRect(hov),k=hov.hl;const x=hov.cx+(fr.x-hov.cx)*k,y=hov.cy+(fr.y-hov.cy)*k,w=hov.cw+(fr.w-hov.cw)*k,h=hov.ch+(fr.h-hov.ch)*k;paintTile(x,y,w,h,[hov.cr,hov.cg,hov.cb],hov.node,hov.hl,1);}if(fz)ctx.restore();}
+  if(hov){const fr=fitRect(hov),k=hov.hl;const x=hov.cx+(fr.x-hov.cx)*k,y=hov.cy+(fr.y-hov.cy)*k,w=hov.cw+(fr.w-hov.cw)*k,h=hov.ch+(fr.h-hov.ch)*k;paintTile(x,y,w,h,[hov.cr,hov.cg,hov.cb],hov.node,hov.hl,1);}}
 
 function paintRadar(c,cx,cy,R,vals,ac,fs){const n=6,ln=theme()==='dark'?'rgba(255,255,255,.13)':'rgba(20,30,60,.13)',tx=cssv('--muted');ac=ac||cssv('--accent');fs=fs||9;
   for(let g=1;g<=3;g++){c.beginPath();for(let i=0;i<=n;i++){const a=-Math.PI/2+i*2*Math.PI/n,rr=R*g/3;const X=cx+Math.cos(a)*rr,Y=cy+Math.sin(a)*rr;i?c.lineTo(X,Y):c.moveTo(X,Y);}c.closePath();c.strokeStyle=ln;c.stroke();}
@@ -695,13 +746,13 @@ function hit(px,py){if(VIEW==='free'){px=(px-tf.ox)/tf.scale;py=(py-tf.oy)/tf.sc
 /* 首个 touchstart -> 标记为触摸设备,关闭 hover tooltip(避免点按时详情与悬停框双触发) */
 cv.addEventListener('touchstart',()=>{TOUCH=true;hideTip();},{passive:true});
 cv.addEventListener('pointerdown',e=>{if(e.pointerType==='touch'){TOUCH=true;hideTip();}});
-cv.addEventListener('mousemove',e=>{if(TOUCH){hideTip();cv.style.cursor='default';return;}if(panning)return;
+cv.addEventListener('mousemove',e=>{if(TOUCH){hideTip();cv.style.cursor='default';return;}if(VIEW==='free'){canvasHover(e);return;}
   const r=cv.getBoundingClientRect();tipXY=[e.clientX,e.clientY];const t=hit(e.clientX-r.left,e.clientY-r.top);
   if(!t){if(hoverId!=null){hoverId=null;wake();}tip.classList.remove('show');clearTimeout(tipTimer);cv.style.cursor=VIEW==='free'?'grab':'default';return;}
   cv.style.cursor=t.kind==='zhong'?'zoom-in':(t.kind==='leaf'&&!t.node.pending?'pointer':'default');
   if(t.id!==hoverId){hoverId=t.id;wake();tipFull=false;showTip(t.node,false);clearTimeout(tipTimer);tipTimer=setTimeout(()=>{tipFull=true;const n=nodeOf(hoverId);if(n)showTip(n,true);},500);}else place();});
 cv.addEventListener('mouseleave',()=>{if(hoverId!=null){hoverId=null;wake();}tip.classList.remove('show');clearTimeout(tipTimer);});
-cv.addEventListener('click',e=>{if(swiped){swiped=false;return;}if(panMoved){panMoved=false;return;}const r=cv.getBoundingClientRect();const t=hit(e.clientX-r.left,e.clientY-r.top);if(!t)return;
+cv.addEventListener('click',e=>{if(swiped){swiped=false;return;}if(panMoved){panMoved=false;return;}if(VIEW==='free'){canvasClick(e);return;}const r=cv.getBoundingClientRect();const t=hit(e.clientX-r.left,e.clientY-r.top);if(!t)return;
   if(TOUCH){hideTip();tapFlash(t.id);}
   if(t.kind==='zhong')drillInto(t);else if(t.kind==='leaf'&&!t.node.pending)openLeafModal(t.node);});
 /* #6 自由画布:滚轮缩放 / 拖拽平移 / 双指缩放(仅自由模式;固定模式完全不介入)*/
@@ -741,6 +792,7 @@ sRes.addEventListener('mousedown',ev=>{const el=ev.target.closest('.sr');if(el){
 sRes.addEventListener('scroll',()=>{if(shown<curHits.length&&sRes.scrollTop+sRes.clientHeight>=sRes.scrollHeight-60)srGrow();});
 function pickHit(i){const it=curHits[i];if(it)jumpTo(it);}
 function jumpTo(it){searchEl.value='';S.query='';sRes.classList.remove('show');sRes.innerHTML='';curHits=[];selIdx=-1;
+  if(VIEW==='free'){const z=canvasFindZhong(it.k==='l'?it.zcode:it.code);if(z)zoomToRect(z.rect);if(it.k==='l')openLeafModal(it.node,z?z.ref:null);return;}
   S.leaf=null;S.drill=null;rebuild(full());top.classList.remove('detail');backTab.style.display='none';
   const t=tiles.find(x=>x.id==='z:'+(it.k==='l'?it.zcode:it.code));
   if(t){drillInto(t);if(it.k==='l')openLeafModal(it.node);}updateCrumb();updateSummary();}
@@ -763,9 +815,9 @@ document.getElementById('filtReset').onclick=resetFilt;
 fmtFilt();syncFiltDisabled();
 // C1 方块面积口径切换(人数/影响体量/纯分):重排当前层级,复用 frame() tween 平滑过渡
 const areaSw=document.getElementById('areaSw');
-function setArea(m){if(S.area===m)return;S.area=m;areaSw.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.area===m));rebuild(full());wake();}
+function setArea(m){if(S.area===m)return;S.area=m;areaSw.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.area===m));rebuild(full());if(VIEW==='free')buildCanvas();wake();}
 areaSw.querySelectorAll('button').forEach(b=>b.onclick=()=>setArea(b.dataset.area));
-{const _vs=document.getElementById('viewSw');if(_vs)_vs.querySelectorAll('button').forEach(b=>b.onclick=()=>setView(b.dataset.view));const _vr=document.getElementById('viewReset');if(_vr)_vr.onclick=()=>{tf.scale=1;clampPan();wake();};}
+{const _vs=document.getElementById('viewSw');if(_vs)_vs.querySelectorAll('button').forEach(b=>b.onclick=()=>setView(b.dataset.view));const _vr=document.getElementById('cvReset');if(_vr)_vr.onclick=()=>{tf.scale=1;tf.ox=0;tf.oy=0;tfT=null;clampPan();wake();};}
 /* ===== D3 导出 CSV(共用 download/csvCell)===== */
 const CSV_COLS=['code','title','大类','employment','pay','education','overall','automation','augmentation','digital','moat','adoption','std','n_models'];
 function csvRows(allLeaves){const rows=[];
@@ -789,7 +841,7 @@ function ovClose(){ovKind=null;leafNode=null;ovModal.classList.remove('show');ov
 ovMask.onclick=ovClose;document.getElementById('ovClose').onclick=ovClose;
 /* #9 细类详情:居中弹出(复用 #ovModal),不再用上方抽屉(抽屉留给中类) */
 function drawLeafCharts(){if(!leafNode)return;const d=leafNode.dims||{};const rc=document.getElementById('lmRadar'),bc=document.getElementById('lmBars');if(rc)drawRadar(rc,DIMKEYS.map(k=>d[k]||0));if(bc)drawBars(bc,leafNode);}
-function openLeafModal(node){if(!node)return;leafNode=node;const g=ALLZ.find(x=>x.code===S.drill)||{};const d=node.dims||{};
+function openLeafModal(node,parent){if(!node)return;leafNode=node;const g=parent||ALLZ.find(x=>x.code===S.drill)||{};const d=node.dims||{};
   const tags=((node.digital||node.S)?'<span class="tag">数字职业</span>':'')+(node.green?'<span class="tag green">绿色职业</span>':'')+(node.pay_tier?'<span class="tag warn">'+esc(node.pay_tier)+'</span>':'');
   const dims=DIMS.map(x=>'<div class="dimrow"><span>'+x.label+'</span><b>'+(d[x.key]!=null?d[x.key]:'-')+'</b></div>').join('');
   const kv='<span>就业</span><b>'+(node.employment?fmtJobs(node.employment):'-')+'</b><span>年薪</span><b>'+(node.pay?'¥'+node.pay.toLocaleString():'-')+'</b><span>学历</span><b>'+(node.education||'-')+'</b><span>等级</span><b>'+(node.level||'-')+'</b>';
@@ -848,7 +900,7 @@ function openScatter(){ovOpen('scatter','综合散点图 · 就业 x 综合冲�
   const cv2=document.getElementById('scatterC'),tip=document.getElementById('scatterTip');
   cv2.onmousemove=e=>{const hit=scHit(e);if(hit){const p=hit.p;tip.style.display='block';tip.style.left=Math.min(p.px+12,hit.rect.width-160)+'px';tip.style.top=(p.py+10)+'px';tip.innerHTML='<b>'+esc(p.name)+'</b><br>就业 '+fmtJobs(p.emp)+' · 综合 '+p.ov;}else tip.style.display='none';};
   cv2.onmouseleave=()=>{tip.style.display='none';};
-  cv2.onclick=e=>{const hit=scHit(e);if(!hit)return;const p=hit.p;if(p.level==='z'){ovClose();const t=tiles.find(x=>x.id==='z:'+p.code);if(t)drillInto(t);}else{const g=ALLZ.find(x=>x.code===S.drill),node=g&&(g['细类']||[]).find(x=>x.code===p.code);if(node)openLeafModal(node);}};
+  cv2.onclick=e=>{const hit=scHit(e);if(!hit)return;const p=hit.p;if(p.level==='z'){ovClose();if(VIEW==='free'){const z=canvasFindZhong(p.code);if(z)zoomToRect(z.rect);}else{const t=tiles.find(x=>x.id==='z:'+p.code);if(t)drillInto(t);}}else{const g=ALLZ.find(x=>x.code===S.drill),node=g&&(g['细类']||[]).find(x=>x.code===p.code);if(node)openLeafModal(node);}};
   requestAnimationFrame(drawScatter);}
 /* ===== D3 分享图(离屏 1200x630 canvas -> PNG)===== */
 const SITE_URL='unifytopia.com/jobs_under_AI';
