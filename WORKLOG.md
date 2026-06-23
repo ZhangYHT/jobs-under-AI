@@ -256,3 +256,8 @@ PR #4 部分(以下 8 条):
 - **产物禁破折号**:`site/*.js`、`*.html`、`data/*.json` 等产物不得出现长破折号(em-dash, U+2014)或短破折号(en-dash, U+2013),用 ASCII `-` 或中文标点。
 - **改 UI 后重生 standalone**:UI 全在 `site/index.html`;改完务必 `python aggregate.py` 重生 `site/index.standalone.html` 与 `site/data.cn.js`。
 - **开发分支**:Claude 在 `claude/vigilant-babbage-atJ5w` 上开发;每次提交前回到本文件追加条目。
+
+### 2026-06-23 · [Codex] · PR #待定
+- `本提交` Worker 预计算自由画布布局与搜索索引
+  - 文件:site/index.html · site/index.standalone.html
+  - 说明:新增浏览器 Worker 预计算搜索索引与自由画布布局缓存,主线程保留同步兜底与 Canvas 绘制,减少自由画布切换/重算时的主线程压力。
