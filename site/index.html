@@ -218,6 +218,9 @@
   #tip .r{margin-top:6px;font-style:italic;border-top:1px solid var(--line);padding-top:5px;color:var(--text);line-height:1.5;}
   #tip .hint{margin-top:5px;font-size:10.5px;color:var(--soft);}
   #err{position:fixed;inset:0;display:none;align-items:center;justify-content:center;text-align:center;color:var(--muted);padding:40px;}
+  #loading{position:fixed;inset:0;z-index:88;display:flex;flex-direction:column;gap:14px;align-items:center;justify-content:center;background:var(--bg);color:var(--muted);font-size:13.5px;}
+  #loading .ld-spin{width:34px;height:34px;border:3px solid var(--line);border-top-color:var(--accent);border-radius:50%;animation:ldspin .8s linear infinite;}
+  @keyframes ldspin{to{transform:rotate(360deg);}}
   /* 等级色阶图例 */
   .tier-legend{display:flex;align-items:center;gap:8px;font-size:11px;color:var(--muted);flex-wrap:wrap;margin-left:auto;}
   .tier-legend .tt{font-weight:600;color:var(--soft);}
@@ -376,6 +379,7 @@
 <div id="stage"><canvas id="cv"></canvas></div>
 <p class="sr-only" id="kbdHelp">键盘快捷键:斜杠或 s 聚焦搜索;数字键 1 到 6 切换维度;d 切换模型分歧;t 切换主题;退格键返回上一层;问号打开说明面板。手机可在图上向右滑动返回上一层。</p>
 <div id="err"><div>数据加载遇到问题。请刷新页面重试;若反复出现,可能是网络波动或数据正在更新。<br><button class="pill" style="margin-top:12px" onclick="location.reload()">刷新页面</button></div></div>
+<div id="loading"><div class="ld-spin"></div>加载中…</div>
 <div id="handle">⌃</div>
 <div id="backTab" title="返回全部职业">‹</div>
 
@@ -486,6 +490,8 @@ const DIMS=[{key:'overall',label:'综合冲击',short:'综合',main:1,desc:'这�
   {key:'augmentation',label:'AI增强',short:'AI增强',desc:'把 AI 当工具用,帮这个岗位干得更快、更多的程度'},{key:'digital',label:'数字化程度',short:'数字化',desc:'工作有多少是在电脑、网上、数据里完成(相对于动手或跑现场)'},
   {key:'moat',label:'AI难替代',short:'难替代',note:'红=越难被AI替代',desc:'人比 AI 更靠得住、AI 难取代的程度(如重体力、手艺活、现场担责、靠人情信任)'},{key:'adoption',label:'普及速度',short:'普及',desc:'这个岗位的 AI 应用,目前在中国铺开得有多快'}];
 const DIMKEYS=DIMS.map(d=>d.key);
+const _exDims=d=>Array.isArray(d)?DIMKEYS.reduce((o,k,i)=>(o[k]=d[i],o),{}):d;  // C 瘦身解码:dims 数组还原成对象(其余代码不变,只在源头还原)
+DATA.groups.forEach(g=>{if(g.dims)g.dims=_exDims(g.dims);(g['细类']||[]).forEach(x=>{if(x.dims)x.dims=_exDims(x.dims);});});
 const EDU={'博士':6,'硕士':5,'本科':4,'大专':3,'高中':2,'初中':1};
 const METRICS=[...DIMS,{key:'pay',label:'薪资',extra:1,desc:'这个职业的大致年薪水平(参考国家统计局)'},{key:'education',label:'学历',extra:1,desc:'入行通常要求的学历'}];
 const DALAB={'1':['管理者','政府、企业、事业单位的负责人'],'2':['专业技术','工程师、医生、教师、研发、文艺等专业岗'],'3':['行政文职','行政、办公室文员等'],'4':['服务业','商业、餐饮、IT 与生活服务等'],'5':['农林牧渔','种地、养殖、打渔等'],'6':['生产制造','工厂、建筑、操作设备的蓝领岗'],'7':['军人','军队人员'],'8':['其他','不好归类的零散职业']};
@@ -715,14 +721,15 @@ METRICS.forEach(d=>{const b=document.createElement('button');b.dataset.key=d.key
   b.onclick=()=>{S.dim=d.key;S.disagree=false;document.getElementById('disagree').classList.remove('on');[...tg.children].forEach(x=>x.classList.remove('active'));b.classList.add('active');resetFilt();updateRange();updateLegend();wake();};tg.appendChild(b);});
 const dis=document.getElementById('disagree');dis.onclick=()=>{S.disagree=!S.disagree;dis.classList.toggle('on',S.disagree);syncFiltDisabled();updateLegend();wake();};
 // C4 搜索结果下拉(可跨层直接跳到具体职业)
-const SI=[];
-ALLZ.forEach(g=>{SI.push({k:'z',code:g.code,nm:g.name,en:(g.english||''),py:(g.py||''),pyi:(g.pyi||''),alias:(g.alias||[]),da:g.da,emp:g.employment||0,node:g});
-  (g['细类']||[]).forEach(x=>SI.push({k:'l',code:x.code,zcode:g.code,nm:x.title,en:'',py:(x.py||''),pyi:(x.pyi||''),alias:(x.alias||[]),da:g.da,zhong:g.name,emp:x.employment||0,node:x}));});
+let SI=null;  // C: 搜索索引延后到空闲再建(解阻塞首屏);首次搜索前若未建则即时兜底
+function buildSI(){if(SI)return;SI=[];ALLZ.forEach(g=>{SI.push({k:'z',code:g.code,nm:g.name,en:(g.english||''),py:(g.py||''),pyi:(g.pyi||''),alias:(g.alias||[]),da:g.da,emp:g.employment||0,node:g});
+  (g['细类']||[]).forEach(x=>SI.push({k:'l',code:x.code,zcode:g.code,nm:x.title,en:'',py:(x.py||''),pyi:(x.pyi||''),alias:(x.alias||[]),da:g.da,zhong:g.name,emp:x.employment||0,node:x}));});}
+(window.requestIdleCallback||(cb=>setTimeout(cb,300)))(buildSI);
 const searchEl=document.getElementById('search'),sRes=document.getElementById('sResults');
 let curHits=[],selIdx=-1,shown=0;const SR_BATCH=40;
 const ovOf=n=>n.overall!=null?n.overall:(n.dims&&n.dims.overall!=null?n.dims.overall:null);
 const sChip=n=>{const o=ovOf(n);return o==null?'<span class="sc" style="background:var(--line)">-</span>':'<span class="sc" style="background:'+colorAbs(o)+'">'+o+'</span>';};
-function rankHits(q){q=q.toLowerCase();const out=[];for(const it of SI){const nm=it.nm.toLowerCase();let s;if(nm.startsWith(q))s=0;else if(nm.includes(q))s=1;else if(it.en&&it.en.toLowerCase().includes(q))s=2;else if(it.py&&it.py.startsWith(q))s=3;else if(it.pyi&&q.length>=2&&it.pyi.startsWith(q))s=3.5;else if(it.py&&it.py.includes(q))s=4;else if(it.alias&&it.alias.some(a=>a.toLowerCase().includes(q)))s=4.5;else continue;out.push([s,-it.emp,it]);}out.sort((a,b)=>a[0]-b[0]||a[1]-b[1]);return out.map(x=>x[2]);}
+function rankHits(q){buildSI();q=q.toLowerCase();const out=[];for(const it of SI){const nm=it.nm.toLowerCase();let s;if(nm.startsWith(q))s=0;else if(nm.includes(q))s=1;else if(it.en&&it.en.toLowerCase().includes(q))s=2;else if(it.py&&it.py.startsWith(q))s=3;else if(it.pyi&&q.length>=2&&it.pyi.startsWith(q))s=3.5;else if(it.py&&it.py.includes(q))s=4;else if(it.alias&&it.alias.some(a=>a.toLowerCase().includes(q)))s=4.5;else continue;out.push([s,-it.emp,it]);}out.sort((a,b)=>a[0]-b[0]||a[1]-b[1]);return out.map(x=>x[2]);}
 function srRow(it,i){return '<div class="sr" data-i="'+i+'">'+sChip(it.node)+'<span class="nm">'+esc(it.nm)+'</span><span class="pa">'+esc(it.da)+(it.k==='l'?' › '+esc(it.zhong):'')+'</span><span class="tag2">'+(it.k==='l'?'细类':'中类')+'</span></div>';}
 function srGrow(){const f=sRes.querySelector('.srMore');if(f)f.remove();const next=Math.min(curHits.length,shown+SR_BATCH);let html='';for(let i=shown;i<next;i++)html+=srRow(curHits[i],i);sRes.insertAdjacentHTML('beforeend',html);shown=next;
   if(shown<curHits.length)sRes.insertAdjacentHTML('beforeend','<div class="srMore">下滑加载更多 '+(curHits.length-shown)+' 个</div>');else if(curHits.length>SR_BATCH)sRes.insertAdjacentHTML('beforeend','<div class="srMore done">已显示全部 '+curHits.length+' 个</div>');}
@@ -981,6 +988,7 @@ const SUPPORT={ days:'近两周', socials:[{label:'B站',url:'https://space.bili
 window.addEventListener('resize',resize);
 document.addEventListener('visibilitychange',()=>{if(!document.hidden){wake();wakeRadar();}});  /* 隐藏标签页时浏览器自动暂停 rAF;回前台唤醒重绘 */
 updateRange();resize();updateCrumb();updateLegend();updateSummary();updateDa();renderTierLegend();setHandle();wake();wakeRadar();
+requestAnimationFrame(()=>{var _ld=document.getElementById('loading');if(_ld)_ld.remove();});  // C 首帧绘制后移除加载层
 window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},back:back,theme:m=>{themeMode=m;applyTheme();},collapse:()=>{top.classList.toggle('collapsed');setHandle();bumpTop();},area:setArea,
   metric:k=>{S.dim=k;S.disagree=false;dis.classList.remove('on');[...tg.children].forEach(x=>x.classList.toggle('active',x.dataset.key===k));resetFilt();updateRange();updateLegend();wake();},
   hover:c=>{const t=tiles.find(x=>x.id==='z:'+c||x.id==='l:'+c);if(t){hoverId=t.id;wake();tipXY=[innerWidth/2,innerHeight*0.62];showTip(t.node,true);}},
@@ -1021,7 +1029,7 @@ window.api={drill:c=>{const t=tiles.find(x=>x.id==='z:'+c);if(t)drillInto(t);},b
   ['disagree','backTab','handle'].forEach(id=>{const el=document.getElementById(id);if(!el)return;el.setAttribute('role','button');el.setAttribute('tabindex','0');
     el.addEventListener('keydown',ev=>{if((ev.key==='Enter'||ev.key===' ')&&el.onclick){ev.preventDefault();el.onclick(ev);}});});
 
-}catch(e){var el=document.getElementById('err');if(el)el.style.display='flex';console.error(e);}
+}catch(e){var el=document.getElementById('err');if(el)el.style.display='flex';var _ld=document.getElementById('loading');if(_ld)_ld.remove();console.error(e);}
 })();}
 </script>
 <div id="mobileTip">建议使用大屏幕设备(电脑/平板)进行浏览,效果最佳</div>
