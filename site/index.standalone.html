@@ -578,7 +578,7 @@ function clampPan(){_clampTo(tf);}
 function zoomAt(mx,my,f){const old=tf.scale,ns=Math.max(1,Math.min(CV_MAXSCALE,old*f));if(ns===old)return;tfT=null;tf.ox=mx-(mx-tf.ox)/old*ns;tf.oy=my-(my-tf.oy)/old*ns;tf.scale=ns;clampPan();wake();}
 function setView(v){VIEW=v;const vs=document.getElementById('viewSw');if(vs)[...vs.children].forEach(b=>b.dataset&&b.dataset.view&&b.classList.toggle('active',b.dataset.view===v));
   const vr=document.getElementById('cvReset');if(vr)vr.style.display=v==='free'?'block':'none';
-  tfT=null;CV_HOV=null;if(v==='free'){buildCanvas();tf.scale=1;tf.ox=0;tf.oy=0;clampPan();showCanvasHint();}else{tf.ox=tf.oy=0;tf.scale=1;}cvSync();wake();}  /* 切换时同步抽屉:free 跟焦点中类,fixed 回全局 */
+  tfT=null;CV_HOV=null;if(v==='free'){buildCanvas();tf.scale=1;tf.ox=0;tf.oy=0;clampPan();showCanvasHint();}else{tf.ox=tf.oy=0;tf.scale=1;}cvSync();wake();}  /* 切换视图时刷新全局概况与画布 */
 /* ===== A 自由画布:语义缩放嵌套画布(大类>中类>细类);固定模式不走此路径 ===== */
 let CANVAS=null,tfT=null;const CV_MAXSCALE=16;
 let CV_OPEN=[],CV_HOV=null,cvHL=0;const cvFocus=()=>CV_OPEN[CV_OPEN.length-1]||null;  /* A: 已展开中类 code 列表(末位=焦点);CV_HOV 悬停目标 */
@@ -644,9 +644,9 @@ function canvasClick(e){const r=cv.getBoundingClientRect();const h=canvasHit(e.c
   if(h.level==='leaf'){if(h.ref.overall!=null)openLeafModal(h.ref,h.parent);return;}
   if(h.level==='zhong')cvOpenZhong(h.z||canvasFindZhong(h.ref.code));}
 function cvOpenZhong(z){if(!z)return;if(!z.leaves.length){zoomToRect(z);return;}  /* 极小中类无预铺细类:仅放大 */
-  const code=z.ref.code,i=CV_OPEN.indexOf(code);if(i>=0)CV_OPEN.splice(i,1);CV_OPEN.push(code);CV_HOV=null;cvSync();  /* 点开/重新聚焦 -> 抽屉跟随最近 */
+  const code=z.ref.code,i=CV_OPEN.indexOf(code);if(i>=0)CV_OPEN.splice(i,1);CV_OPEN.push(code);CV_HOV=null;cvSync();  /* 点开/重新聚焦已展开中类,顶部概况仍保持全局 */
   if(z.w*tf.scale<240||z.h*tf.scale<150)zoomToRect(z);else wake();}  /* 就地展开;仅当当前太小、细类看不清才自动放大 */
-function cvSync(){updateSummary();wakeRadar();}  /* 抽屉概况/直方/分层(updateSummary 内含 drawTier)+ 雷达,按 scope() 焦点刷新 */
+function cvSync(){updateSummary();wakeRadar();}  /* 抽屉概况/直方/分层(updateSummary 内含 drawTier)+ 雷达,自由画布保持全局概况 */
 let _hintT=0;function showCanvasHint(){const el=document.getElementById('cvHint');if(!el)return;el.classList.add('show');clearTimeout(_hintT);_hintT=setTimeout(()=>el.classList.remove('show'),4500);}
 function resize(){const r=stage.getBoundingClientRect();cv.width=Math.round(r.width*DPR);cv.height=Math.round(r.height*DPR);ctx.setTransform(DPR,0,0,DPR,0,0);rebuild(full());if(VIEW==='free'){buildCanvas();clampPan();tfT=null;}bumpTop();if(ovKind==='scatter')drawScatter();if(ovKind==='leaf')drawLeafCharts();if(tourI>=0)tourShow();}
 const ovAll=n=>(n.dims&&n.dims.overall!=null)?n.dims.overall:(n.overall!=null?n.overall:0);
@@ -717,7 +717,7 @@ function drawBars(canvas,g){const c=canvas.getContext('2d'),r=canvas.getBounding
     c.fillStyle=cssv('--text');c.font='9px sans-serif';c.textAlign='center';c.fillText(x.v,bx+bw/2,base-bh-10<0?base-bh+9:base-bh-2);
     c.fillStyle=cssv('--soft');c.font='8px sans-serif';c.fillText(x.m.length>5?x.m.slice(0,5):x.m,bx+bw/2,base+9);});}
 const radarCur=[50,50,50,50,50,50];
-const scope=()=>{const f=(VIEW==='free'&&CV_OPEN.length)?ALLZ.find(x=>x.code===cvFocus()):null;return f?[f]:(S.drill?[ALLZ.find(x=>x.code===S.drill)]:ALLZ);};  /* 画布模式有展开中类时,概况/雷达/分层跟随焦点中类 */
+const scope=()=>S.drill?[ALLZ.find(x=>x.code===S.drill)]:ALLZ;  /* 自由画布模式始终显示全局综合概况,不跟随已展开中类 */
 function radarT(){const ls=scope(),t=ls.reduce((s,l)=>s+(l.employment||1),0)||1;return DIMKEYS.map(k=>ls.reduce((s,l)=>s+(l.dims[k]||0)*(l.employment||1),0)/t);}
 function radarFrame(){const tg=radarT();let mv=false;for(let i=0;i<6;i++){if(Math.abs(tg[i]-radarCur[i])>.05)mv=true;radarCur[i]+=(tg[i]-radarCur[i])*.12;}drawRadar(document.getElementById('radarc'),radarCur);if(mv)requestAnimationFrame(radarFrame);else radarOn=false;}
 function drawTier(){const cv2=document.getElementById('tierc'),c=cv2.getContext('2d'),r=cv2.getBoundingClientRect();if(r.width<2||r.height<2)return;cv2.width=r.width*DPR;cv2.height=r.height*DPR;c.setTransform(DPR,0,0,DPR,0,0);
@@ -869,7 +869,8 @@ fmtFilt();syncFiltDisabled();
 const areaSw=document.getElementById('areaSw');
 function setArea(m){if(S.area===m)return;S.area=m;areaSw.querySelectorAll('button').forEach(x=>x.classList.toggle('active',x.dataset.area===m));rebuild(full());if(VIEW==='free')buildCanvas();wake();}
 areaSw.querySelectorAll('button').forEach(b=>b.onclick=()=>setArea(b.dataset.area));
-{const _vs=document.getElementById('viewSw');if(_vs)_vs.querySelectorAll('button').forEach(b=>b.onclick=()=>setView(b.dataset.view));const _vr=document.getElementById('cvReset');if(_vr)_vr.onclick=()=>{tf.scale=1;tf.ox=0;tf.oy=0;tfT=null;clampPan();wake();};}
+function resetCanvasView(){tf.scale=1;tf.ox=0;tf.oy=0;tfT=null;CV_OPEN=[];CV_HOV=null;cvHL=0;clampPan();cvSync();wake();}
+{const _vs=document.getElementById('viewSw');if(_vs)_vs.querySelectorAll('button').forEach(b=>b.onclick=()=>setView(b.dataset.view));const _vr=document.getElementById('cvReset');if(_vr)_vr.onclick=resetCanvasView;}
 /* ===== D3 导出 CSV(共用 download/csvCell)===== */
 const CSV_COLS=['code','title','大类','employment','pay','education','overall','automation','augmentation','digital','moat','adoption','std','n_models'];
 function csvRows(allLeaves){const rows=[];
