@@ -262,13 +262,17 @@ PR #4 部分(以下 8 条):
   - 说明:自由画布「复位视图」同步清空已展开中类与悬停状态;顶部抽屉概况不再跟随展开的中类,始终保持全局综合视图。
 - `68fd7a1` [作者] Merge pull request #10 ·  并入 claude 分支(06-23);该改动随后再经 PR 流向 main。
 
+### 2026-06-24 · 视图开关移位 + 模型正式名/权重 + 权重微调(待开 PR)
+- `c7b6a13` [Claude] 视图开关移到底栏 + 模型正式名与权重展示 + 权重微调
+  - 文件:site/index.html · site/index.standalone.html · site/data.cn.js · data/aggregated.cn.json · data/model_weights.json · aggregate.py · CLAUDE.md · AGENTS.md · docs/zhongyiyuan/prompts/xilei_arena/README.md(9f)
+  - 说明:① 「固定/自由画布」视图开关从顶部抽屉移到底部信息条「工具」左侧,加 720/480px 响应式(窄屏隐藏「视图」字、自由画布->自由、支持作者收成爱心);② 各模型打分由拼音 key 改为正式展示名 + 弱化标注可信度权重(详情/悬浮用全名,迷你柱状图用短名),覆盖 5 处渲染点;③ 微调可信度权重(豆包 0.92->0.88、文心 0.88->0.83、元宝 0.85->0.80、arena 0.80->0.86,range 下限 0.85->0.80)并重跑 aggregate.py 按新权重重算分数;④ 澄清 CLAUDE.md/AGENTS.md「模型 ID 不进产物」范围(只管开发助手自身的型号,众议院展示名属数据内容、允许)。真机截图核对桌面 + 390/360px 移动端,0 报错。
+
 ---
 
-## 当前状态快照(2026-06-23 刷新)
+## 当前状态快照(2026-06-24 刷新)
 
-- **main**:`b2e01b7`(PR #11 合并点);PR #1~#9、#11 已并入。
-- **活动分支**:`claude/vigilant-babbage-atJ5w`,已合入最新 `origin/main` 与 Codex 的 PR #10(自由画布复位整改),并叠加本轮 WORKLOG 维护提交,工作树干净。
-- **待回流 main**:PR #10 的 `a9fc370` 目前在 claude 分支上,尚未单独流入 main(下次 claude 分支并入 main 时一并带过去)。
+- **main**:`aeca82e`(PR #12 合并点);PR #1~#12 均已并入(含 Codex PR #10 的自由画布复位整改)。
+- **活动分支**:`claude/vigilant-babbage-atJ5w`,领先 main 一条功能提交 `c7b6a13`(视图移位 + 模型正式名/权重 + 权重微调),待开新 PR 回流 main。
 - **已知遗留**(launch 后再办):
   - `by_model` 数组化(减小 data.cn.js)。
   - eval(细类代表性评价)懒加载。
