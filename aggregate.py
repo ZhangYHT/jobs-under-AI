@@ -75,12 +75,12 @@ def strip_scaffold(e, t):                              # 去模型行首脚手�
     e = re.sub(r'[ 　]*(?:-{2,}|[—–]+)[ 　]*', '，', e)                                  # 破折号/连字符串 -> 中文逗号
     return e.strip(P)
 
-# 温和可信度加权(data/model_weights.json)。未列模型默认 1.0;Arena 匿名票 0.80。
+# 温和可信度加权(data/model_weights.json)。未列模型默认 1.0;Arena 匿名票默认 0.86(json 已显式列出时以 json 为准)。
 try:
     _W = dict(json.load(open(p('data', 'model_weights.json'), encoding='utf-8')).get('weights', {}))
 except Exception as e:
     print(f'  [warn] 未能加载 model_weights.json,改用等权: {e}'); _W = {}
-_W.setdefault('arena', 0.80)
+_W.setdefault('arena', 0.86)
 def W(m): return _W.get(m, 1.0)
 def wmean(pairs):
     sw = sum(w for _, w in pairs)
