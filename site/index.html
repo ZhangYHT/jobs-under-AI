@@ -148,6 +148,8 @@
   .kv{display:grid;grid-template-columns:auto 1fr auto 1fr;gap:2px 8px;font-size:12px;color:var(--muted);margin:7px 0;}.kv b{color:var(--text);}
   .chip{display:inline-flex;align-items:center;gap:5px;font-size:11px;padding:3px 8px;border-radius:7px;margin:0 5px 5px 0;border:1px solid var(--line);background:var(--panel2);}
   .chip i{width:9px;height:9px;border-radius:50%;}.chip b{font-variant-numeric:tabular-nums;}
+  .chip .wt{color:var(--soft);font-size:9.5px;font-variant-numeric:tabular-nums;}  /* 模型权重弱化标注 */
+  #tip .mods .chip{max-width:100%;white-space:normal;}  /* 悬浮框内长全名换行不溢出 */
   .rat{font-size:12px;font-style:italic;background:var(--panel2);border:1px solid var(--line);border-radius:9px;padding:7px 9px;line-height:1.55;margin-top:6px;}
   .src{font-size:10.5px;color:var(--soft);line-height:1.5;margin-top:6px;}
   .tag{font-size:10px;background:color-mix(in srgb,var(--accent) 22%,transparent);color:var(--accent);border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);padding:1px 7px;border-radius:6px;font-weight:600;}
@@ -162,6 +164,9 @@
   #supTrigger:hover{text-decoration:underline;}
   .bb-tools{justify-self:end;display:inline-flex;align-items:center;gap:13px;}
   .tm-wrap{position:relative;display:inline-flex;}
+  .bbview{align-self:center;padding:2px 6px;background:var(--panel2);}  /* 视图开关入底栏:压扁以适配 34px 高的信息条 */
+  .bbview .al{margin-right:2px;}
+  .bbview button{padding:2px 7px;}
   #toolsBtn{cursor:pointer;background:none;border:none;font-family:inherit;font-size:11.5px;font-weight:600;color:var(--accent);padding:4px 2px;white-space:nowrap;}
   #toolsBtn:hover{text-decoration:underline;}
   #toolsMenu{position:absolute;right:0;bottom:calc(100% + 9px);min-width:172px;background:var(--panel);border:1px solid var(--line);border-radius:11px;box-shadow:0 10px 34px rgba(0,0,0,.34);padding:5px;display:none;z-index:46;}
@@ -355,8 +360,10 @@
     .head .brand{font-size:10px;padding:2px 7px;}
     .search input{width:130px;}.search input:focus{width:150px;}
     .tg button,.sw,.pill{min-height:32px;}
-    /* 底部信息条:窄屏隐藏免责声明,只留面包屑 + 支持作者 */
+    /* 底部信息条:窄屏隐藏免责声明,只留面包屑 + 视图 + 工具 + 支持作者 */
     .bb-disc{display:none;}
+    .bbview .al{display:none;}  /* 窄屏:视图开关只留两个按钮,省地方 */
+    .bb-tools{gap:9px;}
     #supPanel{left:0;right:0;bottom:0;width:100%;max-width:100%;max-height:88vh;border-radius:18px 18px 0 0;
       transform:translateY(100%);transform-origin:bottom center;
       padding-bottom:calc(22px + env(safe-area-inset-bottom,0px));}
@@ -376,6 +383,11 @@
     .cards{grid-template-columns:1fr 1fr;}
     .daGrid{grid-template-columns:1fr 1fr;}
     #tip{width:min(250px,calc(100vw - 24px));}
+    /* 极窄屏底栏:自由画布 -> 自由,支持作者收成爱心,给视图开关腾地方 */
+    .bbview button[data-view="free"]{font-size:0;}
+    .bbview button[data-view="free"]::after{content:"自由";font-size:11px;}
+    #supTrigger .lbl{display:none;}
+    .bb-tools{gap:7px;}
   }
 </style>
 </head>
@@ -401,7 +413,6 @@
     <div class="tier-legend" id="tierLegend"><span class="tt">等级色阶</span></div>
     <div id="filt"><span>筛选</span><input type="range" id="filtR" min="0" max="100" step="5" value="0" aria-label="按当前维度筛选方块"><span class="fv" id="filtV">全部</span><button type="button" class="freset" id="filtReset">重置</button></div>
     <div class="areaSw" id="areaSw" role="group" aria-label="方块面积依据"><span class="al">面积</span><button type="button" data-area="emp" class="active">人数</button><button type="button" data-area="impact">影响规模</button><button type="button" data-area="score">冲击分</button></div>
-    <div class="areaSw" id="viewSw" role="group" aria-label="视图模式"><span class="al">视图</span><button type="button" data-view="fixed" class="active">固定</button><button type="button" data-view="free">自由画布</button></div>
   </div>
   <div class="cards">
     <div class="card"><div class="ct">概况(当前视图)</div><div class="grid2">
@@ -429,6 +440,7 @@
   <div class="bb-disc">AI 冲击为多个大模型综合打分,仅供参考,不代表官方结论</div>
   <div class="bb-tools">
     <button id="cmpTray" type="button" hidden>对比 <b id="cmpN">0</b></button>
+    <div class="areaSw bbview" id="viewSw" role="group" aria-label="视图模式"><span class="al">视图</span><button type="button" data-view="fixed" class="active">固定</button><button type="button" data-view="free">自由画布</button></div>
     <div class="tm-wrap">
       <button id="toolsBtn" type="button" aria-haspopup="true" aria-expanded="false">&#9881; 工具</button>
       <div id="toolsMenu" role="menu">
@@ -502,6 +514,13 @@ const EDU={'博士':6,'硕士':5,'本科':4,'大专':3,'高中':2,'初中':1};
 const METRICS=[...DIMS,{key:'pay',label:'薪资',extra:1,desc:'这个职业的大致年薪水平(参考国家统计局)'},{key:'education',label:'学历',extra:1,desc:'入行通常要求的学历'}];
 const DALAB={'1':['管理者','政府、企业、事业单位的负责人'],'2':['专业技术','工程师、医生、教师、研发、文艺等专业岗'],'3':['行政文职','行政、办公室文员等'],'4':['服务业','商业、餐饮、IT 与生活服务等'],'5':['农林牧渔','种地、养殖、打渔等'],'6':['生产制造','工厂、建筑、操作设备的蓝领岗'],'7':['军人','军队人员'],'8':['其他','不好归类的零散职业']};
 const SCOREM=[...new Set(DATA.groups.flatMap(g=>[...Object.keys(g.by_model||{}),...((g['细类']||[]).flatMap(x=>Object.keys(x.by_model||{})))]))];
+/* 模型展示名:全名用于详情/悬浮 chip,短名用于迷你柱状图;权重取自 DATA.meta.weights(由 aggregate.py 注入) */
+const MODELNAME={claude:'Claude-Opus-4.8(max)',gemini:'Gemini-3.1-Pro-Deep Research',qwen:'Qwen-3.7-max-任务助理',zhipu:'智谱清言GLM5.2-研究模式',gpt:'ChatGPT-5.5-thinking',deepseek:'DeepSeek-V4-Pro(专家模式)',grok:'Grok-4.3-fast',kimi:'Kimi-2.6-快速',mimo:'小米Mimo-V2.5-Pro',minimax:'Minimax-M3(Agent团队模式)',doubao:'豆包(深入研究)',wenxin:'文心5.1-码牛模式',yuanbao:'腾讯元宝Hy3-preview',arena:'arena.ai随机双盲测试'};
+const MODELSHORT={claude:'Claude',gemini:'Gemini',qwen:'Qwen',zhipu:'智谱',gpt:'ChatGPT',deepseek:'DeepSeek',grok:'Grok',kimi:'Kimi',mimo:'小米',minimax:'Minimax',doubao:'豆包',wenxin:'文心',yuanbao:'元宝',arena:'Arena'};
+const MWEIGHTS=(DATA.meta&&DATA.meta.weights)||{};
+const mname=m=>MODELNAME[m]||m;
+const mshort=m=>MODELSHORT[m]||m;
+const wlabel=m=>MWEIGHTS[m]!=null?' <span class="wt">权重'+(+MWEIGHTS[m]).toFixed(2)+'</span>':'';
 document.getElementById('sub').innerHTML='官方数据为底,综合 '+SCOREM.length+' 个 AI 大模型的打分 &nbsp;|&nbsp; 就业=七普 · 薪资=统计局 · 分类=职业大典2022';
 const byDa={};DATA.groups.forEach(g=>{(byDa[g.parent]=byDa[g.parent]||[]).push(g);});
 const TREE=DATA.categories.map(c=>({code:c.code,name:c.title,children:(byDa[c.code]||[]).filter(g=>g.employment)})).filter(d=>d.children.length);
@@ -715,7 +734,7 @@ function drawBars(canvas,g){const c=canvas.getContext('2d'),r=canvas.getBounding
   c.clearRect(0,0,w,h);arr.forEach((x,i)=>{const bx=i*(bw+gap),bh=(x.v/100)*(base-top);c.fillStyle=colorAbs(x.v);
     c.beginPath();c.roundRect?c.roundRect(bx,base-bh,bw,bh,3):c.rect(bx,base-bh,bw,bh);c.fill();
     c.fillStyle=cssv('--text');c.font='9px sans-serif';c.textAlign='center';c.fillText(x.v,bx+bw/2,base-bh-10<0?base-bh+9:base-bh-2);
-    c.fillStyle=cssv('--soft');c.font='8px sans-serif';c.fillText(x.m.length>5?x.m.slice(0,5):x.m,bx+bw/2,base+9);});}
+    c.fillStyle=cssv('--soft');c.font='8px sans-serif';c.fillText(mshort(x.m),bx+bw/2,base+9);});}
 const radarCur=[50,50,50,50,50,50];
 const scope=()=>S.drill?[ALLZ.find(x=>x.code===S.drill)]:ALLZ;  /* 自由画布模式始终显示全局综合概况,不跟随已展开中类 */
 function radarT(){const ls=scope(),t=ls.reduce((s,l)=>s+(l.employment||1),0)||1;return DIMKEYS.map(k=>ls.reduce((s,l)=>s+(l.dims[k]||0)*(l.employment||1),0)/t);}
@@ -754,7 +773,7 @@ function fillDetail(g){document.getElementById('dName').innerHTML=g.title+(g.dig
   const prov=(g.flags||[]).some(f=>/provisional|missing/.test(f));
   document.getElementById('dKv').innerHTML='<span>就业</span><b>'+(g.employment?fmtJobs(g.employment):'-')+'</b><span>年薪</span><b>'+(g.pay?'¥'+g.pay.toLocaleString():'-')+(prov?'<span class="tag warn">估</span>':'')+'</b><span>学历</span><b>'+(g.education||'-')+'</b><span>模型</span><b>'+(g.n_models||0)+'</b>';
   document.getElementById('dModelsH').textContent='各 AI 模型给的综合冲击分('+(g.n_models||0)+'个) · 柱形高低=分歧';
-  document.getElementById('dModels').innerHTML=SCOREM.map(m=>{const v=g.by_model&&g.by_model[m]?g.by_model[m].overall:null;return v==null?'':'<span class="chip" title="'+((g.rationales&&g.rationales[m])||'').replace(/"/g,'')+'"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')||'-';
+  document.getElementById('dModels').innerHTML=SCOREM.map(m=>{const v=g.by_model&&g.by_model[m]?g.by_model[m].overall:null;return v==null?'':'<span class="chip" title="'+((g.rationales&&g.rationales[m])||'').replace(/"/g,'')+'"><i style="background:'+colorAbs(v)+'"></i>'+esc(mname(m))+wlabel(m)+' <b>'+v+'</b></span>';}).join('')||'-';
   const rat=g.summary||(g.rationales?Object.values(g.rationales).filter(Boolean)[0]:'');document.getElementById('dRat').textContent=rat?'「'+rat+'」':'';
   const os=(g.official_sources||[]).slice(0,3).map(s=>s.url?'<a href="'+s.url+'" target="_blank" style="color:var(--accent)">'+(s.name||'源')+'</a>':(s.name||'')).filter(Boolean).join(' · ');
   document.getElementById('dSrc').innerHTML=(os?'官方来源:'+os:'')+(g.flags&&g.flags.length?'<br>标记:'+g.flags.join('、'):'');
@@ -766,7 +785,7 @@ function fillLeaf(node){const g=ALLZ.find(x=>x.code===S.drill)||{};const d=node.
   const pt=node.pay_tier?'<span class="tag warn">'+esc(node.pay_tier)+'</span>':'';
   document.getElementById('dKv').innerHTML='<span>就业</span><b>'+(node.employment?fmtJobs(node.employment):'-')+'</b><span>年薪</span><b>'+(node.pay?'¥'+node.pay.toLocaleString():'-')+pt+'</b><span>学历</span><b>'+(node.education||'-')+'</b><span>等级</span><b>'+(node.level||'-')+'</b><span>模型</span><b>'+(node.n_models||0)+'</b>';
   document.getElementById('dModelsH').textContent='各 AI 模型给的综合冲击分('+(node.n_models||0)+'个) · 柱形高低=分歧';
-  document.getElementById('dModels').innerHTML=SCOREM.map(m=>{const e=node.by_model?node.by_model[m]:null;const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+esc(m)+' <b>'+v+'</b></span>';}).join('')||'-';
+  document.getElementById('dModels').innerHTML=SCOREM.map(m=>{const e=node.by_model?node.by_model[m]:null;const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+esc(mname(m))+wlabel(m)+' <b>'+v+'</b></span>';}).join('')||'-';
   document.getElementById('dRat').textContent=node.eval?'「'+node.eval+'」':'';
   document.getElementById('dSrc').innerHTML='该职业评分综合多个 AI 模型;人数按官方就业数据推算。';
   requestAnimationFrame(()=>{drawRadar(document.getElementById('dvradar'),DIMKEYS.map(k=>d[k]||0));drawBars(document.getElementById('dvbars'),node);});}
@@ -788,7 +807,7 @@ function tipHtml(n,full){const d=n.dims;let h='<div class="t">'+esc(n.title||n.n
   if(n.eval){h+='<div class="r">「'+esc(String(n.eval))+'」</div>';}
   else if(n.pending)h+='<div class="hint">暂无单独评分,沿用所属分类'+(n.inherit?'「'+esc(n.inherit)+'」':'')+'的数据</div>';
   if(full){h+='<canvas id="tipr"></canvas>';const bm=n.by_model;
-    if(bm){h+='<div class="mods">'+SCOREM.map(m=>{const e=bm[m];const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+m+' <b>'+v+'</b></span>';}).join('')+'</div>';}
+    if(bm){h+='<div class="mods">'+SCOREM.map(m=>{const e=bm[m];const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+esc(mname(m))+wlabel(m)+' <b>'+v+'</b></span>';}).join('')+'</div>';}
     const rat=n.rationales?Object.values(n.rationales).filter(Boolean)[0]:'';if(rat)h+='<div class="r">「'+esc(rat)+'」</div>';
     if(S.drill&&!n.pending)h+='<div class="hint">点击查看该细类完整详情</div>';}
   else h+='<div class="hint">鼠标停一下,展开各模型评分和雷达图</div>';return h;}
@@ -898,7 +917,7 @@ function openLeafModal(node,parent){if(!node)return;leafNode=node;const g=parent
   const tags=((node.digital||node.S)?'<span class="tag">数字职业</span>':'')+(node.green?'<span class="tag green">绿色职业</span>':'')+(node.pay_tier?'<span class="tag warn">'+esc(node.pay_tier)+'</span>':'');
   const dims=DIMS.map(x=>'<div class="dimrow"><span>'+x.label+'</span><b>'+(d[x.key]!=null?d[x.key]:'-')+'</b></div>').join('');
   const kv='<span>就业</span><b>'+(node.employment?fmtJobs(node.employment):'-')+'</b><span>年薪</span><b>'+(node.pay?'¥'+node.pay.toLocaleString():'-')+'</b><span>学历</span><b>'+(node.education||'-')+'</b><span>等级</span><b>'+(node.level||'-')+'</b>';
-  const chips=SCOREM.map(m=>{const e=node.by_model?node.by_model[m]:null;const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+esc(m)+' <b>'+v+'</b></span>';}).join('')||'-';
+  const chips=SCOREM.map(m=>{const e=node.by_model?node.by_model[m]:null;const v=e==null?null:(typeof e==='object'?e.overall:e);return v==null?'':'<span class="chip"><i style="background:'+colorAbs(v)+'"></i>'+esc(mname(m))+wlabel(m)+' <b>'+v+'</b></span>';}).join('')||'-';
   ovOpen('leaf',(node.title||node.name));
   ovBody.innerHTML='<div class="lm-meta">'+esc(g.title||'')+' · '+esc(node.code||'-')+(tags?' '+tags:'')+'</div>'
     +'<div class="lm-grid"><div><div class="lm-dims">'+dims+'</div><div class="kv">'+kv+'</div><button class="dv-add" id="lmCmpAdd" type="button">+ 加入对比</button></div>'

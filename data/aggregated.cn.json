@@ -53,10 +53,10 @@
    "gpt": 1.0,
    "mimo": 1.0,
    "deepseek": 1.0,
-   "doubao": 0.92,
-   "wenxin": 0.88,
-   "yuanbao": 0.85,
-   "arena": 0.8
+   "doubao": 0.88,
+   "wenxin": 0.83,
+   "yuanbao": 0.8,
+   "arena": 0.86
   },
   "unit": "中类(79)",
   "dims": [
@@ -337,7 +337,7 @@
     "automation": 20,
     "augmentation": 48,
     "digital": 43,
-    "moat": 81,
+    "moat": 80,
     "adoption": 27
    },
    "dims_median": {
@@ -517,7 +517,7 @@
      "overall": 30,
      "dims": {
       "overall": 30,
-      "automation": 22,
+      "automation": 23,
       "augmentation": 47,
       "digital": 47,
       "moat": 88,
@@ -618,7 +618,7 @@
       "overall": 30,
       "automation": 21,
       "augmentation": 47,
-      "digital": 45,
+      "digital": 46,
       "moat": 87,
       "adoption": 34
      },
@@ -662,10 +662,10 @@
      "dims": {
       "overall": 38,
       "automation": 32,
-      "augmentation": 57,
-      "digital": 56,
+      "augmentation": 58,
+      "digital": 57,
       "moat": 83,
-      "adoption": 45
+      "adoption": 46
      },
      "std": 17.8,
      "by_model": {
@@ -1068,11 +1068,11 @@
      "overall": 30,
      "dims": {
       "overall": 30,
-      "automation": 20,
+      "automation": 21,
       "augmentation": 49,
       "digital": 47,
       "moat": 81,
-      "adoption": 35
+      "adoption": 36
      },
      "std": 12.6,
      "by_model": {
@@ -1143,7 +1143,7 @@
     }
    ],
    "dims": {
-    "overall": 27,
+    "overall": 28,
     "automation": 17,
     "augmentation": 44,
     "digital": 41,
@@ -1325,7 +1325,7 @@
       "overall": 33,
       "automation": 24,
       "augmentation": 50,
-      "digital": 48,
+      "digital": 49,
       "moat": 76,
       "adoption": 39
      },
@@ -1415,8 +1415,8 @@
      "dims": {
       "overall": 30,
       "automation": 21,
-      "augmentation": 46,
-      "digital": 46,
+      "augmentation": 47,
+      "digital": 47,
       "moat": 78,
       "adoption": 36
      },
@@ -1464,7 +1464,7 @@
       "augmentation": 47,
       "digital": 46,
       "moat": 78,
-      "adoption": 35
+      "adoption": 36
      },
      "std": 11.3,
      "by_model": {
@@ -1554,7 +1554,7 @@
      "dims": {
       "overall": 38,
       "automation": 29,
-      "augmentation": 55,
+      "augmentation": 56,
       "digital": 53,
       "moat": 71,
       "adoption": 44
@@ -1998,7 +1998,7 @@
       "overall": 31,
       "automation": 22,
       "augmentation": 46,
-      "digital": 43,
+      "digital": 44,
       "moat": 77,
       "adoption": 38
      },
@@ -2252,11 +2252,11 @@
      "overall": 44,
      "dims": {
       "overall": 44,
-      "automation": 31,
+      "automation": 32,
       "augmentation": 73,
       "digital": 70,
       "moat": 71,
-      "adoption": 52
+      "adoption": 53
      },
      "std": 15.9,
      "by_model": {
@@ -2358,7 +2358,7 @@
       "augmentation": 50,
       "digital": 53,
       "moat": 84,
-      "adoption": 37
+      "adoption": 38
      },
      "std": 13.1,
      "by_model": {
@@ -2401,9 +2401,9 @@
       "院所负责人",
       "中心主任"
      ],
-     "overall": 41,
+     "overall": 42,
      "dims": {
-      "overall": 41,
+      "overall": 42,
       "automation": 35,
       "augmentation": 63,
       "digital": 65,
@@ -2492,7 +2492,7 @@
    "dims": {
     "overall": 42,
     "automation": 28,
-    "augmentation": 61,
+    "augmentation": 62,
     "digital": 58,
     "moat": 67,
     "adoption": 43
@@ -2822,7 +2822,7 @@
       "automation": 40,
       "augmentation": 71,
       "digital": 67,
-      "moat": 61,
+      "moat": 62,
       "adoption": 54
      },
      "std": 9.3,
@@ -3012,11 +3012,11 @@
       "基础数学研究员",
       "mathematician"
      ],
-     "overall": 61,
+     "overall": 62,
      "dims": {
-      "overall": 61,
+      "overall": 62,
       "automation": 53,
-      "augmentation": 81,
+      "augmentation": 82,
       "digital": 83,
       "moat": 56,
       "adoption": 65
@@ -3158,9 +3158,9 @@
       "天体物理研究员",
       "astronomer"
      ],
-     "overall": 61,
+     "overall": 62,
      "dims": {
-      "overall": 61,
+      "overall": 62,
       "automation": 58,
       "augmentation": 83,
       "digital": 87,
@@ -3262,7 +3262,7 @@
       "automation": 52,
       "augmentation": 78,
       "digital": 78,
-      "moat": 54,
+      "moat": 55,
       "adoption": 63
      },
      "std": 12.8,
@@ -3310,7 +3310,7 @@
       "overall": 57,
       "automation": 49,
       "augmentation": 76,
-      "digital": 70,
+      "digital": 71,
       "moat": 57,
       "adoption": 63
      },
@@ -3408,8 +3408,8 @@
       "automation": 50,
       "augmentation": 72,
       "digital": 74,
-      "moat": 55,
-      "adoption": 58
+      "moat": 56,
+      "adoption": 59
      },
      "std": 12.4,
      "by_model": {
@@ -3504,7 +3504,7 @@
       "overall": 48,
       "automation": 40,
       "augmentation": 67,
-      "digital": 64,
+      "digital": 65,
       "moat": 71,
       "adoption": 48
      },
@@ -3599,7 +3599,7 @@
    ],
    "dims": {
     "overall": 73,
-    "automation": 50,
+    "automation": 51,
     "augmentation": 86,
     "digital": 84,
     "moat": 42,
@@ -3817,10 +3817,10 @@
       "地球物理勘探技术员",
       "勘查地球物理工程师"
      ],
-     "overall": 67,
+     "overall": 68,
      "dims": {
-      "overall": 67,
-      "automation": 62,
+      "overall": 68,
+      "automation": 63,
       "augmentation": 83,
       "digital": 84,
       "moat": 48,
@@ -3953,10 +3953,10 @@
      "overall": 41,
      "dims": {
       "overall": 41,
-      "automation": 41,
+      "automation": 42,
       "augmentation": 52,
       "digital": 46,
-      "moat": 62,
+      "moat": 61,
       "adoption": 42
      },
      "std": 13.2,
@@ -4000,7 +4000,7 @@
       "overall": 61,
       "automation": 61,
       "augmentation": 69,
-      "digital": 78,
+      "digital": 77,
       "moat": 46,
       "adoption": 65
      },
@@ -4046,7 +4046,7 @@
       "automation": 60,
       "augmentation": 68,
       "digital": 74,
-      "moat": 45,
+      "moat": 46,
       "adoption": 64
      },
      "std": 11.7,
@@ -4262,9 +4262,9 @@
       "地理信息系统开发员",
       "地信工程师"
      ],
-     "overall": 71,
+     "overall": 72,
      "dims": {
-      "overall": 71,
+      "overall": 72,
       "automation": 68,
       "augmentation": 85,
       "digital": 90,
@@ -4310,10 +4310,10 @@
      "overall": 67,
      "dims": {
       "overall": 67,
-      "automation": 64,
+      "automation": 65,
       "augmentation": 80,
-      "digital": 86,
-      "moat": 40,
+      "digital": 87,
+      "moat": 39,
       "adoption": 72
      },
      "std": 15.6,
@@ -4397,7 +4397,7 @@
      "overall": 45,
      "dims": {
       "overall": 45,
-      "automation": 40,
+      "automation": 41,
       "augmentation": 54,
       "digital": 54,
       "moat": 61,
@@ -4444,7 +4444,7 @@
       "overall": 52,
       "automation": 50,
       "augmentation": 62,
-      "digital": 61,
+      "digital": 62,
       "moat": 56,
       "adoption": 52
      },
@@ -4618,7 +4618,7 @@
      "overall": 54,
      "dims": {
       "overall": 54,
-      "automation": 51,
+      "automation": 52,
       "augmentation": 68,
       "digital": 66,
       "moat": 56,
@@ -4703,9 +4703,9 @@
       "冶金工程师",
       "高炉工程师"
      ],
-     "overall": 55,
+     "overall": 54,
      "dims": {
-      "overall": 55,
+      "overall": 54,
       "automation": 54,
       "augmentation": 64,
       "digital": 63,
@@ -4964,7 +4964,7 @@
       "automation": 54,
       "augmentation": 64,
       "digital": 65,
-      "moat": 54,
+      "moat": 53,
       "adoption": 54
      },
      "std": 12.3,
@@ -5049,7 +5049,7 @@
       "automation": 55,
       "augmentation": 69,
       "digital": 66,
-      "moat": 56,
+      "moat": 55,
       "adoption": 55
      },
      "std": 10.6,
@@ -5089,7 +5089,7 @@
      "overall": 62,
      "dims": {
       "overall": 62,
-      "automation": 59,
+      "automation": 60,
       "augmentation": 74,
       "digital": 70,
       "moat": 50,
@@ -5137,7 +5137,7 @@
       "augmentation": 81,
       "digital": 81,
       "moat": 44,
-      "adoption": 67
+      "adoption": 68
      },
      "std": 10.3,
      "by_model": {
@@ -5180,7 +5180,7 @@
       "overall": 53,
       "automation": 57,
       "augmentation": 65,
-      "digital": 66,
+      "digital": 67,
       "moat": 53,
       "adoption": 57
      },
@@ -5493,7 +5493,7 @@
      "dims": {
       "overall": 75,
       "automation": 68,
-      "augmentation": 84,
+      "augmentation": 85,
       "digital": 89,
       "moat": 47,
       "adoption": 75
@@ -5582,7 +5582,7 @@
       "augmentation": 69,
       "digital": 58,
       "moat": 53,
-      "adoption": 56
+      "adoption": 57
      },
      "std": 13.3,
      "by_model": {
@@ -5625,7 +5625,7 @@
       "automation": 49,
       "augmentation": 70,
       "digital": 65,
-      "moat": 67,
+      "moat": 66,
       "adoption": 56
      },
      "std": 9.5,
@@ -5708,9 +5708,9 @@
       "船体设计工程师",
       "船舶设计工程师"
      ],
-     "overall": 54,
+     "overall": 53,
      "dims": {
-      "overall": 54,
+      "overall": 53,
       "automation": 49,
       "augmentation": 71,
       "digital": 64,
@@ -6145,7 +6145,7 @@
       "augmentation": 81,
       "digital": 71,
       "moat": 60,
-      "adoption": 59
+      "adoption": 60
      },
      "std": 13.3,
      "by_model": {
@@ -6699,7 +6699,7 @@
       "automation": 71,
       "augmentation": 79,
       "digital": 85,
-      "moat": 44,
+      "moat": 43,
       "adoption": 77
      },
      "std": 6.0,
@@ -6874,7 +6874,7 @@
      "dims": {
       "overall": 57,
       "automation": 52,
-      "augmentation": 75,
+      "augmentation": 76,
       "digital": 69,
       "moat": 58,
       "adoption": 60
@@ -7002,7 +7002,7 @@
      "overall": 56,
      "dims": {
       "overall": 56,
-      "automation": 53,
+      "automation": 54,
       "augmentation": 70,
       "digital": 67,
       "moat": 56,
@@ -7175,7 +7175,7 @@
       "automation": 58,
       "augmentation": 79,
       "digital": 78,
-      "moat": 52,
+      "moat": 51,
       "adoption": 66
      },
      "std": 14.3,
@@ -7473,7 +7473,7 @@
      "overall": 37,
      "dims": {
       "overall": 37,
-      "automation": 30,
+      "automation": 31,
       "augmentation": 51,
       "digital": 45,
       "moat": 78,
@@ -7938,9 +7938,9 @@
       "火车司机技术员",
       "机车检修工程师"
      ],
-     "overall": 52,
+     "overall": 51,
      "dims": {
-      "overall": 52,
+      "overall": 51,
       "automation": 49,
       "augmentation": 63,
       "digital": 63,
@@ -8027,7 +8027,7 @@
       "overall": 56,
       "automation": 52,
       "augmentation": 67,
-      "digital": 70,
+      "digital": 69,
       "moat": 59,
       "adoption": 56
      },
@@ -8242,9 +8242,9 @@
       "景观设计师",
       "园林设计师"
      ],
-     "overall": 59,
+     "overall": 60,
      "dims": {
-      "overall": 59,
+      "overall": 60,
       "automation": 51,
       "augmentation": 73,
       "digital": 69,
@@ -8586,12 +8586,12 @@
       "铁路土建工程师",
       "铁道工程建设技术员"
      ],
-     "overall": 58,
+     "overall": 57,
      "dims": {
-      "overall": 58,
+      "overall": 57,
       "automation": 51,
       "augmentation": 69,
-      "digital": 69,
+      "digital": 68,
       "moat": 61,
       "adoption": 58
      },
@@ -8632,7 +8632,7 @@
      "dims": {
       "overall": 56,
       "automation": 49,
-      "augmentation": 69,
+      "augmentation": 68,
       "digital": 67,
       "moat": 63,
       "adoption": 55
@@ -8675,7 +8675,7 @@
       "overall": 43,
       "automation": 34,
       "augmentation": 53,
-      "digital": 52,
+      "digital": 51,
       "moat": 76,
       "adoption": 42
      },
@@ -8719,7 +8719,7 @@
       "automation": 53,
       "augmentation": 66,
       "digital": 65,
-      "moat": 58,
+      "moat": 57,
       "adoption": 57
      },
      "std": 11.3,
@@ -8846,7 +8846,7 @@
       "automation": 49,
       "augmentation": 61,
       "digital": 60,
-      "moat": 60,
+      "moat": 59,
       "adoption": 54
      },
      "std": 11.2,
@@ -8927,7 +8927,7 @@
      "overall": 44,
      "dims": {
       "overall": 44,
-      "automation": 36,
+      "automation": 37,
       "augmentation": 55,
       "digital": 54,
       "moat": 69,
@@ -9223,7 +9223,7 @@
      "dims": {
       "overall": 55,
       "automation": 56,
-      "augmentation": 61,
+      "augmentation": 60,
       "digital": 54,
       "moat": 46,
       "adoption": 56
@@ -9387,9 +9387,9 @@
       "水资源工程师",
       "水文勘测技术员"
      ],
-     "overall": 58,
+     "overall": 59,
      "dims": {
-      "overall": 58,
+      "overall": 59,
       "automation": 58,
       "augmentation": 77,
       "digital": 74,
@@ -9940,7 +9940,7 @@
       "overall": 61,
       "automation": 62,
       "augmentation": 70,
-      "digital": 65,
+      "digital": 66,
       "moat": 45,
       "adoption": 64
      },
@@ -9982,7 +9982,7 @@
       "overall": 59,
       "automation": 62,
       "augmentation": 65,
-      "digital": 61,
+      "digital": 62,
       "moat": 45,
       "adoption": 62
      },
@@ -10071,7 +10071,7 @@
       "overall": 60,
       "automation": 61,
       "augmentation": 67,
-      "digital": 63,
+      "digital": 64,
       "moat": 46,
       "adoption": 62
      },
@@ -10108,11 +10108,11 @@
       "气象探测技术员",
       "气象观测工程师"
      ],
-     "overall": 60,
+     "overall": 61,
      "dims": {
-      "overall": 60,
+      "overall": 61,
       "automation": 62,
-      "augmentation": 70,
+      "augmentation": 71,
       "digital": 78,
       "moat": 50,
       "adoption": 70
@@ -10134,7 +10134,7 @@
      "pay_tier": "中",
      "eval": "气象观测会越来越像“传感器加数据平台”的岗位，重复采集和异常初筛会被 AI 大幅接管。人真正留着的部分，是设备维护、极端天气判断和观测纪律，这些还不能松",
      "n_models": 10,
-     "level": "中",
+     "level": "高",
      "employment": 50108,
      "pay": 140935
     },
@@ -10151,13 +10151,13 @@
       "天气预报工程师",
       "预报员"
      ],
-     "overall": 68,
+     "overall": 69,
      "dims": {
-      "overall": 68,
+      "overall": 69,
       "automation": 68,
       "augmentation": 87,
       "digital": 90,
-      "moat": 47,
+      "moat": 46,
       "adoption": 80
      },
      "std": 17.7,
@@ -10193,10 +10193,10 @@
       "气候监测技术员",
       "气候分析师"
      ],
-     "overall": 65,
+     "overall": 66,
      "dims": {
-      "overall": 65,
-      "automation": 64,
+      "overall": 66,
+      "automation": 65,
       "augmentation": 85,
       "digital": 88,
       "moat": 49,
@@ -10452,7 +10452,7 @@
       "augmentation": 68,
       "digital": 66,
       "moat": 59,
-      "adoption": 57
+      "adoption": 56
      },
      "std": 10.6,
      "by_model": {
@@ -10493,7 +10493,7 @@
       "overall": 61,
       "automation": 62,
       "augmentation": 75,
-      "digital": 75,
+      "digital": 76,
       "moat": 49,
       "adoption": 70
      },
@@ -10578,7 +10578,7 @@
       "overall": 65,
       "automation": 64,
       "augmentation": 76,
-      "digital": 74,
+      "digital": 75,
       "moat": 49,
       "adoption": 70
      },
@@ -10622,7 +10622,7 @@
       "augmentation": 69,
       "digital": 69,
       "moat": 73,
-      "adoption": 52
+      "adoption": 51
      },
      "std": 12.3,
      "by_model": {
@@ -10699,9 +10699,9 @@
       "健康安全环境工程师",
       "安环工程师"
      ],
-     "overall": 50,
+     "overall": 51,
      "dims": {
-      "overall": 50,
+      "overall": 51,
       "automation": 41,
       "augmentation": 68,
       "digital": 57,
@@ -10749,7 +10749,7 @@
       "automation": 58,
       "augmentation": 78,
       "digital": 77,
-      "moat": 50,
+      "moat": 49,
       "adoption": 62
      },
      "std": 11.4,
@@ -10835,7 +10835,7 @@
       "overall": 49,
       "automation": 42,
       "augmentation": 62,
-      "digital": 55,
+      "digital": 56,
       "moat": 65,
       "adoption": 47
      },
@@ -11440,7 +11440,7 @@
      "overall": 67,
      "dims": {
       "overall": 67,
-      "automation": 60,
+      "automation": 59,
       "augmentation": 78,
       "digital": 75,
       "moat": 50,
@@ -11526,12 +11526,12 @@
       "能耗管理",
       "能源管理员"
      ],
-     "overall": 65,
+     "overall": 66,
      "dims": {
-      "overall": 65,
+      "overall": 66,
       "automation": 59,
       "augmentation": 77,
-      "digital": 75,
+      "digital": 76,
       "moat": 49,
       "adoption": 64
      },
@@ -11941,9 +11941,9 @@
       "压力容器检验员",
       "锅炉检验员"
      ],
-     "overall": 47,
+     "overall": 48,
      "dims": {
-      "overall": 47,
+      "overall": 48,
       "automation": 41,
       "augmentation": 59,
       "digital": 54,
@@ -12082,7 +12082,7 @@
       "augmentation": 78,
       "digital": 72,
       "moat": 57,
-      "adoption": 60
+      "adoption": 61
      },
      "std": 12.5,
      "by_model": {
@@ -12123,9 +12123,9 @@
      "overall": 57,
      "dims": {
       "overall": 57,
-      "automation": 56,
+      "automation": 57,
       "augmentation": 64,
-      "digital": 64,
+      "digital": 65,
       "moat": 46,
       "adoption": 58
      },
@@ -12717,7 +12717,7 @@
      "overall": 86,
      "dims": {
       "overall": 86,
-      "automation": 68,
+      "automation": 69,
       "augmentation": 95,
       "digital": 98,
       "moat": 34,
@@ -12957,10 +12957,10 @@
       "工业互联网平台工程师",
       "工业互联网"
      ],
-     "overall": 69,
+     "overall": 70,
      "dims": {
-      "overall": 69,
-      "automation": 60,
+      "overall": 70,
+      "automation": 61,
       "augmentation": 80,
       "digital": 84,
       "moat": 52,
@@ -13057,7 +13057,7 @@
       "augmentation": 77,
       "digital": 86,
       "moat": 47,
-      "adoption": 59
+      "adoption": 58
      },
      "std": 10.5,
      "by_model": {
@@ -13148,9 +13148,9 @@
       "机器人研发工程师",
       "机器人开发"
      ],
-     "overall": 71,
+     "overall": 72,
      "dims": {
-      "overall": 71,
+      "overall": 72,
       "automation": 61,
       "augmentation": 84,
       "digital": 84,
@@ -13244,7 +13244,7 @@
      "overall": 75,
      "dims": {
       "overall": 75,
-      "automation": 62,
+      "automation": 61,
       "augmentation": 84,
       "digital": 88,
       "moat": 58,
@@ -13562,7 +13562,7 @@
       "augmentation": 71,
       "digital": 70,
       "moat": 51,
-      "adoption": 62
+      "adoption": 63
      },
      "std": 16.0,
      "by_model": {
@@ -13602,14 +13602,14 @@
       "农业技术推广",
       "农技服务员"
      ],
-     "overall": 50,
+     "overall": 51,
      "dims": {
-      "overall": 50,
+      "overall": 51,
       "automation": 44,
       "augmentation": 70,
       "digital": 63,
-      "moat": 57,
-      "adoption": 55
+      "moat": 56,
+      "adoption": 56
      },
      "std": 17.6,
      "by_model": {
@@ -13649,10 +13649,10 @@
       "农药技术员",
       "植物医生"
      ],
-     "overall": 64,
+     "overall": 65,
      "dims": {
-      "overall": 64,
-      "automation": 65,
+      "overall": 65,
+      "automation": 66,
       "augmentation": 81,
       "digital": 77,
       "moat": 42,
@@ -13793,7 +13793,7 @@
       "overall": 48,
       "automation": 43,
       "augmentation": 70,
-      "digital": 61,
+      "digital": 62,
       "moat": 66,
       "adoption": 55
      },
@@ -13836,7 +13836,7 @@
      "dims": {
       "overall": 52,
       "automation": 53,
-      "augmentation": 70,
+      "augmentation": 71,
       "digital": 68,
       "moat": 52,
       "adoption": 57
@@ -13927,7 +13927,7 @@
      "overall": 57,
      "dims": {
       "overall": 57,
-      "automation": 57,
+      "automation": 58,
       "augmentation": 73,
       "digital": 69,
       "moat": 48,
@@ -14062,7 +14062,7 @@
      "dims": {
       "overall": 48,
       "automation": 47,
-      "augmentation": 67,
+      "augmentation": 68,
       "digital": 65,
       "moat": 55,
       "adoption": 53
@@ -14108,8 +14108,8 @@
      "dims": {
       "overall": 61,
       "automation": 59,
-      "augmentation": 78,
-      "digital": 79,
+      "augmentation": 79,
+      "digital": 80,
       "moat": 46,
       "adoption": 70
      },
@@ -14200,7 +14200,7 @@
     "augmentation": 64,
     "digital": 53,
     "moat": 63,
-    "adoption": 40
+    "adoption": 41
    },
    "dims_median": {
     "overall": 34,
@@ -14375,10 +14375,10 @@
      "dims": {
       "overall": 49,
       "automation": 49,
-      "augmentation": 66,
+      "augmentation": 67,
       "digital": 72,
       "moat": 72,
-      "adoption": 51
+      "adoption": 52
      },
      "std": 18.1,
      "by_model": {
@@ -14548,9 +14548,9 @@
       "船员甲板部",
       "甲板技术人员"
      ],
-     "overall": 53,
+     "overall": 54,
      "dims": {
-      "overall": 53,
+      "overall": 54,
       "automation": 54,
       "augmentation": 67,
       "digital": 68,
@@ -14597,7 +14597,7 @@
      "overall": 54,
      "dims": {
       "overall": 54,
-      "automation": 55,
+      "automation": 56,
       "augmentation": 68,
       "digital": 69,
       "moat": 56,
@@ -14729,7 +14729,7 @@
    "dims": {
     "overall": 42,
     "automation": 36,
-    "augmentation": 64,
+    "augmentation": 65,
     "digital": 57,
     "moat": 68,
     "adoption": 44
@@ -15159,7 +15159,7 @@
       "automation": 35,
       "augmentation": 68,
       "digital": 60,
-      "moat": 66,
+      "moat": 67,
       "adoption": 46
      },
      "std": 13.2,
@@ -15256,7 +15256,7 @@
      "dims": {
       "overall": 65,
       "automation": 57,
-      "augmentation": 82,
+      "augmentation": 81,
       "digital": 76,
       "moat": 51,
       "adoption": 69
@@ -15403,7 +15403,7 @@
      "dims": {
       "overall": 45,
       "automation": 31,
-      "augmentation": 68,
+      "augmentation": 67,
       "digital": 60,
       "moat": 75,
       "adoption": 49
@@ -15645,7 +15645,7 @@
      "overall": 59,
      "dims": {
       "overall": 59,
-      "automation": 50,
+      "automation": 51,
       "augmentation": 77,
       "digital": 74,
       "moat": 56,
@@ -15746,7 +15746,7 @@
      "overall": 57,
      "dims": {
       "overall": 57,
-      "automation": 42,
+      "automation": 43,
       "augmentation": 80,
       "digital": 73,
       "moat": 63,
@@ -15935,7 +15935,7 @@
      "overall": 42,
      "dims": {
       "overall": 42,
-      "automation": 29,
+      "automation": 30,
       "augmentation": 63,
       "digital": 56,
       "moat": 73,
@@ -16030,10 +16030,10 @@
      "overall": 66,
      "dims": {
       "overall": 66,
-      "automation": 62,
+      "automation": 63,
       "augmentation": 80,
       "digital": 81,
-      "moat": 49,
+      "moat": 48,
       "adoption": 71
      },
      "std": 14.1,
@@ -16171,7 +16171,7 @@
       "automation": 26,
       "augmentation": 57,
       "digital": 48,
-      "moat": 77,
+      "moat": 76,
       "adoption": 37
      },
      "std": 13.9,
@@ -16257,13 +16257,13 @@
       "中医师",
       "中医儿科主治医师"
      ],
-     "overall": 39,
+     "overall": 40,
      "dims": {
-      "overall": 39,
+      "overall": 40,
       "automation": 28,
       "augmentation": 59,
       "digital": 49,
-      "moat": 76,
+      "moat": 75,
       "adoption": 37
      },
      "std": 16.4,
@@ -17269,10 +17269,10 @@
      "overall": 59,
      "dims": {
       "overall": 59,
-      "automation": 54,
+      "automation": 55,
       "augmentation": 72,
       "digital": 75,
-      "moat": 52,
+      "moat": 51,
       "adoption": 63
      },
      "std": 9.2,
@@ -17318,7 +17318,7 @@
       "automation": 54,
       "augmentation": 76,
       "digital": 79,
-      "moat": 53,
+      "moat": 52,
       "adoption": 66
      },
      "std": 9.4,
@@ -17450,9 +17450,9 @@
       "蒙药师",
       "民族药剂师"
      ],
-     "overall": 28,
+     "overall": 29,
      "dims": {
-      "overall": 28,
+      "overall": 29,
       "automation": 19,
       "augmentation": 41,
       "digital": 32,
@@ -17689,7 +17689,7 @@
       "augmentation": 71,
       "digital": 74,
       "moat": 49,
-      "adoption": 63
+      "adoption": 64
      },
      "std": 11.4,
      "by_model": {
@@ -17732,7 +17732,7 @@
      "dims": {
       "overall": 44,
       "automation": 37,
-      "augmentation": 58,
+      "augmentation": 59,
       "digital": 57,
       "moat": 65,
       "adoption": 43
@@ -17818,13 +17818,13 @@
       "营养技师",
       "医院营养师"
      ],
-     "overall": 54,
+     "overall": 55,
      "dims": {
-      "overall": 54,
+      "overall": 55,
       "automation": 51,
       "augmentation": 68,
       "digital": 69,
-      "moat": 57,
+      "moat": 56,
       "adoption": 58
      },
      "std": 10.4,
@@ -17914,7 +17914,7 @@
       "augmentation": 76,
       "digital": 79,
       "moat": 50,
-      "adoption": 69
+      "adoption": 70
      },
      "std": 10.8,
      "by_model": {
@@ -17952,9 +17952,9 @@
       "心电检查技师",
       "心电室技师"
      ],
-     "overall": 69,
+     "overall": 70,
      "dims": {
-      "overall": 69,
+      "overall": 70,
       "automation": 69,
       "augmentation": 74,
       "digital": 81,
@@ -18227,7 +18227,7 @@
       "overall": 40,
       "automation": 31,
       "augmentation": 56,
-      "digital": 55,
+      "digital": 56,
       "moat": 72,
       "adoption": 44
      },
@@ -18268,9 +18268,9 @@
       "儿科护理人员",
       "新生儿科护士"
      ],
-     "overall": 37,
+     "overall": 38,
      "dims": {
-      "overall": 37,
+      "overall": 38,
       "automation": 27,
       "augmentation": 54,
       "digital": 51,
@@ -18407,7 +18407,7 @@
      "dims": {
       "overall": 43,
       "automation": 35,
-      "augmentation": 59,
+      "augmentation": 60,
       "digital": 58,
       "moat": 69,
       "adoption": 46
@@ -18450,12 +18450,12 @@
       "助产护士",
       "产科护士"
      ],
-     "overall": 32,
+     "overall": 33,
      "dims": {
-      "overall": 32,
+      "overall": 33,
       "automation": 22,
       "augmentation": 50,
-      "digital": 45,
+      "digital": 46,
       "moat": 81,
       "adoption": 34
      },
@@ -18499,10 +18499,10 @@
      "dims": {
       "overall": 37,
       "automation": 27,
-      "augmentation": 51,
+      "augmentation": 52,
       "digital": 50,
       "moat": 74,
-      "adoption": 37
+      "adoption": 38
      },
      "std": 13.4,
      "by_model": {
@@ -18543,7 +18543,7 @@
      "overall": 36,
      "dims": {
       "overall": 36,
-      "automation": 26,
+      "automation": 27,
       "augmentation": 52,
       "digital": 51,
       "moat": 75,
@@ -18632,14 +18632,14 @@
       "村级医生",
       "赤脚医生"
      ],
-     "overall": 39,
+     "overall": 40,
      "dims": {
-      "overall": 39,
+      "overall": 40,
       "automation": 29,
       "augmentation": 58,
       "digital": 49,
-      "moat": 72,
-      "adoption": 39
+      "moat": 71,
+      "adoption": 40
      },
      "std": 14.2,
      "by_model": {
@@ -18940,11 +18940,11 @@
       "经济规划专员",
       "宏观经济规划人员"
      ],
-     "overall": 63,
+     "overall": 64,
      "dims": {
-      "overall": 63,
+      "overall": 64,
       "automation": 50,
-      "augmentation": 79,
+      "augmentation": 80,
       "digital": 75,
       "moat": 56,
       "adoption": 58
@@ -19032,7 +19032,7 @@
       "overall": 62,
       "automation": 59,
       "augmentation": 72,
-      "digital": 75,
+      "digital": 76,
       "moat": 48,
       "adoption": 62
      },
@@ -19074,7 +19074,7 @@
      "dims": {
       "overall": 48,
       "automation": 41,
-      "augmentation": 50,
+      "augmentation": 51,
       "digital": 51,
       "moat": 54,
       "adoption": 37
@@ -19171,7 +19171,7 @@
       "augmentation": 82,
       "digital": 89,
       "moat": 32,
-      "adoption": 82
+      "adoption": 83
      },
      "std": 12.5,
      "by_model": {
@@ -19305,7 +19305,7 @@
       "overall": 62,
       "automation": 58,
       "augmentation": 73,
-      "digital": 72,
+      "digital": 73,
       "moat": 52,
       "adoption": 60
      },
@@ -19386,14 +19386,14 @@
       "林业资产评估师",
       "森林评估专员"
      ],
-     "overall": 46,
+     "overall": 47,
      "dims": {
-      "overall": 46,
+      "overall": 47,
       "automation": 38,
       "augmentation": 60,
       "digital": 57,
       "moat": 64,
-      "adoption": 39
+      "adoption": 40
      },
      "std": 14.9,
      "by_model": {
@@ -19432,7 +19432,7 @@
      "dims": {
       "overall": 47,
       "automation": 38,
-      "augmentation": 59,
+      "augmentation": 60,
       "digital": 57,
       "moat": 64,
       "adoption": 40
@@ -19470,9 +19470,9 @@
       "海域评估专员",
       "海岛资源评估师"
      ],
-     "overall": 41,
+     "overall": 42,
      "dims": {
-      "overall": 41,
+      "overall": 42,
       "automation": 31,
       "augmentation": 53,
       "digital": 51,
@@ -19519,7 +19519,7 @@
      "overall": 60,
      "dims": {
       "overall": 60,
-      "automation": 53,
+      "automation": 52,
       "augmentation": 75,
       "digital": 73,
       "moat": 53,
@@ -19571,7 +19571,7 @@
       "augmentation": 84,
       "digital": 83,
       "moat": 46,
-      "adoption": 73
+      "adoption": 74
      },
      "std": 11.9,
      "by_model": {
@@ -19654,9 +19654,9 @@
       "品牌策划师",
       "品牌管理专员"
      ],
-     "overall": 60,
+     "overall": 61,
      "dims": {
-      "overall": 60,
+      "overall": 61,
       "automation": 50,
       "augmentation": 79,
       "digital": 75,
@@ -19681,7 +19681,7 @@
      "pay_tier": "中",
      "eval": "品牌视觉系统、传播内容、社交媒体运营已被AIGC和自动化投放工具大量替代；但品牌核心价值观的提炼、品牌叙事的文化深度、危机中的品牌声誉修复、与消费者的情感连接建立是AI的盲区。品牌总监级岗位护城河深厚，执行层被大幅压缩",
      "n_models": 11,
-     "level": "中",
+     "level": "高",
      "employment": 149401,
      "pay": 161238
     },
@@ -19705,7 +19705,7 @@
       "overall": 53,
       "automation": 45,
       "augmentation": 67,
-      "digital": 63,
+      "digital": 64,
       "moat": 59,
       "adoption": 49
      },
@@ -19792,7 +19792,7 @@
      "overall": 54,
      "dims": {
       "overall": 54,
-      "automation": 44,
+      "automation": 45,
       "augmentation": 62,
       "digital": 62,
       "moat": 56,
@@ -19926,7 +19926,7 @@
       "overall": 56,
       "automation": 50,
       "augmentation": 67,
-      "digital": 68,
+      "digital": 69,
       "moat": 53,
       "adoption": 58
      },
@@ -20146,7 +20146,7 @@
       "overall": 66,
       "automation": 63,
       "augmentation": 75,
-      "digital": 77,
+      "digital": 78,
       "moat": 46,
       "adoption": 67
      },
@@ -20280,9 +20280,9 @@
       "overall": 62,
       "automation": 58,
       "augmentation": 76,
-      "digital": 75,
+      "digital": 76,
       "moat": 51,
-      "adoption": 65
+      "adoption": 66
      },
      "std": 6.8,
      "by_model": {
@@ -20322,9 +20322,9 @@
       "招聘",
       "RPO"
      ],
-     "overall": 64,
+     "overall": 65,
      "dims": {
-      "overall": 64,
+      "overall": 65,
       "automation": 62,
       "augmentation": 73,
       "digital": 76,
@@ -20371,7 +20371,7 @@
       "overall": 70,
       "automation": 65,
       "augmentation": 79,
-      "digital": 83,
+      "digital": 84,
       "moat": 42,
       "adoption": 68
      },
@@ -20499,7 +20499,7 @@
       "automation": 67,
       "augmentation": 84,
       "digital": 89,
-      "moat": 43,
+      "moat": 42,
       "adoption": 76
      },
      "std": 7.6,
@@ -20542,7 +20542,7 @@
       "augmentation": 71,
       "digital": 90,
       "moat": 28,
-      "adoption": 83
+      "adoption": 84
      },
      "std": 14.4,
      "by_model": {
@@ -20629,7 +20629,7 @@
       "augmentation": 75,
       "digital": 81,
       "moat": 44,
-      "adoption": 68
+      "adoption": 69
      },
      "std": 7.9,
      "by_model": {
@@ -20887,10 +20887,10 @@
      "overall": 60,
      "dims": {
       "overall": 60,
-      "automation": 44,
+      "automation": 45,
       "augmentation": 77,
       "digital": 75,
-      "moat": 69,
+      "moat": 68,
       "adoption": 57
      },
      "std": 16.5,
@@ -20935,7 +20935,7 @@
       "automation": 82,
       "augmentation": 71,
       "digital": 91,
-      "moat": 31,
+      "moat": 32,
       "adoption": 84
      },
      "std": 9.6,
@@ -21114,8 +21114,8 @@
       "automation": 73,
       "augmentation": 77,
       "digital": 87,
-      "moat": 40,
-      "adoption": 78
+      "moat": 41,
+      "adoption": 77
      },
      "std": 8.6,
      "by_model": {
@@ -21153,14 +21153,14 @@
       "基金专员",
       "基金"
      ],
-     "overall": 68,
+     "overall": 69,
      "dims": {
-      "overall": 68,
+      "overall": 69,
       "automation": 59,
       "augmentation": 83,
       "digital": 85,
       "moat": 53,
-      "adoption": 69
+      "adoption": 70
      },
      "std": 9.1,
      "by_model": {
@@ -21466,9 +21466,9 @@
       "商标审查审理员",
       "商标审核员"
      ],
-     "overall": 65,
+     "overall": 64,
      "dims": {
-      "overall": 65,
+      "overall": 64,
       "automation": 62,
       "augmentation": 74,
       "digital": 80,
@@ -21657,7 +21657,7 @@
      "overall": 74,
      "dims": {
       "overall": 74,
-      "automation": 52,
+      "automation": 53,
       "augmentation": 93,
       "digital": 96,
       "moat": 56,
@@ -22975,7 +22975,7 @@
       "automation": 55,
       "augmentation": 77,
       "digital": 74,
-      "moat": 56,
+      "moat": 55,
       "adoption": 65
      },
      "std": 8.1,
@@ -23165,7 +23165,7 @@
      "dims": {
       "overall": 31,
       "automation": 25,
-      "augmentation": 56,
+      "augmentation": 55,
       "digital": 50,
       "moat": 88,
       "adoption": 37
@@ -23723,7 +23723,7 @@
      "dims": {
       "overall": 45,
       "automation": 33,
-      "augmentation": 62,
+      "augmentation": 63,
       "digital": 58,
       "moat": 67,
       "adoption": 45
@@ -23775,7 +23775,7 @@
       "augmentation": 76,
       "digital": 81,
       "moat": 49,
-      "adoption": 65
+      "adoption": 66
      },
      "std": 12.9,
      "by_model": {
@@ -23815,9 +23815,9 @@
       "合唱指挥",
       "conductor"
      ],
-     "overall": 34,
+     "overall": 35,
      "dims": {
-      "overall": 34,
+      "overall": 35,
       "automation": 24,
       "augmentation": 52,
       "digital": 48,
@@ -23873,7 +23873,7 @@
       "augmentation": 66,
       "digital": 70,
       "moat": 60,
-      "adoption": 58
+      "adoption": 59
      },
      "std": 17.5,
      "by_model": {
@@ -23918,9 +23918,9 @@
      "overall": 34,
      "dims": {
       "overall": 34,
-      "automation": 23,
+      "automation": 24,
       "augmentation": 49,
-      "digital": 44,
+      "digital": 45,
       "moat": 78,
       "adoption": 31
      },
@@ -24060,7 +24060,7 @@
      "overall": 26,
      "dims": {
       "overall": 26,
-      "automation": 17,
+      "automation": 18,
       "augmentation": 39,
       "digital": 36,
       "moat": 83,
@@ -24155,7 +24155,7 @@
      "overall": 24,
      "dims": {
       "overall": 24,
-      "automation": 16,
+      "automation": 17,
       "augmentation": 36,
       "digital": 34,
       "moat": 83,
@@ -24256,7 +24256,7 @@
       "augmentation": 54,
       "digital": 54,
       "moat": 71,
-      "adoption": 38
+      "adoption": 39
      },
      "std": 15.2,
      "by_model": {
@@ -24302,7 +24302,7 @@
       "overall": 48,
       "automation": 36,
       "augmentation": 70,
-      "digital": 65,
+      "digital": 66,
       "moat": 64,
       "adoption": 51
      },
@@ -24590,9 +24590,9 @@
       "overall": 49,
       "automation": 43,
       "augmentation": 67,
-      "digital": 65,
-      "moat": 58,
-      "adoption": 52
+      "digital": 66,
+      "moat": 57,
+      "adoption": 53
      },
      "std": 17.5,
      "by_model": {
@@ -24632,12 +24632,12 @@
       "音像技术员",
       "音控师"
      ],
-     "overall": 53,
+     "overall": 54,
      "dims": {
-      "overall": 53,
+      "overall": 54,
       "automation": 48,
       "augmentation": 69,
-      "digital": 70,
+      "digital": 71,
       "moat": 53,
       "adoption": 57
      },
@@ -24730,7 +24730,7 @@
      "overall": 38,
      "dims": {
       "overall": 38,
-      "automation": 29,
+      "automation": 30,
       "augmentation": 57,
       "digital": 53,
       "moat": 70,
@@ -24821,14 +24821,14 @@
       "戏服设计师",
       "道具管理员"
      ],
-     "overall": 44,
+     "overall": 45,
      "dims": {
-      "overall": 44,
+      "overall": 45,
       "automation": 37,
       "augmentation": 61,
       "digital": 59,
       "moat": 61,
-      "adoption": 46
+      "adoption": 47
      },
      "std": 18.2,
      "by_model": {
@@ -24916,9 +24916,9 @@
      "overall": 47,
      "dims": {
       "overall": 47,
-      "automation": 34,
+      "automation": 35,
       "augmentation": 66,
-      "digital": 63,
+      "digital": 64,
       "moat": 64,
       "adoption": 48
      },
@@ -24963,9 +24963,9 @@
      "overall": 59,
      "dims": {
       "overall": 59,
-      "automation": 52,
-      "augmentation": 71,
-      "digital": 73,
+      "automation": 53,
+      "augmentation": 72,
+      "digital": 74,
       "moat": 54,
       "adoption": 65
      },
@@ -25011,7 +25011,7 @@
       "automation": 20,
       "augmentation": 39,
       "digital": 39,
-      "moat": 81,
+      "moat": 80,
       "adoption": 24
      },
      "std": 19.7,
@@ -25054,7 +25054,7 @@
       "overall": 38,
       "automation": 30,
       "augmentation": 54,
-      "digital": 55,
+      "digital": 56,
       "moat": 72,
       "adoption": 37
      },
@@ -25097,7 +25097,7 @@
      "overall": 30,
      "dims": {
       "overall": 30,
-      "automation": 21,
+      "automation": 22,
       "augmentation": 39,
       "digital": 42,
       "moat": 81,
@@ -25199,7 +25199,7 @@
      "overall": 76,
      "dims": {
       "overall": 76,
-      "automation": 73,
+      "automation": 74,
       "augmentation": 82,
       "digital": 89,
       "moat": 32,
@@ -25436,7 +25436,7 @@
      "dims": {
       "overall": 38,
       "automation": 29,
-      "augmentation": 50,
+      "augmentation": 51,
       "digital": 50,
       "moat": 73,
       "adoption": 35
@@ -25483,7 +25483,7 @@
      "overall": 80,
      "dims": {
       "overall": 80,
-      "automation": 72,
+      "automation": 73,
       "augmentation": 90,
       "digital": 95,
       "moat": 32,
@@ -25620,13 +25620,13 @@
       "健身教练",
       "coach"
      ],
-     "overall": 40,
+     "overall": 41,
      "dims": {
-      "overall": 40,
+      "overall": 41,
       "automation": 31,
       "augmentation": 64,
       "digital": 61,
-      "moat": 70,
+      "moat": 69,
       "adoption": 45
      },
      "std": 20.1,
@@ -25650,7 +25650,7 @@
      "pay_tier": "中",
      "eval": "AI 可以辅助分析运动员数据、制定训练计划，但教练的核心在于与运动员的沟通、心理辅导和临场指导。教练需要根据运动员的状态和比赛情况做出决策，AI 可以作为数据支持工具，但无法取代教练在团队领导和策略制定上的作用",
      "n_models": 14,
-     "level": "低",
+     "level": "中",
      "employment": 41515,
      "pay": 93370
     },
@@ -25717,7 +25717,7 @@
      "dims": {
       "overall": 28,
       "automation": 20,
-      "augmentation": 52,
+      "augmentation": 53,
       "digital": 47,
       "moat": 82,
       "adoption": 30
@@ -25761,7 +25761,7 @@
      "overall": 36,
      "dims": {
       "overall": 36,
-      "automation": 26,
+      "automation": 27,
       "augmentation": 59,
       "digital": 52,
       "moat": 72,
@@ -25806,9 +25806,9 @@
       "体育经纪",
       "赛事经理"
      ],
-     "overall": 44,
+     "overall": 45,
      "dims": {
-      "overall": 44,
+      "overall": 45,
       "automation": 34,
       "augmentation": 65,
       "digital": 64,
@@ -26124,7 +26124,7 @@
       "overall": 56,
       "automation": 50,
       "augmentation": 71,
-      "digital": 72,
+      "digital": 73,
       "moat": 54,
       "adoption": 59
      },
@@ -26174,7 +26174,7 @@
       "augmentation": 83,
       "digital": 87,
       "moat": 35,
-      "adoption": 78
+      "adoption": 79
      },
      "std": 9.5,
      "by_model": {
@@ -26306,9 +26306,9 @@
      "overall": 78,
      "dims": {
       "overall": 78,
-      "automation": 74,
+      "automation": 75,
       "augmentation": 87,
-      "digital": 92,
+      "digital": 93,
       "moat": 33,
       "adoption": 82
      },
@@ -26492,9 +26492,9 @@
       "电台播音",
       "电台主播"
      ],
-     "overall": 66,
+     "overall": 67,
      "dims": {
-      "overall": 66,
+      "overall": 67,
       "automation": 65,
       "augmentation": 71,
       "digital": 79,
@@ -26540,9 +26540,9 @@
       "host",
       "司仪"
      ],
-     "overall": 50,
+     "overall": 51,
      "dims": {
-      "overall": 50,
+      "overall": 51,
       "automation": 39,
       "augmentation": 65,
       "digital": 65,
@@ -26831,7 +26831,7 @@
      "overall": 40,
      "dims": {
       "overall": 40,
-      "automation": 28,
+      "automation": 29,
       "augmentation": 57,
       "digital": 56,
       "moat": 72,
@@ -27056,11 +27056,11 @@
    ],
    "dims": {
     "overall": 76,
-    "automation": 55,
+    "automation": 56,
     "augmentation": 82,
-    "digital": 84,
+    "digital": 85,
     "moat": 41,
-    "adoption": 67
+    "adoption": 68
    },
    "dims_median": {
     "overall": 80,
@@ -27534,9 +27534,9 @@
      "overall": 69,
      "dims": {
       "overall": 69,
-      "automation": 73,
+      "automation": 74,
       "augmentation": 71,
-      "digital": 80,
+      "digital": 81,
       "moat": 37,
       "adoption": 71
      },
@@ -27803,12 +27803,12 @@
       "收发文员",
       "前台收发"
      ],
-     "overall": 83,
+     "overall": 82,
      "dims": {
-      "overall": 83,
+      "overall": 82,
       "automation": 89,
       "augmentation": 41,
-      "digital": 69,
+      "digital": 70,
       "moat": 16,
       "adoption": 86
      },
@@ -27897,7 +27897,7 @@
       "augmentation": 54,
       "digital": 76,
       "moat": 25,
-      "adoption": 80
+      "adoption": 81
      },
      "std": 11.2,
      "by_model": {
@@ -28028,7 +28028,7 @@
      "dims": {
       "overall": 45,
       "automation": 39,
-      "augmentation": 61,
+      "augmentation": 60,
       "digital": 60,
       "moat": 72,
       "adoption": 46
@@ -28376,9 +28376,9 @@
       "医保经办专理",
       "基层医保工作人员"
      ],
-     "overall": 59,
+     "overall": 58,
      "dims": {
-      "overall": 59,
+      "overall": 58,
       "automation": 61,
       "augmentation": 62,
       "digital": 73,
@@ -28655,7 +28655,7 @@
      "dims": {
       "overall": 51,
       "automation": 40,
-      "augmentation": 74,
+      "augmentation": 75,
       "digital": 73,
       "moat": 76,
       "adoption": 63
@@ -28850,7 +28850,7 @@
       "overall": 45,
       "automation": 31,
       "augmentation": 77,
-      "digital": 68,
+      "digital": 69,
       "moat": 80,
       "adoption": 55
      },
@@ -29081,7 +29081,7 @@
      "dims": {
       "overall": 77,
       "automation": 81,
-      "augmentation": 45,
+      "augmentation": 44,
       "digital": 79,
       "moat": 24,
       "adoption": 81
@@ -29398,7 +29398,7 @@
       "augmentation": 74,
       "digital": 72,
       "moat": 77,
-      "adoption": 57
+      "adoption": 58
      },
      "std": 16.0,
      "by_model": {
@@ -29790,7 +29790,7 @@
     }
    ],
    "dims": {
-    "overall": 66,
+    "overall": 65,
     "automation": 54,
     "augmentation": 71,
     "digital": 74,
@@ -30163,7 +30163,7 @@
       "automation": 32,
       "augmentation": 48,
       "digital": 41,
-      "moat": 63,
+      "moat": 64,
       "adoption": 36
      },
      "std": 15.4,
@@ -30294,7 +30294,7 @@
       "overall": 71,
       "automation": 71,
       "augmentation": 75,
-      "digital": 82,
+      "digital": 83,
       "moat": 40,
       "adoption": 69
      },
@@ -30335,7 +30335,7 @@
      "overall": 48,
      "dims": {
       "overall": 48,
-      "automation": 41,
+      "automation": 42,
       "augmentation": 62,
       "digital": 58,
       "moat": 55,
@@ -30427,7 +30427,7 @@
      "dims": {
       "overall": 40,
       "automation": 51,
-      "augmentation": 40,
+      "augmentation": 41,
       "digital": 41,
       "moat": 52,
       "adoption": 41
@@ -30469,9 +30469,9 @@
      "overall": 54,
      "dims": {
       "overall": 54,
-      "automation": 47,
+      "automation": 48,
       "augmentation": 63,
-      "digital": 55,
+      "digital": 56,
       "moat": 56,
       "adoption": 51
      },
@@ -30510,14 +30510,14 @@
       "医药代表",
       "药品购销专员"
      ],
-     "overall": 57,
+     "overall": 58,
      "dims": {
-      "overall": 57,
+      "overall": 58,
       "automation": 53,
       "augmentation": 69,
       "digital": 67,
       "moat": 57,
-      "adoption": 59
+      "adoption": 60
      },
      "std": 9.6,
      "by_model": {
@@ -30596,14 +30596,14 @@
       "烟草购销专员",
       "烟酒销售员"
      ],
-     "overall": 48,
+     "overall": 49,
      "dims": {
-      "overall": 48,
-      "automation": 44,
+      "overall": 49,
+      "automation": 45,
       "augmentation": 58,
       "digital": 57,
       "moat": 66,
-      "adoption": 48
+      "adoption": 49
      },
      "std": 15.9,
      "by_model": {
@@ -31300,7 +31300,7 @@
       "automation": 61,
       "augmentation": 56,
       "digital": 59,
-      "moat": 47,
+      "moat": 46,
       "adoption": 57
      },
      "std": 16.6,
@@ -31812,11 +31812,11 @@
      "overall": 58,
      "dims": {
       "overall": 58,
-      "automation": 60,
+      "automation": 61,
       "augmentation": 48,
       "digital": 59,
       "moat": 39,
-      "adoption": 59
+      "adoption": 60
      },
      "std": 16.6,
      "by_model": {
@@ -32005,7 +32005,7 @@
       "overall": 62,
       "automation": 66,
       "augmentation": 53,
-      "digital": 66,
+      "digital": 67,
       "moat": 38,
       "adoption": 67
      },
@@ -32189,7 +32189,7 @@
      "dims": {
       "overall": 52,
       "automation": 49,
-      "augmentation": 68,
+      "augmentation": 69,
       "digital": 75,
       "moat": 49,
       "adoption": 61
@@ -32235,10 +32235,10 @@
      "dims": {
       "overall": 63,
       "automation": 71,
-      "augmentation": 44,
+      "augmentation": 45,
       "digital": 54,
       "moat": 34,
-      "adoption": 70
+      "adoption": 71
      },
      "std": 21.9,
      "by_model": {
@@ -32277,14 +32277,14 @@
       "客运票务员",
       "车票销售员"
      ],
-     "overall": 78,
+     "overall": 79,
      "dims": {
-      "overall": 78,
+      "overall": 79,
       "automation": 86,
       "augmentation": 40,
       "digital": 76,
       "moat": 18,
-      "adoption": 85
+      "adoption": 86
      },
      "std": 19.6,
      "by_model": {
@@ -32418,11 +32418,11 @@
       "仓储专员",
       "仓管"
      ],
-     "overall": 66,
+     "overall": 67,
      "dims": {
-      "overall": 66,
+      "overall": 67,
       "automation": 71,
-      "augmentation": 63,
+      "augmentation": 64,
       "digital": 73,
       "moat": 35,
       "adoption": 74
@@ -32467,7 +32467,7 @@
      "overall": 68,
      "dims": {
       "overall": 68,
-      "automation": 75,
+      "automation": 76,
       "augmentation": 51,
       "digital": 68,
       "moat": 30,
@@ -32607,9 +32607,9 @@
      "dims": {
       "overall": 58,
       "automation": 51,
-      "augmentation": 80,
+      "augmentation": 81,
       "digital": 85,
-      "moat": 51,
+      "moat": 52,
       "adoption": 67
      },
      "std": 12.8,
@@ -32749,7 +32749,7 @@
       "augmentation": 48,
       "digital": 61,
       "moat": 34,
-      "adoption": 69
+      "adoption": 70
      },
      "std": 20.2,
      "by_model": {
@@ -32794,7 +32794,7 @@
       "automation": 53,
       "augmentation": 54,
       "digital": 57,
-      "moat": 48,
+      "moat": 47,
       "adoption": 56
      },
      "std": 19.3,
@@ -32927,7 +32927,7 @@
      "dims": {
       "overall": 59,
       "automation": 56,
-      "augmentation": 61,
+      "augmentation": 62,
       "digital": 66,
       "moat": 43,
       "adoption": 59
@@ -32981,10 +32981,10 @@
      "dims": {
       "overall": 54,
       "automation": 54,
-      "augmentation": 52,
+      "augmentation": 53,
       "digital": 59,
-      "moat": 49,
-      "adoption": 57
+      "moat": 48,
+      "adoption": 58
      },
      "std": 22.4,
      "by_model": {
@@ -33023,9 +33023,9 @@
       "快递分拨员",
       "快件操作员"
      ],
-     "overall": 72,
+     "overall": 73,
      "dims": {
-      "overall": 72,
+      "overall": 73,
       "automation": 82,
       "augmentation": 49,
       "digital": 71,
@@ -33118,7 +33118,7 @@
      "dims": {
       "overall": 54,
       "automation": 52,
-      "augmentation": 65,
+      "augmentation": 66,
       "digital": 69,
       "moat": 48,
       "adoption": 59
@@ -33208,8 +33208,8 @@
     "overall": 61,
     "automation": 48,
     "augmentation": 64,
-    "digital": 61,
-    "moat": 53,
+    "digital": 60,
+    "moat": 52,
     "adoption": 55
    },
    "dims_median": {
@@ -33480,9 +33480,9 @@
       "overall": 49,
       "automation": 44,
       "augmentation": 49,
-      "digital": 51,
+      "digital": 52,
       "moat": 51,
-      "adoption": 46
+      "adoption": 47
      },
      "std": 13.7,
      "by_model": {
@@ -33778,7 +33778,7 @@
       "overall": 63,
       "automation": 56,
       "augmentation": 82,
-      "digital": 81,
+      "digital": 82,
       "moat": 51,
       "adoption": 66
      },
@@ -34005,7 +34005,7 @@
      "overall": 56,
      "dims": {
       "overall": 56,
-      "automation": 47,
+      "automation": 48,
       "augmentation": 82,
       "digital": 82,
       "moat": 61,
@@ -34050,7 +34050,7 @@
      "overall": 31,
      "dims": {
       "overall": 31,
-      "automation": 25,
+      "automation": 24,
       "augmentation": 54,
       "digital": 46,
       "moat": 79,
@@ -34360,7 +34360,7 @@
      "dims": {
       "overall": 64,
       "automation": 69,
-      "augmentation": 56,
+      "augmentation": 57,
       "digital": 69,
       "moat": 38,
       "adoption": 71
@@ -34583,7 +34583,7 @@
       "overall": 64,
       "automation": 66,
       "augmentation": 64,
-      "digital": 75,
+      "digital": 76,
       "moat": 42,
       "adoption": 68
      },
@@ -34624,11 +34624,11 @@
      "overall": 61,
      "dims": {
       "overall": 61,
-      "automation": 60,
+      "automation": 61,
       "augmentation": 76,
-      "digital": 80,
+      "digital": 81,
       "moat": 52,
-      "adoption": 65
+      "adoption": 66
      },
      "std": 13.5,
      "by_model": {
@@ -34667,11 +34667,11 @@
      "overall": 32,
      "dims": {
       "overall": 32,
-      "automation": 26,
+      "automation": 27,
       "augmentation": 40,
-      "digital": 39,
+      "digital": 40,
       "moat": 73,
-      "adoption": 29
+      "adoption": 30
      },
      "std": 18.0,
      "by_model": {
@@ -34842,9 +34842,9 @@
       "系统管理员",
       "信息化专员"
      ],
-     "overall": 70,
+     "overall": 71,
      "dims": {
-      "overall": 70,
+      "overall": 71,
       "automation": 72,
       "augmentation": 81,
       "digital": 86,
@@ -34890,10 +34890,10 @@
      "dims": {
       "overall": 70,
       "automation": 67,
-      "augmentation": 86,
+      "augmentation": 87,
       "digital": 89,
       "moat": 49,
-      "adoption": 75
+      "adoption": 76
      },
      "std": 13.1,
      "by_model": {
@@ -34933,7 +34933,7 @@
      "overall": 65,
      "dims": {
       "overall": 65,
-      "automation": 52,
+      "automation": 53,
       "augmentation": 90,
       "digital": 89,
       "moat": 56,
@@ -35039,7 +35039,7 @@
       "augmentation": 89,
       "digital": 93,
       "moat": 35,
-      "adoption": 87
+      "adoption": 88
      },
      "std": 9.9,
      "by_model": {
@@ -35085,9 +35085,9 @@
       "质量测试员",
       "自动化测试工程师"
      ],
-     "overall": 76,
+     "overall": 77,
      "dims": {
-      "overall": 76,
+      "overall": 77,
       "automation": 83,
       "augmentation": 82,
       "digital": 88,
@@ -35187,7 +35187,7 @@
       "augmentation": 81,
       "digital": 87,
       "moat": 41,
-      "adoption": 76
+      "adoption": 77
      },
      "std": 12.3,
      "by_model": {
@@ -35227,10 +35227,10 @@
       "数据标注师",
       "AI标注师"
      ],
-     "overall": 69,
+     "overall": 70,
      "dims": {
-      "overall": 69,
-      "automation": 65,
+      "overall": 70,
+      "automation": 66,
       "augmentation": 89,
       "digital": 94,
       "moat": 44,
@@ -35275,10 +35275,10 @@
      "dims": {
       "overall": 60,
       "automation": 60,
-      "augmentation": 75,
+      "augmentation": 76,
       "digital": 85,
       "moat": 48,
-      "adoption": 62
+      "adoption": 63
      },
      "std": 12.6,
      "by_model": {
@@ -35315,9 +35315,9 @@
       "机器人技术员",
       "机器人运维"
      ],
-     "overall": 56,
+     "overall": 57,
      "dims": {
-      "overall": 56,
+      "overall": 57,
       "automation": 49,
       "augmentation": 79,
       "digital": 81,
@@ -35358,11 +35358,11 @@
       "计算机取证员",
       "电子取证工程师"
      ],
-     "overall": 62,
+     "overall": 63,
      "dims": {
-      "overall": 62,
+      "overall": 63,
       "automation": 59,
-      "augmentation": 83,
+      "augmentation": 84,
       "digital": 87,
       "moat": 58,
       "adoption": 67
@@ -35447,7 +35447,7 @@
      "overall": 64,
      "dims": {
       "overall": 64,
-      "automation": 57,
+      "automation": 58,
       "augmentation": 85,
       "digital": 89,
       "moat": 48,
@@ -35585,9 +35585,9 @@
     "overall": 84,
     "automation": 68,
     "augmentation": 88,
-    "digital": 91,
+    "digital": 92,
     "moat": 28,
-    "adoption": 81
+    "adoption": 82
    },
    "dims_median": {
     "overall": 92,
@@ -35905,9 +35905,9 @@
       "信用卡客户经理",
       "办卡业务员"
      ],
-     "overall": 73,
+     "overall": 74,
      "dims": {
-      "overall": 73,
+      "overall": 74,
       "automation": 76,
       "augmentation": 63,
       "digital": 77,
@@ -35958,7 +35958,7 @@
      "overall": 64,
      "dims": {
       "overall": 64,
-      "automation": 61,
+      "automation": 62,
       "augmentation": 74,
       "digital": 79,
       "moat": 45,
@@ -36102,7 +36102,7 @@
       "overall": 57,
       "automation": 53,
       "augmentation": 65,
-      "digital": 66,
+      "digital": 67,
       "moat": 52,
       "adoption": 59
      },
@@ -36242,10 +36242,10 @@
      "dims": {
       "overall": 49,
       "automation": 41,
-      "augmentation": 64,
+      "augmentation": 63,
       "digital": 62,
       "moat": 60,
-      "adoption": 50
+      "adoption": 49
      },
      "std": 15.1,
      "by_model": {
@@ -36652,7 +36652,7 @@
       "overall": 57,
       "automation": 66,
       "augmentation": 59,
-      "digital": 67,
+      "digital": 68,
       "moat": 48,
       "adoption": 68
      },
@@ -36698,7 +36698,7 @@
       "automation": 79,
       "augmentation": 45,
       "digital": 72,
-      "moat": 28,
+      "moat": 29,
       "adoption": 80
      },
      "std": 12.0,
@@ -37187,9 +37187,9 @@
       "拍卖行业务员",
       "拍卖经纪人"
      ],
-     "overall": 49,
+     "overall": 50,
      "dims": {
-      "overall": 49,
+      "overall": 50,
       "automation": 46,
       "augmentation": 58,
       "digital": 60,
@@ -37239,7 +37239,7 @@
      "dims": {
       "overall": 61,
       "automation": 62,
-      "augmentation": 76,
+      "augmentation": 77,
       "digital": 80,
       "moat": 50,
       "adoption": 73
@@ -37524,7 +37524,7 @@
       "automation": 37,
       "augmentation": 59,
       "digital": 52,
-      "moat": 65,
+      "moat": 66,
       "adoption": 46
      },
      "std": 13.5,
@@ -37623,7 +37623,7 @@
       "automation": 65,
       "augmentation": 73,
       "digital": 75,
-      "moat": 45,
+      "moat": 46,
       "adoption": 73
      },
      "std": 7.6,
@@ -37955,7 +37955,7 @@
       "overall": 69,
       "automation": 72,
       "augmentation": 69,
-      "digital": 78,
+      "digital": 79,
       "moat": 36,
       "adoption": 76
      },
@@ -38000,10 +38000,10 @@
      "overall": 67,
      "dims": {
       "overall": 67,
-      "automation": 70,
+      "automation": 71,
       "augmentation": 63,
       "digital": 74,
-      "moat": 37,
+      "moat": 36,
       "adoption": 74
      },
      "std": 12.6,
@@ -38145,7 +38145,7 @@
       "augmentation": 69,
       "digital": 72,
       "moat": 56,
-      "adoption": 60
+      "adoption": 61
      },
      "std": 12.3,
      "by_model": {
@@ -38286,8 +38286,8 @@
      "dims": {
       "overall": 44,
       "automation": 46,
-      "augmentation": 56,
-      "digital": 59,
+      "augmentation": 57,
+      "digital": 60,
       "moat": 59,
       "adoption": 56
      },
@@ -38379,7 +38379,7 @@
       "overall": 52,
       "automation": 54,
       "augmentation": 58,
-      "digital": 63,
+      "digital": 64,
       "moat": 49,
       "adoption": 60
      },
@@ -38882,8 +38882,8 @@
      "overall": 62,
      "dims": {
       "overall": 62,
-      "automation": 61,
-      "augmentation": 75,
+      "automation": 60,
+      "augmentation": 76,
       "digital": 83,
       "moat": 47,
       "adoption": 72
@@ -38976,7 +38976,7 @@
       "augmentation": 61,
       "digital": 68,
       "moat": 53,
-      "adoption": 58
+      "adoption": 59
      },
      "std": 13.3,
      "by_model": {
@@ -39068,7 +39068,7 @@
       "augmentation": 59,
       "digital": 61,
       "moat": 59,
-      "adoption": 46
+      "adoption": 47
      },
      "std": 12.8,
      "by_model": {
@@ -39208,7 +39208,7 @@
       "augmentation": 75,
       "digital": 85,
       "moat": 36,
-      "adoption": 76
+      "adoption": 77
      },
      "std": 9.2,
      "by_model": {
@@ -39443,7 +39443,7 @@
       "augmentation": 73,
       "digital": 80,
       "moat": 45,
-      "adoption": 70
+      "adoption": 71
      },
      "std": 10.9,
      "by_model": {
@@ -39996,7 +39996,7 @@
       "automation": 49,
       "augmentation": 61,
       "digital": 65,
-      "moat": 53,
+      "moat": 54,
       "adoption": 53
      },
      "std": 14.9,
@@ -40224,7 +40224,7 @@
      "overall": 46,
      "dims": {
       "overall": 46,
-      "automation": 41,
+      "automation": 42,
       "augmentation": 61,
       "digital": 61,
       "moat": 60,
@@ -40318,7 +40318,7 @@
      "dims": {
       "overall": 39,
       "automation": 34,
-      "augmentation": 55,
+      "augmentation": 56,
       "digital": 54,
       "moat": 66,
       "adoption": 42
@@ -40360,9 +40360,9 @@
       "面料设计师",
       "纺织设计师"
      ],
-     "overall": 57,
+     "overall": 58,
      "dims": {
-      "overall": 57,
+      "overall": 58,
       "automation": 54,
       "augmentation": 71,
       "digital": 74,
@@ -40409,7 +40409,7 @@
      "dims": {
       "overall": 56,
       "automation": 54,
-      "augmentation": 67,
+      "augmentation": 68,
       "digital": 72,
       "moat": 49,
       "adoption": 60
@@ -40450,9 +40450,9 @@
       "配色师",
       "色彩顾问"
      ],
-     "overall": 55,
+     "overall": 56,
      "dims": {
-      "overall": 55,
+      "overall": 56,
       "automation": 53,
       "augmentation": 65,
       "digital": 69,
@@ -40597,7 +40597,7 @@
       "augmentation": 72,
       "digital": 76,
       "moat": 47,
-      "adoption": 66
+      "adoption": 67
      },
      "std": 11.1,
      "by_model": {
@@ -40645,7 +40645,7 @@
       "augmentation": 77,
       "digital": 84,
       "moat": 34,
-      "adoption": 77
+      "adoption": 78
      },
      "std": 11.3,
      "by_model": {
@@ -40688,8 +40688,8 @@
      "dims": {
       "overall": 66,
       "automation": 66,
-      "augmentation": 72,
-      "digital": 77,
+      "augmentation": 73,
+      "digital": 78,
       "moat": 41,
       "adoption": 69
      },
@@ -40780,7 +40780,7 @@
       "overall": 50,
       "automation": 45,
       "augmentation": 63,
-      "digital": 64,
+      "digital": 65,
       "moat": 59,
       "adoption": 51
      },
@@ -41089,9 +41089,9 @@
       "灯具产品设计师",
       "灯饰设计师"
      ],
-     "overall": 54,
+     "overall": 55,
      "dims": {
-      "overall": 54,
+      "overall": 55,
       "automation": 52,
       "augmentation": 66,
       "digital": 72,
@@ -41183,7 +41183,7 @@
      "dims": {
       "overall": 45,
       "automation": 38,
-      "augmentation": 59,
+      "augmentation": 60,
       "digital": 60,
       "moat": 64,
       "adoption": 46
@@ -41319,7 +41319,7 @@
      "dims": {
       "overall": 72,
       "automation": 71,
-      "augmentation": 78,
+      "augmentation": 79,
       "digital": 90,
       "moat": 36,
       "adoption": 77
@@ -41366,7 +41366,7 @@
       "augmentation": 52,
       "digital": 54,
       "moat": 70,
-      "adoption": 37
+      "adoption": 38
      },
      "std": 13.9,
      "by_model": {
@@ -41408,7 +41408,7 @@
      "dims": {
       "overall": 20,
       "automation": 14,
-      "augmentation": 30,
+      "augmentation": 31,
       "digital": 30,
       "moat": 87,
       "adoption": 19
@@ -41497,7 +41497,7 @@
      "overall": 44,
      "dims": {
       "overall": 44,
-      "automation": 38,
+      "automation": 39,
       "augmentation": 57,
       "digital": 61,
       "moat": 65,
@@ -41587,7 +41587,7 @@
      "overall": 60,
      "dims": {
       "overall": 60,
-      "automation": 55,
+      "automation": 56,
       "augmentation": 72,
       "digital": 75,
       "moat": 49,
@@ -41773,7 +41773,7 @@
       "augmentation": 62,
       "digital": 67,
       "moat": 54,
-      "adoption": 56
+      "adoption": 57
      },
      "std": 14.6,
      "by_model": {
@@ -41860,7 +41860,7 @@
     "automation": 48,
     "augmentation": 72,
     "digital": 69,
-    "moat": 50,
+    "moat": 49,
     "adoption": 56
    },
    "dims_median": {
@@ -42533,7 +42533,7 @@
      "overall": 40,
      "dims": {
       "overall": 40,
-      "automation": 33,
+      "automation": 34,
       "augmentation": 54,
       "digital": 53,
       "moat": 65,
@@ -42576,9 +42576,9 @@
       "植物保护巡护员",
       "野保植物员"
      ],
-     "overall": 37,
+     "overall": 38,
      "dims": {
-      "overall": 37,
+      "overall": 38,
       "automation": 31,
       "augmentation": 51,
       "digital": 51,
@@ -42668,9 +42668,9 @@
       "饲养员",
       "动物园饲养员"
      ],
-     "overall": 26,
+     "overall": 27,
      "dims": {
-      "overall": 26,
+      "overall": 27,
       "automation": 19,
       "augmentation": 36,
       "digital": 33,
@@ -42721,7 +42721,7 @@
       "augmentation": 63,
       "digital": 65,
       "moat": 45,
-      "adoption": 67
+      "adoption": 66
      },
      "std": 14.3,
      "by_model": {
@@ -42810,7 +42810,7 @@
       "overall": 43,
       "automation": 42,
       "augmentation": 52,
-      "digital": 51,
+      "digital": 52,
       "moat": 60,
       "adoption": 49
      },
@@ -42996,7 +42996,7 @@
       "automation": 43,
       "augmentation": 40,
       "digital": 37,
-      "moat": 61,
+      "moat": 60,
       "adoption": 47
      },
      "std": 19.9,
@@ -43042,7 +43042,7 @@
       "automation": 42,
       "augmentation": 42,
       "digital": 41,
-      "moat": 61,
+      "moat": 60,
       "adoption": 46
      },
      "std": 16.0,
@@ -43082,9 +43082,9 @@
       "环卫处理工",
       "垃圾处理员"
      ],
-     "overall": 47,
+     "overall": 48,
      "dims": {
-      "overall": 47,
+      "overall": 48,
       "automation": 51,
       "augmentation": 52,
       "digital": 52,
@@ -43224,9 +43224,9 @@
       "草坪养护师",
       "草坪养护工"
      ],
-     "overall": 38,
+     "overall": 39,
      "dims": {
-      "overall": 38,
+      "overall": 39,
       "automation": 36,
       "augmentation": 46,
       "digital": 44,
@@ -43630,7 +43630,7 @@
       "overall": 34,
       "automation": 24,
       "augmentation": 49,
-      "digital": 42,
+      "digital": 43,
       "moat": 72,
       "adoption": 35
      },
@@ -43722,8 +43722,8 @@
      "dims": {
       "overall": 25,
       "automation": 17,
-      "augmentation": 34,
-      "digital": 30,
+      "augmentation": 35,
+      "digital": 31,
       "moat": 82,
       "adoption": 25
      },
@@ -43770,7 +43770,7 @@
      "overall": 32,
      "dims": {
       "overall": 32,
-      "automation": 23,
+      "automation": 24,
       "augmentation": 44,
       "digital": 38,
       "moat": 75,
@@ -43959,7 +43959,7 @@
      "overall": 40,
      "dims": {
       "overall": 40,
-      "automation": 37,
+      "automation": 38,
       "augmentation": 48,
       "digital": 45,
       "moat": 61,
@@ -44053,7 +44053,7 @@
       "augmentation": 25,
       "digital": 22,
       "moat": 87,
-      "adoption": 17
+      "adoption": 16
      },
      "std": 7.1,
      "by_model": {
@@ -44329,7 +44329,7 @@
       "automation": 26,
       "augmentation": 48,
       "digital": 43,
-      "moat": 71,
+      "moat": 70,
       "adoption": 36
      },
      "std": 13.1,
@@ -44463,11 +44463,11 @@
       "红娘",
       "婚介所员工"
      ],
-     "overall": 48,
+     "overall": 49,
      "dims": {
-      "overall": 48,
+      "overall": 49,
       "automation": 44,
-      "augmentation": 59,
+      "augmentation": 60,
       "digital": 58,
       "moat": 56,
       "adoption": 51
@@ -44607,7 +44607,7 @@
       "augmentation": 34,
       "digital": 32,
       "moat": 81,
-      "adoption": 25
+      "adoption": 26
      },
      "std": 6.6,
      "by_model": {
@@ -44650,7 +44650,7 @@
       "overall": 18,
       "automation": 11,
       "augmentation": 27,
-      "digital": 25,
+      "digital": 24,
       "moat": 88,
       "adoption": 18
      },
@@ -44742,7 +44742,7 @@
       "automation": 27,
       "augmentation": 38,
       "digital": 39,
-      "moat": 70,
+      "moat": 69,
       "adoption": 33
      },
      "std": 8.3,
@@ -44948,10 +44948,10 @@
      "overall": 52,
      "dims": {
       "overall": 52,
-      "automation": 52,
+      "automation": 53,
       "augmentation": 54,
       "digital": 62,
-      "moat": 49,
+      "moat": 48,
       "adoption": 59
      },
      "std": 14.1,
@@ -44994,10 +44994,10 @@
       "代驾师傅",
       "代驾兼职"
      ],
-     "overall": 42,
+     "overall": 43,
      "dims": {
-      "overall": 42,
-      "automation": 42,
+      "overall": 43,
+      "automation": 43,
       "augmentation": 42,
       "digital": 47,
       "moat": 58,
@@ -45311,7 +45311,7 @@
      "dims": {
       "overall": 66,
       "automation": 65,
-      "augmentation": 80,
+      "augmentation": 79,
       "digital": 84,
       "moat": 45,
       "adoption": 65
@@ -45403,10 +45403,10 @@
      "dims": {
       "overall": 50,
       "automation": 53,
-      "augmentation": 51,
+      "augmentation": 52,
       "digital": 61,
       "moat": 56,
-      "adoption": 58
+      "adoption": 59
      },
      "std": 13.9,
      "by_model": {
@@ -45869,7 +45869,7 @@
      "dims": {
       "overall": 50,
       "automation": 44,
-      "augmentation": 65,
+      "augmentation": 66,
       "digital": 67,
       "moat": 56,
       "adoption": 59
@@ -46023,7 +46023,7 @@
       "augmentation": 65,
       "digital": 73,
       "moat": 48,
-      "adoption": 64
+      "adoption": 65
      },
      "std": 11.9,
      "by_model": {
@@ -46076,7 +46076,7 @@
       "augmentation": 55,
       "digital": 54,
       "moat": 58,
-      "adoption": 51
+      "adoption": 52
      },
      "std": 11.3,
      "by_model": {
@@ -46275,8 +46275,8 @@
       "automation": 16,
       "augmentation": 33,
       "digital": 31,
-      "moat": 81,
-      "adoption": 23
+      "moat": 82,
+      "adoption": 22
      },
      "std": 8.9,
      "by_model": {
@@ -46423,7 +46423,7 @@
       "augmentation": 42,
       "digital": 43,
       "moat": 69,
-      "adoption": 36
+      "adoption": 35
      },
      "std": 10.7,
      "by_model": {
@@ -46833,7 +46833,7 @@
       "automation": 35,
       "augmentation": 58,
       "digital": 53,
-      "moat": 67,
+      "moat": 68,
       "adoption": 46
      },
      "std": 10.0,
@@ -47208,7 +47208,7 @@
       "automation": 31,
       "augmentation": 54,
       "digital": 50,
-      "moat": 69,
+      "moat": 70,
       "adoption": 40
      },
      "std": 12.3,
@@ -47252,9 +47252,9 @@
       "动画制作",
       "二维动画"
      ],
-     "overall": 69,
+     "overall": 70,
      "dims": {
-      "overall": 69,
+      "overall": 70,
       "automation": 68,
       "augmentation": 80,
       "digital": 86,
@@ -47344,7 +47344,7 @@
      "dims": {
       "overall": 70,
       "automation": 66,
-      "augmentation": 36,
+      "augmentation": 37,
       "digital": 64,
       "moat": 33,
       "adoption": 65
@@ -47578,7 +47578,7 @@
       "augmentation": 66,
       "digital": 69,
       "moat": 59,
-      "adoption": 57
+      "adoption": 58
      },
      "std": 9.1,
      "by_model": {
@@ -47718,7 +47718,7 @@
      "dims": {
       "overall": 65,
       "automation": 63,
-      "augmentation": 77,
+      "augmentation": 78,
       "digital": 84,
       "moat": 47,
       "adoption": 76
@@ -47946,7 +47946,7 @@
     "automation": 40,
     "augmentation": 68,
     "digital": 60,
-    "moat": 58,
+    "moat": 57,
     "adoption": 49
    },
    "dims_median": {
@@ -48171,7 +48171,7 @@
       "automation": 29,
       "augmentation": 49,
       "digital": 48,
-      "moat": 75,
+      "moat": 76,
       "adoption": 42
      },
      "std": 14.8,
@@ -48307,7 +48307,7 @@
       "overall": 53,
       "automation": 49,
       "augmentation": 71,
-      "digital": 70,
+      "digital": 71,
       "moat": 59,
       "adoption": 60
      },
@@ -48399,7 +48399,7 @@
       "augmentation": 57,
       "digital": 52,
       "moat": 76,
-      "adoption": 39
+      "adoption": 40
      },
      "std": 13.2,
      "by_model": {
@@ -48627,7 +48627,7 @@
       "augmentation": 60,
       "digital": 63,
       "moat": 62,
-      "adoption": 56
+      "adoption": 57
      },
      "std": 9.8,
      "by_model": {
@@ -48980,14 +48980,14 @@
       "健身教练",
       "体育指导"
      ],
-     "overall": 40,
+     "overall": 39,
      "dims": {
-      "overall": 40,
+      "overall": 39,
       "automation": 34,
       "augmentation": 57,
       "digital": 53,
       "moat": 69,
-      "adoption": 45
+      "adoption": 44
      },
      "std": 12.4,
      "by_model": {
@@ -49030,9 +49030,9 @@
      "overall": 45,
      "dims": {
       "overall": 45,
-      "automation": 43,
+      "automation": 44,
       "augmentation": 57,
-      "digital": 62,
+      "digital": 63,
       "moat": 60,
       "adoption": 54
      },
@@ -49166,7 +49166,7 @@
      "overall": 46,
      "dims": {
       "overall": 46,
-      "automation": 39,
+      "automation": 38,
       "augmentation": 67,
       "digital": 64,
       "moat": 69,
@@ -49263,7 +49263,7 @@
       "augmentation": 71,
       "digital": 82,
       "moat": 67,
-      "adoption": 56
+      "adoption": 55
      },
      "std": 13.6,
      "by_model": {
@@ -49306,7 +49306,7 @@
       "overall": 32,
       "automation": 25,
       "augmentation": 50,
-      "digital": 45,
+      "digital": 44,
       "moat": 77,
       "adoption": 33
      },
@@ -49351,9 +49351,9 @@
      "dims": {
       "overall": 42,
       "automation": 38,
-      "augmentation": 59,
+      "augmentation": 58,
       "digital": 58,
-      "moat": 67,
+      "moat": 68,
       "adoption": 48
      },
      "std": 11.9,
@@ -49871,7 +49871,7 @@
       "augmentation": 70,
       "digital": 65,
       "moat": 55,
-      "adoption": 63
+      "adoption": 62
      },
      "std": 14.4,
      "by_model": {
@@ -49955,9 +49955,9 @@
       "苗圃工",
       "花卉园艺"
      ],
-     "overall": 50,
+     "overall": 49,
      "dims": {
-      "overall": 50,
+      "overall": 49,
       "automation": 44,
       "augmentation": 63,
       "digital": 56,
@@ -50043,13 +50043,13 @@
       "橡胶种植工",
       "热带果树种植工"
      ],
-     "overall": 40,
+     "overall": 41,
      "dims": {
-      "overall": 40,
+      "overall": 41,
       "automation": 34,
       "augmentation": 51,
       "digital": 45,
-      "moat": 67,
+      "moat": 68,
       "adoption": 34
      },
      "std": 14.8,
@@ -50069,7 +50069,7 @@
      "pay_tier": "低",
      "eval": "作业对象多为高大、多年生乔木（如橡胶、椰子），地形复杂，操作风险高。AI和机器人可替代高空采摘、割胶等高风险重体力环节，是刚需。但挑战在于，复杂三维空间内的自主导航与精准操作对技术要求极高，且热带作物植株的个体差异极大，标准化自动操作难度高，人的经验与环境适应性仍是关键",
      "n_models": 10,
-     "level": "低",
+     "level": "中",
      "employment": 9868918,
      "pay": 26250
     },
@@ -50360,7 +50360,7 @@
       "augmentation": 49,
       "digital": 47,
       "moat": 57,
-      "adoption": 43
+      "adoption": 42
      },
      "std": 18.0,
      "by_model": {
@@ -50490,13 +50490,13 @@
       "林木抚育工",
       "森林经营工"
      ],
-     "overall": 42,
+     "overall": 41,
      "dims": {
-      "overall": 42,
+      "overall": 41,
       "automation": 40,
-      "augmentation": 49,
+      "augmentation": 48,
       "digital": 42,
-      "moat": 59,
+      "moat": 58,
       "adoption": 40
      },
      "std": 15.7,
@@ -50580,7 +50580,7 @@
      "overall": 50,
      "dims": {
       "overall": 50,
-      "automation": 56,
+      "automation": 55,
       "augmentation": 42,
       "digital": 39,
       "moat": 47,
@@ -50620,12 +50620,12 @@
       "水运木材工",
       "原木水运工"
      ],
-     "overall": 41,
+     "overall": 40,
      "dims": {
-      "overall": 41,
-      "automation": 42,
+      "overall": 40,
+      "automation": 41,
       "augmentation": 29,
-      "digital": 27,
+      "digital": 26,
       "moat": 47,
       "adoption": 39
      },
@@ -50647,7 +50647,7 @@
      "pay_tier": "低",
      "eval": "传统流放作业已基本消失，现代主要依赖陆路运输；AI影响较小，但智慧物流系统可能优化运输路线与仓储管理；风险较低，主要存在于少数特殊地理环境下的短途运输；转型空间有限，更可能被整合进现代物流体系，人仍不可替代在跨部门协调与现场装卸指挥上",
      "n_models": 11,
-     "level": "中",
+     "level": "低",
      "employment": 94579,
      "pay": 26250
     }
@@ -50886,8 +50886,8 @@
      "dims": {
       "overall": 58,
       "automation": 48,
-      "augmentation": 70,
-      "digital": 66,
+      "augmentation": 69,
+      "digital": 65,
       "moat": 58,
       "adoption": 59
      },
@@ -50928,14 +50928,14 @@
       "禽类繁育工",
       "家禽育种员"
      ],
-     "overall": 63,
+     "overall": 62,
      "dims": {
-      "overall": 63,
+      "overall": 62,
       "automation": 58,
       "augmentation": 67,
       "digital": 69,
       "moat": 48,
-      "adoption": 66
+      "adoption": 65
      },
      "std": 13.5,
      "by_model": {
@@ -50983,7 +50983,7 @@
       "overall": 64,
       "automation": 64,
       "augmentation": 63,
-      "digital": 67,
+      "digital": 66,
       "moat": 44,
       "adoption": 71
      },
@@ -51031,7 +51031,7 @@
      "dims": {
       "overall": 72,
       "automation": 74,
-      "augmentation": 64,
+      "augmentation": 63,
       "digital": 72,
       "moat": 33,
       "adoption": 78
@@ -51566,11 +51566,11 @@
      "overall": 42,
      "dims": {
       "overall": 42,
-      "automation": 43,
+      "automation": 42,
       "augmentation": 47,
       "digital": 45,
       "moat": 56,
-      "adoption": 42
+      "adoption": 41
      },
      "std": 12.4,
      "by_model": {
@@ -51704,7 +51704,7 @@
       "augmentation": 49,
       "digital": 49,
       "moat": 52,
-      "adoption": 52
+      "adoption": 51
      },
      "std": 14.3,
      "by_model": {
@@ -52051,9 +52051,9 @@
      "overall": 53,
      "dims": {
       "overall": 53,
-      "automation": 37,
+      "automation": 36,
       "augmentation": 75,
-      "digital": 66,
+      "digital": 65,
       "moat": 61,
       "adoption": 58
      },
@@ -52183,7 +52183,7 @@
      "overall": 53,
      "dims": {
       "overall": 53,
-      "automation": 51,
+      "automation": 50,
       "augmentation": 64,
       "digital": 56,
       "moat": 53,
@@ -52412,7 +52412,7 @@
       "augmentation": 42,
       "digital": 37,
       "moat": 57,
-      "adoption": 41
+      "adoption": 40
      },
      "std": 13.7,
      "by_model": {
@@ -52625,7 +52625,7 @@
       "automation": 33,
       "augmentation": 47,
       "digital": 44,
-      "moat": 61,
+      "moat": 60,
       "adoption": 40
      },
      "std": 9.4,
@@ -52888,7 +52888,7 @@
       "automation": 38,
       "augmentation": 38,
       "digital": 35,
-      "moat": 56,
+      "moat": 55,
       "adoption": 39
      },
      "std": 15.2,
@@ -52928,7 +52928,7 @@
      "overall": 45,
      "dims": {
       "overall": 45,
-      "automation": 46,
+      "automation": 47,
       "augmentation": 42,
       "digital": 42,
       "moat": 51,
@@ -53055,14 +53055,14 @@
       "鱼类初加工工",
       "水产初加工工"
      ],
-     "overall": 45,
+     "overall": 46,
      "dims": {
-      "overall": 45,
+      "overall": 46,
       "automation": 48,
       "augmentation": 43,
       "digital": 42,
       "moat": 51,
-      "adoption": 48
+      "adoption": 49
      },
      "std": 16.8,
      "by_model": {
@@ -53529,8 +53529,8 @@
       "automation": 72,
       "augmentation": 49,
       "digital": 61,
-      "moat": 36,
-      "adoption": 68
+      "moat": 35,
+      "adoption": 69
      },
      "std": 16.6,
      "by_model": {
@@ -53572,7 +53572,7 @@
       "overall": 59,
       "automation": 72,
       "augmentation": 47,
-      "digital": 60,
+      "digital": 61,
       "moat": 38,
       "adoption": 67
      },
@@ -53611,9 +53611,9 @@
       "配合饲料制作工",
       "饲料加工员"
      ],
-     "overall": 59,
+     "overall": 60,
      "dims": {
-      "overall": 59,
+      "overall": 60,
       "automation": 75,
       "augmentation": 45,
       "digital": 62,
@@ -53658,7 +53658,7 @@
      "overall": 58,
      "dims": {
       "overall": 58,
-      "automation": 71,
+      "automation": 72,
       "augmentation": 46,
       "digital": 59,
       "moat": 37,
@@ -53798,7 +53798,7 @@
       "augmentation": 49,
       "digital": 57,
       "moat": 41,
-      "adoption": 64
+      "adoption": 65
      },
      "std": 13.5,
      "by_model": {
@@ -53835,11 +53835,11 @@
       "咸蛋加工工",
       "蛋类深加工工"
      ],
-     "overall": 53,
+     "overall": 54,
      "dims": {
-      "overall": 53,
+      "overall": 54,
       "automation": 69,
-      "augmentation": 43,
+      "augmentation": 42,
       "digital": 56,
       "moat": 40,
       "adoption": 66
@@ -53966,13 +53966,13 @@
       "果干加工工",
       "蔬菜加工工"
      ],
-     "overall": 59,
+     "overall": 60,
      "dims": {
-      "overall": 59,
+      "overall": 60,
       "automation": 68,
       "augmentation": 45,
       "digital": 58,
-      "moat": 39,
+      "moat": 38,
       "adoption": 65
      },
      "std": 14.3,
@@ -54010,9 +54010,9 @@
       "葡萄糖制造工",
       "淀粉厂工人"
      ],
-     "overall": 56,
+     "overall": 57,
      "dims": {
-      "overall": 56,
+      "overall": 57,
       "automation": 74,
       "augmentation": 44,
       "digital": 62,
@@ -54058,7 +54058,7 @@
       "overall": 55,
       "automation": 66,
       "augmentation": 47,
-      "digital": 58,
+      "digital": 59,
       "moat": 42,
       "adoption": 64
      },
@@ -54188,11 +54188,11 @@
     }
    ],
    "dims": {
-    "overall": 48,
+    "overall": 47,
     "automation": 40,
     "augmentation": 56,
     "digital": 43,
-    "moat": 65,
+    "moat": 64,
     "adoption": 42
    },
    "dims_median": {
@@ -54341,7 +54341,7 @@
       "overall": 51,
       "automation": 55,
       "augmentation": 49,
-      "digital": 49,
+      "digital": 50,
       "moat": 53,
       "adoption": 54
      },
@@ -54382,13 +54382,13 @@
       "蛋糕造型师",
       "蛋糕裱花"
      ],
-     "overall": 39,
+     "overall": 38,
      "dims": {
-      "overall": 39,
+      "overall": 38,
       "automation": 35,
       "augmentation": 53,
       "digital": 42,
-      "moat": 69,
+      "moat": 70,
       "adoption": 37
      },
      "std": 18.7,
@@ -54474,7 +54474,7 @@
      "dims": {
       "overall": 49,
       "automation": 56,
-      "augmentation": 39,
+      "augmentation": 38,
       "digital": 46,
       "moat": 47,
       "adoption": 54
@@ -54520,7 +54520,7 @@
       "automation": 66,
       "augmentation": 43,
       "digital": 52,
-      "moat": 42,
+      "moat": 41,
       "adoption": 63
      },
      "std": 14.4,
@@ -54560,11 +54560,11 @@
      "overall": 61,
      "dims": {
       "overall": 61,
-      "automation": 72,
+      "automation": 73,
       "augmentation": 43,
       "digital": 57,
       "moat": 35,
-      "adoption": 68
+      "adoption": 69
      },
      "std": 16.0,
      "by_model": {
@@ -54647,7 +54647,7 @@
      "overall": 61,
      "dims": {
       "overall": 61,
-      "automation": 74,
+      "automation": 75,
       "augmentation": 47,
       "digital": 64,
       "moat": 35,
@@ -54735,7 +54735,7 @@
       "overall": 58,
       "automation": 73,
       "augmentation": 43,
-      "digital": 59,
+      "digital": 60,
       "moat": 37,
       "adoption": 68
      },
@@ -54779,7 +54779,7 @@
       "overall": 53,
       "automation": 59,
       "augmentation": 47,
-      "digital": 53,
+      "digital": 54,
       "moat": 49,
       "adoption": 58
      },
@@ -54817,9 +54817,9 @@
       "做醋工",
       "醋厂工人"
      ],
-     "overall": 49,
+     "overall": 50,
      "dims": {
-      "overall": 49,
+      "overall": 50,
       "automation": 56,
       "augmentation": 44,
       "digital": 50,
@@ -54949,7 +54949,7 @@
      "overall": 57,
      "dims": {
       "overall": 57,
-      "automation": 72,
+      "automation": 73,
       "augmentation": 44,
       "digital": 60,
       "moat": 37,
@@ -55032,11 +55032,11 @@
       "酱菜制作工",
       "泡菜制作工"
      ],
-     "overall": 47,
+     "overall": 48,
      "dims": {
-      "overall": 47,
+      "overall": 48,
       "automation": 53,
-      "augmentation": 40,
+      "augmentation": 39,
       "digital": 46,
       "moat": 52,
       "adoption": 52
@@ -55083,7 +55083,7 @@
       "overall": 43,
       "automation": 39,
       "augmentation": 63,
-      "digital": 50,
+      "digital": 51,
       "moat": 70,
       "adoption": 46
      },
@@ -55167,9 +55167,9 @@
       "白酒酿造",
       "酿白酒"
      ],
-     "overall": 50,
+     "overall": 51,
      "dims": {
-      "overall": 50,
+      "overall": 51,
       "automation": 52,
       "augmentation": 48,
       "digital": 49,
@@ -55215,7 +55215,7 @@
      "overall": 59,
      "dims": {
       "overall": 59,
-      "automation": 72,
+      "automation": 73,
       "augmentation": 49,
       "digital": 61,
       "moat": 38,
@@ -55299,12 +55299,12 @@
       "水果酒制作工",
       "露酒酿造工"
      ],
-     "overall": 46,
+     "overall": 47,
      "dims": {
-      "overall": 46,
+      "overall": 47,
       "automation": 52,
       "augmentation": 46,
-      "digital": 47,
+      "digital": 48,
       "moat": 50,
       "adoption": 52
      },
@@ -55485,9 +55485,9 @@
      "overall": 49,
      "dims": {
       "overall": 49,
-      "automation": 53,
+      "automation": 54,
       "augmentation": 44,
-      "digital": 47,
+      "digital": 48,
       "moat": 54,
       "adoption": 53
      },
@@ -55532,7 +55532,7 @@
      "dims": {
       "overall": 29,
       "automation": 20,
-      "augmentation": 55,
+      "augmentation": 56,
       "digital": 40,
       "moat": 83,
       "adoption": 30
@@ -55665,7 +55665,7 @@
     "augmentation": 57,
     "digital": 45,
     "moat": 63,
-    "adoption": 43
+    "adoption": 44
    },
    "dims_median": {
     "overall": 46,
@@ -55851,7 +55851,7 @@
       "augmentation": 52,
       "digital": 50,
       "moat": 61,
-      "adoption": 48
+      "adoption": 49
      },
      "std": 17.7,
      "by_model": {
@@ -55895,7 +55895,7 @@
       "augmentation": 46,
       "digital": 60,
       "moat": 40,
-      "adoption": 64
+      "adoption": 65
      },
      "std": 18.4,
      "by_model": {
@@ -55936,7 +55936,7 @@
       "overall": 56,
       "automation": 69,
       "augmentation": 46,
-      "digital": 59,
+      "digital": 60,
       "moat": 40,
       "adoption": 64
      },
@@ -55977,8 +55977,8 @@
      "overall": 59,
      "dims": {
       "overall": 59,
-      "automation": 69,
-      "augmentation": 49,
+      "automation": 70,
+      "augmentation": 48,
       "digital": 62,
       "moat": 40,
       "adoption": 66
@@ -56300,7 +56300,7 @@
       "augmentation": 43,
       "digital": 53,
       "moat": 44,
-      "adoption": 58
+      "adoption": 59
      },
      "std": 19.1,
      "by_model": {
@@ -56341,7 +56341,7 @@
       "overall": 59,
       "automation": 70,
       "augmentation": 44,
-      "digital": 56,
+      "digital": 57,
       "moat": 39,
       "adoption": 65
      },
@@ -56384,7 +56384,7 @@
       "overall": 61,
       "automation": 72,
       "augmentation": 42,
-      "digital": 56,
+      "digital": 57,
       "moat": 37,
       "adoption": 66
      },
@@ -56558,7 +56558,7 @@
       "overall": 59,
       "automation": 69,
       "augmentation": 43,
-      "digital": 55,
+      "digital": 56,
       "moat": 40,
       "adoption": 64
      },
@@ -56599,9 +56599,9 @@
      "overall": 57,
      "dims": {
       "overall": 57,
-      "automation": 64,
+      "automation": 65,
       "augmentation": 45,
-      "digital": 54,
+      "digital": 55,
       "moat": 43,
       "adoption": 61
      },
@@ -56688,10 +56688,10 @@
      "overall": 58,
      "dims": {
       "overall": 58,
-      "automation": 54,
+      "automation": 55,
       "augmentation": 64,
-      "digital": 64,
-      "moat": 51,
+      "digital": 65,
+      "moat": 50,
       "adoption": 60
      },
      "std": 16.9,
@@ -56733,7 +56733,7 @@
       "overall": 61,
       "automation": 70,
       "augmentation": 44,
-      "digital": 57,
+      "digital": 58,
       "moat": 38,
       "adoption": 66
      },
@@ -56817,10 +56817,10 @@
      "overall": 59,
      "dims": {
       "overall": 59,
-      "automation": 66,
+      "automation": 67,
       "augmentation": 46,
       "digital": 56,
-      "moat": 42,
+      "moat": 41,
       "adoption": 64
      },
      "std": 20.7,
@@ -56862,7 +56862,7 @@
       "overall": 61,
       "automation": 72,
       "augmentation": 46,
-      "digital": 60,
+      "digital": 61,
       "moat": 37,
       "adoption": 67
      },
@@ -56907,7 +56907,7 @@
       "augmentation": 44,
       "digital": 54,
       "moat": 42,
-      "adoption": 62
+      "adoption": 63
      },
      "std": 17.9,
      "by_model": {
@@ -56950,9 +56950,9 @@
       "调色工",
       "染色技工"
      ],
-     "overall": 58,
+     "overall": 59,
      "dims": {
-      "overall": 58,
+      "overall": 59,
       "automation": 65,
       "augmentation": 52,
       "digital": 59,
@@ -57048,10 +57048,10 @@
      "overall": 61,
      "dims": {
       "overall": 61,
-      "automation": 56,
+      "automation": 57,
       "augmentation": 64,
-      "digital": 64,
-      "moat": 49,
+      "digital": 65,
+      "moat": 48,
       "adoption": 62
      },
      "std": 14.7,
@@ -57092,9 +57092,9 @@
       "成品整理工",
       "印染后处理工"
      ],
-     "overall": 56,
+     "overall": 57,
      "dims": {
-      "overall": 56,
+      "overall": 57,
       "automation": 65,
       "augmentation": 45,
       "digital": 55,
@@ -57277,7 +57277,7 @@
    "dims": {
     "overall": 47,
     "automation": 44,
-    "augmentation": 58,
+    "augmentation": 59,
     "digital": 45,
     "moat": 60,
     "adoption": 45
@@ -57422,9 +57422,9 @@
       "制版",
       "服装版师"
      ],
-     "overall": 67,
+     "overall": 68,
      "dims": {
-      "overall": 67,
+      "overall": 68,
       "automation": 63,
       "augmentation": 76,
       "digital": 76,
@@ -57636,7 +57636,7 @@
       "automation": 55,
       "augmentation": 47,
       "digital": 43,
-      "moat": 43,
+      "moat": 42,
       "adoption": 53
      },
      "std": 8.3,
@@ -57877,9 +57877,9 @@
       "针车鞋工",
       "做鞋工人"
      ],
-     "overall": 62,
+     "overall": 61,
      "dims": {
-      "overall": 62,
+      "overall": 61,
       "automation": 62,
       "augmentation": 49,
       "digital": 53,
@@ -57930,7 +57930,7 @@
       "automation": 46,
       "augmentation": 44,
       "digital": 40,
-      "moat": 50,
+      "moat": 49,
       "adoption": 43
      },
      "std": 12.3,
@@ -58165,7 +58165,7 @@
      "overall": 59,
      "dims": {
       "overall": 59,
-      "automation": 66,
+      "automation": 67,
       "augmentation": 45,
       "digital": 54,
       "moat": 38,
@@ -58308,11 +58308,11 @@
       "纤维板制作工",
       "纤维板生产工"
      ],
-     "overall": 64,
+     "overall": 65,
      "dims": {
-      "overall": 64,
+      "overall": 65,
       "automation": 73,
-      "augmentation": 46,
+      "augmentation": 45,
       "digital": 58,
       "moat": 32,
       "adoption": 68
@@ -58452,7 +58452,7 @@
      "overall": 58,
      "dims": {
       "overall": 58,
-      "automation": 64,
+      "automation": 65,
       "augmentation": 48,
       "digital": 54,
       "moat": 40,
@@ -58871,10 +58871,10 @@
      "overall": 58,
      "dims": {
       "overall": 58,
-      "automation": 68,
+      "automation": 69,
       "augmentation": 50,
       "digital": 60,
-      "moat": 39,
+      "moat": 38,
       "adoption": 65
      },
      "std": 18.2,
@@ -58917,7 +58917,7 @@
      "overall": 53,
      "dims": {
       "overall": 53,
-      "automation": 61,
+      "automation": 62,
       "augmentation": 56,
       "digital": 59,
       "moat": 48,
@@ -58966,7 +58966,7 @@
       "overall": 62,
       "automation": 74,
       "augmentation": 49,
-      "digital": 62,
+      "digital": 63,
       "moat": 35,
       "adoption": 69
      },
@@ -59098,14 +59098,14 @@
       "纸盒工",
       "纸箱工"
      ],
-     "overall": 60,
+     "overall": 61,
      "dims": {
-      "overall": 60,
+      "overall": 61,
       "automation": 72,
       "augmentation": 46,
       "digital": 57,
-      "moat": 37,
-      "adoption": 67
+      "moat": 36,
+      "adoption": 68
      },
      "std": 18.6,
      "by_model": {
@@ -59125,7 +59125,7 @@
      "pay_tier": "低",
      "eval": "全自动模切糊盒联动线成为标准，AI视觉校版与一物一码对应。人工单机裱纸或钉箱被高效的折叠粘箱一体机替代，普通操作工同岗率急剧降低",
      "n_models": 11,
-     "level": "中",
+     "level": "高",
      "employment": 214445,
      "pay": 56597
     }
@@ -59423,7 +59423,7 @@
       "automation": 61,
       "augmentation": 48,
       "digital": 54,
-      "moat": 40,
+      "moat": 39,
       "adoption": 59
      },
      "std": 11.7,
@@ -59471,7 +59471,7 @@
       "augmentation": 45,
       "digital": 66,
       "moat": 25,
-      "adoption": 68
+      "adoption": 69
      },
      "std": 16.4,
      "by_model": {
@@ -59865,11 +59865,11 @@
      "overall": 56,
      "dims": {
       "overall": 56,
-      "automation": 71,
+      "automation": 72,
       "augmentation": 43,
       "digital": 48,
       "moat": 36,
-      "adoption": 63
+      "adoption": 62
      },
      "std": 17.7,
      "by_model": {
@@ -60347,10 +60347,10 @@
       "电吉他制作工",
       "电子乐器制作工"
      ],
-     "overall": 56,
+     "overall": 57,
      "dims": {
-      "overall": 56,
-      "automation": 62,
+      "overall": 57,
+      "automation": 63,
       "augmentation": 57,
       "digital": 64,
       "moat": 42,
@@ -60399,7 +60399,7 @@
      "dims": {
       "overall": 41,
       "automation": 39,
-      "augmentation": 58,
+      "augmentation": 57,
       "digital": 45,
       "moat": 68,
       "adoption": 38
@@ -60574,9 +60574,9 @@
       "金属饰品制作工",
       "金属摆件工"
      ],
-     "overall": 45,
+     "overall": 46,
      "dims": {
-      "overall": 45,
+      "overall": 46,
       "automation": 53,
       "augmentation": 45,
       "digital": 46,
@@ -60750,9 +60750,9 @@
       "绢花制作工",
       "仿真花制作工"
      ],
-     "overall": 53,
+     "overall": 54,
      "dims": {
-      "overall": 53,
+      "overall": 54,
       "automation": 64,
       "augmentation": 41,
       "digital": 45,
@@ -60931,9 +60931,9 @@
      "overall": 62,
      "dims": {
       "overall": 62,
-      "automation": 74,
+      "automation": 75,
       "augmentation": 49,
-      "digital": 57,
+      "digital": 58,
       "moat": 33,
       "adoption": 65
      },
@@ -60977,8 +60977,8 @@
      "overall": 50,
      "dims": {
       "overall": 50,
-      "automation": 53,
-      "augmentation": 56,
+      "automation": 54,
+      "augmentation": 55,
       "digital": 51,
       "moat": 55,
       "adoption": 51
@@ -61198,9 +61198,9 @@
       "传统工艺艺人",
       "民间艺人"
      ],
-     "overall": 25,
+     "overall": 24,
      "dims": {
-      "overall": 25,
+      "overall": 24,
       "automation": 16,
       "augmentation": 35,
       "digital": 27,
@@ -61242,9 +61242,9 @@
       "篮球足球制造工",
       "球类生产工"
      ],
-     "overall": 51,
+     "overall": 52,
      "dims": {
-      "overall": 51,
+      "overall": 52,
       "automation": 64,
       "augmentation": 42,
       "digital": 44,
@@ -61290,7 +61290,7 @@
      "dims": {
       "overall": 48,
       "automation": 57,
-      "augmentation": 42,
+      "augmentation": 43,
       "digital": 44,
       "moat": 48,
       "adoption": 53
@@ -61330,12 +61330,12 @@
       "体育器材生产工",
       "健身器械厂工人"
      ],
-     "overall": 58,
+     "overall": 59,
      "dims": {
-      "overall": 58,
+      "overall": 59,
       "automation": 70,
       "augmentation": 49,
-      "digital": 53,
+      "digital": 54,
       "moat": 36,
       "adoption": 64
      },
@@ -61642,7 +61642,7 @@
      "overall": 66,
      "dims": {
       "overall": 66,
-      "automation": 71,
+      "automation": 72,
       "augmentation": 69,
       "digital": 71,
       "moat": 41,
@@ -61730,7 +61730,7 @@
      "overall": 61,
      "dims": {
       "overall": 61,
-      "automation": 65,
+      "automation": 66,
       "augmentation": 64,
       "digital": 65,
       "moat": 45,
@@ -61822,7 +61822,7 @@
       "augmentation": 63,
       "digital": 65,
       "moat": 43,
-      "adoption": 60
+      "adoption": 61
      },
      "std": 12.8,
      "by_model": {
@@ -61911,7 +61911,7 @@
       "augmentation": 63,
       "digital": 66,
       "moat": 42,
-      "adoption": 61
+      "adoption": 62
      },
      "std": 14.0,
      "by_model": {
@@ -61992,9 +61992,9 @@
       "油罐区操作工",
       "石油储运工"
      ],
-     "overall": 58,
+     "overall": 59,
      "dims": {
-      "overall": 58,
+      "overall": 59,
       "automation": 64,
       "augmentation": 57,
       "digital": 62,
@@ -62035,9 +62035,9 @@
       "页岩油提炼工",
       "油页岩加工工"
      ],
-     "overall": 46,
+     "overall": 47,
      "dims": {
-      "overall": 46,
+      "overall": 47,
       "automation": 50,
       "augmentation": 49,
       "digital": 50,
@@ -62125,9 +62125,9 @@
       "炼焦炉工",
       "炼焦师傅"
      ],
-     "overall": 60,
+     "overall": 61,
      "dims": {
-      "overall": 60,
+      "overall": 61,
       "automation": 65,
       "augmentation": 60,
       "digital": 61,
@@ -62152,7 +62152,7 @@
      "pay_tier": "中",
      "eval": "焦炉加热、推焦、熄焦等核心操作在中国大型焦化厂已推进机械化/自动化，但中小独立焦化厂（占相当份额）自动化水平低；焦炉智能化改造受环保政策强压推动加速，AI预测焦炭质量和焦炉温度控制案例增多",
      "n_models": 11,
-     "level": "中",
+     "level": "高",
      "employment": 30343,
      "pay": 75463
     },
@@ -62259,7 +62259,7 @@
       "overall": 63,
       "automation": 69,
       "augmentation": 64,
-      "digital": 66,
+      "digital": 67,
       "moat": 43,
       "adoption": 62
      },
@@ -62343,7 +62343,7 @@
      "overall": 54,
      "dims": {
       "overall": 54,
-      "automation": 60,
+      "automation": 61,
       "augmentation": 49,
       "digital": 48,
       "moat": 46,
@@ -62390,7 +62390,7 @@
       "augmentation": 54,
       "digital": 55,
       "moat": 48,
-      "adoption": 52
+      "adoption": 53
      },
      "std": 15.6,
      "by_model": {
@@ -62650,10 +62650,10 @@
      "dims": {
       "overall": 70,
       "automation": 75,
-      "augmentation": 61,
+      "augmentation": 62,
       "digital": 71,
       "moat": 37,
-      "adoption": 74
+      "adoption": 73
      },
      "std": 12.7,
      "by_model": {
@@ -62737,9 +62737,9 @@
       "冷冻工",
       "空调制冷工"
      ],
-     "overall": 60,
+     "overall": 59,
      "dims": {
-      "overall": 60,
+      "overall": 59,
       "automation": 66,
       "augmentation": 50,
       "digital": 59,
@@ -62825,14 +62825,14 @@
       "设备防腐工",
       "化工防腐操作工"
      ],
-     "overall": 56,
+     "overall": 55,
      "dims": {
-      "overall": 56,
+      "overall": 55,
       "automation": 54,
       "augmentation": 60,
       "digital": 59,
       "moat": 52,
-      "adoption": 55
+      "adoption": 54
      },
      "std": 11.1,
      "by_model": {
@@ -62872,7 +62872,7 @@
      "dims": {
       "overall": 69,
       "automation": 76,
-      "augmentation": 57,
+      "augmentation": 58,
       "digital": 70,
       "moat": 37,
       "adoption": 73
@@ -62958,7 +62958,7 @@
      "dims": {
       "overall": 66,
       "automation": 73,
-      "augmentation": 52,
+      "augmentation": 53,
       "digital": 65,
       "moat": 36,
       "adoption": 69
@@ -63041,9 +63041,9 @@
       "碱厂操作工",
       "纯碱操作工"
      ],
-     "overall": 66,
+     "overall": 65,
      "dims": {
-      "overall": 66,
+      "overall": 65,
       "automation": 72,
       "augmentation": 60,
       "digital": 68,
@@ -63176,7 +63176,7 @@
       "overall": 58,
       "automation": 63,
       "augmentation": 48,
-      "digital": 57,
+      "digital": 56,
       "moat": 39,
       "adoption": 57
      },
@@ -63214,9 +63214,9 @@
       "盐化工操作工",
       "卤水加工工"
      ],
-     "overall": 57,
+     "overall": 56,
      "dims": {
-      "overall": 57,
+      "overall": 56,
       "automation": 58,
       "augmentation": 56,
       "digital": 55,
@@ -63257,9 +63257,9 @@
       "无机化工操作工",
       "无机反应生产工"
      ],
-     "overall": 59,
+     "overall": 58,
      "dims": {
-      "overall": 59,
+      "overall": 58,
       "automation": 62,
       "augmentation": 58,
       "digital": 59,
@@ -63350,7 +63350,7 @@
       "augmentation": 65,
       "digital": 73,
       "moat": 36,
-      "adoption": 72
+      "adoption": 73
      },
      "std": 11.5,
      "by_model": {
@@ -63390,7 +63390,7 @@
      "dims": {
       "overall": 67,
       "automation": 71,
-      "augmentation": 63,
+      "augmentation": 64,
       "digital": 68,
       "moat": 37,
       "adoption": 68
@@ -63564,7 +63564,7 @@
      "dims": {
       "overall": 69,
       "automation": 76,
-      "augmentation": 61,
+      "augmentation": 62,
       "digital": 72,
       "moat": 34,
       "adoption": 73
@@ -63650,7 +63650,7 @@
      "dims": {
       "overall": 61,
       "automation": 67,
-      "augmentation": 55,
+      "augmentation": 56,
       "digital": 62,
       "moat": 37,
       "adoption": 60
@@ -63692,7 +63692,7 @@
      "overall": 60,
      "dims": {
       "overall": 60,
-      "automation": 64,
+      "automation": 63,
       "augmentation": 51,
       "digital": 52,
       "moat": 36,
@@ -63733,9 +63733,9 @@
       "化肥厂操作工",
       "复合肥操作工"
      ],
-     "overall": 64,
+     "overall": 63,
      "dims": {
-      "overall": 64,
+      "overall": 63,
       "automation": 69,
       "augmentation": 56,
       "digital": 63,
@@ -63825,7 +63825,7 @@
       "automation": 64,
       "augmentation": 58,
       "digital": 59,
-      "moat": 39,
+      "moat": 40,
       "adoption": 60
      },
      "std": 11.9,
@@ -63959,7 +63959,7 @@
       "augmentation": 60,
       "digital": 55,
       "moat": 44,
-      "adoption": 57
+      "adoption": 56
      },
      "std": 9.3,
      "by_model": {
@@ -64039,11 +64039,11 @@
       "染料厂工人",
       "化工染料操作工"
      ],
-     "overall": 58,
+     "overall": 57,
      "dims": {
-      "overall": 58,
+      "overall": 57,
       "automation": 59,
-      "augmentation": 60,
+      "augmentation": 59,
       "digital": 57,
       "moat": 43,
       "adoption": 57
@@ -64131,7 +64131,7 @@
      "dims": {
       "overall": 69,
       "automation": 74,
-      "augmentation": 64,
+      "augmentation": 65,
       "digital": 72,
       "moat": 38,
       "adoption": 72
@@ -64220,7 +64220,7 @@
       "augmentation": 59,
       "digital": 64,
       "moat": 39,
-      "adoption": 65
+      "adoption": 64
      },
      "std": 10.4,
      "by_model": {
@@ -64299,9 +64299,9 @@
       "纺织助剂生产工",
       "化工助剂操作工"
      ],
-     "overall": 56,
+     "overall": 55,
      "dims": {
-      "overall": 56,
+      "overall": 55,
       "automation": 63,
       "augmentation": 54,
       "digital": 59,
@@ -64347,7 +64347,7 @@
       "overall": 58,
       "automation": 67,
       "augmentation": 58,
-      "digital": 62,
+      "digital": 61,
       "moat": 41,
       "adoption": 64
      },
@@ -64433,9 +64433,9 @@
       "overall": 52,
       "automation": 61,
       "augmentation": 52,
-      "digital": 56,
+      "digital": 55,
       "moat": 45,
-      "adoption": 56
+      "adoption": 55
      },
      "std": 11.9,
      "by_model": {
@@ -64471,9 +64471,9 @@
       "明胶生产工",
       "动物胶操作工"
      ],
-     "overall": 42,
+     "overall": 41,
      "dims": {
-      "overall": 42,
+      "overall": 41,
       "automation": 47,
       "augmentation": 42,
       "digital": 41,
@@ -64557,14 +64557,14 @@
       "有机硅操作工",
       "硅材料生产工"
      ],
-     "overall": 62,
+     "overall": 61,
      "dims": {
-      "overall": 62,
+      "overall": 61,
       "automation": 68,
-      "augmentation": 65,
+      "augmentation": 64,
       "digital": 66,
       "moat": 47,
-      "adoption": 65
+      "adoption": 64
      },
      "std": 13.0,
      "by_model": {
@@ -64690,7 +64690,7 @@
      "dims": {
       "overall": 40,
       "automation": 46,
-      "augmentation": 41,
+      "augmentation": 40,
       "digital": 41,
       "moat": 49,
       "adoption": 40
@@ -64733,7 +64733,7 @@
      "dims": {
       "overall": 46,
       "automation": 53,
-      "augmentation": 47,
+      "augmentation": 46,
       "digital": 49,
       "moat": 45,
       "adoption": 48
@@ -64778,7 +64778,7 @@
       "automation": 39,
       "augmentation": 36,
       "digital": 35,
-      "moat": 50,
+      "moat": 51,
       "adoption": 34
      },
      "std": 12.5,
@@ -64821,8 +64821,8 @@
       "automation": 34,
       "augmentation": 32,
       "digital": 32,
-      "moat": 52,
-      "adoption": 31
+      "moat": 53,
+      "adoption": 30
      },
      "std": 12.3,
      "by_model": {
@@ -65073,9 +65073,9 @@
       "磁带生产工",
       "磁性材料操作工"
      ],
-     "overall": 50,
+     "overall": 49,
      "dims": {
-      "overall": 50,
+      "overall": 49,
       "automation": 57,
       "augmentation": 51,
       "digital": 55,
@@ -65116,14 +65116,14 @@
       "涂布工",
       "功能膜涂布操作工"
      ],
-     "overall": 54,
+     "overall": 53,
      "dims": {
-      "overall": 54,
-      "automation": 63,
+      "overall": 53,
+      "automation": 62,
       "augmentation": 54,
       "digital": 58,
       "moat": 44,
-      "adoption": 57
+      "adoption": 56
      },
      "std": 10.0,
      "by_model": {
@@ -65166,7 +65166,7 @@
       "augmentation": 66,
       "digital": 71,
       "moat": 43,
-      "adoption": 67
+      "adoption": 66
      },
      "std": 10.7,
      "by_model": {
@@ -65249,7 +65249,7 @@
      "dims": {
       "overall": 57,
       "automation": 59,
-      "augmentation": 64,
+      "augmentation": 63,
       "digital": 62,
       "moat": 48,
       "adoption": 57
@@ -65294,8 +65294,8 @@
       "automation": 58,
       "augmentation": 50,
       "digital": 54,
-      "moat": 58,
-      "adoption": 51
+      "moat": 57,
+      "adoption": 50
      },
      "std": 19.8,
      "by_model": {
@@ -65378,7 +65378,7 @@
      "dims": {
       "overall": 46,
       "automation": 50,
-      "augmentation": 48,
+      "augmentation": 47,
       "digital": 50,
       "moat": 59,
       "adoption": 44
@@ -65422,7 +65422,7 @@
       "overall": 43,
       "automation": 47,
       "augmentation": 47,
-      "digital": 53,
+      "digital": 52,
       "moat": 58,
       "adoption": 46
      },
@@ -65596,9 +65596,9 @@
       "化妆品研发",
       "护肤品配方"
      ],
-     "overall": 66,
+     "overall": 65,
      "dims": {
-      "overall": 66,
+      "overall": 65,
       "automation": 45,
       "augmentation": 82,
       "digital": 76,
@@ -65645,9 +65645,9 @@
       "overall": 54,
       "automation": 67,
       "augmentation": 53,
-      "digital": 61,
-      "moat": 41,
-      "adoption": 63
+      "digital": 60,
+      "moat": 42,
+      "adoption": 62
      },
      "std": 10.0,
      "by_model": {
@@ -65777,7 +65777,7 @@
       "overall": 62,
       "automation": 35,
       "augmentation": 81,
-      "digital": 72,
+      "digital": 71,
       "moat": 69,
       "adoption": 56
      },
@@ -65821,7 +65821,7 @@
       "automation": 61,
       "augmentation": 58,
       "digital": 61,
-      "moat": 47,
+      "moat": 48,
       "adoption": 59
      },
      "std": 13.4,
@@ -65904,7 +65904,7 @@
      "overall": 62,
      "dims": {
       "overall": 62,
-      "automation": 46,
+      "automation": 45,
       "augmentation": 78,
       "digital": 72,
       "moat": 58,
@@ -66170,7 +66170,7 @@
      "dims": {
       "overall": 44,
       "automation": 36,
-      "augmentation": 49,
+      "augmentation": 48,
       "digital": 40,
       "moat": 65,
       "adoption": 38
@@ -66735,9 +66735,9 @@
      "overall": 59,
      "dims": {
       "overall": 59,
-      "automation": 64,
+      "automation": 65,
       "augmentation": 56,
-      "digital": 61,
+      "digital": 62,
       "moat": 42,
       "adoption": 60
      },
@@ -66822,7 +66822,7 @@
      "overall": 62,
      "dims": {
       "overall": 62,
-      "automation": 68,
+      "automation": 69,
       "augmentation": 54,
       "digital": 60,
       "moat": 37,
@@ -67131,7 +67131,7 @@
      "overall": 66,
      "dims": {
       "overall": 66,
-      "automation": 71,
+      "automation": 72,
       "augmentation": 59,
       "digital": 65,
       "moat": 37,
@@ -67355,7 +67355,7 @@
       "augmentation": 59,
       "digital": 66,
       "moat": 38,
-      "adoption": 67
+      "adoption": 68
      },
      "std": 18.3,
      "by_model": {
@@ -67572,7 +67572,7 @@
       "automation": 65,
       "augmentation": 54,
       "digital": 60,
-      "moat": 39,
+      "moat": 38,
       "adoption": 63
      },
      "std": 17.4,
@@ -67614,7 +67614,7 @@
      "overall": 52,
      "dims": {
       "overall": 52,
-      "automation": 57,
+      "automation": 58,
       "augmentation": 44,
       "digital": 48,
       "moat": 43,
@@ -67705,7 +67705,7 @@
       "augmentation": 47,
       "digital": 47,
       "moat": 53,
-      "adoption": 48
+      "adoption": 49
      },
      "std": 16.5,
      "by_model": {
@@ -67830,7 +67830,7 @@
      "overall": 51,
      "dims": {
       "overall": 51,
-      "automation": 56,
+      "automation": 57,
       "augmentation": 48,
       "digital": 51,
       "moat": 42,
@@ -67914,9 +67914,9 @@
       "骨料生产工",
       "采砂场操作工"
      ],
-     "overall": 55,
+     "overall": 56,
      "dims": {
-      "overall": 55,
+      "overall": 56,
       "automation": 64,
       "augmentation": 49,
       "digital": 54,
@@ -67958,9 +67958,9 @@
       "玻璃熔炉操作工",
       "玻璃配料工"
      ],
-     "overall": 57,
+     "overall": 58,
      "dims": {
-      "overall": 57,
+      "overall": 58,
       "automation": 64,
       "augmentation": 56,
       "digital": 62,
@@ -68097,9 +68097,9 @@
       "玻璃中空工",
       "玻璃后道工"
      ],
-     "overall": 48,
+     "overall": 49,
      "dims": {
-      "overall": 48,
+      "overall": 49,
       "automation": 53,
       "augmentation": 50,
       "digital": 51,
@@ -68145,8 +68145,8 @@
      "overall": 62,
      "dims": {
       "overall": 62,
-      "automation": 66,
-      "augmentation": 64,
+      "automation": 67,
+      "augmentation": 65,
       "digital": 69,
       "moat": 41,
       "adoption": 66
@@ -68328,7 +68328,7 @@
       "augmentation": 50,
       "digital": 52,
       "moat": 45,
-      "adoption": 53
+      "adoption": 54
      },
      "std": 17.2,
      "by_model": {
@@ -68376,7 +68376,7 @@
       "augmentation": 49,
       "digital": 51,
       "moat": 49,
-      "adoption": 53
+      "adoption": 54
      },
      "std": 20.2,
      "by_model": {
@@ -68776,7 +68776,7 @@
       "augmentation": 50,
       "digital": 53,
       "moat": 44,
-      "adoption": 54
+      "adoption": 55
      },
      "std": 16.9,
      "by_model": {
@@ -68820,7 +68820,7 @@
       "augmentation": 54,
       "digital": 56,
       "moat": 43,
-      "adoption": 56
+      "adoption": 57
      },
      "std": 17.9,
      "by_model": {
@@ -68863,7 +68863,7 @@
       "augmentation": 49,
       "digital": 52,
       "moat": 45,
-      "adoption": 52
+      "adoption": 53
      },
      "std": 15.9,
      "by_model": {
@@ -68943,13 +68943,13 @@
       "电极制品工",
       "炭制品加工工"
      ],
-     "overall": 49,
+     "overall": 50,
      "dims": {
-      "overall": 49,
+      "overall": 50,
       "automation": 56,
       "augmentation": 50,
       "digital": 51,
-      "moat": 47,
+      "moat": 46,
       "adoption": 53
      },
      "std": 16.0,
@@ -68989,7 +68989,7 @@
      "overall": 47,
      "dims": {
       "overall": 47,
-      "automation": 45,
+      "automation": 46,
       "augmentation": 58,
       "digital": 54,
       "moat": 57,
@@ -69205,10 +69205,10 @@
       "云母制品加工工",
       "云母绝缘材料工"
      ],
-     "overall": 41,
+     "overall": 42,
      "dims": {
-      "overall": 41,
-      "automation": 43,
+      "overall": 42,
+      "automation": 44,
       "augmentation": 44,
       "digital": 42,
       "moat": 54,
@@ -69611,7 +69611,7 @@
       "overall": 65,
       "automation": 68,
       "augmentation": 57,
-      "digital": 62,
+      "digital": 63,
       "moat": 40,
       "adoption": 66
      },
@@ -69650,9 +69650,9 @@
       "矿山支护工",
       "锚杆工"
      ],
-     "overall": 53,
+     "overall": 54,
      "dims": {
-      "overall": 53,
+      "overall": 54,
       "automation": 53,
       "augmentation": 56,
       "digital": 51,
@@ -69740,7 +69740,7 @@
      "overall": 65,
      "dims": {
       "overall": 65,
-      "automation": 73,
+      "automation": 74,
       "augmentation": 52,
       "digital": 68,
       "moat": 35,
@@ -69784,9 +69784,9 @@
      "overall": 58,
      "dims": {
       "overall": 58,
-      "automation": 60,
+      "automation": 61,
       "augmentation": 60,
-      "digital": 65,
+      "digital": 66,
       "moat": 44,
       "adoption": 61
      },
@@ -69874,7 +69874,7 @@
       "augmentation": 65,
       "digital": 68,
       "moat": 49,
-      "adoption": 58
+      "adoption": 59
      },
      "std": 14.5,
      "by_model": {
@@ -69956,10 +69956,10 @@
      "overall": 65,
      "dims": {
       "overall": 65,
-      "automation": 59,
+      "automation": 58,
       "augmentation": 84,
       "digital": 87,
-      "moat": 45,
+      "moat": 46,
       "adoption": 75
      },
      "std": 21.0,
@@ -70132,7 +70132,7 @@
       "automation": 59,
       "augmentation": 55,
       "digital": 60,
-      "moat": 43,
+      "moat": 42,
       "adoption": 61
      },
      "std": 10.5,
@@ -70173,11 +70173,11 @@
      "overall": 58,
      "dims": {
       "overall": 58,
-      "automation": 52,
+      "automation": 51,
       "augmentation": 71,
       "digital": 75,
       "moat": 50,
-      "adoption": 60
+      "adoption": 61
      },
      "std": 14.8,
      "by_model": {
@@ -70265,7 +70265,7 @@
       "automation": 63,
       "augmentation": 46,
       "digital": 55,
-      "moat": 41,
+      "moat": 40,
       "adoption": 60
      },
      "std": 16.7,
@@ -70305,7 +70305,7 @@
      "overall": 53,
      "dims": {
       "overall": 53,
-      "automation": 52,
+      "automation": 53,
       "augmentation": 56,
       "digital": 59,
       "moat": 50,
@@ -70349,7 +70349,7 @@
      "dims": {
       "overall": 52,
       "automation": 50,
-      "augmentation": 59,
+      "augmentation": 60,
       "digital": 65,
       "moat": 55,
       "adoption": 51
@@ -70481,7 +70481,7 @@
       "augmentation": 55,
       "digital": 65,
       "moat": 43,
-      "adoption": 62
+      "adoption": 63
      },
      "std": 16.6,
      "by_model": {
@@ -70520,7 +70520,7 @@
      "overall": 56,
      "dims": {
       "overall": 56,
-      "automation": 59,
+      "automation": 60,
       "augmentation": 54,
       "digital": 61,
       "moat": 42,
@@ -70608,7 +70608,7 @@
       "overall": 61,
       "automation": 67,
       "augmentation": 54,
-      "digital": 68,
+      "digital": 69,
       "moat": 37,
       "adoption": 66
      },
@@ -70650,9 +70650,9 @@
      "dims": {
       "overall": 52,
       "automation": 51,
-      "augmentation": 58,
+      "augmentation": 59,
       "digital": 60,
-      "moat": 51,
+      "moat": 50,
       "adoption": 54
      },
      "std": 14.0,
@@ -70827,7 +70827,7 @@
       "overall": 51,
       "automation": 55,
       "augmentation": 50,
-      "digital": 56,
+      "digital": 57,
       "moat": 43,
       "adoption": 55
      },
@@ -71216,8 +71216,8 @@
      "dims": {
       "overall": 64,
       "automation": 74,
-      "augmentation": 52,
-      "digital": 65,
+      "augmentation": 51,
+      "digital": 66,
       "moat": 32,
       "adoption": 70
      },
@@ -71739,7 +71739,7 @@
       "overall": 61,
       "automation": 66,
       "augmentation": 63,
-      "digital": 66,
+      "digital": 67,
       "moat": 43,
       "adoption": 64
      },
@@ -71869,7 +71869,7 @@
       "automation": 54,
       "augmentation": 54,
       "digital": 58,
-      "moat": 48,
+      "moat": 49,
       "adoption": 52
      },
      "std": 14.5,
@@ -72079,12 +72079,12 @@
       "电解工",
       "电解铜工"
      ],
-     "overall": 61,
+     "overall": 62,
      "dims": {
-      "overall": 61,
+      "overall": 62,
       "automation": 70,
       "augmentation": 52,
-      "digital": 63,
+      "digital": 64,
       "moat": 37,
       "adoption": 67
      },
@@ -72168,7 +72168,7 @@
      "overall": 62,
      "dims": {
       "overall": 62,
-      "automation": 69,
+      "automation": 70,
       "augmentation": 63,
       "digital": 70,
       "moat": 43,
@@ -72426,7 +72426,7 @@
      "overall": 51,
      "dims": {
       "overall": 51,
-      "automation": 55,
+      "automation": 56,
       "augmentation": 57,
       "digital": 58,
       "moat": 50,
@@ -72515,7 +72515,7 @@
       "overall": 48,
       "automation": 54,
       "augmentation": 56,
-      "digital": 57,
+      "digital": 58,
       "moat": 51,
       "adoption": 53
      },
@@ -72560,7 +72560,7 @@
       "augmentation": 57,
       "digital": 61,
       "moat": 45,
-      "adoption": 60
+      "adoption": 61
      },
      "std": 15.9,
      "by_model": {
@@ -72646,7 +72646,7 @@
       "augmentation": 60,
       "digital": 67,
       "moat": 44,
-      "adoption": 64
+      "adoption": 65
      },
      "std": 16.0,
      "by_model": {
@@ -72775,8 +72775,8 @@
       "overall": 56,
       "automation": 65,
       "augmentation": 50,
-      "digital": 58,
-      "moat": 38,
+      "digital": 59,
+      "moat": 39,
       "adoption": 63
      },
      "std": 14.9,
@@ -72942,9 +72942,9 @@
       "钢材精整工",
       "板材精整工"
      ],
-     "overall": 55,
+     "overall": 56,
      "dims": {
-      "overall": 55,
+      "overall": 56,
       "automation": 64,
       "augmentation": 49,
       "digital": 57,
@@ -73292,7 +73292,7 @@
       "overall": 51,
       "automation": 57,
       "augmentation": 60,
-      "digital": 61,
+      "digital": 62,
       "moat": 46,
       "adoption": 59
      },
@@ -73372,7 +73372,7 @@
     }
    ],
    "dims": {
-    "overall": 44,
+    "overall": 45,
     "automation": 47,
     "augmentation": 61,
     "digital": 49,
@@ -74181,7 +74181,7 @@
       "augmentation": 46,
       "digital": 41,
       "moat": 54,
-      "adoption": 47
+      "adoption": 48
      },
      "std": 14.4,
      "by_model": {
@@ -74272,14 +74272,14 @@
       "二保焊工",
       "焊接技工"
      ],
-     "overall": 50,
+     "overall": 51,
      "dims": {
-      "overall": 50,
+      "overall": 51,
       "automation": 52,
       "augmentation": 57,
       "digital": 50,
       "moat": 53,
-      "adoption": 55
+      "adoption": 56
      },
      "std": 14.7,
      "by_model": {
@@ -74319,9 +74319,9 @@
       "数控切割工",
       "下料切割工"
      ],
-     "overall": 60,
+     "overall": 61,
      "dims": {
-      "overall": 60,
+      "overall": 61,
       "automation": 68,
       "augmentation": 51,
       "digital": 56,
@@ -74348,7 +74348,7 @@
      "pay_tier": "中",
      "eval": "机械加工材料切割工使用切割设备（如等离子、激光）对材料进行切割下料。该岗位技能要求一般，但随着数控切割机和自动化切割线的应用，切割精度和效率提升，可减少人工操作。未来该岗位的可替代性高，人工主要负责设备编程和原料搬运",
      "n_models": 13,
-     "level": "中",
+     "level": "高",
      "employment": 207686,
      "pay": 75463
     },
@@ -74371,7 +74371,7 @@
       "augmentation": 53,
       "digital": 53,
       "moat": 42,
-      "adoption": 57
+      "adoption": 58
      },
      "std": 13.4,
      "by_model": {
@@ -74417,7 +74417,7 @@
       "augmentation": 51,
       "digital": 51,
       "moat": 41,
-      "adoption": 58
+      "adoption": 59
      },
      "std": 16.0,
      "by_model": {
@@ -74504,10 +74504,10 @@
       "喷涂工",
       "电泳涂装工"
      ],
-     "overall": 55,
+     "overall": 56,
      "dims": {
-      "overall": 55,
-      "automation": 62,
+      "overall": 56,
+      "automation": 63,
       "augmentation": 51,
       "digital": 52,
       "moat": 40,
@@ -74607,7 +74607,7 @@
       "automation": 51,
       "augmentation": 66,
       "digital": 63,
-      "moat": 54,
+      "moat": 55,
       "adoption": 57
      },
      "std": 15.1,
@@ -74648,14 +74648,14 @@
       "木模工",
       "样品制作工"
      ],
-     "overall": 48,
+     "overall": 49,
      "dims": {
-      "overall": 48,
-      "automation": 44,
+      "overall": 49,
+      "automation": 45,
       "augmentation": 58,
-      "digital": 55,
+      "digital": 56,
       "moat": 53,
-      "adoption": 49
+      "adoption": 50
      },
      "std": 14.9,
      "by_model": {
@@ -74741,7 +74741,7 @@
      "overall": 51,
      "dims": {
       "overall": 51,
-      "automation": 55,
+      "automation": 56,
       "augmentation": 48,
       "digital": 48,
       "moat": 45,
@@ -75059,7 +75059,7 @@
      "dims": {
       "overall": 50,
       "automation": 57,
-      "augmentation": 50,
+      "augmentation": 49,
       "digital": 50,
       "moat": 45,
       "adoption": 54
@@ -75236,7 +75236,7 @@
       "augmentation": 47,
       "digital": 47,
       "moat": 45,
-      "adoption": 53
+      "adoption": 54
      },
      "std": 16.6,
      "by_model": {
@@ -75279,7 +75279,7 @@
       "augmentation": 42,
       "digital": 42,
       "moat": 50,
-      "adoption": 46
+      "adoption": 45
      },
      "std": 16.0,
      "by_model": {
@@ -75363,7 +75363,7 @@
       "overall": 24,
       "automation": 23,
       "augmentation": 34,
-      "digital": 29,
+      "digital": 28,
       "moat": 81,
       "adoption": 23
      },
@@ -75576,9 +75576,9 @@
       "装配技工",
       "钳工"
      ],
-     "overall": 57,
+     "overall": 56,
      "dims": {
-      "overall": 57,
+      "overall": 56,
       "automation": 57,
       "augmentation": 57,
       "digital": 49,
@@ -76013,7 +76013,7 @@
       "augmentation": 57,
       "digital": 55,
       "moat": 53,
-      "adoption": 52
+      "adoption": 51
      },
      "std": 9.3,
      "by_model": {
@@ -76099,7 +76099,7 @@
       "augmentation": 58,
       "digital": 57,
       "moat": 47,
-      "adoption": 58
+      "adoption": 57
      },
      "std": 11.9,
      "by_model": {
@@ -76139,7 +76139,7 @@
      "dims": {
       "overall": 56,
       "automation": 68,
-      "augmentation": 49,
+      "augmentation": 48,
       "digital": 54,
       "moat": 37,
       "adoption": 64
@@ -76184,7 +76184,7 @@
      "dims": {
       "overall": 51,
       "automation": 50,
-      "augmentation": 57,
+      "augmentation": 56,
       "digital": 54,
       "moat": 54,
       "adoption": 53
@@ -76269,7 +76269,7 @@
      "overall": 48,
      "dims": {
       "overall": 48,
-      "automation": 45,
+      "automation": 44,
       "augmentation": 55,
       "digital": 51,
       "moat": 57,
@@ -76446,7 +76446,7 @@
       "augmentation": 54,
       "digital": 51,
       "moat": 57,
-      "adoption": 47
+      "adoption": 46
      },
      "std": 14.9,
      "by_model": {
@@ -76487,7 +76487,7 @@
      "dims": {
       "overall": 56,
       "automation": 63,
-      "augmentation": 53,
+      "augmentation": 52,
       "digital": 56,
       "moat": 41,
       "adoption": 63
@@ -76529,7 +76529,7 @@
      "overall": 54,
      "dims": {
       "overall": 54,
-      "automation": 58,
+      "automation": 59,
       "augmentation": 53,
       "digital": 53,
       "moat": 47,
@@ -76569,9 +76569,9 @@
       "液压密封工",
       "密封圈制造工"
      ],
-     "overall": 55,
+     "overall": 56,
      "dims": {
-      "overall": 55,
+      "overall": 56,
       "automation": 65,
       "augmentation": 50,
       "digital": 56,
@@ -76615,7 +76615,7 @@
      "overall": 47,
      "dims": {
       "overall": 47,
-      "automation": 45,
+      "automation": 44,
       "augmentation": 50,
       "digital": 46,
       "moat": 57,
@@ -76662,7 +76662,7 @@
       "augmentation": 57,
       "digital": 57,
       "moat": 45,
-      "adoption": 55
+      "adoption": 56
      },
      "std": 9.2,
      "by_model": {
@@ -76741,9 +76741,9 @@
       "电动工具组装工",
       "电动工具装配工"
      ],
-     "overall": 60,
+     "overall": 61,
      "dims": {
-      "overall": 60,
+      "overall": 61,
       "automation": 73,
       "augmentation": 47,
       "digital": 59,
@@ -76768,7 +76768,7 @@
      "pay_tier": "中",
      "eval": "电动工具产线是典型大批量,马达定子绕线、碳刷装配、整机测试全自动化,头部企业(博世、史丹利)中国厂已接近无人。装配普工大幅压缩,转向售后与品质工程",
      "n_models": 11,
-     "level": "中",
+     "level": "高",
      "employment": 57133,
      "pay": 75463
     },
@@ -76832,7 +76832,7 @@
       "overall": 53,
       "automation": 55,
       "augmentation": 50,
-      "digital": 58,
+      "digital": 59,
       "moat": 40,
       "adoption": 55
      },
@@ -76870,14 +76870,14 @@
       "照相器材制造工",
       "相机装配工"
      ],
-     "overall": 59,
+     "overall": 60,
      "dims": {
-      "overall": 59,
+      "overall": 60,
       "automation": 63,
       "augmentation": 55,
       "digital": 63,
       "moat": 41,
-      "adoption": 62
+      "adoption": 63
      },
      "std": 12.1,
      "by_model": {
@@ -77002,10 +77002,10 @@
      "overall": 55,
      "dims": {
       "overall": 55,
-      "automation": 59,
+      "automation": 60,
       "augmentation": 64,
       "digital": 63,
-      "moat": 50,
+      "moat": 49,
       "adoption": 59
      },
      "std": 12.2,
@@ -77092,7 +77092,7 @@
       "augmentation": 50,
       "digital": 51,
       "moat": 46,
-      "adoption": 50
+      "adoption": 49
      },
      "std": 11.3,
      "by_model": {
@@ -77520,9 +77520,9 @@
       "overall": 54,
       "automation": 56,
       "augmentation": 58,
-      "digital": 59,
+      "digital": 60,
       "moat": 47,
-      "adoption": 57
+      "adoption": 58
      },
      "std": 14.1,
      "by_model": {
@@ -77564,7 +77564,7 @@
       "automation": 54,
       "augmentation": 54,
       "digital": 50,
-      "moat": 49,
+      "moat": 48,
       "adoption": 52
      },
      "std": 13.0,
@@ -77606,7 +77606,7 @@
       "overall": 47,
       "automation": 51,
       "augmentation": 52,
-      "digital": 48,
+      "digital": 47,
       "moat": 49,
       "adoption": 50
      },
@@ -77687,9 +77687,9 @@
       "收割机制造工",
       "联合收割机装配工"
      ],
-     "overall": 47,
+     "overall": 48,
      "dims": {
-      "overall": 47,
+      "overall": 48,
       "automation": 50,
       "augmentation": 55,
       "digital": 50,
@@ -77823,10 +77823,10 @@
      "dims": {
       "overall": 41,
       "automation": 33,
-      "augmentation": 57,
+      "augmentation": 58,
       "digital": 48,
       "moat": 67,
-      "adoption": 39
+      "adoption": 40
      },
      "std": 15.6,
      "by_model": {
@@ -77867,7 +77867,7 @@
       "overall": 52,
       "automation": 57,
       "augmentation": 55,
-      "digital": 56,
+      "digital": 57,
       "moat": 45,
       "adoption": 57
      },
@@ -78225,7 +78225,7 @@
      "dims": {
       "overall": 57,
       "automation": 56,
-      "augmentation": 65,
+      "augmentation": 66,
       "digital": 61,
       "moat": 49,
       "adoption": 61
@@ -78735,7 +78735,7 @@
       "automation": 56,
       "augmentation": 54,
       "digital": 52,
-      "moat": 50,
+      "moat": 49,
       "adoption": 55
      },
      "std": 15.7,
@@ -79327,7 +79327,7 @@
       "augmentation": 60,
       "digital": 58,
       "moat": 58,
-      "adoption": 52
+      "adoption": 53
      },
      "std": 10.8,
      "by_model": {
@@ -79549,7 +79549,7 @@
       "overall": 48,
       "automation": 35,
       "augmentation": 63,
-      "digital": 55,
+      "digital": 56,
       "moat": 67,
       "adoption": 47
      },
@@ -79685,7 +79685,7 @@
      "overall": 52,
      "dims": {
       "overall": 52,
-      "automation": 57,
+      "automation": 58,
       "augmentation": 50,
       "digital": 51,
       "moat": 45,
@@ -79946,9 +79946,9 @@
       "电机制造装配工",
       "电机生产工"
      ],
-     "overall": 60,
+     "overall": 61,
      "dims": {
-      "overall": 60,
+      "overall": 61,
       "automation": 63,
       "augmentation": 61,
       "digital": 63,
@@ -79974,7 +79974,7 @@
      "pay_tier": "中",
      "eval": "电机制造涉及绕线、嵌线、装配等工序，当前部分工序已实现自动化，但精密绕线和绝缘处理仍需人工经验。AI 主要用于质量检测与故障诊断，自动化提升空间中等。人工在设备调试、复杂工艺上仍具不可替代性",
      "n_models": 12,
-     "level": "中",
+     "level": "高",
      "employment": 177133,
      "pay": 75463
     },
@@ -79998,7 +79998,7 @@
       "automation": 58,
       "augmentation": 59,
       "digital": 59,
-      "moat": 52,
+      "moat": 51,
       "adoption": 61
      },
      "std": 9.9,
@@ -80135,7 +80135,7 @@
       "automation": 82,
       "augmentation": 64,
       "digital": 76,
-      "moat": 32,
+      "moat": 31,
       "adoption": 84
      },
      "std": 11.2,
@@ -80578,7 +80578,7 @@
       "automation": 68,
       "augmentation": 56,
       "digital": 64,
-      "moat": 38,
+      "moat": 37,
       "adoption": 69
      },
      "std": 11.7,
@@ -80704,11 +80704,11 @@
       "照明灯具制造工",
       "灯具生产工"
      ],
-     "overall": 57,
+     "overall": 56,
      "dims": {
-      "overall": 57,
+      "overall": 56,
       "automation": 61,
-      "augmentation": 50,
+      "augmentation": 51,
       "digital": 58,
       "moat": 43,
       "adoption": 60
@@ -81022,8 +81022,8 @@
       "automation": 76,
       "augmentation": 47,
       "digital": 58,
-      "moat": 35,
-      "adoption": 74
+      "moat": 36,
+      "adoption": 73
      },
      "std": 15.6,
      "by_model": {
@@ -81113,10 +81113,10 @@
      "dims": {
       "overall": 57,
       "automation": 61,
-      "augmentation": 56,
+      "augmentation": 55,
       "digital": 58,
       "moat": 47,
-      "adoption": 60
+      "adoption": 59
      },
      "std": 11.3,
      "by_model": {
@@ -81207,7 +81207,7 @@
       "overall": 60,
       "automation": 69,
       "augmentation": 50,
-      "digital": 59,
+      "digital": 58,
       "moat": 39,
       "adoption": 68
      },
@@ -81298,11 +81298,11 @@
      "overall": 42,
      "dims": {
       "overall": 42,
-      "automation": 42,
-      "augmentation": 50,
+      "automation": 41,
+      "augmentation": 49,
       "digital": 44,
       "moat": 63,
-      "adoption": 40
+      "adoption": 39
      },
      "std": 15.4,
      "by_model": {
@@ -81440,7 +81440,7 @@
       "augmentation": 44,
       "digital": 59,
       "moat": 34,
-      "adoption": 72
+      "adoption": 71
      },
      "std": 14.4,
      "by_model": {
@@ -81669,7 +81669,7 @@
       "augmentation": 50,
       "digital": 54,
       "moat": 48,
-      "adoption": 57
+      "adoption": 56
      },
      "std": 12.3,
      "by_model": {
@@ -81756,7 +81756,7 @@
      "overall": 54,
      "dims": {
       "overall": 54,
-      "automation": 67,
+      "automation": 66,
       "augmentation": 43,
       "digital": 54,
       "moat": 41,
@@ -81849,7 +81849,7 @@
      "dims": {
       "overall": 67,
       "automation": 76,
-      "augmentation": 57,
+      "augmentation": 56,
       "digital": 71,
       "moat": 40,
       "adoption": 74
@@ -81897,7 +81897,7 @@
      "overall": 71,
      "dims": {
       "overall": 71,
-      "automation": 82,
+      "automation": 81,
       "augmentation": 59,
       "digital": 81,
       "moat": 40,
@@ -81996,7 +81996,7 @@
       "augmentation": 46,
       "digital": 60,
       "moat": 41,
-      "adoption": 67
+      "adoption": 68
      },
      "std": 19.3,
      "by_model": {
@@ -82328,7 +82328,7 @@
       "augmentation": 52,
       "digital": 53,
       "moat": 50,
-      "adoption": 57
+      "adoption": 56
      },
      "std": 13.3,
      "by_model": {
@@ -83227,7 +83227,7 @@
      "overall": 55,
      "dims": {
       "overall": 55,
-      "automation": 55,
+      "automation": 56,
       "augmentation": 57,
       "digital": 61,
       "moat": 48,
@@ -83446,7 +83446,7 @@
      "dims": {
       "overall": 48,
       "automation": 48,
-      "augmentation": 55,
+      "augmentation": 56,
       "digital": 57,
       "moat": 56,
       "adoption": 52
@@ -84187,7 +84187,7 @@
      "dims": {
       "overall": 52,
       "automation": 51,
-      "augmentation": 58,
+      "augmentation": 59,
       "digital": 60,
       "moat": 55,
       "adoption": 56
@@ -84232,7 +84232,7 @@
       "overall": 59,
       "automation": 59,
       "augmentation": 66,
-      "digital": 66,
+      "digital": 67,
       "moat": 51,
       "adoption": 64
      },
@@ -84540,7 +84540,7 @@
       "automation": 56,
       "augmentation": 56,
       "digital": 41,
-      "moat": 52,
+      "moat": 53,
       "adoption": 52
      },
      "std": 19.7,
@@ -84628,7 +84628,7 @@
      "dims": {
       "overall": 54,
       "automation": 57,
-      "augmentation": 55,
+      "augmentation": 56,
       "digital": 45,
       "moat": 50,
       "adoption": 54
@@ -84808,7 +84808,7 @@
       "automation": 19,
       "augmentation": 34,
       "digital": 21,
-      "moat": 77,
+      "moat": 78,
       "adoption": 19
      },
      "std": 9.0,
@@ -84847,11 +84847,11 @@
      "overall": 50,
      "dims": {
       "overall": 50,
-      "automation": 54,
+      "automation": 55,
       "augmentation": 60,
       "digital": 59,
       "moat": 52,
-      "adoption": 53
+      "adoption": 54
      },
      "std": 17.1,
      "by_model": {
@@ -84893,7 +84893,7 @@
       "automation": 47,
       "augmentation": 56,
       "digital": 49,
-      "moat": 59,
+      "moat": 58,
       "adoption": 50
      },
      "std": 18.5,
@@ -84975,14 +84975,14 @@
       "公路养护员",
       "护路工"
      ],
-     "overall": 48,
+     "overall": 49,
      "dims": {
-      "overall": 48,
+      "overall": 49,
       "automation": 51,
       "augmentation": 57,
       "digital": 50,
       "moat": 53,
-      "adoption": 51
+      "adoption": 52
      },
      "std": 17.5,
      "by_model": {
@@ -85024,7 +85024,7 @@
       "overall": 45,
       "automation": 47,
       "augmentation": 53,
-      "digital": 46,
+      "digital": 47,
       "moat": 62,
       "adoption": 46
      },
@@ -85109,11 +85109,11 @@
      "overall": 37,
      "dims": {
       "overall": 37,
-      "automation": 36,
+      "automation": 37,
       "augmentation": 47,
       "digital": 41,
       "moat": 74,
-      "adoption": 37
+      "adoption": 38
      },
      "std": 18.8,
      "by_model": {
@@ -85413,9 +85413,9 @@
       "overall": 30,
       "automation": 27,
       "augmentation": 38,
-      "digital": 30,
+      "digital": 31,
       "moat": 74,
-      "adoption": 25
+      "adoption": 26
      },
      "std": 16.0,
      "by_model": {
@@ -85459,7 +85459,7 @@
       "automation": 49,
       "augmentation": 55,
       "digital": 47,
-      "moat": 57,
+      "moat": 58,
       "adoption": 48
      },
      "std": 19.2,
@@ -85541,10 +85541,10 @@
      "overall": 53,
      "dims": {
       "overall": 53,
-      "automation": 53,
+      "automation": 54,
       "augmentation": 66,
       "digital": 61,
-      "moat": 51,
+      "moat": 50,
       "adoption": 56
      },
      "std": 17.7,
@@ -85760,9 +85760,9 @@
       "空调安装工",
       "暖通工"
      ],
-     "overall": 49,
+     "overall": 50,
      "dims": {
-      "overall": 49,
+      "overall": 50,
       "automation": 47,
       "augmentation": 60,
       "digital": 53,
@@ -85805,7 +85805,7 @@
      "overall": 42,
      "dims": {
       "overall": 42,
-      "automation": 41,
+      "automation": 42,
       "augmentation": 51,
       "digital": 45,
       "moat": 66,
@@ -85972,11 +85972,11 @@
       "信号工",
       "轨交信号安装工"
      ],
-     "overall": 54,
+     "overall": 55,
      "dims": {
-      "overall": 54,
+      "overall": 55,
       "automation": 55,
-      "augmentation": 68,
+      "augmentation": 69,
       "digital": 68,
       "moat": 56,
       "adoption": 58
@@ -86366,9 +86366,9 @@
      "overall": 55,
      "dims": {
       "overall": 55,
-      "automation": 53,
+      "automation": 54,
       "augmentation": 58,
-      "digital": 55,
+      "digital": 56,
       "moat": 54,
       "adoption": 56
      },
@@ -86544,7 +86544,7 @@
       "augmentation": 54,
       "digital": 53,
       "moat": 54,
-      "adoption": 54
+      "adoption": 55
      },
      "std": 15.5,
      "by_model": {
@@ -86666,14 +86666,14 @@
       "电源设备维护工",
       "铁路供电设备工"
      ],
-     "overall": 51,
+     "overall": 52,
      "dims": {
-      "overall": 51,
+      "overall": 52,
       "automation": 49,
       "augmentation": 60,
       "digital": 61,
       "moat": 57,
-      "adoption": 55
+      "adoption": 56
      },
      "std": 14.7,
      "by_model": {
@@ -86800,7 +86800,7 @@
      "overall": 50,
      "dims": {
       "overall": 50,
-      "automation": 50,
+      "automation": 51,
       "augmentation": 54,
       "digital": 56,
       "moat": 58,
@@ -87023,8 +87023,8 @@
       "overall": 58,
       "automation": 59,
       "augmentation": 60,
-      "digital": 60,
-      "moat": 51,
+      "digital": 61,
+      "moat": 50,
       "adoption": 63
      },
      "std": 16.1,
@@ -87066,9 +87066,9 @@
       "操吊工",
       "吊车司机"
      ],
-     "overall": 45,
+     "overall": 46,
      "dims": {
-      "overall": 45,
+      "overall": 46,
       "automation": 43,
       "augmentation": 49,
       "digital": 47,
@@ -87117,7 +87117,7 @@
       "augmentation": 57,
       "digital": 60,
       "moat": 44,
-      "adoption": 66
+      "adoption": 67
      },
      "std": 17.5,
      "by_model": {
@@ -87203,7 +87203,7 @@
      "overall": 52,
      "dims": {
       "overall": 52,
-      "automation": 49,
+      "automation": 50,
       "augmentation": 58,
       "digital": 55,
       "moat": 57,
@@ -87471,7 +87471,7 @@
       "automation": 38,
       "augmentation": 55,
       "digital": 46,
-      "moat": 67,
+      "moat": 66,
       "adoption": 43
      },
      "std": 11.2,
@@ -87517,7 +87517,7 @@
      "overall": 44,
      "dims": {
       "overall": 44,
-      "automation": 40,
+      "automation": 41,
       "augmentation": 58,
       "digital": 52,
       "moat": 63,
@@ -87564,7 +87564,7 @@
      "overall": 47,
      "dims": {
       "overall": 47,
-      "automation": 44,
+      "automation": 45,
       "augmentation": 60,
       "digital": 59,
       "moat": 59,
@@ -87703,7 +87703,7 @@
      "overall": 46,
      "dims": {
       "overall": 46,
-      "automation": 43,
+      "automation": 44,
       "augmentation": 53,
       "digital": 50,
       "moat": 60,
@@ -88031,7 +88031,7 @@
      "dims": {
       "overall": 42,
       "automation": 38,
-      "augmentation": 61,
+      "augmentation": 62,
       "digital": 57,
       "moat": 71,
       "adoption": 43
@@ -88124,7 +88124,7 @@
      "overall": 62,
      "dims": {
       "overall": 62,
-      "automation": 65,
+      "automation": 66,
       "augmentation": 59,
       "digital": 65,
       "moat": 42,
@@ -88320,7 +88320,7 @@
       "overall": 75,
       "automation": 80,
       "augmentation": 53,
-      "digital": 70,
+      "digital": 71,
       "moat": 29,
       "adoption": 81
      },
@@ -88413,11 +88413,11 @@
      "overall": 68,
      "dims": {
       "overall": 68,
-      "automation": 77,
+      "automation": 78,
       "augmentation": 42,
       "digital": 60,
-      "moat": 32,
-      "adoption": 75
+      "moat": 31,
+      "adoption": 76
      },
      "std": 19.3,
      "by_model": {
@@ -88604,7 +88604,7 @@
       "augmentation": 78,
       "digital": 82,
       "moat": 57,
-      "adoption": 64
+      "adoption": 65
      },
      "std": 18.7,
      "by_model": {
@@ -89248,7 +89248,7 @@
       "automation": 46,
       "augmentation": 70,
       "digital": 65,
-      "moat": 63,
+      "moat": 64,
       "adoption": 54
      },
      "std": 17.3,
@@ -89436,9 +89436,9 @@
       "应征入伍",
       "新兵入伍"
      ],
-     "overall": 41,
+     "overall": 42,
      "dims": {
-      "overall": 41,
+      "overall": 42,
       "automation": 46,
       "augmentation": 46,
       "digital": 46,
@@ -89483,7 +89483,7 @@
    "dims": {
     "overall": 16,
     "automation": 19,
-    "augmentation": 40,
+    "augmentation": 39,
     "digital": 32,
     "moat": 80,
     "adoption": 25
@@ -89627,9 +89627,9 @@
       "军队文职人员",
       "部队文职岗位"
      ],
-     "overall": 67,
+     "overall": 66,
      "dims": {
-      "overall": 67,
+      "overall": 66,
       "automation": 65,
       "augmentation": 74,
       "digital": 78,
@@ -89672,9 +89672,9 @@
    "education": "本科",
    "pay_sources": [],
    "dims": {
-    "overall": 44,
+    "overall": 45,
     "automation": 36,
-    "augmentation": 63,
+    "augmentation": 64,
     "digital": 56,
     "moat": 63,
     "adoption": 42

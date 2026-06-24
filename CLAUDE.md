@@ -15,4 +15,4 @@
 - **开工前/推送前先同步最新 main**:开始改动前,`git fetch origin main` 并把当前分支与 `origin/main` merge 一次(`--ff-only` 优先,有冲突再正常 merge;不要 rebase,这条分支已推过远端、rebase 要 force-push);**推送/开 PR 前再同步一次**,因为 Codex(`gpt/...` 分支)可能在你工作期间已把改动合进 main。这是避免两边互相不知道对方进度、产生冲突或互相覆盖的硬性步骤,不是可选项。
 - **产物禁破折号**:`site/*.js`、`*.html`、`data/*.json` 等产物不得出现长破折号(em-dash, U+2014)或短破折号(en-dash, U+2013),用 ASCII `-` 或中文标点。
 - **改 UI 后重生 standalone**:UI 全在单文件 `site/index.html`(HTML/CSS/JS 全内联、零外部依赖)。改完务必 `python aggregate.py` 重生 `site/index.standalone.html` 与 `site/data.cn.js`。
-- **模型 ID 不进产物**:模型标识只在对话里说,不写进仓库任何文件。
+- **模型 ID 不进产物**:这条只管**开发本仓库的 AI 助手自身**(谁在写代码)的模型标识,只在对话里说、不写进仓库任何文件。注:**「AI 众议院」里参与评估的模型展示名**(如 `Claude-Opus-4.8(max)`、`ChatGPT-5.5-thinking` 等)是站点要展示的**数据内容**,不在此限,可正常写入产物。
