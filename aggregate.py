@@ -216,16 +216,20 @@ def main():
             mrows = [(m, xl[m][x['code']]) for m in xl if x['code'] in xl[m]]
             if not mrows: continue
             rows = [r for _, r in mrows]
-            xd = {}
+            xd, xstd = {}, {}
             for dd in DIMS:
                 pairs = [(r[dd], W(m)) for m, r in mrows if isinstance(r.get(dd), (int, float))]
-                if pairs: xd[dd] = round(wmean(pairs))            # 加权均值
+                if pairs:
+                    xd[dd] = round(wmean(pairs))            # 加权均值
+                    dvs = [v for v, _ in pairs]
+                    xstd[dd] = round(statistics.pstdev(dvs), 1) if len(dvs) > 1 else 0.0   # 该维度各模型分歧(标准差)
             ov = xd.get('overall')
             x['overall'] = ov; x['dims'] = xd
-            ovs = [r['overall'] for r in rows if isinstance(r.get('overall'), (int, float))]
-            x['std'] = round(statistics.pstdev(ovs), 1) if len(ovs) > 1 else 0.0
-            x['by_model'] = {m: xl[m][x['code']]['overall'] for m in xl if x['code'] in xl[m] and isinstance(xl[m][x['code']].get('overall'), (int, float))}
-            # 细类不逐模型存理由文本(体积大头,1.4M字符);分歧由 by_model 分数体现,代表性评价见 eval
+            x['dims_std'] = xstd                              # 细类逐维度分歧(全维度,镜像中类),供前端「模型分歧」按维度上色
+            x['std'] = xstd.get('overall', 0.0)               # 综合维分歧,兼容旧读取(tooltip 等)
+            # 细类逐模型逐维度分(各模型该维度打分;供详情面板柱状图/各模型分按维度展示)。仍不逐模型存理由文本(体积大头),代表性评价见 eval
+            x['by_model'] = {m: {dd: xl[m][x['code']][dd] for dd in DIMS if isinstance(xl[m][x['code']].get(dd), (int, float))}
+                             for m in xl if x['code'] in xl[m] and isinstance(xl[m][x['code']].get('overall'), (int, float))}
             shs = [r['share'] for r in rows if isinstance(r.get('share'), (int, float)) and r['share'] > 0]
             x['_share'] = statistics.median(shs) if shs else 1.0   # 中位数,抗离群 share
             edus = [r['education'] for r in rows if r.get('education')]
