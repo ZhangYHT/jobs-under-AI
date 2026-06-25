@@ -267,17 +267,22 @@ PR #4 部分(以下 8 条):
   - 文件:site/index.html · site/index.standalone.html · site/data.cn.js · data/aggregated.cn.json · data/model_weights.json · aggregate.py · CLAUDE.md · AGENTS.md · docs/zhongyiyuan/prompts/xilei_arena/README.md(9f)
   - 说明:① 「固定/自由画布」视图开关从顶部抽屉移到底部信息条「工具」左侧,加 720/480px 响应式(窄屏隐藏「视图」字、自由画布->自由、支持作者收成爱心);② 各模型打分由拼音 key 改为正式展示名 + 弱化标注可信度权重(详情/悬浮用全名,迷你柱状图用短名),覆盖 5 处渲染点;③ 微调可信度权重(豆包 0.92->0.88、文心 0.88->0.83、元宝 0.85->0.80、arena 0.80->0.86,range 下限 0.85->0.80)并重跑 aggregate.py 按新权重重算分数;④ 澄清 CLAUDE.md/AGENTS.md「模型 ID 不进产物」范围(只管开发助手自身的型号,众议院展示名属数据内容、允许)。真机截图核对桌面 + 390/360px 移动端,0 报错。
 
+### 2026-06-25 · 模型分歧支持全部维度(地图 + 详情面板,中类与细类)(待开 PR)
+- `e9178c2` [Claude] 模型分歧支持全部维度(地图 + 详情面板,中类与细类)
+  - 文件:aggregate.py · site/index.html · site/data.cn.js · site/index.standalone.html · data/aggregated.cn.json(5f)
+  - 说明:「模型分歧」开关此前只按综合冲击一维上色(恒读 node.std);现按当前所选维度的 dims_std 上色,方块「±」标签与图例随维度变(图例标注维度名),色阶按维度自适应(修掉原 /12 固定除数在 std>=12 即封顶、对比被压扁)。切换评分维度时保留分歧开关(仅 pay/学历回退综合),使「选维度即看该维分歧」可用。aggregate.py 为细类补全逐维度 dims_std + 逐模型逐维度 by_model(源数据已有、无需重采),细类层与细类弹窗同样按维度看分歧;详情面板/细类弹窗各模型柱状图·chips·表头跟随维度并实时刷新(含键盘 1-6 切换时刷新已打开弹窗)。悬浮 tooltip 维持综合摘要不变。data.cn.js 1.56M->3.33M(细类逐维度分,作者已同意),0 破折号,node --check 通过,二次幂等。
+
 ---
 
-## 当前状态快照(2026-06-24 刷新)
+## 当前状态快照(2026-06-25 刷新)
 
-- **main**:`aeca82e`(PR #12 合并点);PR #1~#12 均已并入(含 Codex PR #10 的自由画布复位整改)。
-- **活动分支**:`claude/vigilant-babbage-atJ5w`,领先 main 一条功能提交 `c7b6a13`(视图移位 + 模型正式名/权重 + 权重微调),待开新 PR 回流 main。
+- **main**:`f7ff3d5`(PR #13 合并点);PR #1~#13 均已并入(#13 = `c7b6a13` 视图移位 + 模型正式名/权重 + 权重微调)。
+- **活动分支**:`claude/vigilant-babbage-atJ5w`,领先 main 一条功能提交 `e9178c2`(模型分歧支持全部维度:地图 + 详情面板,中类与细类),待开新 PR 回流 main。
 - **已知遗留**(launch 后再办):
-  - `by_model` 数组化(减小 data.cn.js)。
   - eval(细类代表性评价)懒加载。
   - `site/index.html` 的 CSS/JS 拆分(目前单文件全内联)。
   - 5 条细类 eval 因该细类全部候选均被截断,需重采方能根治。
+  - data.cn.js 体积 ~3.3M(本轮细类逐模型逐维度分所致);若需再瘦身可考虑 by_model 数组化 / 维度按需下发。
 
 ---
 
